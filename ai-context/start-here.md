@@ -62,6 +62,45 @@ My current request:
 [insert request]
 ```
 
+## Refresh-only output format
+
+If the user only asks to read `ai-context/start-here.md` and does not provide a new question or task, treat it as a refresh/status check for the current chat.
+
+Do not output the full project/chat routing block unless there is a routing problem, handoff recommendation, wrong-project issue, or other important warning.
+
+Use this concise format:
+
+```markdown
+## Context refresh complete
+
+I ran the routing/refresh workflow.
+
+Docs read:
+- `ai-context/start-here.md`
+- `ai-context/project-routing.md`
+- `ai-context/chat-index.md`
+- `ai-context/handoff-rules.md`
+- `ai-context/context-map.md`
+
+Current chat status: **[Still correct / Refresh recommended / Handoff recommended / Wrong project / Existing chat recommended]**
+
+Recommended action: **[Continue here / Start a new chat / Move to another project / Continue an existing indexed chat]**
+
+Chat length status: **[Beginning / Still safe / Mid-way / Getting long / Nearly maxed / Start a new chat recommended]**
+
+Suggested sidebar title: **[Title]**
+
+Sidebar title confirmation: **[CONFIRMED / NOT CONFIRMED / UNKNOWN / NOT NEEDED]**
+
+If you have a new task, paste it now and I will route it before answering.
+```
+
+Use rough chat length labels only. Do not claim an exact percentage of context usage.
+
+If the sidebar title is already confirmed in `ai-context/chat-index.md`, use `Sidebar title confirmation: **CONFIRMED**` and do not remind the user to rename the chat.
+
+If the sidebar title is not confirmed, use `Sidebar title confirmation: **NOT CONFIRMED**` and include a short reminder to manually rename the current ChatGPT sidebar chat to the suggested title.
+
 ## Required boot sequence
 
 When this file is read, follow this order before answering the user's main question:
