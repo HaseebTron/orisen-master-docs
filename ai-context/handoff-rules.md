@@ -122,6 +122,16 @@ The assistant cannot reliably rename the ChatGPT sidebar title automatically.
 
 When creating a new chat-index entry, the assistant should provide a suggested sidebar title for the user to manually rename the chat if desired.
 
+## Sidebar title confirmation rule
+
+If the user says they renamed the chat to a specific title, compare the user's provided title exactly against the suggested ChatGPT sidebar title.
+
+If the title matches exactly, update `ai-context/chat-index.md` so future refreshes do not keep reminding the user to rename that chat.
+
+If the title does not match exactly, tell the user the expected title and do not mark the sidebar title as confirmed.
+
+The assistant cannot independently verify the sidebar title. It can only record the user's confirmation.
+
 ## Handoff prompt format
 
 When recommending a new chat, provide a handoff prompt in this format:
@@ -196,6 +206,7 @@ If GitHub write access is available and the chat is meaningful enough to track, 
 - A new meaningful chat is created.
 - A chat status changes to `Completed`, `Handoff Recommended`, `Superseded`, or `Archived`.
 - A replacement chat supersedes an older chat.
+- A sidebar title is confirmed by the user.
 - A major decision or file update should be discoverable later.
 
 If direct updating is not possible, provide the exact markdown entry or edit for the user to paste.
