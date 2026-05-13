@@ -2,14 +2,15 @@
 
 ## Purpose of this file
 
-This is the first file to read when starting a new Orisen ChatGPT chat.
+This is the first file to read when starting a new Orisen ChatGPT chat or when an existing Orisen chat may need a context refresh or handoff decision.
 
-Its job is to route the chat before work begins.
+Its job is to route the chat before work begins or before major work continues.
 
 It helps determine:
 
 - Whether the current ChatGPT project is the right project for the request
 - Whether the question belongs in a new chat or an existing chat
+- Whether the current chat should continue, refresh context, or hand off to a new chat
 - Whether the chat should be tracked in the chat index
 - Which source-of-truth docs should be read before answering
 
@@ -26,26 +27,42 @@ My question:
 [insert question]
 ```
 
+## Default refresh prompt inside an existing chat
+
+Use this prompt when an existing chat may be stale, long, unfocused, contaminated by mixed context, or drifting from its original purpose:
+
+```text
+Read `ai-context/start-here.md` from `HaseebTron/orisen-master-docs` using GitHub.
+
+Check whether this chat should continue after a context refresh, move to another project, continue in an existing indexed chat, or hand off to a new chat.
+
+My current request:
+[insert request]
+```
+
 ## Required boot sequence
 
 When this file is read, follow this order before answering the user's main question:
 
 1. Read `ai-context/project-routing.md`.
 2. Read `ai-context/chat-index.md`.
-3. Perform the project and chat routing check.
-4. Decide whether the current project/chat is the correct place for the request.
-5. If the request belongs in another project or existing chat, tell the user before answering the main question.
-6. If the current chat should exist and is meaningful enough to track, update `ai-context/chat-index.md` or provide the exact index entry to add.
-7. Read `ai-context/context-map.md`.
-8. Follow `context-map.md` to the relevant source-of-truth docs for the task.
-9. Answer the user's main question using the relevant docs.
+3. Read `ai-context/handoff-rules.md`.
+4. Perform the project, chat, refresh, and handoff routing check.
+5. Decide whether the current project/chat is the correct place for the request.
+6. Decide whether the current chat should continue, refresh source context, move to another project, continue in an existing indexed chat, or hand off to a new chat.
+7. If the request belongs in another project or existing chat, tell the user before answering the main question.
+8. If a handoff is recommended, follow `ai-context/handoff-rules.md` and provide the standard handoff prompt.
+9. If the current chat should exist and is meaningful enough to track, update `ai-context/chat-index.md` or provide the exact index entry to add.
+10. Read `ai-context/context-map.md`.
+11. Follow `context-map.md` to the relevant source-of-truth docs for the task.
+12. Answer the user's main question using the relevant docs.
 
-## Project and chat routing check
+## Project, chat, refresh, and handoff routing check
 
-Use this format before answering the main question when routing is non-obvious or when starting a new meaningful chat:
+Use this format before answering the main question when routing is non-obvious, when starting a new meaningful chat, or when this file is read inside an existing chat:
 
 ```markdown
-## Project and chat routing check
+## Project/chat routing check
 
 Current project:
 - [Project name if known, otherwise unknown]
@@ -57,16 +74,16 @@ Best project:
 - [Recommended project]
 
 Best chat:
-- Continue this chat / Start a new chat / Use existing chat: [chat title if known]
+- Continue this chat / Refresh and continue this chat / Start a new chat / Use existing chat: [chat title if known]
 
 Routing decision:
-- Correct project / Better handled in another project / Existing chat recommended / Current chat acceptable but not ideal
+- Correct project / Better handled in another project / Existing chat recommended / Refresh current chat / Handoff recommended / Current chat acceptable but not ideal
 
 Reason:
 - [Brief explanation]
 
 Next action:
-- [Answer here / Ask in another project / Continue existing chat / Create new chat]
+- [Answer here / Refresh docs then answer / Ask in another project / Continue existing chat / Create new chat with handoff]
 ```
 
 ## If the current project is wrong
@@ -102,6 +119,18 @@ If `ai-context/chat-index.md` shows an active existing chat that clearly matches
 
 Do not create a new chat-index entry if the better action is to continue an existing chat.
 
+## If the current chat should refresh and continue
+
+If the current request still fits the original purpose of the chat, but source context may be stale, continue in this chat after reading the relevant source-of-truth docs through `ai-context/context-map.md`.
+
+Refreshing is appropriate when the same task is continuing and the main risk is stale source context, not contaminated conversation context.
+
+## If a new chat is better
+
+If the chat is long, mixed, contaminated by outdated context, or the request is a new major task, recommend a handoff to a new chat using `ai-context/handoff-rules.md`.
+
+Do not do major new work in a chat that should be handed off unless the user explicitly asks to continue here.
+
 ## If the current chat should exist
 
 If the current chat is in the right project and is meaningful enough to track, update `ai-context/chat-index.md` or provide the exact entry to add.
@@ -121,7 +150,7 @@ Do not track tiny one-off clarifications, small wording fixes, or quick question
 
 ## Required source-of-truth routing
 
-After the project/chat routing check is complete, read `ai-context/context-map.md` and follow its routing instructions.
+After the project/chat/refresh/handoff routing check is complete, read `ai-context/context-map.md` and follow its routing instructions.
 
 For any important Orisen decision, also read:
 
@@ -137,3 +166,7 @@ Routing comes before work.
 Do not let a specialized project redefine company truth, product direction, customer promise, validation status, or public claims.
 
 If a domain-specific task creates a product, positioning, validation, fundraising, or roadmap decision, escalate to Orisen General.
+
+Refresh if stale.
+
+Hand off if contaminated.
