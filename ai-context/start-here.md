@@ -88,18 +88,39 @@ Recommended action: **[Continue here / Start a new chat / Move to another projec
 
 Chat length status: **[Beginning / Still safe / Mid-way / Getting long / Nearly maxed / Start a new chat recommended]**
 
-Suggested sidebar title: **[Title]**
+Current chat sidebar title: **[Title]**
 
-Sidebar title confirmation: **[CONFIRMED / NOT CONFIRMED / UNKNOWN / NOT NEEDED]**
+Current chat sidebar title confirmation: **[CONFIRMED / NOT CONFIRMED / UNKNOWN / NOT NEEDED]**
+
+Unconfirmed sidebar titles:
+- **[Project]**: `[Suggested sidebar title]` — status: **[NOT CONFIRMED / UNKNOWN]**
 
 If you have a new task, paste it now and I will route it before answering.
 ```
 
 Use rough chat length labels only. Do not claim an exact percentage of context usage.
 
-If the sidebar title is already confirmed in `ai-context/chat-index.md`, use `Sidebar title confirmation: **CONFIRMED**` and do not remind the user to rename the chat.
+For refresh-only checks, report all unconfirmed sidebar titles from `ai-context/chat-index.md`, regardless of whether they belong to the current ChatGPT project.
 
-If the sidebar title is not confirmed, use `Sidebar title confirmation: **NOT CONFIRMED**` and include a short reminder to manually rename the current ChatGPT sidebar chat to the suggested title.
+Treat these sidebar title statuses as unconfirmed and include them in the `Unconfirmed sidebar titles` list:
+
+- `Unknown`
+- `Not confirmed`
+
+Do not include chats whose sidebar title status is:
+
+- `Confirmed`
+- `Not needed`
+
+If there are no unconfirmed sidebar titles, write:
+
+```markdown
+Unconfirmed sidebar titles: **None**
+```
+
+If the current chat's sidebar title is already confirmed in `ai-context/chat-index.md`, use `Current chat sidebar title confirmation: **CONFIRMED**` and do not remind the user to rename the current chat.
+
+If the current chat's sidebar title is not confirmed, use `Current chat sidebar title confirmation: **NOT CONFIRMED**` and include the current chat in the `Unconfirmed sidebar titles` list.
 
 ## Required boot sequence
 
@@ -113,16 +134,17 @@ When this file is read, follow this order before answering the user's main quest
 6. Decide whether the current chat should continue, refresh source context, move to another project, continue in an existing indexed chat, or hand off to a new chat.
 7. Decide the official chat-index title for the current or recommended chat if the chat is meaningful enough to track.
 8. Check whether the sidebar title has already been confirmed in `ai-context/chat-index.md`.
-9. Tell the user the suggested ChatGPT sidebar title to manually rename the chat to, if relevant and not already confirmed.
-10. If the user says they renamed the chat, compare the provided title exactly against the suggested sidebar title.
-11. If the title matches exactly, update `ai-context/chat-index.md` to mark the sidebar title as confirmed.
-12. If the title does not match exactly, tell the user the expected title.
-13. If the request belongs in another project or existing chat, tell the user before answering the main question.
-14. If a handoff is recommended, follow `ai-context/handoff-rules.md` and provide the standard handoff prompt.
-15. If the current chat should exist and is meaningful enough to track, update `ai-context/chat-index.md` or provide the exact index entry to add.
-16. Read `ai-context/context-map.md`.
-17. Follow `context-map.md` to the relevant source-of-truth docs for the task.
-18. Answer the user's main question using the relevant docs.
+9. For refresh-only checks, report all unconfirmed sidebar titles from `ai-context/chat-index.md`, regardless of project.
+10. Tell the user the suggested ChatGPT sidebar title to manually rename the chat to, if relevant and not already confirmed.
+11. If the user says they renamed the chat, compare the provided title exactly against the suggested sidebar title.
+12. If the title matches exactly, update `ai-context/chat-index.md` to mark the sidebar title as confirmed.
+13. If the title does not match exactly, tell the user the expected title.
+14. If the request belongs in another project or existing chat, tell the user before answering the main question.
+15. If a handoff is recommended, follow `ai-context/handoff-rules.md` and provide the standard handoff prompt.
+16. If the current chat should exist and is meaningful enough to track, update `ai-context/chat-index.md` or provide the exact index entry to add.
+17. Read `ai-context/context-map.md`.
+18. Follow `context-map.md` to the relevant source-of-truth docs for the task.
+19. Answer the user's main question using the relevant docs.
 
 ## Project, chat, refresh, and handoff routing check
 
@@ -176,11 +198,13 @@ If the sidebar title is not confirmed, the assistant should provide:
 - The suggested ChatGPT sidebar title
 - A short reminder that the user may manually rename the ChatGPT sidebar chat to match
 
+For refresh-only checks, the assistant should also list every tracked chat in `ai-context/chat-index.md` with sidebar title status `Unknown` or `Not confirmed`, regardless of which Orisen project that chat belongs to.
+
 Use this format:
 
 ```markdown
-Suggested sidebar title:
-- [Title]
+Unconfirmed sidebar titles:
+- **[Project]**: `[Suggested sidebar title]` — status: **[NOT CONFIRMED / UNKNOWN]**
 ```
 
 The official title in `ai-context/chat-index.md` is the source of truth. The sidebar title is only a convenience for the user.
