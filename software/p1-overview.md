@@ -1,0 +1,56 @@
+# P1
+
+- **Product Overview**
+    - **General**:
+        - Orisen is a non-contact sleep intervention device designed to fix brutal wake-ups, chronic oversleeping, and sleep inertia.
+        - The device uses radar-based sensing to detect user presence and eventually estimate sleep state, then uses audio and light to guide the user toward waking up.
+        - The core purpose of Orisen is to make waking up reliable and less painful, especially for users who struggle with oversleeping, heavy sleep inertia, or repeatedly sleeping through alarms.
+    - **product category**:
+        - Orisen is not just a smart alarm clock.
+        - Orisen is not just a sleep tracker.
+        - Orisen is a connected sleep intervention system.
+        - The device combines:
+            - non-contact sensing
+            - local alarm control
+            - cloud intelligence
+            - gradual wake-up behavior
+            - future artificial sleep phase transitioning
+    - **target user**:
+        - The first target user is someone who has a strong pain around waking up.
+        - Examples:
+            - people who oversleep
+            - people who sleep through alarms
+            - people with severe sleep inertia
+            - students
+            - professionals
+            - shift workers
+            - biohackers
+            - people with inconsistent sleep schedules
+        - The product should be designed for users who care deeply about waking up reliably, not casual users who only want pretty sleep graphs.
+    - **core product promise**:
+        - Orisen should help the user wake up on time.
+            - Orisen should reduce the user’s ability to dismiss the alarm and go back to bed.
+        - Orisen should make waking up feel less brutal.
+        - Orisen should eventually use sleep-stage-aware intervention to prepare the user for waking before the final alarm.
+    - **core features**:
+        - **guaranteed wake-up**:
+            - The device should not fully shut off until the user physically leaves the bed.
+            - If the user returns to bed after dismissing the alarm, the device should be able to detect this and re-trigger the alarm.
+            - This is the most important validated feature from early testing.
+            - This feature must work locally on the device and should not depend on the phone, app, cloud, or Wi-Fi at the final wake-up moment.
+        - **gradual wake-up**:
+            - The device should wake the user using gradually increasing audio and light.
+            - The wake-up sequence should feel less sudden than a traditional alarm.
+            - The device should be able to increase stimulation over time if the user does not get up.
+            - The gradual wake-up system may include:
+                - increasing audio volume
+                - changing audio pattern
+                - increasing light brightness
+                - changing light color or warmth
+                - stronger alarm behavior if the user remains in bed
+        - **artificial sleep phase transitioning**:
+            - The device should eventually estimate the user’s sleep state using radar-based vital signs and movement data.
+            - Before the target wake time, the system should attempt to move the user from deeper sleep toward lighter sleep using subtle audio stimulation.
+            - The stimulation should be low enough to avoid fully waking the user too early, but strong enough to encourage transition toward lighter sleep.
+            - The system should use feedback from the sensor data to adjust the stimulation.
+            - This feature is future-facing and should be treated as less validated than guaranteed wake-up.
