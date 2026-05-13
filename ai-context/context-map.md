@@ -14,11 +14,13 @@ For new ChatGPT chats, the preferred first file is:
 
 - `ai-context/start-here.md`
 
-`start-here.md` handles the boot sequence for new chats, including:
+`start-here.md` handles the boot sequence for new and refreshed chats, including:
 
 - Project routing
 - Existing-chat checks
 - Chat-index checks
+- Refresh-vs-new-chat decisions
+- Handoff decisions
 - Whether the current chat should exist
 - Whether the request belongs in another ChatGPT project
 
@@ -169,7 +171,7 @@ Software docs describe implementation reality. They should not shrink the full p
 
 ## Routing rules for ChatGPT projects
 
-When using this repo as context after project/chat routing:
+When using this repo as context after project/chat/refresh/handoff routing:
 
 1. Read this file.
 2. Read `ai-context/current-state.md` and `ai-context/source-of-truth-rules.md` for any important decision.
@@ -194,6 +196,7 @@ The current routing docs are:
 - `ai-context/start-here.md`
 - `ai-context/project-routing.md`
 - `ai-context/chat-index.md`
+- `ai-context/handoff-rules.md`
 - `ai-context/context-map.md`
 
 Many folder-specific docs may not exist yet. When missing, create them deliberately rather than guessing that they already exist.
