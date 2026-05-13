@@ -2,15 +2,42 @@
 
 ## Purpose of this file
 
-This file is the top-level routing map for the Orisen master docs repo.
+This file is the top-level document-routing map for the Orisen master docs repo.
 
-Use it to decide which documents to read for a specific question, decision, or project.
+Use it to decide which documents to read for a specific question, decision, or project after project/chat routing has been handled.
 
 This file does not replace source-of-truth docs. It points ChatGPT projects and human readers to the right source-of-truth docs.
 
-## Always read first
+## Preferred entry point for new ChatGPT chats
 
-For any important Orisen decision, start with:
+For new ChatGPT chats, the preferred first file is:
+
+- `ai-context/start-here.md`
+
+`start-here.md` handles the boot sequence for new chats, including:
+
+- Project routing
+- Existing-chat checks
+- Chat-index checks
+- Whether the current chat should exist
+- Whether the request belongs in another ChatGPT project
+
+After that routing check is complete, `start-here.md` sends the assistant back to this file to route into the correct source-of-truth docs.
+
+## Default prompt for new chats
+
+Use this prompt when starting a new Orisen chat:
+
+```text
+Read `ai-context/start-here.md` from `HaseebTron/orisen-master-docs` using GitHub.
+
+My question:
+[insert question]
+```
+
+## Always read for important decisions
+
+For any important Orisen decision, read:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -142,19 +169,15 @@ Software docs describe implementation reality. They should not shrink the full p
 
 ## Routing rules for ChatGPT projects
 
-When using this repo as context:
+When using this repo as context after project/chat routing:
 
-1. Read this file first.
+1. Read this file.
 2. Read `ai-context/current-state.md` and `ai-context/source-of-truth-rules.md` for any important decision.
 3. Route to the relevant folder context map.
 4. Read the specific docs listed there for the task.
 5. If docs conflict, apply `ai-context/source-of-truth-rules.md`.
 6. If a needed doc does not exist, say so and recommend creating it.
 7. Do not assume old notes or brainstorms are current truth unless promoted into source-of-truth docs.
-
-## Default prompt for new chats
-
-Use this repo as the source of truth for Orisen. Start by reading `ai-context/context-map.md`, then follow its routing instructions for my task. If the task affects major product, marketing, fundraising, business, software, or hardware decisions, also read `ai-context/current-state.md` and `ai-context/source-of-truth-rules.md` before answering.
 
 ## Current repo buildout status
 
@@ -165,5 +188,12 @@ The first stable docs are:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `product/product-overview.md`
+
+The current routing docs are:
+
+- `ai-context/start-here.md`
+- `ai-context/project-routing.md`
+- `ai-context/chat-index.md`
+- `ai-context/context-map.md`
 
 Many folder-specific docs may not exist yet. When missing, create them deliberately rather than guessing that they already exist.
