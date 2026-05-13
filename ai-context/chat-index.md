@@ -341,8 +341,8 @@ Start a new chat when:
 
 | Date | Project | Official index title | Status | Sidebar title status | Purpose | Continue this chat if... |
 |---|---|---|---|---|---|---|
-| 2026-05-13 | Orisen General | Orisen General - Product Overview Source-of-Truth Draft | Completed | Unknown | Create clean Orisen source-of-truth docs from existing context and draft inputs, especially the product/product overview direction. | The task is a small follow-up to the product overview doc. |
-| 2026-05-13 | Orisen General | Orisen General - Chat Routing and Handoff Workflow | Active | Not confirmed | Design and maintain the Orisen ChatGPT project routing, chat indexing, context refresh, handoff, and sidebar-title reminder workflow. | The task is about Orisen GPT project routing, chat indexing, context refresh, handoff rules, or source-of-truth workflow architecture. |
+| 2026-05-13 | Orisen General | Orisen General - Product Overview Source-of-Truth Draft | Completed | Confirmed | Create clean Orisen source-of-truth docs from existing context and draft inputs, especially the product/product overview direction. | The task is a small follow-up to the product overview doc. |
+| 2026-05-13 | Orisen General | Orisen General - Chat Routing and Handoff Workflow | Active | Confirmed | Design and maintain the Orisen ChatGPT project routing, chat indexing, context refresh, handoff, and sidebar-title reminder workflow. | The task is about Orisen GPT project routing, chat indexing, context refresh, handoff rules, or source-of-truth workflow architecture. |
 
 ## Detailed tracked chat entries
 
@@ -362,9 +362,9 @@ Start a new chat when:
 
 ### Sidebar title status
 
-- Status: Unknown
-- Confirmed renamed by user: Unknown
-- Confirmed sidebar title:
+- Status: Confirmed
+- Confirmed renamed by user: Yes
+- Confirmed sidebar title: Orisen General - Product Overview Source-of-Truth Draft
 
 ### Status
 
@@ -427,9 +427,9 @@ Start a new chat when:
 
 ### Sidebar title status
 
-- Status: Not confirmed
-- Confirmed renamed by user: No
-- Confirmed sidebar title:
+- Status: Confirmed
+- Confirmed renamed by user: Yes
+- Confirmed sidebar title: Orisen General - Chat Routing and Handoff Workflow
 
 ### Status
 
@@ -474,7 +474,7 @@ Start a new chat when:
 
 ### Follow-up needed
 
-- If the user manually renames this chat to the suggested sidebar title, update this entry to mark sidebar title status as `Confirmed`.
+- Continue refining the routing, refresh, handoff, and chat-index system as needed.
 
 ### Continue this chat if...
 
