@@ -339,6 +339,13 @@ Start a new chat when:
 
 ## Existing tracked chats
 
+| Date | Project | Official index title | Status | Sidebar title status | Purpose | Continue this chat if... |
+|---|---|---|---|---|---|---|
+| 2026-05-13 | Orisen General | Orisen General - Product Overview Source-of-Truth Draft | Completed | Unknown | Create clean Orisen source-of-truth docs from existing context and draft inputs, especially the product/product overview direction. | The task is a small follow-up to the product overview doc. |
+| 2026-05-13 | Orisen General | Orisen General - Chat Routing and Handoff Workflow | Active | Not confirmed | Design and maintain the Orisen ChatGPT project routing, chat indexing, context refresh, handoff, and sidebar-title reminder workflow. | The task is about Orisen GPT project routing, chat indexing, context refresh, handoff rules, or source-of-truth workflow architecture. |
+
+## Detailed tracked chat entries
+
 ## 2026-05-13 Orisen General - Product Overview Source-of-Truth Draft
 
 ### Project
