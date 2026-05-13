@@ -11,7 +11,8 @@ It helps decide:
 - Which project should handle a question
 - What decisions have already been made
 - Which docs or repo files were created or updated
-- When a chat is becoming too long or unfocused
+- When a chat is becoming too long, stale, contaminated, or unfocused
+- Whether a chat should be marked as completed, handed off, superseded, or archived
 
 This file should be read during the `ai-context/start-here.md` boot sequence before the assistant answers the user's main question.
 
@@ -22,6 +23,26 @@ A chat should have one clear job.
 If a chat starts covering a new slice, new domain, new asset, or major new decision, create a new chat and add an entry to this index if the chat is meaningful enough to track.
 
 Do not track every tiny one-off question.
+
+## Official chat title rule
+
+The official chat title is the title in this file.
+
+The ChatGPT sidebar title is optional convenience metadata.
+
+The assistant cannot reliably rename the ChatGPT sidebar title automatically.
+
+When creating a new chat-index entry, the assistant should provide a suggested ChatGPT sidebar title for the user to manually rename the chat if desired.
+
+## Status labels
+
+Use these statuses:
+
+- `Active`: The chat is still the recommended place for that task.
+- `Completed`: The task was completed and no further work is expected in that chat.
+- `Handoff Recommended`: The task may continue, but a new chat is safer.
+- `Superseded`: A newer chat has replaced this chat.
+- `Archived`: The chat is kept for reference only.
 
 ## What counts as meaningful enough to track
 
@@ -45,17 +66,19 @@ Do not normally track:
 - Small Git questions
 - Short tactical questions with no lasting decision
 
-## Required routing process for new chats
+## Required routing process for new or refreshed chats
 
-When a new chat starts and the user asks the assistant to read `ai-context/start-here.md`, the assistant should:
+When a new chat starts or an existing chat asks the assistant to read `ai-context/start-here.md`, the assistant should:
 
 1. Read this file.
 2. Check whether an existing active chat already matches the user's task.
 3. Check whether the current project is the correct project using `ai-context/project-routing.md`.
-4. If an existing chat is better, recommend using that chat instead of creating a new one.
-5. If another project is better, recommend the correct project before answering.
-6. If the current chat should exist and is meaningful enough to track, update this file or provide the exact entry to add.
-7. Only after routing is resolved should the assistant continue to `ai-context/context-map.md` and answer the main task.
+4. Check whether the current chat should continue, refresh source context, hand off, move projects, or use an existing indexed chat using `ai-context/handoff-rules.md`.
+5. If an existing chat is better, recommend using that chat instead of creating a new one.
+6. If another project is better, recommend the correct project before answering.
+7. If a new chat is safer, follow `ai-context/handoff-rules.md` and provide the standard handoff prompt.
+8. If the current chat should exist and is meaningful enough to track, update this file or provide the exact entry to add.
+9. Only after routing is resolved should the assistant continue to `ai-context/context-map.md` and answer the main task.
 
 ## Response format for routing recommendation
 
@@ -68,7 +91,7 @@ Best project:
 - [Project name]
 
 Best chat:
-- Continue this chat / Start a new chat / Use existing chat: [chat title]
+- Continue this chat / Refresh and continue this chat / Start a new chat / Use existing chat: [chat title]
 
 Reason:
 - [Brief explanation]
@@ -82,19 +105,23 @@ Suggested first prompt:
 Use this template for meaningful chats:
 
 ```markdown
-## [YYYY-MM-DD] [Project Name] - [Chat Title]
+## [YYYY-MM-DD] [Project Name] - [Official Index Title]
 
 ### Project
 
 - Project:
 
-### Chat title
+### Official index title
+
+- Title:
+
+### Suggested ChatGPT sidebar title
 
 - Title:
 
 ### Status
 
-- Active / Completed / Superseded / Archived
+- Active / Completed / Handoff Recommended / Superseded / Archived
 
 ### Main purpose
 
@@ -138,6 +165,18 @@ Use this template for meaningful chats:
 
 - Related chat name or project, if any.
 ```
+
+## When to update a chat entry
+
+Update a chat entry when:
+
+- A new meaningful chat is created.
+- A chat status changes.
+- A chat becomes too long or contaminated and should be marked `Handoff Recommended`.
+- A new chat supersedes an older chat.
+- A meaningful decision is made.
+- Meaningful files are created or updated.
+- The current outcome or follow-up changes.
 
 ## Project-specific guidance
 
