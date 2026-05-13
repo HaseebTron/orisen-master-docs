@@ -18,6 +18,26 @@ It helps determine:
 
 This file is a boot sequence. It does not replace the source-of-truth docs.
 
+## Purpose of prompting ChatGPT to read this file
+
+The following is the purpose of prompting the reading of `start-here.md`, in ChatGPT chats:
+
+- **Give correct context**
+    - **Boot the chat properly**: make GPT read the workflow rules before doing meaningful Orisen work.
+    - **Refresh stale context**: if the chat is still on the same task but docs/context may be stale, reread the relevant source docs before answering.
+    - **Route to source-of-truth docs**: after project/chat routing, read `context-map.md`, then the relevant docs like `current-state.md`, `source-of-truth-rules.md`, product docs, software docs, etc.
+    - **Prevent wrong-context work**: stop GPT from answering in the wrong project, with stale assumptions, or with a chat that should have been restarted.
+- **Detect if this is the right place to discuss a topic**
+    - **Check the right project**: decide whether the question belongs in Orisen General, Software, Radar + ML, Marketing, Fundraising, Hardware, etc.
+    - **Check the right chat**: decide whether this should continue here, move to an existing indexed chat, or start a new chat.
+- **Help user to move to a diff chat**
+    - **Detect contamination**: if the chat is long, mixed, unfocused, or has outdated context, decide whether a new chat is safer.
+    - **Handle handoff decisions**: if a new chat is better, generate the standard handoff prompt using the repo rules.
+- **Tracking chats**
+    - **Use `chat-index.md`**: check existing tracked chats and update or suggest an entry when a chat is meaningful enough to track.
+    - **Name the chat**: decide the official `chat-index.md` title and remind you what to manually rename the ChatGPT sidebar chat to.
+- **Remind User to rename chat to the right name in accordance to the database.**
+
 ## Default new-chat prompt
 
 Use this prompt when starting a new Orisen chat:
@@ -53,13 +73,17 @@ When this file is read, follow this order before answering the user's main quest
 5. Decide whether the current project/chat is the correct place for the request.
 6. Decide whether the current chat should continue, refresh source context, move to another project, continue in an existing indexed chat, or hand off to a new chat.
 7. Decide the official chat-index title for the current or recommended chat if the chat is meaningful enough to track.
-8. Tell the user the suggested ChatGPT sidebar title to manually rename the chat to, if relevant.
-9. If the request belongs in another project or existing chat, tell the user before answering the main question.
-10. If a handoff is recommended, follow `ai-context/handoff-rules.md` and provide the standard handoff prompt.
-11. If the current chat should exist and is meaningful enough to track, update `ai-context/chat-index.md` or provide the exact index entry to add.
-12. Read `ai-context/context-map.md`.
-13. Follow `context-map.md` to the relevant source-of-truth docs for the task.
-14. Answer the user's main question using the relevant docs.
+8. Check whether the sidebar title has already been confirmed in `ai-context/chat-index.md`.
+9. Tell the user the suggested ChatGPT sidebar title to manually rename the chat to, if relevant and not already confirmed.
+10. If the user says they renamed the chat, compare the provided title exactly against the suggested sidebar title.
+11. If the title matches exactly, update `ai-context/chat-index.md` to mark the sidebar title as confirmed.
+12. If the title does not match exactly, tell the user the expected title.
+13. If the request belongs in another project or existing chat, tell the user before answering the main question.
+14. If a handoff is recommended, follow `ai-context/handoff-rules.md` and provide the standard handoff prompt.
+15. If the current chat should exist and is meaningful enough to track, update `ai-context/chat-index.md` or provide the exact index entry to add.
+16. Read `ai-context/context-map.md`.
+17. Follow `context-map.md` to the relevant source-of-truth docs for the task.
+18. Answer the user's main question using the relevant docs.
 
 ## Project, chat, refresh, and handoff routing check
 
@@ -86,6 +110,9 @@ Official chat-index title:
 Suggested ChatGPT sidebar title:
 - [Title the user should manually rename the sidebar chat to, if desired]
 
+Sidebar title status:
+- Confirmed / Not confirmed / Unknown / Not needed
+
 Routing decision:
 - Correct project / Better handled in another project / Existing chat recommended / Refresh current chat / Handoff recommended / Current chat acceptable but not ideal
 
@@ -100,7 +127,11 @@ Next action:
 
 The assistant cannot reliably rename the ChatGPT sidebar title automatically.
 
-When this file is read and the current or recommended chat is meaningful enough to track, the assistant should provide:
+When this file is read and the current or recommended chat is meaningful enough to track, the assistant should check `ai-context/chat-index.md` for sidebar title status.
+
+If the sidebar title is already confirmed, do not remind the user to rename the chat again.
+
+If the sidebar title is not confirmed, the assistant should provide:
 
 - The official chat-index title
 - The suggested ChatGPT sidebar title
@@ -117,6 +148,26 @@ The official title in `ai-context/chat-index.md` is the source of truth. The sid
 
 Do not interrupt tiny one-off questions only to suggest a title. Use this title reminder for meaningful chats, handoffs, refreshed major work, or new indexed work.
 
+## Sidebar title confirmation rule
+
+If the user says they renamed the chat to a specific title, compare the user's provided title exactly against the suggested ChatGPT sidebar title.
+
+If the title matches exactly:
+
+1. Acknowledge the match.
+2. Update `ai-context/chat-index.md` for the relevant chat entry.
+3. Set `Confirmed renamed by user` to `Yes`.
+4. Set `Confirmed sidebar title` to the matched title.
+5. Do not remind the user to rename this chat again in future `start-here.md` refreshes.
+
+If the title does not match exactly:
+
+1. Tell the user it does not exactly match.
+2. Show the expected title.
+3. Do not mark the sidebar title as confirmed.
+
+If the relevant chat entry does not exist yet, create or suggest the entry first, then record the sidebar title confirmation.
+
 ## If the current project is wrong
 
 If the request clearly belongs in another project, do not answer the user's main question yet.
@@ -126,7 +177,7 @@ Instead:
 1. Say which project is better.
 2. Explain briefly why.
 3. Provide the exact prompt the user should paste in the correct project.
-4. Include the suggested ChatGPT sidebar title for the recommended chat if it is meaningful enough to track.
+4. Include the suggested ChatGPT sidebar title for the recommended chat if it is meaningful enough to track and not already confirmed.
 
 Use this format:
 
@@ -154,7 +205,7 @@ If `ai-context/chat-index.md` shows an active existing chat that clearly matches
 
 Do not create a new chat-index entry if the better action is to continue an existing chat.
 
-If the existing indexed chat has an official title, tell the user that title so they can find or manually rename the sidebar chat if needed.
+If the existing indexed chat has an official title, tell the user that title so they can find the chat. Only remind them to rename the sidebar chat if the sidebar title has not already been confirmed.
 
 ## If the current chat should refresh and continue
 
@@ -162,7 +213,7 @@ If the current request still fits the original purpose of the chat, but source c
 
 Refreshing is appropriate when the same task is continuing and the main risk is stale source context, not contaminated conversation context.
 
-If the refreshed chat is meaningful enough to track, remind the user of the suggested sidebar title.
+If the refreshed chat is meaningful enough to track, remind the user of the suggested sidebar title only if it has not already been confirmed.
 
 ## If a new chat is better
 
@@ -170,7 +221,7 @@ If the chat is long, mixed, contaminated by outdated context, or the request is 
 
 Do not do major new work in a chat that should be handed off unless the user explicitly asks to continue here.
 
-The handoff recommendation should include the recommended official chat-index title and the suggested ChatGPT sidebar title.
+The handoff recommendation should include the recommended official chat-index title and the suggested ChatGPT sidebar title, unless the sidebar title for that chat has already been confirmed.
 
 ## If the current chat should exist
 
