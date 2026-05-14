@@ -1,27 +1,27 @@
 # Context Map
 
-## Purpose of this file
+## Purpose
 
 This file is the top-level document-routing map for the Orisen master docs repo.
 
-Use it to decide which documents to read for a specific question, decision, or project after project/chat routing has been handled.
+Use it after `ai-context/start-here.md` has handled project, chat, refresh, and handoff routing.
 
-This file does not replace source-of-truth docs. It points ChatGPT projects and human readers to the right source-of-truth docs.
+This file does not replace source-of-truth docs. It tells ChatGPT projects and human readers which docs to read for a specific task.
 
-## Preferred entry point for new ChatGPT chats
+## Preferred entry point
 
-For new ChatGPT chats, the preferred first file is:
+For new Orisen ChatGPT chats, start with:
 
 - `ai-context/start-here.md`
 
-`start-here.md` handles the boot sequence for new and refreshed chats, including:
+`start-here.md` handles:
 
 - Project routing
-- Refresh-vs-new-chat decisions
+- Refresh vs new-chat decisions
 - Handoff decisions
-- Whether the request belongs in another ChatGPT project
+- Whether the task belongs in another ChatGPT project
 
-After that routing check is complete, `start-here.md` sends the assistant back to this file to route into the correct source-of-truth docs.
+After that routing check, use this file to choose the right baseline pack and task-specific docs.
 
 ## GitHub-first context rule
 
@@ -29,41 +29,38 @@ Use `HaseebTron/orisen-master-docs` on GitHub as the source of truth.
 
 Do not assume ChatGPT Project source files are present or current.
 
-For new serious Orisen chats, read the relevant baseline doc pack below from GitHub, then read additional task-specific docs only as needed.
+For new serious Orisen chats, read the relevant baseline pack from GitHub, then read task-specific docs only as needed.
 
-## Default prompt for new chats
+## Baseline pack rule
 
-Use this prompt when manually starting a new Orisen chat:
+Each project has two baseline levels:
 
-```text
-Read `ai-context/start-here.md` from `HaseebTron/orisen-master-docs` using GitHub.
+- Minimal baseline: use for normal questions, quick routing, small decisions, and focused follow-ups.
+- Full baseline: use for important decisions, public claims, product direction, roadmap, architecture, fundraising, marketing, or cross-domain strategy.
 
-My question:
-[insert question]
-```
+Use the lightest baseline that can answer safely.
 
-## Always read for important decisions
-
-For any important Orisen decision, read:
+For any important Orisen decision, always include:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 
-These define the current company state and how to interpret conflicts between docs.
+These define current company truth and how to handle conflicts.
 
 ## Project baseline doc packs
 
-Use these baseline packs after `start-here.md` has handled project/chat routing.
-
-The baseline pack replaces the need to rely on ChatGPT Project source files.
-
-After reading the baseline pack, read any task-specific docs needed for the request.
-
 ### Orisen General
 
-Use for company strategy, product direction, source-of-truth docs, claims, roadmap priority, cross-domain decisions, and project/workflow architecture.
+Use for company strategy, product direction, source-of-truth docs, claims, roadmap priority, cross-domain decisions, and workflow architecture.
 
-Baseline docs:
+Minimal baseline:
+
+- `ai-context/current-state.md`
+- `ai-context/source-of-truth-rules.md`
+- `ai-context/project-routing.md`
+- `ai-context/context-map.md`
+
+Full baseline:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -80,7 +77,13 @@ Baseline docs:
 
 Use for firmware, app, cloud, Supabase, OTA, BLE onboarding, implementation slices, software architecture, and software debugging.
 
-Baseline docs from this repo:
+Minimal baseline from this repo:
+
+- `ai-context/current-state.md`
+- `ai-context/source-of-truth-rules.md`
+- `software/software-context-map.md`
+
+Full baseline from this repo:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -97,7 +100,13 @@ Software docs describe implementation reality. They should not shrink the full p
 
 Use for radar module decisions, signal processing, vital signs, RRV, HRV, movement extraction, sleep-stage modeling, datasets, papers, and intervention-loop experiments.
 
-Baseline docs:
+Minimal baseline:
+
+- `ai-context/current-state.md`
+- `ai-context/source-of-truth-rules.md`
+- `radar-ml/radar-ml-context-map.md`
+
+Full baseline:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -113,7 +122,14 @@ Escalate to Orisen General before changing public claims around sleep-stage esti
 
 Use for website copy, positioning, messaging, social posts, customer language, waitlist growth, GTM experiments, and launch planning.
 
-Baseline docs:
+Minimal baseline:
+
+- `ai-context/current-state.md`
+- `ai-context/source-of-truth-rules.md`
+- `marketing/marketing-context-map.md`
+- `marketing/positioning-and-messaging.md`
+
+Full baseline:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -130,7 +146,14 @@ Marketing docs must remain downstream from product direction and claims evidence
 
 Use for investor narrative, pitch deck, outreach, traction framing, market story, fundraising strategy, investor FAQ, and investor-specific messaging.
 
-Baseline docs:
+Minimal baseline:
+
+- `ai-context/current-state.md`
+- `ai-context/source-of-truth-rules.md`
+- `fundraising/fundraising-context-map.md`
+- `fundraising/investor-narrative.md`
+
+Full baseline:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -139,6 +162,7 @@ Baseline docs:
 - `product/target-customer.md`
 - `product/roadmap.md`
 - `validation/evidence-log.md`
+- `fundraising/fundraising-context-map.md`
 - `fundraising/investor-narrative.md`
 
 Fundraising docs can be ambitious, but must not overclaim beyond product truth and evidence.
@@ -147,7 +171,12 @@ Fundraising docs can be ambitious, but must not overclaim beyond product truth a
 
 Use for physical product architecture, sensors, enclosure, manufacturing, power, audio, reliability, and hardware tradeoffs.
 
-Baseline docs:
+Minimal baseline:
+
+- `ai-context/current-state.md`
+- `ai-context/source-of-truth-rules.md`
+
+Full baseline:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -170,12 +199,7 @@ If a hardware context map does not exist yet, say so and recommend creating it o
 
 Use when the question affects product, market, business model, fundraising, positioning, or multiple teams.
 
-Start with:
-
-- `ai-context/current-state.md`
-- `ai-context/source-of-truth-rules.md`
-
-Then route to the relevant folder context map:
+Start with the Orisen General baseline, then route to the relevant folder context map if needed:
 
 - Product: `product/product-context-map.md`
 - Marketing: `marketing/marketing-context-map.md`
@@ -193,7 +217,7 @@ Use for questions about what Orisen is, what it should build, what the customer 
 
 Start with:
 
-- `product/product-context-map.md`
+- `product/product-context-map.md` if it exists
 
 Important product docs may include:
 
@@ -202,6 +226,8 @@ Important product docs may include:
 - `product/target-customer.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
+
+If `product/product-context-map.md` does not exist yet, use the relevant product docs directly.
 
 ### Marketing questions
 
@@ -249,7 +275,7 @@ Use for questions about business model, pricing, market analysis, competitors, G
 
 Start with:
 
-- `business/business-context-map.md`
+- `business/business-context-map.md` if it exists
 
 Important business docs may include:
 
@@ -266,13 +292,15 @@ Use for questions about physical product architecture, sensors, enclosure, manuf
 
 Start with:
 
-- `hardware/hardware-context-map.md`
+- `hardware/hardware-context-map.md` if it exists
 
 Important hardware docs may include:
 
 - `hardware/hardware-overview.md`
 - `hardware/sensor-decisions.md`
 - `hardware/manufacturing-notes.md`
+
+If hardware docs do not exist yet, use the Orisen Hardware baseline and available product/roadmap context.
 
 ### Software questions
 
@@ -282,10 +310,7 @@ Start with:
 
 - `software/software-context-map.md`
 
-Important software docs may include:
-
-- `software/README.md`
-- copied docs from `orisen-software/docs/`
+Important implementation docs live in the Orisen Software repo. Follow `software/software-context-map.md` for the exact repo and default entry docs.
 
 Software docs describe implementation reality. They should not shrink the full product or company vision.
 
@@ -311,7 +336,7 @@ Important radar/ML docs may include:
 When using this repo as context after project/chat/refresh/handoff routing:
 
 1. Read this file.
-2. Read the relevant project baseline doc pack for the current project/task.
+2. Choose the minimal or full baseline pack for the current project/task.
 3. Read `ai-context/current-state.md` and `ai-context/source-of-truth-rules.md` for any important decision if they were not already included.
 4. Route to the relevant folder context map.
 5. Read the specific docs listed there for the task.
