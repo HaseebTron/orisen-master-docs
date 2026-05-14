@@ -9,9 +9,7 @@ Its job is to route the chat before work begins or before major work continues.
 It helps determine:
 
 - Whether the current ChatGPT project is the right project for the request
-- Whether the question belongs in a new chat or an existing chat
-- Whether the current chat should continue, refresh context, or hand off to a new chat
-- Whether the chat should be tracked in the chat index
+- Whether the current chat should continue, refresh context, move projects, or hand off to a new chat
 - Which source-of-truth docs should be read before answering
 
 This file is a boot sequence. It does not replace the source-of-truth docs.
@@ -35,8 +33,7 @@ Prompting ChatGPT to read `start-here.md` should:
 - Route the task to the right project and source-of-truth docs
 - Prevent wrong-context work
 - Detect when a chat is long, mixed, unfocused, or contaminated
-- Decide whether to continue, refresh, move projects, use an existing indexed chat, or hand off to a new chat
-- Decide whether the chat is meaningful enough to track in `ai-context/chat-index.md`
+- Decide whether to continue, refresh, move projects, or hand off to a new chat
 
 ## Default new-chat prompt
 
@@ -58,7 +55,7 @@ Use this prompt when an existing chat may be stale, long, unfocused, contaminate
 ```text
 Read `ai-context/start-here.md` from `HaseebTron/orisen-master-docs` using GitHub.
 
-Check whether this chat should continue after a context refresh, move to another project, continue in an existing indexed chat, or hand off to a new chat.
+Check whether this chat should continue after a context refresh, move to another project, or hand off to a new chat.
 
 My current request:
 [insert request]
@@ -99,7 +96,6 @@ If the chat becomes long, stale, mixed, contaminated, or the user starts a new m
 - Continue here
 - Refresh context and continue here
 - Move to another project
-- Continue an existing indexed chat
 - Hand off to a new chat
 
 Do not do major new work in a chat that should be handed off unless the user explicitly asks to continue here.
@@ -109,22 +105,19 @@ Do not do major new work in a chat that should be handed off unless the user exp
 When this file is read, follow this order before answering the user's main question:
 
 1. Read `ai-context/project-routing.md`.
-2. Read `ai-context/chat-index.md`.
-3. Read `ai-context/handoff-rules.md`.
-4. Perform the project, chat, refresh, and handoff routing check.
-5. Decide whether the current project/chat is the correct place for the request.
-6. Decide whether the current chat should continue, refresh source context, move to another project, continue in an existing indexed chat, or hand off to a new chat.
-7. Decide whether the current or recommended chat is meaningful enough to track.
-8. If the request belongs in another project or existing chat, tell the user before answering the main question.
-9. If a handoff is recommended, follow `ai-context/handoff-rules.md` and provide the standard handoff prompt.
-10. If the current chat should exist and is meaningful enough to track, update `ai-context/chat-index.md` or provide the exact index entry to add.
-11. Read `ai-context/context-map.md`.
-12. Follow `context-map.md` to the project baseline docs and relevant task-specific source-of-truth docs.
-13. Answer the user's main question using the relevant docs.
+2. Read `ai-context/handoff-rules.md`.
+3. Perform the project, chat, refresh, and handoff routing check.
+4. Decide whether the current project/chat is the correct place for the request.
+5. Decide whether the current chat should continue, refresh source context, move to another project, or hand off to a new chat.
+6. If the request belongs in another project, tell the user before answering the main question.
+7. If a handoff is recommended, follow `ai-context/handoff-rules.md` and provide the standard handoff prompt.
+8. Read `ai-context/context-map.md`.
+9. Follow `context-map.md` to the project baseline docs and relevant task-specific source-of-truth docs.
+10. Answer the user's main question using the relevant docs.
 
 ## Project, chat, refresh, and handoff routing check
 
-Use this format before answering the main question when routing is non-obvious, when starting a new meaningful chat, or when this file is read inside an existing chat:
+Use this format before answering the main question when routing is non-obvious, when starting a meaningful new chat, or when this file is read inside an existing chat:
 
 ```markdown
 ## Project/chat routing check
@@ -139,22 +132,16 @@ Best project:
 - [Recommended project]
 
 Best chat:
-- Continue this chat / Refresh and continue this chat / Start a new chat / Use existing chat: [chat title if known]
-
-Official chat-index title:
-- [Title that should be used in ai-context/chat-index.md if this chat should be tracked]
-
-Suggested ChatGPT sidebar title:
-- [Optional title the user may manually rename the sidebar chat to]
+- Continue this chat / Refresh and continue this chat / Start a new chat / Move to another project
 
 Routing decision:
-- Correct project / Better handled in another project / Existing chat recommended / Refresh current chat / Handoff recommended / Current chat acceptable but not ideal
+- Correct project / Better handled in another project / Refresh current chat / Handoff recommended / Current chat acceptable but not ideal
 
 Reason:
 - [Brief explanation]
 
 Next action:
-- [Answer here / Refresh docs then answer / Ask in another project / Continue existing chat / Create new chat with handoff]
+- [Answer here / Refresh docs then answer / Ask in another project / Create new chat with handoff]
 ```
 
 For tiny follow-up questions after the chat has already booted correctly, do not output this block unless there is a routing, stale-context, handoff, or source-of-truth issue.
@@ -168,13 +155,6 @@ Instead:
 1. Say which project is better.
 2. Explain briefly why.
 3. Provide the exact prompt the user should paste in the correct project.
-4. Include the suggested ChatGPT sidebar title if the recommended chat is meaningful enough to track.
-
-## If an existing chat is better
-
-If `ai-context/chat-index.md` shows an active existing chat that clearly matches the request, recommend continuing that chat instead of creating a new one.
-
-Do not create a new chat-index entry if the better action is to continue an existing chat.
 
 ## If the current chat should refresh and continue
 
@@ -185,33 +165,6 @@ Refreshing is appropriate when the same task is continuing and the main risk is 
 ## If a new chat is better
 
 If the chat is long, mixed, contaminated by outdated context, or the request is a new major task, recommend a handoff to a new chat using `ai-context/handoff-rules.md`.
-
-## If the current chat should exist
-
-If the current chat is in the right project and is meaningful enough to track, update `ai-context/chat-index.md` or provide the exact entry to add.
-
-A chat is meaningful enough to track when it involves:
-
-- A new software slice
-- A new radar or ML experiment
-- A major product or strategy decision
-- A new marketing asset or campaign
-- A new fundraising asset or outreach sequence
-- A new source-of-truth doc
-- A major cross-domain decision
-- A meaningful implementation/debugging thread that may need to be found later
-
-Do not track tiny one-off clarifications, small wording fixes, quick formatting questions, or small Git questions unless the user explicitly asks.
-
-## Chat title reminder rule
-
-The official chat title is the title in `ai-context/chat-index.md`.
-
-The ChatGPT sidebar title is optional convenience metadata.
-
-The assistant cannot reliably rename the ChatGPT sidebar title automatically.
-
-If a meaningful chat is being tracked, the assistant may suggest a concise sidebar title, but should not interrupt tiny one-off questions only to suggest or confirm a title.
 
 ## Required source-of-truth routing
 
