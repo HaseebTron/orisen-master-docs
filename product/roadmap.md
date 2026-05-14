@@ -1,0 +1,137 @@
+# Product Roadmap
+
+## Purpose
+
+This file separates Orisen's engineering MVP, first customer-ready product, pilot product, v1 launch, and long-term roadmap.
+
+Its job is to prevent MVP scope, software implementation status, and long-term vision from being mixed together.
+
+This file should stay consistent with:
+
+- `ai-context/current-state.md`
+- `ai-context/source-of-truth-rules.md`
+- `product/product-overview.md`
+- `validation/evidence-log.md`
+
+## Roadmap principle
+
+Reliability comes before intelligence.
+
+Orisen must first make waking up reliable. AI, cloud intelligence, sleep-stage estimation, and personalization are valuable only if the core wake-up system works.
+
+## Engineering MVP
+
+The engineering MVP should prove the basic connected product loop:
+
+- User account creation
+- Device setup and pairing
+- App-based alarm setting
+- Cloud storage of alarm settings
+- Syncing alarm settings to the device
+- Local alarm storage on the device
+- Local alarm execution at the correct time
+- Presence-based wake completion
+- Re-trigger behavior if the user returns to bed
+- Basic gradual audio and light wake-up
+- Basic logging
+- Basic OTA update path, if feasible
+
+The engineering MVP does not need to prove the full long-term product vision.
+
+## First customer-ready product
+
+The first customer-ready product should go beyond the engineering MVP enough to deliver a credible customer promise.
+
+It should include:
+
+- Reliable local alarm execution
+- Presence-based wake completion
+- Re-trigger behavior if the user returns to bed
+- Simple usable app experience
+- Gradual audio wake-up behavior
+- Gradual light wake-up behavior
+- Basic sleep/session logging where useful
+- Basic device reliability and OTA support
+- Basic sensor-informed wake intervention if feasible
+- Sleep-phase-aware wake intervention if technically feasible
+- Careful user-facing claims around reduced grogginess and sleep inertia
+
+It does not need a perfect sleep-stage model.
+
+It should not overclaim grogginess reduction, sleep-stage accuracy, or artificial sleep phase transitioning until supported by evidence.
+
+## Pilot product
+
+The pilot product should be designed to collect evidence, not to look like a fully scaled consumer product.
+
+The pilot should test:
+
+- Whether users trust Orisen as their main alarm
+- Whether wake completion reduces oversleeping or returning to bed
+- Whether gradual audio/light makes mornings feel less brutal
+- Whether users understand the product value quickly
+- Whether users would pay for the product
+- What reliability issues appear in real bedrooms
+- What claims are supported by actual usage
+
+## V1 launch product
+
+The v1 launch product should be defined after pilot evidence improves.
+
+Do not finalize v1 launch scope until the following are better understood:
+
+- First customer segment
+- Required reliability standard
+- Pricing and willingness to pay
+- Hardware readiness
+- Radar/sensing readiness
+- App reliability
+- Claims supported by evidence
+
+## Later roadmap
+
+Later roadmap items may include:
+
+- More accurate sleep-stage model
+- Personalized wake intervention
+- Artificial sleep phase transitioning
+- Long-term user adaptation
+- Advanced sleep history and insights
+- Subscription features
+- Sleep onset support
+- White noise and bedtime routines
+- Android app
+- Multi-device households
+- Health platform integrations
+- Production-grade fleet management
+
+## Not now
+
+Unless future evidence or strategy changes, do not prioritize these for the engineering MVP:
+
+- Full Android app
+- Public App Store or Google Play launch
+- Subscription billing
+- Advanced sleep dashboard
+- Multi-device households
+- Advanced family/account sharing
+- Continuous raw radar cloud streaming
+- Fully polished ML model
+- Complex notification system
+- Complex admin dashboard
+- Production-scale analytics
+- Smart home integrations
+- Apple Health or Google Fit integration
+
+## Open questions
+
+- What is the minimum acceptable first customer-ready product?
+- What level of sensor-informed wake intervention is enough for first customers?
+- What must be true before paid preorders?
+- What must be true before a broader v1 launch?
+- Which roadmap items are actually valuable to users versus just interesting technically?
+
+## Notes
+
+- This file is a starter roadmap.
+- Update it as evidence, technical progress, and customer feedback improve.
