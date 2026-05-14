@@ -21,7 +21,7 @@ For new Orisen ChatGPT chats, start with:
 - Handoff decisions
 - Whether the task belongs in another ChatGPT project
 
-After that routing check, use this file to choose the right baseline pack and task-specific docs.
+After that routing check, use this file to choose the minimal starting context and any additional task-specific docs.
 
 ## GitHub-first context rule
 
@@ -29,16 +29,23 @@ Use `HaseebTron/orisen-master-docs` on GitHub as the source of truth.
 
 Do not assume ChatGPT Project source files are present or current.
 
-For new serious Orisen chats, read the relevant baseline pack from GitHub, then read task-specific docs only as needed.
+For new substantive Orisen chats, read the relevant minimal baseline from GitHub first, then read additional task-specific docs only as needed.
 
-## Baseline pack rule
+## Context loading rule
 
-Each project has two baseline levels:
+Each project has two context levels:
 
-- Minimal baseline: use for normal questions, quick routing, small decisions, and focused follow-ups.
-- Full baseline: use for important decisions, public claims, product direction, roadmap, architecture, fundraising, marketing, or cross-domain strategy.
+- Minimal baseline: the default starting point for new substantive chats in that project.
+- Full reference pack: the maximum recommended pack for broad or high-stakes tasks.
 
-Use the lightest baseline that can answer safely.
+Default workflow:
+
+1. Read the minimal baseline first.
+2. Assess the user's task.
+3. Read only the additional docs needed for that task.
+4. Use the full reference pack only when the task broadly affects product direction, public claims, roadmap, architecture, fundraising, marketing, or cross-domain strategy.
+
+Do not automatically load the full reference pack just because a chat is serious. Load it when the task needs that breadth.
 
 For any important Orisen decision, always include:
 
@@ -47,7 +54,7 @@ For any important Orisen decision, always include:
 
 These define current company truth and how to handle conflicts.
 
-## Project baseline doc packs
+## Project context packs
 
 ### Orisen General
 
@@ -60,7 +67,7 @@ Minimal baseline:
 - `ai-context/project-routing.md`
 - `ai-context/context-map.md`
 
-Full baseline:
+Full reference pack:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -83,7 +90,7 @@ Minimal baseline from this repo:
 - `ai-context/source-of-truth-rules.md`
 - `software/software-context-map.md`
 
-Full baseline from this repo:
+Full reference pack from this repo:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -106,7 +113,7 @@ Minimal baseline:
 - `ai-context/source-of-truth-rules.md`
 - `radar-ml/radar-ml-context-map.md`
 
-Full baseline:
+Full reference pack:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -129,7 +136,7 @@ Minimal baseline:
 - `marketing/marketing-context-map.md`
 - `marketing/positioning-and-messaging.md`
 
-Full baseline:
+Full reference pack:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -153,7 +160,7 @@ Minimal baseline:
 - `fundraising/fundraising-context-map.md`
 - `fundraising/investor-narrative.md`
 
-Full baseline:
+Full reference pack:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -176,7 +183,7 @@ Minimal baseline:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 
-Full baseline:
+Full reference pack:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -199,7 +206,9 @@ If a hardware context map does not exist yet, say so and recommend creating it o
 
 Use when the question affects product, market, business model, fundraising, positioning, or multiple teams.
 
-Start with the Orisen General baseline, then route to the relevant folder context map if needed:
+Start with the Orisen General minimal baseline, then read only the relevant additional docs. Use the Orisen General full reference pack only for broad strategic reviews or major source-of-truth decisions.
+
+Relevant folder context maps may include:
 
 - Product: `product/product-context-map.md`
 - Marketing: `marketing/marketing-context-map.md`
@@ -300,7 +309,7 @@ Important hardware docs may include:
 - `hardware/sensor-decisions.md`
 - `hardware/manufacturing-notes.md`
 
-If hardware docs do not exist yet, use the Orisen Hardware baseline and available product/roadmap context.
+If hardware docs do not exist yet, use the Orisen Hardware minimal baseline and only add product/roadmap context if needed.
 
 ### Software questions
 
@@ -336,13 +345,14 @@ Important radar/ML docs may include:
 When using this repo as context after project/chat/refresh/handoff routing:
 
 1. Read this file.
-2. Choose the minimal or full baseline pack for the current project/task.
-3. Read `ai-context/current-state.md` and `ai-context/source-of-truth-rules.md` for any important decision if they were not already included.
-4. Route to the relevant folder context map.
-5. Read the specific docs listed there for the task.
-6. If docs conflict, apply `ai-context/source-of-truth-rules.md`.
-7. If a needed doc does not exist, say so and recommend creating it only if needed.
-8. Do not assume old notes or brainstorms are current truth unless promoted into source-of-truth docs.
+2. Read the relevant project minimal baseline.
+3. Assess the user's task.
+4. Read only the additional task-specific docs needed.
+5. Use the full reference pack only when the task requires broad context.
+6. Read `ai-context/current-state.md` and `ai-context/source-of-truth-rules.md` for any important decision if they were not already included.
+7. If docs conflict, apply `ai-context/source-of-truth-rules.md`.
+8. If a needed doc does not exist, say so and recommend creating it only if needed.
+9. Do not assume old notes or brainstorms are current truth unless promoted into source-of-truth docs.
 
 ## Current repo buildout status
 
