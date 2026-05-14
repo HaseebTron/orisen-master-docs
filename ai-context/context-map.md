@@ -17,11 +17,8 @@ For new ChatGPT chats, the preferred first file is:
 `start-here.md` handles the boot sequence for new and refreshed chats, including:
 
 - Project routing
-- Existing-chat checks
-- Chat-index checks
 - Refresh-vs-new-chat decisions
 - Handoff decisions
-- Whether the current chat should exist
 - Whether the request belongs in another ChatGPT project
 
 After that routing check is complete, `start-here.md` sends the assistant back to this file to route into the correct source-of-truth docs.
@@ -244,7 +241,7 @@ Important fundraising docs may include:
 - `fundraising/traction.md`
 - `fundraising/outreach-strategy.md`
 
-Fundraising docs can be ambitious, but must not overclaim beyond product truth and evidence.
+Fundraising can be ambitious, but must not overclaim beyond product truth and evidence.
 
 ### Business questions
 
@@ -340,7 +337,6 @@ The current routing docs are:
 
 - `ai-context/start-here.md`
 - `ai-context/project-routing.md`
-- `ai-context/chat-index.md`
 - `ai-context/handoff-rules.md`
 - `ai-context/context-map.md`
 - `ai-context/repo-backlog.md`
