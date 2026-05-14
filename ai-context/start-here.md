@@ -113,7 +113,37 @@ When this file is read, follow this order before answering the user's main quest
 7. If a handoff is recommended, follow `ai-context/handoff-rules.md` and provide the standard handoff prompt.
 8. Read `ai-context/context-map.md`.
 9. Follow `context-map.md` to the project baseline docs and relevant task-specific source-of-truth docs.
-10. Answer the user's main question using the relevant docs.
+10. Provide the context loaded summary.
+11. Answer the user's main question using the relevant docs.
+
+## Context loaded summary
+
+After completing the boot sequence and before answering the user's main request, briefly state which source files were read.
+
+Use this format:
+
+```markdown
+## Context loaded
+
+Baseline files read:
+- `path/to/file.md`
+
+Task-specific files read:
+- `path/to/file.md`
+- None
+
+Files not found:
+- `path/to/missing-file.md`
+- None
+```
+
+List files that were actually read from GitHub in this chat, not merely files that might be useful later.
+
+Keep this section concise.
+
+For tiny follow-up questions after the chat has already booted, do not repeat the context loaded summary unless additional files are read.
+
+For mid-chat context expansion, state only the additional files read before answering.
 
 ## Project, chat, refresh, and handoff routing check
 
