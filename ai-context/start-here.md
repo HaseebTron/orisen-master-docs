@@ -1,18 +1,10 @@
 # Start Here
 
-## Purpose of this file
+## Purpose
 
-This is the first file to read when starting a new Orisen ChatGPT chat or when an existing Orisen chat may need a context refresh or handoff decision.
+This is the first file to read when starting a new Orisen ChatGPT chat, refreshing a stale Orisen chat, or deciding whether a task belongs in another Orisen project.
 
-Its job is to route the chat before work begins or before major work continues.
-
-It helps determine:
-
-- Whether the current ChatGPT project is the right project for the request
-- Whether the current chat should continue, refresh context, move projects, or hand off to a new chat
-- Which source-of-truth docs should be read before answering
-
-This file is a boot sequence. It does not replace the source-of-truth docs.
+This file is a boot router. It does not replace the source-of-truth docs.
 
 ## GitHub source-of-truth rule
 
@@ -20,20 +12,29 @@ Use `HaseebTron/orisen-master-docs` on GitHub as the source of truth.
 
 Do not assume ChatGPT Project source files are present or current.
 
-At the start of a new Orisen chat, read the baseline docs required for the current project and task from GitHub.
+At the start of a meaningful new Orisen chat, read the relevant docs from GitHub before answering.
 
-After the baseline docs are read, read additional task-specific docs only as needed.
+## GitHub failure fallback
 
-## Purpose of prompting ChatGPT to read this file
+If `ai-context/start-here.md` or required GitHub source files cannot be read, say:
 
-Prompting ChatGPT to read `start-here.md` should:
+```text
+Boot not completed: I could not read `ai-context/start-here.md` from GitHub.
+```
 
-- Boot the chat properly before meaningful Orisen work
-- Refresh stale context when needed
-- Route the task to the right project and source-of-truth docs
-- Prevent wrong-context work
-- Detect when a chat is long, mixed, unfocused, or contaminated
-- Decide whether to continue, refresh, move projects, or hand off to a new chat
+Then answer only from:
+
+- user-provided context in the current chat
+- files pasted directly by the user
+- clearly labeled prior context or memory
+
+Do not imply that GitHub source-of-truth docs were loaded if they were not loaded.
+
+## Source freshness rule
+
+If the user says GitHub docs were updated, or if the answer depends on recently changed source-of-truth docs, reread the relevant GitHub files before making a source-of-truth decision.
+
+Do not assume a file read earlier in the chat is still current after the user reports a repo update.
 
 ## Default new-chat prompt
 
@@ -46,11 +47,9 @@ My question:
 [insert question]
 ```
 
-Project Instructions may also require this file to be read automatically at the start of every new chat.
+## Default refresh prompt
 
-## Default refresh prompt inside an existing chat
-
-Use this prompt when an existing chat may be stale, long, unfocused, contaminated by mixed context, or drifting from its original purpose:
+Use this prompt when an existing chat may be stale, long, mixed, contaminated, or drifting from its original purpose:
 
 ```text
 Read `ai-context/start-here.md` from `HaseebTron/orisen-master-docs` using GitHub.
@@ -61,48 +60,9 @@ My current request:
 [insert request]
 ```
 
-## Small-task exception after boot
-
-After a chat has completed the boot sequence and read the relevant baseline docs, answer small follow-up questions directly using the current chat context.
-
-Do not rerun the full boot workflow for tiny wording fixes, simple explanations, small Git questions, formatting help, or next-step questions inside the same task.
-
-Rerun the workflow only if the request affects source-of-truth docs, product direction, public claims, roadmap, architecture, fundraising narrative, project routing, or the chat may be stale, mixed, or contaminated.
-
-## Mid-chat context expansion rule
-
-After the initial boot sequence, the assistant may answer small follow-up questions using the current chat context.
-
-If a later user request still belongs in the current project and chat, but requires source-of-truth docs that were not read earlier, do not rerun the full boot sequence by default.
-
-Instead:
-
-1. Briefly tell the user that the request needs additional source context.
-2. Read `ai-context/context-map.md` if needed.
-3. Read the relevant folder context map and task-specific docs from GitHub.
-4. State which additional files were read.
-5. Answer the user's request using the expanded context.
-
-Use this for context expansion inside the same chat, not for stale, mixed, contaminated, or cross-domain chats.
-
-If the new request changes the purpose of the chat, affects project routing, or suggests the chat is stale or contaminated, use the refresh or handoff workflow instead.
-
-## Ongoing chat monitoring rule
-
-During the chat, monitor whether the current request still fits the original purpose of the chat.
-
-If the chat becomes long, stale, mixed, contaminated, or the user starts a new major task, reread `ai-context/start-here.md` and check whether to:
-
-- Continue here
-- Refresh context and continue here
-- Move to another project
-- Hand off to a new chat
-
-Do not do major new work in a chat that should be handed off unless the user explicitly asks to continue here.
-
 ## Required boot sequence
 
-When this file is read, follow this order before answering the user's main question:
+When this file is read for a meaningful Orisen task, follow this order before answering the main request:
 
 1. Read `ai-context/project-routing.md`.
 2. Read `ai-context/handoff-rules.md`.
@@ -112,13 +72,70 @@ When this file is read, follow this order before answering the user's main quest
 6. If the request belongs in another project, tell the user before answering the main question.
 7. If a handoff is recommended, follow `ai-context/handoff-rules.md` and provide the standard handoff prompt.
 8. Read `ai-context/context-map.md`.
-9. Follow `context-map.md` to the project baseline docs and relevant task-specific source-of-truth docs.
+9. Follow `context-map.md` to the correct minimal or full baseline pack and any task-specific docs.
 10. Provide the context loaded summary.
 11. Answer the user's main question using the relevant docs.
 
+## Small-task exception after boot
+
+After a chat has completed the boot sequence and read the relevant baseline docs, answer small follow-up questions directly using the current chat context.
+
+Do not rerun the full boot workflow for:
+
+- tiny wording fixes
+- simple explanations
+- small Git questions
+- formatting help
+- next-step questions inside the same task
+- minor clarifications that do not affect source-of-truth decisions
+
+Rerun or expand context only if the request affects source-of-truth docs, product direction, public claims, roadmap, architecture, fundraising narrative, project routing, or the chat may be stale, mixed, or contaminated.
+
+## Mid-chat context expansion rule
+
+After initial boot, do not rerun the full boot sequence by default when the user asks a related follow-up that still belongs in the same project and chat.
+
+If the new request needs source-of-truth docs that were not read earlier:
+
+1. Briefly tell the user that the request needs additional source context.
+2. Read `ai-context/context-map.md` if needed.
+3. Read the relevant folder context map and task-specific docs from GitHub.
+4. State which additional files were read.
+5. Answer using the expanded context.
+
+Use this for context expansion inside the same chat, not for stale, mixed, contaminated, or cross-domain chats.
+
+If the request changes the purpose of the chat, affects project routing, or suggests the chat is stale or contaminated, use the refresh or handoff workflow instead.
+
+## Mid-chat context expansion examples
+
+Examples:
+
+- In an Orisen Software chat, if the user moves from OTA to BLE onboarding, read `software/software-context-map.md` and the BLE slice/spec docs from the software repo. Do not rerun the full boot sequence unless the chat is stale or contaminated.
+- In an Orisen Marketing + GTM chat, if the user asks whether a claim is safe, read `product/claims-and-evidence.md` and `validation/evidence-log.md`.
+- In an Orisen Fundraising chat, if the user asks how to frame traction, read `fundraising/fundraising-context-map.md`, `fundraising/investor-narrative.md`, and `validation/evidence-log.md`.
+- In Orisen Radar + ML, if the user asks whether a paper supports a product claim, read the relevant radar/ML docs plus `product/claims-and-evidence.md` and `validation/evidence-log.md`.
+- In Orisen General, if the user shifts from project structure to fundraising strategy, expand context by reading fundraising docs. Do not recommend a new chat unless the current chat is long, mixed, or contaminated.
+
+## Handoff trigger
+
+During the chat, monitor whether the current request still fits the original purpose of the chat.
+
+Reread `ai-context/start-here.md` and check for refresh, project move, or handoff when:
+
+- the chat becomes long, stale, mixed, or contaminated
+- the user starts a new major task
+- a new software slice starts
+- a new radar/ML experiment starts
+- a new marketing asset or campaign starts
+- a new fundraising asset or outreach sequence starts
+- the request no longer fits the current project
+
+Do not use handoff rules to avoid simple follow-up questions.
+
 ## Context loaded summary
 
-After completing the boot sequence and before answering the user's main request, briefly state which source files were read.
+After completing boot and before answering the user's main request, briefly state which files were actually read from GitHub in this chat.
 
 Use this format:
 
@@ -137,15 +154,11 @@ Files not found:
 - None
 ```
 
-List files that were actually read from GitHub in this chat, not merely files that might be useful later.
-
-Keep this section concise.
-
 For tiny follow-up questions after the chat has already booted, do not repeat the context loaded summary unless additional files are read.
 
 For mid-chat context expansion, state only the additional files read before answering.
 
-## Project, chat, refresh, and handoff routing check
+## Project/chat routing check
 
 Use this format before answering the main question when routing is non-obvious, when starting a meaningful new chat, or when this file is read inside an existing chat:
 
@@ -185,27 +198,6 @@ Instead:
 1. Say which project is better.
 2. Explain briefly why.
 3. Provide the exact prompt the user should paste in the correct project.
-
-## If the current chat should refresh and continue
-
-If the current request still fits the original purpose of the chat, but source context may be stale, continue in this chat after reading the relevant source-of-truth docs through `ai-context/context-map.md`.
-
-Refreshing is appropriate when the same task is continuing and the main risk is stale source context, not contaminated conversation context.
-
-## If a new chat is better
-
-If the chat is long, mixed, contaminated by outdated context, or the request is a new major task, recommend a handoff to a new chat using `ai-context/handoff-rules.md`.
-
-## Required source-of-truth routing
-
-After the project/chat/refresh/handoff routing check is complete, read `ai-context/context-map.md` and follow its routing instructions.
-
-For any important Orisen decision, also read:
-
-- `ai-context/current-state.md`
-- `ai-context/source-of-truth-rules.md`
-
-Then read the relevant project baseline doc pack, folder context map, and task-specific docs.
 
 ## Important principle
 
