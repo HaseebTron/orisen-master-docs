@@ -9,13 +9,12 @@ It also defines the standard handoff prompt format.
 Read this file during the `ai-context/start-here.md` boot sequence after reading:
 
 - `ai-context/project-routing.md`
-- `ai-context/chat-index.md`
 
 This file does not replace source-of-truth docs. It only decides whether the current chat is still a safe place to continue the work.
 
 ## Core rule
 
-Refresh if the same task is continuing but context may be stale.
+Refresh if the same task is continuing but source context may be stale.
 
 Start a new chat if the chat has become long, mixed, contaminated, or the user is starting a new major task.
 
@@ -29,7 +28,6 @@ When this file is read, choose one of these actions:
 2. Continue in this chat without a full refresh.
 3. Recommend starting a new chat in the same project.
 4. Recommend moving to another Orisen project.
-5. Recommend continuing an existing indexed chat.
 
 ## When to refresh source context and continue
 
@@ -77,61 +75,6 @@ Examples:
 
 If the request belongs in another project, do not answer the main question yet. Provide the exact prompt to paste in the better project.
 
-## When to continue an existing indexed chat
-
-Recommend continuing an existing chat when `ai-context/chat-index.md` shows an active chat with the same project, same task, and same working context.
-
-Do not create a new chat-index entry if an existing chat is clearly better.
-
-## Status labels for chat-index.md
-
-Use these statuses in `ai-context/chat-index.md`:
-
-- `Active`: The chat is still the recommended place for that task.
-- `Completed`: The task was completed and no further work is expected in that chat.
-- `Handoff Recommended`: The task may continue, but a new chat is safer.
-- `Superseded`: A newer chat has replaced this chat.
-- `Archived`: The chat is kept for reference only.
-
-## When to mark Handoff Recommended
-
-Mark a chat as `Handoff Recommended` when:
-
-- The chat has become long or unfocused.
-- A clean handoff would reduce mistakes.
-- The task is not fully complete, but the current chat is no longer ideal.
-- The chat contains useful context but also enough clutter to create risk.
-
-## When to mark Superseded
-
-Mark a chat as `Superseded` when:
-
-- A new chat has taken over the task.
-- A better project/chat now exists for the work.
-- The old chat should no longer be used for active work.
-
-When possible, include the title of the replacement chat in the `Current outcome` or `Follow-up needed` section.
-
-## Official chat title rule
-
-The official chat title is the title in `ai-context/chat-index.md`.
-
-The ChatGPT sidebar title is optional convenience metadata.
-
-The assistant cannot reliably rename the ChatGPT sidebar title automatically.
-
-When creating a new chat-index entry, the assistant should provide a suggested sidebar title for the user to manually rename the chat if desired.
-
-## Sidebar title confirmation rule
-
-If the user says they renamed the chat to a specific title, compare the user's provided title exactly against the suggested ChatGPT sidebar title.
-
-If the title matches exactly, update `ai-context/chat-index.md` so future refreshes do not keep reminding the user to rename that chat.
-
-If the title does not match exactly, tell the user the expected title and do not mark the sidebar title as confirmed.
-
-The assistant cannot independently verify the sidebar title. It can only record the user's confirmation.
-
 ## Handoff prompt format
 
 When recommending a new chat, provide a handoff prompt in this format:
@@ -143,9 +86,6 @@ This is a continuation from a previous Orisen chat.
 
 Previous project:
 - [Project name]
-
-Previous chat/index title:
-- [Official chat-index title]
 
 Why this new chat exists:
 - [New major task / chat too long / topic shift / cleaner review / moved project / other reason]
@@ -168,7 +108,7 @@ Current task:
 
 Before answering:
 - Confirm whether this is the correct project/chat for the task.
-- If another project or existing chat is better, tell me before doing the work.
+- If another project is better, tell me before doing the work.
 ```
 
 ## Handoff response format
@@ -184,32 +124,11 @@ Reason:
 Recommended project:
 - [Project name]
 
-Recommended chat/index title:
-- [Title]
-
-Suggested ChatGPT sidebar title:
-- [Title]
-
 Prompt to paste in the new chat:
 ```text
 [handoff prompt]
 ```
-
-Chat-index update:
-- [Update made / Exact update to make / Not needed]
 ```
-
-## Updating chat-index.md
-
-If GitHub write access is available and the chat is meaningful enough to track, update `ai-context/chat-index.md` when:
-
-- A new meaningful chat is created.
-- A chat status changes to `Completed`, `Handoff Recommended`, `Superseded`, or `Archived`.
-- A replacement chat supersedes an older chat.
-- A sidebar title is confirmed by the user.
-- A major decision or file update should be discoverable later.
-
-If direct updating is not possible, provide the exact markdown entry or edit for the user to paste.
 
 ## Important principle
 
