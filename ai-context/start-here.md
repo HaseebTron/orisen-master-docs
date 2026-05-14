@@ -72,6 +72,24 @@ Do not rerun the full boot workflow for tiny wording fixes, simple explanations,
 
 Rerun the workflow only if the request affects source-of-truth docs, product direction, public claims, roadmap, architecture, fundraising narrative, project routing, or the chat may be stale, mixed, or contaminated.
 
+## Mid-chat context expansion rule
+
+After the initial boot sequence, the assistant may answer small follow-up questions using the current chat context.
+
+If a later user request still belongs in the current project and chat, but requires source-of-truth docs that were not read earlier, do not rerun the full boot sequence by default.
+
+Instead:
+
+1. Briefly tell the user that the request needs additional source context.
+2. Read `ai-context/context-map.md` if needed.
+3. Read the relevant folder context map and task-specific docs from GitHub.
+4. State which additional files were read.
+5. Answer the user's request using the expanded context.
+
+Use this for context expansion inside the same chat, not for stale, mixed, contaminated, or cross-domain chats.
+
+If the new request changes the purpose of the chat, affects project routing, or suggests the chat is stale or contaminated, use the refresh or handoff workflow instead.
+
 ## Ongoing chat monitoring rule
 
 During the chat, monitor whether the current request still fits the original purpose of the chat.
