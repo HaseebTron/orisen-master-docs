@@ -15,8 +15,11 @@ For important marketing work, start with:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `product/product-overview.md`
+- `product/claims-and-evidence.md`
+- `product/target-customer.md`
+- `marketing/positioning-and-messaging.md`
 
-Marketing must stay downstream from current company truth, product direction, and claims/evidence boundaries.
+Marketing must stay downstream from current company truth, product direction, target customer assumptions, and claims/evidence boundaries.
 
 ## Marketing folder role
 
@@ -34,6 +37,16 @@ The `marketing/` folder defines:
 
 Marketing docs should translate product truth into compelling external messaging without inventing unsupported capabilities.
 
+## Mid-chat context expansion
+
+If a marketing chat later asks a more specific marketing question than the initial baseline docs covered, expand context inside the same chat instead of rerunning the full boot workflow.
+
+Before answering, read this context map and the most relevant task-specific docs below.
+
+State which extra files were read when the context expansion is meaningful.
+
+If a marketing question changes product truth, claims, roadmap, pricing, fundraising story, or target customer strategy, escalate to Orisen General.
+
 ## Marketing docs and when to use them
 
 ### Overall marketing strategy
@@ -49,7 +62,10 @@ Use for questions like:
 Read:
 
 - `marketing/marketing-strategy.md` if it exists
+- `marketing/positioning-and-messaging.md`
 - `product/product-overview.md`
+- `product/target-customer.md`
+- `validation/evidence-log.md`
 - `ai-context/current-state.md`
 
 ### Positioning and messaging
@@ -64,14 +80,54 @@ Use for questions like:
 
 Read:
 
-- `marketing/positioning-and-messaging.md` if it exists
+- `marketing/positioning-and-messaging.md`
 - `product/product-overview.md`
-- `product/claims-and-evidence.md` if it exists
+- `product/claims-and-evidence.md`
+- `product/target-customer.md`
+- `validation/evidence-log.md` if the wording makes evidence or validation claims
 - `ai-context/current-state.md`
 
 Important rule:
 
 Marketing can be bold, but public claims must remain consistent with what is validated or carefully framed as planned direction.
+
+### Claims-sensitive copy
+
+Use for questions like:
+
+- Can we say Orisen reduces grogginess?
+- Can we say Orisen wakes users in a lighter sleep stage?
+- Can we say guaranteed wake-up?
+- Can we mention artificial sleep phase transitioning?
+- Can we say clinically proven, medical-grade, or sleep-stage accurate?
+
+Read:
+
+- `product/claims-and-evidence.md`
+- `validation/evidence-log.md`
+- `marketing/positioning-and-messaging.md`
+- `product/product-overview.md`
+
+If evidence is missing or weak, weaken the wording rather than inventing support.
+
+### Homepage, landing page, and waitlist copy
+
+Use for questions like:
+
+- What should the website headline be?
+- How should the waitlist page explain Orisen?
+- What sections should the landing page include?
+- How should we improve conversion?
+- What should above-the-fold copy say?
+
+Read:
+
+- `marketing/positioning-and-messaging.md`
+- `marketing/waitlist-conversion.md` if it exists
+- `marketing/customer-language.md` if it exists
+- `product/product-overview.md`
+- `product/claims-and-evidence.md`
+- `validation/evidence-log.md` if conversion or claim evidence matters
 
 ### Customer language and research
 
@@ -87,7 +143,8 @@ Read:
 - `marketing/customer-language.md` if it exists
 - `marketing/reddit-research.md` if it exists
 - `marketing/tiktok-research.md` if it exists
-- `product/target-customer.md` if it exists
+- `product/target-customer.md`
+- `validation/evidence-log.md`
 
 ### Content pillars and founder-led content
 
@@ -104,7 +161,9 @@ Read:
 - `marketing/content-pillars.md` if it exists
 - `marketing/founder-led-content.md` if it exists
 - `marketing/marketing-strategy.md` if it exists
+- `marketing/positioning-and-messaging.md`
 - `product/product-overview.md`
+- `product/target-customer.md`
 
 ### LinkedIn strategy
 
@@ -119,7 +178,10 @@ Read:
 
 - `marketing/linkedin-playbook.md` if it exists
 - `marketing/content-pillars.md` if it exists
+- `marketing/founder-led-content.md` if it exists
+- `marketing/positioning-and-messaging.md`
 - `fundraising/fundraising-context-map.md` if the post targets investors
+- `validation/evidence-log.md` if traction or validation is mentioned
 
 ### X / Twitter strategy
 
@@ -134,6 +196,7 @@ Read:
 
 - `marketing/x-playbook.md` if it exists
 - `marketing/content-pillars.md` if it exists
+- `marketing/positioning-and-messaging.md`
 
 ### TikTok and Instagram strategy
 
@@ -150,6 +213,7 @@ Read:
 - `marketing/instagram-playbook.md` if it exists
 - `marketing/customer-language.md` if it exists
 - `marketing/content-pillars.md` if it exists
+- `marketing/positioning-and-messaging.md`
 
 ### Reddit and community research
 
@@ -164,6 +228,7 @@ Read:
 
 - `marketing/reddit-research.md` if it exists
 - `marketing/customer-language.md` if it exists
+- `product/target-customer.md`
 
 ### GTM, launch, and waitlist conversion
 
@@ -180,19 +245,21 @@ Read:
 - `marketing/gtm.md` if it exists
 - `marketing/launch-plan.md` if it exists
 - `marketing/waitlist-conversion.md` if it exists
+- `marketing/positioning-and-messaging.md`
 - `business/business-context-map.md` if pricing or business model matters
-- `product/target-customer.md` if it exists
+- `product/target-customer.md`
+- `validation/evidence-log.md`
 
 ## Current stable marketing docs
 
 Currently stable marketing docs:
 
-- None yet beyond this context map.
+- `marketing/marketing-context-map.md`
+- `marketing/positioning-and-messaging.md`
 
 Planned marketing docs:
 
 - `marketing/marketing-strategy.md`
-- `marketing/positioning-and-messaging.md`
 - `marketing/customer-language.md`
 - `marketing/content-pillars.md`
 - `marketing/founder-led-content.md`
@@ -205,7 +272,7 @@ Planned marketing docs:
 - `marketing/instagram-playbook.md`
 - `marketing/reddit-research.md`
 
-If a planned doc does not exist yet, use `ai-context/current-state.md`, `product/product-overview.md`, and any available marketing docs, then recommend creating the missing doc if the question requires it.
+If a planned doc does not exist yet, use `ai-context/current-state.md`, `product/product-overview.md`, `product/target-customer.md`, `product/claims-and-evidence.md`, and available marketing docs, then recommend creating the missing doc if the question requires it.
 
 ## Marketing interpretation rules
 
