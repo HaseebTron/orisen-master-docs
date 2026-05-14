@@ -16,6 +16,7 @@ For radar/ML work that may affect product claims, roadmap, or fundraising, start
 - `ai-context/source-of-truth-rules.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
+- `product/roadmap.md`
 - `validation/evidence-log.md`
 
 ## Radar/ML folder role
@@ -34,47 +35,127 @@ The radar/ML docs should define:
 - Artificial sleep phase transitioning experiments
 - Technical evidence needed before stronger claims
 
-## Main workstreams
+## Mid-chat context expansion
+
+If a radar/ML chat later asks a more specific technical question than the initial baseline docs covered, expand context inside the same chat instead of rerunning the full boot workflow.
+
+Before answering, read this context map and the most relevant task-specific docs below.
+
+State which extra files were read when the context expansion is meaningful.
+
+If a radar/ML question changes product truth, public claims, roadmap priority, first customer-ready product scope, marketing claims, or fundraising story, escalate to Orisen General.
+
+## Main workstreams and routing
 
 ### Radar module evaluation
 
-Use for:
+Use for questions like:
 
-- XM125 / Acconeer A121 evaluation
-- V-LD3 / TI radar evaluation
-- Sensor placement
-- Signal quality
-- Hardware/software tradeoffs
+- Should Orisen use XM125 / Acconeer A121?
+- Should Orisen use V-LD3 or a TI-based radar module?
+- Which module is better for presence, breathing, heart signal, RRV, HRV, or sleep staging?
+- What are the hardware/software tradeoffs?
+- What radar module should be tested first?
 
-### Signal processing
+Read:
 
-Use for:
+- `radar-ml/radar-module-decision.md` if it exists
+- `hardware/hardware-context-map.md` if hardware constraints matter
+- `software/software-context-map.md` if firmware integration matters
+- `product/roadmap.md`
+- `validation/evidence-log.md`
 
-- Respiratory rate variability
-- Heart rate variability
-- Movement detection
-- Presence detection quality
-- Raw radar data versus manufacturer pipeline outputs
+### Signal processing and feature extraction
+
+Use for questions like:
+
+- How do we extract respiratory rate variability?
+- How do we extract heart rate variability?
+- How do we extract movement?
+- Should we use raw radar data or manufacturer pipeline outputs?
+- What data quality is needed for sleep-stage modeling?
+
+Read:
+
+- `radar-ml/vital-signs-pipeline.md` if it exists
+- `radar-ml/research-notes.md` if it exists
+- `radar-ml/technical-validation.md` if it exists
+- `software/software-context-map.md` if firmware or data logging matters
 
 ### Sleep-stage modeling
 
-Use for:
+Use for questions like:
 
-- Feature engineering
-- Sleep-stage classification
-- Dataset selection
-- Research paper interpretation
-- Model accuracy requirements
-- Real-time model constraints
+- How should Orisen classify sleep stages?
+- Which features should feed the model?
+- Which papers or datasets matter?
+- How accurate does the model need to be?
+- Should Orisen use HRV, RRV, movement, or radar-derived features?
+- What is realistic for MVP, pilot, and v1?
+
+Read:
+
+- `radar-ml/sleep-stage-model.md` if it exists
+- `radar-ml/research-notes.md` if it exists
+- `radar-ml/vital-signs-pipeline.md` if it exists
+- `radar-ml/technical-validation.md` if it exists
+- `product/claims-and-evidence.md`
+- `validation/evidence-log.md`
+
+### Paper, repo, and dataset review
+
+Use for questions like:
+
+- What does this paper actually prove?
+- Does this GitHub repo take raw radar data or derived features?
+- Can we reuse this model?
+- Which dataset should we use?
+- What are the limitations of a study?
+
+Read:
+
+- `radar-ml/research-notes.md` if it exists
+- `radar-ml/sleep-stage-model.md` if it exists
+- `radar-ml/vital-signs-pipeline.md` if it exists
+
+Also read the external paper, repo, or dataset directly when provided or when current accuracy matters.
+
+Do not infer that a paper proves Orisen's product claims unless the evidence is directly applicable.
 
 ### Intervention loop
 
-Use for:
+Use for questions like:
 
-- Sensor-informed wake intervention
-- Gradual audio/light feedback loop
-- Artificial sleep phase transitioning experiments
-- Measuring whether interventions reduce perceived grogginess
+- How should audio/light interventions respond to sensed sleep state?
+- Can Orisen move someone from deep sleep to light sleep before waking?
+- What would artificial sleep phase transitioning require?
+- How do we test whether intervention reduces grogginess?
+- What should be MVP versus long-term?
+
+Read:
+
+- `radar-ml/intervention-loop.md` if it exists
+- `radar-ml/sleep-stage-model.md` if it exists
+- `radar-ml/technical-validation.md` if it exists
+- `product/roadmap.md`
+- `product/claims-and-evidence.md`
+- `validation/evidence-log.md`
+
+### Technical validation
+
+Use for questions like:
+
+- What do we need to validate before claiming sleep-stage awareness?
+- What tests should we run first?
+- What evidence is needed for radar signal quality?
+- How do we decide whether a radar/ML approach is good enough?
+
+Read:
+
+- `radar-ml/technical-validation.md` if it exists
+- `validation/evidence-log.md`
+- `product/claims-and-evidence.md`
+- `product/roadmap.md`
 
 ## Claims boundary
 
@@ -91,13 +172,17 @@ Escalate to Orisen General before changing claims around:
 
 ## Current status
 
-This is a starter context map.
+This is a strengthened starter context map.
 
 Detailed radar/ML docs should be added as the work becomes active.
 
-## Planned docs
+## Current stable radar/ML docs
 
-Potential future docs:
+Currently stable radar/ML docs:
+
+- `radar-ml/radar-ml-context-map.md`
+
+Planned radar/ML docs:
 
 - `radar-ml/radar-module-decision.md`
 - `radar-ml/vital-signs-pipeline.md`
@@ -105,3 +190,15 @@ Potential future docs:
 - `radar-ml/intervention-loop.md`
 - `radar-ml/research-notes.md`
 - `radar-ml/technical-validation.md`
+
+If a planned doc does not exist yet, use `ai-context/current-state.md`, `product/product-overview.md`, `product/claims-and-evidence.md`, `product/roadmap.md`, `validation/evidence-log.md`, and available radar/ML docs, then recommend creating the missing doc if the question requires it.
+
+## Radar/ML interpretation rules
+
+- Radar/ML docs are downstream from product truth and evidence boundaries.
+- Do not treat technical possibility as validated product evidence.
+- Do not turn research-paper claims into Orisen public claims without evidence.
+- Separate presence detection, vital-sign extraction, sleep-stage estimation, and intervention control.
+- Presence-based wake completion is the validated wedge.
+- Sleep-stage-aware intervention and artificial sleep phase transitioning are strategically important but currently need technical validation and careful claims.
+- If a radar/ML decision changes product roadmap or public claims, escalate to Orisen General.
