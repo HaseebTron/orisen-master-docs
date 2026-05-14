@@ -21,9 +21,31 @@ This file should be read during the `ai-context/start-here.md` boot sequence bef
 
 A chat should have one clear job.
 
-If a chat starts covering a new slice, new domain, new asset, or major new decision, create a new chat and add an entry to this index if the chat is meaningful enough to track.
+The chat index is a discovery and handoff tool, not a bureaucracy.
 
-Do not track every tiny one-off question.
+Use it to track chats that are likely to matter later. Do not update it just because a chat was useful.
+
+Track a chat when it creates or changes durable context, such as:
+
+- A source-of-truth doc
+- A major product or strategy decision
+- A software slice
+- A meaningful debugging thread
+- A radar or ML experiment
+- A marketing asset or campaign
+- A fundraising asset or outreach sequence
+- A decision likely to be referenced later
+
+Do not track:
+
+- Tiny wording fixes
+- Quick clarifications
+- Small Git questions
+- Simple next-step questions
+- One-off explanations
+- Short tactical help with no lasting decision
+
+If unsure, do not track the chat unless the user asks or the chat produces something that should be found later.
 
 ## Official chat title rule
 
@@ -33,11 +55,13 @@ The ChatGPT sidebar title is optional convenience metadata.
 
 The assistant cannot reliably rename the ChatGPT sidebar title automatically.
 
-When creating a new chat-index entry, the assistant should provide a suggested ChatGPT sidebar title for the user to manually rename the chat if desired.
+When creating a new chat-index entry, the assistant may provide a suggested ChatGPT sidebar title for the user to manually rename the chat if desired.
 
 If the user confirms that the sidebar chat has been renamed to the suggested title, record that confirmation in the relevant chat entry.
 
 If the sidebar title is confirmed, future reads of `ai-context/start-here.md` should not keep reminding the user to rename that chat.
+
+Do not interrupt tiny one-off questions only to suggest or confirm a sidebar title.
 
 ## Status labels
 
@@ -60,28 +84,6 @@ Use these values:
 
 The assistant cannot independently verify the sidebar title. Confirmation means the user reported the rename.
 
-## What counts as meaningful enough to track
-
-Track chats that involve:
-
-- A new software slice
-- A meaningful debugging thread
-- A new radar or ML experiment
-- A major product or strategy decision
-- A new marketing asset or campaign
-- A new fundraising asset or outreach sequence
-- A new source-of-truth doc
-- A major cross-domain decision
-- A decision likely to be referenced later
-
-Do not normally track:
-
-- Tiny wording fixes
-- One-off clarifications
-- Quick formatting questions
-- Small Git questions
-- Short tactical questions with no lasting decision
-
 ## Required routing process for new or refreshed chats
 
 When a new chat starts or an existing chat asks the assistant to read `ai-context/start-here.md`, the assistant should:
@@ -90,12 +92,11 @@ When a new chat starts or an existing chat asks the assistant to read `ai-contex
 2. Check whether an existing active chat already matches the user's task.
 3. Check whether the current project is the correct project using `ai-context/project-routing.md`.
 4. Check whether the current chat should continue, refresh source context, hand off, move projects, or use an existing indexed chat using `ai-context/handoff-rules.md`.
-5. Check whether the relevant chat's sidebar title status is already confirmed.
-6. If an existing chat is better, recommend using that chat instead of creating a new one.
-7. If another project is better, recommend the correct project before answering.
-8. If a new chat is safer, follow `ai-context/handoff-rules.md` and provide the standard handoff prompt.
-9. If the current chat should exist and is meaningful enough to track, update this file or provide the exact entry to add.
-10. Only after routing is resolved should the assistant continue to `ai-context/context-map.md` and answer the main task.
+5. If an existing chat is better, recommend using that chat instead of creating a new one.
+6. If another project is better, recommend the correct project before answering.
+7. If a new chat is safer, follow `ai-context/handoff-rules.md` and provide the standard handoff prompt.
+8. If the current chat should exist and is meaningful enough to track, update this file or provide the exact entry to add.
+9. Only after routing is resolved should the assistant continue to `ai-context/context-map.md` and answer the main task.
 
 ## Response format for routing recommendation
 
@@ -219,6 +220,8 @@ Update a chat entry when:
 - A meaningful decision is made.
 - Meaningful files are created or updated.
 - The current outcome or follow-up changes.
+
+Do not update a chat entry for tiny one-off help unless the user explicitly asks or the chat produces durable context.
 
 ## Project-specific guidance
 
@@ -487,5 +490,3 @@ Start a new chat when:
 ### Related chats
 
 - Orisen General - Product Overview Source-of-Truth Draft
-
----
