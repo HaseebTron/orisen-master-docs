@@ -8,38 +8,54 @@ Use this file when a needed doc or section is identified but should not be fully
 
 This file should stay lightweight. It is a checklist, not a strategy document.
 
-## High-priority docs to create or fill in later
+## Created starter docs that need future fill-in
 
 - [ ] `validation/evidence-log.md`
-  - Purpose: Track actual validation evidence, user feedback, pilot results, website/signup data, technical test results, and claim support.
-  - Fill in later with real evidence only. Do not invent user quotes, numbers, or test results.
+  - Status: Starter doc created.
+  - Needs: Real validation evidence, user feedback, pilot results, website/signup data, technical test results, and claim support.
+  - Rule: Fill in later with real evidence only. Do not invent user quotes, numbers, or test results.
 
 - [ ] `product/target-customer.md`
-  - Purpose: Define the first narrow customer segment, excluded users, pain-level criteria, willingness-to-pay assumptions, and early pilot target.
-  - Fill in later after reviewing current assumptions and customer evidence.
+  - Status: Starter doc created.
+  - Needs: Narrower first customer segment, excluded users, pain-level criteria, willingness-to-pay evidence, and early pilot target.
 
 - [ ] `product/roadmap.md`
-  - Purpose: Separate engineering MVP, first customer-ready product, pilot product, v1 launch, and long-term roadmap.
-  - Fill in later after the current source-of-truth structure is stable.
+  - Status: Starter doc created.
+  - Needs: More specific sequencing after software, hardware, radar, pilot, and validation progress become clearer.
 
 - [ ] `software/software-context-map.md`
-  - Purpose: Route software questions to the correct firmware, app, backend, cloud, slice, and architecture docs.
-  - Fill in later using the current Orisen Software repo docs.
+  - Status: Starter doc created.
+  - Needs: Links or summaries from the current Orisen Software repo docs, active slice docs, and implementation status.
 
 - [ ] `radar-ml/radar-ml-context-map.md`
-  - Purpose: Route radar, signal-processing, vital-sign extraction, sleep-stage modeling, and intervention-loop questions.
-  - Fill in later when radar/ML work becomes active.
+  - Status: Starter doc created.
+  - Needs: More detail when radar/ML work becomes active, including radar module decisions, signal-processing docs, model docs, and validation docs.
 
 - [ ] `marketing/positioning-and-messaging.md`
-  - Purpose: Define customer-facing positioning, headlines, safe claims, avoided claims, and plain-language explanation of Orisen.
-  - Fill in later after product and claims docs are stable.
+  - Status: Starter doc created.
+  - Needs: Customer language, tested messaging, website results, and positioning refinements.
 
 - [ ] `fundraising/investor-narrative.md`
-  - Purpose: Define the investor story while separating what is built, validated, being built, planned, and still risky.
-  - Fill in later before major fundraising/deck work.
+  - Status: Starter doc created.
+  - Needs: Stronger traction, evidence, deck narrative, investor feedback, and fundraising-specific proof points.
+
+## Future docs to consider later
+
+Do not create these unless the workstream becomes active enough to justify them.
+
+- [ ] `business/business-model.md`
+- [ ] `business/pricing.md`
+- [ ] `business/competitors.md`
+- [ ] `hardware/hardware-context-map.md`
+- [ ] `hardware/hardware-overview.md`
+- [ ] `marketing/content-pillars.md`
+- [ ] `marketing/gtm.md`
+- [ ] `marketing/linkedin-playbook.md`
+- [ ] `fundraising/traction.md`
+- [ ] `fundraising/outreach-strategy.md`
 
 ## Notes
 
 - Add items here when a future doc, missing section, or cleanup task is identified.
-- Remove or check off items once the relevant doc is created and filled in enough to be useful.
+- Check off items once the relevant doc is created and filled in enough to be useful.
 - Keep this file simple. Do not turn it into a second source-of-truth system.
