@@ -15,6 +15,7 @@ For software work that may affect product behavior, reliability, claims, or road
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `product/product-overview.md`
+- `product/claims-and-evidence.md`
 - `product/roadmap.md`
 
 For implementation-only work, use the relevant Orisen Software repo docs and active slice docs.
@@ -37,7 +38,40 @@ The software docs should define:
 
 Software docs define implementation reality. They should not redefine company truth, product positioning, customer promise, or public claims.
 
-## Software workstreams
+## Mid-chat context expansion
+
+If a software chat later asks a more specific software question than the initial baseline docs covered, expand context inside the same chat instead of rerunning the full boot workflow.
+
+Before answering, read this context map and the most relevant task-specific docs below.
+
+State which extra files were read when the context expansion is meaningful.
+
+If a software question changes product truth, public claims, roadmap priority, first customer-ready product scope, pricing, or fundraising story, escalate to Orisen General.
+
+## Software workstreams and routing
+
+### Slice planning and implementation
+
+Use for:
+
+- Starting a new software slice
+- Deciding what belongs in the active slice
+- Reviewing slice completion
+- Planning next slice work
+- Creating Codex prompts for slice implementation
+
+Read from the Orisen Software repo when available:
+
+- `docs/slices.md`
+- `docs/decisions.md`
+- active slice spec doc
+- relevant architecture/spec docs
+- `docs/ai-coding-rules.md`
+
+Also read from this repo:
+
+- `product/roadmap.md`
+- `product/product-overview.md`
 
 ### Firmware
 
@@ -51,17 +85,38 @@ Use for:
 - OTA eligibility and update checks
 - Local storage
 - Device state machine
+- Serial logs and firmware debugging
+
+Read from the Orisen Software repo when available:
+
+- `orisen-firmware/src/main.cpp`
+- `orisen-firmware/platformio.ini`
+- `docs/slices.md`
+- active slice spec doc
+- `docs/decisions.md`
+- `docs/ai-coding-rules.md`
 
 ### App
 
 Use for:
 
 - iPhone app
+- Expo app
 - User account creation
 - Alarm setting UI
 - Device setup flow
 - Pairing/onboarding
 - TestFlight MVP
+- App-side Supabase logic
+
+Read from the Orisen Software repo when available:
+
+- `orisen-app/App.tsx`
+- app Supabase client/config files
+- app `.env.example`
+- active slice spec doc
+- `docs/slices.md`
+- `docs/decisions.md`
 
 ### Backend and cloud
 
@@ -72,8 +127,17 @@ Use for:
 - Device sync
 - User-device relationship
 - Edge Functions
+- Device status table
 - Basic logs
 - Future device messaging
+
+Read from the Orisen Software repo when available:
+
+- Supabase schema docs or migrations if they exist
+- Edge Function code if it exists
+- active slice spec doc
+- `docs/decisions.md`
+- `docs/slices.md`
 
 ### BLE onboarding
 
@@ -84,6 +148,15 @@ Use for:
 - Setup payloads
 - BLE service and characteristic design
 - Setup retry behavior
+- Reset and re-onboarding behavior
+
+Read from the Orisen Software repo when available:
+
+- `docs/slice-6-ble-setup-and-onboarding-spec.md`
+- active BLE-related firmware/app files
+- `docs/slices.md`
+- `docs/decisions.md`
+- `docs/ai-coding-rules.md`
 
 ### OTA
 
@@ -93,7 +166,30 @@ Use for:
 - GitHub Releases OTA path
 - Version comparison
 - Update eligibility
+- Rollback behavior
 - Production hardening later
+
+Read from the Orisen Software repo when available:
+
+- `docs/slice-4-ota-updates-spec.md`
+- `docs/post-mvp-production-hardening.md`
+- OTA-related firmware code
+- `docs/decisions.md`
+
+### Debugging and log review
+
+Use for:
+
+- Serial logs
+- Build errors
+- Runtime behavior
+- Git status interpretation
+- Testing steps
+- Deciding whether to commit/push
+
+Read only the docs/files needed for the bug or check.
+
+Do not rerun broad product context unless the bug affects product behavior, reliability promise, or architecture.
 
 ## Slice-based workflow
 
@@ -102,6 +198,12 @@ Software implementation should generally continue slice by slice.
 A new software slice should usually get a new ChatGPT chat in Orisen Software.
 
 Keep each slice focused on one vertical product capability.
+
+When a slice is completed:
+
+- Update the relevant Orisen Software docs
+- Commit and push the software repo
+- Update this master-docs repo only if source-of-truth, product, roadmap, or cross-project context changed
 
 ## Escalation to Orisen General
 
@@ -114,8 +216,17 @@ Escalate to Orisen General when a software decision affects:
 - First customer-ready product definition
 - Reliability promise
 - Pricing or launch readiness
+- Fundraising narrative
+
+## Current stable software docs in this repo
+
+Currently stable software docs in this repo:
+
+- `software/software-context-map.md`
+
+The detailed implementation source of truth currently lives primarily in the Orisen Software repo.
 
 ## Notes
 
-- This is a starter context map.
-- Fill this file with links to the current Orisen Software repo docs after the software docs are copied or summarized into this master-docs repo.
+- This context map intentionally references the Orisen Software repo because implementation details should remain close to the code.
+- Fill this file with more exact links if key software docs are copied or summarized into this master-docs repo later.
