@@ -8,9 +8,33 @@ Use it to decide which software docs to read for firmware, app, backend, cloud, 
 
 This file does not replace software source-of-truth docs. It points ChatGPT projects and human readers to the right software context.
 
+## Implementation source repo
+
+Detailed software implementation source of truth lives primarily in:
+
+- `HaseebTron/Orisen`
+
+Use this master-docs repo for company/product/claims/roadmap boundaries.
+
+Use `HaseebTron/Orisen` for implementation details, code, active slice status, firmware/app/backend files, build errors, and software decisions.
+
+## Default software repo entry docs
+
+For most Orisen Software implementation work, read these files from `HaseebTron/Orisen` when available:
+
+- `docs/slices.md`
+- `docs/decisions.md`
+- `docs/ai-coding-rules.md`
+- active slice spec doc
+- relevant architecture/spec docs
+
+For code or debugging work, also read the specific code files, logs, or config files involved in the task.
+
+Do not read every software file by default. Use the lightest context that can answer safely.
+
 ## Always read first for important software work
 
-For software work that may affect product behavior, reliability, claims, or roadmap, start with:
+For software work that may affect product behavior, reliability, claims, or roadmap, start with these master-docs files:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -60,15 +84,15 @@ Use for:
 - Planning next slice work
 - Creating Codex prompts for slice implementation
 
-Read from the Orisen Software repo when available:
+Read from `HaseebTron/Orisen` when available:
 
 - `docs/slices.md`
 - `docs/decisions.md`
+- `docs/ai-coding-rules.md`
 - active slice spec doc
 - relevant architecture/spec docs
-- `docs/ai-coding-rules.md`
 
-Also read from this repo:
+Also read from this repo if product scope or roadmap matters:
 
 - `product/roadmap.md`
 - `product/product-overview.md`
@@ -87,7 +111,7 @@ Use for:
 - Device state machine
 - Serial logs and firmware debugging
 
-Read from the Orisen Software repo when available:
+Read from `HaseebTron/Orisen` when available:
 
 - `orisen-firmware/src/main.cpp`
 - `orisen-firmware/platformio.ini`
@@ -109,7 +133,7 @@ Use for:
 - TestFlight MVP
 - App-side Supabase logic
 
-Read from the Orisen Software repo when available:
+Read from `HaseebTron/Orisen` when available:
 
 - `orisen-app/App.tsx`
 - app Supabase client/config files
@@ -131,7 +155,7 @@ Use for:
 - Basic logs
 - Future device messaging
 
-Read from the Orisen Software repo when available:
+Read from `HaseebTron/Orisen` when available:
 
 - Supabase schema docs or migrations if they exist
 - Edge Function code if it exists
@@ -150,7 +174,7 @@ Use for:
 - Setup retry behavior
 - Reset and re-onboarding behavior
 
-Read from the Orisen Software repo when available:
+Read from `HaseebTron/Orisen` when available:
 
 - `docs/slice-6-ble-setup-and-onboarding-spec.md`
 - active BLE-related firmware/app files
@@ -169,7 +193,7 @@ Use for:
 - Rollback behavior
 - Production hardening later
 
-Read from the Orisen Software repo when available:
+Read from `HaseebTron/Orisen` when available:
 
 - `docs/slice-4-ota-updates-spec.md`
 - `docs/post-mvp-production-hardening.md`
@@ -224,9 +248,9 @@ Currently stable software docs in this repo:
 
 - `software/software-context-map.md`
 
-The detailed implementation source of truth currently lives primarily in the Orisen Software repo.
+The detailed implementation source of truth currently lives primarily in `HaseebTron/Orisen`.
 
 ## Notes
 
-- This context map intentionally references the Orisen Software repo because implementation details should remain close to the code.
+- This context map intentionally references `HaseebTron/Orisen` because implementation details should remain close to the code.
 - Fill this file with more exact links if key software docs are copied or summarized into this master-docs repo later.
