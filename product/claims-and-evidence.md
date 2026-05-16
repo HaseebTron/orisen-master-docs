@@ -11,7 +11,16 @@ This file should stay consistent with:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `product/product-overview.md`
-- Future validation and evidence docs
+- `validation/evidence-standard.md`
+- `validation/evidence-log.md`
+
+## Relationship to the evidence standard
+
+`validation/evidence-standard.md` is the authority for how Orisen classifies evidence and claim strength.
+
+This file applies that standard to Orisen's product claims.
+
+When this file and `validation/evidence-standard.md` appear to conflict, use `validation/evidence-standard.md` for evidence classification and update this file to match it.
 
 ## Core rule
 
@@ -20,10 +29,12 @@ Do not let the product story move faster than the evidence.
 Orisen can be ambitious, but external claims must clearly separate:
 
 - What is currently validated
-- What is built or being built
+- What is built but not validated
+- What is being built
 - What is planned
 - What is a hypothesis
 - What is long-term vision
+- What is unsupported or unsafe
 
 If a claim is not clearly supported, weaken the wording.
 
@@ -55,7 +66,7 @@ The following are strategically important, but not yet validated enough for stro
 - Personalized wake timing
 - Long-term sleep-state intervention
 
-These can be described as product direction, roadmap, or active testing, but should not be presented as proven outcomes.
+These can be described as product direction, roadmap, hypothesis, or active testing, but should not be presented as proven outcomes.
 
 ## Claim categories
 
@@ -200,68 +211,23 @@ Avoid:
 
 > Orisen controls your sleep stages in real time.
 
-## Evidence levels
+## Evidence classification
 
-Use these evidence levels when reviewing claims.
+Use `validation/evidence-standard.md` when reviewing the evidence status of a claim.
 
-### Level 0: Idea or hypothesis
+Important claim classifications include:
 
-The claim is an idea, belief, or proposed product direction.
+- Validated
+- Early signal
+- Built but not validated
+- Planned
+- Hypothesis
+- Long-term vision
+- Unsupported or unsafe claim
 
-Allowed wording:
+Do not create a separate evidence scale in this file.
 
-- “hypothesis”
-- “possible direction”
-- “exploring”
-- “could”
-
-### Level 1: Planned feature
-
-The claim describes something intended for the roadmap but not yet validated.
-
-Allowed wording:
-
-- “planned”
-- “building toward”
-- “designed to eventually support”
-
-### Level 2: Built or prototyped
-
-The capability exists in a prototype or MVP, but user value is not fully validated.
-
-Allowed wording:
-
-- “prototype includes”
-- “early version”
-- “currently testing”
-
-### Level 3: Early user validation
-
-Users have tested, understood, or responded positively to the feature, but evidence is still early.
-
-Allowed wording:
-
-- “early users responded to”
-- “early testing suggests”
-- “initial validation supports”
-
-### Level 4: Strong product evidence
-
-The claim is supported by repeated real-world usage, meaningful user data, and consistent results.
-
-Allowed wording:
-
-- “shown in user testing”
-- “supported by repeated usage data”
-- “validated with users”
-
-### Level 5: Clinical or regulated evidence
-
-The claim is supported by clinical-quality evidence and, if needed, regulatory strategy.
-
-Allowed wording depends on the evidence and regulatory review.
-
-Do not use clinical claims unless this level is actually reached.
+This file should describe the product-specific claim implications of the evidence standard.
 
 ## Current claim status table
 
@@ -325,7 +291,7 @@ Update this file when:
 - Marketing or fundraising needs stronger language and evidence exists to support it.
 - A future regulatory or clinical strategy changes allowable claims.
 
-When evidence improves, update this file before updating marketing, fundraising, pitch, website, or customer-facing docs.
+When evidence improves, update `validation/evidence-log.md` first, then update this file before updating marketing, fundraising, pitch, website, or customer-facing docs.
 
 ## Current summary
 
