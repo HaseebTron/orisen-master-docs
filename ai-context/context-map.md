@@ -20,6 +20,7 @@ For new Orisen ChatGPT chats, start with:
 - Refresh vs new-chat decisions
 - Handoff decisions
 - Whether the task belongs in another ChatGPT project
+- Core AI operating behavior
 
 After that routing check, use this file to choose the minimal starting context and any additional task-specific docs.
 
@@ -51,8 +52,17 @@ For any important Orisen decision, always include:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
 
-These define current company truth and how to handle conflicts.
+These define current company truth, how to handle conflicts, and how ChatGPT should reason from the docs.
+
+For source-of-truth doc creation or revision, also include:
+
+- `ai-context/doc-creation-rules.md`
+
+For evidence, validation, product claims, marketing claims, fundraising claims, or technical claim support, also include:
+
+- `validation/evidence-standard.md`
 
 ## Project context packs
 
@@ -64,6 +74,7 @@ Minimal baseline:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
 - `ai-context/project-routing.md`
 - `ai-context/context-map.md`
 
@@ -71,14 +82,18 @@ Full reference pack:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
+- `ai-context/doc-creation-rules.md`
 - `ai-context/project-routing.md`
 - `ai-context/context-map.md`
 - `ai-context/repo-backlog.md`
+- `ai-context/decision-log.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
 - `validation/evidence-log.md`
+- `validation/evidence-standard.md`
 
 ### Orisen Software
 
@@ -88,12 +103,14 @@ Minimal baseline from this repo:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
 - `software/software-context-map.md`
 
 Full reference pack from this repo:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
@@ -103,6 +120,10 @@ Then read relevant docs from the active software repo if needed, especially acti
 
 Software docs describe implementation reality. They should not shrink the full product or company vision.
 
+If software work creates or changes source-of-truth docs, read `ai-context/doc-creation-rules.md`.
+
+If software work affects product claims, validation, reliability promises, or public-facing capability statements, read `validation/evidence-standard.md`.
+
 ### Orisen Radar + ML
 
 Use for radar module decisions, signal processing, vital signs, RRV, HRV, movement extraction, sleep-stage modeling, datasets, papers, and intervention-loop experiments.
@@ -111,16 +132,19 @@ Minimal baseline:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
 - `radar-ml/radar-ml-context-map.md`
 
 Full reference pack:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
 - `validation/evidence-log.md`
+- `validation/evidence-standard.md`
 - `radar-ml/radar-ml-context-map.md`
 
 Escalate to Orisen General before changing public claims around sleep-stage estimation, grogginess reduction, sleep inertia, or artificial sleep phase transitioning.
@@ -133,6 +157,7 @@ Minimal baseline:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
 - `marketing/marketing-context-map.md`
 - `marketing/positioning-and-messaging.md`
 
@@ -140,14 +165,18 @@ Full reference pack:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `validation/evidence-log.md`
+- `validation/evidence-standard.md`
 - `marketing/marketing-context-map.md`
 - `marketing/positioning-and-messaging.md`
 
 Marketing docs must remain downstream from product direction and claims evidence.
+
+Use `validation/evidence-standard.md` before strengthening public claims.
 
 ### Orisen Fundraising
 
@@ -157,6 +186,7 @@ Minimal baseline:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
 - `fundraising/fundraising-context-map.md`
 - `fundraising/investor-narrative.md`
 
@@ -164,15 +194,19 @@ Full reference pack:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
 - `validation/evidence-log.md`
+- `validation/evidence-standard.md`
 - `fundraising/fundraising-context-map.md`
 - `fundraising/investor-narrative.md`
 
 Fundraising docs can be ambitious, but must not overclaim beyond product truth and evidence.
+
+Use `validation/evidence-standard.md` before framing traction, validation, technical proof, clinical support, or customer demand.
 
 ### Orisen Hardware
 
@@ -182,11 +216,13 @@ Minimal baseline:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
 
 Full reference pack:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
@@ -238,6 +274,10 @@ Important product docs may include:
 
 If `product/product-context-map.md` does not exist yet, use the relevant product docs directly.
 
+For product claims or validation status, also read:
+
+- `validation/evidence-standard.md`
+
 ### Marketing questions
 
 Use for questions about positioning, messaging, customer language, founder-led content, content strategy, launch, GTM, waitlist growth, and platform-specific plans.
@@ -261,6 +301,10 @@ Important marketing docs may include:
 
 Marketing docs must remain downstream from product direction and claims evidence.
 
+For public claims, also read:
+
+- `validation/evidence-standard.md`
+
 ### Fundraising questions
 
 Use for questions about investor narrative, pitch deck, outreach, traction framing, market story, fundraising strategy, and investor-specific messaging.
@@ -277,6 +321,10 @@ Important fundraising docs may include:
 - `fundraising/outreach-strategy.md`
 
 Fundraising can be ambitious, but must not overclaim beyond product truth and evidence.
+
+For validation, traction, market, or technical claims, also read:
+
+- `validation/evidence-standard.md`
 
 ### Business questions
 
@@ -340,6 +388,10 @@ Important radar/ML docs may include:
 - `radar-ml/research-notes.md`
 - `radar-ml/technical-validation.md`
 
+For claims, evidence, papers, and validation status, also read:
+
+- `validation/evidence-standard.md`
+
 ## Routing rules for ChatGPT projects
 
 When using this repo as context after project/chat/refresh/handoff routing:
@@ -349,10 +401,12 @@ When using this repo as context after project/chat/refresh/handoff routing:
 3. Assess the user's task.
 4. Read only the additional task-specific docs needed.
 5. Use the full reference pack only when the task requires broad context.
-6. Read `ai-context/current-state.md` and `ai-context/source-of-truth-rules.md` for any important decision if they were not already included.
-7. If docs conflict, apply `ai-context/source-of-truth-rules.md`.
-8. If a needed doc does not exist, say so and recommend creating it only if needed.
-9. Do not assume old notes or brainstorms are current truth unless promoted into source-of-truth docs.
+6. Read `ai-context/current-state.md`, `ai-context/source-of-truth-rules.md`, and `ai-context/ai-operating-mode.md` for any important decision if they were not already included.
+7. Read `ai-context/doc-creation-rules.md` for source-of-truth doc creation, editing, review, or promotion.
+8. Read `validation/evidence-standard.md` for validation, claims, evidence strength, marketing, fundraising, or technical support questions.
+9. If docs conflict, apply `ai-context/source-of-truth-rules.md`.
+10. If a needed doc does not exist, say so and recommend creating it only if needed.
+11. Do not assume old notes or brainstorms are current truth unless promoted into source-of-truth docs.
 
 ## Current repo buildout status
 
@@ -362,18 +416,22 @@ The first stable docs are:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
+- `ai-context/doc-creation-rules.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
 - `validation/evidence-log.md`
+- `validation/evidence-standard.md`
 
-The current routing docs are:
+The current routing and workflow docs are:
 
 - `ai-context/start-here.md`
 - `ai-context/project-routing.md`
 - `ai-context/handoff-rules.md`
 - `ai-context/context-map.md`
 - `ai-context/repo-backlog.md`
+- `ai-context/decision-log.md`
 
 Many folder-specific docs may not exist yet. When missing, create them deliberately rather than guessing that they already exist.
