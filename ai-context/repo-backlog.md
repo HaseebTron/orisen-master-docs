@@ -39,6 +39,32 @@ This file should stay lightweight. It is a checklist, not a strategy document.
   - Status: Starter doc created.
   - Needs: Stronger traction, evidence, deck narrative, investor feedback, and fundraising-specific proof points.
 
+## Marketing + GTM doc build order
+
+Use this order to build the minimum source-of-truth docs needed for founder-led X content.
+
+This table is a doc-building workflow, not source-of-truth product strategy. The actual source of truth remains in the docs listed below.
+
+| Step | File | Depth | What the file will contain |
+|---:|---|---|---|
+| 1 | `ai-context/current-state.md` | Light draft, not fully filled in | Current working truth for Orisen: what it is, current product direction, assumed audience, validated wedge, planned direction, uncertainty, and claims boundaries. |
+| 2 | `product/product-overview.md` | Light draft | Plain-English product plan: what Orisen does, what is built, MVP scope, first customer-ready product, and long-term vision. |
+| 3 | `product/target-customer.md` | Deeper work | First target customer assumptions, excluded users, pain points, urgency, willingness-to-pay assumptions, alternatives, objections, and open validation questions. |
+| 4 | `ai-context/current-state.md` | Update after target customer work | Revise audience, first problem, current priority, and open questions based on target customer work. |
+| 5 | `product/claims-and-evidence.md` | Careful work | Safe claims, careful claims, claims to avoid, what is validated, what is assumed, and what evidence is needed for stronger claims. |
+| 6 | `validation/evidence-log.md` | Evidence cleanup | Prototype feedback, waitlist numbers, user conversations, expert feedback, tests, and what each piece of evidence supports. |
+| 7 | `product/product-overview.md` | Update after claims/evidence | Separate built features, MVP scope, first customer-ready product, roadmap, and long-term vision. |
+| 8 | `ai-context/current-state.md` | Mostly filled in | Finalize top-level current truth after product, customer, claims, and evidence docs are clearer. |
+| 9 | `marketing/positioning-and-messaging.md` | Messaging draft | Simple explanation, main wedge, what to emphasize, what to avoid, safe phrases, careful phrases, and default positioning. |
+| 10 | `marketing/customer-language.md` | Deeper research | Exact customer language about oversleeping, alarms, grogginess, going back to bed, failed routines, frustration, and desired outcomes. |
+| 11 | `marketing/positioning-and-messaging.md` | Update after customer language | Improve messaging using real customer language. |
+| 12 | `marketing/content-pillars.md` | Content system | Recurring topics for founder-led content: broken mornings, building Orisen, sleep tech opinions, customer pain, founder lessons, product progress, traction, and vision. |
+| 13 | `marketing/founder-led-content.md` | Founder voice | Tone, beliefs, founder story, recurring opinions, technical depth, vulnerability level, and what to avoid. |
+| 14 | `marketing/x-playbook.md` | X strategy | Target audience on X, cadence, formats, hooks, reply strategy, CTA rules, build-in-public rules, and examples. |
+| 15 | `marketing/tweet-bank.md` | Execution doc | Drafted tweets, hooks, threads, replies, build updates, customer-pain posts, founder takes, and CTAs. |
+| 16 | `marketing/weekly-content-calendar.md` | Execution doc | Weekly posting plan and content mix. |
+| 17 | `marketing/post-performance-log.md` | Execution doc | Track post performance, lessons, signups, replies, and reusable ideas. |
+
 ## Future docs to consider later
 
 Do not create these unless the workstream becomes active enough to justify them.
@@ -48,9 +74,15 @@ Do not create these unless the workstream becomes active enough to justify them.
 - [ ] `business/competitors.md`
 - [ ] `hardware/hardware-context-map.md`
 - [ ] `hardware/hardware-overview.md`
+- [ ] `marketing/customer-language.md`
 - [ ] `marketing/content-pillars.md`
+- [ ] `marketing/founder-led-content.md`
 - [ ] `marketing/gtm.md`
 - [ ] `marketing/linkedin-playbook.md`
+- [ ] `marketing/x-playbook.md`
+- [ ] `marketing/tweet-bank.md`
+- [ ] `marketing/weekly-content-calendar.md`
+- [ ] `marketing/post-performance-log.md`
 - [ ] `fundraising/traction.md`
 - [ ] `fundraising/outreach-strategy.md`
 
