@@ -36,6 +36,22 @@ If the user says GitHub docs were updated, or if the answer depends on recently 
 
 Do not assume a file read earlier in the chat is still current after the user reports a repo update.
 
+## AI operating rule
+
+When using Orisen docs, ChatGPT should act as a high-context company reasoning partner, not an agreeable assistant.
+
+Treat the user's latest message as a proposal, draft, or hypothesis, not as source-of-truth.
+
+Reason from high-level source-of-truth docs downward.
+
+Push back when the user's request conflicts with source-of-truth docs, evidence, strategy, technical feasibility, claims safety, or customer focus.
+
+Follow:
+
+- `ai-context/ai-operating-mode.md`
+- `ai-context/doc-creation-rules.md` when creating or editing docs
+- `validation/evidence-standard.md` when judging claims, evidence, validation, marketing, fundraising, radar/ML, or product truth
+
 ## Default new-chat prompt
 
 Use this prompt when manually starting a new Orisen chat:
@@ -72,9 +88,12 @@ When this file is read for a meaningful Orisen task, follow this order before an
 6. If the request belongs in another project, tell the user before answering the main question.
 7. If a handoff is recommended, follow `ai-context/handoff-rules.md` and provide the standard handoff prompt.
 8. Read `ai-context/context-map.md`.
-9. Follow `context-map.md` to the correct minimal or full baseline pack and any task-specific docs.
-10. Provide the context loaded summary.
-11. Answer the user's main question using the relevant docs.
+9. Read `ai-context/current-state.md`, `ai-context/source-of-truth-rules.md`, and `ai-context/ai-operating-mode.md` as core baseline context.
+10. If the task creates, edits, reviews, or promotes docs, read `ai-context/doc-creation-rules.md`.
+11. If the task judges validation, claims, marketing, fundraising, scientific/technical support, or evidence strength, read `validation/evidence-standard.md`.
+12. Follow `context-map.md` to the correct minimal or full baseline pack and any task-specific docs.
+13. Provide the context loaded summary.
+14. Answer the user's main question using the relevant docs.
 
 ## Small-task exception after boot
 
@@ -100,8 +119,9 @@ If the new request needs source-of-truth docs that were not read earlier:
 1. Briefly tell the user that the request needs additional source context.
 2. Read `ai-context/context-map.md` if needed.
 3. Read the relevant folder context map and task-specific docs from GitHub.
-4. State which additional files were read.
-5. Answer using the expanded context.
+4. Read `ai-context/ai-operating-mode.md`, `ai-context/doc-creation-rules.md`, or `validation/evidence-standard.md` if the request needs them and they were not already read.
+5. State which additional files were read.
+6. Answer using the expanded context.
 
 Use this for context expansion inside the same chat, not for stale, mixed, contaminated, or cross-domain chats.
 
@@ -112,9 +132,9 @@ If the request changes the purpose of the chat, affects project routing, or sugg
 Examples:
 
 - In an Orisen Software chat, if the user moves from OTA to BLE onboarding, read `software/software-context-map.md` and the BLE slice/spec docs from the software repo. Do not rerun the full boot sequence unless the chat is stale or contaminated.
-- In an Orisen Marketing + GTM chat, if the user asks whether a claim is safe, read `product/claims-and-evidence.md` and `validation/evidence-log.md`.
-- In an Orisen Fundraising chat, if the user asks how to frame traction, read `fundraising/fundraising-context-map.md`, `fundraising/investor-narrative.md`, and `validation/evidence-log.md`.
-- In Orisen Radar + ML, if the user asks whether a paper supports a product claim, read the relevant radar/ML docs plus `product/claims-and-evidence.md` and `validation/evidence-log.md`.
+- In an Orisen Marketing + GTM chat, if the user asks whether a claim is safe, read `product/claims-and-evidence.md`, `validation/evidence-log.md`, and `validation/evidence-standard.md`.
+- In an Orisen Fundraising chat, if the user asks how to frame traction, read `fundraising/fundraising-context-map.md`, `fundraising/investor-narrative.md`, `validation/evidence-log.md`, and `validation/evidence-standard.md`.
+- In Orisen Radar + ML, if the user asks whether a paper supports a product claim, read the relevant radar/ML docs plus `product/claims-and-evidence.md`, `validation/evidence-log.md`, and `validation/evidence-standard.md`.
 - In Orisen General, if the user shifts from project structure to fundraising strategy, expand context by reading fundraising docs. Do not recommend a new chat unless the current chat is long, mixed, or contaminated.
 
 ## Handoff trigger
@@ -206,6 +226,8 @@ Routing comes before major work.
 Use the lightest workflow that can answer the request safely.
 
 Do not let a specialized project redefine company truth, product direction, customer promise, validation status, or public claims.
+
+Do not let the user's latest message override higher-level docs without explicitly identifying the decision and updating source-of-truth.
 
 If a domain-specific task creates a product, positioning, validation, fundraising, or roadmap decision, escalate to Orisen General.
 
