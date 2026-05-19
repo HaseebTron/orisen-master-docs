@@ -6,7 +6,7 @@ This file summarizes the founder's summer 2024 alarm-clock customer interviews.
 
 Use this with:
 
-- `research/customer-interviews/2024-alarm-clock-responses.csv`
+- `research/customer-interviews/raw/2024-alarm-clock-responses.csv`
 - `validation/evidence-log.md`
 - `product/target-customer.md`
 - `product/claims-and-evidence.md`
@@ -21,7 +21,7 @@ Source:
 - Founder-conducted customer interviews in summer 2024.
 - Founder reports that interviews were done on campus for younger respondents and in a mall for random respondents.
 - Founder reports trying to follow The Mom Test style: asking questions and writing answers down without intentionally steering the respondent.
-- Attached raw data file: `research/customer-interviews/2024-alarm-clock-responses.csv`.
+- Attached raw data file: `research/customer-interviews/raw/2024-alarm-clock-responses.csv`.
 
 ## Evidence weighting rule
 
