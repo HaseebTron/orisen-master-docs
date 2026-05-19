@@ -171,9 +171,13 @@ I’m also looking for co-founders and people to collaborate with, shoot me a DM
 - Estimated total website visits: about 415.
 - Waitlist signups excluding founder/test signup: 66.
 - Estimated visitor-to-waitlist conversion using total estimated website visits: about 16%.
+- Current internal high-intent / relevant-traffic conversion estimate: about 22%.
+- Later lower-intent incremental conversion estimate from 2026-02-08 to 2026-05-18: about 6%.
 - Traffic attribution note:
   - LinkedIn link visits refer only to visits to the link from the LinkedIn post.
   - Estimated total website visits include Clarity-recorded visits plus estimated pre-Clarity visits and may include direct, external share, or unknown traffic.
+  - The 22% high-intent conversion estimate should be treated as a directional estimate for early/relevant launch traffic, not as the universal site conversion rate.
+  - The 16% blended conversion is the safer overall historical number.
 
 ### Metrics timeline
 
@@ -194,15 +198,41 @@ These metrics are directional, not perfect attribution. Signups cannot be fully 
 
 - Signup rate per impression: 66 / 23,400 = about 0.28%.
 - LinkedIn link visit rate per impression: 296 / 23,400 = about 1.26%.
+- Current internal high-intent / relevant-traffic conversion estimate: about 22%.
+  - Use this as a directional estimate for relevant early launch traffic, not as a universal site conversion rate.
+  - This is supported by early conversion snapshots around 21% to 23% and the LinkedIn-link-visit directional calculation of 66 / 296 = about 22.3%.
+- Overall blended visitor-to-waitlist conversion: 66 / 415 = about 15.9%.
+  - Use this as the conservative overall historical conversion number.
+- Later lower-intent incremental conversion from 2026-02-08 to 2026-05-18:
+  - New signups: 66 - 57 = 9.
+  - New estimated visits: 415 - 274 = 141.
+  - Incremental conversion: 9 / 141 = about 6.4%.
+  - Interpret as likely lower-intent, stale, repeat, curiosity, direct, or weak-attribution traffic.
 - Signup rate from LinkedIn-reported link visits: 66 / 296 = about 22.3%.
   - Note: This is not a pure conversion rate because not every signup can be cleanly attributed to LinkedIn link visits alone.
-- Signup rate from estimated total website visits: 66 / 415 = about 15.9%.
 - Engagement count using likes + comments: 197 + 69 = 266.
 - Engagement rate using likes + comments: 266 / 23,400 = about 1.14%.
 - Like rate: 197 / 23,400 = about 0.84%.
 - Comment rate: 69 / 23,400 = about 0.29%.
 - Send rate: 13 / 23,400 = about 0.06%.
 - Save rate: 6 / 23,400 = about 0.03%.
+
+### Conversion interpretation
+
+Use three separate conversion views:
+
+1. High-intent / relevant traffic conversion:
+   - Current internal estimate: about 22%.
+   - Best used for understanding how strongly the landing page and message resonated with relevant early launch traffic.
+   - Do not present as universal site conversion.
+
+2. Overall blended conversion:
+   - About 16% using 66 signups / 415 estimated visits.
+   - Best used as the conservative all-traffic historical conversion number.
+
+3. Later lower-intent incremental conversion:
+   - About 6% from the post-tail period between 2026-02-08 and 2026-05-18.
+   - Best used as a reminder that stale, curiosity, repeat, or weaker-attribution traffic converts much worse.
 
 ### What likely worked
 
@@ -234,6 +264,7 @@ Supports:
 - Message resonance around painful wake-ups, oversleeping, and getting out of bed.
 - A promising early landing-page/waitlist conversion signal under current tracking assumptions.
 - Founder-led LinkedIn may be a useful early distribution and discovery channel.
+- Directionally, early/relevant launch traffic appears to have converted around 22% to the waitlist.
 
 Does not support:
 - Willingness to pay.
@@ -247,6 +278,7 @@ Does not support:
 - Artificial sleep phase transitioning.
 - Radar-based sleep-stage estimation.
 - That all signups came from LinkedIn alone.
+- That the website universally converts at 22% across all traffic sources and intent levels.
 
 ### Lessons
 
@@ -256,6 +288,8 @@ Does not support:
 - Avoid implying that Orisen already fixes all sleep or controls sleep stages.
 - Separate customer-facing language from technical explanation. Normal users may not need phrases like "audio/light probing."
 - Track post timing, early engagement actions, replies, link clicks, site visits, and signups for every future post.
+- Separate high-intent conversion from blended all-traffic conversion in future analyses.
+- Future posts should aim to recreate high-intent traffic rather than maximize random curiosity clicks.
 
 ### Follow-up experiments
 
