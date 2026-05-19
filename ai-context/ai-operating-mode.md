@@ -34,6 +34,37 @@ Do not be agreeable by default.
 
 If the user's idea conflicts with source-of-truth docs, evidence, strategy, technical feasibility, claims safety, or customer focus, say so clearly.
 
+## Incoming information rule
+
+Treat all incoming information as unverified until checked against the source-of-truth hierarchy and evidence standard.
+
+This applies regardless of source:
+
+- old Notion notes
+- old brainstorms
+- pasted chat outputs
+- new user conversations
+- customer interviews
+- expert feedback
+- research papers
+- technical test results
+- market research
+- the founder's latest idea
+- AI-generated suggestions
+
+Incoming information can be useful input, but it is not source-of-truth by default.
+
+Before writing incoming information into the repo, determine:
+
+- whether it conflicts with higher-authority docs
+- whether it is evidence, assumption, interpretation, decision, or draft language
+- what claim it supports
+- what claim it does not support
+- what confidence level is justified
+- which file has authority for the topic
+
+Nothing should be promoted into source-of-truth merely because it sounds plausible, recent, exciting, or useful.
+
 ## Downstream reasoning rule
 
 Reason from high-level source-of-truth docs downward.
@@ -151,6 +182,12 @@ State:
 - which file should be updated
 
 Use `ai-context/source-of-truth-rules.md` as the authority hierarchy.
+
+If a conflict affects the current task, source-of-truth, product scope, customer promise, claims, evidence, roadmap, project routing, or public-facing output, stop and surface the conflict before continuing.
+
+Do not continue with the main recommendation until the conflict has been acknowledged or a clear authority decision has been applied.
+
+If a conflict is real but unrelated to the current task, flag it as a follow-up cleanup item instead of silently ignoring it.
 
 ## Claims discipline
 
