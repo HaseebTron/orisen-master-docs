@@ -1,52 +1,55 @@
-**mvp scope**
-    - **MVP scope**:
-        - The MVP should prove the full connected product loop at a basic level.
-        - The MVP does not need every future feature.
-        - The MVP should focus on:
-            - iPhone app through TestFlight
-            - user account creation
-            - device pairing/setup
-            - one user connected to one Orisen device
-            - setting an alarm in the app
-            - storing alarm settings in the cloud
-            - syncing alarm settings to the ESP32 device
-            - storing the next alarm locally on the ESP32
-            - ringing the alarm locally at the correct time
-            - presence-based wake completion
-            - basic gradual audio/light wake-up
-            - basic sleep/session logging
-            - basic cloud communication
-            - basic OTA update path, if feasible
-            - basic error logging
-    - **MVP should not include unless absolutely necessary**:
-        - full Android app
-        - public App Store launch
-        - subscription billing
-        - advanced sleep dashboard
-        - multi-device households
-        - advanced family/account sharing
-        - continuous raw radar cloud streaming
-        - fully polished ML model
-        - complex notification system
-        - complex admin dashboard
-        - production-scale analytics
-        - complicated smart home integrations
-        - Apple Health integration
-        - Google Fit integration
-    - **later scope**:
-        - Android app.
-        - Public App Store and Google Play release.
-        - Advanced sleep history and insights.
-        - More accurate sleep-stage model.
-        - ML-personalized wake-up intervention.
-        - Long-term user adaptation.
-        - Subscription features.
-        - Multi-device support.
-        - Better OTA fleet management.
-        - Customer support dashboard.
-        - Sleep coaching features.
-        - Bedtime routine features.
-        - White noise and sleep onset support.
-        - Integration with other health platforms.
-        - More advanced reliability monitoring.
-        - Production-grade device fleet management.
+# P2 MVP Scope
+
+> This is a synced implementation doc from the software repo. It describes what was being built at a point in time. For product truth and scope, defer to `product/product-overview.md` and `ai-context/current-state.md`. When this file conflicts with those files, those files win unconditionally.
+
+- **MVP scope**:
+    - The MVP should prove the full connected product loop at a basic level.
+    - The MVP does not need every future feature.
+    - The MVP should focus on:
+        - iPhone app through TestFlight
+        - user account creation
+        - device pairing/setup
+        - one user connected to one Orisen device
+        - setting an alarm in the app
+        - storing alarm settings in the cloud
+        - syncing alarm settings to the ESP32 device
+        - storing the next alarm locally on the ESP32
+        - ringing the alarm locally at the correct time
+        - presence-based wake completion
+        - basic gradual audio/light wake-up
+        - basic sleep/session logging
+        - basic cloud communication
+        - basic OTA update path, if feasible
+        - basic error logging
+- **MVP should not include unless absolutely necessary**:
+    - full Android app
+    - public App Store launch
+    - subscription billing
+    - advanced sleep dashboard
+    - multi-device households
+    - advanced family/account sharing
+    - continuous raw radar cloud streaming
+    - fully polished ML model
+    - complex notification system
+    - complex admin dashboard
+    - production-scale analytics
+    - complicated smart home integrations
+    - Apple Health integration
+    - Google Fit integration
+- **later scope**:
+    - Android app.
+    - Public App Store and Google Play release.
+    - Advanced sleep history and insights.
+    - More accurate sleep-stage model.
+    - ML-personalized wake-up intervention.
+    - Long-term user adaptation.
+    - Subscription features.
+    - Multi-device support.
+    - Better OTA fleet management.
+    - Customer support dashboard.
+    - Sleep coaching features.
+    - Bedtime routine features.
+    - White noise and sleep onset support.
+    - Integration with other health platforms.
+    - More advanced reliability monitoring.
+    - Production-grade device fleet management.
