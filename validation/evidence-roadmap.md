@@ -43,6 +43,47 @@ research/, product/, marketing/
 = detailed source files, raw notes, raw data, and synthesis docs
 ```
 
+## Raw data and synthesis convention
+
+For evidence categories that have raw/source material, use this pattern:
+
+```text
+research/<category>/raw/
+= raw data, exported CSVs, rough notes, source excerpts, transcripts, source lists, screenshots, or copied source material
+
+research/<category>/<synthesis-file>.md
+= cleaned synthesis, interpretation, limitations, claim boundaries, and downstream implications
+```
+
+The same principle can apply outside `research/` when useful:
+
+```text
+product/<topic>/raw/
+= raw prototype logs, raw tester notes, photos/videos links, unprocessed tables, or rough source material
+
+marketing/<topic>/raw/
+= exported analytics, raw post metrics, screenshots, or rough campaign notes
+```
+
+Current example:
+
+```text
+research/customer-interviews/raw/2024-alarm-clock-responses.csv
+→ raw summer 2024 interview response data
+
+research/customer-interviews/2024-alarm-clock-interviews.md
+→ synthesis and interpretation of the interview data
+```
+
+Rules:
+
+- Keep raw/source data separate from interpretation.
+- Do not overwrite raw data with conclusions.
+- Put synthesis outside the `raw/` folder.
+- Do not create empty `raw/` folders before there is actual raw/source material.
+- Every synthesis file should point back to its raw/source files.
+- Downstream claim docs should rely on the evidence log and source-specific synthesis, not raw data alone.
+
 ## Current evidence categories
 
 ### 1. Direct customer discovery
@@ -58,7 +99,7 @@ Purpose:
 
 Current source files:
 
-- `research/customer-interviews/2024-alarm-clock-responses.csv`
+- `research/customer-interviews/raw/2024-alarm-clock-responses.csv`
 - `research/customer-interviews/2024-alarm-clock-interviews.md`
 
 Current evidence:
@@ -226,13 +267,41 @@ Purpose:
 
 This category should not be used to “prove Orisen works.” It should be used to triangulate market pain, customer language, scientific plausibility, competitor gaps, and claim risk.
 
+Recommended future folder pattern:
+
+```text
+research/external-research/sleep-inertia/raw/
+research/external-research/sleep-inertia/sleep-inertia-research.md
+
+research/external-research/market-reports/raw/
+research/external-research/market-reports/market-research-notes.md
+
+research/external-research/articles-and-media/raw/
+research/external-research/articles-and-media/articles-and-media-notes.md
+
+research/external-research/reddit-forums/raw/
+research/external-research/reddit-forums/reddit-customer-language.md
+
+research/external-research/competitor-reviews/raw/
+research/external-research/competitor-reviews/competitor-review-research.md
+
+research/external-research/expert-commentary/raw/
+research/external-research/expert-commentary/expert-commentary.md
+```
+
+Do not create these folders/files until there is actual source material to put in them.
+
 #### 4.1 Research papers / sleep inertia literature
 
 Status: missing.
 
 Potential source file:
 
-- `research/external-research/sleep-inertia-research.md`
+- `research/external-research/sleep-inertia/sleep-inertia-research.md`
+
+Potential raw/source folder:
+
+- `research/external-research/sleep-inertia/raw/`
 
 Look for research on:
 
@@ -278,7 +347,11 @@ Status: missing.
 
 Potential source file:
 
-- `research/external-research/market-research-notes.md`
+- `research/external-research/market-reports/market-research-notes.md`
+
+Potential raw/source folder:
+
+- `research/external-research/market-reports/raw/`
 
 Look for:
 
@@ -321,7 +394,11 @@ Status: missing.
 
 Potential source file:
 
-- `research/external-research/articles-and-media-notes.md`
+- `research/external-research/articles-and-media/articles-and-media-notes.md`
+
+Potential raw/source folder:
+
+- `research/external-research/articles-and-media/raw/`
 
 Look for:
 
@@ -358,7 +435,11 @@ Status: missing.
 
 Potential source file:
 
-- `research/external-research/reddit-customer-language.md`
+- `research/external-research/reddit-forums/reddit-customer-language.md`
+
+Potential raw/source folder:
+
+- `research/external-research/reddit-forums/raw/`
 
 Search communities such as:
 
@@ -422,7 +503,11 @@ Status: missing.
 
 Potential source file:
 
-- `research/external-research/competitor-review-research.md`
+- `research/external-research/competitor-reviews/competitor-review-research.md`
+
+Potential raw/source folder:
+
+- `research/external-research/competitor-reviews/raw/`
 
 Look at reviews for:
 
@@ -481,7 +566,11 @@ Status: partially started through conversations, but not yet structured here.
 
 Potential source file:
 
-- `research/external-research/expert-commentary.md`
+- `research/external-research/expert-commentary/expert-commentary.md`
+
+Potential raw/source folder:
+
+- `research/external-research/expert-commentary/raw/`
 
 Best experts:
 
