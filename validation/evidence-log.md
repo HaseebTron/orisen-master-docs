@@ -38,12 +38,14 @@ If evidence does not clearly support a claim, treat the claim as an assumption, 
 - Current evidence should still be treated as early validation, not broad-market proof.
 - The old MVP physically demonstrated the wake-completion loop using local alarm behavior, radar-based presence detection, audio/light output, local controls, and battery backup.
 - A small old-MVP pilot/test group used the device in real morning contexts, with the strongest signal around getting users out of bed closer to the alarm time.
+- Founder-reported tester feedback says users felt the old MVP was much better at waking them on time than their previous/default wake-up behavior.
 
 ### Early demand and messaging signal
 
 - Orisen received 66 waitlist signups excluding the founder/test signup after one founder LinkedIn post and limited external sharing.
 - Estimated total website visits were about 415, implying about 16% visitor-to-waitlist conversion.
 - This is an early signal of problem/message resonance, not proof of willingness to pay, retention, product-market fit, or clinical/technical efficacy.
+- Dennis expressed that he would buy the old MVP “right now,” likely around a roughly $100 discussed price point. This is an early one-person willingness-to-pay signal, not validated pricing.
 
 ### Needs more evidence
 
@@ -52,7 +54,7 @@ If evidence does not clearly support a claim, treat the claim as an assumption, 
 - Sleep-phase-aware wake intervention
 - Artificial sleep phase transitioning
 - Radar-based sleep-stage estimation
-- Willingness to pay
+- Willingness to pay beyond one tester statement
 - First customer segment
 - Price point
 - Reliability standard required for users to trust Orisen as a main alarm
@@ -88,6 +90,68 @@ Add customer interview evidence here.
 ## Pilot evidence
 
 Add pilot user evidence here.
+
+### 2026-05-18 — Old MVP qualitative tester feedback showed wake-completion value and easier-wake-up pull
+
+- Evidence type: Qualitative tester feedback / founder-reported user conversation notes.
+- Source:
+  - Founder-provided memory and notes from old MVP tester conversations.
+  - Related detailed doc: `product/old-mvp-user-feedback.md`.
+- Participants:
+  - Old MVP testers, including Dennis and other early tester/friends.
+- What was tested or observed:
+  - Testers used or discussed the old MVP after seeing how it affected their wake-up behavior.
+  - Founder reports that testers expressed the old MVP was much better at helping them wake up on time compared with their normal/default wake-up behavior.
+  - Founder reports that Dennis said he would buy it “right now” during the old MVP period.
+  - Founder believes the discussed price at the time may have been around $100.
+  - Founder reports that he mentioned artificial sleep phase transitioning and easier wake-up concepts to testers.
+  - Testers expressed interest in those future features, especially Dennis.
+  - The reason was that the old MVP could wake users and force wake completion, but could still leave them groggy or affected by sleep inertia.
+- What the user/customer said or did:
+  - Dennis expressed immediate purchase interest, according to founder memory.
+  - Testers expressed that the old MVP was much better at waking them on time than before, according to founder memory.
+  - Testers expressed pull for an easier/gentler wake-up feature direction because forced wake-up did not fully solve grogginess or sleep inertia.
+- Claim supported:
+  - Early testers perceived meaningful wake-completion value from the old MVP.
+  - One tester expressed early purchase intent, likely around a roughly $100 discussed price point.
+  - There is early qualitative user pull for the roadmap layer beyond forced wake completion: making wake-up feel less groggy or less brutal.
+  - The old MVP revealed a two-layer product need: wake completion first, easier wake-up second.
+- Claim not supported:
+  - This does not prove broad willingness to pay.
+  - This does not validate a $100 price point.
+  - This does not prove paid demand, because no payment/preorder is documented.
+  - This does not prove product-market fit.
+  - This does not prove reduced grogginess or reduced sleep inertia.
+  - This does not prove artificial sleep phase transitioning works.
+  - This does not prove sleep-stage detection or sleep-stage-aware intervention.
+  - This does not prove that cold customers would respond the same way as founder-connected testers.
+- Evidence category:
+  - Early validation / qualitative pilot feedback for wake-completion value.
+  - Early signal for willingness to pay.
+  - Hypothesis with early user pull for easier wake-up / artificial sleep phase transitioning.
+- Evidence strength:
+  - Level 2 to early Level 3 for wake-completion value when combined with old MVP tables.
+  - Level 1 to Level 2 for willingness-to-pay signal.
+  - Level 1 to Level 2 for easier wake-up / artificial sleep phase transitioning demand.
+- Confidence: Medium for directional qualitative learning; lower for exact price sensitivity because the price was only discussed and not paid.
+- Limitations:
+  - Founder-reported memory rather than direct written quotes, except where written tester comments already exist elsewhere.
+  - Small sample.
+  - Testers were connected to the founder.
+  - No actual purchase, preorder, or deposit documented.
+  - The old MVP did not technically validate artificial sleep phase transitioning.
+  - The old MVP could still leave users groggy, so grogginess reduction remains unvalidated.
+- Related docs to update:
+  - `product/old-mvp-user-feedback.md`
+  - `product/claims-and-evidence.md`
+  - `product/product-overview.md`
+  - `marketing/positioning-and-messaging.md`
+  - `fundraising/investor-narrative.md`
+  - `validation/validation-roadmap.md` when created
+- Notes:
+  - Use this as support for the positioning hierarchy: lead with guaranteed wake completion, then explain easier wake-up / grogginess reduction as the next claim-sensitive layer.
+  - Do not use this as proof that artificial sleep phase transitioning works.
+  - Do not use this as proof that customers will pay $100 without further purchase evidence.
 
 ### 2026-05-18 — Old MVP pilot/test users showed early wake-completion signal
 
@@ -344,6 +408,29 @@ For each supported claim, include:
   - Some rows incomplete.
   - Some days had failure, bugs, or sleeping again.
   - Does not prove production reliability, willingness to pay, broad robustness, sleep-stage-aware intervention, or physiological outcomes.
+
+### One old MVP tester expressed immediate purchase intent
+
+- Claim: One old MVP tester, Dennis, expressed that he would buy the device immediately, likely around a roughly $100 discussed price point.
+- Evidence category: Early signal.
+- Evidence strength: Level 1 to Level 2.
+- Evidence source: 2026-05-18 old MVP qualitative tester feedback entry and `product/old-mvp-user-feedback.md`.
+- Limitations:
+  - Founder-reported memory.
+  - One tester connected to founder.
+  - No actual payment, preorder, or deposit documented.
+  - Does not validate a $100 price point or broad willingness to pay.
+
+### Old MVP testers expressed pull for easier wake-up beyond forced wake completion
+
+- Claim: Old MVP testers wanted the wake-up experience to feel easier/less groggy in addition to being forced to wake up.
+- Evidence category: Hypothesis with early user pull.
+- Evidence strength: Level 1 to Level 2.
+- Evidence source: 2026-05-18 old MVP qualitative tester feedback entry and `product/old-mvp-user-feedback.md`.
+- Limitations:
+  - Does not prove artificial sleep phase transitioning works.
+  - Does not prove reduced grogginess or reduced sleep inertia.
+  - Supports roadmap direction, not validated efficacy.
 
 ## Claims not yet supported
 
