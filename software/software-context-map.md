@@ -18,6 +18,20 @@ Use this master-docs repo for company/product/claims/roadmap boundaries.
 
 Use `HaseebTron/Orisen` for implementation details, code, active slice status, firmware/app/backend files, build errors, and software decisions.
 
+## Copied software snapshot docs in this repo
+
+Some files in this `software/` folder are copied or synced from the separate software implementation repo.
+
+They are included here to give Orisen General and other non-software chats better context about software direction, MVP scope, slices, and implementation status.
+
+These copied files should be treated as context snapshots, not as the live software source of truth.
+
+Use them to understand software background when working in this master-docs repo, but for current implementation status, active slice details, code behavior, build errors, and exact software decisions, read the source files from `HaseebTron/Orisen`.
+
+When copied software snapshot docs conflict with higher-level master-docs files such as `ai-context/current-state.md`, `product/product-overview.md`, `product/roadmap.md`, or `product/claims-and-evidence.md`, the higher-level master-docs files win for product truth, customer promise, roadmap meaning, and public claims.
+
+When copied software snapshot docs conflict with the live software repo, the live software repo wins for implementation reality.
+
 ## Default software repo entry docs
 
 For most Orisen Software implementation work, read these files from `HaseebTron/Orisen` when available:
@@ -248,9 +262,15 @@ Currently stable software docs in this repo:
 
 - `software/software-context-map.md`
 
+Copied software snapshot docs currently in this repo include:
+
+- `software/p1-overview.md`
+- `software/p2-mvp-scope.md`
+
 The detailed implementation source of truth currently lives primarily in `HaseebTron/Orisen`.
 
 ## Notes
 
 - This context map intentionally references `HaseebTron/Orisen` because implementation details should remain close to the code.
+- Copied software snapshot docs may be useful for cross-project context, but they should not be treated as the live implementation source of truth.
 - Fill this file with more exact links if key software docs are copied or summarized into this master-docs repo later.
