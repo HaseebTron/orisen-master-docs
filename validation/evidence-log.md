@@ -43,7 +43,10 @@ If evidence does not clearly support a claim, treat the claim as an assumption, 
 ### Early demand and messaging signal
 
 - Orisen received 66 waitlist signups excluding the founder/test signup after one founder LinkedIn post and limited external sharing.
-- Estimated total website visits were about 415, implying about 16% visitor-to-waitlist conversion.
+- Estimated total website visits were about 415, implying about 16% blended visitor-to-waitlist conversion.
+- Current internal high-intent / relevant-traffic conversion estimate is about 22%.
+- Later lower-intent incremental conversion from 2026-02-08 to 2026-05-18 was about 6%.
+- The 22% number should be treated as a directional estimate for relevant early launch traffic, not as a universal site conversion rate.
 - This is an early signal of problem/message resonance, not proof of willingness to pay, retention, product-market fit, or clinical/technical efficacy.
 - Dennis expressed that he would buy the old MVP “right now,” likely around a roughly $100 discussed price point. This is an early one-person willingness-to-pay signal, not validated pricing.
 
@@ -251,10 +254,14 @@ Add website, waitlist, conversion, and signup evidence here.
     - about 415 estimated total website visits
   - Waitlist result:
     - 66 waitlist signups excluding the founder/test signup
-    - about 16% estimated visitor-to-waitlist conversion using 66 signups / 415 estimated total website visits
+    - about 16% blended visitor-to-waitlist conversion using 66 signups / 415 estimated total website visits
+    - about 22% current internal high-intent / relevant-traffic conversion estimate
+    - about 6% later lower-intent incremental conversion estimate from 2026-02-08 to 2026-05-18
 - Intermediate tracking notes:
   - By 2026-02-04 at about 6:45 PM, the post had about 4.1k impressions, 85 likes, 34 comments, 29 signups, and about 68 estimated website visits before Clarity was active.
-  - By 2026-02-08, the founder estimated about 274 total website visits, using about 206 Clarity-recorded visits plus about 68 pre-Clarity visits.
+  - By 2026-02-06 at about 2:00 AM, the post had about 10.5k impressions, 50 signups, about 222 estimated website visits, and about 23% estimated conversion.
+  - By 2026-02-08, the founder estimated about 274 total website visits, using about 206 Clarity-recorded visits plus about 68 pre-Clarity visits, with 57 signups and about 21% estimated conversion.
+  - From 2026-02-08 to 2026-05-18, signups increased from 57 to 66 while estimated visits increased from 274 to 415, implying about 6.4% incremental conversion.
 - What the user/customer said or did:
   - Users signed up for the waitlist after viewing the website.
   - LinkedIn users engaged with the post through likes, comments, sends, saves, and link visits.
@@ -263,6 +270,7 @@ Add website, waitlist, conversion, and signup evidence here.
   - The wake-up problem and/or Orisen's early positioning were compelling enough for some visitors to join a waitlist.
   - A single organic LinkedIn post can generate meaningful early awareness and waitlist interest for Orisen.
   - The website showed promising early visitor-to-waitlist conversion under founder-reported tracking assumptions.
+  - Early/relevant launch traffic appears to have converted meaningfully better than later lower-intent or stale traffic.
 - Claim not supported:
   - This does not prove willingness to pay.
   - This does not prove broad-market demand.
@@ -271,6 +279,7 @@ Add website, waitlist, conversion, and signup evidence here.
   - This does not prove that Orisen reduces grogginess or sleep inertia.
   - This does not prove sleep-stage-aware intervention, artificial sleep phase transitioning, radar-based sleep-stage estimation, or clinical efficacy.
   - This does not prove that the LinkedIn post alone caused all signups, because there was limited external sharing and likely some direct/unknown traffic.
+  - This does not prove that the website universally converts at 22% across all traffic sources and intent levels.
 - Evidence category: Early signal.
 - Evidence strength: Level 1 to Level 2.
 - Confidence: Medium for signups, LinkedIn metrics, and broad direction of interest; medium-low for exact website conversion because total visits rely partly on a pre-Clarity estimate and different analytics tools do not measure traffic identically.
@@ -280,6 +289,7 @@ Add website, waitlist, conversion, and signup evidence here.
   - The audience was likely influenced by the founder's network and may not represent broader cold-market demand.
   - The landing page and post may have selected for people interested in startups, hardware, or the founder rather than only people with severe wake-up pain.
   - No evidence here measures whether users would trust Orisen as their primary alarm or pay for it.
+  - The 22% high-intent number is a directional internal estimate, not a universal conversion claim.
 - Related docs to update:
   - `product/claims-and-evidence.md`
   - `fundraising/investor-narrative.md`
@@ -288,6 +298,7 @@ Add website, waitlist, conversion, and signup evidence here.
 - Notes:
   - This evidence can be used carefully in fundraising and marketing as an early demand/message-resonance signal.
   - It should not be described as product validation, paid demand, clinical evidence, or proof of broad product-market fit.
+  - Use three conversion views: about 22% for internal high-intent/relevant traffic estimate, about 16% for conservative blended historical conversion, and about 6% for later lower-intent incremental conversion.
 
 ## Technical validation evidence
 
@@ -385,6 +396,19 @@ For each supported claim, include:
 - Limitations:
   - Estimated total visits rely partly on a pre-Clarity estimate.
   - Waitlist conversion does not prove payment intent or product value after use.
+  - This is the blended historical conversion number, not the high-intent internal estimate.
+
+### Relevant early launch traffic appears to have converted around 22% to waitlist
+
+- Claim: Early/relevant launch traffic appears to have converted around 22% to the waitlist under current internal interpretation.
+- Evidence category: Early signal.
+- Evidence strength: Level 1 to Level 2.
+- Evidence source: 2026-05-18 waitlist and LinkedIn launch evidence entry, including early conversion snapshots and LinkedIn-link-visit directional calculation.
+- Limitations:
+  - Directional internal estimate.
+  - Not a universal site conversion rate.
+  - Not cleanly attributable to one source.
+  - Does not prove paid demand or willingness to pay.
 
 ### Orisen's presence-based wake-completion loop was physically prototyped
 
