@@ -31,30 +31,35 @@ The current phase is evidence, validation, and marketing-learning discipline.
 
 ## Immediate next steps
 
-1. Continue filling `validation/evidence-log.md` with real evidence.
+1. Label old MVP pilot/test rows more precisely.
+   - Identify which Sabeeh days were bug days.
+   - Identify which days should count as valid tests, invalid tests, partial failures, or technical failures.
+   - Identify what caused Dennis's alarm-failure day if known.
+   - Identify whether Hamza/Humza sleeping-again days were due to product failure, user behavior, setup, or other conditions.
+
+2. Continue filling `validation/evidence-log.md` with real evidence.
    - Add only real evidence.
    - Do not invent user quotes, numbers, test results, or validation.
    - Next likely evidence sources:
-     - old MVP tester count and user feedback
-     - old MVP usage conditions, number of mornings/nights, and failure cases
+     - more old MVP failure-mode detail
      - technical prototype/software progress
      - expert/user conversations
      - more detailed customer language if available
 
-2. Continue filling `product/old-mvp.md` as more old prototype details are provided.
-   - Add tester details, usage sessions, exact behavior, failure modes, hardware photos/diagrams if available, and lessons for the next version.
-   - Keep claim boundaries clear: old MVP supports prototype feasibility, not production reliability or customer validation by itself.
+3. Continue filling `product/old-mvp.md` as more old prototype details are provided.
+   - Add exact bug causes, tester follow-up comments, failure modes, hardware photos/diagrams if available, and lessons for the next version.
+   - Keep claim boundaries clear: old MVP supports early wake-completion signal, not production reliability or broad validation.
 
-3. Add or refine marketing-learning docs as real data appears.
+4. Add or refine marketing-learning docs as real data appears.
    - Use `marketing/post-performance-log.md` for detailed content/campaign metrics and lessons.
    - Add future posts to that file as new marketing experiments run.
    - Consider `marketing/customer-voice-log.md` later if enough raw user language exists.
 
-4. Update `product/claims-and-evidence.md` after enough evidence entries are added.
+5. Update `product/claims-and-evidence.md` after enough evidence entries are added.
    - Map safe claims, careful claims, unsupported claims, and evidence required for stronger claims.
    - Make sure marketing/fundraising claims stay downstream from evidence.
 
-5. Create `validation/validation-roadmap.md`.
+6. Create `validation/validation-roadmap.md`.
    - Define which claims Orisen wants to eventually make.
    - Define what evidence is required for each claim.
    - Define early pilot/test plans for wake completion, grogginess reduction, sleep inertia, sensor-informed wake behavior, and radar/sleep-stage work.
@@ -64,25 +69,22 @@ The current phase is evidence, validation, and marketing-learning discipline.
 - Evidence collection and classification.
 - Converting known Orisen signals into conservative evidence-log entries.
 - Capturing marketing execution details and metrics separately from validation claims.
-- Capturing old MVP/prototype history and technical evidence.
+- Capturing old MVP/prototype history, pilot details, and technical evidence.
 
 ## Blocked or waiting on input
 
-The next evidence-log and old-MVP updates are waiting on additional raw evidence from the founder, such as:
+The next old-MVP update is waiting on:
 
-- old MVP tester count
-- old MVP user comments or observed behavior
-- number of mornings/nights tested
-- whether testing happened during real wake-up conditions or demos
-- known failure modes
+- which specific Sabeeh days were bug days
+- what exactly the Sabeeh shutoff bug was
+- what caused Dennis's alarm-failure day
+- whether Hamza/Humza sleeping-again days were due to product failure, user behavior, setup, or other conditions
+- whether any tester tried to unplug the device or bypass it intentionally
 - radar false positives/false negatives
 - audio/light behavior details
 - battery duration and unplug behavior details
 - photos, diagrams, or screenshots that should be summarized
-- customer/user interview notes
-- expert call notes
 - technical prototype test results
-- software build/test milestones that should be classified as built but not customer-validated
 
 The marketing post log can be improved later if the founder provides:
 
@@ -94,6 +96,27 @@ The marketing post log can be improved later if the founder provides:
 Do not add specific evidence entries until the raw data is provided or available in a trusted source file.
 
 ## Recently completed
+
+### 2026-05-18 — Added old MVP pilot/test evidence
+
+Completed:
+- Updated `product/old-mvp.md` with detailed old MVP pilot/test participant data for:
+  - founder
+  - Hamza/Humza
+  - Dennis
+  - Sabeeh
+- Added detailed test definitions for bed time, alarm time, wake-up time, get-out-of-bed time, sleepy rating, irritation rating, mood rating, and energy rating.
+- Added Dennis, Hamza/Humza, and Sabeeh test tables.
+- Added tester-specific interpretations and limitations.
+- Updated `validation/evidence-log.md` with a pilot/test evidence entry.
+
+Classification:
+- Early validation / small prototype pilot signal.
+- Evidence strength: Level 2 to early Level 3 for wake-completion mechanism.
+
+Claim boundary:
+- Supports early real-world signal that presence-based wake completion can get users out of bed closer to alarm time.
+- Does not prove production reliability, paid demand, broad robustness, reduced grogginess, reduced sleep inertia, sleep-stage-aware intervention, or artificial sleep phase transitioning.
 
 ### 2026-05-18 — Added old MVP prototype documentation and evidence
 
