@@ -80,7 +80,7 @@ Use for questions like:
 
 Read:
 
-- `product/target-customer.md` if it exists
+- `product/target-customer.md`
 - `ai-context/current-state.md`
 - `product/product-overview.md`
 - `marketing/customer-language.md` if it exists
@@ -97,7 +97,9 @@ Use for questions like:
 
 Read:
 
-- `product/claims-and-evidence.md` if it exists
+- `product/claims-and-evidence.md`
+- `validation/evidence-standard.md`
+- `validation/evidence-log.md`
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `product/product-overview.md`
@@ -118,7 +120,7 @@ Use for questions like:
 
 Read:
 
-- `product/roadmap.md` if it exists
+- `product/roadmap.md`
 - `product/product-overview.md`
 - `product/mvp-scope.md` if it exists
 - `software/software-context-map.md` if implementation reality matters
@@ -145,13 +147,13 @@ Read:
 Currently stable product docs:
 
 - `product/product-overview.md`
+- `product/target-customer.md`
+- `product/claims-and-evidence.md`
+- `product/roadmap.md`
 
 Planned product docs:
 
 - `product/mvp-scope.md`
-- `product/target-customer.md`
-- `product/claims-and-evidence.md`
-- `product/roadmap.md`
 - `product/user-experience.md`
 
 If a planned doc does not exist yet, use `product/product-overview.md` and `ai-context/current-state.md`, then recommend creating the missing doc if the question requires it.
