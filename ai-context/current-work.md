@@ -20,6 +20,7 @@ This file is not a replacement for source-of-truth docs, the decision log, the e
 - `ai-context/repo-backlog.md` records future docs, cleanup items, and recurring checks.
 - `validation/evidence-log.md` records real evidence and what claims it supports.
 - `marketing/post-performance-log.md` records detailed marketing post/campaign execution, metrics, lessons, and follow-up experiments.
+- `product/old-mvp.md` records detailed historical context about the old physical MVP/prototype.
 - `ai-context/current-work.md` tracks the active work queue, recent completions, blockers, and immediate next steps.
 
 ## Current focus
@@ -34,21 +35,26 @@ The current phase is evidence, validation, and marketing-learning discipline.
    - Add only real evidence.
    - Do not invent user quotes, numbers, test results, or validation.
    - Next likely evidence sources:
-     - old prototype tester feedback
+     - old MVP tester count and user feedback
+     - old MVP usage conditions, number of mornings/nights, and failure cases
      - technical prototype/software progress
      - expert/user conversations
      - more detailed customer language if available
 
-2. Add or refine marketing-learning docs as real data appears.
+2. Continue filling `product/old-mvp.md` as more old prototype details are provided.
+   - Add tester details, usage sessions, exact behavior, failure modes, hardware photos/diagrams if available, and lessons for the next version.
+   - Keep claim boundaries clear: old MVP supports prototype feasibility, not production reliability or customer validation by itself.
+
+3. Add or refine marketing-learning docs as real data appears.
    - Use `marketing/post-performance-log.md` for detailed content/campaign metrics and lessons.
    - Add future posts to that file as new marketing experiments run.
    - Consider `marketing/customer-voice-log.md` later if enough raw user language exists.
 
-3. Update `product/claims-and-evidence.md` after enough evidence entries are added.
+4. Update `product/claims-and-evidence.md` after enough evidence entries are added.
    - Map safe claims, careful claims, unsupported claims, and evidence required for stronger claims.
    - Make sure marketing/fundraising claims stay downstream from evidence.
 
-4. Create `validation/validation-roadmap.md`.
+5. Create `validation/validation-roadmap.md`.
    - Define which claims Orisen wants to eventually make.
    - Define what evidence is required for each claim.
    - Define early pilot/test plans for wake completion, grogginess reduction, sleep inertia, sensor-informed wake behavior, and radar/sleep-stage work.
@@ -58,13 +64,21 @@ The current phase is evidence, validation, and marketing-learning discipline.
 - Evidence collection and classification.
 - Converting known Orisen signals into conservative evidence-log entries.
 - Capturing marketing execution details and metrics separately from validation claims.
+- Capturing old MVP/prototype history and technical evidence.
 
 ## Blocked or waiting on input
 
-The next evidence-log updates are waiting on additional raw evidence from the founder, such as:
+The next evidence-log and old-MVP updates are waiting on additional raw evidence from the founder, such as:
 
-- old prototype tester count
-- old prototype tester comments or observed behavior
+- old MVP tester count
+- old MVP user comments or observed behavior
+- number of mornings/nights tested
+- whether testing happened during real wake-up conditions or demos
+- known failure modes
+- radar false positives/false negatives
+- audio/light behavior details
+- battery duration and unplug behavior details
+- photos, diagrams, or screenshots that should be summarized
 - customer/user interview notes
 - expert call notes
 - technical prototype test results
@@ -80,6 +94,31 @@ The marketing post log can be improved later if the founder provides:
 Do not add specific evidence entries until the raw data is provided or available in a trusted source file.
 
 ## Recently completed
+
+### 2026-05-18 — Added old MVP prototype documentation and evidence
+
+Completed:
+- Created `product/old-mvp.md`.
+- Documented the old physical MVP/prototype architecture, including:
+  - 3D printed case
+  - headboard C-clamp mounting
+  - development-board/module-based construction
+  - radar module
+  - audio output
+  - high-power LED/light output
+  - local joystick/LCD interface
+  - power/battery switching
+  - presence-based wake-completion behavior
+- Updated `validation/evidence-log.md` with a technical prototype evidence entry for the old MVP.
+
+Classification:
+- Built but not validated.
+- Technical prototype evidence.
+- Evidence strength: Level 2.
+
+Claim boundary:
+- Supports that the wake-completion loop was physically prototyped.
+- Does not prove production reliability, customer validation, broad bedroom robustness, willingness to pay, grogginess reduction, sleep-stage-aware intervention, or artificial sleep phase transitioning.
 
 ### 2026-05-18 — Added marketing post performance log
 
@@ -211,3 +250,4 @@ When in doubt:
 - `repo-backlog.md` tracks future cleanup and missing docs
 - `evidence-log.md` tracks real evidence
 - `marketing/post-performance-log.md` tracks detailed marketing execution and performance learning
+- `product/old-mvp.md` tracks detailed historical prototype context
