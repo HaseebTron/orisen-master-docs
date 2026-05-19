@@ -7,6 +7,7 @@ This file captures detailed founder-reported clarification about old MVP bypass 
 This file is an addendum to `product/old-mvp.md` and should be used with:
 
 - `product/old-mvp.md`
+- `product/old-mvp-test-row-labels.md`
 - `validation/evidence-log.md`
 - `product/claims-and-evidence.md`
 
@@ -16,6 +17,7 @@ It preserves detailed notes without overloading the main old MVP file.
 
 Source:
 - Founder-provided speech-to-text clarification in May 2026.
+- Founder-provided follow-up clarification in May 2026.
 
 Interpretation rules:
 - Treat these as founder-reported historical notes.
@@ -45,8 +47,9 @@ Reported behavior:
 
 Main discovered bug/design gap:
 
-- Sabeeh likely found a way to wake up one or two minutes before the alarm and shut it off before the anti-dismiss alarm period started.
-- Design lesson: future versions need a pre-alarm lockout window where the alarm cannot be adjusted, dismissed, disabled, or tampered with shortly before the scheduled alarm.
+- Sabeeh likely found a way to wake up before the alarm and shut it off before the anti-dismiss alarm period started.
+- Founder clarified that there was no pre-alarm protection window: the user could change or disable the alarm even seconds before alarm time.
+- Design lesson: future versions need a pre-alarm lockout window where the alarm cannot be adjusted, dismissed, disabled, or weakened shortly before the scheduled alarm.
 
 ## Bypass attempts
 
@@ -54,7 +57,8 @@ Founder-reported behavior:
 
 - All pilot users tried to bypass the device in some way.
 - Sabeeh was especially active in testing bypass methods.
-- Sabeeh likely discovered that if he woke up a minute or two before the alarm, he could shut it off before the alarm period started, preventing the alarm from ringing.
+- Sabeeh likely discovered that if he woke up before the alarm, he could shut it off before the alarm period started, preventing the alarm from ringing.
+- Founder clarified that because there was no lockout window, the device would allow alarm changes or disabling even seconds before the scheduled alarm.
 
 Interpretation:
 
@@ -92,6 +96,7 @@ Founder-reported behavior:
 - Testers tried unplugging the device.
 - The device continued working after unplugging because it switched to battery power.
 - Battery/unplug behavior worked as intended in the reported pilot context.
+- Founder later estimated that battery duration under unplugged alarm behavior was at least about 15 minutes, though exact runtime is not documented.
 
 Interpretation:
 
@@ -112,6 +117,7 @@ Founder-reported behavior:
 - Testers intentionally tried to go back to bed.
 - Going back to bed did not work as a bypass.
 - The device continued or re-triggered when the user returned to bed.
+- Founder does not currently remember the exact return-to-bed detection window.
 
 Interpretation:
 
@@ -164,11 +170,49 @@ Design implication:
 - Headboard mounting remains a plausible mechanical direction.
 - Future versions need proper mechanical testing for clamp stability, drop, vibration, cable strain, user installation error, and bed/headboard variation.
 
+## Alarm behavior details
+
+Founder-reported details:
+
+- Alarm sound was a random game sound.
+- Alarm volume stayed at one volume.
+- The old MVP did not ramp volume.
+- Founder does not remember exactly how long the alarm rang before auto-stopping.
+- Blue light was intended to help wake the user.
+- Blue light gradually ramped up.
+- The device did not log events.
+
+Design implications:
+
+- Future alarm should escalate volume instead of staying at one fixed volume.
+- Future alarm should not auto-stop while the user is still in bed.
+- Future device should log alarm start, alarm stop, dismiss attempts, alarm edits, power changes, presence transitions, and wake-completion state changes.
+- Future light behavior should be specified as a proper ramp/intervention profile rather than only a simple blue-light output.
+
+## High-friction physical override
+
+Founder-reported behavior:
+
+- During alarm behavior, the intended physical override was high-friction.
+- The user would have to unscrew the front and unplug the battery.
+- Founder intended this as a high-friction override so users would not use it as a snooze mechanism.
+
+Interpretation:
+
+- This supports the product principle that Orisen should be hard to bypass during the wake-up window.
+- However, a production product needs a safer, clearer, and more responsible emergency override design than requiring disassembly.
+
+Design implication:
+
+- Future versions need an emergency override that is possible but intentionally high-friction, logged, and not usable as an easy snooze.
+- Emergency override design should consider safety, liability, user trust, and edge cases.
+
 ## Dennis alarm failure day
 
 Founder-reported clarification:
 
 - Dennis’s alarm-failure day was likely because the alarm did not ring or something similar.
+- Founder says to assume it was a bug and not strategically important.
 - Exact root cause is not confirmed.
 
 Interpretation:
@@ -186,14 +230,16 @@ Open question:
 Founder-reported clarification:
 
 - Hamza was one of the earlier testers.
-- Some partial failures may have been caused by the alarm duration being set too short, possibly around 15 minutes instead of 30 minutes.
-- The prototype may not have ramped volume properly at that point.
-- The alarm may have stayed at a lower volume and only rung for a few minutes before turning off by itself.
+- Founder considers all Hamza days successful overall compared with baseline.
+- Founder later clarified that on late-wake days, Hamza likely woke late because the alarm was not loud enough to wake him up.
+- The prototype stayed at one volume and did not ramp volume.
+- Some partial failures may also have involved the alarm duration being set too short, possibly around 15 minutes instead of 30 minutes.
+- 2025-03-12 is the day where Hamza slept again.
 
 Interpretation:
 
 - Some Hamza/Humza failures should likely be interpreted as configuration/prototype-behavior limitations, not necessarily failure of the presence-detection concept.
-- Still, they should remain documented as failures or partial failures until rows are labeled precisely.
+- Still, they should remain documented as partial failures or technical limitations in strict row-level analysis.
 
 Design implication:
 
@@ -206,8 +252,10 @@ Design implication:
 
 Founder-reported clarification:
 
-- The days where Sabeeh overslept significantly were likely bug days.
-- The suspected bug was a pre-alarm bypass: waking shortly before the scheduled alarm and shutting it off before the alarm lockout/enforcement period began.
+- Founder says 2025-07-09 was a success.
+- The remaining days where Sabeeh overslept significantly were likely bug days.
+- The suspected bug was a pre-alarm bypass: waking before the scheduled alarm and shutting it off before the alarm lockout/enforcement period began.
+- The root design flaw was that there was no pre-alarm lockout window.
 
 Interpretation:
 
@@ -226,6 +274,7 @@ Design implication:
 Founder-reported clarification:
 
 - Battery/unplug behavior worked fine in the old MVP pilot context.
+- Founder estimates battery duration was at least about 15 minutes.
 - Exact battery duration is not documented here.
 
 Interpretation:
@@ -247,6 +296,8 @@ This clarification strengthens support for:
 - pre-alarm tamper lockout as a required next-generation feature
 - debounce/stability timing as useful for radar state changes
 - wake completion as Orisen’s strongest validated wedge
+- volume escalation/ramping as a required alarm behavior
+- event logging as a required future validation and debugging feature
 
 This clarification does not prove:
 
@@ -274,10 +325,12 @@ Future product/software/firmware specs should include:
 - no automatic alarm timeout while the user is still detected in bed
 - radar state debounce/stability window
 - explicit classification of pilot mornings by outcome type
+- high-friction but safe emergency override behavior
 
 ## Related docs
 
 - `product/old-mvp.md`
+- `product/old-mvp-test-row-labels.md`
 - `validation/evidence-log.md`
 - `software/software-context-map.md`
 - `product/claims-and-evidence.md`
