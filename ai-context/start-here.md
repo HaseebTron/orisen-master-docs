@@ -76,6 +76,30 @@ My current request:
 [insert request]
 ```
 
+## Repo integrity check session
+
+Use a repo integrity check when the goal is to audit the source-of-truth system itself for contradictions, stale docs, authority ambiguity, missing updates, or cross-file drift.
+
+Run this periodically, especially:
+
+- monthly during active repo buildout
+- after major updates to `ai-context/current-state.md`
+- after major product, claims, roadmap, marketing, fundraising, software, radar/ML, or hardware source-of-truth changes
+- after migrating a large batch of old notes into the repo
+- when a conflict or authority ambiguity is suspected
+
+For a repo integrity check, load the Orisen General full reference pack from `ai-context/context-map.md`, then inspect the relevant folder context maps and stable docs for contradictions.
+
+The goal is not to rewrite everything. The goal is to identify:
+
+- conflicts between files
+- stale statements
+- authority ambiguity
+- docs listed as planned that already exist
+- source-of-truth files that need propagation updates
+- downstream docs that are overclaiming or drifting
+- missing evidence or decision-log entries
+
 ## Required boot sequence
 
 When this file is read for a meaningful Orisen task, follow this order before answering the main request:
