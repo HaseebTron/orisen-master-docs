@@ -1,5 +1,7 @@
 # P1
 
+> This is a synced implementation doc from the software repo. It describes what was being built at a point in time. For product truth and scope, defer to `product/product-overview.md` and `ai-context/current-state.md`. When this file conflicts with those files, those files win unconditionally.
+
 - **Product Overview**
     - **General**:
         - Orisen is a non-contact sleep intervention device designed to fix brutal wake-ups, chronic oversleeping, and sleep inertia.
