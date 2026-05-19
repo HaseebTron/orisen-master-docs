@@ -37,6 +37,7 @@ If evidence does not clearly support a claim, treat the claim as an assumption, 
 - Presence-based wake completion is currently the strongest validated wedge.
 - Current evidence should still be treated as early validation, not broad-market proof.
 - The old MVP physically demonstrated the wake-completion loop using local alarm behavior, radar-based presence detection, audio/light output, local controls, and battery backup.
+- A small old-MVP pilot/test group used the device in real morning contexts, with the strongest signal around getting users out of bed closer to the alarm time.
 
 ### Early demand and messaging signal
 
@@ -55,7 +56,7 @@ If evidence does not clearly support a claim, treat the claim as an assumption, 
 - First customer segment
 - Price point
 - Reliability standard required for users to trust Orisen as a main alarm
-- Old MVP tester count, real usage sessions, failure modes, and user quotes
+- More exact old-MVP failure-mode labels and bug details
 
 ## Evidence entries
 
@@ -87,6 +88,75 @@ Add customer interview evidence here.
 ## Pilot evidence
 
 Add pilot user evidence here.
+
+### 2026-05-18 — Old MVP pilot/test users showed early wake-completion signal
+
+- Evidence type: Small prototype pilot / real-use morning test logs.
+- Source:
+  - Founder-provided old MVP pilot/test data for founder, Hamza/Humza, Dennis, and Sabeeh.
+  - Uploaded tester instruction sheet defining bed time, alarm time, wake-up time, get-out-of-bed time, sleepy rating, irritation rating, mood rating, energy rating, and comments. fileciteturn42file0
+- Related detailed doc: `product/old-mvp.md`.
+- Participants:
+  - Founder: university student, self-test.
+  - Hamza/Humza: university student, friend; tested during Ramadan and finals while sleeping about 4 hours/day.
+  - Dennis: university student, friend; logged multi-day morning data and written comments.
+  - Sabeeh: working full time, friend; logged several dates and found a bug that allowed alarm shutoff on some days.
+- What was tested or observed:
+  - A small group used the old MVP in real morning contexts.
+  - Dennis's usual baseline was waking at 8:30 but not getting out of bed until 10:00.
+  - On Dennis's logged successful alarm days, wake-up and get-out-of-bed times matched or were very close to the alarm time.
+  - Dennis wrote: "Every single day, I really want to get back in bed but I can’t. So my only option is to take a shower, which I’m not happy about doing. But after about a minute in the shower, I wake up completely."
+  - Hamza/Humza's usual baseline was alarm at 4:00, wake at 4:50, and get out of bed at 5:00.
+  - Several Hamza/Humza logged days show wake-up and get-out-of-bed within a few minutes of the alarm time, including one day where the blue light woke him up.
+  - Some Hamza/Humza days show sleeping again or waking/getting out of bed much later.
+  - Sabeeh's usual baseline was alarm at 5:30, wake at 6:30, and get out of bed at 9:00.
+  - Sabeeh's data was mixed and included bug/failure days.
+  - Founder reports that Sabeeh found a bug that allowed him to shut off the alarm on some days, and that excluding those bug days he woke on time.
+- What the user/customer said or did:
+  - Dennis's comment directly describes wanting to get back in bed but being unable to, then taking a shower and waking up completely after about a minute.
+  - Hamza/Humza's table includes a note that blue light woke him up on one day.
+  - Sabeeh wrote on one day that he did not wake up to the alarm and thought he slept through it, with volume 3 and duration 15.
+- Claim supported:
+  - The old MVP showed early real-world signal for the presence-based wake-completion mechanism.
+  - Preventing the user from staying in bed or returning to bed can force or strongly encourage getting out of bed closer to the alarm time.
+  - The strongest outcome signal from the old MVP is wake completion / getting out of bed, not subjective sleep quality.
+  - The old MVP was used by multiple people beyond the founder.
+  - Blue light may have contributed to waking in at least one logged case.
+- Claim not supported:
+  - This does not prove broad production reliability.
+  - This does not prove paid demand or willingness to pay.
+  - This does not prove retention or long-term behavior change.
+  - This does not prove broad-market demand.
+  - This does not prove clinical efficacy.
+  - This does not prove reduced grogginess or reduced sleep inertia as a validated outcome.
+  - This does not prove better mood or energy as a validated outcome.
+  - This does not prove sleep-stage-aware intervention, artificial sleep phase transitioning, or radar-based sleep-stage estimation.
+  - This does not prove that the device worked every time, because the logs include alarm failure, sleeping again, and bug/failure days.
+- Evidence category: Early validation / small prototype pilot signal.
+- Evidence strength: Level 2 to early Level 3 for the wake-completion mechanism; not Level 3+ for production reliability, broad robustness, paid demand, or physiological outcomes.
+- Confidence: Medium for directional wake-completion signal; lower for exact success rate because some rows are incomplete, bug days are not fully labeled, and data is self-reported.
+- Limitations:
+  - Small sample size.
+  - Convenience sample of founder and friends.
+  - Self-reported data.
+  - Not a controlled study.
+  - Some rows are blank or incomplete.
+  - Some days had alarm failure, sleeping again, or bugs.
+  - Sabeeh's bug days need to be labeled precisely before computing success rate.
+  - No payment or preorder evidence.
+  - No production-intent device.
+  - No clinical or physiological measurement.
+- Related docs to update:
+  - `product/old-mvp.md`
+  - `product/claims-and-evidence.md`
+  - `product/product-overview.md`
+  - `product/roadmap.md`
+  - `marketing/positioning-and-messaging.md`
+  - `fundraising/investor-narrative.md`
+- Notes:
+  - This is one of the strongest pieces of evidence for Orisen's first wedge.
+  - It should be used carefully as early prototype/pilot validation of wake completion, not as proof of product-market fit or production reliability.
+  - Future analysis should label valid/invalid days and compute success metrics separately for each tester.
 
 ## Website and waitlist evidence
 
@@ -261,6 +331,19 @@ For each supported claim, include:
 - Limitations:
   - Does not prove production reliability, customer validation, willingness to pay, reduced grogginess, sleep-stage-aware intervention, or broad robustness.
   - External tester details and repeated real-use evidence still need to be documented.
+
+### Orisen's old MVP showed early pilot signal for wake completion
+
+- Claim: In a small old-MVP pilot/test group, the presence-based wake-completion mechanism showed early signal for getting users out of bed closer to the alarm time.
+- Evidence category: Early validation / small prototype pilot signal.
+- Evidence strength: Level 2 to early Level 3.
+- Evidence source: 2026-05-18 old MVP pilot/test evidence entry and `product/old-mvp.md`.
+- Limitations:
+  - Small convenience sample of founder/friends.
+  - Self-reported data.
+  - Some rows incomplete.
+  - Some days had failure, bugs, or sleeping again.
+  - Does not prove production reliability, willingness to pay, broad robustness, sleep-stage-aware intervention, or physiological outcomes.
 
 ## Claims not yet supported
 
