@@ -19,13 +19,14 @@ This file is not a replacement for source-of-truth docs, the decision log, the e
 - `ai-context/decision-log.md` records major decisions and why they were made.
 - `ai-context/repo-backlog.md` records future docs, cleanup items, and recurring checks.
 - `validation/evidence-log.md` records real evidence and what claims it supports.
+- `marketing/post-performance-log.md` records detailed marketing post/campaign execution, metrics, lessons, and follow-up experiments.
 - `ai-context/current-work.md` tracks the active work queue, recent completions, blockers, and immediate next steps.
 
 ## Current focus
 
 Strengthen the Orisen master-docs repo so ChatGPT can use it as a reliable source-of-truth system for company/product/claims/workflow decisions.
 
-The current phase is evidence and validation discipline.
+The current phase is evidence, validation, and marketing-learning discipline.
 
 ## Immediate next steps
 
@@ -38,23 +39,25 @@ The current phase is evidence and validation discipline.
      - expert/user conversations
      - more detailed customer language if available
 
-2. Update `product/claims-and-evidence.md` after enough evidence entries are added.
+2. Add or refine marketing-learning docs as real data appears.
+   - Use `marketing/post-performance-log.md` for detailed content/campaign metrics and lessons.
+   - Add future posts to that file as new marketing experiments run.
+   - Consider `marketing/customer-voice-log.md` later if enough raw user language exists.
+
+3. Update `product/claims-and-evidence.md` after enough evidence entries are added.
    - Map safe claims, careful claims, unsupported claims, and evidence required for stronger claims.
    - Make sure marketing/fundraising claims stay downstream from evidence.
 
-3. Create `validation/validation-roadmap.md`.
+4. Create `validation/validation-roadmap.md`.
    - Define which claims Orisen wants to eventually make.
    - Define what evidence is required for each claim.
    - Define early pilot/test plans for wake completion, grogginess reduction, sleep inertia, sensor-informed wake behavior, and radar/sleep-stage work.
-
-4. Later, create `marketing/customer-voice-log.md` if enough raw user language exists.
-   - Store raw customer language separately from source-of-truth strategy.
-   - Use it to improve messaging without treating every quote as validated proof.
 
 ## In progress
 
 - Evidence collection and classification.
 - Converting known Orisen signals into conservative evidence-log entries.
+- Capturing marketing execution details and metrics separately from validation claims.
 
 ## Blocked or waiting on input
 
@@ -67,9 +70,38 @@ The next evidence-log updates are waiting on additional raw evidence from the fo
 - technical prototype test results
 - software build/test milestones that should be classified as built but not customer-validated
 
+The marketing post log can be improved later if the founder provides:
+
+- descriptions or screenshots of the three images used in the launch post
+- comment themes from the post
+- signup profile details, if available
+- future post/campaign metrics
+
 Do not add specific evidence entries until the raw data is provided or available in a trusted source file.
 
 ## Recently completed
+
+### 2026-05-18 — Added marketing post performance log
+
+Completed:
+- Created `marketing/post-performance-log.md`.
+- Added the 2026-02-04 founder LinkedIn waitlist launch post as the first entry.
+- Included:
+  - exact post copy
+  - context, goal, and hypothesis
+  - creative/distribution notes
+  - performance summary
+  - detailed metrics timeline
+  - derived metrics
+  - what likely worked
+  - what was weak or uncertain
+  - claim boundaries
+  - lessons
+  - follow-up experiments
+
+Why:
+- The evidence log should classify validation and claim support conservatively.
+- The post-performance log should preserve detailed marketing execution data so future content and GTM decisions can learn from what worked and what did not.
 
 ### 2026-05-18 — Added waitlist and LinkedIn launch evidence
 
@@ -178,3 +210,4 @@ When in doubt:
 - `decision-log.md` tracks durable decisions
 - `repo-backlog.md` tracks future cleanup and missing docs
 - `evidence-log.md` tracks real evidence
+- `marketing/post-performance-log.md` tracks detailed marketing execution and performance learning
