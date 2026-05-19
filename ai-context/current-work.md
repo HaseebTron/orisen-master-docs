@@ -88,7 +88,7 @@ After the two upstream docs above are updated, start a fresh chat in the Orisen 
 
 Source files:
 
-- `research/customer-interviews/2024-alarm-clock-responses.csv`
+- `research/customer-interviews/raw/2024-alarm-clock-responses.csv`
 - `research/customer-interviews/2024-alarm-clock-interviews.md`
 
 Status:
@@ -139,15 +139,18 @@ Status:
 
 - Roadmap created.
 - Actual external source files still mostly missing.
+- `validation/evidence-roadmap.md` now defines the future raw/source folder convention.
 
 Future source files may include:
 
-- `research/external-research/sleep-inertia-research.md`
-- `research/external-research/market-research-notes.md`
-- `research/external-research/articles-and-media-notes.md`
-- `research/external-research/reddit-customer-language.md`
-- `research/external-research/competitor-review-research.md`
-- `research/external-research/expert-commentary.md`
+- `research/external-research/sleep-inertia/sleep-inertia-research.md`
+- `research/external-research/market-reports/market-research-notes.md`
+- `research/external-research/articles-and-media/articles-and-media-notes.md`
+- `research/external-research/reddit-forums/reddit-customer-language.md`
+- `research/external-research/competitor-reviews/competitor-review-research.md`
+- `research/external-research/expert-commentary/expert-commentary.md`
+
+Each future category may have a `raw/` folder when there is actual raw/source material to store.
 
 ## Blocked or waiting on input
 
@@ -163,6 +166,22 @@ Useful future inputs:
 - external research sources: papers, competitor reviews, Reddit/forum threads, market reports, articles, expert notes
 
 ## Recently completed
+
+### 2026-05-18 — Added raw/source data convention
+
+Completed:
+
+- Moved the summer 2024 interview raw CSV into `research/customer-interviews/raw/2024-alarm-clock-responses.csv`.
+- Removed the duplicate CSV from `research/customer-interviews/2024-alarm-clock-responses.csv`.
+- Updated `research/customer-interviews/2024-alarm-clock-interviews.md` to point to the new raw CSV path.
+- Updated `validation/evidence-roadmap.md` with a raw data / synthesis convention.
+- Updated future external-research paths to use category folders with optional `raw/` subfolders.
+
+Why:
+
+- Raw/source data should stay separate from synthesis and interpretation.
+- The repo should avoid duplicating raw data.
+- Future external research should follow the same source-to-synthesis evidence chain.
 
 ### 2026-05-18 — Added evidence roadmap
 
@@ -191,7 +210,7 @@ Why:
 
 Completed:
 
-- Created `research/customer-interviews/2024-alarm-clock-responses.csv`.
+- Created `research/customer-interviews/raw/2024-alarm-clock-responses.csv`.
 - Created `research/customer-interviews/2024-alarm-clock-interviews.md`.
 - Added small-sample qualitative synthesis of summer 2024 campus/mall interviews.
 - Clarified that this data can support pain-pattern hypotheses and customer language, but not statistical segmentation.
