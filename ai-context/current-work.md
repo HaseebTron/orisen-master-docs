@@ -25,16 +25,20 @@ This file is not a replacement for source-of-truth docs, the decision log, the e
 
 Strengthen the Orisen master-docs repo so ChatGPT can use it as a reliable source-of-truth system for company/product/claims/workflow decisions.
 
-The current phase is moving from repo architecture into evidence and validation discipline.
+The current phase is evidence and validation discipline.
 
 ## Immediate next steps
 
-1. Fill `validation/evidence-log.md` with real evidence.
+1. Continue filling `validation/evidence-log.md` with real evidence.
    - Add only real evidence.
    - Do not invent user quotes, numbers, test results, or validation.
-   - Start with old prototype feedback, waitlist/signup data, LinkedIn post performance, technical prototype progress, and expert/user conversations.
+   - Next likely evidence sources:
+     - old prototype tester feedback
+     - technical prototype/software progress
+     - expert/user conversations
+     - more detailed customer language if available
 
-2. Update `product/claims-and-evidence.md` after evidence entries are added.
+2. Update `product/claims-and-evidence.md` after enough evidence entries are added.
    - Map safe claims, careful claims, unsupported claims, and evidence required for stronger claims.
    - Make sure marketing/fundraising claims stay downstream from evidence.
 
@@ -49,18 +53,15 @@ The current phase is moving from repo architecture into evidence and validation 
 
 ## In progress
 
-- Evidence collection and classification planning.
-- Preparing to convert known Orisen signals into conservative evidence-log entries.
+- Evidence collection and classification.
+- Converting known Orisen signals into conservative evidence-log entries.
 
 ## Blocked or waiting on input
 
-The evidence-log update is waiting on raw evidence from the founder, such as:
+The next evidence-log updates are waiting on additional raw evidence from the founder, such as:
 
 - old prototype tester count
 - old prototype tester comments or observed behavior
-- exact waitlist/signup numbers
-- website visitor numbers or conversion rates, if available
-- LinkedIn post performance details
 - customer/user interview notes
 - expert call notes
 - technical prototype test results
@@ -69,6 +70,24 @@ The evidence-log update is waiting on raw evidence from the founder, such as:
 Do not add specific evidence entries until the raw data is provided or available in a trusted source file.
 
 ## Recently completed
+
+### 2026-05-18 — Added waitlist and LinkedIn launch evidence
+
+Completed:
+- Updated `validation/evidence-log.md` with the first detailed evidence entry:
+  - 66 waitlist signups excluding founder/test signup
+  - about 415 estimated total website visits
+  - about 16% estimated visitor-to-waitlist conversion
+  - one founder LinkedIn post with 23.4k impressions, 197 likes, 69 comments, 296 LinkedIn-reported link visits, 13 sends, and 6 saves
+  - limited external sharing from a friend
+
+Classification:
+- Early signal.
+- Evidence strength: Level 1 to Level 2.
+
+Claim boundary:
+- Supports early demand/message-resonance signal.
+- Does not prove willingness to pay, retention, product-market fit, broad-market demand, clinical efficacy, grogginess reduction, sleep-stage estimation, or artificial sleep phase transitioning.
 
 ### 2026-05-18 — Added current work tracker
 
