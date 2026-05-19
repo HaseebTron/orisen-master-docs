@@ -8,6 +8,13 @@ Use this file when a needed doc or section is identified but should not be fully
 
 This file should stay lightweight. It is a checklist, not a strategy document.
 
+## Recurring checks
+
+- [ ] Run repo integrity check monthly or after major source-of-truth updates.
+  - Load the Orisen General full reference pack from `ai-context/context-map.md`.
+  - Check for contradictions, stale docs, authority ambiguity, missing propagation updates, missing evidence entries, and missing decision-log entries.
+  - Do not rewrite the repo automatically. Produce a prioritized cleanup list first.
+
 ## Created starter docs that need future fill-in
 
 - [ ] `validation/evidence-log.md`
