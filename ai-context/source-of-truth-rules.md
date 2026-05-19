@@ -53,6 +53,29 @@ When there is a conflict, use this hierarchy by default:
    - Treat these as inputs, not decisions.
    - Do not treat them as current truth unless they have been promoted into a source-of-truth file.
 
+## Domain-specific tiebreakers
+
+The global hierarchy above is the default rule. Use the following tiebreakers when multiple docs appear to have overlapping authority within the same topic.
+
+### Product scope
+
+For product scope questions, use this authority order:
+
+1. `ai-context/current-state.md`
+2. `product/product-overview.md`
+3. `product/roadmap.md`
+4. `product/target-customer.md`, when the question is specifically about the first customer or beachhead segment
+5. `product/claims-and-evidence.md`, when the question is specifically about claim strength, validation, or what can be said publicly
+6. Software or MVP implementation docs, only for what is currently built or being built
+
+`software/p1-overview.md` and `software/p2-mvp-scope.md` are synced implementation docs. They describe what was being built at a point in time.
+
+When synced software docs conflict with `ai-context/current-state.md`, `product/product-overview.md`, or `product/roadmap.md` on product scope, the product and company docs win unconditionally.
+
+Software docs can reveal implementation reality or constraints. They do not shrink the company vision, first customer-ready product definition, customer promise, or public positioning unless the higher-authority docs are deliberately updated.
+
+This product-scope tiebreaker is the pattern to follow for other domains as the repo matures.
+
 ## How to treat different types of docs
 
 ### Current truth
@@ -222,3 +245,4 @@ Interpretation:
 Recommended update:
 - Update:
 - Change:
+```
