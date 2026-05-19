@@ -18,7 +18,9 @@ This file is not a replacement for source-of-truth docs, the decision log, the e
 
 - `ai-context/decision-log.md` records major decisions and why they were made.
 - `ai-context/repo-backlog.md` records future docs, cleanup items, and recurring checks.
+- `validation/evidence-roadmap.md` tracks evidence categories, missing evidence, and where each evidence type lives.
 - `validation/evidence-log.md` records real evidence and what claims it supports.
+- `validation/evidence-standard.md` defines evidence-strength and classification rules.
 - `marketing/post-performance-log.md` records detailed marketing post/campaign execution, metrics, lessons, and follow-up experiments.
 - `product/old-mvp.md` records detailed historical context about the old physical MVP/prototype.
 - `ai-context/current-work.md` tracks the active work queue, recent completions, blockers, and immediate next steps.
@@ -27,42 +29,50 @@ This file is not a replacement for source-of-truth docs, the decision log, the e
 
 Strengthen the Orisen master-docs repo so ChatGPT can use it as a reliable source-of-truth system for company/product/claims/workflow decisions.
 
-The current phase is evidence, validation, and marketing-learning discipline.
+The current phase is upstream evidence, ICP, and claim-boundary cleanup before moving into Orisen Marketing for X/Twitter execution.
 
 ## Immediate next steps
 
-1. Label old MVP pilot/test rows more precisely.
-   - Identify which Sabeeh days were bug days.
-   - Identify which days should count as valid tests, invalid tests, partial failures, or technical failures.
-   - Identify what caused Dennis's alarm-failure day if known.
-   - Identify whether Hamza/Humza sleeping-again days were due to product failure, user behavior, setup, or other conditions.
+### 1. Update `product/target-customer.md`
 
-2. Continue filling `validation/evidence-log.md` with real evidence.
-   - Add only real evidence.
-   - Do not invent user quotes, numbers, test results, or validation.
-   - Next likely evidence sources:
-     - more old MVP failure-mode detail
-     - technical prototype/software progress
-     - expert/user conversations
-     - more detailed customer language if available
+Use the now-captured evidence base:
 
-3. Continue filling `product/old-mvp.md` as more old prototype details are provided.
-   - Add exact bug causes, tester follow-up comments, failure modes, hardware photos/diagrams if available, and lessons for the next version.
-   - Keep claim boundaries clear: old MVP supports early wake-completion signal, not production reliability or broad validation.
+- summer 2024 customer interviews
+- old MVP prototype/pilot evidence
+- old MVP user feedback
+- LinkedIn/waitlist evidence
+- evidence weighting rules in `validation/evidence-roadmap.md`
 
-4. Add or refine marketing-learning docs as real data appears.
-   - Use `marketing/post-performance-log.md` for detailed content/campaign metrics and lessons.
-   - Add future posts to that file as new marketing experiments run.
-   - Consider `marketing/customer-voice-log.md` later if enough raw user language exists.
+Goal:
 
-5. Update `product/claims-and-evidence.md` after enough evidence entries are added.
-   - Map safe claims, careful claims, unsupported claims, and evidence required for stronger claims.
-   - Make sure marketing/fundraising claims stay downstream from evidence.
+- Sharpen the primary ICP around people who repeatedly fail between alarm time and actually being out of bed.
+- Make clear this is not for generic alarm-clock users or casual sleep optimizers.
+- Treat student/full-time/gender/age/etc. patterns as hypotheses only, not validated segment conclusions.
 
-6. Create `validation/validation-roadmap.md`.
-   - Define which claims Orisen wants to eventually make.
-   - Define what evidence is required for each claim.
-   - Define early pilot/test plans for wake completion, grogginess reduction, sleep inertia, sensor-informed wake behavior, and radar/sleep-stage work.
+### 2. Update `product/claims-and-evidence.md`
+
+Use the same evidence base to clarify:
+
+- safe claims
+- careful claims
+- unsupported claims
+- roadmap claims
+- evidence required to strengthen claims
+
+Goal:
+
+- Keep marketing and fundraising downstream from evidence.
+- Clearly separate wake-completion evidence from unvalidated grogginess, sleep inertia, sleep-stage detection, and artificial sleep phase transitioning claims.
+
+### 3. Then move to Orisen Marketing for X execution
+
+After the two upstream docs above are updated, start a fresh chat in the Orisen Marketing project for:
+
+- `marketing/positioning-and-messaging.md`
+- `marketing/twitter-content-strategy.md`
+- `marketing/customer-voice-log.md`
+- `marketing/twitter-post-bank.md`
+- actual X/Twitter posts
 
 ## In progress
 
@@ -70,36 +80,166 @@ The current phase is evidence, validation, and marketing-learning discipline.
 - Converting known Orisen signals into conservative evidence-log entries.
 - Capturing marketing execution details and metrics separately from validation claims.
 - Capturing old MVP/prototype history, pilot details, and technical evidence.
+- Preparing upstream product/customer/claim docs for marketing use.
+
+## Evidence currently captured
+
+### Direct customer discovery
+
+Source files:
+
+- `research/customer-interviews/2024-alarm-clock-responses.csv`
+- `research/customer-interviews/2024-alarm-clock-interviews.md`
+
+Status:
+
+- Captured as small-sample qualitative discovery.
+- Useful for pain patterns and customer language.
+- Not valid for subgroup conclusions by occupation, gender, ethnicity, religion, age, student/full-time status, or living situation.
+
+### Prototype / pilot evidence
+
+Source files:
+
+- `product/old-mvp.md`
+- `product/old-mvp-test-row-labels.md`
+- `product/old-mvp-bypass-and-failure-notes.md`
+- `product/old-mvp-user-feedback.md`
+- `validation/evidence-log.md`
+
+Status:
+
+- Strongest current support for wake-completion wedge.
+- Supports early signal that presence-based wake completion can get users out of bed closer to alarm time.
+- Does not prove production reliability, broad robustness, reduced grogginess, reduced sleep inertia, sleep-stage-aware intervention, or artificial sleep phase transitioning.
+
+### Traffic from website / marketing
+
+Source files:
+
+- `marketing/post-performance-log.md`
+- `validation/evidence-log.md`
+
+Status:
+
+- One founder LinkedIn post and limited external sharing.
+- 66 waitlist signups excluding founder/test signup.
+- About 22% internal high-intent/relevant traffic conversion estimate.
+- About 16% blended historical conversion.
+- About 6% later lower-intent incremental conversion.
+- Useful as early demand/message-resonance signal, not paid validation.
+
+### External market / literature / community evidence
+
+Source file:
+
+- `validation/evidence-roadmap.md`
+
+Status:
+
+- Roadmap created.
+- Actual external source files still mostly missing.
+
+Future source files may include:
+
+- `research/external-research/sleep-inertia-research.md`
+- `research/external-research/market-research-notes.md`
+- `research/external-research/articles-and-media-notes.md`
+- `research/external-research/reddit-customer-language.md`
+- `research/external-research/competitor-review-research.md`
+- `research/external-research/expert-commentary.md`
 
 ## Blocked or waiting on input
 
-The next old-MVP update is waiting on:
+No blocker for the immediate next step.
 
-- which specific Sabeeh days were bug days
-- what exactly the Sabeeh shutoff bug was
-- what caused Dennis's alarm-failure day
-- whether Hamza/Humza sleeping-again days were due to product failure, user behavior, setup, or other conditions
-- whether any tester tried to unplug the device or bypass it intentionally
-- radar false positives/false negatives
-- audio/light behavior details
-- battery duration and unplug behavior details
-- photos, diagrams, or screenshots that should be summarized
-- technical prototype test results
+Useful future inputs:
 
-The marketing post log can be improved later if the founder provides:
-
-- descriptions or screenshots of the three images used in the launch post
-- comment themes from the post
-- signup profile details, if available
-- future post/campaign metrics
-
-Do not add specific evidence entries until the raw data is provided or available in a trusted source file.
+- more customer interviews, especially severe oversleepers/heavy sleepers
+- screenshots/descriptions of the three LinkedIn launch post images
+- waitlist signup profile data, if available
+- exact old MVP tester quotes, if recoverable
+- old MVP photos/videos/diagrams
+- external research sources: papers, competitor reviews, Reddit/forum threads, market reports, articles, expert notes
 
 ## Recently completed
+
+### 2026-05-18 — Added evidence roadmap
+
+Completed:
+
+- Created `validation/evidence-roadmap.md`.
+- Defined four main evidence categories:
+  - Direct customer discovery
+  - Prototype / pilot evidence
+  - Traffic from website / marketing
+  - External market / literature / community evidence
+- Made the evidence roadmap an index/to-do file that points to detailed evidence files instead of duplicating them.
+- Added future external research categories for:
+  - sleep inertia research
+  - market reports/surveys
+  - articles/media notes
+  - Reddit/forum posts
+  - competitor product reviews
+  - sleep clinic/expert commentary
+
+Why:
+
+- The repo needs a category-specific evidence roadmap so future chats know what evidence exists, what is missing, and where the detailed source files live.
+
+### 2026-05-18 — Added 2024 customer interview data and synthesis
+
+Completed:
+
+- Created `research/customer-interviews/2024-alarm-clock-responses.csv`.
+- Created `research/customer-interviews/2024-alarm-clock-interviews.md`.
+- Added small-sample qualitative synthesis of summer 2024 campus/mall interviews.
+- Clarified that this data can support pain-pattern hypotheses and customer language, but not statistical segmentation.
+
+Classification:
+
+- User interview evidence / early customer discovery.
+- Evidence strength: Level 1 to Level 2.
+
+Claim boundary:
+
+- Supports the hypothesis that some users have repeated wake-up/get-out-of-bed problems and that non-camera sensing has privacy value.
+- Does not prove market size, willingness to pay, product-market fit, subgroup segment ranking, or Orisen efficacy.
+
+### 2026-05-18 — Clarified high-intent waitlist conversion
+
+Completed:
+
+- Updated `marketing/post-performance-log.md`.
+- Updated `validation/evidence-log.md`.
+- Separated conversion into:
+  - about 22% high-intent / relevant-traffic conversion estimate
+  - about 16% blended historical conversion
+  - about 6% later lower-intent incremental conversion
+
+Claim boundary:
+
+- The 22% number is an internal directional estimate for relevant early launch traffic, not a universal website conversion rate.
+
+### 2026-05-18 — Added old MVP qualitative user feedback
+
+Completed:
+
+- Created `product/old-mvp-user-feedback.md`.
+- Updated `validation/evidence-log.md`.
+- Captured that testers said the old MVP was much better at waking them on time compared with before.
+- Captured Dennis's founder-reported purchase-interest signal around a roughly $100 discussed price point.
+- Captured user pull for easier wake-up / less-groggy direction.
+
+Claim boundary:
+
+- Supports wake-completion value and roadmap pull.
+- Does not prove paid demand, price point, reduced grogginess, sleep inertia reduction, or artificial sleep phase transitioning.
 
 ### 2026-05-18 — Added old MVP pilot/test evidence
 
 Completed:
+
 - Updated `product/old-mvp.md` with detailed old MVP pilot/test participant data for:
   - founder
   - Hamza/Humza
@@ -111,148 +251,54 @@ Completed:
 - Updated `validation/evidence-log.md` with a pilot/test evidence entry.
 
 Classification:
+
 - Early validation / small prototype pilot signal.
 - Evidence strength: Level 2 to early Level 3 for wake-completion mechanism.
-
-Claim boundary:
-- Supports early real-world signal that presence-based wake completion can get users out of bed closer to alarm time.
-- Does not prove production reliability, paid demand, broad robustness, reduced grogginess, reduced sleep inertia, sleep-stage-aware intervention, or artificial sleep phase transitioning.
 
 ### 2026-05-18 — Added old MVP prototype documentation and evidence
 
 Completed:
+
 - Created `product/old-mvp.md`.
-- Documented the old physical MVP/prototype architecture, including:
-  - 3D printed case
-  - headboard C-clamp mounting
-  - development-board/module-based construction
-  - radar module
-  - audio output
-  - high-power LED/light output
-  - local joystick/LCD interface
-  - power/battery switching
-  - presence-based wake-completion behavior
-- Updated `validation/evidence-log.md` with a technical prototype evidence entry for the old MVP.
-
-Classification:
-- Built but not validated.
-- Technical prototype evidence.
-- Evidence strength: Level 2.
-
-Claim boundary:
-- Supports that the wake-completion loop was physically prototyped.
-- Does not prove production reliability, customer validation, broad bedroom robustness, willingness to pay, grogginess reduction, sleep-stage-aware intervention, or artificial sleep phase transitioning.
+- Documented the old physical MVP/prototype architecture, component-level behavior, and presence-based wake-completion loop.
+- Updated `validation/evidence-log.md` with a technical prototype evidence entry.
 
 ### 2026-05-18 — Added marketing post performance log
 
 Completed:
+
 - Created `marketing/post-performance-log.md`.
 - Added the 2026-02-04 founder LinkedIn waitlist launch post as the first entry.
-- Included:
-  - exact post copy
-  - context, goal, and hypothesis
-  - creative/distribution notes
-  - performance summary
-  - detailed metrics timeline
-  - derived metrics
-  - what likely worked
-  - what was weak or uncertain
-  - claim boundaries
-  - lessons
-  - follow-up experiments
-
-Why:
-- The evidence log should classify validation and claim support conservatively.
-- The post-performance log should preserve detailed marketing execution data so future content and GTM decisions can learn from what worked and what did not.
 
 ### 2026-05-18 — Added waitlist and LinkedIn launch evidence
 
 Completed:
-- Updated `validation/evidence-log.md` with the first detailed evidence entry:
-  - 66 waitlist signups excluding founder/test signup
-  - about 415 estimated total website visits
-  - about 16% estimated visitor-to-waitlist conversion
-  - one founder LinkedIn post with 23.4k impressions, 197 likes, 69 comments, 296 LinkedIn-reported link visits, 13 sends, and 6 saves
-  - limited external sharing from a friend
 
-Classification:
-- Early signal.
-- Evidence strength: Level 1 to Level 2.
-
-Claim boundary:
-- Supports early demand/message-resonance signal.
-- Does not prove willingness to pay, retention, product-market fit, broad-market demand, clinical efficacy, grogginess reduction, sleep-stage estimation, or artificial sleep phase transitioning.
+- Updated `validation/evidence-log.md` with the first detailed website/waitlist evidence entry.
 
 ### 2026-05-18 — Added current work tracker
 
 Completed:
-- Created `ai-context/current-work.md` to track active next steps, completed work, blockers, and deferred items.
 
-Why:
-- Future chats should be able to answer "what next?" from repo state instead of relying on chat scrollback.
+- Created `ai-context/current-work.md`.
 
 ### 2026-05-18 — Clarified copied software snapshot docs
 
 Completed:
+
 - Updated `software/software-context-map.md` to explain that some files in the `software/` folder are copied or synced from the separate software implementation repo.
-- Clarified that copied software docs are context snapshots, not the live software source of truth.
-- Clarified that `HaseebTron/Orisen` wins for live implementation reality.
-- Clarified that higher-level master-docs files win for product truth, roadmap meaning, claims, and customer promise.
 
 ### 2026-05-18 — Added strategic decision-log entries
 
 Completed:
-- Added decision-log entries for:
-  - presence-based wake completion as the first wedge
-  - painful wake-up users as the first target audience
-  - non-contact product direction
-  - hardware-led product direction
-  - engineering MVP not shrinking first customer-ready product vision
-  - grogginess reduction and sleep-phase-aware intervention as strategic but claim-sensitive
 
-### 2026-05-18 — Added repo integrity check workflow
-
-Completed:
-- Added a `Repo integrity check session` section to `ai-context/start-here.md`.
-- Added recurring repo integrity check item to `ai-context/repo-backlog.md`.
-
-### 2026-05-18 — Fixed software/product authority ambiguity
-
-Completed:
-- Updated `ai-context/source-of-truth-rules.md` with a product-scope authority tiebreaker.
-- Added authority notes to:
-  - `software/p1-overview.md`
-  - `software/p2-mvp-scope.md`
-
-### 2026-05-18 — Strengthened AI operating behavior
-
-Completed:
-- Updated `ai-context/ai-operating-mode.md` with:
-  - incoming information rule
-  - stronger conflict handling
-  - stop-and-surface rule for task-relevant conflicts
-
-### 2026-05-18 — Fixed product context map stale listings
-
-Completed:
-- Updated `product/product-context-map.md` so existing product docs are listed as stable instead of planned.
-- Added validation docs to claims/evidence routing.
+- Added decision-log entries for wake-completion, target audience, non-contact direction, hardware-led direction, MVP scope, and grogginess/sleep-phase-aware intervention claim sensitivity.
 
 ## Deferred / not now
 
 - Do not create `ai-context/master-context-paste.md` right now.
-  - Reason: current workflow assumes ChatGPT can read GitHub directly.
-  - Revisit only if another AI tool or workflow needs a pasteable fallback context pack.
-
-- Do not create creative strategy docs yet, such as:
-  - red-team docs
-  - assumption graveyard
-  - strategic tripwires
-  - parallel-worlds docs
-  - kill-condition docs
-
-Reason:
-- The repo needs real evidence and decision memory first, not more architecture.
+- Do not create more creative strategy docs until the upstream customer and claims docs are updated.
+- Do not move into Orisen Marketing execution until `product/target-customer.md` and `product/claims-and-evidence.md` are updated.
 
 ## Update rule
 
@@ -271,6 +317,7 @@ When in doubt:
 - `current-work.md` tracks operational status
 - `decision-log.md` tracks durable decisions
 - `repo-backlog.md` tracks future cleanup and missing docs
+- `evidence-roadmap.md` tracks evidence categories and missing evidence
 - `evidence-log.md` tracks real evidence
-- `marketing/post-performance-log.md` tracks detailed marketing execution and performance learning
-- `product/old-mvp.md` tracks detailed historical prototype context
+- `post-performance-log.md` tracks detailed marketing execution and performance learning
+- `old-mvp.md` tracks detailed historical prototype context
