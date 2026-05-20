@@ -21,6 +21,7 @@ This file is not a replacement for source-of-truth docs, the decision log, the e
 - `ai-context/claim-control/claim-control-roadmap.md` tracks evidence categories, missing evidence, and where each evidence type lives.
 - `ai-context/claim-control/claim-control-log.md` records real evidence and what claims it supports.
 - `ai-context/claim-control/claim-control-system.md` defines evidence-strength and classification rules.
+- `ai-context/handoff-rules.md` decides when to continue, refresh, start a new chat, or move projects.
 - `marketing/post-performance-log.md` records detailed marketing post/campaign execution, metrics, lessons, and follow-up experiments.
 - `product/old-mvp/` records detailed historical context about the old physical MVP/prototype.
 - `ai-context/current-work.md` tracks the active work queue, recent completions, blockers, and immediate next steps.
@@ -30,6 +31,34 @@ This file is not a replacement for source-of-truth docs, the decision log, the e
 Strengthen the Orisen master-docs repo so ChatGPT can use it as a reliable source-of-truth system for company/product/claims/workflow decisions.
 
 The current phase is upstream evidence, ICP, and claim-boundary cleanup before moving into Orisen Marketing for X/Twitter execution.
+
+## Next-step routing rule
+
+Whenever the user asks what to do next, this file should help the assistant answer both:
+
+1. what the next substantive task is
+2. where that task should happen
+
+The assistant should state one of:
+
+- Continue this chat.
+- Refresh context and continue this chat.
+- Start a new chat in the same project.
+- Move to another Orisen project.
+
+If refresh, new chat, handoff, or project move is recommended, the assistant must use the large, bold, all-caps heading format defined in `ai-context/handoff-rules.md`, such as:
+
+```markdown
+# **NEW CHAT RECOMMENDED**
+```
+
+or:
+
+```markdown
+# **MOVE TO ANOTHER PROJECT RECOMMENDED**
+```
+
+This is intentionally loud so the user does not miss it during long Orisen workflows.
 
 ## Immediate next steps
 
@@ -52,6 +81,11 @@ Goal:
 - Treat student/full-time/gender/age/etc. patterns as hypotheses only, not validated segment conclusions.
 - Treat teens/young adults and shift workers as segments worth investigating, not validated demographic ICPs.
 
+Recommended place:
+
+- New chat in Orisen General if the current chat is already long or has covered multiple workstreams.
+- Continue current chat only if it is short and already focused on product/customer docs.
+
 ### 2. Update `product/claims-and-evidence.md`
 
 Use the same evidence base to clarify:
@@ -69,6 +103,10 @@ Goal:
 - Incorporate expert caution that grogginess and sleep inertia are multi-cause and that sleep-stage intervention likely requires continuous feedback-based validation.
 - Incorporate expert caution that theoretically plausible sleep-intervention mechanisms still require empirical testing.
 
+Recommended place:
+
+- Same clean Orisen General chat as `product/target-customer.md` if both are being updated together.
+
 ### 3. Then move to Orisen Marketing for X execution
 
 After the two upstream docs above are updated, start a fresh chat in the Orisen Marketing project for:
@@ -78,6 +116,10 @@ After the two upstream docs above are updated, start a fresh chat in the Orisen 
 - `marketing/customer-voice-log.md`
 - `marketing/twitter-post-bank.md`
 - actual X/Twitter posts
+
+Recommended place:
+
+- Orisen Marketing + GTM project, new chat.
 
 ## In progress
 
@@ -191,6 +233,19 @@ Useful future inputs:
 - external research sources: papers, competitor reviews, Reddit/forum threads, market reports, articles, expert notes
 
 ## Recently completed
+
+### 2026-05-20 — Added proactive handoff / refresh visibility rules
+
+Completed:
+
+- Updated `ai-context/handoff-rules.md` with stricter proactive warning triggers.
+- Updated `ai-context/start-here.md` with a visible handoff warning rule.
+- Updated this file with a next-step routing rule.
+
+Why:
+
+- The assistant previously waited too long to recommend switching chats or refreshing context.
+- Future warnings should be hard to miss because they must use large, bold, all-caps headings.
 
 ### 2026-05-20 — Updated boot and context docs to point to claim-control paths
 
