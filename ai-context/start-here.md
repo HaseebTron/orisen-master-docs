@@ -50,6 +50,7 @@ Follow:
 
 - `ai-context/ai-operating-mode.md`
 - `ai-context/doc-creation-rules.md` when creating or editing docs
+- `ai-context/repo-editing-rules.md` when directly editing GitHub files or planning repo edits
 - `ai-context/claim-control/claim-control-system.md` when judging claims, evidence, validation, marketing, fundraising, radar/ML, or product truth
 
 ## Visible handoff warning rule
@@ -140,10 +141,11 @@ When this file is read for a meaningful Orisen task, follow this order before an
 8. Read `ai-context/context-map.md`.
 9. Read `ai-context/current-state.md`, `ai-context/source-of-truth-rules.md`, and `ai-context/ai-operating-mode.md` as core baseline context.
 10. If the task creates, edits, reviews, or promotes docs, read `ai-context/doc-creation-rules.md`.
-11. If the task judges validation, claims, marketing, fundraising, scientific/technical support, or evidence strength, read `ai-context/claim-control/claim-control-system.md`.
-12. Follow `context-map.md` to the correct minimal or full baseline pack and any task-specific docs.
-13. Provide the context loaded summary.
-14. Answer the user's main question using the relevant docs.
+11. If the task directly edits GitHub files or plans repo edits, read `ai-context/repo-editing-rules.md`.
+12. If the task judges validation, claims, marketing, fundraising, scientific/technical support, or evidence strength, read `ai-context/claim-control/claim-control-system.md`.
+13. Follow `context-map.md` to the correct minimal or full baseline pack and any task-specific docs.
+14. Provide the context loaded summary.
+15. Answer the user's main question using the relevant docs.
 
 ## Small-task exception after boot
 
@@ -169,7 +171,7 @@ If the new request needs source-of-truth docs that were not read earlier:
 1. Briefly tell the user that the request needs additional source context.
 2. Read `ai-context/context-map.md` if needed.
 3. Read the relevant folder context map and task-specific docs from GitHub.
-4. Read `ai-context/ai-operating-mode.md`, `ai-context/doc-creation-rules.md`, or `ai-context/claim-control/claim-control-system.md` if the request needs them and they were not already read.
+4. Read `ai-context/ai-operating-mode.md`, `ai-context/doc-creation-rules.md`, `ai-context/repo-editing-rules.md`, or `ai-context/claim-control/claim-control-system.md` if the request needs them and they were not already read.
 5. State which additional files were read.
 6. Answer using the expanded context.
 
@@ -226,7 +228,7 @@ Files not found:
 - None
 ```
 
-For tiny follow-up questions after the chat has already booted, do not repeat the context loaded summary unless additional files are read.
+For tiny follow-up questions after the chat has already booted correctly, do not repeat the context loaded summary unless additional files are read.
 
 For mid-chat context expansion, state only the additional files read before answering.
 
