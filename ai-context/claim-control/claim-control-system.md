@@ -31,12 +31,14 @@ Evidence should flow through three layers:
 ```text
 Raw/source material
 ↓
-Source-type synthesis
+Problem-area synthesis
 ↓
 product/claims-and-evidence.md
 ```
 
 Do not create extra abstraction layers unless the folder becomes too large or the claim is high-stakes.
+
+For external research, organize primarily by Orisen problem area. Source type should be metadata inside each source entry, not the main folder structure.
 
 ## Raw/source material
 
@@ -175,7 +177,7 @@ Inside Markdown files, prefer readable source links instead of full visible URLs
 Good:
 
 ```markdown
-- Snooze use is common, but this source should be used cautiously for broad population claims. Source: [Scientific Reports snooze paper](raw/snooze-paper-list.md)
+- Snooze use is common, but this source should be used cautiously for broad population claims. Source: [Scientific Reports snooze paper](raw/founder-sources.md)
 ```
 
 Avoid:
@@ -226,12 +228,29 @@ orisen-master-docs/
 │   │   └── benji-ozynski-synthesis.md
 │   │
 │   └── external-research/
+│       ├── README.md
 │       ├── raw/
-│       ├── research-papers/
-│       ├── articles-and-media/
-│       ├── reddit-forums/
-│       ├── competitor-reviews/
+│       │   ├── founder-full-source-list.md
+│       │   ├── founder-pitch-deck-source-shortlist.md
+│       │   └── founder-source-categorization-map.md
+│       ├── waking-up/
+│       │   ├── raw/founder-sources.md
+│       │   └── waking-up-synthesis.md
+│       ├── going-to-sleep/
+│       │   ├── raw/founder-sources.md
+│       │   └── going-to-sleep-synthesis.md
+│       ├── during-sleep/
+│       │   ├── raw/founder-sources.md
+│       │   └── during-sleep-synthesis.md
+│       ├── sleep-tracking-and-validation/
+│       │   ├── raw/founder-sources.md
+│       │   └── sleep-tracking-and-validation-synthesis.md
+│       ├── competitors-and-substitutes/
+│       │   ├── raw/founder-sources.md
+│       │   └── competitors-and-substitutes-synthesis.md
 │       └── market-and-category/
+│           ├── raw/founder-sources.md
+│           └── market-and-category-synthesis.md
 │
 └── ai-context/
     └── claim-control/
