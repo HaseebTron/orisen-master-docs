@@ -62,7 +62,7 @@ For source-of-truth doc creation or revision, also include:
 
 For evidence, validation, product claims, marketing claims, fundraising claims, or technical claim support, also include:
 
-- `validation/evidence-standard.md`
+- `ai-context/claim-control/claim-control-system.md`
 
 ## Project context packs
 
@@ -92,8 +92,8 @@ Full reference pack:
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
-- `validation/evidence-log.md`
-- `validation/evidence-standard.md`
+- `ai-context/claim-control/claim-control-log.md`
+- `ai-context/claim-control/claim-control-system.md`
 
 ### Orisen Software
 
@@ -122,7 +122,7 @@ Software docs describe implementation reality. They should not shrink the full p
 
 If software work creates or changes source-of-truth docs, read `ai-context/doc-creation-rules.md`.
 
-If software work affects product claims, validation, reliability promises, or public-facing capability statements, read `validation/evidence-standard.md`.
+If software work affects product claims, validation, reliability promises, or public-facing capability statements, read `ai-context/claim-control/claim-control-system.md`.
 
 ### Orisen Radar + ML
 
@@ -143,8 +143,8 @@ Full reference pack:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
-- `validation/evidence-log.md`
-- `validation/evidence-standard.md`
+- `ai-context/claim-control/claim-control-log.md`
+- `ai-context/claim-control/claim-control-system.md`
 - `radar-ml/radar-ml-context-map.md`
 
 Escalate to Orisen General before changing public claims around sleep-stage estimation, grogginess reduction, sleep inertia, or artificial sleep phase transitioning.
@@ -169,14 +169,14 @@ Full reference pack:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
-- `validation/evidence-log.md`
-- `validation/evidence-standard.md`
+- `ai-context/claim-control/claim-control-log.md`
+- `ai-context/claim-control/claim-control-system.md`
 - `marketing/marketing-context-map.md`
 - `marketing/positioning-and-messaging.md`
 
 Marketing docs must remain downstream from product direction and claims evidence.
 
-Use `validation/evidence-standard.md` before strengthening public claims.
+Use `ai-context/claim-control/claim-control-system.md` before strengthening public claims.
 
 ### Orisen Fundraising
 
@@ -199,14 +199,14 @@ Full reference pack:
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
-- `validation/evidence-log.md`
-- `validation/evidence-standard.md`
+- `ai-context/claim-control/claim-control-log.md`
+- `ai-context/claim-control/claim-control-system.md`
 - `fundraising/fundraising-context-map.md`
 - `fundraising/investor-narrative.md`
 
 Fundraising docs can be ambitious, but must not overclaim beyond product truth and evidence.
 
-Use `validation/evidence-standard.md` before framing traction, validation, technical proof, clinical support, or customer demand.
+Use `ai-context/claim-control/claim-control-system.md` before framing traction, validation, technical proof, clinical support, or customer demand.
 
 ### Orisen Hardware
 
@@ -276,7 +276,7 @@ If `product/product-context-map.md` does not exist yet, use the relevant product
 
 For product claims or validation status, also read:
 
-- `validation/evidence-standard.md`
+- `ai-context/claim-control/claim-control-system.md`
 
 ### Marketing questions
 
@@ -303,7 +303,7 @@ Marketing docs must remain downstream from product direction and claims evidence
 
 For public claims, also read:
 
-- `validation/evidence-standard.md`
+- `ai-context/claim-control/claim-control-system.md`
 
 ### Fundraising questions
 
@@ -324,7 +324,7 @@ Fundraising can be ambitious, but must not overclaim beyond product truth and ev
 
 For validation, traction, market, or technical claims, also read:
 
-- `validation/evidence-standard.md`
+- `ai-context/claim-control/claim-control-system.md`
 
 ### Business questions
 
@@ -390,7 +390,7 @@ Important radar/ML docs may include:
 
 For claims, evidence, papers, and validation status, also read:
 
-- `validation/evidence-standard.md`
+- `ai-context/claim-control/claim-control-system.md`
 
 ## Routing rules for ChatGPT projects
 
@@ -403,7 +403,7 @@ When using this repo as context after project/chat/refresh/handoff routing:
 5. Use the full reference pack only when the task requires broad context.
 6. Read `ai-context/current-state.md`, `ai-context/source-of-truth-rules.md`, and `ai-context/ai-operating-mode.md` for any important decision if they were not already included.
 7. Read `ai-context/doc-creation-rules.md` for source-of-truth doc creation, editing, review, or promotion.
-8. Read `validation/evidence-standard.md` for validation, claims, evidence strength, marketing, fundraising, or technical support questions.
+8. Read `ai-context/claim-control/claim-control-system.md` for validation, claims, evidence strength, marketing, fundraising, or technical support questions.
 9. If docs conflict, apply `ai-context/source-of-truth-rules.md`.
 10. If a needed doc does not exist, say so and recommend creating it only if needed.
 11. Do not assume old notes or brainstorms are current truth unless promoted into source-of-truth docs.
@@ -422,8 +422,9 @@ The first stable docs are:
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
-- `validation/evidence-log.md`
-- `validation/evidence-standard.md`
+- `ai-context/claim-control/claim-control-log.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-roadmap.md`
 
 The current routing and workflow docs are:
 
