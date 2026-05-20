@@ -13,9 +13,9 @@ The goal is to keep raw/source material separate from interpretation while avoid
 Evidence should flow through three layers:
 
 ```text
-Raw/source material by evidence source type
+Raw/source material
 ↓
-Source-type synthesis files
+Synthesis files
 ↓
 product/claims-and-evidence.md
 ```
@@ -118,9 +118,9 @@ They can include:
 
 They should not contain final Orisen claims.
 
-### 2. Source-type synthesis files
+### 2. Synthesis files
 
-Synthesis files should interpret a set of raw/source files inside that source type.
+Synthesis files should interpret a set of raw/source files inside that evidence category.
 
 They should answer:
 
@@ -165,9 +165,3 @@ Avoid:
 ```
 
 For raw source lists, full links are acceptable because raw files are allowed to be messy and source-preserving.
-
-## Current migration note
-
-The target structure above is the intended structure.
-
-Some existing files may still need to be moved or link-updated to match it exactly. During migration, do not duplicate source content unless needed to preserve history.
