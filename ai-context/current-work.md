@@ -18,11 +18,11 @@ This file is not a replacement for source-of-truth docs, the decision log, the e
 
 - `ai-context/decision-log.md` records major decisions and why they were made.
 - `ai-context/repo-backlog.md` records future docs, cleanup items, and recurring checks.
-- `validation/evidence-roadmap.md` tracks evidence categories, missing evidence, and where each evidence type lives.
-- `validation/evidence-log.md` records real evidence and what claims it supports.
-- `validation/evidence-standard.md` defines evidence-strength and classification rules.
+- `ai-context/claim-control/claim-control-roadmap.md` tracks evidence categories, missing evidence, and where each evidence type lives.
+- `ai-context/claim-control/claim-control-log.md` records real evidence and what claims it supports.
+- `ai-context/claim-control/claim-control-system.md` defines evidence-strength and classification rules.
 - `marketing/post-performance-log.md` records detailed marketing post/campaign execution, metrics, lessons, and follow-up experiments.
-- `product/old-mvp.md` records detailed historical context about the old physical MVP/prototype.
+- `product/old-mvp/` records detailed historical context about the old physical MVP/prototype.
 - `ai-context/current-work.md` tracks the active work queue, recent completions, blockers, and immediate next steps.
 
 ## Current focus
@@ -42,7 +42,8 @@ Use the now-captured evidence base:
 - old MVP user feedback
 - LinkedIn/waitlist evidence
 - Leila Jalali expert commentary
-- evidence weighting rules in `validation/evidence-roadmap.md`
+- Benji Ozynski expert commentary
+- evidence weighting rules in `ai-context/claim-control/claim-control-roadmap.md`
 
 Goal:
 
@@ -66,6 +67,7 @@ Goal:
 - Keep marketing and fundraising downstream from evidence.
 - Clearly separate wake-completion evidence from unvalidated grogginess, sleep inertia, sleep-stage detection, and artificial sleep phase transitioning claims.
 - Incorporate expert caution that grogginess and sleep inertia are multi-cause and that sleep-stage intervention likely requires continuous feedback-based validation.
+- Incorporate expert caution that theoretically plausible sleep-intervention mechanisms still require empirical testing.
 
 ### 3. Then move to Orisen Marketing for X execution
 
@@ -80,7 +82,7 @@ After the two upstream docs above are updated, start a fresh chat in the Orisen 
 ## In progress
 
 - Evidence collection and classification.
-- Converting known Orisen signals into conservative evidence-log entries.
+- Converting known Orisen signals into conservative claim-control entries.
 - Capturing marketing execution details and metrics separately from validation claims.
 - Capturing old MVP/prototype history, pilot details, and technical evidence.
 - Preparing upstream product/customer/claim docs for marketing use.
@@ -104,11 +106,11 @@ Status:
 
 Source files:
 
-- `product/old-mvp.md`
-- `product/old-mvp-test-row-labels.md`
-- `product/old-mvp-bypass-and-failure-notes.md`
-- `product/old-mvp-user-feedback.md`
-- `validation/evidence-log.md`
+- `product/old-mvp/old-mvp.md`
+- `product/old-mvp/old-mvp-test-row-labels.md`
+- `product/old-mvp/old-mvp-bypass-and-failure-notes.md`
+- `product/old-mvp/old-mvp-user-feedback.md`
+- `ai-context/claim-control/claim-control-log.md`
 
 Status:
 
@@ -121,7 +123,7 @@ Status:
 Source files:
 
 - `marketing/post-performance-log.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-log.md`
 
 Status:
 
@@ -136,9 +138,12 @@ Status:
 
 Source files:
 
-- `research/external-research/expert-commentary/raw/leila-jalali-meeting-notes.md`
-- `research/external-research/expert-commentary/expert-commentary.md`
-- `validation/evidence-log.md`
+- `research/expert-commentary/raw/leila-jalali-meeting-notes.md`
+- `research/expert-commentary/leila-jalali-expert-commentary.md`
+- `research/expert-commentary/raw/benji-ozynski-meeting-notes.md`
+- `research/expert-commentary/benji-ozynski-expert-commentary.md`
+- `research/expert-commentary/expert-commentary.md`
+- `ai-context/claim-control/claim-control-log.md`
 
 Status:
 
@@ -146,31 +151,31 @@ Status:
 - Useful for technical plausibility, claim discipline, and future research direction.
 - Supports treating artificial sleep phase transitioning as a plausible but unvalidated roadmap hypothesis.
 - Supports caution that grogginess and sleep inertia are multi-cause and should not be claimed as solved without direct validation.
+- Supports caution that sleep-intervention theory must be tested empirically because subjective outcomes may not match theory.
 - Does not prove Orisen efficacy, clinical validation, market demand, or hard demographic segment conclusions.
 
 ### External market / literature / community evidence
 
 Source file:
 
-- `validation/evidence-roadmap.md`
+- `ai-context/claim-control/claim-control-roadmap.md`
 
 Status:
 
 - Roadmap created.
 - Expert commentary is partially filled.
 - Other external source files are still mostly missing.
-- `validation/evidence-roadmap.md` now defines the future raw/source folder convention.
+- `ai-context/claim-control/claim-control-roadmap.md` now defines the future raw/source folder convention.
 
 Future source files may include:
 
-- `research/external-research/sleep-inertia/sleep-inertia-research.md`
-- `research/external-research/market-reports/market-research-notes.md`
-- `research/external-research/articles-and-media/articles-and-media-notes.md`
-- `research/external-research/reddit-forums/reddit-customer-language.md`
-- `research/external-research/competitor-reviews/competitor-review-research.md`
-- more files under `research/external-research/expert-commentary/`
+- `research/external-research/research-papers/raw/`
+- `research/external-research/articles-and-media/raw/`
+- `research/external-research/reddit-forums/raw/`
+- `research/external-research/competitor-reviews/raw/`
+- `research/external-research/market-and-category/raw/`
 
-Each future category may have a `raw/` folder when there is actual raw/source material to store.
+Each future category may have synthesis docs by topic when there is actual source material to analyze.
 
 ## Blocked or waiting on input
 
@@ -187,14 +192,67 @@ Useful future inputs:
 
 ## Recently completed
 
+### 2026-05-20 — Updated boot and context docs to point to claim-control paths
+
+Completed:
+
+- Updated `ai-context/start-here.md` to point claim/evidence/validation routing to `ai-context/claim-control/claim-control-system.md`.
+- Updated `ai-context/context-map.md` to use `ai-context/claim-control/claim-control-system.md`, `ai-context/claim-control/claim-control-log.md`, and `ai-context/claim-control/claim-control-roadmap.md` instead of the old `validation/` paths.
+
+Why:
+
+- The old `validation/` folder was excessive and too easy to misunderstand as a separate validation workstream.
+- Claim control is more accurate because these docs mainly govern claim strength, evidence boundaries, and what marketing/fundraising/product language can safely say.
+
+### 2026-05-19 — Moved validation docs into claim-control
+
+Completed:
+
+- Created `ai-context/claim-control/`.
+- Moved/renamed the former validation docs into:
+  - `ai-context/claim-control/claim-control-system.md`
+  - `ai-context/claim-control/claim-control-log.md`
+  - `ai-context/claim-control/claim-control-roadmap.md`
+- Removed the standalone `validation/` folder after moving the relevant files.
+- Updated affected references in repo docs where found.
+
+Why:
+
+- These files are not raw evidence folders and not product docs.
+- Their job is AI/context governance: how evidence affects claim strength, public wording, and source-of-truth decisions.
+
+### 2026-05-19 — Added Benji Ozynski expert commentary evidence
+
+Completed:
+
+- Created `research/expert-commentary/raw/benji-ozynski-meeting-notes.md`.
+- Created `research/expert-commentary/benji-ozynski-expert-commentary.md`.
+- Updated `research/expert-commentary/expert-commentary.md` with a cross-expert synthesis.
+- Updated claim-control files with an expert commentary evidence entry.
+
+Key interpretation:
+
+- Temperature may be a relevant future intervention variable, but this is not validated for Orisen yet.
+- Actigraphy and PSG validation may be useful for future studies.
+- Sleep-stage-aware intervention and artificial sleep phase transitioning must be empirically tested.
+- A clinic/research collaboration could become important validation infrastructure.
+
+Claim boundary:
+
+- Does not prove Orisen reduces grogginess.
+- Does not prove Orisen reduces sleep inertia.
+- Does not prove Orisen detects or manipulates sleep stages.
+- Does not prove Orisen has clinical validation.
+- Does not prove future research collaboration is secured until confirmed.
+
 ### 2026-05-19 — Added Leila Jalali expert commentary evidence
 
 Completed:
 
-- Created `research/external-research/expert-commentary/raw/leila-jalali-meeting-notes.md`.
-- Created `research/external-research/expert-commentary/expert-commentary.md`.
-- Updated `validation/evidence-log.md` with an expert commentary evidence entry.
-- Updated `validation/evidence-roadmap.md` to mark expert commentary as partially filled.
+- Created `research/expert-commentary/raw/leila-jalali-meeting-notes.md`.
+- Created `research/expert-commentary/leila-jalali-expert-commentary.md`.
+- Updated claim-control files with an expert commentary evidence entry.
+- Updated the claim-control roadmap to mark expert commentary as partially filled.
 - Added sleep spindles and arousal threshold to future sleep-inertia research topics.
 
 Key interpretation:
@@ -219,7 +277,7 @@ Completed:
 - Moved the summer 2024 interview raw CSV into `research/customer-interviews/raw/2024-alarm-clock-responses.csv`.
 - Removed the duplicate CSV from `research/customer-interviews/2024-alarm-clock-responses.csv`.
 - Updated `research/customer-interviews/2024-alarm-clock-interviews.md` to point to the new raw CSV path.
-- Updated `validation/evidence-roadmap.md` with a raw data / synthesis convention.
+- Updated the claim-control roadmap with a raw data / synthesis convention.
 - Updated future external-research paths to use category folders with optional `raw/` subfolders.
 
 Why:
@@ -228,20 +286,20 @@ Why:
 - The repo should avoid duplicating raw data.
 - Future external research should follow the same source-to-synthesis evidence chain.
 
-### 2026-05-18 — Added evidence roadmap
+### 2026-05-18 — Added claim-control roadmap
 
 Completed:
 
-- Created `validation/evidence-roadmap.md`.
+- Created the original roadmap now located at `ai-context/claim-control/claim-control-roadmap.md`.
 - Defined four main evidence categories:
   - Direct customer discovery
   - Prototype / pilot evidence
   - Traffic from website / marketing
   - External market / literature / community evidence
-- Made the evidence roadmap an index/to-do file that points to detailed evidence files instead of duplicating them.
+- Made the roadmap an index/to-do file that points to detailed evidence files instead of duplicating them.
 - Added future external research categories for:
-  - sleep inertia research
-  - market reports/surveys
+  - research papers
+  - market/category evidence
   - articles/media notes
   - Reddit/forum posts
   - competitor product reviews
@@ -275,7 +333,7 @@ Claim boundary:
 Completed:
 
 - Updated `marketing/post-performance-log.md`.
-- Updated `validation/evidence-log.md`.
+- Updated claim-control log.
 - Separated conversion into:
   - about 22% high-intent / relevant-traffic conversion estimate
   - about 16% blended historical conversion
@@ -289,8 +347,8 @@ Claim boundary:
 
 Completed:
 
-- Created `product/old-mvp-user-feedback.md`.
-- Updated `validation/evidence-log.md`.
+- Created `product/old-mvp/old-mvp-user-feedback.md`.
+- Updated claim-control log.
 - Captured that testers said the old MVP was much better at waking them on time compared with before.
 - Captured Dennis's founder-reported purchase-interest signal around a roughly $100 discussed price point.
 - Captured user pull for easier wake-up / less-groggy direction.
@@ -304,7 +362,7 @@ Claim boundary:
 
 Completed:
 
-- Updated `product/old-mvp.md` with detailed old MVP pilot/test participant data for:
+- Updated `product/old-mvp/old-mvp.md` with detailed old MVP pilot/test participant data for:
   - founder
   - Hamza/Humza
   - Dennis
@@ -312,7 +370,7 @@ Completed:
 - Added detailed test definitions for bed time, alarm time, wake-up time, get-out-of-bed time, sleepy rating, irritation rating, mood rating, and energy rating.
 - Added Dennis, Hamza/Humza, and Sabeeh test tables.
 - Added tester-specific interpretations and limitations.
-- Updated `validation/evidence-log.md` with a pilot/test evidence entry.
+- Updated claim-control log with a pilot/test evidence entry.
 
 Classification:
 
@@ -323,9 +381,9 @@ Classification:
 
 Completed:
 
-- Created `product/old-mvp.md`.
+- Created `product/old-mvp/old-mvp.md`.
 - Documented the old physical MVP/prototype architecture, component-level behavior, and presence-based wake-completion loop.
-- Updated `validation/evidence-log.md` with a technical prototype evidence entry.
+- Updated claim-control log with a technical prototype evidence entry.
 
 ### 2026-05-18 — Added marketing post performance log
 
@@ -338,7 +396,7 @@ Completed:
 
 Completed:
 
-- Updated `validation/evidence-log.md` with the first detailed website/waitlist evidence entry.
+- Updated claim-control log with the first detailed website/waitlist evidence entry.
 
 ### 2026-05-18 — Added current work tracker
 
@@ -381,7 +439,7 @@ When in doubt:
 - `current-work.md` tracks operational status
 - `decision-log.md` tracks durable decisions
 - `repo-backlog.md` tracks future cleanup and missing docs
-- `evidence-roadmap.md` tracks evidence categories and missing evidence
-- `evidence-log.md` tracks real evidence
+- `claim-control-roadmap.md` tracks evidence categories and missing evidence
+- `claim-control-log.md` tracks real evidence
 - `post-performance-log.md` tracks detailed marketing execution and performance learning
-- `old-mvp.md` tracks detailed historical prototype context
+- `product/old-mvp/` tracks detailed historical prototype context
