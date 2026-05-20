@@ -2,9 +2,9 @@
 
 ## Purpose
 
-This folder is the intended home for old Orisen MVP evidence.
+This folder is the home for old Orisen MVP evidence.
 
-It should contain the historical prototype description, pilot/test tables, bypass/failure notes, and qualitative tester feedback from the old physical MVP.
+It contains the historical prototype description, pilot/test tables, bypass/failure notes, and qualitative tester feedback from the old physical MVP.
 
 ## Why this folder exists
 
@@ -28,27 +28,14 @@ At the same time, it is not proof of:
 - artificial sleep phase transitioning
 - clinical efficacy
 
-## Intended contents
+## Contents
 
-The old-MVP evidence set should include:
+The old-MVP evidence set is:
 
 - `old-mvp.md`
 - `old-mvp-test-row-labels.md`
 - `old-mvp-bypass-and-failure-notes.md`
 - `old-mvp-user-feedback.md`
-
-## Current migration note
-
-These files may still exist at the older `product/` root path until links are safely migrated.
-
-When migration is complete, references should point to:
-
-- `product/old-mvp/old-mvp.md`
-- `product/old-mvp/old-mvp-test-row-labels.md`
-- `product/old-mvp/old-mvp-bypass-and-failure-notes.md`
-- `product/old-mvp/old-mvp-user-feedback.md`
-
-Avoid creating duplicate interpretations in both places. The goal is one old-MVP evidence folder that downstream docs can reference.
 
 ## How downstream docs should use this folder
 
