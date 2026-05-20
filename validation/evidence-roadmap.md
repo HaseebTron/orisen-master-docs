@@ -149,21 +149,11 @@ Purpose:
 Current source files:
 
 - `product/old-mvp/README.md`
-- `product/old-mvp.md` until migration is complete
-- `product/old-mvp-test-row-labels.md` until migration is complete
-- `product/old-mvp-bypass-and-failure-notes.md` until migration is complete
-- `product/old-mvp-user-feedback.md` until migration is complete
+- `product/old-mvp/old-mvp.md`
+- `product/old-mvp/old-mvp-test-row-labels.md`
+- `product/old-mvp/old-mvp-bypass-and-failure-notes.md`
+- `product/old-mvp/old-mvp-user-feedback.md`
 - `validation/evidence-log.md`
-
-Intended final location:
-
-```text
-product/old-mvp/
-├── old-mvp.md
-├── old-mvp-test-row-labels.md
-├── old-mvp-bypass-and-failure-notes.md
-└── old-mvp-user-feedback.md
-```
 
 Current evidence:
 
@@ -272,21 +262,10 @@ Purpose:
 Current source files:
 
 - `research/expert-commentary/README.md`
-- `research/external-research/expert-commentary/raw/leila-jalali-meeting-notes.md` until migration is complete
-- `research/external-research/expert-commentary/raw/benji-ozynski-meeting-notes.md` until migration is complete
-- `research/external-research/expert-commentary/expert-commentary.md` until migration is complete
-- `research/external-research/expert-commentary/benji-ozynski-synthesis.md` until migration is complete
-
-Intended final location:
-
-```text
-research/expert-commentary/
-├── raw/
-│   ├── leila-jalali-meeting-notes.md
-│   └── benji-ozynski-meeting-notes.md
-├── expert-commentary.md
-└── benji-ozynski-synthesis.md
-```
+- `research/expert-commentary/raw/leila-jalali-meeting-notes.md`
+- `research/expert-commentary/raw/benji-ozynski-meeting-notes.md`
+- `research/expert-commentary/expert-commentary.md`
+- `research/expert-commentary/benji-ozynski-synthesis.md`
 
 Current evidence:
 
