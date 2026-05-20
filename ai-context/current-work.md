@@ -41,6 +41,7 @@ Use the now-captured evidence base:
 - old MVP prototype/pilot evidence
 - old MVP user feedback
 - LinkedIn/waitlist evidence
+- Leila Jalali expert commentary
 - evidence weighting rules in `validation/evidence-roadmap.md`
 
 Goal:
@@ -48,6 +49,7 @@ Goal:
 - Sharpen the primary ICP around people who repeatedly fail between alarm time and actually being out of bed.
 - Make clear this is not for generic alarm-clock users or casual sleep optimizers.
 - Treat student/full-time/gender/age/etc. patterns as hypotheses only, not validated segment conclusions.
+- Treat teens/young adults and shift workers as segments worth investigating, not validated demographic ICPs.
 
 ### 2. Update `product/claims-and-evidence.md`
 
@@ -63,6 +65,7 @@ Goal:
 
 - Keep marketing and fundraising downstream from evidence.
 - Clearly separate wake-completion evidence from unvalidated grogginess, sleep inertia, sleep-stage detection, and artificial sleep phase transitioning claims.
+- Incorporate expert caution that grogginess and sleep inertia are multi-cause and that sleep-stage intervention likely requires continuous feedback-based validation.
 
 ### 3. Then move to Orisen Marketing for X execution
 
@@ -129,6 +132,22 @@ Status:
 - About 6% later lower-intent incremental conversion.
 - Useful as early demand/message-resonance signal, not paid validation.
 
+### Expert commentary
+
+Source files:
+
+- `research/external-research/expert-commentary/raw/leila-jalali-meeting-notes.md`
+- `research/external-research/expert-commentary/expert-commentary.md`
+- `validation/evidence-log.md`
+
+Status:
+
+- Captured as expert commentary / early external validation / claim-discipline input.
+- Useful for technical plausibility, claim discipline, and future research direction.
+- Supports treating artificial sleep phase transitioning as a plausible but unvalidated roadmap hypothesis.
+- Supports caution that grogginess and sleep inertia are multi-cause and should not be claimed as solved without direct validation.
+- Does not prove Orisen efficacy, clinical validation, market demand, or hard demographic segment conclusions.
+
 ### External market / literature / community evidence
 
 Source file:
@@ -138,7 +157,8 @@ Source file:
 Status:
 
 - Roadmap created.
-- Actual external source files still mostly missing.
+- Expert commentary is partially filled.
+- Other external source files are still mostly missing.
 - `validation/evidence-roadmap.md` now defines the future raw/source folder convention.
 
 Future source files may include:
@@ -148,7 +168,7 @@ Future source files may include:
 - `research/external-research/articles-and-media/articles-and-media-notes.md`
 - `research/external-research/reddit-forums/reddit-customer-language.md`
 - `research/external-research/competitor-reviews/competitor-review-research.md`
-- `research/external-research/expert-commentary/expert-commentary.md`
+- more files under `research/external-research/expert-commentary/`
 
 Each future category may have a `raw/` folder when there is actual raw/source material to store.
 
@@ -166,6 +186,31 @@ Useful future inputs:
 - external research sources: papers, competitor reviews, Reddit/forum threads, market reports, articles, expert notes
 
 ## Recently completed
+
+### 2026-05-19 — Added Leila Jalali expert commentary evidence
+
+Completed:
+
+- Created `research/external-research/expert-commentary/raw/leila-jalali-meeting-notes.md`.
+- Created `research/external-research/expert-commentary/expert-commentary.md`.
+- Updated `validation/evidence-log.md` with an expert commentary evidence entry.
+- Updated `validation/evidence-roadmap.md` to mark expert commentary as partially filled.
+- Added sleep spindles and arousal threshold to future sleep-inertia research topics.
+
+Key interpretation:
+
+- Artificial sleep phase transitioning is a plausible but unvalidated roadmap hypothesis.
+- If pursued, it likely requires continuous feedback-based intervention, not a one-time shift.
+- Grogginess and sleep inertia are multi-cause and must stay claim-sensitive.
+- Teens/young adults and shift workers are worth investigating, but not validated ICPs from this alone.
+
+Claim boundary:
+
+- Does not prove Orisen reduces grogginess.
+- Does not prove Orisen reduces sleep inertia.
+- Does not prove Orisen detects or manipulates sleep stages.
+- Does not prove Orisen has clinical validation.
+- Does not prove hard demographic segment conclusions.
 
 ### 2026-05-18 — Added raw/source data convention
 
