@@ -21,6 +21,7 @@ Use this file to answer:
 - Use `product/claims-and-evidence.md` for final public claim boundaries.
 - Use `product/target-customer.md` for ICP and target-customer synthesis.
 - Use `research/`, `product/`, and `marketing/` folders for detailed source material and synthesis.
+- Use `research/external-research/README.md` for the external research folder structure.
 
 ## Current evidence categories
 
@@ -189,7 +190,6 @@ Next steps:
 - Track source attribution more cleanly.
 - Add waitlist survey questions if possible.
 - Ask waitlist users about severity, current solution, willingness to pay, and whether they want to beta test.
-- Test X/Twitter content after source-of-truth positioning is ready.
 
 ### 4. Expert commentary
 
@@ -239,9 +239,28 @@ Next steps:
 - Use expert commentary to guide literature review topics, especially sleep inertia, spindles, arousal threshold, delayed sleep phase, temperature, actigraphy, and PSG validation.
 - Follow up with Dr Benji about PSG validation, exact cost, data access, protocol support, advisor interest, and whether clinic involvement can be formally confirmed.
 
-### 5. External market / literature / community evidence
+### 5. External research
 
-Status: mostly missing.
+Status: structure created; mostly not synthesized.
+
+Current source files:
+
+- `research/external-research/README.md`
+- `research/external-research/raw/founder-full-source-list.md`
+- `research/external-research/raw/founder-pitch-deck-source-shortlist.md`
+- `research/external-research/raw/founder-source-categorization-map.md`
+- `research/external-research/waking-up/raw/founder-sources.md`
+- `research/external-research/waking-up/waking-up-synthesis.md`
+- `research/external-research/going-to-sleep/raw/founder-sources.md`
+- `research/external-research/going-to-sleep/going-to-sleep-synthesis.md`
+- `research/external-research/during-sleep/raw/founder-sources.md`
+- `research/external-research/during-sleep/during-sleep-synthesis.md`
+- `research/external-research/sleep-tracking-and-validation/raw/founder-sources.md`
+- `research/external-research/sleep-tracking-and-validation/sleep-tracking-and-validation-synthesis.md`
+- `research/external-research/competitors-and-substitutes/raw/founder-sources.md`
+- `research/external-research/competitors-and-substitutes/competitors-and-substitutes-synthesis.md`
+- `research/external-research/market-and-category/raw/founder-sources.md`
+- `research/external-research/market-and-category/market-and-category-synthesis.md`
 
 Purpose:
 
@@ -253,86 +272,122 @@ Purpose:
 
 This category should not be used to prove Orisen works. It should be used to triangulate market pain, customer language, scientific plausibility, competitor gaps, and claim risk.
 
-#### 5.1 Research papers
+#### 5.1 Waking up
 
-Look for research on:
+Folder:
 
-- sleep inertia duration
-- waking from deep sleep vs lighter sleep
-- effects of light/audio on waking
-- sleep stage and grogginess
-- alarm timing
+- `research/external-research/waking-up/`
+
+Look for:
+
+- alarm use
+- snoozing
+- oversleeping
+- sleeping through alarms
+- getting out of bed
+- sleep inertia
+- morning grogginess
+- wake-stage effects
+- high-consequence wake-up users
+
+Best use:
+
+- Problem framing.
+- Customer language.
+- Claim discipline around sleep inertia.
+- Prioritizing the wake-completion wedge.
+
+Weak use:
+
+- Proving Orisen efficacy.
+- Making exact prevalence claims before source methodology is checked.
+
+#### 5.2 Going to sleep
+
+Folder:
+
+- `research/external-research/going-to-sleep/`
+
+Look for:
+
+- difficulty falling asleep
+- bedtime routines
+- white noise
+- sleep-supportive lighting
 - circadian light exposure
-- auditory stimulation during sleep
-- temperature as a sleep/wake intervention variable
-- actigraphy as a sleep/wake measurement tool
-- limitations of consumer sleep-stage detection
-- sleep spindles and arousal threshold
+- anxiety before sleep
+- sleep-onset support
+
+Best use:
+
+- Long-term roadmap context.
+- Future bedtime feature exploration.
+- Understanding adjacent sleep pain.
+
+Weak use:
+
+- Proving the first wake-up wedge.
+- Making insomnia or treatment claims.
+
+#### 5.3 During sleep
+
+Folder:
+
+- `research/external-research/during-sleep/`
+
+Look for:
+
+- sleep quality
+- staying asleep
+- nighttime awakenings
+- unrefreshing sleep
+- daytime sleepiness
+- sleep duration
+- arousal threshold
+- sleep-state dynamics
+
+Best use:
+
+- Scientific realism.
+- Roadmap context.
+- Better understanding sleep-state and arousal mechanics.
+
+Weak use:
+
+- Claiming Orisen improves sleep quality before Orisen-specific testing.
+
+#### 5.4 Sleep tracking and validation
+
+Folder:
+
+- `research/external-research/sleep-tracking-and-validation/`
+
+Look for:
+
+- consumer sleep-stage accuracy
+- wearable validation
+- actigraphy
+- PSG comparisons
+- radar/ML validation approaches
+- sleep-stage estimation limitations
 
 Best use:
 
 - Claim discipline.
-- Product roadmap realism.
-- Fundraising diligence.
-- Avoiding irresponsible claims around sleep manipulation.
+- Radar/ML validation planning.
+- Avoiding irresponsible claims around sleep-stage detection.
 
 Weak use:
 
-- Proving customer demand.
-- Proving Orisen efficacy before Orisen-specific testing.
+- Claiming Orisen can accurately detect sleep stages before Orisen-specific validation.
 
-#### 5.2 Articles and media
+#### 5.5 Competitors and substitutes
 
-Look for:
+Folder:
 
-- articles on waking up, oversleeping, sleep inertia, heavy sleepers, and sleep tech
-- expert commentary in reputable publications
-- sleep tracker critiques
-- consumer sleep-tech trend coverage
+- `research/external-research/competitors-and-substitutes/`
 
-Best use:
-
-- Context.
-- Messaging inspiration.
-- Identifying common public beliefs and misconceptions.
-
-Weak use:
-
-- Scientific proof unless the article directly references strong sources.
-
-#### 5.3 Reddit / forum posts
-
-Search themes:
-
-```text
-sleep through alarms
-can't wake up
-turn off alarm in sleep
-wake up but can't get out of bed
-snooze for hours
-sleep inertia
-morning grogginess
-alarm clock for heavy sleepers
-sunrise alarm didn't work
-Alarmy stopped working
-```
-
-Best use:
-
-- Customer language.
-- ICP pain refinement.
-- Content ideas.
-- Competitor/substitute failure modes.
-
-Weak use:
-
-- Statistical evidence.
-- Market sizing.
-- Medical conclusions.
-
-#### 5.4 Competitor product reviews
-
-Look at reviews for:
+Look at reviews and customer language for:
 
 - Alarmy
 - Sleep Cycle
@@ -357,7 +412,11 @@ Weak use:
 - Proving Orisen will win.
 - Proving Orisen's efficacy.
 
-#### 5.5 Market and category
+#### 5.6 Market and category
+
+Folder:
+
+- `research/external-research/market-and-category/`
 
 Look for:
 
@@ -386,9 +445,9 @@ For near-term marketing and X posting, prioritize:
 
 1. Direct customer discovery.
 2. Prototype/pilot evidence.
-3. Competitor reviews.
+3. Competitor reviews and substitute failure modes.
 4. Reddit/forum customer language.
-5. Claims-safe sleep inertia / waking-up research papers.
+5. Claims-safe waking-up / sleep-inertia research.
 6. Website/marketing traffic evidence.
 7. Expert commentary.
 8. Market reports and market sizing.
@@ -434,3 +493,5 @@ Use currently available evidence:
 - Leila Jalali expert commentary
 - Benji Ozynski expert commentary
 - claim-control rules in `ai-context/claim-control/claim-control-system.md`
+
+Do not promote external research from `research/external-research/` into public claims until the relevant problem-area synthesis file has been filled and reviewed.
