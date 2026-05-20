@@ -52,6 +52,32 @@ Follow:
 - `ai-context/doc-creation-rules.md` when creating or editing docs
 - `ai-context/claim-control/claim-control-system.md` when judging claims, evidence, validation, marketing, fundraising, radar/ML, or product truth
 
+## Visible handoff warning rule
+
+If a context refresh, new chat, project move, or handoff is recommended, the assistant must make the recommendation highly visible using a large, bold, all-caps heading.
+
+Use one of:
+
+```markdown
+# **CONTEXT REFRESH RECOMMENDED**
+```
+
+```markdown
+# **NEW CHAT RECOMMENDED**
+```
+
+```markdown
+# **MOVE TO ANOTHER PROJECT RECOMMENDED**
+```
+
+```markdown
+# **HANDOFF RECOMMENDED**
+```
+
+Do this proactively. Do not wait for the user to ask whether the chat is too long when the risk is already clear.
+
+For small follow-ups, do not use this warning format.
+
 ## Default new-chat prompt
 
 Use this prompt when manually starting a new Orisen chat:
@@ -175,6 +201,8 @@ Reread `ai-context/start-here.md` and check for refresh, project move, or handof
 - a new fundraising asset or outreach sequence starts
 - the request no longer fits the current project
 
+When a refresh, project move, or handoff is recommended, use the visible warning format from this file and `ai-context/handoff-rules.md`.
+
 Do not use handoff rules to avoid simple follow-up questions.
 
 ## Context loaded summary
@@ -232,6 +260,8 @@ Next action:
 ```
 
 For tiny follow-up questions after the chat has already booted correctly, do not output this block unless there is a routing, stale-context, handoff, or source-of-truth issue.
+
+If the routing check recommends refresh, handoff, new chat, or project move, also use the visible warning format.
 
 ## If the current project is wrong
 
