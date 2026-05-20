@@ -43,6 +43,14 @@ Before creating or materially editing a source-of-truth doc, determine:
 
 If the request conflicts with source-of-truth docs, flag the conflict before drafting.
 
+## Repo editing rule
+
+When ChatGPT directly edits GitHub files, also follow:
+
+- `ai-context/repo-editing-rules.md`
+
+Especially for multi-file source-of-truth changes, ChatGPT should state the intended edit scope before editing, keep edits in small logical batches, avoid broad direct edits to `main` when a local/Codex/branch workflow would be safer, and summarize what changed afterward.
+
 ## Document status labels
 
 Important docs should include a short metadata block near the top when useful.
@@ -260,7 +268,7 @@ Especially check:
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
-- `validation/evidence-log.md`
+- validation and claim-control docs
 - marketing docs
 - fundraising docs
 - software/radar/hardware context maps
@@ -279,4 +287,4 @@ When asked to create or revise a doc, ChatGPT should usually provide:
 - any conflicts or assumptions discovered
 - suggested follow-up docs to update
 
-If directly editing GitHub, ChatGPT should summarize what files were created or updated.
+If directly editing GitHub, ChatGPT should follow `ai-context/repo-editing-rules.md` and summarize what files were created, updated, or intentionally not touched.
