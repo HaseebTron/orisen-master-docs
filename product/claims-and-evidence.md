@@ -13,6 +13,44 @@ This file should stay consistent with:
 - `product/product-overview.md`
 - `validation/evidence-standard.md`
 - `validation/evidence-log.md`
+- `validation/evidence-roadmap.md`
+- `validation/evidence-source-structure.md`
+
+## Evidence inputs
+
+This file is the downstream claim authority for Orisen. It should synthesize claim-relevant evidence from the repo, but it should not duplicate all raw evidence.
+
+Primary upstream evidence inputs:
+
+- `research/customer-interviews/`
+  - Direct customer discovery, raw interview data, customer pain themes, and interview limitations.
+- `product/old-mvp/`
+  - Old physical MVP build notes, pilot behavior, wake-completion behavior, bypass attempts, failure modes, and qualitative user feedback.
+- `marketing/post-performance-log.md`
+  - LinkedIn post performance, waitlist conversion, website traffic, Microsoft Clarity notes, and campaign learnings.
+- `research/expert-commentary/`
+  - Sleep-expert meeting notes, expert synthesis, validation suggestions, claim warnings, and roadmap realism.
+- `research/external-research/`
+  - Research papers, articles/media, Reddit/forum evidence, competitor reviews, market/category evidence, and sleep-tracking/validation sources.
+- `validation/evidence-log.md`
+  - Conservative evidence entries and claim-support tracking when evidence is important enough to affect allowed claims.
+
+Use this file to answer:
+
+- What can Orisen safely claim today?
+- What can Orisen claim carefully?
+- What is only a roadmap hypothesis?
+- What is unsupported and should not be said?
+- What upstream evidence supports each claim?
+- What upstream evidence does not prove?
+
+Important rule:
+
+- Raw files preserve what sources, users, experts, or tests said.
+- Synthesis files explain what those sources mean.
+- This file defines what Orisen is allowed to claim.
+
+When updating this file, read the relevant upstream evidence first and link back to the synthesis or source files where useful.
 
 ## Relationship to the evidence standard
 
@@ -51,6 +89,13 @@ Current evidence supports the idea that:
 - Re-triggering the alarm if the user returns to bed addresses a real user behavior problem.
 - Wake-up reliability is the strongest early product anchor.
 
+Primary source areas:
+
+- `product/old-mvp/`
+- `research/customer-interviews/`
+- `marketing/post-performance-log.md`
+- `validation/evidence-log.md`
+
 This evidence should still be treated as early validation, not broad-market proof.
 
 ### Strategically important but less validated
@@ -65,6 +110,12 @@ The following are strategically important, but not yet validated enough for stro
 - Radar-based sleep-stage estimation
 - Personalized wake timing
 - Long-term sleep-state intervention
+
+Primary source areas:
+
+- `research/expert-commentary/`
+- `research/external-research/`
+- `product/old-mvp/old-mvp-user-feedback.md`
 
 These can be described as product direction, roadmap, hypothesis, or active testing, but should not be presented as proven outcomes.
 
@@ -291,7 +342,7 @@ Update this file when:
 - Marketing or fundraising needs stronger language and evidence exists to support it.
 - A future regulatory or clinical strategy changes allowable claims.
 
-When evidence improves, update `validation/evidence-log.md` first, then update this file before updating marketing, fundraising, pitch, website, or customer-facing docs.
+When evidence improves, update the relevant raw/source files and synthesis docs first. If the evidence materially changes claim strength, update `validation/evidence-log.md`. Then update this file before updating marketing, fundraising, pitch, website, or customer-facing docs.
 
 ## Current summary
 
