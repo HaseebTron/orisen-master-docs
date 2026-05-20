@@ -60,6 +60,10 @@ For source-of-truth doc creation or revision, also include:
 
 - `ai-context/doc-creation-rules.md`
 
+For direct GitHub file edits or repo-edit planning, also include:
+
+- `ai-context/repo-editing-rules.md`
+
 For evidence, validation, product claims, marketing claims, fundraising claims, or technical claim support, also include:
 
 - `ai-context/claim-control/claim-control-system.md`
@@ -84,6 +88,7 @@ Full reference pack:
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/ai-operating-mode.md`
 - `ai-context/doc-creation-rules.md`
+- `ai-context/repo-editing-rules.md`
 - `ai-context/project-routing.md`
 - `ai-context/context-map.md`
 - `ai-context/repo-backlog.md`
@@ -121,6 +126,8 @@ Then read relevant docs from the active software repo if needed, especially acti
 Software docs describe implementation reality. They should not shrink the full product or company vision.
 
 If software work creates or changes source-of-truth docs, read `ai-context/doc-creation-rules.md`.
+
+If software work directly edits GitHub files or plans repo edits, read `ai-context/repo-editing-rules.md`.
 
 If software work affects product claims, validation, reliability promises, or public-facing capability statements, read `ai-context/claim-control/claim-control-system.md`.
 
@@ -403,10 +410,11 @@ When using this repo as context after project/chat/refresh/handoff routing:
 5. Use the full reference pack only when the task requires broad context.
 6. Read `ai-context/current-state.md`, `ai-context/source-of-truth-rules.md`, and `ai-context/ai-operating-mode.md` for any important decision if they were not already included.
 7. Read `ai-context/doc-creation-rules.md` for source-of-truth doc creation, editing, review, or promotion.
-8. Read `ai-context/claim-control/claim-control-system.md` for validation, claims, evidence strength, marketing, fundraising, or technical support questions.
-9. If docs conflict, apply `ai-context/source-of-truth-rules.md`.
-10. If a needed doc does not exist, say so and recommend creating it only if needed.
-11. Do not assume old notes or brainstorms are current truth unless promoted into source-of-truth docs.
+8. Read `ai-context/repo-editing-rules.md` for direct GitHub file edits or repo-edit planning.
+9. Read `ai-context/claim-control/claim-control-system.md` for validation, claims, evidence strength, marketing, fundraising, or technical support questions.
+10. If docs conflict, apply `ai-context/source-of-truth-rules.md`.
+11. If a needed doc does not exist, say so and recommend creating it only if needed.
+12. Do not assume old notes or brainstorms are current truth unless promoted into source-of-truth docs.
 
 ## Current repo buildout status
 
@@ -418,6 +426,7 @@ The first stable docs are:
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/ai-operating-mode.md`
 - `ai-context/doc-creation-rules.md`
+- `ai-context/repo-editing-rules.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
