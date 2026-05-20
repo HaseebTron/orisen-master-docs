@@ -20,6 +20,59 @@ Start a new chat if the chat has become long, mixed, contaminated, or the user i
 
 Move to another project if the request belongs in a more appropriate Orisen ChatGPT project.
 
+## Proactive warning rule
+
+The assistant must proactively warn the user when a refresh, new chat, or project move would reduce the risk of mistakes.
+
+Do not wait for the user to ask whether the chat is too long.
+
+A proactive warning is required before doing more major work if any of the following are true:
+
+- The chat has completed a major repo migration, source-of-truth rewrite, evidence-architecture change, or project-structure decision.
+- The chat has covered three or more distinct workstreams.
+- The previous major task is complete and the user is about to start a new major task.
+- The next task would require different baseline docs than the docs used for the current task.
+- The next task belongs more naturally in a different Orisen project.
+- The chat has become long enough that mixed prior context could affect judgment.
+- The user asks “what next?”, “go ahead”, or “do it” after a major task has just finished and the correct place for the next task is not obvious.
+
+If the risk is stale source context but the task is the same, recommend a refresh and continue.
+
+If the risk is contaminated or mixed conversation context, recommend a new chat.
+
+If the risk is project mismatch, recommend moving to the correct Orisen project.
+
+## Required warning format
+
+When recommending a refresh, new chat, or project move, the assistant must use a large, bold, all-caps heading so the user does not miss it.
+
+Use one of these headings:
+
+```markdown
+# **CONTEXT REFRESH RECOMMENDED**
+```
+
+```markdown
+# **NEW CHAT RECOMMENDED**
+```
+
+```markdown
+# **MOVE TO ANOTHER PROJECT RECOMMENDED**
+```
+
+```markdown
+# **HANDOFF RECOMMENDED**
+```
+
+Then give:
+
+- Reason
+- Recommended project/chat
+- Next action
+- Exact prompt if a new chat or different project is recommended
+
+For minor follow-ups, do not use the warning format.
+
 ## Decision options
 
 When this file is read, choose one of these actions:
@@ -116,7 +169,7 @@ Before answering:
 When recommending a handoff, use this concise format:
 
 ```markdown
-## Handoff recommended
+# **HANDOFF RECOMMENDED**
 
 Reason:
 - [Brief explanation]
@@ -130,8 +183,21 @@ Prompt to paste in the new chat:
 ```
 ```
 
+## Next-step response rule
+
+When the user asks what to do next after a meaningful work item, include a small routing recommendation:
+
+```markdown
+Recommended place for the next task:
+- Continue this chat / Refresh and continue / Start a new chat / Move to another project
+```
+
+If the recommendation is refresh, new chat, handoff, or project move, use the required large, bold, all-caps warning format.
+
 ## Important principle
 
 Do not use handoff rules to avoid answering simple follow-up questions.
 
 Use them when continuing in the same chat would create real risk: stale source context, mixed context, wrong project, long chat, new major task, or decision contamination.
+
+When in doubt, warn the user early and briefly. The warning can be short, but it must be visible.
