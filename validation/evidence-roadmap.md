@@ -255,7 +255,7 @@ Next steps:
 
 ### 4. External market / literature / community evidence
 
-Status: mostly missing.
+Status: partially filled.
 
 Purpose:
 
@@ -313,6 +313,7 @@ Look for research on:
 - circadian light exposure
 - auditory stimulation during sleep
 - limitations of consumer sleep-stage detection
+- sleep spindles and arousal threshold
 
 Extract:
 
@@ -339,6 +340,7 @@ Next steps:
 - Find review papers or credible sources on sleep inertia.
 - Find papers on light/audio effects near waking.
 - Find sources on sleep-stage-based smart alarms and their limitations.
+- Find research on sleep spindles, arousal threshold, and wake difficulty.
 - Add citations and summarize in careful claim-safe language.
 
 #### 4.2 Market reports / surveys
@@ -562,17 +564,20 @@ Next steps:
 
 #### 4.6 Sleep clinic / expert commentary
 
-Status: partially started through conversations, but not yet structured here.
+Status: partially filled.
 
-Potential source file:
+Current source files:
 
+- `research/external-research/expert-commentary/raw/leila-jalali-meeting-notes.md`
 - `research/external-research/expert-commentary/expert-commentary.md`
 
-Potential raw/source folder:
+Current evidence:
 
-- `research/external-research/expert-commentary/raw/`
+- Leila Jalali expert commentary on sleep-stage intervention, sleep inertia, grogginess, wake-up difficulty, age patterns, shift workers, and sleep spindles.
+- Strongest use is claim discipline and roadmap realism.
+- Does not validate Orisen efficacy or market demand.
 
-Best experts:
+Best experts to keep seeking:
 
 - behavioral sleep medicine specialists
 - sleep technologists
@@ -601,12 +606,14 @@ Weak use:
 
 - Proving demand unless experts report repeated customer/patient demand.
 - Making medical claims.
+- Hard prevalence or segmentation claims.
 
 Next steps:
 
-- Add structured notes from any expert calls.
-- Record what the expert said, what it supports, what it does not prove, warnings, objections, and suggestions.
+- Add structured notes from any additional expert calls.
+- Record what each expert said, what it supports, what it does not prove, warnings, objections, and suggestions.
 - Keep medical/clinical claims conservative.
+- Use expert commentary to guide literature review topics, especially sleep inertia, spindles, arousal threshold, and delayed sleep phase.
 
 ## Evidence priority order
 
@@ -667,6 +674,7 @@ Use currently available evidence:
 - old MVP prototype/pilot evidence
 - old MVP user feedback
 - LinkedIn/waitlist evidence
+- Leila Jalali expert commentary
 - evidence weighting rules in this roadmap
 
 Then, in Orisen Marketing, create or update:
