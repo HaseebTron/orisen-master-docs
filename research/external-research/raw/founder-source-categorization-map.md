@@ -7,10 +7,13 @@ Canonical raw source file:
 - `research/external-research/raw/founder-full-source-list.md`
 Related raw shortlist:
 - `research/external-research/raw/founder-pitch-deck-source-shortlist.md`
+Governing docs:
+- `research/external-research/README.md`
+- `ai-context/claim-control/claim-control-system.md`
 
 ## Purpose
 
-This file explains how the founder's full external source list should be split into evidence categories.
+This file explains how the founder's full external source list should be routed into problem-first research folders.
 
 It does not replace the canonical raw file. The canonical raw file preserves the original source list as provided. This map explains where each section belongs and how future AI/human review should process it.
 
@@ -35,23 +38,61 @@ First-pass categorization was not based on:
 Reason:
 
 - The goal of the first pass is raw organization, not evidence validation.
-- Opening and evaluating every link belongs in the next research pass.
-- The original list contains truncated links, article snippets, survey claims, market-report pages, Reddit links, and possibly AI-generated notes. Treating all of that as verified evidence would be unsafe.
+- Opening and evaluating every link belongs in later research passes.
+- The original list contains truncated links, article snippets, survey claims, market-report pages, Reddit links, and possibly AI-generated notes.
+- Treating all of that as verified evidence would be unsafe.
 
 ## Link preservation rule
 
 - Preserve links exactly as provided in the canonical raw file.
 - Do not silently fix, shorten, expand, or replace links.
 - If a link looks truncated or unclear, mark it as `needs source verification` later.
-- If the same source appears in multiple categories, do not duplicate the raw source unless needed. Point back to the canonical raw list.
+- Do not copy the full raw list into problem folders unless a deliberate processing pass is being performed.
+- For now, problem-area raw files may point back to the canonical raw archive.
+
+## Problem-first destination folders
+
+External research is organized by Orisen problem area first. Source type belongs inside each entry as metadata.
+
+Current destination folders:
+
+- `research/external-research/waking-up/`
+- `research/external-research/going-to-sleep/`
+- `research/external-research/during-sleep/`
+- `research/external-research/sleep-tracking-and-validation/`
+- `research/external-research/competitors-and-substitutes/`
+- `research/external-research/market-and-category/`
+
+Each folder uses:
+
+```text
+raw/founder-sources.md
+[problem-area]-synthesis.md
+```
+
+## Source type metadata
+
+Use source type inside entries instead of making source type the main folder structure.
+
+Suggested source types:
+
+- research paper
+- article/media
+- survey/report
+- market report
+- Reddit/forum
+- competitor review
+- product page
+- expert/organization source
+- unknown / needs verification
 
 ## Category mapping
 
-### 1. Waking up / snoozing / oversleeping
+### 1. Waking up
 
-Destination synthesis folder:
+Destination folder:
 
-- `research/external-research/sleep-inertia/`
+- `research/external-research/waking-up/`
 
 Relevant raw sections in canonical file:
 
@@ -69,165 +110,162 @@ Use for:
 - bad-morning stats
 - get-out-of-bed delay
 - wake-up mood impact
+- sleep inertia and grogginess
 - demand for easier or better wake-up experiences
 
 Highest-priority sources to verify first:
 
 - Nature Scientific Reports heavy snooze study
 - PMC sources on snoozing and sleep inertia
-- Washington Post / Time summaries only if they point to primary research
-- SleepJunkie / Withings / survey sources only after checking methodology
+- sources connected to sleep inertia, arousal threshold, or wake-stage effects
+- survey/article sources only after methodology is checked
 
 Evidence caution:
 
-- This category is closest to Orisen's wedge.
-- Still, many survey/article sources may be weak or marketing-driven.
+- This category is closest to Orisen's current wedge.
+- Many survey/article sources may be weak or marketing-driven.
 - Do not use percentages publicly until the original methodology is checked.
+- External research does not prove Orisen works.
 
-### 2. Sleep inertia / sleep science / wake-stage claims
+### 2. Going to sleep
 
-Destination synthesis folder:
+Destination folder:
 
-- `research/external-research/sleep-inertia/`
+- `research/external-research/going-to-sleep/`
 
 Relevant raw sections in canonical file:
 
-- `Impact of Poor Wake-Up Experience`
-- sleep inertia notes under `Proof of Demand → Proof of demand for a more comfortable wakeup`
-- nurse / shift-worker / severe sleep-inertia target-segment notes
-- PMC links related to sleep inertia
+- parts of `During Sleep`
+- difficulty falling asleep sources
+- insomnia prevalence sources
+- bedtime, anxiety, white noise, and sleep-onset sources if present
 
 Use for:
 
-- grogginess
-- sleep inertia duration
-- waking from sleep stages
-- arousal threshold
-- clinical populations with severe sleep inertia
-- claim boundaries around “easier wake-up”
-
-Highest-priority sources to verify first:
-
-- PMC sleep inertia review links
-- nurse severe sleep-inertia source
-- any source that discusses sleep-stage effects, arousal threshold, or clinical populations
+- sleep onset problems
+- difficulty falling asleep
+- bedtime support
+- white noise and sound
+- circadian light exposure
+- future bedtime routines
 
 Evidence caution:
 
-- Scientific plausibility is not Orisen-specific validation.
-- Do not use this category to claim Orisen reduces grogginess or sleep inertia before Orisen-specific testing.
+- This is roadmap-relevant but less central to the first wake-up reliability wedge.
+- Do not let broad sleep-health stats dilute Orisen's narrow early customer focus.
+- Do not make insomnia or treatment claims from these sources.
 
-### 3. General sleep health / falling asleep / poor sleep stats
+### 3. During sleep
 
-Destination synthesis folder:
+Destination folder:
 
-- `research/external-research/articles-and-media/`
-- some high-quality sources may also belong in future `research/external-research/sleep-inertia/` if they discuss wake outcomes directly
+- `research/external-research/during-sleep/`
 
 Relevant raw sections in canonical file:
 
 - `During Sleep`
-- `Sources with Good stats`
+- sleep quality sources
+- staying asleep sources
+- unrefreshing sleep sources
+- daytime sleepiness sources
+- sleep duration sources
 
 Use for:
 
-- general sleep trouble prevalence
-- falling asleep stats
-- staying asleep stats
+- general sleep quality context
+- staying asleep
+- nighttime disruptions
 - unrefreshing sleep
 - daytime sleepiness
-- broad sleep-health context
-
-Higher-quality sources to verify first:
-
-- CDC
-- National Sleep Foundation
-- Statistics Canada
-- Sleep Foundation
-- peer-reviewed PMC sources
-
-Lower-priority / caution sources:
-
-- StudyFinds
-- mattress/affiliate blogs
-- article aggregators
+- broader sleep-health background
 
 Evidence caution:
 
-- This category helps context and fundraising narrative.
-- It is less directly tied to Orisen's first wedge than waking/snoozing/oversleeping evidence.
+- This category helps roadmap and context.
+- It is less directly tied to Orisen's first wedge than waking-up evidence.
+- Do not use this category to claim Orisen improves sleep quality without Orisen-specific testing.
 
-### 4. Reddit / forum customer language
+### 4. Sleep tracking and validation
 
-Destination synthesis folder:
+Destination folder:
 
-- `research/external-research/reddit-forums/`
+- `research/external-research/sleep-tracking-and-validation/`
 
 Relevant raw sections in canonical file:
 
-- `Waking up → Reviews and Reddit`
-- `Proof of Demand → Proof of demand for a more comfortable wakeup → Reddit threads`
+- sleep tracking sources
+- wearable sleep tracker sources
+- sleep-stage accuracy sources
+- PSG, actigraphy, or validation-method sources
+- consumer sleep device limitations
+- radar/ML validation references if present
 
 Use for:
 
-- exact customer language
-- severe pain examples
-- what people tried
-- what failed
-- emotional language around waking up, grogginess, ADHD, and getting out of bed
+- sleep-stage accuracy limits
+- consumer sleep tracker limitations
+- validation design
+- PSG and actigraphy comparison
+- radar/ML claim discipline
+- sleep-phase-aware intervention claim boundaries
 
 Evidence caution:
 
-- Reddit is useful for language and qualitative pain discovery.
-- Reddit should not be treated as statistical evidence.
-- Copy short excerpts and links only. Do not turn Reddit anecdotes into prevalence claims.
+- This category is mainly for technical and claims discipline.
+- Do not use these sources to claim Orisen accurately detects sleep stages unless Orisen-specific testing supports that claim.
 
-### 5. Competitor reviews / substitutes
+### 5. Competitors and substitutes
 
-Destination synthesis folder:
+Destination folder:
 
-- `research/external-research/competitor-reviews/`
+- `research/external-research/competitors-and-substitutes/`
 
 Relevant raw sections in canonical file:
 
 - `Waking up → Reviews and Reddit`
-- notes mentioning Hatch, Withings Aura, soft wake-up devices, smartphone alarms, Apple/Android alarm issues, next-generation alarm clocks, and soft wake devices
+- notes mentioning Hatch, Withings Aura, soft wake-up devices, smartphone alarms, Apple/Android alarm issues, next-generation alarm clocks, and other substitutes
+- product reviews and buyer guides
+- Reddit/forum posts about products or failed solutions
 
 Use for:
 
 - substitute products
 - what buyers already pay for
 - what existing products fail at
-- whether solutions are “pleasant but ineffective” or “effective but brutal”
+- whether solutions are pleasant but ineffective or effective but brutal
 - partner disturbance
 - phone dependence
 - alarm reliability problems
+- customer language around failed solutions
 
 Evidence caution:
 
-- The current list has pointers, not enough structured review data.
-- A proper competitor-review pass should collect reviews from Amazon, App Store, Google Play, Reddit, and product review sites separately.
+- Competitor evidence is useful for positioning and product learning.
+- It does not prove Orisen will win or that users will pay for Orisen.
+- Do not cherry-pick negative reviews as if they represent all users.
 
-### 6. Market reports / category size / investor context
+### 6. Market and category
 
-Destination synthesis folder:
+Destination folder:
 
-- `research/external-research/market-reports/`
+- `research/external-research/market-and-category/`
 
 Relevant raw sections in canonical file:
 
 - `Proof of Demand → Proof of Demand for better sleep in general`
 - `Market Size & Growth (Sleep Industry in general)`
+- broad sleep economy/category sources
+- target segment sizing sources when not better routed elsewhere
 
 Use for:
 
 - sleep economy
 - sleep aids market
 - sleep tech devices market
-- sleep disorder market
-- sleep apnea device market
+- alarm clock market
+- wearable sleep tracker market
 - investor/category framing
-- funding and market-growth context
+- market-growth context
 
 Evidence caution:
 
@@ -235,49 +273,38 @@ Evidence caution:
 - Paid market-report snippets often conflict or use unclear methodology.
 - Treat them as category framing, not wedge validation.
 
-### 7. Target segments
-
-Destination synthesis folder:
-
-- `product/target-customer.md`
-- `research/external-research/sleep-inertia/`
-- `research/external-research/articles-and-media/`
-
-Relevant raw sections in canonical file:
-
-- `Target Segments Most Likely to Buy`
-
-Use for:
-
-- nurses
-- heavy sleepers
-- chronic snoozers
-- health-conscious consumers
-- shift workers
-- students
-- professionals with strict schedules
-
-Evidence caution:
-
-- These are segment hypotheses, not validated ICP conclusions.
-- Keep the primary ICP behavioral: people who repeatedly fail between alarm time and actually being out of bed.
-
 ## Recommended next processing order
 
-1. Verify and synthesize waking/snoozing/oversleeping sources.
-2. Verify and synthesize sleep inertia / wake-stage science sources.
-3. Extract Reddit/forum language into a dedicated raw excerpt file.
-4. Collect structured competitor-review data from original review sources.
-5. Process market reports only after the above are done.
-6. Use the resulting synthesis to update `product/target-customer.md` and `product/claims-and-evidence.md`.
+1. Verify and synthesize waking-up, snoozing, oversleeping, and sleep-inertia sources.
+2. Process competitor/substitute reviews and extract repeated failure patterns.
+3. Extract Reddit/forum customer language into structured raw excerpts only when needed.
+4. Process sleep-tracking and validation sources before making sleep-stage or sensor-informed claims.
+5. Process going-to-sleep and during-sleep sources for roadmap context.
+6. Process market-and-category sources for fundraising context after higher-priority evidence is organized.
+7. Use synthesis outputs to update `product/claims-and-evidence.md` only when evidence is verified and claim-safe.
 
 ## Next AI research pass
 
-For the next pass, each source should be moved from raw intake to structured source notes with:
+For the next pass, process sources in small batches.
 
-- source title
-- link
-- source type
+Each processed source should use this format:
+
+```markdown
+## Source title
+
+- URL:
+- Founder label:
+- Original raw source: `research/external-research/raw/founder-full-source-list.md`
+- Problem area:
+- Source type:
+- Topic tags:
+- Likely use:
+- Current status: saved, not fully analyzed
+- Notes:
+```
+
+Later, after verification, add more fields if needed:
+
 - author/organization
 - publication date
 - methodology
@@ -289,4 +316,4 @@ For the next pass, each source should be moved from raw intake to structured sou
 - confidence level
 - whether safe to cite publicly
 
-Do this in small batches. Do not ask AI to read and conclude from the entire full source list at once.
+Do not ask AI to read and conclude from the entire full source list at once.
