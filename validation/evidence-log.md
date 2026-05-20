@@ -50,6 +50,12 @@ If evidence does not clearly support a claim, treat the claim as an assumption, 
 - This is an early signal of problem/message resonance, not proof of willingness to pay, retention, product-market fit, or clinical/technical efficacy.
 - Dennis expressed that he would buy the old MVP “right now,” likely around a roughly $100 discussed price point. This is an early one-person willingness-to-pay signal, not validated pricing.
 
+### Expert commentary signal
+
+- A behavioral sleep expert, Leila Jalali, suggested that artificial sleep phase transitioning sounds technically possible but likely requires ongoing/continuous feedback-based intervention rather than a one-time shift.
+- The same expert commentary cautioned that grogginess and sleep inertia are multi-cause and should not be claimed as solved by sleep-stage shifting alone.
+- This is useful for claim discipline and roadmap realism, but it does not validate Orisen efficacy or market demand.
+
 ### Needs more evidence
 
 - Reduced grogginess
@@ -365,6 +371,70 @@ Add radar, firmware, app, hardware, and intervention test evidence here.
   - This is currently the strongest evidence that the presence-based wake-completion loop has been physically built.
   - This should be used carefully: it supports prototype feasibility, not production reliability or customer validation by itself.
 
+## External expert commentary evidence
+
+Add expert commentary, clinical/sleep expert notes, and claim-discipline inputs here.
+
+### 2026-05-19 — Leila Jalali expert commentary on wake difficulty, sleep inertia, and sleep-stage intervention
+
+- Evidence type: Expert commentary / sleep expert meeting notes.
+- Source:
+  - Founder meeting notes from conversation with Leila Jalali, MD, PhD, CCSH, DBSM.
+  - Raw notes: `research/external-research/expert-commentary/raw/leila-jalali-meeting-notes.md`.
+  - Synthesis: `research/external-research/expert-commentary/expert-commentary.md`.
+- Expert context:
+  - Founder at Behavioral Sleep Regenesis.
+  - Board Certified in Behavioral Sleep Medicine.
+  - Certified in Clinical Sleep Health.
+  - Experience in sleep health, sleep data scoring, sleep clinics, and public sleep health research.
+- What was observed or discussed:
+  - Artificial sleep phase transitioning sounded technically possible to the expert, but likely requires continuous disturbance/intervention to keep a person in a lighter stage.
+  - She described disturbance as temporarily moving a patient into a lighter sleep stage before they quickly shift back to the prior stage.
+  - She cautioned that grogginess cannot be eliminated simply by shifting sleep stage.
+  - She described sleep inertia as partly related to waking from deep sleep, but also influenced by sleep quality, REM, deep sleep, and sleep timing.
+  - She identified N1 and REM as better phases to wake from.
+  - She suggested looking into sleep spindles and arousal difficulty.
+  - She identified teens/young adults and shift workers as groups worth investigating, but the numerical estimates were off-the-cuff clinic-style estimates, not published statistics.
+- Claim supported:
+  - Sleep-stage intervention is a technically plausible direction worth investigating.
+  - A one-time sleep-stage shift is probably insufficient; a continuous feedback-based intervention loop may be required.
+  - Grogginess and sleep inertia are multi-cause problems, so Orisen should keep claims careful.
+  - Teens/young adults and shift workers are plausible segments to investigate further.
+  - Sleep spindles and arousal threshold should be added to external research topics.
+- Claim not supported:
+  - This does not prove Orisen can perform artificial sleep phase transitioning.
+  - This does not prove Orisen reduces grogginess.
+  - This does not prove Orisen reduces sleep inertia.
+  - This does not prove Orisen detects sleep stages accurately.
+  - This does not prove Orisen can keep users in lighter sleep.
+  - This does not prove clinical efficacy.
+  - This does not prove teens/young adults are the final ICP.
+  - This does not support hard percentage claims about who struggles to wake up.
+  - This does not prove market demand, willingness to pay, or product-market fit.
+- Evidence category: Expert commentary / early external validation / claim-discipline input.
+- Evidence strength: Level 1 to Level 2.
+- Confidence:
+  - Medium for qualitative claim-discipline implications.
+  - Medium for technical plausibility as a direction worth testing.
+  - Low for prevalence percentages and segment-ranking conclusions.
+- Limitations:
+  - Founder-written notes, not a transcript.
+  - Some wording may be paraphrased.
+  - One expert / one clinic perspective.
+  - Off-the-cuff estimates should not be treated as population-level statistics.
+  - Expert plausibility is not Orisen-specific validation.
+  - No experimental Orisen sleep-stage intervention data was collected in this meeting.
+- Related docs to update:
+  - `product/claims-and-evidence.md`
+  - `product/target-customer.md`
+  - `product/roadmap.md`
+  - `research/external-research/sleep-inertia/sleep-inertia-research.md` when created
+  - `radar-ml/radar-ml-context-map.md` if sleep-stage intervention research is expanded
+- Notes:
+  - This is strongest as claim discipline and technical roadmap realism.
+  - It supports describing artificial sleep phase transitioning as a plausible but unvalidated roadmap hypothesis.
+  - It argues against public claims that Orisen already eliminates grogginess, eliminates sleep inertia, controls sleep stages, or is clinically proven.
+
 ## Claims supported by current evidence
 
 Add supported claims here as evidence improves.
@@ -455,6 +525,27 @@ For each supported claim, include:
   - Does not prove artificial sleep phase transitioning works.
   - Does not prove reduced grogginess or reduced sleep inertia.
   - Supports roadmap direction, not validated efficacy.
+
+### Expert commentary supports treating sleep-stage intervention as plausible but unvalidated
+
+- Claim: Expert commentary suggests artificial sleep phase transitioning is a technically plausible direction worth testing, but likely requires continuous feedback-based intervention rather than a one-time sleep-stage shift.
+- Evidence category: Expert commentary / early external validation / claim-discipline input.
+- Evidence strength: Level 1 to Level 2.
+- Evidence source: 2026-05-19 Leila Jalali expert commentary entry and `research/external-research/expert-commentary/expert-commentary.md`.
+- Limitations:
+  - Expert plausibility is not Orisen-specific validation.
+  - Does not prove Orisen can detect or manipulate sleep stages.
+  - Does not prove efficacy, reliability, clinical value, or market demand.
+
+### Expert commentary supports keeping grogginess and sleep inertia claims careful
+
+- Claim: Expert commentary supports treating grogginess and sleep inertia as multi-cause problems that Orisen should not claim to solve without direct validation.
+- Evidence category: Expert commentary / claim-discipline input.
+- Evidence strength: Level 1 to Level 2.
+- Evidence source: 2026-05-19 Leila Jalali expert commentary entry and `research/external-research/expert-commentary/expert-commentary.md`.
+- Limitations:
+  - Does not prove Orisen improves or fails to improve grogginess.
+  - Does not replace controlled Orisen-specific testing.
 
 ## Claims not yet supported
 
