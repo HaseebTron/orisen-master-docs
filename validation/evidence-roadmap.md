@@ -18,6 +18,7 @@ Use this file to answer:
 
 This file points to detailed files in their natural folders instead of duplicating them.
 
+- Use `validation/evidence-source-structure.md` for the intended evidence folder/layout rules.
 - Use `validation/evidence-log.md` for conservative evidence entries and claim support.
 - Use `validation/evidence-standard.md` for evidence classification rules.
 - Use `product/claims-and-evidence.md` for public claim boundaries.
@@ -29,6 +30,9 @@ This file points to detailed files in their natural folders instead of duplicati
 ```text
 validation/evidence-roadmap.md
 = what evidence categories exist, what is done, what is missing, and where to look
+
+validation/evidence-source-structure.md
+= intended source folder structure and raw-to-synthesis-to-claims flow
 
 validation/evidence-log.md
 = conservative evidence entries and supported/unsupported claim tracking
@@ -65,28 +69,6 @@ marketing/<topic>/raw/
 = exported analytics, raw post metrics, screenshots, or rough campaign notes
 ```
 
-Current examples:
-
-```text
-research/customer-interviews/raw/2024-alarm-clock-responses.csv
-→ raw summer 2024 interview response data
-
-research/customer-interviews/2024-alarm-clock-interviews.md
-→ synthesis and interpretation of the interview data
-
-research/external-research/expert-commentary/raw/leila-jalali-meeting-notes.md
-→ raw expert notes
-
-research/external-research/expert-commentary/raw/benji-ozynski-meeting-notes.md
-→ raw expert notes
-
-research/external-research/expert-commentary/expert-commentary.md
-→ consolidated expert-commentary synthesis and index
-
-research/external-research/expert-commentary/benji-ozynski-synthesis.md
-→ Benji-specific expert-commentary synthesis
-```
-
 Rules:
 
 - Keep raw/source data separate from interpretation.
@@ -95,6 +77,7 @@ Rules:
 - Do not create empty `raw/` folders before there is actual raw/source material.
 - Every synthesis file should point back to its raw/source files.
 - Downstream claim docs should rely on the evidence log and source-specific synthesis, not raw data alone.
+- Use readable Markdown links in synthesis/claim docs instead of exposing long URLs everywhere.
 
 ## Current evidence categories
 
@@ -165,11 +148,22 @@ Purpose:
 
 Current source files:
 
-- `product/old-mvp.md`
-- `product/old-mvp-test-row-labels.md`
-- `product/old-mvp-bypass-and-failure-notes.md`
-- `product/old-mvp-user-feedback.md`
+- `product/old-mvp/README.md`
+- `product/old-mvp.md` until migration is complete
+- `product/old-mvp-test-row-labels.md` until migration is complete
+- `product/old-mvp-bypass-and-failure-notes.md` until migration is complete
+- `product/old-mvp-user-feedback.md` until migration is complete
 - `validation/evidence-log.md`
+
+Intended final location:
+
+```text
+product/old-mvp/
+├── old-mvp.md
+├── old-mvp-test-row-labels.md
+├── old-mvp-bypass-and-failure-notes.md
+└── old-mvp-user-feedback.md
+```
 
 Current evidence:
 
@@ -265,9 +259,88 @@ Next steps:
 - Ask waitlist users about severity, current solution, willingness to pay, and whether they want to beta test.
 - Test X/Twitter content after source-of-truth positioning is ready.
 
-### 4. External market / literature / community evidence
+### 4. Expert commentary
 
 Status: partially filled.
+
+Purpose:
+
+- Capture sleep-expert and domain-expert meeting notes.
+- Use experts for claim discipline, technical plausibility, validation design, roadmap realism, and ICP hypotheses.
+- Keep expert calls separate from secondary external research.
+
+Current source files:
+
+- `research/expert-commentary/README.md`
+- `research/external-research/expert-commentary/raw/leila-jalali-meeting-notes.md` until migration is complete
+- `research/external-research/expert-commentary/raw/benji-ozynski-meeting-notes.md` until migration is complete
+- `research/external-research/expert-commentary/expert-commentary.md` until migration is complete
+- `research/external-research/expert-commentary/benji-ozynski-synthesis.md` until migration is complete
+
+Intended final location:
+
+```text
+research/expert-commentary/
+├── raw/
+│   ├── leila-jalali-meeting-notes.md
+│   └── benji-ozynski-meeting-notes.md
+├── expert-commentary.md
+└── benji-ozynski-synthesis.md
+```
+
+Current evidence:
+
+- Leila Jalali expert commentary on sleep-stage intervention, sleep inertia, grogginess, wake-up difficulty, age patterns, shift workers, and sleep spindles.
+- Benji Ozynski expert commentary on empirical testing, sleep unpredictability, temperature, actigraphy, sleep-mask/light limitations, PSG validation, and possible research/advisor collaboration.
+- Strongest use is claim discipline, validation design, and roadmap realism.
+- Does not validate Orisen efficacy or market demand.
+
+Best experts to keep seeking:
+
+- behavioral sleep medicine specialists
+- sleep technologists
+- sleep clinic workers
+- circadian rhythm researchers
+- people who score sleep studies
+- ADHD coaches or clinicians
+- shift-work fatigue experts
+
+Ask:
+
+- who has the most severe wake-up problems?
+- what causes people to fail at waking?
+- what is realistic vs overclaimed about sleep-stage-based waking?
+- what would be unsafe or irresponsible to claim?
+- what would make this useful clinically or practically?
+- what validation protocol would they trust?
+- what data would a clinic need from Orisen to compare against PSG?
+
+Best use:
+
+- Claim discipline.
+- Product risk discovery.
+- Clinical/scientific realism.
+- Validation design.
+- Identifying user segments that may require caution.
+
+Weak use:
+
+- Proving demand unless experts report repeated customer/patient demand.
+- Making medical claims.
+- Hard prevalence or segmentation claims.
+- Claiming a formal partnership before it is confirmed.
+
+Next steps:
+
+- Add structured notes from any additional expert calls.
+- Record what each expert said, what it supports, what it does not prove, warnings, objections, and suggestions.
+- Keep medical/clinical claims conservative.
+- Use expert commentary to guide literature review topics, especially sleep inertia, spindles, arousal threshold, delayed sleep phase, temperature, actigraphy, and PSG validation.
+- Follow up with Dr Benji about PSG validation, exact cost, data access, protocol support, advisor interest, and whether clinic involvement can be formally confirmed.
+
+### 5. External market / literature / community evidence
+
+Status: mostly missing.
 
 Purpose:
 
@@ -277,43 +350,40 @@ Purpose:
 - Protect the company from overclaiming scientific/clinical outcomes.
 - Support market/category framing for fundraising.
 
-This category should not be used to “prove Orisen works.” It should be used to triangulate market pain, customer language, scientific plausibility, competitor gaps, and claim risk.
+This category should not be used to prove Orisen works. It should be used to triangulate market pain, customer language, scientific plausibility, competitor gaps, and claim risk.
 
 Recommended future folder pattern:
 
 ```text
-research/external-research/sleep-inertia/raw/
-research/external-research/sleep-inertia/sleep-inertia-research.md
-
-research/external-research/market-reports/raw/
-research/external-research/market-reports/market-research-notes.md
+research/external-research/research-papers/raw/
+research/external-research/research-papers/research-papers-synthesis.md
 
 research/external-research/articles-and-media/raw/
-research/external-research/articles-and-media/articles-and-media-notes.md
+research/external-research/articles-and-media/articles-and-media-synthesis.md
 
 research/external-research/reddit-forums/raw/
-research/external-research/reddit-forums/reddit-customer-language.md
+research/external-research/reddit-forums/reddit-forum-synthesis.md
 
 research/external-research/competitor-reviews/raw/
-research/external-research/competitor-reviews/competitor-review-research.md
+research/external-research/competitor-reviews/competitor-review-synthesis.md
 
-research/external-research/expert-commentary/raw/
-research/external-research/expert-commentary/expert-commentary.md
+research/external-research/market-and-category/raw/
+research/external-research/market-and-category/market-and-category-synthesis.md
 ```
 
 Do not create these folders/files until there is actual source material to put in them.
 
-#### 4.1 Research papers / sleep inertia literature
+#### 5.1 Research papers
 
 Status: missing.
 
 Potential source file:
 
-- `research/external-research/sleep-inertia/sleep-inertia-research.md`
+- `research/external-research/research-papers/research-papers-synthesis.md`
 
 Potential raw/source folder:
 
-- `research/external-research/sleep-inertia/raw/`
+- `research/external-research/research-papers/raw/`
 
 Look for research on:
 
@@ -358,60 +428,13 @@ Next steps:
 - Find research on sleep spindles, arousal threshold, and wake difficulty.
 - Add citations and summarize in careful claim-safe language.
 
-#### 4.2 Market reports / surveys
+#### 5.2 Articles and media
 
 Status: missing.
 
 Potential source file:
 
-- `research/external-research/market-reports/market-research-notes.md`
-
-Potential raw/source folder:
-
-- `research/external-research/market-reports/raw/`
-
-Look for:
-
-- sleep tech market size
-- alarm clock market size
-- smart sleep device market
-- wearable sleep tracker market
-- consumer frustration with sleep tracking
-- demand for sleep improvement rather than tracking
-
-Extract:
-
-- category size
-- growth direction
-- buyer behavior
-- investor-facing market framing
-- survey-level consumer pain, if credible
-
-Best use:
-
-- Fundraising context.
-- Investor narrative.
-- Category framing.
-
-Weak use:
-
-- Proving Orisen's wedge.
-- Proving willingness to pay for Orisen.
-- Proving product-market fit.
-
-Next steps:
-
-- Gather credible market reports or survey summaries.
-- Separate high-quality sources from fluffy market-report claims.
-- Do not over-rely on market size to justify product strategy.
-
-#### 4.3 Articles
-
-Status: missing.
-
-Potential source file:
-
-- `research/external-research/articles-and-media/articles-and-media-notes.md`
+- `research/external-research/articles-and-media/articles-and-media-synthesis.md`
 
 Potential raw/source folder:
 
@@ -446,13 +469,13 @@ Next steps:
 - Save only sources worth citing later.
 - Prefer primary research or expert commentary over generic SEO articles.
 
-#### 4.4 Reddit / forum posts
+#### 5.3 Reddit / forum posts
 
 Status: missing.
 
 Potential source file:
 
-- `research/external-research/reddit-forums/reddit-customer-language.md`
+- `research/external-research/reddit-forums/reddit-forum-synthesis.md`
 
 Potential raw/source folder:
 
@@ -514,13 +537,13 @@ Next steps:
 - Categorize by failure mode: sleep-through, snooze, turn-off-half-asleep, get-back-in-bed, phone trap, grogginess, partner disturbance.
 - Avoid over-weighting extreme Reddit examples as representative of the whole market.
 
-#### 4.5 Reviews of competing products
+#### 5.4 Competitor product reviews
 
 Status: missing.
 
 Potential source file:
 
-- `research/external-research/competitor-reviews/competitor-review-research.md`
+- `research/external-research/competitor-reviews/competitor-review-synthesis.md`
 
 Potential raw/source folder:
 
@@ -574,69 +597,55 @@ Next steps:
 
 - Collect reviews by product type.
 - Separate positive purchase drivers from negative failure modes.
-- Identify which competitors are “works but brutal” versus “pleasant but ineffective.”
+- Identify which competitors are works-but-brutal versus pleasant-but-ineffective.
 - Look for repeated phrases and objections.
 
-#### 4.6 Sleep clinic / expert commentary
+#### 5.5 Market and category
 
-Status: partially filled.
+Status: missing.
 
-Current source files:
+Potential source file:
 
-- `research/external-research/expert-commentary/raw/leila-jalali-meeting-notes.md`
-- `research/external-research/expert-commentary/raw/benji-ozynski-meeting-notes.md`
-- `research/external-research/expert-commentary/expert-commentary.md`
-- `research/external-research/expert-commentary/benji-ozynski-synthesis.md`
+- `research/external-research/market-and-category/market-and-category-synthesis.md`
 
-Current evidence:
+Potential raw/source folder:
 
-- Leila Jalali expert commentary on sleep-stage intervention, sleep inertia, grogginess, wake-up difficulty, age patterns, shift workers, and sleep spindles.
-- Benji Ozynski expert commentary on empirical testing, sleep unpredictability, temperature, actigraphy, sleep-mask/light limitations, PSG validation, and possible research/advisor collaboration.
-- Strongest use is claim discipline, validation design, and roadmap realism.
-- Does not validate Orisen efficacy or market demand.
+- `research/external-research/market-and-category/raw/`
 
-Best experts to keep seeking:
+Look for:
 
-- behavioral sleep medicine specialists
-- sleep technologists
-- sleep clinic workers
-- circadian rhythm researchers
-- people who score sleep studies
-- ADHD coaches or clinicians
-- shift-work fatigue experts
+- sleep tech market size
+- alarm clock market size
+- smart sleep device market
+- wearable sleep tracker market
+- consumer frustration with sleep tracking
+- demand for sleep improvement rather than tracking
 
-Ask:
+Extract:
 
-- who has the most severe wake-up problems?
-- what causes people to fail at waking?
-- what is realistic vs overclaimed about sleep-stage-based waking?
-- what would be unsafe or irresponsible to claim?
-- what would make this useful clinically or practically?
-- what validation protocol would they trust?
-- what data would a clinic need from Orisen to compare against PSG?
+- category size
+- growth direction
+- buyer behavior
+- investor-facing market framing
+- survey-level consumer pain, if credible
 
 Best use:
 
-- Claim discipline.
-- Product risk discovery.
-- Clinical/scientific realism.
-- Validation design.
-- Identifying user segments that may require caution.
+- Fundraising context.
+- Investor narrative.
+- Category framing.
 
 Weak use:
 
-- Proving demand unless experts report repeated customer/patient demand.
-- Making medical claims.
-- Hard prevalence or segmentation claims.
-- Claiming a formal partnership before it is confirmed.
+- Proving Orisen's wedge.
+- Proving willingness to pay for Orisen.
+- Proving product-market fit.
 
 Next steps:
 
-- Add structured notes from any additional expert calls.
-- Record what each expert said, what it supports, what it does not prove, warnings, objections, and suggestions.
-- Keep medical/clinical claims conservative.
-- Use expert commentary to guide literature review topics, especially sleep inertia, spindles, arousal threshold, delayed sleep phase, temperature, actigraphy, and PSG validation.
-- Follow up with Dr Benji about PSG validation, exact cost, data access, protocol support, advisor interest, and whether clinic involvement can be formally confirmed.
+- Gather credible market reports or survey summaries.
+- Separate high-quality sources from fluffy market-report claims.
+- Do not over-rely on market size to justify product strategy.
 
 ## Evidence priority order
 
@@ -646,7 +655,7 @@ For near-term marketing and X posting, prioritize:
 2. Prototype/pilot evidence.
 3. Competitor reviews.
 4. Reddit/forum customer language.
-5. Claims-safe sleep inertia research.
+5. Claims-safe sleep inertia / waking-up research papers.
 6. Website/marketing traffic evidence.
 7. Expert commentary.
 8. Market reports and market sizing.
