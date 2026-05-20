@@ -50,7 +50,7 @@ Follow:
 
 - `ai-context/ai-operating-mode.md`
 - `ai-context/doc-creation-rules.md` when creating or editing docs
-- `validation/evidence-standard.md` when judging claims, evidence, validation, marketing, fundraising, radar/ML, or product truth
+- `ai-context/claim-control/claim-control-system.md` when judging claims, evidence, validation, marketing, fundraising, radar/ML, or product truth
 
 ## Default new-chat prompt
 
@@ -114,7 +114,7 @@ When this file is read for a meaningful Orisen task, follow this order before an
 8. Read `ai-context/context-map.md`.
 9. Read `ai-context/current-state.md`, `ai-context/source-of-truth-rules.md`, and `ai-context/ai-operating-mode.md` as core baseline context.
 10. If the task creates, edits, reviews, or promotes docs, read `ai-context/doc-creation-rules.md`.
-11. If the task judges validation, claims, marketing, fundraising, scientific/technical support, or evidence strength, read `validation/evidence-standard.md`.
+11. If the task judges validation, claims, marketing, fundraising, scientific/technical support, or evidence strength, read `ai-context/claim-control/claim-control-system.md`.
 12. Follow `context-map.md` to the correct minimal or full baseline pack and any task-specific docs.
 13. Provide the context loaded summary.
 14. Answer the user's main question using the relevant docs.
@@ -143,7 +143,7 @@ If the new request needs source-of-truth docs that were not read earlier:
 1. Briefly tell the user that the request needs additional source context.
 2. Read `ai-context/context-map.md` if needed.
 3. Read the relevant folder context map and task-specific docs from GitHub.
-4. Read `ai-context/ai-operating-mode.md`, `ai-context/doc-creation-rules.md`, or `validation/evidence-standard.md` if the request needs them and they were not already read.
+4. Read `ai-context/ai-operating-mode.md`, `ai-context/doc-creation-rules.md`, or `ai-context/claim-control/claim-control-system.md` if the request needs them and they were not already read.
 5. State which additional files were read.
 6. Answer using the expanded context.
 
@@ -156,9 +156,9 @@ If the request changes the purpose of the chat, affects project routing, or sugg
 Examples:
 
 - In an Orisen Software chat, if the user moves from OTA to BLE onboarding, read `software/software-context-map.md` and the BLE slice/spec docs from the software repo. Do not rerun the full boot sequence unless the chat is stale or contaminated.
-- In an Orisen Marketing + GTM chat, if the user asks whether a claim is safe, read `product/claims-and-evidence.md`, `validation/evidence-log.md`, and `validation/evidence-standard.md`.
-- In an Orisen Fundraising chat, if the user asks how to frame traction, read `fundraising/fundraising-context-map.md`, `fundraising/investor-narrative.md`, `validation/evidence-log.md`, and `validation/evidence-standard.md`.
-- In Orisen Radar + ML, if the user asks whether a paper supports a product claim, read the relevant radar/ML docs plus `product/claims-and-evidence.md`, `validation/evidence-log.md`, and `validation/evidence-standard.md`.
+- In an Orisen Marketing + GTM chat, if the user asks whether a claim is safe, read `product/claims-and-evidence.md`, `ai-context/claim-control/claim-control-log.md`, and `ai-context/claim-control/claim-control-system.md`.
+- In an Orisen Fundraising chat, if the user asks how to frame traction, read `fundraising/fundraising-context-map.md`, `fundraising/investor-narrative.md`, `ai-context/claim-control/claim-control-log.md`, and `ai-context/claim-control/claim-control-system.md`.
+- In Orisen Radar + ML, if the user asks whether a paper supports a product claim, read the relevant radar/ML docs plus `product/claims-and-evidence.md`, `ai-context/claim-control/claim-control-log.md`, and `ai-context/claim-control/claim-control-system.md`.
 - In Orisen General, if the user shifts from project structure to fundraising strategy, expand context by reading fundraising docs. Do not recommend a new chat unless the current chat is long, mixed, or contaminated.
 
 ## Handoff trigger
