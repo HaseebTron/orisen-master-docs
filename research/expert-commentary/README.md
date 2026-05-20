@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This folder is the intended home for sleep-expert and domain-expert meeting notes.
+This folder is the home for sleep-expert and domain-expert meeting notes.
 
 Expert commentary is separate from `research/external-research/` because expert calls are primary founder-collected evidence, while papers, articles, Reddit posts, reviews, and market reports are external secondary sources.
 
@@ -19,7 +19,7 @@ Expert commentary should be used for:
 
 Expert commentary should not be treated as proof that Orisen works unless the expert directly tested Orisen or reviewed Orisen-specific data.
 
-## Intended structure
+## Structure
 
 ```text
 research/expert-commentary/
@@ -31,13 +31,13 @@ research/expert-commentary/
 └── benji-ozynski-synthesis.md
 ```
 
-## Current migration note
+## Raw notes vs interpretation
 
-Some expert files may still exist under `research/external-research/expert-commentary/` until references are safely migrated.
+- `raw/` contains source-preserving meeting notes.
+- `expert-commentary.md` synthesizes the expert commentary across calls.
+- `benji-ozynski-synthesis.md` preserves a separate synthesis for the Benji Ozynski call because that call has validation/collaboration implications.
 
-The intended long-term structure is this folder.
-
-Avoid duplicating raw notes and synthesis in both places. Move references gradually and keep raw notes separate from interpretation.
+Keep raw notes separate from interpretation.
 
 ## Claim boundaries
 
