@@ -4,8 +4,9 @@ Status: Raw source shortlist
 Authority level: Raw / unverified source intake
 Last updated: 2026-05-20
 Governing docs:
-- `validation/evidence-standard.md`
-- `validation/evidence-roadmap.md`
+- `research/external-research/README.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-roadmap.md`
 - `ai-context/source-of-truth-rules.md`
 
 ## Purpose
@@ -50,11 +51,16 @@ The founder said these were the sources used in the pitch deck and that they fel
 
 ## Next processing step
 
-Move verified wake-up and snoozing sources into:
+Move verified wake-up and snoozing sources into the problem-first external research structure:
 
-- `research/external-research/sleep-inertia/`
-- `research/external-research/articles-and-media/`
-- `validation/evidence-log.md`
-- `product/claims-and-evidence.md`
+- `research/external-research/waking-up/raw/founder-sources.md`
+- `research/external-research/waking-up/waking-up-synthesis.md`
+- `ai-context/claim-control/claim-control-log.md`, only if the evidence materially affects allowed claims
+- `product/claims-and-evidence.md`, only after source verification and synthesis
 
-Only after source verification and synthesis.
+Move difficulty-falling-asleep sources into:
+
+- `research/external-research/going-to-sleep/raw/founder-sources.md`
+- `research/external-research/going-to-sleep/going-to-sleep-synthesis.md`
+
+Only promote any source toward public claims after source verification and synthesis.
