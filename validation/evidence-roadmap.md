@@ -65,7 +65,7 @@ marketing/<topic>/raw/
 = exported analytics, raw post metrics, screenshots, or rough campaign notes
 ```
 
-Current example:
+Current examples:
 
 ```text
 research/customer-interviews/raw/2024-alarm-clock-responses.csv
@@ -73,6 +73,18 @@ research/customer-interviews/raw/2024-alarm-clock-responses.csv
 
 research/customer-interviews/2024-alarm-clock-interviews.md
 → synthesis and interpretation of the interview data
+
+research/external-research/expert-commentary/raw/leila-jalali-meeting-notes.md
+→ raw expert notes
+
+research/external-research/expert-commentary/raw/benji-ozynski-meeting-notes.md
+→ raw expert notes
+
+research/external-research/expert-commentary/expert-commentary.md
+→ consolidated expert-commentary synthesis and index
+
+research/external-research/expert-commentary/benji-ozynski-synthesis.md
+→ Benji-specific expert-commentary synthesis
 ```
 
 Rules:
@@ -312,6 +324,8 @@ Look for research on:
 - alarm timing
 - circadian light exposure
 - auditory stimulation during sleep
+- temperature as a sleep/wake intervention variable
+- actigraphy as a sleep/wake measurement tool
 - limitations of consumer sleep-stage detection
 - sleep spindles and arousal threshold
 
@@ -338,8 +352,9 @@ Weak use:
 Next steps:
 
 - Find review papers or credible sources on sleep inertia.
-- Find papers on light/audio effects near waking.
+- Find papers on light/audio/temperature effects near waking.
 - Find sources on sleep-stage-based smart alarms and their limitations.
+- Find research on actigraphy and what it can/cannot measure.
 - Find research on sleep spindles, arousal threshold, and wake difficulty.
 - Add citations and summarize in careful claim-safe language.
 
@@ -569,12 +584,15 @@ Status: partially filled.
 Current source files:
 
 - `research/external-research/expert-commentary/raw/leila-jalali-meeting-notes.md`
+- `research/external-research/expert-commentary/raw/benji-ozynski-meeting-notes.md`
 - `research/external-research/expert-commentary/expert-commentary.md`
+- `research/external-research/expert-commentary/benji-ozynski-synthesis.md`
 
 Current evidence:
 
 - Leila Jalali expert commentary on sleep-stage intervention, sleep inertia, grogginess, wake-up difficulty, age patterns, shift workers, and sleep spindles.
-- Strongest use is claim discipline and roadmap realism.
+- Benji Ozynski expert commentary on empirical testing, sleep unpredictability, temperature, actigraphy, sleep-mask/light limitations, PSG validation, and possible research/advisor collaboration.
+- Strongest use is claim discipline, validation design, and roadmap realism.
 - Does not validate Orisen efficacy or market demand.
 
 Best experts to keep seeking:
@@ -594,12 +612,15 @@ Ask:
 - what is realistic vs overclaimed about sleep-stage-based waking?
 - what would be unsafe or irresponsible to claim?
 - what would make this useful clinically or practically?
+- what validation protocol would they trust?
+- what data would a clinic need from Orisen to compare against PSG?
 
 Best use:
 
 - Claim discipline.
 - Product risk discovery.
 - Clinical/scientific realism.
+- Validation design.
 - Identifying user segments that may require caution.
 
 Weak use:
@@ -607,13 +628,15 @@ Weak use:
 - Proving demand unless experts report repeated customer/patient demand.
 - Making medical claims.
 - Hard prevalence or segmentation claims.
+- Claiming a formal partnership before it is confirmed.
 
 Next steps:
 
 - Add structured notes from any additional expert calls.
 - Record what each expert said, what it supports, what it does not prove, warnings, objections, and suggestions.
 - Keep medical/clinical claims conservative.
-- Use expert commentary to guide literature review topics, especially sleep inertia, spindles, arousal threshold, and delayed sleep phase.
+- Use expert commentary to guide literature review topics, especially sleep inertia, spindles, arousal threshold, delayed sleep phase, temperature, actigraphy, and PSG validation.
+- Follow up with Dr Benji about PSG validation, exact cost, data access, protocol support, advisor interest, and whether clinic involvement can be formally confirmed.
 
 ## Evidence priority order
 
@@ -637,6 +660,7 @@ For fundraising, prioritize:
 5. Sleep inertia and scientific claim discipline.
 6. Market reports and category size.
 7. Expert commentary.
+8. PSG validation pathway and expert/advisor collaboration if confirmed.
 
 For product strategy, prioritize:
 
@@ -645,9 +669,10 @@ For product strategy, prioritize:
 3. Competitor review failure modes.
 4. Expert commentary.
 5. Research papers on sleep inertia and intervention plausibility.
-6. Reddit/forum language.
-7. Website/marketing metrics.
-8. Market reports.
+6. PSG/actigraphy validation design.
+7. Reddit/forum language.
+8. Website/marketing metrics.
+9. Market reports.
 
 ## Repo hygiene rules
 
@@ -660,6 +685,7 @@ For product strategy, prioritize:
 - Do not convert anecdotal evidence, Reddit posts, or reviews into statistical claims.
 - Do not treat market reports as proof of demand.
 - Do not treat scientific plausibility as proof that Orisen works.
+- Do not treat informal expert interest as a formal advisor, partner, or cofounder relationship.
 
 ## Immediate next steps
 
@@ -675,6 +701,7 @@ Use currently available evidence:
 - old MVP user feedback
 - LinkedIn/waitlist evidence
 - Leila Jalali expert commentary
+- Benji Ozynski expert commentary
 - evidence weighting rules in this roadmap
 
 Then, in Orisen Marketing, create or update:
