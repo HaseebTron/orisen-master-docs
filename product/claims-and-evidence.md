@@ -11,10 +11,9 @@ This file should stay consistent with:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `product/product-overview.md`
-- `validation/evidence-standard.md`
-- `validation/evidence-log.md`
-- `validation/evidence-roadmap.md`
-- `validation/evidence-source-structure.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-log.md`
+- `ai-context/claim-control/claim-control-roadmap.md`
 
 ## Evidence inputs
 
@@ -31,8 +30,8 @@ Primary upstream evidence inputs:
 - `research/expert-commentary/`
   - Sleep-expert meeting notes, expert synthesis, validation suggestions, claim warnings, and roadmap realism.
 - `research/external-research/`
-  - Research papers, articles/media, Reddit/forum evidence, competitor reviews, market/category evidence, and sleep-tracking/validation sources.
-- `validation/evidence-log.md`
+  - Problem-first external research, including waking-up, going-to-sleep, during-sleep, sleep-tracking/validation, competitors/substitutes, and market/category sources.
+- `ai-context/claim-control/claim-control-log.md`
   - Conservative evidence entries and claim-support tracking when evidence is important enough to affect allowed claims.
 
 Use this file to answer:
@@ -52,13 +51,13 @@ Important rule:
 
 When updating this file, read the relevant upstream evidence first and link back to the synthesis or source files where useful.
 
-## Relationship to the evidence standard
+## Relationship to the claim-control system
 
-`validation/evidence-standard.md` is the authority for how Orisen classifies evidence and claim strength.
+`ai-context/claim-control/claim-control-system.md` is the authority for how Orisen classifies evidence and claim strength.
 
-This file applies that standard to Orisen's product claims.
+This file applies that claim-control system to Orisen's product claims.
 
-When this file and `validation/evidence-standard.md` appear to conflict, use `validation/evidence-standard.md` for evidence classification and update this file to match it.
+When this file and `ai-context/claim-control/claim-control-system.md` appear to conflict, use `ai-context/claim-control/claim-control-system.md` for evidence classification and update this file to match it.
 
 ## Core rule
 
@@ -94,7 +93,7 @@ Primary source areas:
 - `product/old-mvp/`
 - `research/customer-interviews/`
 - `marketing/post-performance-log.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-log.md`
 
 This evidence should still be treated as early validation, not broad-market proof.
 
@@ -264,7 +263,7 @@ Avoid:
 
 ## Evidence classification
 
-Use `validation/evidence-standard.md` when reviewing the evidence status of a claim.
+Use `ai-context/claim-control/claim-control-system.md` when reviewing the evidence status of a claim.
 
 Important claim classifications include:
 
@@ -278,7 +277,7 @@ Important claim classifications include:
 
 Do not create a separate evidence scale in this file.
 
-This file should describe the product-specific claim implications of the evidence standard.
+This file should describe the product-specific claim implications of the claim-control system.
 
 ## Current claim status table
 
@@ -342,7 +341,7 @@ Update this file when:
 - Marketing or fundraising needs stronger language and evidence exists to support it.
 - A future regulatory or clinical strategy changes allowable claims.
 
-When evidence improves, update the relevant raw/source files and synthesis docs first. If the evidence materially changes claim strength, update `validation/evidence-log.md`. Then update this file before updating marketing, fundraising, pitch, website, or customer-facing docs.
+When evidence improves, update the relevant raw/source files and synthesis docs first. If the evidence materially changes claim strength, update `ai-context/claim-control/claim-control-log.md`. Then update this file before updating marketing, fundraising, pitch, website, or customer-facing docs.
 
 ## Current summary
 
