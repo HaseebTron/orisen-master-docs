@@ -143,13 +143,15 @@ Start with the highest-priority waking-up sources from `raw/founder-sources.md`:
 1. Nature Scientific Reports heavy snooze study. Processed in Batch 1.
 2. Snooze/sleep inertia source. Processed in Batch 1 using corrected DOI `https://doi.org/10.1186/s40101-022-00317-w`. The original raw PMC URL `https://pmc.ncbi.nlm.nih.gov/articles/PMC8729838/` appears to be incorrect or misrouted.
 3. PMC sleep inertia / clinical population source: `https://pmc.ncbi.nlm.nih.gov/articles/PMC5337178/`. Incomplete Batch 1 processing; needs deeper review because full text was not retrieved.
-4. SleepJunkie waking-up survey.
-5. MattressNerd / MattressInquirer oversleeping and get-out-of-bed stats.
-6. New York Post / Talker Research morning struggles article.
+4. SleepJunkie waking-up survey. Batch 2 attempted; article body inaccessible during review.
+5. MattressNerd / MattressInquirer oversleeping and get-out-of-bed stats. Processed in Batch 2.
+6. New York Post / Talker Research morning struggles article. Talker Research source processed in Batch 2.
 7. Apartment Therapy alarm/snooze stats.
 8. TechCrunch / Withings Aura wake-up survey claims.
 
-## Processed source notes
+---
+
+# Batch 1 processed source notes
 
 ## Source: Snooze alarm use in a global population of smartphone users
 
@@ -449,3 +451,320 @@ In other words, this source is more valuable for narrowing what Orisen should no
 - Useful for marketing/website: no
 - Useful for pitch deck/fundraising: maybe, but only as internal caution
 - Useful for X/content: no
+
+---
+
+# Batch 2 processed source notes
+
+## Source: What are Americans' morning struggles?
+
+- URL: `https://talkerresearch.com/what-are-americans-morning-struggles/`
+- Founder label: Two in five Americans are “bad” at mornings.
+- Original raw source:
+  - `research/external-research/waking-up/raw/founder-sources.md`
+- Problem area: waking-up
+- Source type: commissioned online survey write-up published in a research-firm newsroom
+- Topic tags:
+  - mornings
+  - wake-up difficulty
+  - alarms
+  - snoozing
+  - night owls
+  - delayed bed exit
+- Processing status: verified
+- Processed date: 2026-05-20
+
+### What the source actually says
+
+This Talker Research newsroom post reports findings from an online survey of 2,000 “general population Americans,” commissioned by Avocado Green Mattress and fielded May 9–15, 2025.
+
+The article says 38% of respondents agreed they are “bad” at mornings. It also says respondents get out of bed later than planned an average of eight times per month, and that 10% say this happens more than 20 times per month.
+
+The article says 43% use an alarm to wake up, alarm users set two alarms on average, and about one in five alarm users hit snooze at least three times before getting up.
+
+The article compares early birds and night owls, reporting worse wake-up difficulty among night owls.
+
+### Relevant findings for Orisen
+
+- The source supports the idea that recurring morning difficulty exists at a meaningful level among respondents, not just as an occasional edge case.
+- The source suggests a non-trivial subset of alarm users still struggle with repeated snoozing and delayed bed exit, even when alarms are already part of their routine.
+- The source gives directional support for the idea that waking difficulty is not evenly distributed across users, since night owls in this survey reported more difficulty getting out of bed on time than early birds.
+
+### Methodology / basis
+
+- Sample: 2,000 “general population Americans.”
+- Data type: Online self-report survey summarized in a Talker Research newsroom article.
+- Population: U.S. general-population respondents, as described by the page.
+- Timeframe: Survey administered May 9–15, 2025; article published June 5, 2025.
+- Methodology notes: The page gives a short methodology statement naming the sponsor, sample size, population, online administration, and survey dates, but it does not provide questionnaire wording, weighting, margin of error, recruitment details, or subgroup sample sizes on the article page itself.
+
+### Source quality
+
+- Evidence strength: medium
+- Confidence: medium
+- Main limitations:
+  - Commissioned PR-style survey.
+  - Self-reported measures.
+  - Limited disclosed methodology.
+  - Better for directional problem framing than hard population prevalence claims.
+
+### What this source can support
+
+- A careful, attributed conclusion that some survey respondents report frequent difficulty with mornings, delayed bed exit, and repeated snoozing despite already using alarms.
+- A cautious problem-framing point that wake-up difficulty appears meaningfully worse for at least one behavioral segment in this survey, namely self-described night owls.
+
+### What this source cannot support
+
+- It does not prove demand for Orisen specifically.
+- It does not prove that a presence-based wake-completion device would solve the reported problems.
+- It does not prove reduced grogginess, reduced sleep inertia, sleep-stage-aware benefit, or clinical efficacy.
+- It should not be treated as a definitive national prevalence estimate without fuller methodological transparency than the article provides.
+
+### Orisen interpretation
+
+This is broad waking-problem context, not wedge-specific validation.
+
+It helps show that some people report recurring morning failure and repeated snoozing, but it is less tightly aligned with Orisen's wake-completion wedge than sources that focus on whether people actually get out of bed after alarm dismissal.
+
+The founder label is directionally consistent with the article, but the article's own figure is 38%, so “two in five” is rounded shorthand rather than the exact reported percentage.
+
+### Claim-control notes
+
+- Safe use:
+  - Internal or carefully attributed external problem framing such as, “In a 2025 Talker Research survey commissioned by Avocado Green Mattress, 38% of respondents said they were ‘bad’ at mornings.”
+- Unsafe use:
+  - “Two in five Americans are bad at mornings” as a freestanding national fact with no attribution or methodology caveat.
+- Needs verification before public use:
+  - Weighting, recruitment method, exact questionnaire wording, subgroup sample sizes, and whether the rounded “two in five” framing is appropriate for the intended use.
+
+### Downstream routing
+
+- Add to `waking-up-synthesis.md`: yes
+- Promote to `product/claims-and-evidence.md`: only after more evidence
+- Useful for product docs: maybe
+- Useful for marketing/website: maybe
+- Useful for pitch deck/fundraising: maybe
+- Useful for X/content: maybe
+
+## Source: Squandered by Sleeping In: How Oversleeping Affects People
+
+- URL: `https://mattressinquirer.com/squandered-by-sleeping-in/`
+- Founder label: 26% of people oversleep several times a week.
+- Original raw source:
+  - `research/external-research/waking-up/raw/founder-sources.md`
+- Problem area: waking-up
+- Source type: survey article on a sleep-content site
+- Topic tags:
+  - oversleeping
+  - snoozing
+  - alarms
+  - wake methods
+  - missed commitments
+  - bed exit
+- Processing status: verified
+- Processed date: 2026-05-20
+
+### What the source actually says
+
+The article says Mattress Inquirer polled 1,038 people about sleep habits.
+
+In the visible article text, 31% said they overslept once a week, 24% said once a month, another 24% said several times a week, 18% said once every couple of months, and 2% of respondents were described as “chronic oversleepers” who selected “daily.”
+
+The article also says participants without a consistent wake-up method woke an average of seven minutes later than smartphone users, and that people using physical alarm clocks were less likely to hit snooze and less likely to oversleep than smartphone users.
+
+It further says oversleeping led respondents to miss work, appointments, classes, plans with friends, and family functions, and it lists reasons such as sleeping through the alarm or turning it off.
+
+### Relevant findings for Orisen
+
+- This source is more directly relevant to wake completion than generic “bad at mornings” framing because it focuses on oversleeping frequency, wake methods, and missed obligations after failed wake-ups.
+- In this sample, oversleeping is not presented as rare: 31% reported once a week, 24% several times a week, and 2% daily.
+- The source distinguishes between alarms going off and wake-up success, since it reports different wake outcomes by wake method and mentions snoozing, sleeping through alarms, and turning alarms off.
+
+### Methodology / basis
+
+- Sample: 1,038 Americans.
+- Data type: Self-report survey/article.
+- Population: Americans aged 15 to 77; 50.4% male and 49.6% female; mean age 33.
+- Timeframe: Field dates are not given in the article; the page shows “Last Updated On July 23, 2025.”
+- Methodology notes: Responses were collected through Amazon Mechanical Turk, inattentive respondents were excluded, hypotheses were statistically tested, and the article explicitly says the data are self-reported and “purely exploratory.”
+
+### Source quality
+
+- Evidence strength: weak
+- Confidence: medium
+- Main limitations:
+  - Mechanical Turk convenience sample rather than a clearly representative general-population sample.
+  - Self-reported results.
+  - Respondents include minors as young as 15.
+  - Field dates are not stated.
+  - The article itself labels the content exploratory.
+
+### What this source can support
+
+- A careful internal conclusion that, in one exploratory MTurk survey, oversleeping, alarm-related wake failure, and missed responsibilities were common enough to matter.
+- A directional product insight that “alarm sounds happened” and “the person actually woke and got moving” are not the same event.
+
+### What this source cannot support
+
+- It does not provide a clean, nationally representative estimate of how often Americans oversleep.
+- It does not directly state the founder label “26% of people oversleep several times a week.” The visible article text says 24% overslept several times a week and 2% did so daily, so getting to 26% requires combining categories rather than quoting the article verbatim.
+- It does not prove willingness to pay for Orisen, nor does it prove that Orisen would fix the reported oversleeping patterns.
+- It does not support claims about reduced grogginess, reduced sleep inertia, sleep-stage detection, or clinical benefit.
+
+### Orisen interpretation
+
+Of the three sources in Batch 2, this is the closest to Orisen's wake-completion wedge because it is about oversleeping, snoozing, wake methods, and functional consequences of failed wake-ups.
+
+But it is still weak evidence. The methodological caveats are strong enough that the source is best used for internal problem framing and hypothesis generation, not for polished public statistics.
+
+The founder label is not cleanly source-matched unless it intentionally aggregates “several times a week” with “daily.”
+
+### Claim-control notes
+
+- Safe use:
+  - Internal-only or highly qualified language such as, “In one exploratory MTurk survey, respondents reported frequent oversleeping and missed work or appointments after oversleeping.”
+- Unsafe use:
+  - “26% of people oversleep several times a week” as a clean public stat, because the article does not state that figure directly and the sample is not nationally representative.
+- Needs verification before public use:
+  - Whether 26% was intended as an aggregation, actual field dates, full question wording, subgroup definitions, and whether the wake-method differences were statistically significant in a usable way.
+
+### Downstream routing
+
+- Add to `waking-up-synthesis.md`: yes
+- Promote to `product/claims-and-evidence.md`: only after more evidence
+- Useful for product docs: yes
+- Useful for marketing/website: no
+- Useful for pitch deck/fundraising: maybe
+- Useful for X/content: no
+
+## Source: Sound the Alarm: The Tones and Trends of Waking Up
+
+- URL: `https://sleepjunkie.com/sound-the-alarm-the-tones-and-trends-of-waking-up/`
+- Founder label: Alarm tones, snoozing, and waking-up behavior survey.
+- Original raw source:
+  - `research/external-research/waking-up/raw/founder-sources.md`
+- Problem area: waking-up
+- Source type: inaccessible article page on SleepJunkie; exact underlying source structure could not be verified from the provided URL
+- Topic tags:
+  - alarms
+  - tones
+  - snoozing
+  - waking-up behavior
+  - source access issue
+- Processing status: partially verified
+- Processed date: 2026-05-20
+
+### What the source actually says
+
+The article body could not be verified from the provided URL during Batch 2 processing.
+
+Opening the page returned a verification/interstitial page rather than readable article content, so the source's body text, sample, methodology, timeframe, and exact statistics could not be confirmed.
+
+### Relevant findings for Orisen
+
+- No substantive findings were verified from the article body because the page content was inaccessible at review time.
+- The founder label suggests the source may be relevant to alarm tones, snoozing, and waking-up behavior, but that label is not a substitute for reading the source.
+- Exact percentages or behavioral claims from this source should be treated as unusable until the original page can be accessed and checked.
+
+### Methodology / basis
+
+- Sample: unknown because the article content could not be accessed.
+- Data type: unknown from the inaccessible page.
+- Population: unknown because the article content could not be accessed.
+- Timeframe: unknown because the article content could not be accessed.
+- Methodology notes: The browser showed only a request-verification interstitial rather than the article itself.
+
+### Source quality
+
+- Evidence strength: weak
+- Confidence: low
+- Main limitations:
+  - Inaccessible source.
+  - No verified content, sample, methodology, or statistics were available from the provided page during review.
+
+### What this source can support
+
+- At most, it can support the statement that the founder collected a possibly relevant waking-up source that still needs verification before use.
+- In its current state, it does not support any public-facing factual claim.
+
+### What this source cannot support
+
+- It cannot support any exact statistic about alarm tones, snoozing, or waking-up behavior.
+- It cannot support any website, pitch deck, or product-evidence claim.
+- It cannot support any inference that Orisen works.
+
+### Orisen interpretation
+
+Treat this as inventory, not evidence.
+
+The topic could be relevant, because alarm tone choice and snooze behavior sit near waking mechanics, but until the original page is readable, this source should not influence synthesis except as an unverified placeholder.
+
+### Claim-control notes
+
+- Safe use:
+  - “An unverified SleepJunkie waking-up source exists, but the article page was inaccessible during review.”
+- Unsafe use:
+  - Any quoted percentage, trend, or survey conclusion from this source.
+- Needs verification before public use:
+  - Title/body content, sample size, population, field dates, sponsor, methodology, and every exact statistic.
+
+### Downstream routing
+
+- Add to `waking-up-synthesis.md`: maybe
+- Promote to `product/claims-and-evidence.md`: no
+- Useful for product docs: maybe
+- Useful for marketing/website: no
+- Useful for pitch deck/fundraising: no
+- Useful for X/content: no
+
+## Batch 2 comparison
+
+### Relevance to Orisen's wake-completion wedge
+
+MattressInquirer is the closest of the three because it deals with oversleeping frequency, wake methods, snoozing, and missed commitments after failed wake-ups.
+
+Talker Research is broader “morning struggle” framing and is less specifically about actual bed exit after an alarm.
+
+SleepJunkie could not be assessed on relevance beyond its founder label because the page itself was inaccessible.
+
+### Evidence strength
+
+Talker Research is the strongest of the three, but only at a medium level, because it provides a larger sample and clear field dates while still being a commissioned online self-report survey with limited methodological detail on the page.
+
+MattressInquirer is weaker because it relies on an MTurk convenience sample, explicitly exploratory self-reporting, and no stated field dates.
+
+SleepJunkie is weakest in practice because its content could not be verified at all.
+
+### Usefulness for pitch deck
+
+Talker Research is the most pitch-usable, but only as soft, attributed problem framing.
+
+MattressInquirer is more useful internally than externally because of the weak methodology and because the founder's “26%” label is not directly stated on the page.
+
+SleepJunkie should stay out of any deck until the page is accessible and verified.
+
+### Usefulness for website or marketing
+
+None of these are especially safe for prominent website claims.
+
+Talker Research can support cautious, attributed morning-friction language.
+
+MattressInquirer is too methodologically weak and too easy to overstate.
+
+SleepJunkie is unusable in current form.
+
+### Whether exact statistics are safe to use publicly
+
+Talker Research's 38% is the safest of the three only if it is fully attributed as a 2025 commissioned survey, not presented as timeless population truth.
+
+MattressInquirer's founder label is not safe as written because the article text shows 24% reporting “several times a week” and 2% “daily,” so 26% requires aggregation.
+
+SleepJunkie exact stats are not safe because none were verified from the source page.
+
+### What should be handled only as directional problem framing
+
+All three should be handled as directional problem framing.
+
+Even the best of them are external, non-Orisen sources that can help frame waking-up pain, snoozing, and oversleeping, but none should be turned into proof of Orisen efficacy, broad-market demand, willingness to pay, reduced grogginess, reduced sleep inertia, sleep-stage detection, or clinical effect.
+
+Talker Research is the cleanest directional source, MattressInquirer is best kept to internal problem framing, and SleepJunkie should remain excluded until verified.
