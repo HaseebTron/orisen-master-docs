@@ -6,7 +6,18 @@ This file defines how ChatGPT should perform direct GitHub edits to the Orisen m
 
 The goal is to reduce mechanical repo-editing mistakes, especially during multi-file source-of-truth changes.
 
-These rules do not replace source-of-truth, doc-creation, or claim-control rules. They define the editing workflow used when applying changes to the repo.
+These rules do not replace source-of-truth, doc-creation, claim-control, or repo-governance rules. They define the editing workflow used when applying changes to the repo.
+
+## Related repo-governance docs
+
+Use these docs together when planning or making repo changes:
+
+- `ai-context/repo-purpose.md` defines why the repo exists and what good repo health means.
+- `ai-context/repo-structure.md` defines the structural philosophy, folder responsibilities, and anti-duplication rules.
+- `ai-context/repo-file-map.md` is the central inventory of the repo's current durable files and folders.
+- `ai-context/repo-change-checklist.md` is the operational checklist for planning or making repo changes.
+
+For significant repo changes, read `ai-context/repo-change-checklist.md` before editing.
 
 ## Core rule
 
@@ -89,6 +100,16 @@ For raw research, customer notes, old MVP evidence, exported analytics, or found
 - avoid rewriting raw source material into conclusions
 - do not duplicate large raw files across folders unless a deliberate processing pass requires it
 
+## Structure duplication rule
+
+Do not duplicate repo-wide or folder-level file trees across multiple docs.
+
+The central file inventory belongs in:
+
+- `ai-context/repo-file-map.md`
+
+Folder context maps and domain docs should explain task-based reading paths, governing docs, and folder purpose. They should not maintain their own complete file inventories unless there is a specific, justified exception.
+
 ## Mid-edit error rule
 
 If a tool error happens during repo editing:
@@ -125,12 +146,16 @@ Local Git and Codex are better for applying larger repo changes safely because t
 
 Use the lightest workflow that is safe for the task.
 
-## Relationship to doc creation and claim control
+## Relationship to doc creation, repo governance, and claim control
 
 When creating or editing docs, still follow:
 
 - `ai-context/doc-creation-rules.md`
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/repo-purpose.md` for repo intent
+- `ai-context/repo-structure.md` for repo structure logic
+- `ai-context/repo-file-map.md` for the current file inventory
+- `ai-context/repo-change-checklist.md` for the operational repo-change checklist
 - `ai-context/claim-control/claim-control-system.md`, when claims, evidence, validation, marketing, fundraising, or scientific support are involved
 
 These repo editing rules control editing mechanics. They do not decide company truth or claim safety by themselves.
