@@ -6,6 +6,7 @@ Last reviewed: 2026-05-20
 Governing docs:
 - `research/external-research/README.md`
 - `research/external-research/raw/founder-full-source-list.md`
+- `research/external-research/raw/founder-pitch-deck-source-shortlist.md`
 - `research/external-research/raw/founder-source-categorization-map.md`
 - `ai-context/claim-control/claim-control-system.md`
 
@@ -17,11 +18,15 @@ This is a routed raw intake file. It copies the waking-up-relevant portions of t
 
 This file is not a final evidence synthesis and should not be treated as public-claim support by itself.
 
-## Canonical raw source
+## Raw source inputs
 
 Canonical fallback archive:
 
 - `research/external-research/raw/founder-full-source-list.md`
+
+Pitch-deck shortlist input:
+
+- `research/external-research/raw/founder-pitch-deck-source-shortlist.md`
 
 Routing map:
 
@@ -32,6 +37,7 @@ Routing map:
 Current status:
 
 - Sources copied from founder raw list based on visible headings and topic relevance.
+- Waking-up-relevant pitch-deck shortlist items are included where they overlap with the canonical raw list.
 - Links were not all opened or verified during this routing pass.
 - Source methodology was not checked during this routing pass.
 - Truncated links and unclear labels are preserved as found.
