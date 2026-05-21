@@ -89,10 +89,19 @@ The core behavior is:
 The intended anti-bypass behavior is part of the wake-completion wedge:
 
 - The product should not offer a normal snooze path as the default wake flow.
-- The user should not be able to fully shut off the alarm from bed through a simple button press.
-- If the device is unplugged during the alarm, it should switch to internal backup battery power rather than immediately shutting down.
+- The device can have a normal OFF button for ordinary use, but during the alarm-critical window that OFF button should not fully disable the wake-completion flow.
+- If the user unplugs the device from wall power during the alarm-critical window, the device should continue operating on internal backup battery power rather than immediately shutting down.
 - The device is intended to be wall-mounted, such as with 3M Command Strip-style mounting, so the user cannot casually move it like a bedside clock or phone.
+- The mounting is intended to make casual removal inconvenient enough that the user cannot simply pick up or move the device while half-asleep. Removing it should require deliberate effort and may risk wall or paint damage depending on mounting method.
 - The system should be designed to make the easiest completion path getting out of bed, not bypassing the device.
+
+The product should distinguish between planned schedule changes and morning alarm-critical overrides:
+
+- Before the wake window, the user should be able to skip, change, or disable an upcoming alarm normally through the app.
+- During the alarm-critical window, a full override should remain possible, but should require higher-friction deliberate action away from bed.
+- Possible override mechanisms include a physical recovery code, QR card, NFC card, or similar token stored away from the bed and entered or scanned through the app.
+
+The goal is to prevent half-asleep bypass without trapping the user. Orisen should make the easiest path wake completion, while preserving a deliberate override path for legitimate exceptions.
 
 Internally, this can be referred to as the guaranteed wake completion wedge.
 
@@ -139,6 +148,8 @@ The first customer-ready product should include:
 - Presence-based wake completion
 - Re-trigger behavior if the user returns to bed
 - A simple and usable app experience
+- Planned schedule-change controls before the wake window
+- Higher-friction deliberate override behavior during alarm-critical windows
 - Gradual audio wake-up behavior
 - Gradual light wake-up behavior
 - Basic sleep/session logging where useful
@@ -220,6 +231,14 @@ Sleep tracking is useful only when it helps the product intervene better.
 Orisen should not become a passive dashboard product.
 
 The product should be judged by whether it improves the morning outcome.
+
+### Override should preserve deliberate control
+
+Orisen should prevent half-asleep bypass without removing legitimate user control.
+
+Users should be able to change, skip, or disable upcoming alarms normally before the wake window.
+
+During an alarm-critical window, a full override should still exist, but it should require deliberate action away from bed so the user is awake enough to make an intentional decision.
 
 ### Claims must match evidence
 
