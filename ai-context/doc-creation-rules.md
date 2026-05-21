@@ -18,12 +18,24 @@ Then derive the new doc from:
 
 1. current company truth
 2. source-of-truth rules
-3. relevant product truth
-4. validation and evidence
-5. relevant domain docs
-6. the user's requested change
+3. repo purpose and structure rules, when the work affects repo organization
+4. relevant product truth
+5. validation and evidence
+6. relevant domain docs
+7. the user's requested change
 
 The user's request is an input, not the authority.
+
+## Repo governance docs
+
+When creating, moving, renaming, deleting, reorganizing, or cleaning up durable repo docs, also use:
+
+- `ai-context/repo-purpose.md` for why the repo exists and what good repo health means.
+- `ai-context/repo-structure.md` for structural logic, folder responsibilities, and upstream/downstream rules.
+- `ai-context/repo-file-map.md` for the central current file inventory.
+- `ai-context/repo-change-checklist.md` for the operational checklist before repo changes.
+
+Do not duplicate repo-wide or folder-level file trees inside folder docs, context maps, or domain docs. The central durable file inventory belongs in `ai-context/repo-file-map.md`.
 
 ## Required pre-draft check
 
@@ -48,6 +60,7 @@ If the request conflicts with source-of-truth docs, flag the conflict before dra
 When ChatGPT directly edits GitHub files, also follow:
 
 - `ai-context/repo-editing-rules.md`
+- `ai-context/repo-change-checklist.md` for significant repo changes
 
 Especially for multi-file source-of-truth changes, ChatGPT should state the intended edit scope before editing, keep edits in small logical batches, avoid broad direct edits to `main` when a local/Codex/branch workflow would be safer, and summarize what changed afterward.
 
@@ -94,6 +107,21 @@ Examples:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/ai-operating-mode.md`
+
+### Repo governance docs
+
+Repo governance docs define why the repo exists, how it should be organized, how its file inventory is tracked, and how changes should be planned.
+
+They should keep repo purpose, structural logic, file inventory, and operational checklists separate.
+
+Examples:
+
+- `ai-context/repo-purpose.md`
+- `ai-context/repo-structure.md`
+- `ai-context/repo-file-map.md`
+- `ai-context/repo-change-checklist.md`
+
+`ai-context/repo-structure.md` should explain structural philosophy. `ai-context/repo-file-map.md` should list the current file inventory. Do not merge those jobs into one file.
 
 ### Product docs
 
@@ -272,6 +300,15 @@ Especially check:
 - marketing docs
 - fundraising docs
 - software/radar/hardware context maps
+
+For repo structure or repo-governance changes, especially check:
+
+- `ai-context/repo-purpose.md`
+- `ai-context/repo-structure.md`
+- `ai-context/repo-file-map.md`
+- `ai-context/repo-change-checklist.md`
+- `ai-context/context-map.md`
+- relevant folder context maps
 
 Do not update every file automatically.
 
