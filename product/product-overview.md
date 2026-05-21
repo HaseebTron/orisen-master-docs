@@ -86,6 +86,14 @@ The core behavior is:
 - If the user gets back into bed within the re-trigger window, the alarm can start again.
 - The final wake-up moment should work locally on the device and should not depend on the phone, app, cloud, or Wi-Fi.
 
+The intended anti-bypass behavior is part of the wake-completion wedge:
+
+- The product should not offer a normal snooze path as the default wake flow.
+- The user should not be able to fully shut off the alarm from bed through a simple button press.
+- If the device is unplugged during the alarm, it should switch to internal backup battery power rather than immediately shutting down.
+- The device is intended to be wall-mounted, such as with 3M Command Strip-style mounting, so the user cannot casually move it like a bedside clock or phone.
+- The system should be designed to make the easiest completion path getting out of bed, not bypassing the device.
+
 Internally, this can be referred to as the guaranteed wake completion wedge.
 
 Externally, claims should be worded carefully as “designed to ensure wake completion,” “presence-based wake completion,” or “helps make sure you actually get out of bed,” unless stronger claims are supported by evidence.
