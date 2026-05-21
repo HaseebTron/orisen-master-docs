@@ -77,6 +77,7 @@ It should include:
 - Reliable local alarm execution
 - Presence-based guaranteed wake completion
 - Re-trigger behavior if the user goes back to bed
+- Anti-bypass wake-completion behavior, including no normal snooze path, no simple in-bed shutoff, internal backup battery behavior if unplugged during alarm, and wall-mounted physical friction such as 3M Command Strip-style mounting
 - A basic but usable app experience
 - Gradual audio and light wake-up behavior
 - A basic version of sleep-phase-aware or sensor-informed wake intervention
