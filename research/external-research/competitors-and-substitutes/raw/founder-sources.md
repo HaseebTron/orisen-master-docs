@@ -1,20 +1,64 @@
 # Competitors And Substitutes Founder Sources
 
-Status: Raw intake pointer / not fully processed
+Status: Raw founder product/substitute landscape / not fully processed
 Authority level: Raw external research intake
 Last reviewed: 2026-05-20
 Governing docs:
 - `research/external-research/README.md`
 - `research/external-research/raw/founder-full-source-list.md`
+- `research/external-research/raw/founder-source-categorization-map.md`
 - `ai-context/claim-control/claim-control-system.md`
 
 ## Purpose
 
-This file will hold founder-collected external sources related to competitor products, substitute behaviors, product reviews, buyer guides, and customer complaints about existing solutions.
+This file preserves founder-collected raw notes related to competitor products, substitute behaviors, product reviews, buyer guides, and customer complaints about existing solutions.
 
-For now, this file is intentionally a processing stub. It does not duplicate the full canonical raw source list.
+This is a raw intake file, not a processed competitor analysis file.
 
-## Canonical raw source
+The product names, product descriptions, market-player lists, and linked examples below should be treated as unverified raw material until processed into:
+
+- `research/external-research/competitors-and-substitutes/processed-source-notes.md`
+- `research/external-research/competitors-and-substitutes/competitors-and-substitutes-synthesis.md`
+- `product/claims-and-evidence.md`
+
+## Raw-source safety rules
+
+- Preserve the raw list even if it is messy, duplicated, or broad.
+- Do not treat product marketing descriptions below as verified facts.
+- Do not treat competitor product claims as evidence that those products work.
+- Do not treat this file as proof that Orisen is better than existing alternatives.
+- Do not treat market-player lists as final competitive analysis.
+- Use this file as source inventory and routing material.
+
+## Recommended processing lens
+
+When processing this file later, organize competitors and substitutes by the user job they solve, not only by product category.
+
+Suggested processing categories:
+
+1. Basic alarms and phone alarms
+2. Mission / force-awake alarms
+3. Loud / vibrating alarms
+4. Sunrise / gentle wake products
+5. Smart alarm / sleep-phase timing apps
+6. Sleep tracking and wearables
+7. Premium sleep intervention systems
+8. During-sleep environment products
+9. Falling-asleep aids
+10. Medical / clinical sleep devices
+11. Manual or behavioral substitutes
+
+For each category, later analysis should answer:
+
+- What job does this substitute solve?
+- What does it do well?
+- What user pain does it leave unsolved?
+- Does it verify wake completion?
+- Does it detect return-to-bed behavior?
+- Does it only track sleep, or does it intervene?
+- Does it compete with Orisen's wake-completion wedge, artificial sleep phase transitioning direction, or broader sleep-improvement positioning?
+
+## Canonical raw fallback sources
 
 Use the canonical raw archive as the fallback source:
 
@@ -24,45 +68,17 @@ Use the first-pass categorization map for routing guidance:
 
 - `research/external-research/raw/founder-source-categorization-map.md`
 
-## Relevant raw sections to process later
-
-Prioritize sections related to:
-
-- alarm apps
-- sunrise alarm clocks
-- smart alarm clocks
-- wearable sleep trackers
-- Hatch, Loftie, Philips SmartSleep, Alarmy, Sleep Cycle, Oura, WHOOP, Fitbit, Apple Watch, Sonic Bomb, Clocky, Pavlok, phone alarms
-- buyer guides
-- competitor reviews
-- Reddit/forum complaints about existing solutions
-- phone alarm reliability issues
-- soft wake-up devices
-- brutal but effective alarms
-- pleasant but ineffective alarms
-
-## Entry format for future processing
-
-```markdown
-## Source title
-
-- URL:
-- Founder label:
-- Original raw source: `research/external-research/raw/founder-full-source-list.md`
-- Problem area: competitors-and-substitutes
-- Source type:
-- Topic tags:
-- Likely use:
-- Current status: saved, not fully analyzed
-- Notes:
-```
-
 ## Claim-safety notes
 
-Competitor and substitute evidence is useful for positioning and product gaps.
+Competitor and substitute evidence is useful for positioning and product-gap analysis.
 
 It does not prove Orisen will win, that Orisen works, or that users will pay for Orisen.
 
+Any public competitor comparison should be routed through claim control before use.
+
+---
+
+# Raw founder product/substitute landscape
 
 - The following lists sleep products categorized with what aspect(falling asleep, during sleep and waking up) of sleep they help you with
 - Note that some products are designed to assist you in all three, so they’ll show up repeatedly. These are the following
@@ -169,7 +185,7 @@ It does not prove Orisen will win, that Orisen works, or that users will pay for
         - **Temperature Regulation Devices**
             - Bed cooling/heating systems (e.g., Eight Sleep Pod, ChiliPad)
                 - Eight Sleep Pod 4 Ultra – This [smart mattress topper](https://www.eightsleep.com/product/pod-cover/?utm_source=google&utm_medium=cpc&utm_campaign=18927845903&utm_content=635229791002&nbt=nb%3Aadwords%3Ag%3A18927845903%3A143555399037%3A635229791002&nb_adtype=&nb_kwd=eight%20sleep%20pod%204&nb_ti=kwd-2303200104419&nb_mi=&nb_pc=&nb_pi=&nb_ppi=&nb_placement=&nb_si=%7Bsourceid%7D&nb_li_ms=&nb_lp_ms=&nb_fii=&nb_ap=&nb_mt=e&gad_source=1&gclid=CjwKCAjwnPS-BhBxEiwAZjMF0nm8v5Xx5ezeDdE5LLQfvZnc6f2Vv6lZvHpsF872v9PimZBuVHTT0BoCOk4QAvD_BwE) now features enhanced sleep tracking, automated temperature control, and AI-powered smart alarms to optimize your rest. It also promotes deep sleep by enhancing natural sleep cycles.
-                - Sleepme Chilipad Dock Pro Sleep System – This advanced temperature-regulating mattress pad helps hot sleepers stay cool and cozy all night. The [Chilipad](https://sleep.me/product/dock-pro-sleep-system?nbt=nb%3Aadwords%3Ag%3A20547533187%3A156588721671%3A674497205442&nb_adtype=&nb_adtype=&nb_kwd=chilipad%20dock%20pro&nb_kwd=chilipad%20dock%20pro&nb_ti=kwd-1657961894588&nb_ti=kwd-1657961894588&nb_mi=&nb_mi=&nb_pc=&nb_pc=&nb_pi=&nb_pi=&nb_ppi=&nb_ppi=&nb_placement=&nb_placement=&nb_li_ms=&nb_li_ms=&nb_lp_ms=&nb_lp_ms=&nb_fii=&nb_fii=&nb_ap=&nb_ap=&nb_mt=e&nb_mt=e&utm_source=google&utm_medium=cpc&utm_campaign&utm_agid=156588721671&utm_term=chilipad%20dock%20pro&creative=674497205442&device=c%3Fnbt%3Dnb%3Aadwords%3Ag%3A20547533187%3A156588721671%3A674497205442&gad_source=1&gclid=CjwKCAjwnPS-BhBxEiwAZjMF0iXMHCX2H8VE4zEk80eXRMPzMzWc51M88n6b-sTtDr11LCGd9jgmLhoCsj4QAvD_BwE) uses water-based cooling technology to adjust to your ideal sleep temperature, effectively managing your body temperature.
+                - Sleepme Chilipad Dock Pro Sleep System – This advanced temperature-regulating mattress pad helps hot sleepers stay cool and cozy all night. The [Chilipad](https://sleep.me/product/dock-pro-sleep-system?nbt=nb%3Aadwords%3Ag%3A20547533187%3A156588721671%3A674497205442&nb_adtype=&nb_adtype=&nb_kwd=chilipad%20dock%20pro&nb_kwd=chilipad%20dock%20pro&nb_ti=kwd-1657961894588&nb_ti=kwd-1657961894588&nb_mi=&nb_mi=&nb_pc=&nb_pc=&nb_pi=&nb_pi=&nb_ppi=&nb_ppi=&nb_placement=&nb_placement=&nb_li_ms=&nb_li_ms=&nb_lp_ms=&nb_fii=&nb_fii=&nb_ap=&nb_ap=&nb_mt=e&nb_mt=e&utm_source=google&utm_medium=cpc&utm_campaign&utm_agid=156588721671&utm_term=chilipad%20dock%20pro&creative=674497205442&device=c%3Fnbt%3Dnb%3Aadwords%3Ag%3A20547533187%3A156588721671%3A674497205442&gad_source=1&gclid=CjwKCAjwnPS-BhBxEiwAZjMF0iXMHCX2H8VE4zEk80eXRMPzMzWc51M88n6b-sTtDr11LCGd9jgmLhoCsj4QAvD_BwE) uses water-based cooling technology to adjust to your ideal sleep temperature, effectively managing your body temperature.
             - Body cooling devices
                 - Ebb CoolDrift Versa – This FDA-cleared [device](https://shop.fusionsleep.com/stageblog/product/ebb-cooldrift-versa/) gently cools the forehead to lower brain activity and help users fall asleep faster, reducing racing thoughts at night.
             - Cooling pillows or gel-infused toppers
@@ -257,7 +273,7 @@ It does not prove Orisen will win, that Orisen works, or that users will pay for
             - [**Verilux HappyLight Luxe**](https://verilux.com/products/happylight-luxe): Compact, adjustable white light therapy lamp ideal for desks or morning routines.
             - [**Northern Light Technologies Boxelite**](https://northernlighttechnologies.com/product/boxelite-os/): Large-surface light therapy box delivering full-spectrum light without UV.
 
-https://techcrunch.com/2014/10/14/withings-aura-review/
+- [TechCrunch: Withings Aura Review](https://techcrunch.com/2014/10/14/withings-aura-review/)
 
 - Sleep Tech Device Market Companies
     - [Philips](https://www.philips.co.in/)
