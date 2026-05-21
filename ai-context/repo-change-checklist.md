@@ -119,6 +119,50 @@ Before direct GitHub edits, state:
 
 For broad, risky, or many-file changes, prefer local Git, Codex, or branch/PR workflow.
 
+## Required planned repo-change summary format
+
+Before significant direct repo edits, use this format so the user can clearly see what context was loaded and what will change:
+
+```markdown
+## Planned repo-change summary
+
+Files read:
+- `path/to/file.md`
+
+Files to create:
+- `path/to/new-file.md`
+- None
+
+Files to edit:
+- `path/to/existing-file.md`
+- None
+
+Files to move/rename:
+- `old/path.md` -> `new/path.md`
+- None
+
+Files to delete/archive:
+- `path/to/file.md`
+- None
+
+Files intentionally not touched:
+- `path/to/file.md`
+- None
+
+Editing method:
+- Direct GitHub edit / Local Git / Codex / Branch/PR
+
+Risk level:
+- Low / Medium / High
+
+Reason:
+- Brief explanation
+```
+
+Use `None` under any category that does not apply.
+
+For tiny one-file wording fixes, this format can be shortened, but the assistant should still make clear what file is being edited.
+
 ## Workflow choice
 
 Direct GitHub editing is acceptable for:
@@ -226,6 +270,50 @@ After repo edits, summarize:
 - follow-up review needed
 
 Do not imply the user reviewed a diff unless they actually did.
+
+## Required repo-change result format
+
+After significant direct repo edits, use this format:
+
+```markdown
+## Repo-change result
+
+Files created:
+- `path/to/new-file.md`
+- None
+
+Files edited:
+- `path/to/existing-file.md`
+- None
+
+Files moved/renamed:
+- `old/path.md` -> `new/path.md`
+- None
+
+Files deleted/archived:
+- `path/to/file.md`
+- None
+
+Files intentionally not touched:
+- `path/to/file.md`
+- None
+
+`repo-file-map.md` updated:
+- Yes / No / Not needed
+
+Context maps updated:
+- Yes / No / Not needed
+
+Tool errors:
+- None / Brief description
+
+Follow-up review needed:
+- None / Brief description
+```
+
+Use `None` or `Not needed` where appropriate.
+
+For tiny one-file wording fixes, this format can be shortened, but the assistant should still clearly state what changed and whether any tool errors occurred.
 
 ## Post-change consistency check
 
