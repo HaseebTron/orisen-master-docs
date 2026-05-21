@@ -52,15 +52,19 @@ Prefer a local Git, Codex, or branch/PR workflow for:
 
 Before direct GitHub edits, ChatGPT should briefly state:
 
+- files read
 - files it plans to create
 - files it plans to update
+- files it plans to move, rename, delete, or archive
 - files it will intentionally not touch, when relevant
+- editing method
+- risk level
 - whether the change is small enough for direct GitHub editing
 - whether a local/Codex/branch workflow would be safer
 
-For tiny one-file edits, this can be brief.
+For significant repo changes, use the required planned repo-change summary format from `ai-context/repo-change-checklist.md`.
 
-For source-of-truth or claim-control edits, this should be explicit.
+For tiny one-file edits, this can be shortened, but the assistant should still make clear what file is being edited.
 
 ## Logical batch rule
 
@@ -126,9 +130,14 @@ After direct GitHub edits, summarize:
 
 - files created
 - files updated
+- files moved, renamed, deleted, or archived
 - files intentionally not touched
+- whether `repo-file-map.md` was updated
+- whether context maps were updated
 - any tool errors or partial failures
 - any follow-up review needed
+
+For significant repo edits, use the required repo-change result format from `ai-context/repo-change-checklist.md`.
 
 Do not imply that the user has reviewed a diff unless they actually have.
 
