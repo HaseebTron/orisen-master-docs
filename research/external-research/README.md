@@ -25,14 +25,34 @@ Canonical raw archive
 ->
 Problem-area raw intake files
 ->
-Problem-area raw-sources-reviewed.md files
+Problem-area raw-sources-reviewed.md files, when created
 ->
 Problem-area synthesis.md files
 ->
-`product/claims-and-evidence.md`
+claim-control / product docs
+```
+
+The practical file-layer model is:
+
+```text
+raw/
+= preserved raw/source intake
+
+raw-sources-reviewed.md
+= optional but preferred source-by-source review layer
+
+synthesis.md
+= pattern-level interpretation for that folder/problem area
+
+claim-control / product docs
+= durable claim boundaries and safe public language
 ```
 
 Do not skip directly from an external source to a public claim.
+
+`raw-sources-reviewed.md` is preferred when a folder has multiple sources or when source quality needs structured review. It is not required for every folder immediately.
+
+A `synthesis.md` file should normally build from `raw-sources-reviewed.md` when that file exists. If no reviewed layer exists yet, the synthesis may build directly from raw files, but it must say that clearly and preserve traceability back to raw/source material.
 
 ## Raw archive
 
@@ -67,15 +87,15 @@ Each problem folder should use this research-layer model:
 
 ```text
 raw/
-raw-sources-reviewed.md
+raw-sources-reviewed.md, optional / when created
 synthesis.md
 ```
 
 The `raw/` layer preserves raw/source intake.
 
-The `raw-sources-reviewed.md` layer reviews raw sources source-by-source.
+The `raw-sources-reviewed.md` layer reviews raw sources source-by-source. It is optional when a folder is still early, but preferred before a mature synthesis or claim-control update.
 
-The `synthesis.md` layer interprets patterns for that folder/problem area.
+The `synthesis.md` layer interprets patterns for that folder/problem area. It should state whether it is based on reviewed source notes or directly on raw files.
 
 ## Source type as metadata
 
@@ -125,4 +145,6 @@ Do not copy the entire canonical raw list into every problem folder by default.
 
 For now, problem-area raw files may point back to the canonical raw archive and describe which sections should be processed later.
 
-Move or copy source entries into problem folders only during a deliberate research pass where the source is being verified, tagged, and prepared for synthesis.
+Move or copy source entries into problem folders only during a deliberate research pass where the source is being verified, tagged, and prepared for source-by-source review or synthesis.
+
+If `raw-sources-reviewed.md` does not exist yet, do not pretend the sources have been reviewed. Treat the folder's raw material as unreviewed source intake until a reviewed layer or clearly scoped synthesis exists.
