@@ -2,7 +2,7 @@
 
 Status: Source of truth
 Authority level: Company / AI context / Repo governance
-Last reviewed: 2026-05-21
+Last reviewed: 2026-05-22
 Governing docs:
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/repo-governance/repo-structure.md`
@@ -83,8 +83,9 @@ Conventions:
   - `ai-operating-mode.md`: Defines how GPT should reason when using Orisen docs.
   - `doc-creation-rules.md`: Defines how source-of-truth docs should be created, edited, and promoted.
   - `decision-log.md`: Durable decisions and rationale.
-  - **`repo-governance/`**: Repo purpose, structure, file inventory, editing rules, local workflow rules, change checklist, and cleanup backlog.
+  - **`repo-governance/`**: Repo purpose, operating model, structure, file inventory, editing rules, local workflow rules, change checklist, and cleanup backlog.
     - `repo-purpose.md`: Defines why the repo exists and what good repo health means.
+    - `repo-operating-model.md`: Explains how the repo works as a governed source-of-truth system.
     - `repo-structure.md`: Defines structural philosophy, folder responsibilities, and anti-duplication rules.
     - `repo-file-map.md`: Central current inventory of repo folders and durable files.
     - `repo-change-checklist.md`: Operational checklist for planning or making repo changes.
@@ -215,7 +216,7 @@ Conventions:
 
 - **Default entry point**: `ai-context/start-here.md`
 - **Top-level routing map**: `ai-context/context-map.md`
-- **Repo governance entry points**: `ai-context/repo-governance/repo-purpose.md`, `ai-context/repo-governance/repo-structure.md`, `ai-context/repo-governance/repo-file-map.md`, `ai-context/repo-governance/repo-change-checklist.md`
+- **Repo governance entry points**: `ai-context/repo-governance/repo-purpose.md`, `ai-context/repo-governance/repo-operating-model.md`, `ai-context/repo-governance/repo-structure.md`, `ai-context/repo-governance/repo-file-map.md`, `ai-context/repo-governance/repo-change-checklist.md`
 - **Source-of-truth authority entry points**: `ai-context/current-state.md`, `ai-context/source-of-truth-rules.md`, `ai-context/ai-operating-mode.md`
 - **Doc and repo-edit workflow entry points**: `ai-context/doc-creation-rules.md`, `ai-context/repo-governance/repo-editing-rules.md`, `ai-context/repo-governance/local-repo-codex-workflow.md`
 - **Claim-control entry point**: `ai-context/claim-control/claim-control-system.md`
