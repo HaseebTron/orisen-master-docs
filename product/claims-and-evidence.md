@@ -15,6 +15,21 @@ This file should stay consistent with:
 - `ai-context/claim-control/claim-control-log.md`
 - `ai-context/claim-control/claim-control-roadmap.md`
 
+## Role boundary
+
+This file is the final product/public-claim authority.
+
+It defines what Orisen is allowed to say, how strongly it can say it, what wording should be avoided, and what evidence would be needed to strengthen each claim.
+
+It does not replace:
+
+- `ai-context/claim-control/claim-control-system.md`, which defines classification rules.
+- `ai-context/claim-control/claim-control-log.md`, which records conservative claim-relevant evidence entries.
+- `ai-context/claim-control/claim-control-roadmap.md`, which tracks missing evidence and validation priorities.
+- Raw/source files and synthesis files, which preserve and interpret upstream evidence.
+
+When these files overlap, use the claim-control system for classification, the claim-control log for evidence entries, the claim-control roadmap for validation planning, and this file for final allowed public wording.
+
 ## Evidence inputs
 
 This file is the downstream claim authority for Orisen. It should synthesize claim-relevant evidence from the repo, but it should not duplicate all raw evidence.
@@ -46,7 +61,9 @@ Use this file to answer:
 Important rule:
 
 - Raw files preserve what sources, users, experts, or tests said.
+- `raw-sources-reviewed.md` files review raw sources source-by-source when that layer exists.
 - Synthesis files explain what those sources mean.
+- `ai-context/claim-control/claim-control-log.md` records conservative claim-relevant evidence entries.
 - This file defines what Orisen is allowed to claim.
 
 When updating this file, read the relevant upstream evidence first and link back to the synthesis or source files where useful.
@@ -58,6 +75,25 @@ When updating this file, read the relevant upstream evidence first and link back
 This file applies that claim-control system to Orisen's product claims.
 
 When this file and `ai-context/claim-control/claim-control-system.md` appear to conflict, use `ai-context/claim-control/claim-control-system.md` for evidence classification and update this file to match it.
+
+## Recommended claim-matrix structure
+
+For the next deeper rewrite, this file should move toward a claim matrix format.
+
+Each major claim family should ideally include:
+
+- Claim family
+- Specific claim
+- Current status
+- Allowed public wording
+- Internal-only wording, if useful
+- Avoid wording
+- Evidence basis
+- What the evidence does not prove
+- Validation needed to upgrade the claim
+- Upstream docs
+
+This matrix should make it hard for marketing, fundraising, website, or product docs to accidentally overclaim.
 
 ## Core rule
 
