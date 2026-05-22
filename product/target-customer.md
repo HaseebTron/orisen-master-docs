@@ -9,7 +9,7 @@ This file should stay consistent with:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `product/product-overview.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-log.md`
 
 ## Current target customer summary
 

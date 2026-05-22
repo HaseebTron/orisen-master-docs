@@ -5,7 +5,7 @@ Authority level: Raw / unverified source list
 Last updated: 2026-05-20
 Governing docs:
 - `validation/evidence-standard.md`
-- `validation/evidence-roadmap.md`
+- `ai-context/claim-control/claim-control-system.md`
 - `ai-context/source-of-truth-rules.md`
 
 ## Purpose

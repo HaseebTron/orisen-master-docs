@@ -1,5 +1,17 @@
 # Handoff Rules
 
+Status: Source of truth
+Authority level: Company / AI context / Handoff and refresh routing
+Last reviewed: 2026-05-22
+Governing docs:
+- `ai-context/start-here.md`
+- `ai-context/project-routing.md`
+- `ai-context/context-map.md`
+Downstream docs:
+- New-chat handoff prompts
+- Chat refresh decisions
+- Project move recommendations
+
 ## Purpose of this file
 
 This file defines when an Orisen ChatGPT chat should continue, refresh its source context, move to another project, or hand off to a new chat.

@@ -1,5 +1,18 @@
 # Start Here
 
+Status: Source of truth
+Authority level: Company / AI context / Boot routing
+Last reviewed: 2026-05-22
+Governing docs:
+- `ai-context/current-state.md`
+- `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
+Downstream docs:
+- `ai-context/project-routing.md`
+- `ai-context/handoff-rules.md`
+- `ai-context/context-map.md`
+- `ai-context/chatgpt-project-instructions.md`
+
 ## Purpose
 
 This is the first file to read when starting a new Orisen ChatGPT chat, refreshing a stale Orisen chat, or deciding whether a task belongs in another Orisen project.
@@ -249,16 +262,7 @@ Examples:
 
 During the chat, monitor whether the current request still fits the original purpose of the chat.
 
-Reread `ai-context/start-here.md` and check for refresh, project move, or handoff when:
-
-- the chat becomes long, stale, mixed, or contaminated
-- the user starts a new major task
-- a new software slice starts
-- a new radar/ML experiment starts
-- a new marketing asset or campaign starts
-- a new fundraising asset or outreach sequence starts
-- a new repo cleanup or repo restructuring task starts
-- the request no longer fits the current project
+Reread `ai-context/start-here.md` and follow `ai-context/handoff-rules.md` when the chat becomes long, stale, mixed, contaminated, starts a new major task or workstream, or no longer fits the current project.
 
 When a refresh, project move, or handoff is recommended, use the visible warning format from this file and `ai-context/handoff-rules.md`.
 

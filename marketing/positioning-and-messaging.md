@@ -12,7 +12,7 @@ This file should stay consistent with:
 - `ai-context/source-of-truth-rules.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-log.md`
 
 ## Default positioning
 

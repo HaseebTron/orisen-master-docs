@@ -7,7 +7,7 @@ This file summarizes the founder's summer 2024 alarm-clock customer interviews.
 Use this with:
 
 - `research/customer-interviews/raw/2024-alarm-clock-responses.csv`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-log.md`
 - `product/target-customer.md`
 - `product/claims-and-evidence.md`
 - `marketing/customer-voice-log.md` if created later

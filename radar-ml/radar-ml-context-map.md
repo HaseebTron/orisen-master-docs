@@ -71,7 +71,7 @@ Use for questions like:
 Read:
 
 - `radar-ml/radar-module-decision.md` if it exists
-- `hardware/hardware-context-map.md` if hardware constraints matter
+- `hardware/hardware-context-map.md` if it exists and hardware constraints matter
 - `software/software-context-map.md` if firmware integration matters
 - `product/roadmap.md`
 - `product/claims-and-evidence.md`

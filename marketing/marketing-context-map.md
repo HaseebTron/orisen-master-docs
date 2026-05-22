@@ -258,7 +258,7 @@ Read:
 - `marketing/launch-plan.md` if it exists
 - `marketing/waitlist-conversion.md` if it exists
 - `marketing/positioning-and-messaging.md`
-- `business/business-context-map.md` if pricing or business model matters
+- `business/business-context-map.md` if it exists and pricing or business model matters
 - `product/target-customer.md`
 - `product/claims-and-evidence.md`
 

@@ -9,8 +9,8 @@ This file is raw/source material. Do not treat it as final interpretation or val
 Use with:
 
 - `research/external-research/expert-commentary/expert-commentary.md`
-- `validation/evidence-log.md`
-- `validation/evidence-roadmap.md`
+- `ai-context/claim-control/claim-control-log.md`
+- `ai-context/claim-control/claim-control-system.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 

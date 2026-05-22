@@ -9,7 +9,7 @@ Use it with:
 - `product/old-mvp.md`
 - `product/old-mvp-test-row-labels.md`
 - `product/old-mvp-bypass-and-failure-notes.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-log.md`
 
 This file preserves what testers expressed in conversation, separate from raw test tables and strict evidence classification.
 

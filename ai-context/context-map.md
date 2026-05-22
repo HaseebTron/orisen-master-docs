@@ -1,5 +1,18 @@
 # Context Map
 
+Status: Source of truth
+Authority level: Company / AI context / Context routing
+Last reviewed: 2026-05-22
+Governing docs:
+- `ai-context/start-here.md`
+- `ai-context/current-state.md`
+- `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
+Downstream docs:
+- Folder context maps
+- ChatGPT project context-loading workflows
+- Repo integrity checks
+
 ## Purpose
 
 This file is the top-level document-routing map for the Orisen master docs repo.

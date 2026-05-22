@@ -98,7 +98,7 @@ Read:
 - `product/roadmap.md`
 - `ai-context/claim-control/claim-control-system.md`
 - `ai-context/claim-control/claim-control-log.md`
-- `business/business-context-map.md` if market, pricing, or business model matters
+- `business/business-context-map.md` if it exists and market, pricing, or business model matters
 
 ### Traction framing
 
@@ -157,7 +157,7 @@ Read:
 - `product/roadmap.md`
 - `radar-ml/radar-ml-context-map.md` if radar/ML feasibility matters
 - `software/software-context-map.md` if software progress matters
-- `hardware/hardware-context-map.md` if hardware readiness matters
+- `hardware/hardware-context-map.md` if it exists and hardware readiness matters
 
 ### Market and business story
 

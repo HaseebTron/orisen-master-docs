@@ -4,6 +4,7 @@ Status: Source of truth
 Authority level: Company / AI context / Repo governance
 Last reviewed: 2026-05-22
 Governing docs:
+- `ai-context/repo-governance/repo-operating-model.md`
 - `ai-context/repo-governance/repo-editing-rules.md`
 - `ai-context/repo-governance/repo-change-checklist.md`
 - `ai-context/repo-governance/repo-file-map.md`
@@ -181,6 +182,7 @@ git push origin --delete branch-name
 
 Use:
 
+- `ai-context/repo-governance/repo-operating-model.md` for system-level repo governance logic
 - `ai-context/repo-governance/repo-editing-rules.md` for overall editing rules
 - `ai-context/repo-governance/repo-change-checklist.md` for operational repo-change checks
 - `ai-context/repo-governance/repo-file-map.md` for the current file inventory

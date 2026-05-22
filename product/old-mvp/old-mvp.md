@@ -415,7 +415,7 @@ Add more detail as the founder provides it:
 
 ## Related docs
 
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-log.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`

@@ -20,8 +20,8 @@ Use with:
 
 - `research/external-research/expert-commentary/raw/`
 - `research/external-research/expert-commentary/benji-ozynski-synthesis.md`
-- `validation/evidence-log.md`
-- `validation/evidence-roadmap.md`
+- `ai-context/claim-control/claim-control-log.md`
+- `ai-context/claim-control/claim-control-system.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 

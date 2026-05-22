@@ -8,7 +8,7 @@ Use this file with:
 
 - `product/old-mvp.md`
 - `product/old-mvp-bypass-and-failure-notes.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-log.md`
 
 This file preserves both:
 

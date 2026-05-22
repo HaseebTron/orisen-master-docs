@@ -1,5 +1,17 @@
 # ChatGPT Project Instructions
 
+Status: Source of truth
+Authority level: Company / AI context / ChatGPT Project custom instructions
+Last reviewed: 2026-05-22
+Governing docs:
+- `ai-context/start-here.md`
+- `ai-context/project-routing.md`
+- `ai-context/handoff-rules.md`
+- `ai-context/context-map.md`
+Downstream docs:
+- Orisen ChatGPT Project custom instructions
+- New substantive Orisen chat boot behavior
+
 ## Purpose
 
 This file defines the canonical instructions to paste into each Orisen ChatGPT project.
@@ -7,6 +19,8 @@ This file defines the canonical instructions to paste into each Orisen ChatGPT p
 The goal is to keep all Orisen projects GitHub-first and source-of-truth aligned without relying on ChatGPT Project source files.
 
 Use this file when creating, updating, or checking the instructions for any Orisen ChatGPT project.
+
+This file is the custom-instructions reference text; `ai-context/project-routing.md` decides which Orisen project should handle a task.
 
 ## Global rule for all Orisen ChatGPT projects
 

@@ -1,5 +1,18 @@
 # Project Routing
 
+Status: Source of truth
+Authority level: Company / AI context / Project routing
+Last reviewed: 2026-05-22
+Governing docs:
+- `ai-context/start-here.md`
+- `ai-context/current-state.md`
+- `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
+Downstream docs:
+- `ai-context/handoff-rules.md`
+- `ai-context/context-map.md`
+- `ai-context/chatgpt-project-instructions.md`
+
 ## Purpose of this file
 
 This file explains which Orisen ChatGPT project should handle different kinds of work.
@@ -7,6 +20,8 @@ This file explains which Orisen ChatGPT project should handle different kinds of
 It exists to prevent asking the right question in the wrong project, duplicating decisions across chats, or letting one domain accidentally redefine another domain.
 
 Read this file after `ai-context/start-here.md` and before doing the user's main task.
+
+This file decides which project should handle a task; `ai-context/chatgpt-project-instructions.md` holds the copyable custom-instructions text for those projects.
 
 ## Core rule
 

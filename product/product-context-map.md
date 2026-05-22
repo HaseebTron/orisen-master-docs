@@ -134,7 +134,7 @@ Read:
 - `product/product-overview.md`
 - `product/mvp-scope.md` if it exists
 - `software/software-context-map.md` if implementation reality matters
-- `hardware/hardware-context-map.md` if hardware constraints matter
+- `hardware/hardware-context-map.md` if it exists and hardware constraints matter
 
 ### User experience and product behavior
 

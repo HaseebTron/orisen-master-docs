@@ -8,7 +8,7 @@ This file is an addendum to `product/old-mvp.md` and should be used with:
 
 - `product/old-mvp.md`
 - `product/old-mvp-test-row-labels.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-log.md`
 - `product/claims-and-evidence.md`
 
 It preserves detailed notes without overloading the main old MVP file.
@@ -331,7 +331,7 @@ Future product/software/firmware specs should include:
 
 - `product/old-mvp.md`
 - `product/old-mvp-test-row-labels.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-log.md`
 - `software/software-context-map.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
