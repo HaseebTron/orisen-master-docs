@@ -53,6 +53,43 @@ For significant repo changes, use the full planned repo-change summary format be
 
 For tiny one-file edits, a shortened preflight is acceptable, but it must still state the file read and the file being edited before the edit happens.
 
+## Mandatory reference search rule
+
+Before any change that can break or stale file/folder references, run a repo reference search.
+
+Reference search is required before:
+
+- moving, renaming, deleting, or archiving a file
+- moving, renaming, deleting, or archiving a folder
+- replacing an old doc system or folder with a new one
+- changing official file paths, folder paths, or “read this doc” references inside routing, inventory, or context-map docs
+
+Reference search is not required for edits that do not change paths or references, such as wording cleanup, formatting cleanup, or adding descriptions.
+
+Required searches:
+
+- exact old full path
+- old filename
+- old folder path, if a folder is affected
+- obvious human-readable names, if relevant
+
+Open only the files returned by search.
+
+For each hit, decide whether to:
+
+- update the reference
+- preserve it as intentional historical context
+- remove it if it is stale
+
+After the edit, report:
+
+- searches performed
+- files that referenced the old path/name
+- files updated
+- references intentionally preserved
+
+Do not manually read every Markdown file unless repo search is unavailable or insufficient.
+
 ## When to use this checklist
 
 Use this checklist for:
