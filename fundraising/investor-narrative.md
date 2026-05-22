@@ -12,7 +12,8 @@ This file should stay consistent with:
 - `ai-context/source-of-truth-rules.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-log.md`
 
 ## Core investor story
 
@@ -97,7 +98,14 @@ A simple narrative structure:
 
 ## Evidence needed before strengthening the story
 
-Add evidence to `validation/evidence-log.md` before strengthening claims around:
+Before strengthening investor claims, update the relevant evidence and claim-control docs:
+
+- `product/claims-and-evidence.md` for product claim boundaries and evidence summaries
+- `ai-context/claim-control/claim-control-log.md` for durable claim-control decisions
+- `marketing/post-performance-log.md` for marketing performance and waitlist evidence
+- source-specific research folders for raw/source material and synthesis
+
+This applies before strengthening claims around:
 
 - User demand
 - Willingness to pay
