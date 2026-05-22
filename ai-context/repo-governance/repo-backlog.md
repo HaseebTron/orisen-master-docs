@@ -1,5 +1,19 @@
 # Repo Backlog
 
+Status: Working backlog
+Authority level: AI context / Repo governance / Planning
+Last reviewed: 2026-05-22
+Governing docs:
+- `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-operating-model.md`
+- `ai-context/repo-governance/repo-structure.md`
+- `ai-context/repo-governance/repo-file-map.md`
+- `ai-context/repo-governance/repo-change-checklist.md`
+Downstream docs:
+- Future repo cleanup sessions
+- Future source-of-truth doc creation tasks
+- Future folder context-map updates
+
 ## Purpose
 
 This file tracks Orisen source-of-truth docs, sections, evidence, decisions, and cleanup items that should be created, filled in, or revisited later.
