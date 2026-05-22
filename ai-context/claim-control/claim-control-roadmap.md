@@ -14,6 +14,20 @@ Use this file to answer:
 - What should be collected next?
 - What claims can each evidence category support or not support?
 
+## Role boundary
+
+This file is the evidence-gap and validation-priority roadmap.
+
+It tracks what evidence categories exist, what evidence is missing, and what should be collected next.
+
+It does not replace:
+
+- `ai-context/claim-control/claim-control-system.md`, which defines classification rules.
+- `ai-context/claim-control/claim-control-log.md`, which records conservative claim-relevant evidence entries.
+- `product/claims-and-evidence.md`, which is the final product/public-claim authority for allowed wording.
+
+This file may mention what claims a category can or cannot support, but those notes are planning guidance. Final public wording belongs in `product/claims-and-evidence.md`.
+
 ## Relationship to other files
 
 - Use `ai-context/claim-control/claim-control-system.md` for evidence organization, classification, and claim-safety rules.
@@ -22,6 +36,22 @@ Use this file to answer:
 - Use `product/target-customer.md` for ICP and target-customer synthesis.
 - Use `research/`, `product/`, and `marketing/` folders for detailed source material and synthesis.
 - Use `research/external-research/README.md` for the external research folder structure.
+
+## Recommended evidence-category structure
+
+Each evidence category should ideally track:
+
+- Current status
+- Current source docs
+- Purpose
+- Current evidence
+- Evidence weighting
+- Claims it can support
+- Claims it cannot support
+- Missing evidence
+- Next validation steps
+
+This file does not need to duplicate every raw finding. It should point to the source docs and keep the evidence roadmap clear.
 
 ## Current evidence categories
 
