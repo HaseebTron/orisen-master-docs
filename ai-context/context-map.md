@@ -104,10 +104,12 @@ Full reference pack:
 - `ai-context/context-map.md`
 - `ai-context/repo-backlog.md`
 - `ai-context/decision-log.md`
+- `product/product-context-map.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
+- `research/research-context-map.md`
 - `ai-context/claim-control/claim-control-log.md`
 - `ai-context/claim-control/claim-control-system.md`
 
@@ -168,6 +170,7 @@ Full reference pack:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
+- `research/research-context-map.md`
 - `ai-context/claim-control/claim-control-log.md`
 - `ai-context/claim-control/claim-control-system.md`
 - `radar-ml/radar-ml-context-map.md`
@@ -194,6 +197,7 @@ Full reference pack:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
+- `research/research-context-map.md`
 - `ai-context/claim-control/claim-control-log.md`
 - `ai-context/claim-control/claim-control-system.md`
 - `marketing/marketing-context-map.md`
@@ -224,6 +228,7 @@ Full reference pack:
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
+- `research/research-context-map.md`
 - `ai-context/claim-control/claim-control-log.md`
 - `ai-context/claim-control/claim-control-system.md`
 - `fundraising/fundraising-context-map.md`
@@ -251,6 +256,7 @@ Full reference pack:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
+- `research/research-context-map.md`
 
 Then read hardware-specific docs when they exist, such as:
 
@@ -272,6 +278,7 @@ Start with the Orisen General minimal baseline, then read only the relevant addi
 Relevant folder context maps may include:
 
 - Product: `product/product-context-map.md`
+- Research: `research/research-context-map.md`
 - Marketing: `marketing/marketing-context-map.md`
 - Fundraising: `fundraising/fundraising-context-map.md`
 - Business: `business/business-context-map.md`
@@ -327,6 +334,30 @@ For product claims or validation status, also read:
 
 - `ai-context/claim-control/claim-control-system.md`
 
+For product questions based on research or customer evidence, also read:
+
+- `research/research-context-map.md`
+
+### Research questions
+
+Use for questions about customer interviews, raw research, expert commentary, external research, source review, research synthesis, market/category sources, competitor sources, waking-up research, going-to-sleep research, during-sleep research, sleep tracking and validation research, and evidence interpretation.
+
+Start with:
+
+- `research/research-context-map.md`
+
+Important research areas may include:
+
+- `research/customer-interviews/`
+- `research/expert-commentary/`
+- `research/external-research/`
+
+Research is input, not automatic source-of-truth. If research affects public claims, product truth, marketing, fundraising, roadmap, or technical feasibility framing, also read:
+
+- `product/claims-and-evidence.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-log.md`
+
 ### Marketing questions
 
 Use for questions about positioning, messaging, customer language, founder-led content, content strategy, launch, GTM, waitlist growth, and platform-specific plans.
@@ -354,6 +385,10 @@ For public claims, also read:
 
 - `ai-context/claim-control/claim-control-system.md`
 
+For customer language or research-backed messaging, also read:
+
+- `research/research-context-map.md`
+
 ### Fundraising questions
 
 Use for questions about investor narrative, pitch deck, outreach, traction framing, market story, fundraising strategy, and investor-specific messaging.
@@ -375,6 +410,10 @@ For validation, traction, market, or technical claims, also read:
 
 - `ai-context/claim-control/claim-control-system.md`
 
+For investor claims based on customer, expert, market, competitor, or external research, also read:
+
+- `research/research-context-map.md`
+
 ### Business questions
 
 Use for questions about business model, pricing, market analysis, competitors, GTM assumptions, partnerships, operations, and revenue strategy.
@@ -391,6 +430,10 @@ Important business docs may include:
 - `business/market-notes.md`
 
 Business docs may contain assumptions. Separate assumptions from validated facts.
+
+For market, category, competitor, or substitute research, also read:
+
+- `research/research-context-map.md`
 
 ### Hardware questions
 
@@ -440,6 +483,7 @@ Important radar/ML docs may include:
 For claims, evidence, papers, and validation status, also read:
 
 - `ai-context/claim-control/claim-control-system.md`
+- `research/research-context-map.md`
 
 ## Routing rules for ChatGPT projects
 
@@ -474,10 +518,12 @@ The first stable docs are:
 - `ai-context/repo-structure.md`
 - `ai-context/repo-file-map.md`
 - `ai-context/repo-change-checklist.md`
+- `product/product-context-map.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
+- `research/research-context-map.md`
 - `ai-context/claim-control/claim-control-log.md`
 - `ai-context/claim-control/claim-control-system.md`
 - `ai-context/claim-control/claim-control-roadmap.md`
