@@ -1,16 +1,17 @@
 # Benji Ozynski Expert Commentary Synthesis
 
 Status: Evidence synthesis
-Authority level: Validation / External expert commentary
+Authority level: Research / External expert commentary
 Last reviewed: 2026-05-19
 Governing docs:
 - `research/external-research/expert-commentary/raw/benji-ozynski-meeting-notes.md`
-- `validation/evidence-standard.md`
+- `product/claims-and-evidence.md`
+- `ai-context/claim-control/claim-control-system.md`
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 Downstream docs:
 - `research/external-research/expert-commentary/expert-commentary.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-log.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
@@ -290,7 +291,7 @@ Not supported:
 
 ## Recommended repo implications
 
-Add to validation roadmap:
+Add to claim-control roadmap:
 
 - PSG validation path
 - actigraphy measurement path
