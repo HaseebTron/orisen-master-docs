@@ -73,6 +73,30 @@ Use `repo-change-checklist.md` before significant repo changes.
 
 Do not duplicate full repo or folder file trees inside folder context maps or domain docs. The central durable file inventory belongs in `ai-context/repo-file-map.md`.
 
+## Mandatory repo-edit preflight rule
+
+Before creating, editing, moving, renaming, deleting, or archiving any repo file, the assistant must first tell the user what it read and what it is about to change.
+
+This applies to direct GitHub edits, local Git plans, Codex prompts, branch/PR workflows, repo cleanup tasks, context-map changes, and source-of-truth doc edits.
+
+Before the first write action in a repo-editing task, state:
+
+- files read before editing
+- files to create
+- files to edit
+- files to move or rename
+- files to delete or archive
+- files intentionally not touched, when relevant
+- editing method
+- risk level
+- reason for the change
+
+For significant repo changes, use the planned repo-change summary format from `ai-context/repo-change-checklist.md`.
+
+For tiny one-file edits, a shortened version is acceptable, but it must still state what was read and what file will be edited before the edit happens.
+
+Do not perform the write first and explain afterward.
+
 ## Visible handoff warning rule
 
 If a context refresh, new chat, project move, or handoff is recommended, the assistant must make the recommendation highly visible using a large, bold, all-caps heading.
