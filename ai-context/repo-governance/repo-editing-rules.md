@@ -13,12 +13,15 @@ These rules do not replace source-of-truth, doc-creation, claim-control, or repo
 Use these docs together when planning or making repo changes:
 
 - `ai-context/repo-governance/repo-purpose.md` defines why the repo exists and what good repo health means.
+- `ai-context/repo-governance/repo-operating-model.md` explains how the repo works as a governed source-of-truth system.
 - `ai-context/repo-governance/repo-structure.md` defines the structural philosophy, folder responsibilities, and anti-duplication rules.
 - `ai-context/repo-governance/repo-file-map.md` is the central inventory of the repo's current durable files and folders.
 - `ai-context/repo-governance/repo-change-checklist.md` is the operational checklist for planning or making repo changes.
 - `ai-context/repo-governance/local-repo-codex-workflow.md` defines when and how to use local VS Code, Git, and Codex for broader repo changes.
 
 For significant repo changes, read `ai-context/repo-governance/repo-change-checklist.md` before editing.
+
+For broad repo audits, repo logic reviews, AI/context system reviews, or governance architecture reviews, read `ai-context/repo-governance/repo-operating-model.md`.
 
 For broad, risky, or reference-heavy local work, read `ai-context/repo-governance/local-repo-codex-workflow.md` before telling the user how to use Codex or VS Code.
 
@@ -232,6 +235,7 @@ When creating or editing docs, still follow:
 - `ai-context/doc-creation-rules.md`
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/repo-governance/repo-purpose.md` for repo intent
+- `ai-context/repo-governance/repo-operating-model.md` for the repo's governed source-of-truth operating model
 - `ai-context/repo-governance/repo-structure.md` for repo structure logic
 - `ai-context/repo-governance/repo-file-map.md` for the current file inventory
 - `ai-context/repo-governance/repo-change-checklist.md` for the operational repo-change checklist
