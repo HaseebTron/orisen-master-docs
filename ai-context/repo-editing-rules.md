@@ -19,6 +19,30 @@ Use these docs together when planning or making repo changes:
 
 For significant repo changes, read `ai-context/repo-change-checklist.md` before editing.
 
+## Mandatory pre-edit disclosure rule
+
+Before creating, editing, moving, renaming, deleting, or archiving any repo file, ChatGPT must tell the user what it read and what it is about to change.
+
+This applies even when the user has already approved the general task.
+
+Before the first write action in a repo-editing task, ChatGPT must state:
+
+- files read before editing
+- files to create
+- files to edit
+- files to move or rename
+- files to delete or archive
+- files intentionally not touched, when relevant
+- editing method
+- risk level
+- reason for the change
+
+For significant repo changes, use the exact planned repo-change summary format from `ai-context/repo-change-checklist.md`.
+
+For tiny one-file edits, a shortened version is acceptable, but it must still clearly state the file read and the file being edited before the edit happens.
+
+Do not perform the write first and explain afterward.
+
 ## Core rule
 
 Prefer small, bounded, reviewable repo edits.
