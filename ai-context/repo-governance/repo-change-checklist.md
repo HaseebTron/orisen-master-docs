@@ -7,6 +7,7 @@ Governing docs:
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/repo-governance/repo-structure.md`
 - `ai-context/repo-governance/repo-editing-rules.md`
+- `ai-context/repo-governance/local-repo-codex-workflow.md`
 - `ai-context/doc-creation-rules.md`
 - `ai-context/source-of-truth-rules.md`
 Downstream docs:
@@ -21,6 +22,8 @@ This file is the operational checklist for planning or making changes to the Ori
 Use it when creating, editing, moving, deleting, reorganizing, or cleaning up durable repo docs.
 
 This file does not replace `ai-context/repo-governance/repo-editing-rules.md`. It translates the repo rules into a practical checklist.
+
+For local VS Code, Git, and Codex workflows, use `ai-context/repo-governance/local-repo-codex-workflow.md`.
 
 ## Mandatory repo-edit preflight
 
@@ -90,6 +93,24 @@ After the edit, report:
 
 Do not manually read every Markdown file unless repo search is unavailable or insufficient.
 
+## When to use local repo + Codex
+
+Use local repo + Codex instead of direct ChatGPT GitHub editing when the task involves:
+
+- moving, renaming, or deleting multiple files
+- reorganizing folders
+- repo-wide search and replace
+- reference-heavy path updates
+- large markdown refactors
+- many context-map updates
+- broad repo cleanup
+- governance-file restructuring
+- changes where the user should review a diff before merge
+- changes where rollback safety matters
+- changes that the ChatGPT GitHub connector may partially block
+
+When this applies, ChatGPT should tell the user that local repo + Codex is safer, and then use `ai-context/repo-governance/local-repo-codex-workflow.md` for the workflow.
+
 ## When to use this checklist
 
 Use this checklist for:
@@ -119,6 +140,7 @@ Before significant repo changes, read:
 - `ai-context/context-map.md`
 - `ai-context/doc-creation-rules.md`
 - `ai-context/repo-governance/repo-editing-rules.md`
+- `ai-context/repo-governance/local-repo-codex-workflow.md` when local VS Code, Git, or Codex workflow is involved
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/repo-governance/repo-structure.md`
 - `ai-context/repo-governance/repo-file-map.md`
@@ -174,6 +196,7 @@ Before changing the repo, answer:
 - Does this require updating `ai-context/context-map.md`?
 - Does this require updating folder context maps?
 - Does this require a decision-log entry?
+- Is this broad, risky, or reference-heavy enough that local repo + Codex should be used?
 
 ## Pre-edit scope statement
 
@@ -252,6 +275,8 @@ Prefer local Git, Codex, or branch/PR workflow for:
 - claims or fundraising rewrites
 - changes that require diff review before landing
 - changes where rollback safety matters
+
+When local Git/Codex is the safer workflow, use `ai-context/repo-governance/local-repo-codex-workflow.md`.
 
 ## Creation checklist
 
