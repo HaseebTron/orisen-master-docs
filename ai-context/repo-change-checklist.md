@@ -22,6 +22,37 @@ Use it when creating, editing, moving, deleting, reorganizing, or cleaning up du
 
 This file does not replace `ai-context/repo-editing-rules.md`. It translates the repo rules into a practical checklist.
 
+## Mandatory repo-edit preflight
+
+Before any write action to the repo, the assistant must show the user what context was loaded and what will change.
+
+A write action includes:
+
+- creating a file
+- editing a file
+- moving or renaming a file
+- deleting or archiving a file
+- changing repo structure
+- changing context-loading or routing behavior
+
+The assistant must do this before the first write action in the repo-editing task, not after.
+
+The preflight must include, at minimum:
+
+- files read before editing
+- files to create
+- files to edit
+- files to move or rename
+- files to delete or archive
+- files intentionally not touched, when relevant
+- editing method
+- risk level
+- reason for the change
+
+For significant repo changes, use the full planned repo-change summary format below.
+
+For tiny one-file edits, a shortened preflight is acceptable, but it must still state the file read and the file being edited before the edit happens.
+
 ## When to use this checklist
 
 Use this checklist for:
@@ -79,6 +110,7 @@ Read domain context maps when the change affects that domain:
 - `hardware/hardware-context-map.md` if it exists
 - `business/business-context-map.md` if it exists
 - `product/product-context-map.md` if it exists
+- `research/research-context-map.md` if it exists
 
 If a needed context map does not exist, use available docs directly and recommend creating the context map only if the workstream is active enough.
 
@@ -110,6 +142,7 @@ Before changing the repo, answer:
 
 Before direct GitHub edits, state:
 
+- files read
 - files to create
 - files to update
 - files to move, rename, delete, or archive
