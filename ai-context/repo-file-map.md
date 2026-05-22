@@ -45,6 +45,7 @@ Do not update this file for tiny temporary scratch files unless they become dura
 ```text
 ai-context/
 product/
+research/
 marketing/
 fundraising/
 software/
@@ -144,6 +145,27 @@ Known key files:
 
 - `product/roadmap.md`
   - Roadmap and product sequencing.
+
+## `research/`
+
+Purpose:
+- Stores customer interviews, expert commentary, external research, raw source material, processed notes, and research synthesis used to inform product, claims, marketing, fundraising, business, hardware, software, and radar/ML work.
+
+Known key files:
+
+- `research/research-context-map.md`
+  - Research-specific context-loading map.
+
+Known subfolders:
+
+- `research/customer-interviews/`
+  - Customer interview synthesis and raw customer research.
+
+- `research/expert-commentary/`
+  - Expert commentary, expert synthesis, and raw meeting notes.
+
+- `research/external-research/`
+  - External research sources, processed notes, and synthesis docs across waking up, going to sleep, during sleep, sleep tracking and validation, competitors, and market/category research.
 
 ## `marketing/`
 
