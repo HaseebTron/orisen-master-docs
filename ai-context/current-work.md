@@ -181,10 +181,8 @@ Status:
 Source files:
 
 - `research/expert-commentary/raw/leila-jalali-meeting-notes.md`
-- `research/expert-commentary/leila-jalali-expert-commentary.md`
 - `research/expert-commentary/raw/benji-ozynski-meeting-notes.md`
-- `research/expert-commentary/benji-ozynski-expert-commentary.md`
-- `research/expert-commentary/expert-commentary.md`
+- `research/expert-commentary/expert-commentary-synthesis.md`
 - `ai-context/claim-control/claim-control-log.md`
 
 Status:
@@ -281,8 +279,7 @@ Why:
 Completed:
 
 - Created `research/expert-commentary/raw/benji-ozynski-meeting-notes.md`.
-- Created `research/expert-commentary/benji-ozynski-expert-commentary.md`.
-- Updated `research/expert-commentary/expert-commentary.md` with a cross-expert synthesis.
+- Updated the expert-commentary synthesis with Benji Ozynski evidence.
 - Updated claim-control files with an expert commentary evidence entry.
 
 Key interpretation:
@@ -305,7 +302,7 @@ Claim boundary:
 Completed:
 
 - Created `research/expert-commentary/raw/leila-jalali-meeting-notes.md`.
-- Created `research/expert-commentary/leila-jalali-expert-commentary.md`.
+- Updated the expert-commentary synthesis with Leila Jalali evidence.
 - Updated claim-control files with an expert commentary evidence entry.
 - Updated the claim-control roadmap to mark expert commentary as partially filled.
 - Added sleep spindles and arousal threshold to future sleep-inertia research topics.

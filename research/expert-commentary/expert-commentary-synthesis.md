@@ -18,8 +18,7 @@ Use this file to extract:
 
 Use with:
 
-- `research/external-research/expert-commentary/raw/`
-- `research/external-research/expert-commentary/benji-ozynski-synthesis.md`
+- `research/expert-commentary/raw/`
 - `ai-context/claim-control/claim-control-log.md`
 - `ai-context/claim-control/claim-control-system.md`
 - `product/claims-and-evidence.md`
@@ -27,13 +26,12 @@ Use with:
 
 ## Current source notes
 
-- `research/external-research/expert-commentary/raw/leila-jalali-meeting-notes.md`
-- `research/external-research/expert-commentary/raw/benji-ozynski-meeting-notes.md`
+- `research/expert-commentary/raw/leila-jalali-meeting-notes.md`
+- `research/expert-commentary/raw/benji-ozynski-meeting-notes.md`
 
-## Current synthesis files
+## Current synthesis
 
-- This file: consolidated expert-commentary synthesis and index.
-- `research/external-research/expert-commentary/benji-ozynski-synthesis.md`: deeper Benji-specific synthesis.
+This file is the consolidated expert-commentary synthesis and index.
 
 ## Evidence weighting
 
@@ -73,7 +71,7 @@ Expert:
 
 Raw notes:
 
-- `research/external-research/expert-commentary/raw/leila-jalali-meeting-notes.md`
+- `research/expert-commentary/raw/leila-jalali-meeting-notes.md`
 
 ### Most important takeaways
 
@@ -188,13 +186,14 @@ Expert:
 - Founder-provided context: Sleep Medicine Doctor at Sleep Health Centre South Africa.
 - Founder said he reached out after seeing Orisen's first LinkedIn post.
 
+Clinic context:
+
+- Founder-provided context says Sleep Health Centre South Africa provides clinical sleep assessment and sleep-study services.
+- The raw notes describe possible clinic-level PSG validation, but the scope, cost, data access, consent/ethics requirements, and clinic/team involvement still need written confirmation.
+
 Raw notes:
 
-- `research/external-research/expert-commentary/raw/benji-ozynski-meeting-notes.md`
-
-Detailed synthesis:
-
-- `research/external-research/expert-commentary/benji-ozynski-synthesis.md`
+- `research/expert-commentary/raw/benji-ozynski-meeting-notes.md`
 
 ### Most important takeaways
 
@@ -270,7 +269,17 @@ Implication:
 - It supports investigating young adults / rigid-schedule users.
 - It should not override direct customer evidence or become final ICP proof.
 
-#### 8. Advisor/cofounder/collaboration interest is useful but unconfirmed
+#### 8. Consumer-grade positioning is directionally useful but not a regulatory conclusion
+
+The meeting summary described Orisen as consumer-grade rather than a medical device.
+
+Implication:
+
+- Orisen should avoid medical-device claims unless it deliberately chooses that path.
+- Consumer positioning does not automatically settle regulatory classification.
+- Actual claims, features, jurisdictions, intended use, and clinical language still need separate review before public or fundraising claims are strengthened.
+
+#### 9. Advisor/cofounder/collaboration interest is useful but unconfirmed
 
 The notes say he may be interested in research collaboration, advisor involvement, or deeper involvement.
 
@@ -342,6 +351,7 @@ Future validation should test:
 - whether Orisen reduces wake-completion failure
 - whether Orisen reduces repeated snoozing or return-to-bed events
 - whether Orisen reduces self-reported grogginess or sleep inertia
+- whether Orisen improves objective morning functioning, not only self-reported wake quality
 - whether continuous audio/light intervention can keep users in lighter stages near wake time
 - whether temperature has meaningful intervention value
 - whether radar-derived signals are accurate enough for feedback-based intervention
@@ -349,6 +359,25 @@ Future validation should test:
 - whether outcomes persist beyond novelty
 - whether actigraphy can support early validation metrics
 - whether PSG validation is feasible and affordable through a sleep clinic
+
+Validation should separate:
+
+- wake completion
+- sleep/wake detection
+- sleep-stage estimation
+- intervention effect
+- subjective morning grogginess
+- objective morning functioning
+- user adherence and tolerance
+
+Any sleep-clinic validation path should confirm what data Orisen can actually receive:
+
+- raw PSG signals, scored sleep stages, event timestamps, or only a report
+- synchronization requirements between Orisen logs and PSG timestamps
+- number of nights and participants
+- whether the clinic can support intervention testing or only passive measurement validation
+- ethics, consent, scheduling, and cost constraints
+- whether specialized patient populations such as hypersomnia or narcolepsy cases are appropriate or should be avoided initially
 
 ## Claims supported by expert commentary
 
@@ -375,6 +404,7 @@ Not supported:
 - Sleep Health Centre South Africa is formally partnered with Orisen.
 - Dr Benji Ozynski is formally an advisor, partner, or cofounder.
 - Exact wearable sleep-stage accuracy numbers without primary-source verification.
+- Consumer-grade positioning guarantees Orisen has no regulatory obligations.
 
 ## Evidence strength
 
@@ -394,6 +424,18 @@ Confidence:
 - Low for prevalence percentages, segment-ranking conclusions, and exact numerical wearable/PSG claims until verified.
 - Medium-low for collaboration/advisor signal until reconfirmed.
 
+## Repo and claim-control implications
+
+Use this consolidated synthesis as the expert-commentary interpretation layer.
+
+Claim-control and product docs should preserve:
+
+- the distinction between wake-completion evidence and sleep-stage intervention evidence
+- the caution that grogginess reduction is unvalidated
+- the need for empirical validation before stronger sleep-stage or sleep-inertia claims
+- PSG validation as a possible future path, not a confirmed partnership
+- actigraphy, temperature, sleep-mask/light limitations, intervention tolerance, and subjective wake quality as research/validation topics
+
 ## Next research actions
 
 - Add sleep inertia literature review.
@@ -407,3 +449,23 @@ Confidence:
 - Verify wearable sleep-stage accuracy numbers against primary sources before using publicly.
 - Follow up with Dr Benji about PSG validation, research collaboration, and possible advisor involvement.
 - Add direct interviews with severe oversleepers, young adults, rigid-schedule workers, and shift workers.
+
+## Recommended follow-up questions for Dr Benji
+
+- What exact PSG data would the clinic provide: raw signals, scored stages, event timestamps, or only a report?
+- Can Orisen synchronize device logs with PSG timestamps?
+- How many participants and nights would be minimally useful?
+- Can the clinic support intervention testing, or only passive measurement validation?
+- Would the clinic help design a protocol?
+- What ethics and consent requirements would apply?
+- Is the approximate $250 overnight PSG price confirmed, and what does it include?
+- Does the clinic have lab availability for this kind of research, and what scheduling constraints exist?
+- Which wake-up outcomes should Orisen measure first?
+- What is the safest way to test audio, light, or temperature intervention during sleep?
+- How should Orisen measure grogginess or sleep inertia subjectively and objectively?
+- Which patient groups should not be tested first?
+- What are the main risks of disturbing sleep near wake time?
+- What claims would he consider irresponsible before validation?
+- Is he interested in formal advisor involvement, research collaboration, or deeper operating involvement?
+- Would he be comfortable being named publicly if a role is formalized?
+- Would his clinic or team be involved, or only him personally?

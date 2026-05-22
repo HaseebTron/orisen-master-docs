@@ -102,8 +102,7 @@ Use for questions like:
 
 Read:
 
-- `research/expert-commentary/expert-commentary.md` if it exists
-- relevant expert synthesis docs if they exist
+- `research/expert-commentary/expert-commentary-synthesis.md`
 - relevant raw meeting notes under `research/expert-commentary/raw/` when exact source material matters
 - `product/claims-and-evidence.md`
 - `ai-context/claim-control/claim-control-system.md`

@@ -117,8 +117,7 @@ Conventions:
     - **`raw/`**: Raw customer interview and source material.
   - **`expert-commentary/`**: Expert commentary, expert synthesis, and raw meeting notes.
     - `README.md`: Expert commentary folder overview.
-    - `expert-commentary.md`: Central expert commentary summary if maintained.
-    - `benji-ozynski-synthesis.md`: Synthesis of Dr Benji Ozynski expert commentary.
+    - `expert-commentary-synthesis.md`: Consolidated synthesis of expert commentary across calls.
     - **`raw/`**: Raw expert meeting notes and source material.
       - `benji-ozynski-meeting-notes.md`: Raw notes from Dr Benji Ozynski expert conversation.
       - `leila-jalali-meeting-notes.md`: Raw notes from Leila Jalali expert conversation.

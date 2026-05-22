@@ -200,8 +200,7 @@ Current source files:
 - `research/expert-commentary/README.md`
 - `research/expert-commentary/raw/leila-jalali-meeting-notes.md`
 - `research/expert-commentary/raw/benji-ozynski-meeting-notes.md`
-- `research/expert-commentary/expert-commentary.md`
-- `research/expert-commentary/benji-ozynski-synthesis.md`
+- `research/expert-commentary/expert-commentary-synthesis.md`
 
 Purpose:
 

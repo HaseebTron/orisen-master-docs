@@ -23,19 +23,17 @@ Expert commentary should not be treated as proof that Orisen works unless the ex
 
 ```text
 research/expert-commentary/
-├── README.md
-├── raw/
-│   ├── leila-jalali-meeting-notes.md
-│   └── benji-ozynski-meeting-notes.md
-├── expert-commentary.md
-└── benji-ozynski-synthesis.md
+|-- README.md
+|-- expert-commentary-synthesis.md
+`-- raw/
+    |-- benji-ozynski-meeting-notes.md
+    `-- leila-jalali-meeting-notes.md
 ```
 
 ## Raw notes vs interpretation
 
 - `raw/` contains source-preserving meeting notes.
-- `expert-commentary.md` synthesizes the expert commentary across calls.
-- `benji-ozynski-synthesis.md` preserves a separate synthesis for the Benji Ozynski call because that call has validation/collaboration implications.
+- `expert-commentary-synthesis.md` synthesizes expert commentary across calls, including the Benji Ozynski validation/collaboration implications.
 
 Keep raw notes separate from interpretation.
 

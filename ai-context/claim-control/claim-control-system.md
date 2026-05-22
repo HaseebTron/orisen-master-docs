@@ -224,8 +224,7 @@ orisen-master-docs/
 │   │
 │   ├── expert-commentary/
 │   │   ├── raw/
-│   │   ├── expert-commentary.md
-│   │   └── benji-ozynski-synthesis.md
+│   │   └── expert-commentary-synthesis.md
 │   │
 │   └── external-research/
 │       ├── README.md

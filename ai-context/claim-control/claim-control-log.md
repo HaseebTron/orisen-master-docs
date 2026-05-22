@@ -232,7 +232,7 @@ For final public claim boundaries, use:
 - Evidence type: Expert commentary / sleep expert meeting notes.
 - Source:
   - `research/expert-commentary/raw/leila-jalali-meeting-notes.md`
-  - `research/expert-commentary/expert-commentary.md`
+  - `research/expert-commentary/expert-commentary-synthesis.md`
 - What was observed or discussed:
   - Artificial sleep phase transitioning sounded technically possible, but likely requires continuous disturbance/intervention to keep a person in a lighter stage.
   - Disturbance may temporarily move a patient into a lighter sleep stage before they quickly shift back.
@@ -266,8 +266,7 @@ For final public claim boundaries, use:
 - Evidence type: Expert commentary / sleep doctor meeting notes / potential research-validation lead.
 - Source:
   - `research/expert-commentary/raw/benji-ozynski-meeting-notes.md`
-  - `research/expert-commentary/benji-ozynski-synthesis.md`
-  - `research/expert-commentary/expert-commentary.md`
+  - `research/expert-commentary/expert-commentary-synthesis.md`
 - What was observed or discussed:
   - He emphasized that Orisen's algorithm and intervention hypothesis must be tested empirically.
   - He cautioned that even if the mechanism makes sense theoretically, it may not work in real life because sleep is unpredictable.
