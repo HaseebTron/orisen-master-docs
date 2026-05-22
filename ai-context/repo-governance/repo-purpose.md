@@ -9,9 +9,9 @@ Governing docs:
 - `ai-context/ai-operating-mode.md`
 - `ai-context/doc-creation-rules.md`
 Downstream docs:
-- `ai-context/repo-structure.md`
-- `ai-context/repo-file-map.md`
-- `ai-context/repo-change-checklist.md`
+- `ai-context/repo-governance/repo-structure.md`
+- `ai-context/repo-governance/repo-file-map.md`
+- `ai-context/repo-governance/repo-change-checklist.md`
 - Folder context maps
 - Domain source-of-truth docs
 
@@ -21,7 +21,7 @@ This file defines why the Orisen master docs repo exists and what it should help
 
 It should be read when planning repo cleanups, reorganizing docs, creating new source-of-truth files, deciding whether content belongs in the repo, or evaluating whether the repo is becoming bloated or unclear.
 
-This file explains the repo's intent. It does not list the file structure. For structure logic, use `ai-context/repo-structure.md`. For the current file inventory, use `ai-context/repo-file-map.md`.
+This file explains the repo's intent. It does not list the file structure. For structure logic, use `ai-context/repo-governance/repo-structure.md`. For the current file inventory, use `ai-context/repo-governance/repo-file-map.md`.
 
 ## What this repo is for
 
@@ -149,9 +149,9 @@ Before major Orisen work, GPT should:
 - use `ai-context/source-of-truth-rules.md` to resolve conflicts
 - use `ai-context/ai-operating-mode.md` to reason non-agreeably
 - use `ai-context/doc-creation-rules.md` before creating or editing docs
-- use `ai-context/repo-editing-rules.md` and `ai-context/repo-change-checklist.md` before repo edits
-- use `ai-context/repo-structure.md` for structural logic
-- use `ai-context/repo-file-map.md` for the current file inventory
+- use `ai-context/repo-governance/repo-editing-rules.md` and `ai-context/repo-governance/repo-change-checklist.md` before repo edits
+- use `ai-context/repo-governance/repo-structure.md` for structural logic
+- use `ai-context/repo-governance/repo-file-map.md` for the current file inventory
 
 GPT should read only the docs needed for the task. Loading everything by default is not the goal.
 
@@ -190,8 +190,8 @@ This file defines the repo's intent.
 
 Use:
 
-- `ai-context/repo-structure.md` for structural philosophy and folder responsibilities
-- `ai-context/repo-file-map.md` for the current file inventory
-- `ai-context/repo-change-checklist.md` before changing the repo
+- `ai-context/repo-governance/repo-structure.md` for structural philosophy and folder responsibilities
+- `ai-context/repo-governance/repo-file-map.md` for the current file inventory
+- `ai-context/repo-governance/repo-change-checklist.md` before changing the repo
 
 Do not duplicate the file tree in this file.

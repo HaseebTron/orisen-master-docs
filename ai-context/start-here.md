@@ -50,28 +50,28 @@ Follow:
 
 - `ai-context/ai-operating-mode.md`
 - `ai-context/doc-creation-rules.md` when creating or editing docs
-- `ai-context/repo-editing-rules.md` when directly editing GitHub files or planning repo edits
-- `ai-context/repo-purpose.md`, `ai-context/repo-structure.md`, `ai-context/repo-file-map.md`, and `ai-context/repo-change-checklist.md` when planning repo structure, cleanup, file organization, file inventory, or repo-governance changes
+- `ai-context/repo-governance/repo-editing-rules.md` when directly editing GitHub files or planning repo edits
+- `ai-context/repo-governance/repo-purpose.md`, `ai-context/repo-governance/repo-structure.md`, `ai-context/repo-governance/repo-file-map.md`, and `ai-context/repo-governance/repo-change-checklist.md` when planning repo structure, cleanup, file organization, file inventory, or repo-governance changes
 - `ai-context/claim-control/claim-control-system.md` when judging claims, evidence, validation, marketing, fundraising, radar/ML, or product truth
 
 ## Repo governance rule
 
 For repo structure, cleanup, file moves, folder organization, context-map changes, or durable doc inventory work, use the repo-governance docs:
 
-- `ai-context/repo-purpose.md`
-- `ai-context/repo-structure.md`
-- `ai-context/repo-file-map.md`
-- `ai-context/repo-change-checklist.md`
+- `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-structure.md`
+- `ai-context/repo-governance/repo-file-map.md`
+- `ai-context/repo-governance/repo-change-checklist.md`
 
-Use `repo-purpose.md` for why the repo exists.
+Use `ai-context/repo-governance/repo-purpose.md` for why the repo exists.
 
-Use `repo-structure.md` for structure philosophy and folder responsibility.
+Use `ai-context/repo-governance/repo-structure.md` for structure philosophy and folder responsibility.
 
-Use `repo-file-map.md` for the current durable file inventory.
+Use `ai-context/repo-governance/repo-file-map.md` for the current durable file inventory.
 
-Use `repo-change-checklist.md` before significant repo changes.
+Use `ai-context/repo-governance/repo-change-checklist.md` before significant repo changes.
 
-Do not duplicate full repo or folder file trees inside folder context maps or domain docs. The central durable file inventory belongs in `ai-context/repo-file-map.md`.
+Do not duplicate full repo or folder file trees inside folder context maps or domain docs. The central durable file inventory belongs in `ai-context/repo-governance/repo-file-map.md`.
 
 ## Mandatory repo-edit preflight rule
 
@@ -91,7 +91,7 @@ Before the first write action in a repo-editing task, state:
 - risk level
 - reason for the change
 
-For significant repo changes, use the planned repo-change summary format from `ai-context/repo-change-checklist.md`.
+For significant repo changes, use the planned repo-change summary format from `ai-context/repo-governance/repo-change-checklist.md`.
 
 For tiny one-file edits, a shortened version is acceptable, but it must still state what was read and what file will be edited before the edit happens.
 
@@ -171,7 +171,7 @@ The goal is not to rewrite everything. The goal is to identify:
 - source-of-truth files that need propagation updates
 - downstream docs that are overclaiming or drifting
 - missing evidence or decision-log entries
-- duplicated structure or file trees outside `ai-context/repo-file-map.md`
+- duplicated structure or file trees outside `ai-context/repo-governance/repo-file-map.md`
 
 ## Required boot sequence
 
@@ -187,8 +187,8 @@ When this file is read for a meaningful Orisen task, follow this order before an
 8. Read `ai-context/context-map.md`.
 9. Read `ai-context/current-state.md`, `ai-context/source-of-truth-rules.md`, and `ai-context/ai-operating-mode.md` as core baseline context.
 10. If the task creates, edits, reviews, or promotes docs, read `ai-context/doc-creation-rules.md`.
-11. If the task directly edits GitHub files or plans repo edits, read `ai-context/repo-editing-rules.md`.
-12. If the task involves repo structure, cleanup, file moves, file inventory, folder organization, context-map changes, or repo governance, read `ai-context/repo-purpose.md`, `ai-context/repo-structure.md`, `ai-context/repo-file-map.md`, and `ai-context/repo-change-checklist.md`.
+11. If the task directly edits GitHub files or plans repo edits, read `ai-context/repo-governance/repo-editing-rules.md`.
+12. If the task involves repo structure, cleanup, file moves, file inventory, folder organization, context-map changes, or repo governance, read `ai-context/repo-governance/repo-purpose.md`, `ai-context/repo-governance/repo-structure.md`, `ai-context/repo-governance/repo-file-map.md`, and `ai-context/repo-governance/repo-change-checklist.md`.
 13. If the task judges validation, claims, marketing, fundraising, scientific/technical support, or evidence strength, read `ai-context/claim-control/claim-control-system.md`.
 14. Follow `context-map.md` to the correct minimal or full baseline pack and any task-specific docs.
 15. Provide the context loaded summary.
@@ -218,7 +218,7 @@ If the new request needs source-of-truth docs that were not read earlier:
 1. Briefly tell the user that the request needs additional source context.
 2. Read `ai-context/context-map.md` if needed.
 3. Read the relevant folder context map and task-specific docs from GitHub.
-4. Read `ai-context/ai-operating-mode.md`, `ai-context/doc-creation-rules.md`, `ai-context/repo-editing-rules.md`, the repo-governance docs, or `ai-context/claim-control/claim-control-system.md` if the request needs them and they were not already read.
+4. Read `ai-context/ai-operating-mode.md`, `ai-context/doc-creation-rules.md`, `ai-context/repo-governance/repo-editing-rules.md`, the repo-governance docs, or `ai-context/claim-control/claim-control-system.md` if the request needs them and they were not already read.
 5. State which additional files were read.
 6. Answer using the expanded context.
 

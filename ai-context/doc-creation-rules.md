@@ -30,12 +30,12 @@ The user's request is an input, not the authority.
 
 When creating, moving, renaming, deleting, reorganizing, or cleaning up durable repo docs, also use:
 
-- `ai-context/repo-purpose.md` for why the repo exists and what good repo health means.
-- `ai-context/repo-structure.md` for structural logic, folder responsibilities, and upstream/downstream rules.
-- `ai-context/repo-file-map.md` for the central current file inventory.
-- `ai-context/repo-change-checklist.md` for the operational checklist before repo changes.
+- `ai-context/repo-governance/repo-purpose.md` for why the repo exists and what good repo health means.
+- `ai-context/repo-governance/repo-structure.md` for structural logic, folder responsibilities, and upstream/downstream rules.
+- `ai-context/repo-governance/repo-file-map.md` for the central current file inventory.
+- `ai-context/repo-governance/repo-change-checklist.md` for the operational checklist before repo changes.
 
-Do not duplicate repo-wide or folder-level file trees inside folder docs, context maps, or domain docs. The central durable file inventory belongs in `ai-context/repo-file-map.md`.
+Do not duplicate repo-wide or folder-level file trees inside folder docs, context maps, or domain docs. The central durable file inventory belongs in `ai-context/repo-governance/repo-file-map.md`.
 
 ## Required pre-draft check
 
@@ -59,8 +59,8 @@ If the request conflicts with source-of-truth docs, flag the conflict before dra
 
 When ChatGPT directly edits GitHub files, also follow:
 
-- `ai-context/repo-editing-rules.md`
-- `ai-context/repo-change-checklist.md` for significant repo changes
+- `ai-context/repo-governance/repo-editing-rules.md`
+- `ai-context/repo-governance/repo-change-checklist.md` for significant repo changes
 
 Especially for multi-file source-of-truth changes, ChatGPT should state the intended edit scope before editing, keep edits in small logical batches, avoid broad direct edits to `main` when a local/Codex/branch workflow would be safer, and summarize what changed afterward.
 
@@ -116,12 +116,12 @@ They should keep repo purpose, structural logic, file inventory, and operational
 
 Examples:
 
-- `ai-context/repo-purpose.md`
-- `ai-context/repo-structure.md`
-- `ai-context/repo-file-map.md`
-- `ai-context/repo-change-checklist.md`
+- `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-structure.md`
+- `ai-context/repo-governance/repo-file-map.md`
+- `ai-context/repo-governance/repo-change-checklist.md`
 
-`ai-context/repo-structure.md` should explain structural philosophy. `ai-context/repo-file-map.md` should list the current file inventory. Do not merge those jobs into one file.
+`ai-context/repo-governance/repo-structure.md` should explain structural philosophy. `ai-context/repo-governance/repo-file-map.md` should list the current file inventory. Do not merge those jobs into one file.
 
 ### Product docs
 
@@ -303,10 +303,10 @@ Especially check:
 
 For repo structure or repo-governance changes, especially check:
 
-- `ai-context/repo-purpose.md`
-- `ai-context/repo-structure.md`
-- `ai-context/repo-file-map.md`
-- `ai-context/repo-change-checklist.md`
+- `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-structure.md`
+- `ai-context/repo-governance/repo-file-map.md`
+- `ai-context/repo-governance/repo-change-checklist.md`
 - `ai-context/context-map.md`
 - relevant folder context maps
 
@@ -324,4 +324,4 @@ When asked to create or revise a doc, ChatGPT should usually provide:
 - any conflicts or assumptions discovered
 - suggested follow-up docs to update
 
-If directly editing GitHub, ChatGPT should follow `ai-context/repo-editing-rules.md` and summarize what files were created, updated, or intentionally not touched.
+If directly editing GitHub, ChatGPT should follow `ai-context/repo-governance/repo-editing-rules.md` and summarize what files were created, updated, or intentionally not touched.

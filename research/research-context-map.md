@@ -14,7 +14,7 @@ This file does not maintain this folder's file inventory.
 
 For the current repo-wide file map, see:
 
-- `ai-context/repo-file-map.md`
+- `ai-context/repo-governance/repo-file-map.md`
 
 This context map should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
 

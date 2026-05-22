@@ -4,8 +4,8 @@ Status: Source of truth
 Authority level: Company / AI context / Repo governance
 Last reviewed: 2026-05-21
 Governing docs:
-- `ai-context/repo-purpose.md`
-- `ai-context/repo-structure.md`
+- `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-structure.md`
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/context-map.md`
 Downstream docs:
@@ -19,7 +19,7 @@ This file is the central inventory of the Orisen master docs repo.
 
 It lists the current folder and file structure at a practical level so that other docs do not need to duplicate file trees.
 
-For the logic behind the structure, use `ai-context/repo-structure.md`. For what the repo is meant to do, use `ai-context/repo-purpose.md`.
+For the logic behind the structure, use `ai-context/repo-governance/repo-structure.md`. For what the repo is meant to do, use `ai-context/repo-governance/repo-purpose.md`.
 
 ## File map rule
 
@@ -82,13 +82,14 @@ Conventions:
   - `source-of-truth-rules.md`: Defines authority hierarchy and how to handle doc conflicts.
   - `ai-operating-mode.md`: Defines how GPT should reason when using Orisen docs.
   - `doc-creation-rules.md`: Defines how source-of-truth docs should be created, edited, and promoted.
-  - `repo-editing-rules.md`: Defines safe direct GitHub editing behavior.
-  - `repo-purpose.md`: Defines why the repo exists and what good repo health means.
-  - `repo-structure.md`: Defines structural philosophy, folder responsibilities, and anti-duplication rules.
-  - `repo-file-map.md`: Central current inventory of repo folders and durable files.
-  - `repo-change-checklist.md`: Operational checklist for planning or making repo changes.
-  - `repo-backlog.md`: Backlog of repo buildout and cleanup work.
   - `decision-log.md`: Durable decisions and rationale.
+  - **`repo-governance/`**: Repo purpose, structure, file inventory, editing rules, change checklist, and cleanup backlog.
+    - `repo-purpose.md`: Defines why the repo exists and what good repo health means.
+    - `repo-structure.md`: Defines structural philosophy, folder responsibilities, and anti-duplication rules.
+    - `repo-file-map.md`: Central current inventory of repo folders and durable files.
+    - `repo-change-checklist.md`: Operational checklist for planning or making repo changes.
+    - `repo-editing-rules.md`: Defines safe direct GitHub editing behavior.
+    - `repo-backlog.md`: Backlog of repo buildout and cleanup work.
   - **`claim-control/`**: Controls claims, evidence, validation language, and claim-safety discipline.
     - `claim-control-system.md`: Rules for judging and controlling claims.
     - `claim-control-log.md`: Log of claim decisions and evidence status.
@@ -213,9 +214,9 @@ Conventions:
 
 - **Default entry point**: `ai-context/start-here.md`
 - **Top-level routing map**: `ai-context/context-map.md`
-- **Repo governance entry points**: `ai-context/repo-purpose.md`, `ai-context/repo-structure.md`, `ai-context/repo-file-map.md`, `ai-context/repo-change-checklist.md`
+- **Repo governance entry points**: `ai-context/repo-governance/repo-purpose.md`, `ai-context/repo-governance/repo-structure.md`, `ai-context/repo-governance/repo-file-map.md`, `ai-context/repo-governance/repo-change-checklist.md`
 - **Source-of-truth authority entry points**: `ai-context/current-state.md`, `ai-context/source-of-truth-rules.md`, `ai-context/ai-operating-mode.md`
-- **Doc and repo-edit workflow entry points**: `ai-context/doc-creation-rules.md`, `ai-context/repo-editing-rules.md`
+- **Doc and repo-edit workflow entry points**: `ai-context/doc-creation-rules.md`, `ai-context/repo-governance/repo-editing-rules.md`
 - **Claim-control entry point**: `ai-context/claim-control/claim-control-system.md`
 
 ## Notes for future updates

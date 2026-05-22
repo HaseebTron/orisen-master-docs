@@ -62,14 +62,14 @@ For source-of-truth doc creation or revision, also include:
 
 For direct GitHub file edits or repo-edit planning, also include:
 
-- `ai-context/repo-editing-rules.md`
+- `ai-context/repo-governance/repo-editing-rules.md`
 
 For repo structure, repo cleanup, file moves, file inventory, folder organization, or repo-governance work, also include:
 
-- `ai-context/repo-purpose.md`
-- `ai-context/repo-structure.md`
-- `ai-context/repo-file-map.md`
-- `ai-context/repo-change-checklist.md`
+- `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-structure.md`
+- `ai-context/repo-governance/repo-file-map.md`
+- `ai-context/repo-governance/repo-change-checklist.md`
 
 For evidence, validation, product claims, marketing claims, fundraising claims, or technical claim support, also include:
 
@@ -95,14 +95,14 @@ Full reference pack:
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/ai-operating-mode.md`
 - `ai-context/doc-creation-rules.md`
-- `ai-context/repo-editing-rules.md`
-- `ai-context/repo-purpose.md`
-- `ai-context/repo-structure.md`
-- `ai-context/repo-file-map.md`
-- `ai-context/repo-change-checklist.md`
+- `ai-context/repo-governance/repo-editing-rules.md`
+- `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-structure.md`
+- `ai-context/repo-governance/repo-file-map.md`
+- `ai-context/repo-governance/repo-change-checklist.md`
 - `ai-context/project-routing.md`
 - `ai-context/context-map.md`
-- `ai-context/repo-backlog.md`
+- `ai-context/repo-governance/repo-backlog.md`
 - `ai-context/decision-log.md`
 - `product/product-context-map.md`
 - `product/product-overview.md`
@@ -140,14 +140,14 @@ Software docs describe implementation reality. They should not shrink the full p
 
 If software work creates or changes source-of-truth docs, read `ai-context/doc-creation-rules.md`.
 
-If software work directly edits GitHub files or plans repo edits, read `ai-context/repo-editing-rules.md`.
+If software work directly edits GitHub files or plans repo edits, read `ai-context/repo-governance/repo-editing-rules.md`.
 
 If software work changes repo structure, docs, context maps, or file organization, read the repo-governance docs:
 
-- `ai-context/repo-purpose.md`
-- `ai-context/repo-structure.md`
-- `ai-context/repo-file-map.md`
-- `ai-context/repo-change-checklist.md`
+- `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-structure.md`
+- `ai-context/repo-governance/repo-file-map.md`
+- `ai-context/repo-governance/repo-change-checklist.md`
 
 If software work affects product claims, validation, reliability promises, or public-facing capability statements, read `ai-context/claim-control/claim-control-system.md`.
 
@@ -294,23 +294,23 @@ Use when the question affects repo purpose, repo organization, source-of-truth s
 
 Start with:
 
-- `ai-context/repo-purpose.md`
-- `ai-context/repo-structure.md`
-- `ai-context/repo-file-map.md`
-- `ai-context/repo-change-checklist.md`
+- `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-structure.md`
+- `ai-context/repo-governance/repo-file-map.md`
+- `ai-context/repo-governance/repo-change-checklist.md`
 - `ai-context/doc-creation-rules.md`
-- `ai-context/repo-editing-rules.md`
+- `ai-context/repo-governance/repo-editing-rules.md`
 
 Also include the Orisen General minimal baseline.
 
 For repo edits, remember:
 
-- `repo-purpose.md` explains why the repo exists.
-- `repo-structure.md` explains structural logic and folder responsibilities.
-- `repo-file-map.md` is the only durable repo-wide file inventory.
-- `repo-change-checklist.md` is the operational checklist before changing files.
+- `ai-context/repo-governance/repo-purpose.md` explains why the repo exists.
+- `ai-context/repo-governance/repo-structure.md` explains structural logic and folder responsibilities.
+- `ai-context/repo-governance/repo-file-map.md` is the only durable repo-wide file inventory.
+- `ai-context/repo-governance/repo-change-checklist.md` is the operational checklist before changing files.
 
-Folder context maps and domain docs should not maintain their own complete file trees. They should reference `ai-context/repo-file-map.md` when the current structure matters.
+Folder context maps and domain docs should not maintain their own complete file trees. They should reference `ai-context/repo-governance/repo-file-map.md` when the current structure matters.
 
 ### Product questions
 
@@ -496,7 +496,7 @@ When using this repo as context after project/chat/refresh/handoff routing:
 5. Use the full reference pack only when the task requires broad context.
 6. Read `ai-context/current-state.md`, `ai-context/source-of-truth-rules.md`, and `ai-context/ai-operating-mode.md` for any important decision if they were not already included.
 7. Read `ai-context/doc-creation-rules.md` for source-of-truth doc creation, editing, review, or promotion.
-8. Read `ai-context/repo-editing-rules.md` for direct GitHub file edits or repo-edit planning.
+8. Read `ai-context/repo-governance/repo-editing-rules.md` for direct GitHub file edits or repo-edit planning.
 9. Read the repo-governance docs for repo structure, cleanup, file organization, or context-map work.
 10. Read `ai-context/claim-control/claim-control-system.md` for validation, claims, evidence strength, marketing, fundraising, or technical support questions.
 11. If docs conflict, apply `ai-context/source-of-truth-rules.md`.
@@ -513,11 +513,11 @@ The first stable docs are:
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/ai-operating-mode.md`
 - `ai-context/doc-creation-rules.md`
-- `ai-context/repo-editing-rules.md`
-- `ai-context/repo-purpose.md`
-- `ai-context/repo-structure.md`
-- `ai-context/repo-file-map.md`
-- `ai-context/repo-change-checklist.md`
+- `ai-context/repo-governance/repo-editing-rules.md`
+- `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-structure.md`
+- `ai-context/repo-governance/repo-file-map.md`
+- `ai-context/repo-governance/repo-change-checklist.md`
 - `product/product-context-map.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
@@ -534,14 +534,14 @@ The current routing and workflow docs are:
 - `ai-context/project-routing.md`
 - `ai-context/handoff-rules.md`
 - `ai-context/context-map.md`
-- `ai-context/repo-backlog.md`
+- `ai-context/repo-governance/repo-backlog.md`
 - `ai-context/decision-log.md`
 
 The current repo-governance docs are:
 
-- `ai-context/repo-purpose.md`
-- `ai-context/repo-structure.md`
-- `ai-context/repo-file-map.md`
-- `ai-context/repo-change-checklist.md`
+- `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-structure.md`
+- `ai-context/repo-governance/repo-file-map.md`
+- `ai-context/repo-governance/repo-change-checklist.md`
 
 Many folder-specific docs may not exist yet. When missing, create them deliberately rather than guessing that they already exist.

@@ -14,7 +14,7 @@ This file does not maintain this folder's file inventory.
 
 For the current repo-wide file map, see:
 
-- `ai-context/repo-file-map.md`
+- `ai-context/repo-governance/repo-file-map.md`
 
 This context map should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
 
@@ -270,5 +270,5 @@ Escalate to Orisen General when a software decision affects:
 
 - This context map intentionally references `HaseebTron/Orisen` because implementation details should remain close to the code.
 - Copied software snapshot docs may be useful for cross-project context, but they should not be treated as the live implementation source of truth.
-- Use `ai-context/repo-file-map.md` for the current inventory of copied software snapshot docs in this repo.
+- Use `ai-context/repo-governance/repo-file-map.md` for the current inventory of copied software snapshot docs in this repo.
 - Software implementation reality should inform product decisions, but it should not silently redefine company truth, product positioning, customer promise, or public claims.
