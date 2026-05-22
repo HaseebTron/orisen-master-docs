@@ -130,6 +130,9 @@ Purpose:
 
 Known key files:
 
+- `product/product-context-map.md`
+  - Product-specific context-loading map.
+
 - `product/product-overview.md`
   - Product direction and product-level truth.
 
@@ -141,11 +144,6 @@ Known key files:
 
 - `product/roadmap.md`
   - Roadmap and product sequencing.
-
-Potential future file:
-
-- `product/product-context-map.md`
-  - Product-specific context-loading map if product docs become broad enough to justify it.
 
 ## `marketing/`
 
