@@ -448,3 +448,36 @@ Useful validation methods:
 - Keep target-customer conclusions evidence-led.
 - Do not use this file to define channel-specific marketing strategy.
 - Downstream marketing docs may translate this customer truth into positioning, messaging, X content, and posting strategy, but those docs should not change the customer truth without new evidence.
+
+## Appendix: Source weighting for this doc
+
+This table records how strongly each upstream file should influence future updates to this file.
+
+Sort order:
+
+1. Use strength
+2. Evidence value
+3. Authority value
+
+| File | Read? | Use strength | Evidence value | Authority value | Main use in this file | Caution |
+|---|---:|---|---|---|---|---|
+| `research/customer-interviews/2024-alarm-clock-interviews.md` | Yes | Very high | Very high | Medium | Best source for early customer pain patterns: repeated wake-up failure, getting out of bed, many alarms, phone failure mode, camera discomfort. | Small convenience sample. Do not make demographic or statistical conclusions. |
+| `product/old-mvp/old-mvp.md` | Yes | Very high | High | Medium | Shows what customer behavior the prototype actually addressed: staying in bed, returning to bed, bypassing normal alarm shutoff. | Historical prototype, not current product spec or broad validation. |
+| `product/old-mvp/old-mvp-user-feedback.md` | Yes | Very high | High | Medium | Shows testers valued wake completion and still wanted less brutal wake-ups. Good for understanding high-pain users. | Founder-reported, small sample, no broad willingness-to-pay proof. |
+| `product/claims-and-evidence.md` | Yes | Very high | Medium | Very high | Final boundary for what can safely be concluded and said. Prevents overclaiming from source evidence. | Should constrain claims, but should not replace source evidence for customer detail. |
+| `product/old-mvp/old-mvp-test-row-labels.md` | Yes | High | High | Medium-low | Useful for seeing whether the product changed bed-exit timing, not just alarm interaction. | Small, messy pilot data. Use directionally. |
+| `product/old-mvp/old-mvp-bypass-and-failure-notes.md` | Yes | High | High | Medium-low | Useful for defining users with bypass behavior: unplugging, pre-alarm shutoff, loopholes, returning to bed. | More product/failure-mode focused than customer-segment focused. |
+| `research/external-research/waking-up/synthesis.md` | Yes | High | Medium-high | Medium | Supports the broader problem frame: wake-up is not always a clean one-step event; snoozing, delayed bed exit, oversleeping, and missed obligations exist. | External research supports problem framing, not Orisen efficacy or customer willingness to pay. |
+| `ai-context/claim-control/claim-control-log.md` | Yes | High | Medium-high | High | Useful evidence ledger summarizing what each evidence source supports and does not support. | Compressed summary. Good for safety, less good for nuance. |
+| `ai-context/claim-control/claim-control-system.md` | Yes | High | Low | High | Defines how to classify evidence strength and avoid turning weak signals into facts. | Rules file, not customer evidence. |
+| `ai-context/source-of-truth-rules.md` | Yes | High | Low | High | Tells how to resolve conflicts and separate assumptions from evidence. | Rules file, not evidence. |
+| `research/expert-commentary/expert-commentary-synthesis.md` | Yes | Medium-high | Medium | Medium | Supports investigating young adults, rigid-schedule users, repeated snoozers, return-to-bed users, and shift workers. Adds caution around grogginess and sleep inertia. | Expert commentary does not prove ICP, market size, or efficacy. |
+| `product/product-overview.md` | Yes | Medium-high | Low-medium | High | Keeps target customer aligned with the product wedge: wake completion, non-contact intervention, not passive tracking. | Product framing should not override evidence about who actually has pain. |
+| `ai-context/current-state.md` | Yes | Medium | Low | Very high | Alignment check: make sure this file does not drift away from current company direction. | Do not treat it as evidence. It is partly a prior synthesis/decision doc. |
+| `ai-context/ai-operating-mode.md` | Yes | Medium | Low | Medium | Keeps the assistant non-agreeable and evidence-disciplined. | Process file, not content. |
+| `ai-context/doc-creation-rules.md` | Yes | Medium | Low | Medium | Helps structure the doc properly and label assumptions. | Process file, not evidence. |
+| `product/product-read-rules.md` | Yes | Medium | Low | Medium | Helps choose which product docs to read. | Routing file, not content. |
+| `marketing/post-performance-log.md` | Maybe | Medium-low | Medium-low | Low | Useful as an early signal that founder-led messaging around the wake-up problem resonated. | Marketing performance does not prove ICP, product-market fit, willingness to pay, or target market. |
+| `product/product-questions-and-objections.md` | Maybe | Medium-low | Low-medium | Medium-low | Useful for edge-case customer objections around override, anti-bypass, and user trust. | Working question log, not target-customer evidence. |
+| `research/external-research/competitors-and-substitutes/synthesis.md` | Maybe | Low for now | Low currently | Low | May eventually help identify what people already try and where alternatives fail. | Not synthesized yet, so it should not strongly influence this file right now. |
+| `ai-context/repo-governance/repo-editing-rules.md` | Yes, before editing | Low content / high process | Low | Medium | Required for safe direct GitHub editing. | Not relevant to target-customer conclusions. |
