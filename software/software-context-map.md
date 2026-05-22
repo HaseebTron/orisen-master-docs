@@ -8,6 +8,16 @@ Use it to decide which software docs to read for firmware, app, backend, cloud, 
 
 This file does not replace software source-of-truth docs. It points ChatGPT projects and human readers to the right software context.
 
+## File inventory rule
+
+This file does not maintain this folder's file inventory.
+
+For the current repo-wide file map, see:
+
+- `ai-context/repo-file-map.md`
+
+This context map should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
+
 ## Implementation source repo
 
 Detailed software implementation source of truth lives primarily in:
@@ -256,21 +266,9 @@ Escalate to Orisen General when a software decision affects:
 - Pricing or launch readiness
 - Fundraising narrative
 
-## Current stable software docs in this repo
-
-Currently stable software docs in this repo:
-
-- `software/software-context-map.md`
-
-Copied software snapshot docs currently in this repo include:
-
-- `software/p1-overview.md`
-- `software/p2-mvp-scope.md`
-
-The detailed implementation source of truth currently lives primarily in `HaseebTron/Orisen`.
-
-## Notes
+## Software interpretation rules
 
 - This context map intentionally references `HaseebTron/Orisen` because implementation details should remain close to the code.
 - Copied software snapshot docs may be useful for cross-project context, but they should not be treated as the live implementation source of truth.
-- Fill this file with more exact links if key software docs are copied or summarized into this master-docs repo later.
+- Use `ai-context/repo-file-map.md` for the current inventory of copied software snapshot docs in this repo.
+- Software implementation reality should inform product decisions, but it should not silently redefine company truth, product positioning, customer promise, or public claims.
