@@ -14,7 +14,7 @@ Downstream docs:
 - `ai-context/repo-governance/repo-file-map.md`
 - `ai-context/repo-governance/repo-change-checklist.md`
 - `ai-context/context-map.md`
-- Folder context maps
+- Folder read-rules files
 - Domain docs
 
 ## Purpose
@@ -115,7 +115,7 @@ The current repo-wide file inventory belongs in:
 
 - `ai-context/repo-governance/repo-file-map.md`
 
-Folder context maps and folder overview docs should not maintain their own complete file trees.
+Folder read-rules files and folder overview docs should not maintain their own complete file trees.
 
 They may explain:
 
@@ -136,11 +136,11 @@ They create extra maintenance because every file rename, move, or deletion may r
 
 The repo should have one central file inventory so structure updates have one place to land.
 
-## Context maps versus file maps
+## Read-rules files versus file maps
 
-Context maps and file maps have different jobs.
+Read-rules files and file maps have different jobs.
 
-A context map answers:
+A read-rules file answers:
 
 - What should GPT read for this kind of task?
 - What is the minimal baseline?
@@ -154,11 +154,11 @@ A file map answers:
 - What is each file's short purpose?
 - Which docs are entry points?
 
-Do not turn context maps into file inventories.
+Do not turn read-rules files into file inventories.
 
-## Recommended folder-context-map behavior
+## Recommended folder read-rules behavior
 
-A folder context map should usually include:
+A folder read-rules file should usually include:
 
 - purpose of the folder
 - governing upstream docs
@@ -168,7 +168,7 @@ A folder context map should usually include:
 - escalation rules to Orisen General
 - note pointing to `ai-context/repo-governance/repo-file-map.md` for current structure
 
-A folder context map should avoid:
+A folder read-rules file should avoid:
 
 - complete folder file trees
 - duplicate explanations of repo-wide structure
@@ -206,7 +206,7 @@ Use nesting when it improves routing or authority clarity. Do not nest only to m
 Create a new folder only when:
 
 - the topic has recurring work
-- the topic needs its own context map or stable docs
+- the topic needs its own read-rules file or stable docs
 - mixing it into another folder would create confusion
 - the folder has a clear authority boundary
 - future GPT sessions would benefit from targeted context loading
@@ -231,7 +231,7 @@ When files are added, moved, renamed, or deleted, update:
 
 - `ai-context/repo-governance/repo-file-map.md` if the file inventory changes
 - `ai-context/context-map.md` if context-loading rules change
-- relevant folder context maps if task reading paths change
+- relevant folder read-rules files if task reading paths change
 - `ai-context/decision-log.md` if the change reflects a durable decision
 
 Do not update every doc automatically. Update only docs that become stale, incomplete, or contradictory.

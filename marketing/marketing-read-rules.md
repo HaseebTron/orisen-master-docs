@@ -1,8 +1,8 @@
-# Marketing Context Map
+# Marketing Read Rules
 
 ## Purpose of this file
 
-This file is the routing map for the `marketing/` folder.
+This file defines how to read, route, and interpret docs in the `marketing/` folder.
 
 Use it to decide which marketing docs to read for messaging, positioning, content, channel strategy, GTM, customer language, launch, waitlist growth, and founder-led marketing questions.
 
@@ -16,7 +16,7 @@ For the current repo-wide file map, see:
 
 - `ai-context/repo-governance/repo-file-map.md`
 
-This context map should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
+This read-rules file should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
 
 ## Always read first
 
@@ -51,7 +51,7 @@ Marketing docs should translate product truth into compelling external messaging
 
 If a marketing chat later asks a more specific marketing question than the initial baseline docs covered, expand context inside the same chat instead of rerunning the full boot workflow.
 
-Before answering, read this context map and the most relevant task-specific docs below.
+Before answering, read this read-rules file and the most relevant task-specific docs below.
 
 State which extra files were read when the context expansion is meaningful.
 
@@ -191,7 +191,7 @@ Read:
 - `marketing/content-pillars.md` if it exists
 - `marketing/founder-led-content.md` if it exists
 - `marketing/positioning-and-messaging.md`
-- `fundraising/fundraising-context-map.md` if the post targets investors
+- `fundraising/fundraising-read-rules.md` if the post targets investors
 - `ai-context/claim-control/claim-control-system.md` if traction or validation is mentioned
 - `ai-context/claim-control/claim-control-log.md` if prior claim decisions matter
 
@@ -258,7 +258,7 @@ Read:
 - `marketing/launch-plan.md` if it exists
 - `marketing/waitlist-conversion.md` if it exists
 - `marketing/positioning-and-messaging.md`
-- `business/business-context-map.md` if it exists and pricing or business model matters
+- `business/business-read-rules.md` if it exists and pricing or business model matters
 - `product/target-customer.md`
 - `product/claims-and-evidence.md`
 

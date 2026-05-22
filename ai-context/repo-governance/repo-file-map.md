@@ -9,7 +9,7 @@ Governing docs:
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/context-map.md`
 Downstream docs:
-- Folder context maps
+- Folder read-rules files
 - Repo cleanup tasks
 - Repo integrity checks
 
@@ -25,7 +25,7 @@ For the logic behind the structure, use `ai-context/repo-governance/repo-structu
 
 This is the only durable place where the repo-wide file inventory should be maintained.
 
-Folder context maps, folder overview docs, and domain docs should not maintain their own complete file trees. They should reference this file when the current structure matters.
+Folder read-rules files, folder overview docs, and domain docs should not maintain their own complete file trees. They should reference this file when the current structure matters.
 
 ## Maintenance rule
 
@@ -64,7 +64,7 @@ Conventions:
 - Raw files can have very short descriptions.
 - Do not deeply summarize raw content here. The file map only identifies what exists and why it is stored.
 - Link files only when it improves human navigation.
-- Do not turn this file into a detailed task-routing map. That belongs in `ai-context/context-map.md` and folder context maps.
+- Do not turn this file into a detailed task-routing map. That belongs in `ai-context/context-map.md` and folder read-rules files.
 
 ## Repo inventory
 
@@ -98,7 +98,7 @@ Conventions:
     - `claim-control-roadmap.md`: Roadmap for improving the claim-control system.
 
 - **`product/`**: Defines product truth, product scope, customer promise, roadmap, target customer, and claims/evidence from a product perspective.
-  - `product-context-map.md`: Product-specific context-loading map.
+  - `product-read-rules.md`: Product-specific reading/routing rules.
   - `product-overview.md`: Product direction and product-level truth.
   - `claims-and-evidence.md`: Product claims and evidence boundaries.
   - `target-customer.md`: First target customer and customer focus.
@@ -110,7 +110,8 @@ Conventions:
     - `old-mvp-bypass-and-failure-notes.md`: Old MVP bypass, failure, and user-behavior notes.
 
 - **`research/`**: Stores customer interviews, expert commentary, external research, raw source material, processed notes, and research synthesis.
-  - `research-context-map.md`: Research-specific context-loading map.
+  - `research-read-rules.md`: Research-specific reading/routing rules.
+  - `research-write-rules.md`: Research writing rules for research docs and synthesis files.
   - **`customer-interviews/`**: Customer interview synthesis and raw customer research.
     - `2024-alarm-clock-interviews.md`: Customer interviews from using the old MVP.
     - **`raw/`**: Raw customer interview and source material.
@@ -155,7 +156,7 @@ Conventions:
 
 - **`marketing/`**: Defines messaging, positioning, customer language, content strategy, channel playbooks, GTM experiments, launch execution, and marketing performance learnings.
   - `README.md`: Marketing folder overview.
-  - `marketing-context-map.md`: Marketing-specific context-loading map.
+  - `marketing-read-rules.md`: Marketing-specific reading/routing rules.
   - `positioning-and-messaging.md`: Core marketing positioning and messaging.
   - `post-performance-log.md`: Founder-led marketing post and campaign performance log.
   - Potential future files:
@@ -169,7 +170,7 @@ Conventions:
     - `reddit-research.md`: Reddit research and community notes.
 
 - **`fundraising/`**: Defines investor narrative, fundraising strategy, pitch framing, outreach, traction framing, and investor-specific communication.
-  - `fundraising-context-map.md`: Fundraising-specific context-loading map.
+  - `fundraising-read-rules.md`: Fundraising-specific reading/routing rules.
   - `investor-narrative.md`: Core investor narrative.
   - `investor-crm.md`: Investor CRM and investor relationship tracking.
   - `outreach-email-accounts.md`: Fundraising outreach email account setup and notes.
@@ -180,13 +181,13 @@ Conventions:
 
 - **`software/`**: Defines software context at the master-docs level and routes to active implementation docs in the software repo.
   - `README.md`: Software folder overview.
-  - `software-context-map.md`: Software-specific context-loading map and links to active software implementation docs.
+  - `software-read-rules.md`: Software-specific reading/routing rules and links to active software implementation docs.
   - `p1-overview.md`: Software project overview snapshot.
   - `p2-mvp-scope.md`: Software MVP scope snapshot.
   - Note: Detailed implementation docs may live in the active Orisen Software repo, not necessarily this master docs repo.
 
 - **`radar-ml/`**: Defines radar module decisions, vital-sign extraction, sleep-stage modeling, intervention-loop research, datasets, technical validation, and research interpretation.
-  - `radar-ml-context-map.md`: Radar/ML-specific context-loading map.
+  - `radar-ml-read-rules.md`: Radar/ML-specific reading/routing rules.
   - Potential future files:
     - `radar-module-decision.md`: Radar module selection and tradeoff decisions.
     - `vital-signs-pipeline.md`: Vital-sign, RRV, HRV, and movement extraction strategy.
@@ -197,7 +198,7 @@ Conventions:
 
 - **`hardware/`**: Defines physical product architecture, sensing placement, enclosure, power, audio/light, manufacturing, reliability, and hardware tradeoffs.
   - Potential future files:
-    - `hardware-context-map.md`: Hardware-specific context-loading map.
+    - `hardware-read-rules.md`: Hardware-specific reading/routing rules.
     - `hardware-overview.md`: Hardware architecture overview.
     - `sensor-decisions.md`: Sensor selection and placement decisions.
     - `manufacturing-notes.md`: Manufacturing, sourcing, and DFM notes.
@@ -205,7 +206,7 @@ Conventions:
 
 - **`business/`**: Defines business model, pricing, competitors, market assumptions, partnerships, operations, and revenue strategy.
   - Potential future files:
-    - `business-context-map.md`: Business-specific context-loading map.
+    - `business-read-rules.md`: Business-specific reading/routing rules.
     - `business-model.md`: Business model and revenue logic.
     - `pricing.md`: Pricing assumptions and strategy.
     - `competitors.md`: Competitor analysis.
@@ -225,6 +226,6 @@ Conventions:
 
 This file should stay useful but not overly detailed.
 
-Do not turn it into a full duplicate of every folder's context map. Its job is to show what exists and where to find it, not to define every task-specific reading path.
+Do not turn it into a full duplicate of every folder's read-rules file. Its job is to show what exists and where to find it, not to define every task-specific reading path.
 
 When a folder has many raw files, list them individually only if they are durable `.md` files. Keep raw-file descriptions short so this remains an inventory, not a synthesis.

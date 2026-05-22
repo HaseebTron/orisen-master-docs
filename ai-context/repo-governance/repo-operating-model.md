@@ -14,7 +14,7 @@ Downstream docs:
 - `ai-context/repo-governance/repo-change-checklist.md`
 - `ai-context/repo-governance/repo-editing-rules.md`
 - `ai-context/repo-governance/local-repo-codex-workflow.md`
-- Folder context maps
+- Folder read-rules files
 
 ## Purpose
 
@@ -36,7 +36,7 @@ It does this through five connected mechanisms:
 4. safe derivation of downstream docs
 5. safe repo editing
 
-No single file does all of this. The operating model is the combination of `start-here.md`, `context-map.md`, source-of-truth rules, doc creation rules, repo-governance docs, folder context maps, and domain docs.
+No single file does all of this. The operating model is the combination of `start-here.md`, `context-map.md`, source-of-truth rules, doc creation rules, repo-governance docs, folder read-rules files, and domain docs.
 
 ## Smart booting
 
@@ -64,9 +64,9 @@ It separates:
 - task-specific docs
 - escalation rules
 
-Folder context maps extend this behavior inside specific domains like product, research, marketing, fundraising, software, and radar/ML.
+Folder read-rules files extend this behavior inside specific domains like product, research, marketing, fundraising, software, and radar/ML.
 
-A context map should answer: What should GPT read for this task?
+A read-rules file should answer: What should GPT read for this task?
 
 It should not become a duplicate file inventory. The current file inventory belongs in `ai-context/repo-governance/repo-file-map.md`.
 
@@ -151,7 +151,7 @@ Search for old paths, filenames, folder paths, and obvious human-readable names.
 
 Then update live references, preserve intentional historical references, and report what changed.
 
-## File map versus context map
+## File map versus routing rules
 
 The repo uses two different map types.
 
@@ -161,7 +161,7 @@ The repo uses two different map types.
 - Where are they?
 - What is each file's short purpose?
 
-`context-map.md` and folder context maps answer:
+`context-map.md` and folder read-rules files answer:
 
 - What should GPT read for a task?
 - What is the minimal baseline?
@@ -169,7 +169,7 @@ The repo uses two different map types.
 
 Do not merge these jobs.
 
-A file map is inventory. A context map is task routing.
+A file map is inventory. Routing/read-rules docs define task routing.
 
 ## Repo structure logic
 

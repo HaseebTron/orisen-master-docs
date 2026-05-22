@@ -1,8 +1,8 @@
-# Product Context Map
+# Product Read Rules
 
 ## Purpose of this file
 
-This file is the routing map for the `product/` folder.
+This file defines how to read, route, and interpret docs in the `product/` folder.
 
 Use it to decide which product docs to read for a specific product question, product decision, customer promise, feature priority, or roadmap discussion.
 
@@ -16,7 +16,7 @@ For the current repo-wide file map, see:
 
 - `ai-context/repo-governance/repo-file-map.md`
 
-This context map should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
+This read-rules file should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
 
 ## Always read first
 
@@ -133,8 +133,8 @@ Read:
 - `product/roadmap.md`
 - `product/product-overview.md`
 - `product/mvp-scope.md` if it exists
-- `software/software-context-map.md` if implementation reality matters
-- `hardware/hardware-context-map.md` if it exists and hardware constraints matter
+- `software/software-read-rules.md` if implementation reality matters
+- `hardware/hardware-read-rules.md` if it exists and hardware constraints matter
 
 ### User experience and product behavior
 

@@ -420,4 +420,4 @@ Add more detail as the founder provides it:
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
 - `hardware/hardware-overview.md` if created later
-- `radar-ml/radar-ml-context-map.md`
+- `radar-ml/radar-ml-read-rules.md`

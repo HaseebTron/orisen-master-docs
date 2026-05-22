@@ -160,7 +160,7 @@ For multi-file direct GitHub edits, edit in small logical batches.
 Good batches:
 
 - create new folder stubs
-- update routing/context maps
+- update routing/read-rules files
 - update claim-control references
 - update final summary/check
 
@@ -199,7 +199,7 @@ The central file inventory belongs in:
 
 - `ai-context/repo-governance/repo-file-map.md`
 
-Folder context maps and domain docs should explain task-based reading paths, governing docs, and folder purpose. They should not maintain their own complete file inventories unless there is a specific, justified exception.
+Folder read-rules files and domain docs should explain task-based reading paths, governing docs, and folder purpose. They should not maintain their own complete file inventories unless there is a specific, justified exception.
 
 ## Mid-edit error rule
 
@@ -220,7 +220,7 @@ After direct GitHub edits, summarize:
 - files moved, renamed, deleted, or archived
 - files intentionally not touched
 - whether `ai-context/repo-governance/repo-file-map.md` was updated
-- whether context maps were updated
+- whether routing/read-rules files were updated
 - any tool errors or partial failures
 - any follow-up review needed
 

@@ -92,7 +92,7 @@ In the first response, explicitly state one of:
 
 After reading `start-here.md`, follow its instructions.
 
-For software implementation work, follow `software/software-context-map.md` in `HaseebTron/orisen-master-docs`, then read the relevant docs/files from `HaseebTron/Orisen`.
+For software implementation work, follow `software/software-read-rules.md` in `HaseebTron/orisen-master-docs`, then read the relevant docs/files from `HaseebTron/Orisen`.
 
 Use Orisen Software for firmware, app, backend, cloud, Supabase, OTA, BLE onboarding, alarm sync, local alarm execution, wake completion, software architecture, debugging, logs, Git/code tasks, and slice-by-slice implementation.
 

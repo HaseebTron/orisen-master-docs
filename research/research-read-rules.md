@@ -1,8 +1,8 @@
-# Research Context Map
+# Research Read Rules
 
 ## Purpose
 
-This file is the routing map for the `research/` folder.
+This file defines how to read, route, and interpret docs in the `research/` folder.
 
 Use it to decide which research docs to read for customer interviews, external research, expert commentary, market/category research, competitor research, sleep science research, source review, and evidence interpretation.
 
@@ -16,7 +16,15 @@ For the current repo-wide file map, see:
 
 - `ai-context/repo-governance/repo-file-map.md`
 
-This context map should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
+This read-rules file should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
+
+## Writing and synthesis rule
+
+This file defines how to read, route, and interpret research docs.
+
+When writing or updating research docs, especially synthesis files, also follow:
+
+- `research/research-write-rules.md`
 
 ## Always read first for important research work
 
@@ -81,7 +89,7 @@ Read:
 - relevant raw files under `research/customer-interviews/raw/` when exact source material matters
 - `product/claims-and-evidence.md`
 - `ai-context/claim-control/claim-control-system.md`
-- `marketing/marketing-context-map.md` if messaging or customer language matters
+- `marketing/marketing-read-rules.md` if messaging or customer language matters
 
 ### Expert commentary
 
@@ -160,7 +168,7 @@ Read:
 
 - `research/external-research/during-sleep/during-sleep-synthesis.md` if it exists
 - relevant raw during-sleep sources if exact source traceability matters
-- `radar-ml/radar-ml-context-map.md`
+- `radar-ml/radar-ml-read-rules.md`
 - `product/claims-and-evidence.md`
 - `ai-context/claim-control/claim-control-system.md`
 
@@ -176,7 +184,7 @@ Read:
 
 - `research/external-research/sleep-tracking-and-validation/sleep-tracking-and-validation-synthesis.md` if it exists
 - relevant raw sleep-tracking and validation sources if exact source traceability matters
-- `radar-ml/radar-ml-context-map.md`
+- `radar-ml/radar-ml-read-rules.md`
 - `product/claims-and-evidence.md`
 - `ai-context/claim-control/claim-control-system.md`
 
@@ -193,7 +201,7 @@ Read:
 - `research/external-research/competitors-and-substitutes/competitors-and-substitutes-synthesis.md` if it exists
 - relevant raw competitor sources if exact source traceability matters
 - `marketing/positioning-and-messaging.md`
-- `fundraising/fundraising-context-map.md` if investor framing matters
+- `fundraising/fundraising-read-rules.md` if investor framing matters
 
 ### Market and category research
 
@@ -207,8 +215,8 @@ Read:
 
 - `research/external-research/market-and-category/market-and-category-synthesis.md` if it exists
 - relevant raw market/category sources if exact source traceability matters
-- `fundraising/fundraising-context-map.md`
-- `business/business-context-map.md` if it exists
+- `fundraising/fundraising-read-rules.md`
+- `business/business-read-rules.md` if it exists
 
 ## Claims and evidence boundary
 

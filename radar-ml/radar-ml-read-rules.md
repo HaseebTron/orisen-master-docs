@@ -1,8 +1,8 @@
-# Radar and ML Context Map
+# Radar and ML Read Rules
 
 ## Purpose
 
-This file is the routing map for Orisen radar, signal processing, sleep-stage modeling, and intervention-loop work.
+This file defines how to read, route, and interpret docs for Orisen radar, signal processing, sleep-stage modeling, and intervention-loop work.
 
 Use it to decide which docs to read for radar module decisions, vital-sign extraction, movement extraction, datasets, model design, sleep-stage estimation, and artificial sleep phase transitioning experiments.
 
@@ -16,7 +16,7 @@ For the current repo-wide file map, see:
 
 - `ai-context/repo-governance/repo-file-map.md`
 
-This context map should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
+This read-rules file should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
 
 ## Always read first for important radar/ML work
 
@@ -50,7 +50,7 @@ The radar/ML docs should define:
 
 If a radar/ML chat later asks a more specific technical question than the initial baseline docs covered, expand context inside the same chat instead of rerunning the full boot workflow.
 
-Before answering, read this context map and the most relevant task-specific docs below.
+Before answering, read this read-rules file and the most relevant task-specific docs below.
 
 State which extra files were read when the context expansion is meaningful.
 
@@ -71,8 +71,8 @@ Use for questions like:
 Read:
 
 - `radar-ml/radar-module-decision.md` if it exists
-- `hardware/hardware-context-map.md` if it exists and hardware constraints matter
-- `software/software-context-map.md` if firmware integration matters
+- `hardware/hardware-read-rules.md` if it exists and hardware constraints matter
+- `software/software-read-rules.md` if firmware integration matters
 - `product/roadmap.md`
 - `product/claims-and-evidence.md`
 
@@ -91,7 +91,7 @@ Read:
 - `radar-ml/vital-signs-pipeline.md` if it exists
 - `radar-ml/research-notes.md` if it exists
 - `radar-ml/technical-validation.md` if it exists
-- `software/software-context-map.md` if firmware or data logging matters
+- `software/software-read-rules.md` if firmware or data logging matters
 
 ### Sleep-stage modeling
 

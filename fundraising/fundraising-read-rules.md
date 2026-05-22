@@ -1,8 +1,8 @@
-# Fundraising Context Map
+# Fundraising Read Rules
 
 ## Purpose of this file
 
-This file is the routing map for the `fundraising/` folder.
+This file defines how to read, route, and interpret docs in the `fundraising/` folder.
 
 Use it to decide which fundraising docs to read for investor narrative, pitch deck, outreach, traction framing, market story, investor FAQ, fundraising strategy, and investor-specific messaging.
 
@@ -16,7 +16,7 @@ For the current repo-wide file map, see:
 
 - `ai-context/repo-governance/repo-file-map.md`
 
-This context map should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
+This read-rules file should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
 
 ## Always read first
 
@@ -54,7 +54,7 @@ Fundraising docs should explain the size and ambition of Orisen without implying
 
 If a fundraising chat later asks a more specific fundraising question than the initial baseline docs covered, expand context inside the same chat instead of rerunning the full boot workflow.
 
-Before answering, read this context map and the most relevant task-specific docs below.
+Before answering, read this read-rules file and the most relevant task-specific docs below.
 
 State which extra files were read when the context expansion is meaningful.
 
@@ -98,7 +98,7 @@ Read:
 - `product/roadmap.md`
 - `ai-context/claim-control/claim-control-system.md`
 - `ai-context/claim-control/claim-control-log.md`
-- `business/business-context-map.md` if it exists and market, pricing, or business model matters
+- `business/business-read-rules.md` if it exists and market, pricing, or business model matters
 
 ### Traction framing
 
@@ -115,7 +115,7 @@ Read:
 - `ai-context/claim-control/claim-control-system.md`
 - `ai-context/claim-control/claim-control-log.md`
 - `fundraising/investor-narrative.md`
-- `marketing/marketing-context-map.md` if the traction came from marketing activity
+- `marketing/marketing-read-rules.md` if the traction came from marketing activity
 
 Important rule:
 
@@ -155,9 +155,9 @@ Read:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
-- `radar-ml/radar-ml-context-map.md` if radar/ML feasibility matters
-- `software/software-context-map.md` if software progress matters
-- `hardware/hardware-context-map.md` if it exists and hardware readiness matters
+- `radar-ml/radar-ml-read-rules.md` if radar/ML feasibility matters
+- `software/software-read-rules.md` if software progress matters
+- `hardware/hardware-read-rules.md` if it exists and hardware readiness matters
 
 ### Market and business story
 
@@ -170,7 +170,7 @@ Use for questions like:
 
 Read:
 
-- `business/business-context-map.md` if it exists
+- `business/business-read-rules.md` if it exists
 - `fundraising/investor-narrative.md`
 - `product/product-overview.md`
 - `product/target-customer.md`

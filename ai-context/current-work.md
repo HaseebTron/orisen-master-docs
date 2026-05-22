@@ -463,7 +463,7 @@ Completed:
 
 Completed:
 
-- Updated `software/software-context-map.md` to explain that some files in the `software/` folder are copied or synced from the separate software implementation repo.
+- Updated `software/software-read-rules.md` to explain that some files in the `software/` folder are copied or synced from the separate software implementation repo.
 
 ### 2026-05-18 — Added strategic decision-log entries
 

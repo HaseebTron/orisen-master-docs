@@ -9,7 +9,7 @@ Governing docs:
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/ai-operating-mode.md`
 Downstream docs:
-- Folder context maps
+- Folder read-rules files
 - ChatGPT project context-loading workflows
 - Repo integrity checks
 
@@ -127,12 +127,12 @@ Full reference pack:
 - `ai-context/context-map.md`
 - `ai-context/repo-governance/repo-backlog.md`
 - `ai-context/decision-log.md`
-- `product/product-context-map.md`
+- `product/product-read-rules.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
-- `research/research-context-map.md`
+- `research/research-read-rules.md`
 - `ai-context/claim-control/claim-control-log.md`
 - `ai-context/claim-control/claim-control-system.md`
 
@@ -145,7 +145,7 @@ Minimal baseline from this repo:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/ai-operating-mode.md`
-- `software/software-context-map.md`
+- `software/software-read-rules.md`
 
 Full reference pack from this repo:
 
@@ -155,7 +155,7 @@ Full reference pack from this repo:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
-- `software/software-context-map.md`
+- `software/software-read-rules.md`
 
 Then read relevant docs from the active software repo if needed, especially active slice docs, architecture docs, decisions, and coding rules.
 
@@ -165,7 +165,7 @@ If software work creates or changes source-of-truth docs, read `ai-context/doc-c
 
 If software work directly edits GitHub files or plans repo edits, read `ai-context/repo-governance/repo-editing-rules.md`.
 
-If software work changes repo structure, docs, context maps, or file organization, read the repo-governance docs:
+If software work changes repo structure, docs, read-rules files, or file organization, read the repo-governance docs:
 
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/repo-governance/repo-structure.md`
@@ -183,7 +183,7 @@ Minimal baseline:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/ai-operating-mode.md`
-- `radar-ml/radar-ml-context-map.md`
+- `radar-ml/radar-ml-read-rules.md`
 
 Full reference pack:
 
@@ -193,10 +193,10 @@ Full reference pack:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
-- `research/research-context-map.md`
+- `research/research-read-rules.md`
 - `ai-context/claim-control/claim-control-log.md`
 - `ai-context/claim-control/claim-control-system.md`
-- `radar-ml/radar-ml-context-map.md`
+- `radar-ml/radar-ml-read-rules.md`
 
 Escalate to Orisen General before changing public claims around sleep-stage estimation, grogginess reduction, sleep inertia, or artificial sleep phase transitioning.
 
@@ -209,7 +209,7 @@ Minimal baseline:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/ai-operating-mode.md`
-- `marketing/marketing-context-map.md`
+- `marketing/marketing-read-rules.md`
 - `marketing/positioning-and-messaging.md`
 
 Full reference pack:
@@ -220,10 +220,10 @@ Full reference pack:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
-- `research/research-context-map.md`
+- `research/research-read-rules.md`
 - `ai-context/claim-control/claim-control-log.md`
 - `ai-context/claim-control/claim-control-system.md`
-- `marketing/marketing-context-map.md`
+- `marketing/marketing-read-rules.md`
 - `marketing/positioning-and-messaging.md`
 
 Marketing docs must remain downstream from product direction and claims evidence.
@@ -239,7 +239,7 @@ Minimal baseline:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/ai-operating-mode.md`
-- `fundraising/fundraising-context-map.md`
+- `fundraising/fundraising-read-rules.md`
 - `fundraising/investor-narrative.md`
 
 Full reference pack:
@@ -251,10 +251,10 @@ Full reference pack:
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
-- `research/research-context-map.md`
+- `research/research-read-rules.md`
 - `ai-context/claim-control/claim-control-log.md`
 - `ai-context/claim-control/claim-control-system.md`
-- `fundraising/fundraising-context-map.md`
+- `fundraising/fundraising-read-rules.md`
 - `fundraising/investor-narrative.md`
 
 Fundraising docs can be ambitious, but must not overclaim beyond product truth and evidence.
@@ -279,16 +279,16 @@ Full reference pack:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
-- `research/research-context-map.md`
+- `research/research-read-rules.md`
 
 Then read hardware-specific docs when they exist, such as:
 
-- `hardware/hardware-context-map.md`
+- `hardware/hardware-read-rules.md`
 - `hardware/hardware-overview.md`
 - `hardware/sensor-decisions.md`
 - `hardware/manufacturing-notes.md`
 
-If a hardware context map does not exist yet, say so and recommend creating it only when hardware work becomes frequent enough.
+If a hardware read-rules file does not exist yet, say so and recommend creating it only when hardware work becomes frequent enough.
 
 ## Global routing
 
@@ -298,22 +298,22 @@ Use when the question affects product, market, business model, fundraising, posi
 
 Start with the Orisen General minimal baseline, then read only the relevant additional docs. Use the Orisen General full reference pack only for broad strategic reviews or major source-of-truth decisions.
 
-Relevant folder context maps may include:
+Relevant folder read-rules files may include:
 
-- Product: `product/product-context-map.md`
-- Research: `research/research-context-map.md`
-- Marketing: `marketing/marketing-context-map.md`
-- Fundraising: `fundraising/fundraising-context-map.md`
-- Business: `business/business-context-map.md`
-- Hardware: `hardware/hardware-context-map.md`
-- Software: `software/software-context-map.md`
-- Radar + ML: `radar-ml/radar-ml-context-map.md`
+- Product: `product/product-read-rules.md`
+- Research: `research/research-read-rules.md`
+- Marketing: `marketing/marketing-read-rules.md`
+- Fundraising: `fundraising/fundraising-read-rules.md`
+- Business: `business/business-read-rules.md`
+- Hardware: `hardware/hardware-read-rules.md`
+- Software: `software/software-read-rules.md`
+- Radar + ML: `radar-ml/radar-ml-read-rules.md`
 
-If a folder context map does not exist yet, use the available docs in that folder and recommend creating the missing context map only if the workstream is active enough to justify it.
+If a folder read-rules file does not exist yet, use the available docs in that folder and recommend creating the missing read-rules file only if the workstream is active enough to justify it.
 
 ### Repo governance, structure, and cleanup questions
 
-Use when the question affects repo purpose, repo organization, source-of-truth structure, file moves, file naming, folder responsibilities, context maps, repo cleanup, or repo integrity.
+Use when the question affects repo purpose, repo organization, source-of-truth structure, file moves, file naming, folder responsibilities, read-rules files, repo cleanup, or repo integrity.
 
 Start with:
 
@@ -343,7 +343,7 @@ For repo edits, remember:
 - `ai-context/repo-governance/repo-operating-model.md` explains how the repo works as a governed source-of-truth system.
 - `ai-context/repo-governance/local-repo-codex-workflow.md` defines when to use local VS Code, Git, and Codex instead of direct ChatGPT GitHub editing.
 
-Folder context maps and domain docs should not maintain their own complete file trees. They should reference `ai-context/repo-governance/repo-file-map.md` when the current structure matters.
+Folder read-rules files and domain docs should not maintain their own complete file trees. They should reference `ai-context/repo-governance/repo-file-map.md` when the current structure matters.
 
 ### Product questions
 
@@ -351,7 +351,7 @@ Use for questions about what Orisen is, what it should build, what the customer 
 
 Start with:
 
-- `product/product-context-map.md` if it exists
+- `product/product-read-rules.md` if it exists
 
 Important product docs may include:
 
@@ -361,7 +361,7 @@ Important product docs may include:
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
 
-If `product/product-context-map.md` does not exist yet, use the relevant product docs directly.
+If `product/product-read-rules.md` does not exist yet, use the relevant product docs directly.
 
 For product claims or validation status, also read:
 
@@ -369,7 +369,7 @@ For product claims or validation status, also read:
 
 For product questions based on research or customer evidence, also read:
 
-- `research/research-context-map.md`
+- `research/research-read-rules.md`
 
 ### Research questions
 
@@ -377,7 +377,7 @@ Use for questions about customer interviews, raw research, expert commentary, ex
 
 Start with:
 
-- `research/research-context-map.md`
+- `research/research-read-rules.md`
 
 Important research areas may include:
 
@@ -397,7 +397,7 @@ Use for questions about positioning, messaging, customer language, founder-led c
 
 Start with:
 
-- `marketing/marketing-context-map.md`
+- `marketing/marketing-read-rules.md`
 
 Important marketing docs may include:
 
@@ -420,7 +420,7 @@ For public claims, also read:
 
 For customer language or research-backed messaging, also read:
 
-- `research/research-context-map.md`
+- `research/research-read-rules.md`
 
 ### Fundraising questions
 
@@ -428,7 +428,7 @@ Use for questions about investor narrative, pitch deck, outreach, traction frami
 
 Start with:
 
-- `fundraising/fundraising-context-map.md`
+- `fundraising/fundraising-read-rules.md`
 
 Important fundraising docs may include:
 
@@ -445,7 +445,7 @@ For validation, traction, market, or technical claims, also read:
 
 For investor claims based on customer, expert, market, competitor, or external research, also read:
 
-- `research/research-context-map.md`
+- `research/research-read-rules.md`
 
 ### Business questions
 
@@ -453,7 +453,7 @@ Use for questions about business model, pricing, market analysis, competitors, G
 
 Start with:
 
-- `business/business-context-map.md` if it exists
+- `business/business-read-rules.md` if it exists
 
 Important business docs may include:
 
@@ -466,7 +466,7 @@ Business docs may contain assumptions. Separate assumptions from validated facts
 
 For market, category, competitor, or substitute research, also read:
 
-- `research/research-context-map.md`
+- `research/research-read-rules.md`
 
 ### Hardware questions
 
@@ -474,7 +474,7 @@ Use for questions about physical product architecture, sensors, enclosure, manuf
 
 Start with:
 
-- `hardware/hardware-context-map.md` if it exists
+- `hardware/hardware-read-rules.md` if it exists
 
 Important hardware docs may include:
 
@@ -490,9 +490,9 @@ Use for questions about firmware, app, cloud, repo structure, slices, OTA, BLE o
 
 Start with:
 
-- `software/software-context-map.md`
+- `software/software-read-rules.md`
 
-Important implementation docs live in the Orisen Software repo. Follow `software/software-context-map.md` for the exact repo and default entry docs.
+Important implementation docs live in the Orisen Software repo. Follow `software/software-read-rules.md` for the exact repo and default entry docs.
 
 Software docs describe implementation reality. They should not shrink the full product or company vision.
 
@@ -502,7 +502,7 @@ Use for questions about radar module selection, signal extraction, vital signs, 
 
 Start with:
 
-- `radar-ml/radar-ml-context-map.md`
+- `radar-ml/radar-ml-read-rules.md`
 
 Important radar/ML docs may include:
 
@@ -516,7 +516,7 @@ Important radar/ML docs may include:
 For claims, evidence, papers, and validation status, also read:
 
 - `ai-context/claim-control/claim-control-system.md`
-- `research/research-context-map.md`
+- `research/research-read-rules.md`
 
 ## Routing rules for ChatGPT projects
 
@@ -532,7 +532,7 @@ When using this repo as context after project/chat/refresh/handoff routing:
 8. Read `ai-context/repo-governance/repo-editing-rules.md` for direct GitHub file edits or repo-edit planning.
 9. Read `ai-context/repo-governance/local-repo-codex-workflow.md` for broad, risky, reference-heavy, or diff-review-needed repo work.
 10. Read `ai-context/repo-governance/repo-operating-model.md` for broad repo audits, repo logic reviews, AI/context system reviews, or explaining how the repo works.
-11. Read the repo-governance docs for repo structure, cleanup, file organization, or context-map work.
+11. Read the repo-governance docs for repo structure, cleanup, file organization, or read-rules work.
 12. Read `ai-context/claim-control/claim-control-system.md` for validation, claims, evidence strength, marketing, fundraising, or technical support questions.
 13. If docs conflict, apply `ai-context/source-of-truth-rules.md`.
 14. If a needed doc does not exist, say so and recommend creating it only if needed.
@@ -555,12 +555,12 @@ The first stable docs are:
 - `ai-context/repo-governance/repo-structure.md`
 - `ai-context/repo-governance/repo-file-map.md`
 - `ai-context/repo-governance/repo-change-checklist.md`
-- `product/product-context-map.md`
+- `product/product-read-rules.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
-- `research/research-context-map.md`
+- `research/research-read-rules.md`
 - `ai-context/claim-control/claim-control-log.md`
 - `ai-context/claim-control/claim-control-system.md`
 - `ai-context/claim-control/claim-control-roadmap.md`

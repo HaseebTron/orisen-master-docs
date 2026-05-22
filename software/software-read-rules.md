@@ -1,8 +1,8 @@
-# Software Context Map
+# Software Read Rules
 
 ## Purpose
 
-This file is the routing map for Orisen software work.
+This file defines how to read, route, and interpret docs for Orisen software work.
 
 Use it to decide which software docs to read for firmware, app, backend, cloud, device setup, alarm sync, OTA, BLE onboarding, and slice-based implementation questions.
 
@@ -16,7 +16,7 @@ For the current repo-wide file map, see:
 
 - `ai-context/repo-governance/repo-file-map.md`
 
-This context map should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
+This read-rules file should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
 
 ## Implementation source repo
 
@@ -90,7 +90,7 @@ Software docs define implementation reality. They should not redefine company tr
 
 If a software chat later asks a more specific software question than the initial baseline docs covered, expand context inside the same chat instead of rerunning the full boot workflow.
 
-Before answering, read this context map and the most relevant task-specific docs below.
+Before answering, read this read-rules file and the most relevant task-specific docs below.
 
 State which extra files were read when the context expansion is meaningful.
 
@@ -268,7 +268,7 @@ Escalate to Orisen General when a software decision affects:
 
 ## Software interpretation rules
 
-- This context map intentionally references `HaseebTron/Orisen` because implementation details should remain close to the code.
+- This read-rules file intentionally references `HaseebTron/Orisen` because implementation details should remain close to the code.
 - Copied software snapshot docs may be useful for cross-project context, but they should not be treated as the live implementation source of truth.
 - Use `ai-context/repo-governance/repo-file-map.md` for the current inventory of copied software snapshot docs in this repo.
 - Software implementation reality should inform product decisions, but it should not silently redefine company truth, product positioning, customer promise, or public claims.

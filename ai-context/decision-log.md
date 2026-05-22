@@ -120,8 +120,8 @@ Impacted docs:
 - `ai-context/current-state.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
-- `radar-ml/radar-ml-context-map.md`
-- `hardware/hardware-context-map.md` when created
+- `radar-ml/radar-ml-read-rules.md`
+- `hardware/hardware-read-rules.md` when created
 - `marketing/positioning-and-messaging.md`
 
 Implications:
@@ -148,7 +148,7 @@ Impacted docs:
 - `ai-context/current-state.md`
 - `product/product-overview.md`
 - `product/roadmap.md`
-- `software/software-context-map.md`
+- `software/software-read-rules.md`
 - `fundraising/investor-narrative.md`
 
 Implications:
@@ -180,7 +180,7 @@ Impacted docs:
 - `product/roadmap.md`
 - `software/p1-overview.md`
 - `software/p2-mvp-scope.md`
-- `software/software-context-map.md`
+- `software/software-read-rules.md`
 
 Implications:
 - MVP implementation docs should be read as implementation reality, not final product positioning.
@@ -208,7 +208,7 @@ Impacted docs:
 - `ai-context/claim-control/claim-control-log.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
-- `radar-ml/radar-ml-context-map.md`
+- `radar-ml/radar-ml-read-rules.md`
 - `marketing/positioning-and-messaging.md`
 - `fundraising/investor-narrative.md`
 
@@ -246,7 +246,7 @@ Implications:
 
 Open questions:
 - Whether older docs need metadata blocks added manually over time.
-- Whether each folder should later receive a stricter context map and doc template.
+- Whether each folder should later receive a stricter read-rules file and doc template.
 
 ## 2026-05-16 — Evidence standard added
 

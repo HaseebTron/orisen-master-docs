@@ -332,6 +332,6 @@ Future product/software/firmware specs should include:
 - `product/old-mvp.md`
 - `product/old-mvp-test-row-labels.md`
 - `ai-context/claim-control/claim-control-log.md`
-- `software/software-context-map.md`
+- `software/software-read-rules.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`

@@ -259,7 +259,7 @@ For final public claim boundaries, use:
   - `product/target-customer.md`
   - `product/roadmap.md`
   - `research/external-research/research-papers/`
-  - `radar-ml/radar-ml-context-map.md`
+  - `radar-ml/radar-ml-read-rules.md`
 
 ### 2026-05-19 — Benji Ozynski expert commentary on empirical validation, PSG pathway, and intervention uncertainty
 
@@ -296,7 +296,7 @@ For final public claim boundaries, use:
   - `product/target-customer.md`
   - `product/roadmap.md`
   - `research/external-research/research-papers/`
-  - `radar-ml/radar-ml-context-map.md`
+  - `radar-ml/radar-ml-read-rules.md`
 
 ## Supported claim summary
 

@@ -35,7 +35,7 @@ When creating, moving, renaming, deleting, reorganizing, or cleaning up durable 
 - `ai-context/repo-governance/repo-file-map.md` for the central current file inventory.
 - `ai-context/repo-governance/repo-change-checklist.md` for the operational checklist before repo changes.
 
-Do not duplicate repo-wide or folder-level file trees inside folder docs, context maps, or domain docs. The central durable file inventory belongs in `ai-context/repo-governance/repo-file-map.md`.
+Do not duplicate repo-wide or folder-level file trees inside folder docs, read-rules files, or domain docs. The central durable file inventory belongs in `ai-context/repo-governance/repo-file-map.md`.
 
 ## Required pre-draft check
 
@@ -299,7 +299,7 @@ Especially check:
 - validation and claim-control docs
 - marketing docs
 - fundraising docs
-- software/radar/hardware context maps
+- software/radar/hardware read-rules files
 
 For repo structure or repo-governance changes, especially check:
 
@@ -308,7 +308,7 @@ For repo structure or repo-governance changes, especially check:
 - `ai-context/repo-governance/repo-file-map.md`
 - `ai-context/repo-governance/repo-change-checklist.md`
 - `ai-context/context-map.md`
-- relevant folder context maps
+- relevant folder read-rules files
 
 Do not update every file automatically.
 

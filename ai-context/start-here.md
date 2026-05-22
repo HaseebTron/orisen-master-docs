@@ -71,7 +71,7 @@ Follow:
 
 ## Repo governance rule
 
-For repo structure, cleanup, file moves, folder organization, context-map changes, or durable doc inventory work, use the repo-governance docs:
+For repo structure, cleanup, file moves, folder organization, read-rules changes, or durable doc inventory work, use the repo-governance docs:
 
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/repo-governance/repo-structure.md`
@@ -90,13 +90,13 @@ Use `ai-context/repo-governance/repo-file-map.md` for the current durable file i
 
 Use `ai-context/repo-governance/repo-change-checklist.md` before significant repo changes.
 
-Do not duplicate full repo or folder file trees inside folder context maps or domain docs. The central durable file inventory belongs in `ai-context/repo-governance/repo-file-map.md`.
+Do not duplicate full repo or folder file trees inside folder read-rules files or domain docs. The central durable file inventory belongs in `ai-context/repo-governance/repo-file-map.md`.
 
 ## Mandatory repo-edit preflight rule
 
 Before creating, editing, moving, renaming, deleting, or archiving any repo file, the assistant must first tell the user what it read and what it is about to change.
 
-This applies to direct GitHub edits, local Git plans, Codex prompts, branch/PR workflows, repo cleanup tasks, context-map changes, and source-of-truth doc edits.
+This applies to direct GitHub edits, local Git plans, Codex prompts, branch/PR workflows, repo cleanup tasks, read-rules changes, and source-of-truth doc edits.
 
 Before the first write action in a repo-editing task, state:
 
@@ -176,10 +176,10 @@ Run this periodically, especially:
 - after major updates to `ai-context/current-state.md`
 - after major product, claims, roadmap, marketing, fundraising, software, radar/ML, or hardware source-of-truth changes
 - after migrating a large batch of old notes into the repo
-- after major repo structure, file map, context map, or folder organization changes
+- after major repo structure, file map, read-rules, or folder organization changes
 - when a conflict or authority ambiguity is suspected
 
-For a repo integrity check, load the Orisen General full reference pack from `ai-context/context-map.md`, including `ai-context/repo-governance/repo-operating-model.md`, then inspect the relevant folder context maps and stable docs for contradictions.
+For a repo integrity check, load the Orisen General full reference pack from `ai-context/context-map.md`, including `ai-context/repo-governance/repo-operating-model.md`, then inspect the relevant folder read-rules files and stable docs for contradictions.
 
 The goal is not to rewrite everything. The goal is to identify:
 
@@ -208,7 +208,7 @@ When this file is read for a meaningful Orisen task, follow this order before an
 10. If the task creates, edits, reviews, or promotes docs, read `ai-context/doc-creation-rules.md`.
 11. If the task directly edits GitHub files or plans repo edits, read `ai-context/repo-governance/repo-editing-rules.md`.
 12. If the task is broad, risky, reference-heavy, or should be reviewed through local Git diffs, read `ai-context/repo-governance/local-repo-codex-workflow.md`.
-13. If the task involves repo structure, cleanup, file moves, file inventory, folder organization, context-map changes, or repo governance, read `ai-context/repo-governance/repo-purpose.md`, `ai-context/repo-governance/repo-structure.md`, `ai-context/repo-governance/repo-file-map.md`, and `ai-context/repo-governance/repo-change-checklist.md`.
+13. If the task involves repo structure, cleanup, file moves, file inventory, folder organization, read-rules changes, or repo governance, read `ai-context/repo-governance/repo-purpose.md`, `ai-context/repo-governance/repo-structure.md`, `ai-context/repo-governance/repo-file-map.md`, and `ai-context/repo-governance/repo-change-checklist.md`.
 14. If the task is a broad repo audit, repo logic review, AI/context system review, or asks how the repo works as a system, read `ai-context/repo-governance/repo-operating-model.md`.
 15. If the task judges validation, claims, marketing, fundraising, scientific/technical support, or evidence strength, read `ai-context/claim-control/claim-control-system.md`.
 16. Follow `context-map.md` to the correct minimal or full baseline pack and any task-specific docs.
@@ -238,7 +238,7 @@ If the new request needs source-of-truth docs that were not read earlier:
 
 1. Briefly tell the user that the request needs additional source context.
 2. Read `ai-context/context-map.md` if needed.
-3. Read the relevant folder context map and task-specific docs from GitHub.
+3. Read the relevant folder read-rules file and task-specific docs from GitHub.
 4. Read `ai-context/ai-operating-mode.md`, `ai-context/doc-creation-rules.md`, `ai-context/repo-governance/repo-editing-rules.md`, the repo-governance docs, or `ai-context/claim-control/claim-control-system.md` if the request needs them and they were not already read.
 5. State which additional files were read.
 6. Answer using the expanded context.
@@ -251,9 +251,9 @@ If the request changes the purpose of the chat, affects project routing, or sugg
 
 Examples:
 
-- In an Orisen Software chat, if the user moves from OTA to BLE onboarding, read `software/software-context-map.md` and the BLE slice/spec docs from the software repo. Do not rerun the full boot sequence unless the chat is stale or contaminated.
+- In an Orisen Software chat, if the user moves from OTA to BLE onboarding, read `software/software-read-rules.md` and the BLE slice/spec docs from the software repo. Do not rerun the full boot sequence unless the chat is stale or contaminated.
 - In an Orisen Marketing + GTM chat, if the user asks whether a claim is safe, read `product/claims-and-evidence.md`, `ai-context/claim-control/claim-control-log.md`, and `ai-context/claim-control/claim-control-system.md`.
-- In an Orisen Fundraising chat, if the user asks how to frame traction, read `fundraising/fundraising-context-map.md`, `fundraising/investor-narrative.md`, `ai-context/claim-control/claim-control-log.md`, and `ai-context/claim-control/claim-control-system.md`.
+- In an Orisen Fundraising chat, if the user asks how to frame traction, read `fundraising/fundraising-read-rules.md`, `fundraising/investor-narrative.md`, `ai-context/claim-control/claim-control-log.md`, and `ai-context/claim-control/claim-control-system.md`.
 - In Orisen Radar + ML, if the user asks whether a paper supports a product claim, read the relevant radar/ML docs plus `product/claims-and-evidence.md`, `ai-context/claim-control/claim-control-log.md`, and `ai-context/claim-control/claim-control-system.md`.
 - In Orisen General, if the user shifts from project structure to fundraising strategy, expand context by reading fundraising docs. Do not recommend a new chat unless the current chat is long, mixed, or contaminated.
 - In Orisen General, if the user asks to clean up, move, rename, delete, or reorganize repo files, read the repo-governance docs before planning the change.

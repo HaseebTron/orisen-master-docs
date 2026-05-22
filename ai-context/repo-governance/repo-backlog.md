@@ -12,7 +12,7 @@ Governing docs:
 Downstream docs:
 - Future repo cleanup sessions
 - Future source-of-truth doc creation tasks
-- Future folder context-map updates
+- Future folder read-rules updates
 
 ## Purpose
 
@@ -41,11 +41,11 @@ Before acting on a backlog item, check `ai-context/repo-governance/repo-file-map
   - Status: Starter doc created.
   - Needs: More specific sequencing after software, hardware, radar, pilot, and validation progress become clearer.
 
-- [ ] `software/software-context-map.md`
+- [ ] `software/software-read-rules.md`
   - Status: Starter doc created.
   - Needs: Links or summaries from the current Orisen Software repo docs, active slice docs, and implementation status.
 
-- [ ] `radar-ml/radar-ml-context-map.md`
+- [ ] `radar-ml/radar-ml-read-rules.md`
   - Status: Starter doc created.
   - Needs: More detail when radar/ML work becomes active, including radar module decisions, signal-processing docs, model docs, and validation docs.
 
@@ -107,7 +107,7 @@ Do not create these unless the workstream becomes active enough to justify them.
 - [ ] `business/business-model.md`
 - [ ] `business/pricing.md`
 - [ ] `business/competitors.md`
-- [ ] `hardware/hardware-context-map.md`
+- [ ] `hardware/hardware-read-rules.md`
 - [ ] `hardware/hardware-overview.md`
 - [ ] `marketing/customer-language.md`
 - [ ] `marketing/content-pillars.md`

@@ -13,7 +13,7 @@ Downstream docs:
 - `ai-context/repo-governance/repo-structure.md`
 - `ai-context/repo-governance/repo-file-map.md`
 - `ai-context/repo-governance/repo-change-checklist.md`
-- Folder context maps
+- Folder read-rules files
 - Domain source-of-truth docs
 
 ## Purpose

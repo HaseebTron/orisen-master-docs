@@ -124,7 +124,7 @@ Use this checklist for:
 - deleting files
 - renaming files
 - changing context-loading rules
-- updating folder context maps
+- updating folder read-rules files
 - cleaning up repo bloat
 - updating repo structure
 - preparing Codex or GPT to modify repo files
@@ -164,18 +164,18 @@ Read `ai-context/claim-control/claim-control-system.md` when the change affects:
 - technical support for product claims
 - sleep-stage, grogginess, sleep inertia, radar/ML, or intervention claims
 
-Read domain context maps when the change affects that domain:
+Read domain read-rules files when the change affects that domain:
 
-- `software/software-context-map.md`
-- `marketing/marketing-context-map.md`
-- `fundraising/fundraising-context-map.md`
-- `radar-ml/radar-ml-context-map.md`
-- `hardware/hardware-context-map.md` if it exists
-- `business/business-context-map.md` if it exists
-- `product/product-context-map.md` if it exists
-- `research/research-context-map.md` if it exists
+- `software/software-read-rules.md`
+- `marketing/marketing-read-rules.md`
+- `fundraising/fundraising-read-rules.md`
+- `radar-ml/radar-ml-read-rules.md`
+- `hardware/hardware-read-rules.md` if it exists
+- `business/business-read-rules.md` if it exists
+- `product/product-read-rules.md` if it exists
+- `research/research-read-rules.md` if it exists
 
-If a needed context map does not exist, use available docs directly and recommend creating the context map only if the workstream is active enough.
+If a needed read-rules file does not exist, use available docs directly and recommend creating the read-rules file only if the workstream is active enough.
 
 ## Pre-change questions
 
@@ -198,7 +198,7 @@ Before changing the repo, answer:
 - Could this make any existing doc stale or contradictory?
 - Does this require updating `ai-context/repo-governance/repo-file-map.md`?
 - Does this require updating `ai-context/context-map.md`?
-- Does this require updating folder context maps?
+- Does this require updating folder read-rules files?
 - Does this require a decision-log entry?
 - Is this broad, risky, or reference-heavy enough that local repo + Codex should be used?
 - Is this broad enough to require `ai-context/repo-governance/repo-operating-model.md` because it affects repo logic, governance architecture, or how the AI/context system works?
@@ -318,7 +318,7 @@ When moving or renaming files:
 - Update links and references.
 - Update `ai-context/repo-governance/repo-file-map.md`.
 - Update `ai-context/context-map.md` if context-loading paths changed.
-- Update folder context maps if reading paths changed.
+- Update folder read-rules files if reading paths changed.
 - Consider using local Git or Codex for link-search and diff review.
 
 ## Delete or archive checklist
@@ -330,7 +330,7 @@ When deleting or archiving files:
 - Confirm deletion will not remove important decision history.
 - Prefer archiving over deleting when historical context may matter.
 - Update `ai-context/repo-governance/repo-file-map.md`.
-- Update context maps and links.
+- Update read-rules files and links.
 - Use local Git or Codex for broad cleanup.
 
 ## Anti-duplication checklist
@@ -342,9 +342,9 @@ Before adding structure information to any doc, ask:
 - Is this explaining structure logic?
 - Does it belong in `ai-context/repo-governance/repo-structure.md` instead?
 - Is this explaining what to read for a task?
-- Does it belong in `ai-context/context-map.md` or a folder context map instead?
+- Does it belong in `ai-context/context-map.md` or a folder read-rules file instead?
 
-Do not add complete folder file trees to folder context maps or domain docs.
+Do not add complete folder file trees to folder read-rules files or domain docs.
 
 ## Claim and evidence checklist
 
@@ -365,7 +365,7 @@ After repo edits, summarize:
 - files moved, renamed, deleted, or archived
 - files intentionally not touched
 - whether `ai-context/repo-governance/repo-file-map.md` was updated
-- whether context maps were updated
+- whether routing/read-rules files were updated
 - any tool errors or partial failures
 - follow-up review needed
 
@@ -401,7 +401,7 @@ Files intentionally not touched:
 `ai-context/repo-governance/repo-file-map.md` updated:
 - Yes / No / Not needed
 
-Context maps updated:
+Routing/read-rules files updated:
 - Yes / No / Not needed
 
 Tool errors:
