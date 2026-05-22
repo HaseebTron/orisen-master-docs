@@ -64,6 +64,14 @@ For direct GitHub file edits or repo-edit planning, also include:
 
 - `ai-context/repo-governance/repo-editing-rules.md`
 
+For broad, risky, reference-heavy, or diff-review-needed repo work, also include:
+
+- `ai-context/repo-governance/local-repo-codex-workflow.md`
+
+For broad repo audits, explaining how the repo works, evaluating the AI/context system, or checking whether a new doc/folder fits the overall system, also include:
+
+- `ai-context/repo-governance/repo-operating-model.md`
+
 For repo structure, repo cleanup, file moves, file inventory, folder organization, or repo-governance work, also include:
 
 - `ai-context/repo-governance/repo-purpose.md`
@@ -96,6 +104,8 @@ Full reference pack:
 - `ai-context/ai-operating-mode.md`
 - `ai-context/doc-creation-rules.md`
 - `ai-context/repo-governance/repo-editing-rules.md`
+- `ai-context/repo-governance/local-repo-codex-workflow.md`
+- `ai-context/repo-governance/repo-operating-model.md`
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/repo-governance/repo-structure.md`
 - `ai-context/repo-governance/repo-file-map.md`
@@ -303,12 +313,22 @@ Start with:
 
 Also include the Orisen General minimal baseline.
 
+For auditing repo logic, explaining how the repo works, planning broad cleanup, or checking whether the AI/context system makes sense as a system, also read:
+
+- `ai-context/repo-governance/repo-operating-model.md`
+
+For broad, risky, reference-heavy, or diff-review-needed repo work, also read:
+
+- `ai-context/repo-governance/local-repo-codex-workflow.md`
+
 For repo edits, remember:
 
 - `ai-context/repo-governance/repo-purpose.md` explains why the repo exists.
 - `ai-context/repo-governance/repo-structure.md` explains structural logic and folder responsibilities.
 - `ai-context/repo-governance/repo-file-map.md` is the only durable repo-wide file inventory.
 - `ai-context/repo-governance/repo-change-checklist.md` is the operational checklist before changing files.
+- `ai-context/repo-governance/repo-operating-model.md` explains how the repo works as a governed source-of-truth system.
+- `ai-context/repo-governance/local-repo-codex-workflow.md` defines when to use local VS Code, Git, and Codex instead of direct ChatGPT GitHub editing.
 
 Folder context maps and domain docs should not maintain their own complete file trees. They should reference `ai-context/repo-governance/repo-file-map.md` when the current structure matters.
 
@@ -497,11 +517,13 @@ When using this repo as context after project/chat/refresh/handoff routing:
 6. Read `ai-context/current-state.md`, `ai-context/source-of-truth-rules.md`, and `ai-context/ai-operating-mode.md` for any important decision if they were not already included.
 7. Read `ai-context/doc-creation-rules.md` for source-of-truth doc creation, editing, review, or promotion.
 8. Read `ai-context/repo-governance/repo-editing-rules.md` for direct GitHub file edits or repo-edit planning.
-9. Read the repo-governance docs for repo structure, cleanup, file organization, or context-map work.
-10. Read `ai-context/claim-control/claim-control-system.md` for validation, claims, evidence strength, marketing, fundraising, or technical support questions.
-11. If docs conflict, apply `ai-context/source-of-truth-rules.md`.
-12. If a needed doc does not exist, say so and recommend creating it only if needed.
-13. Do not assume old notes or brainstorms are current truth unless promoted into source-of-truth docs.
+9. Read `ai-context/repo-governance/local-repo-codex-workflow.md` for broad, risky, reference-heavy, or diff-review-needed repo work.
+10. Read `ai-context/repo-governance/repo-operating-model.md` for broad repo audits, repo logic reviews, AI/context system reviews, or explaining how the repo works.
+11. Read the repo-governance docs for repo structure, cleanup, file organization, or context-map work.
+12. Read `ai-context/claim-control/claim-control-system.md` for validation, claims, evidence strength, marketing, fundraising, or technical support questions.
+13. If docs conflict, apply `ai-context/source-of-truth-rules.md`.
+14. If a needed doc does not exist, say so and recommend creating it only if needed.
+15. Do not assume old notes or brainstorms are current truth unless promoted into source-of-truth docs.
 
 ## Current repo buildout status
 
@@ -514,6 +536,8 @@ The first stable docs are:
 - `ai-context/ai-operating-mode.md`
 - `ai-context/doc-creation-rules.md`
 - `ai-context/repo-governance/repo-editing-rules.md`
+- `ai-context/repo-governance/local-repo-codex-workflow.md`
+- `ai-context/repo-governance/repo-operating-model.md`
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/repo-governance/repo-structure.md`
 - `ai-context/repo-governance/repo-file-map.md`
@@ -543,5 +567,8 @@ The current repo-governance docs are:
 - `ai-context/repo-governance/repo-structure.md`
 - `ai-context/repo-governance/repo-file-map.md`
 - `ai-context/repo-governance/repo-change-checklist.md`
+- `ai-context/repo-governance/repo-editing-rules.md`
+- `ai-context/repo-governance/local-repo-codex-workflow.md`
+- `ai-context/repo-governance/repo-operating-model.md`
 
 Many folder-specific docs may not exist yet. When missing, create them deliberately rather than guessing that they already exist.
