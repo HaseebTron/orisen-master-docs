@@ -2,13 +2,14 @@
 
 Status: Source of truth
 Authority level: Company / AI context / Repo governance
-Last reviewed: 2026-05-21
+Last reviewed: 2026-05-22
 Governing docs:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/ai-operating-mode.md`
 - `ai-context/doc-creation-rules.md`
 Downstream docs:
+- `ai-context/repo-governance/repo-operating-model.md`
 - `ai-context/repo-governance/repo-structure.md`
 - `ai-context/repo-governance/repo-file-map.md`
 - `ai-context/repo-governance/repo-change-checklist.md`
@@ -21,7 +22,7 @@ This file defines why the Orisen master docs repo exists and what it should help
 
 It should be read when planning repo cleanups, reorganizing docs, creating new source-of-truth files, deciding whether content belongs in the repo, or evaluating whether the repo is becoming bloated or unclear.
 
-This file explains the repo's intent. It does not list the file structure. For structure logic, use `ai-context/repo-governance/repo-structure.md`. For the current file inventory, use `ai-context/repo-governance/repo-file-map.md`.
+This file explains the repo's intent. It does not explain the full operating model or list the file structure. For the repo operating model, use `ai-context/repo-governance/repo-operating-model.md`. For structure logic, use `ai-context/repo-governance/repo-structure.md`. For the current file inventory, use `ai-context/repo-governance/repo-file-map.md`.
 
 ## What this repo is for
 
@@ -150,6 +151,7 @@ Before major Orisen work, GPT should:
 - use `ai-context/ai-operating-mode.md` to reason non-agreeably
 - use `ai-context/doc-creation-rules.md` before creating or editing docs
 - use `ai-context/repo-governance/repo-editing-rules.md` and `ai-context/repo-governance/repo-change-checklist.md` before repo edits
+- use `ai-context/repo-governance/repo-operating-model.md` for broad repo audits, system explanations, and governance architecture reviews
 - use `ai-context/repo-governance/repo-structure.md` for structural logic
 - use `ai-context/repo-governance/repo-file-map.md` for the current file inventory
 
@@ -190,6 +192,7 @@ This file defines the repo's intent.
 
 Use:
 
+- `ai-context/repo-governance/repo-operating-model.md` for the repo's governed source-of-truth operating model
 - `ai-context/repo-governance/repo-structure.md` for structural philosophy and folder responsibilities
 - `ai-context/repo-governance/repo-file-map.md` for the current file inventory
 - `ai-context/repo-governance/repo-change-checklist.md` before changing the repo
