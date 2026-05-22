@@ -2,9 +2,10 @@
 
 Status: Source of truth
 Authority level: Company / AI context / Repo governance
-Last reviewed: 2026-05-21
+Last reviewed: 2026-05-22
 Governing docs:
 - `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-operating-model.md`
 - `ai-context/repo-governance/repo-structure.md`
 - `ai-context/repo-governance/repo-editing-rules.md`
 - `ai-context/repo-governance/local-repo-codex-workflow.md`
@@ -22,6 +23,8 @@ This file is the operational checklist for planning or making changes to the Ori
 Use it when creating, editing, moving, deleting, reorganizing, or cleaning up durable repo docs.
 
 This file does not replace `ai-context/repo-governance/repo-editing-rules.md`. It translates the repo rules into a practical checklist.
+
+For broad repo audits, system explanations, governance architecture reviews, or deciding whether a new doc/folder fits the overall source-of-truth system, use `ai-context/repo-governance/repo-operating-model.md`.
 
 For local VS Code, Git, and Codex workflows, use `ai-context/repo-governance/local-repo-codex-workflow.md`.
 
@@ -142,6 +145,7 @@ Before significant repo changes, read:
 - `ai-context/repo-governance/repo-editing-rules.md`
 - `ai-context/repo-governance/local-repo-codex-workflow.md` when local VS Code, Git, or Codex workflow is involved
 - `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-operating-model.md` when auditing repo logic, explaining how the repo works, or planning broad governance cleanup
 - `ai-context/repo-governance/repo-structure.md`
 - `ai-context/repo-governance/repo-file-map.md`
 - `ai-context/repo-governance/repo-change-checklist.md`
@@ -197,6 +201,7 @@ Before changing the repo, answer:
 - Does this require updating folder context maps?
 - Does this require a decision-log entry?
 - Is this broad, risky, or reference-heavy enough that local repo + Codex should be used?
+- Is this broad enough to require `ai-context/repo-governance/repo-operating-model.md` because it affects repo logic, governance architecture, or how the AI/context system works?
 
 ## Pre-edit scope statement
 
