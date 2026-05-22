@@ -2,7 +2,7 @@
 
 Status: Source of truth
 Authority level: Company / AI context / Repo governance
-Last reviewed: 2026-05-21
+Last reviewed: 2026-05-22
 Governing docs:
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/current-state.md`
@@ -10,6 +10,7 @@ Governing docs:
 - `ai-context/ai-operating-mode.md`
 - `ai-context/doc-creation-rules.md`
 Downstream docs:
+- `ai-context/repo-governance/repo-operating-model.md`
 - `ai-context/repo-governance/repo-file-map.md`
 - `ai-context/repo-governance/repo-change-checklist.md`
 - `ai-context/context-map.md`
@@ -22,7 +23,7 @@ This file explains the organizing logic of the Orisen master docs repo.
 
 It defines how folders should be used, how upstream and downstream docs relate, and how to prevent file-structure duplication across the repo.
 
-This file explains structure philosophy. It should not be treated as the constantly updated file inventory. For the current file and folder map, use `ai-context/repo-governance/repo-file-map.md`.
+This file explains structure philosophy. It should not be treated as the constantly updated file inventory. For the repo operating model, use `ai-context/repo-governance/repo-operating-model.md`. For the current file and folder map, use `ai-context/repo-governance/repo-file-map.md`.
 
 ## Core structural principle
 
@@ -244,5 +245,7 @@ This file does not:
 - replace `ai-context/source-of-truth-rules.md`
 - decide product, marketing, fundraising, software, radar/ML, hardware, or business truth
 - act as a checklist for every repo edit
+
+Use `ai-context/repo-governance/repo-operating-model.md` for the repo's governed source-of-truth operating model.
 
 Use `ai-context/repo-governance/repo-change-checklist.md` for the operational checklist before changing the repo.
