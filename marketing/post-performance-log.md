@@ -16,21 +16,25 @@ Use it to preserve:
 - what was weak or uncertain
 - follow-up content experiments
 
-This file is a marketing learning log. It is not the same as `validation/evidence-log.md`.
+This file is a marketing learning log. It is not the same as `product/claims-and-evidence.md` or the claim-control docs.
 
 ## Relationship to evidence docs
 
 Use this file for detailed marketing analysis and execution learning.
 
-Use `validation/evidence-log.md` for conservative evidence classification and claim boundaries.
+Use these files for conservative evidence classification and claim boundaries:
+
+- `product/claims-and-evidence.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-log.md`
 
 A post can show message resonance, audience interest, or content-channel signal without proving willingness to pay, product-market fit, retention, clinical efficacy, or technical efficacy.
 
 Do not strengthen product, fundraising, or public claims from this file alone. Check:
 
-- `validation/evidence-log.md`
-- `validation/evidence-standard.md`
 - `product/claims-and-evidence.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-log.md`
 
 ## Entry template
 
