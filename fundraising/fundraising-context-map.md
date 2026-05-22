@@ -8,6 +8,16 @@ Use it to decide which fundraising docs to read for investor narrative, pitch de
 
 This file does not replace fundraising source-of-truth docs. It points readers and ChatGPT projects to the right fundraising docs.
 
+## File inventory rule
+
+This file does not maintain this folder's file inventory.
+
+For the current repo-wide file map, see:
+
+- `ai-context/repo-file-map.md`
+
+This context map should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
+
 ## Always read first
 
 For important fundraising work, start with:
@@ -18,7 +28,8 @@ For important fundraising work, start with:
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/roadmap.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-log.md`
 - `fundraising/investor-narrative.md`
 
 Fundraising can be ambitious, but it must stay downstream from product truth, evidence, roadmap reality, and claims boundaries.
@@ -67,7 +78,7 @@ Read:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-system.md`
 
 ### Pitch deck
 
@@ -85,7 +96,8 @@ Read:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-log.md`
 - `business/business-context-map.md` if market, pricing, or business model matters
 
 ### Traction framing
@@ -100,7 +112,8 @@ Use for questions like:
 Read:
 
 - `fundraising/traction.md` if it exists
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-log.md`
 - `fundraising/investor-narrative.md`
 - `marketing/marketing-context-map.md` if the traction came from marketing activity
 
@@ -122,7 +135,8 @@ Read:
 - `fundraising/outreach-strategy.md` if it exists
 - `fundraising/investor-narrative.md`
 - `marketing/positioning-and-messaging.md`
-- `validation/evidence-log.md` if mentioning traction or validation
+- `ai-context/claim-control/claim-control-system.md` if mentioning traction or validation
+- `ai-context/claim-control/claim-control-log.md` if prior claim decisions matter
 
 ### Investor FAQ and objections
 
@@ -161,21 +175,7 @@ Read:
 - `product/product-overview.md`
 - `product/target-customer.md`
 
-## Current stable fundraising docs
-
-Currently stable fundraising docs:
-
-- `fundraising/fundraising-context-map.md`
-- `fundraising/investor-narrative.md`
-
-Planned fundraising docs:
-
-- `fundraising/pitch-deck-notes.md`
-- `fundraising/traction.md`
-- `fundraising/outreach-strategy.md`
-- `fundraising/investor-faq.md`
-
-If a planned doc does not exist yet, use `ai-context/current-state.md`, `product/product-overview.md`, `product/claims-and-evidence.md`, `product/roadmap.md`, `validation/evidence-log.md`, and available fundraising docs, then recommend creating the missing doc if the question requires it.
+If a referenced doc does not exist yet, use the available upstream docs and recommend creating the missing doc only if the task requires it.
 
 ## Fundraising interpretation rules
 

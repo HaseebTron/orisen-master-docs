@@ -8,6 +8,16 @@ Use it to decide which product docs to read for a specific product question, pro
 
 This file does not replace product source-of-truth docs. It points readers and ChatGPT projects to the right product docs.
 
+## File inventory rule
+
+This file does not maintain this folder's file inventory.
+
+For the current repo-wide file map, see:
+
+- `ai-context/repo-file-map.md`
+
+This context map should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
+
 ## Always read first
 
 For important product work, start with:
@@ -98,15 +108,15 @@ Use for questions like:
 Read:
 
 - `product/claims-and-evidence.md`
-- `validation/evidence-standard.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-log.md`
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `product/product-overview.md`
 
 Important rule:
 
-If a claim is not supported by evidence, weaken the wording. Do not let marketing or fundraising imply more than the product and validation docs support.
+If a claim is not supported by evidence, weaken the wording. Do not let marketing or fundraising imply more than the product, claims, and claim-control docs support.
 
 ### Roadmap and feature priority
 
@@ -142,21 +152,7 @@ Read:
 - `product/user-experience.md` if it exists
 - `software/` docs if behavior is already implemented
 
-## Current stable product docs
-
-Currently stable product docs:
-
-- `product/product-overview.md`
-- `product/target-customer.md`
-- `product/claims-and-evidence.md`
-- `product/roadmap.md`
-
-Planned product docs:
-
-- `product/mvp-scope.md`
-- `product/user-experience.md`
-
-If a planned doc does not exist yet, use `product/product-overview.md` and `ai-context/current-state.md`, then recommend creating the missing doc if the question requires it.
+If a referenced doc does not exist yet, use the available upstream docs and recommend creating the missing doc only if the task requires it.
 
 ## Product interpretation rules
 

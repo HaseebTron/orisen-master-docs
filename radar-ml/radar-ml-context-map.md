@@ -8,6 +8,16 @@ Use it to decide which docs to read for radar module decisions, vital-sign extra
 
 This file does not replace product, claims, validation, or engineering docs.
 
+## File inventory rule
+
+This file does not maintain this folder's file inventory.
+
+For the current repo-wide file map, see:
+
+- `ai-context/repo-file-map.md`
+
+This context map should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
+
 ## Always read first for important radar/ML work
 
 For radar/ML work that may affect product claims, roadmap, or fundraising, start with:
@@ -17,7 +27,8 @@ For radar/ML work that may affect product claims, roadmap, or fundraising, start
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-log.md`
 
 ## Radar/ML folder role
 
@@ -63,7 +74,7 @@ Read:
 - `hardware/hardware-context-map.md` if hardware constraints matter
 - `software/software-context-map.md` if firmware integration matters
 - `product/roadmap.md`
-- `validation/evidence-log.md`
+- `product/claims-and-evidence.md`
 
 ### Signal processing and feature extraction
 
@@ -100,7 +111,7 @@ Read:
 - `radar-ml/vital-signs-pipeline.md` if it exists
 - `radar-ml/technical-validation.md` if it exists
 - `product/claims-and-evidence.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-system.md`
 
 ### Paper, repo, and dataset review
 
@@ -139,7 +150,7 @@ Read:
 - `radar-ml/technical-validation.md` if it exists
 - `product/roadmap.md`
 - `product/claims-and-evidence.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-system.md`
 
 ### Technical validation
 
@@ -153,9 +164,12 @@ Use for questions like:
 Read:
 
 - `radar-ml/technical-validation.md` if it exists
-- `validation/evidence-log.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-log.md`
+
+If a referenced doc does not exist yet, use the available upstream docs and recommend creating the missing doc only if the task requires it.
 
 ## Claims boundary
 
@@ -169,29 +183,6 @@ Escalate to Orisen General before changing claims around:
 - Artificial sleep phase transitioning
 - Real-time sleep-state control
 - Clinical or medical claims
-
-## Current status
-
-This is a strengthened starter context map.
-
-Detailed radar/ML docs should be added as the work becomes active.
-
-## Current stable radar/ML docs
-
-Currently stable radar/ML docs:
-
-- `radar-ml/radar-ml-context-map.md`
-
-Planned radar/ML docs:
-
-- `radar-ml/radar-module-decision.md`
-- `radar-ml/vital-signs-pipeline.md`
-- `radar-ml/sleep-stage-model.md`
-- `radar-ml/intervention-loop.md`
-- `radar-ml/research-notes.md`
-- `radar-ml/technical-validation.md`
-
-If a planned doc does not exist yet, use `ai-context/current-state.md`, `product/product-overview.md`, `product/claims-and-evidence.md`, `product/roadmap.md`, `validation/evidence-log.md`, and available radar/ML docs, then recommend creating the missing doc if the question requires it.
 
 ## Radar/ML interpretation rules
 
