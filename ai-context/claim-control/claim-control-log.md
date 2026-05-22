@@ -8,6 +8,20 @@ Use it when evidence affects what Orisen can safely claim in product, marketing,
 
 This file should not duplicate all raw data. Raw data belongs in the relevant source folders.
 
+## Role boundary
+
+This file is the evidence ledger.
+
+It records conservative, claim-relevant evidence entries and explains what each entry supports or does not support.
+
+It does not replace:
+
+- `ai-context/claim-control/claim-control-system.md`, which defines classification rules.
+- `ai-context/claim-control/claim-control-roadmap.md`, which tracks missing evidence and validation priorities.
+- `product/claims-and-evidence.md`, which is the final product/public-claim authority for allowed wording.
+
+Any claim summaries in this file are evidence-derived notes for internal interpretation. For final public wording, use `product/claims-and-evidence.md`.
+
 ## Relationship to source files
 
 For raw evidence, go to the source folders:
@@ -297,7 +311,11 @@ For final public claim boundaries, use:
   - `research/external-research/research-papers/`
   - `radar-ml/radar-ml-read-rules.md`
 
-## Supported claim summary
+## Evidence-derived claim summary
+
+This section summarizes the evidence ledger for internal interpretation.
+
+For final allowed public wording, use `product/claims-and-evidence.md`.
 
 ### Strongest claim today
 
