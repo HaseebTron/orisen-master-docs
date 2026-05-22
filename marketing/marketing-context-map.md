@@ -8,6 +8,16 @@ Use it to decide which marketing docs to read for messaging, positioning, conten
 
 This file does not replace marketing source-of-truth docs. It points readers and ChatGPT projects to the right marketing docs.
 
+## File inventory rule
+
+This file does not maintain this folder's file inventory.
+
+For the current repo-wide file map, see:
+
+- `ai-context/repo-file-map.md`
+
+This context map should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
+
 ## Always read first
 
 For important marketing work, start with:
@@ -65,7 +75,7 @@ Read:
 - `marketing/positioning-and-messaging.md`
 - `product/product-overview.md`
 - `product/target-customer.md`
-- `validation/evidence-log.md`
+- `product/claims-and-evidence.md`
 - `ai-context/current-state.md`
 
 ### Positioning and messaging
@@ -84,7 +94,7 @@ Read:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
-- `validation/evidence-log.md` if the wording makes evidence or validation claims
+- `ai-context/claim-control/claim-control-system.md` if the wording makes evidence or validation claims
 - `ai-context/current-state.md`
 
 Important rule:
@@ -104,7 +114,8 @@ Use for questions like:
 Read:
 
 - `product/claims-and-evidence.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-log.md`
 - `marketing/positioning-and-messaging.md`
 - `product/product-overview.md`
 
@@ -127,7 +138,7 @@ Read:
 - `marketing/customer-language.md` if it exists
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
-- `validation/evidence-log.md` if conversion or claim evidence matters
+- `ai-context/claim-control/claim-control-system.md` if conversion or claim evidence matters
 
 ### Customer language and research
 
@@ -144,7 +155,7 @@ Read:
 - `marketing/reddit-research.md` if it exists
 - `marketing/tiktok-research.md` if it exists
 - `product/target-customer.md`
-- `validation/evidence-log.md`
+- `product/claims-and-evidence.md`
 
 ### Content pillars and founder-led content
 
@@ -181,7 +192,8 @@ Read:
 - `marketing/founder-led-content.md` if it exists
 - `marketing/positioning-and-messaging.md`
 - `fundraising/fundraising-context-map.md` if the post targets investors
-- `validation/evidence-log.md` if traction or validation is mentioned
+- `ai-context/claim-control/claim-control-system.md` if traction or validation is mentioned
+- `ai-context/claim-control/claim-control-log.md` if prior claim decisions matter
 
 ### X / Twitter strategy
 
@@ -248,31 +260,9 @@ Read:
 - `marketing/positioning-and-messaging.md`
 - `business/business-context-map.md` if pricing or business model matters
 - `product/target-customer.md`
-- `validation/evidence-log.md`
+- `product/claims-and-evidence.md`
 
-## Current stable marketing docs
-
-Currently stable marketing docs:
-
-- `marketing/marketing-context-map.md`
-- `marketing/positioning-and-messaging.md`
-
-Planned marketing docs:
-
-- `marketing/marketing-strategy.md`
-- `marketing/customer-language.md`
-- `marketing/content-pillars.md`
-- `marketing/founder-led-content.md`
-- `marketing/gtm.md`
-- `marketing/launch-plan.md`
-- `marketing/waitlist-conversion.md`
-- `marketing/linkedin-playbook.md`
-- `marketing/x-playbook.md`
-- `marketing/tiktok-playbook.md`
-- `marketing/instagram-playbook.md`
-- `marketing/reddit-research.md`
-
-If a planned doc does not exist yet, use `ai-context/current-state.md`, `product/product-overview.md`, `product/target-customer.md`, `product/claims-and-evidence.md`, and available marketing docs, then recommend creating the missing doc if the question requires it.
+If a referenced doc does not exist yet, use the available upstream docs and recommend creating the missing doc only if the task requires it.
 
 ## Marketing interpretation rules
 
