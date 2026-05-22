@@ -54,13 +54,13 @@ The founder said these were the sources used in the pitch deck and that they fel
 Move verified wake-up and snoozing sources into the problem-first external research structure:
 
 - `research/external-research/waking-up/raw/founder-sources.md`
-- `research/external-research/waking-up/waking-up-synthesis.md`
+- `research/external-research/waking-up/synthesis.md`
 - `ai-context/claim-control/claim-control-log.md`, only if the evidence materially affects allowed claims
 - `product/claims-and-evidence.md`, only after source verification and synthesis
 
 Move difficulty-falling-asleep sources into:
 
 - `research/external-research/going-to-sleep/raw/founder-sources.md`
-- `research/external-research/going-to-sleep/going-to-sleep-synthesis.md`
+- `research/external-research/going-to-sleep/synthesis.md`
 
 Only promote any source toward public claims after source verification and synthesis.

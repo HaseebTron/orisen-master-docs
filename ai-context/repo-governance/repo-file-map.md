@@ -109,7 +109,7 @@ Conventions:
     - `old-mvp.md`: Old MVP summary and learnings.
     - `old-mvp-bypass-and-failure-notes.md`: Old MVP bypass, failure, and user-behavior notes.
 
-- **`research/`**: Stores customer interviews, expert commentary, external research, raw source material, processed notes, and research synthesis.
+- **`research/`**: Stores customer interviews, expert commentary, external research, raw source material, source-by-source review, and research synthesis.
   - `research-read-rules.md`: Research-specific reading/routing rules.
   - `research-write-rules.md`: Research writing rules for research docs and synthesis files.
   - **`customer-interviews/`**: Customer interview synthesis and raw customer research.
@@ -121,35 +121,35 @@ Conventions:
     - **`raw/`**: Raw expert meeting notes and source material.
       - `benji-ozynski-meeting-notes.md`: Raw notes from Dr Benji Ozynski expert conversation.
       - `leila-jalali-meeting-notes.md`: Raw notes from Leila Jalali expert conversation.
-  - **`external-research/`**: External research sources, processed notes, and synthesis docs.
+  - **`external-research/`**: External research sources, source-by-source review, and synthesis docs.
     - `README.md`: External research folder overview and usage notes.
     - **`raw/`**: Founder-provided source lists and source-categorization material.
       - `founder-full-source-list.md`: Full founder-provided external source list.
       - `founder-pitch-deck-source-shortlist.md`: Founder-provided pitch-deck source shortlist.
       - `founder-source-categorization-map.md`: Founder-provided map for categorizing external sources.
     - **`waking-up/`**: Waking-up, sleep inertia, grogginess, oversleeping, and alarm-failure research.
-      - `waking-up-synthesis.md`: Synthesis of waking-up research.
-      - `processed-source-notes.md`: Processed notes from waking-up sources.
+      - `synthesis.md`: Synthesis of waking-up research.
+      - `raw-sources-reviewed.md`: Source-by-source review of waking-up raw sources.
       - **`raw/`**: Raw waking-up source material.
         - `founder-sources.md`: Founder-provided raw waking-up source list.
     - **`going-to-sleep/`**: Bedtime, circadian, falling-asleep, sound, and lighting research.
-      - `going-to-sleep-synthesis.md`: Synthesis of going-to-sleep research.
+      - `synthesis.md`: Synthesis of going-to-sleep research.
       - **`raw/`**: Raw going-to-sleep source material.
         - `founder-sources.md`: Founder-provided raw going-to-sleep source list.
     - **`during-sleep/`**: During-sleep sensing, intervention, and sleep-state research.
-      - `during-sleep-synthesis.md`: Synthesis of during-sleep research.
+      - `synthesis.md`: Synthesis of during-sleep research.
       - **`raw/`**: Raw during-sleep source material.
         - `founder-sources.md`: Founder-provided raw during-sleep source list.
     - **`sleep-tracking-and-validation/`**: Sleep tracking accuracy and validation-standard research.
-      - `sleep-tracking-and-validation-synthesis.md`: Synthesis of sleep tracking and validation research.
+      - `synthesis.md`: Synthesis of sleep tracking and validation research.
       - **`raw/`**: Raw sleep-tracking and validation source material.
         - `founder-sources.md`: Founder-provided raw sleep-tracking and validation source list.
     - **`competitors-and-substitutes/`**: Competitor, substitute, and alternative-solution research.
-      - `competitors-and-substitutes-synthesis.md`: Synthesis of competitor and substitute research.
+      - `synthesis.md`: Synthesis of competitor and substitute research.
       - **`raw/`**: Raw competitor and substitute source material.
         - `founder-sources.md`: Founder-provided raw competitor and substitute source list.
     - **`market-and-category/`**: Market, category, and industry-framing research.
-      - `market-and-category-synthesis.md`: Synthesis of market and category research.
+      - `synthesis.md`: Synthesis of market and category research.
       - **`raw/`**: Raw market and category source material.
         - `founder-sources.md`: Founder-provided raw market and category source list.
 

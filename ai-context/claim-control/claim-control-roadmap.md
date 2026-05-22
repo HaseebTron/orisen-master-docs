@@ -249,17 +249,18 @@ Current source files:
 - `research/external-research/raw/founder-pitch-deck-source-shortlist.md`
 - `research/external-research/raw/founder-source-categorization-map.md`
 - `research/external-research/waking-up/raw/founder-sources.md`
-- `research/external-research/waking-up/waking-up-synthesis.md`
+- `research/external-research/waking-up/raw-sources-reviewed.md`
+- `research/external-research/waking-up/synthesis.md`
 - `research/external-research/going-to-sleep/raw/founder-sources.md`
-- `research/external-research/going-to-sleep/going-to-sleep-synthesis.md`
+- `research/external-research/going-to-sleep/synthesis.md`
 - `research/external-research/during-sleep/raw/founder-sources.md`
-- `research/external-research/during-sleep/during-sleep-synthesis.md`
+- `research/external-research/during-sleep/synthesis.md`
 - `research/external-research/sleep-tracking-and-validation/raw/founder-sources.md`
-- `research/external-research/sleep-tracking-and-validation/sleep-tracking-and-validation-synthesis.md`
+- `research/external-research/sleep-tracking-and-validation/synthesis.md`
 - `research/external-research/competitors-and-substitutes/raw/founder-sources.md`
-- `research/external-research/competitors-and-substitutes/competitors-and-substitutes-synthesis.md`
+- `research/external-research/competitors-and-substitutes/synthesis.md`
 - `research/external-research/market-and-category/raw/founder-sources.md`
-- `research/external-research/market-and-category/market-and-category-synthesis.md`
+- `research/external-research/market-and-category/synthesis.md`
 
 Purpose:
 

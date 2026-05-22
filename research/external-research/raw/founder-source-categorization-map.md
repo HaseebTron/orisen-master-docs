@@ -67,7 +67,7 @@ Each folder uses:
 
 ```text
 raw/founder-sources.md
-[problem-area]-synthesis.md
+synthesis.md
 ```
 
 ## Source type metadata

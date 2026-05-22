@@ -6,7 +6,7 @@ Last reviewed: 2026-05-20
 Governing docs:
 - `research/external-research/README.md`
 - `research/external-research/waking-up/raw/founder-sources.md`
-- `research/external-research/waking-up/processed-source-notes.md`
+- `research/external-research/waking-up/raw-sources-reviewed.md`
 - `ai-context/claim-control/claim-control-system.md`
 - `product/claims-and-evidence.md`
 
@@ -28,32 +28,32 @@ Primary raw intake:
 
 - `research/external-research/waking-up/raw/founder-sources.md`
 
-Processed source notes:
+Raw sources reviewed:
 
-- `research/external-research/waking-up/processed-source-notes.md`
+- `research/external-research/waking-up/raw-sources-reviewed.md`
 
 This v1 synthesis is based only on the sources that have been processed so far.
 
-Processed sources included:
+Reviewed sources included:
 
 1. `Snooze alarm use in a global population of smartphone users`
    - Nature Scientific Reports / SleepCycle app-data study
-   - Status in processed notes: verified
+   - Status in source review: verified
 2. `Effects of using a snooze alarm on sleep inertia after morning awakening`
    - Corrected DOI: `https://doi.org/10.1186/s40101-022-00317-w`
-   - Status in processed notes: partially verified
+   - Status in source review: partially verified
    - Note: the original raw PMC URL appears incorrect or misrouted
 3. `Waking up is the hardest thing I do all day: Sleep inertia and sleep drunkenness`
-   - Status in processed notes: needs deeper review
+   - Status in source review: needs deeper review
 4. `What are Americans' morning struggles?`
    - Talker Research / Avocado Green Mattress commissioned survey write-up
-   - Status in processed notes: verified
+   - Status in source review: verified
 5. `Squandered by Sleeping In: How Oversleeping Affects People`
    - MattressInquirer survey article
-   - Status in processed notes: verified
+   - Status in source review: verified
 6. `Sound the Alarm: The Tones and Trends of Waking Up`
    - SleepJunkie survey article
-   - Status in processed notes: partially verified / article body inaccessible
+   - Status in source review: partially verified / article body inaccessible
 
 ## Current synthesis status
 
@@ -528,12 +528,12 @@ Highest-priority next research tasks:
 2. Directly review the full Trotti sleep inertia / sleep drunkenness article before using it beyond internal guardrails.
 3. Decide whether the Nature snooze study can support any public-facing stat, and if so, define exact caveated wording.
 4. Decide whether Talker Research's 38% “bad at mornings” result is useful enough for a pitch deck or website, with attribution and caveats.
-5. Treat MattressInquirer's 26% founder label carefully, because the processed note found that the figure requires aggregating “several times a week” and “daily.”
+5. Treat MattressInquirer's 26% founder label carefully, because the source review found that the figure requires aggregating “several times a week” and “daily.”
 6. Process additional alarm/snooze sources only if they add new information beyond the current themes.
 7. Prioritize Orisen-specific evidence next, especially wake-completion behavior, return-to-bed behavior, bypass attempts, and user language from prototype/pilot testing.
 
 ## Revision notes
 
-- v1 created from the first two batches of processed source notes.
+- v1 created from the first two batches of raw source review.
 - This synthesis intentionally stays theme-first rather than source-by-source.
 - This synthesis intentionally keeps external research separate from Orisen product validation.

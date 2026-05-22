@@ -234,22 +234,23 @@ orisen-master-docs/
 │       │   └── founder-source-categorization-map.md
 │       ├── waking-up/
 │       │   ├── raw/founder-sources.md
-│       │   └── waking-up-synthesis.md
+│       │   ├── raw-sources-reviewed.md
+│       │   └── synthesis.md
 │       ├── going-to-sleep/
 │       │   ├── raw/founder-sources.md
-│       │   └── going-to-sleep-synthesis.md
+│       │   └── synthesis.md
 │       ├── during-sleep/
 │       │   ├── raw/founder-sources.md
-│       │   └── during-sleep-synthesis.md
+│       │   └── synthesis.md
 │       ├── sleep-tracking-and-validation/
 │       │   ├── raw/founder-sources.md
-│       │   └── sleep-tracking-and-validation-synthesis.md
+│       │   └── synthesis.md
 │       ├── competitors-and-substitutes/
 │       │   ├── raw/founder-sources.md
-│       │   └── competitors-and-substitutes-synthesis.md
+│       │   └── synthesis.md
 │       └── market-and-category/
 │           ├── raw/founder-sources.md
-│           └── market-and-category-synthesis.md
+│           └── synthesis.md
 │
 └── ai-context/
     └── claim-control/

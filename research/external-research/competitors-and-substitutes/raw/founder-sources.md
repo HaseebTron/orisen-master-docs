@@ -17,8 +17,8 @@ This is a raw intake file, not a processed competitor analysis file.
 
 The product names, product descriptions, market-player lists, and linked examples below should be treated as unverified raw material until processed into:
 
-- `research/external-research/competitors-and-substitutes/processed-source-notes.md`
-- `research/external-research/competitors-and-substitutes/competitors-and-substitutes-synthesis.md`
+- `research/external-research/competitors-and-substitutes/raw-sources-reviewed.md`
+- `research/external-research/competitors-and-substitutes/synthesis.md`
 - `product/claims-and-evidence.md`
 
 ## Raw-source safety rules

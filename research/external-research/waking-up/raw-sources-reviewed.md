@@ -1,4 +1,4 @@
-# Waking Up Processed Source Notes
+# Waking Up Raw Sources Reviewed
 
 Status: Working analysis / source-by-source processing
 Authority level: External research interpretation
@@ -6,7 +6,7 @@ Last reviewed: 2026-05-20
 Governing docs:
 - `research/external-research/README.md`
 - `research/external-research/waking-up/raw/founder-sources.md`
-- `research/external-research/waking-up/waking-up-synthesis.md`
+- `research/external-research/waking-up/synthesis.md`
 - `ai-context/claim-control/claim-control-system.md`
 
 ## Purpose
@@ -26,9 +26,9 @@ Do not use this file as final public-claim authority. Final claim boundaries bel
 ```text
 raw/founder-sources.md
 ↓
-processed-source-notes.md
+raw-sources-reviewed.md
 ↓
-waking-up-synthesis.md
+synthesis.md
 ↓
 product/claims-and-evidence.md
 ↓
@@ -43,15 +43,15 @@ Preserves founder-collected source links, labels, rough stats, and raw routing n
 
 It should stay close to the original source material.
 
-### `processed-source-notes.md`
+### `raw-sources-reviewed.md`
 
 Analyzes individual sources after they are checked.
 
 This file should capture what the source actually says, how reliable it is, what it supports, and what it does not support.
 
-### `waking-up-synthesis.md`
+### `synthesis.md`
 
-Synthesizes across processed source notes into theme-level conclusions about the waking-up problem.
+Synthesizes across source-by-source review into theme-level conclusions about the waking-up problem.
 
 It should not become a source-by-source archive.
 
@@ -61,7 +61,7 @@ Promotes only claim-relevant, claim-safe conclusions into Orisen's central claim
 
 ## Processing rules
 
-- Do not add a processed note unless the source has actually been checked.
+- Do not add a source review entry unless the source has actually been checked.
 - Preserve uncertainty.
 - Separate source findings from Orisen interpretation.
 - Do not treat survey/media/reddit/review sources as proof of prevalence unless methodology supports it.
@@ -69,7 +69,7 @@ Promotes only claim-relevant, claim-safe conclusions into Orisen's central claim
 - Do not make medical, clinical, or sleep-disorder claims from external sources without appropriate evidence and claim-control review.
 - If a source link is broken, truncated, paywalled, or unclear, mark it honestly.
 
-## Processed source note template
+## Raw source review template
 
 ```markdown
 ## Source: [Source title]
@@ -128,7 +128,7 @@ Promotes only claim-relevant, claim-safe conclusions into Orisen's central claim
 
 ### Downstream routing
 
-- Add to `waking-up-synthesis.md`: yes / no / maybe
+- Add to `synthesis.md`: yes / no / maybe
 - Promote to `product/claims-and-evidence.md`: yes / no / only after more evidence
 - Useful for product docs: yes / no / maybe
 - Useful for marketing/website: yes / no / maybe
@@ -151,7 +151,7 @@ Start with the highest-priority waking-up sources from `raw/founder-sources.md`:
 
 ---
 
-# Batch 1 processed source notes
+# Batch 1 raw source reviews
 
 ## Source: Snooze alarm use in a global population of smartphone users
 
@@ -247,7 +247,7 @@ But the study stops at describing app behavior. It does not show whether users w
 
 ### Downstream routing
 
-- Add to `waking-up-synthesis.md`: yes
+- Add to `synthesis.md`: yes
 - Promote to `product/claims-and-evidence.md`: only after more evidence
 - Useful for product docs: yes
 - Useful for marketing/website: maybe
@@ -357,7 +357,7 @@ But it still does not show that a presence-based system works better, that leavi
 
 ### Downstream routing
 
-- Add to `waking-up-synthesis.md`: yes
+- Add to `synthesis.md`: yes
 - Promote to `product/claims-and-evidence.md`: only after more evidence
 - Useful for product docs: yes
 - Useful for marketing/website: no
@@ -445,7 +445,7 @@ In other words, this source is more valuable for narrowing what Orisen should no
 
 ### Downstream routing
 
-- Add to `waking-up-synthesis.md`: yes, but only as a caveat/guardrail until full text is reviewed
+- Add to `synthesis.md`: yes, but only as a caveat/guardrail until full text is reviewed
 - Promote to `product/claims-and-evidence.md`: no
 - Useful for product docs: yes
 - Useful for marketing/website: no
@@ -454,7 +454,7 @@ In other words, this source is more valuable for narrowing what Orisen should no
 
 ---
 
-# Batch 2 processed source notes
+# Batch 2 raw source reviews
 
 ## Source: What are Americans' morning struggles?
 
@@ -539,7 +539,7 @@ The founder label is directionally consistent with the article, but the article'
 
 ### Downstream routing
 
-- Add to `waking-up-synthesis.md`: yes
+- Add to `synthesis.md`: yes
 - Promote to `product/claims-and-evidence.md`: only after more evidence
 - Useful for product docs: maybe
 - Useful for marketing/website: maybe
@@ -630,7 +630,7 @@ The founder label is not cleanly source-matched unless it intentionally aggregat
 
 ### Downstream routing
 
-- Add to `waking-up-synthesis.md`: yes
+- Add to `synthesis.md`: yes
 - Promote to `product/claims-and-evidence.md`: only after more evidence
 - Useful for product docs: yes
 - Useful for marketing/website: no
@@ -710,7 +710,7 @@ The topic could be relevant, because alarm tone choice and snooze behavior sit n
 
 ### Downstream routing
 
-- Add to `waking-up-synthesis.md`: maybe
+- Add to `synthesis.md`: maybe
 - Promote to `product/claims-and-evidence.md`: no
 - Useful for product docs: maybe
 - Useful for marketing/website: no

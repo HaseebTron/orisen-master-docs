@@ -47,7 +47,7 @@ The `research/` folder stores and routes research inputs such as:
 - Raw survey responses and raw notes
 - Expert commentary and meeting notes
 - External research sources
-- Processed source notes
+- Source-by-source reviewed raw sources
 - Research synthesis docs
 - Competitor and substitute research
 - Market and category research
@@ -63,7 +63,7 @@ Research docs should inform source-of-truth decisions, but raw research does not
 Research files fall into different evidence levels:
 
 - Raw notes and raw source lists preserve source material.
-- Processed notes summarize or organize source material.
+- `raw-sources-reviewed.md` files review raw sources source-by-source.
 - Synthesis docs interpret patterns across sources.
 - Product, claim-control, marketing, fundraising, and roadmap docs decide how research becomes operating truth.
 
@@ -119,7 +119,7 @@ Use for questions like:
 Read:
 
 - `research/external-research/README.md` if it exists
-- relevant processed source notes if they exist
+- relevant `raw-sources-reviewed.md` files if they exist
 - relevant synthesis docs under `research/external-research/`
 - relevant raw source lists under `research/external-research/**/raw/` when source traceability matters
 - `ai-context/claim-control/claim-control-system.md`
@@ -134,8 +134,8 @@ Use for questions like:
 
 Read:
 
-- `research/external-research/waking-up/waking-up-synthesis.md` if it exists
-- `research/external-research/waking-up/processed-source-notes.md` if it exists
+- `research/external-research/waking-up/synthesis.md` if it exists
+- `research/external-research/waking-up/raw-sources-reviewed.md` if it exists
 - relevant raw waking-up sources if exact source traceability matters
 - `product/claims-and-evidence.md`
 - `marketing/positioning-and-messaging.md` if messaging matters
@@ -150,7 +150,7 @@ Use for questions like:
 
 Read:
 
-- `research/external-research/going-to-sleep/going-to-sleep-synthesis.md` if it exists
+- `research/external-research/going-to-sleep/synthesis.md` if it exists
 - relevant raw going-to-sleep sources if exact source traceability matters
 - `product/roadmap.md`
 - `product/claims-and-evidence.md`
@@ -165,7 +165,7 @@ Use for questions like:
 
 Read:
 
-- `research/external-research/during-sleep/during-sleep-synthesis.md` if it exists
+- `research/external-research/during-sleep/synthesis.md` if it exists
 - relevant raw during-sleep sources if exact source traceability matters
 - `radar-ml/radar-ml-read-rules.md`
 - `product/claims-and-evidence.md`
@@ -181,7 +181,7 @@ Use for questions like:
 
 Read:
 
-- `research/external-research/sleep-tracking-and-validation/sleep-tracking-and-validation-synthesis.md` if it exists
+- `research/external-research/sleep-tracking-and-validation/synthesis.md` if it exists
 - relevant raw sleep-tracking and validation sources if exact source traceability matters
 - `radar-ml/radar-ml-read-rules.md`
 - `product/claims-and-evidence.md`
@@ -197,7 +197,7 @@ Use for questions like:
 
 Read:
 
-- `research/external-research/competitors-and-substitutes/competitors-and-substitutes-synthesis.md` if it exists
+- `research/external-research/competitors-and-substitutes/synthesis.md` if it exists
 - relevant raw competitor sources if exact source traceability matters
 - `marketing/positioning-and-messaging.md`
 - `fundraising/fundraising-read-rules.md` if investor framing matters
@@ -212,7 +212,7 @@ Use for questions like:
 
 Read:
 
-- `research/external-research/market-and-category/market-and-category-synthesis.md` if it exists
+- `research/external-research/market-and-category/synthesis.md` if it exists
 - relevant raw market/category sources if exact source traceability matters
 - `fundraising/fundraising-read-rules.md`
 - `business/business-read-rules.md` if it exists

@@ -20,12 +20,12 @@ Use it after `research/research-read-rules.md` has identified which research inp
 
 This file does not make research into product truth. It defines how research should be preserved, interpreted, summarized, and routed into claim-control or product docs when appropriate.
 
-## Raw vs processed vs synthesis docs
+## Raw vs raw-sources-reviewed vs synthesis docs
 
 Keep research layers separate:
 
 - Raw/source docs preserve source material with minimal interpretation.
-- Processed docs organize, clean up, or summarize source material without turning it into final conclusions.
+- `raw-sources-reviewed.md` docs review raw sources source-by-source without turning them into final conclusions.
 - Synthesis docs interpret patterns across multiple sources and state what those patterns may mean for Orisen.
 
 Do not overwrite raw/source material with conclusions. Do not erase raw notes, source lists, transcripts, exports, or founder-provided source material unless the user explicitly asks and repo-governance rules support it.
@@ -103,7 +103,7 @@ Limitations are part of the research output, not a footnote to remove later.
 
 ## Preserve traceability
 
-Every meaningful synthesis conclusion should be traceable back to raw or processed sources.
+Every meaningful synthesis conclusion should be traceable back to raw sources or `raw-sources-reviewed.md` source review.
 
 Use readable Markdown links to source files. Do not duplicate large raw excerpts unless necessary and allowed. If exact wording matters, link to the raw/source file and quote only the minimum needed.
 

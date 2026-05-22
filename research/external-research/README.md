@@ -22,11 +22,13 @@ External research should flow through this sequence:
 
 ```text
 Canonical raw archive
-↓
+->
 Problem-area raw intake files
-↓
-Problem-area synthesis files
-↓
+->
+Problem-area raw-sources-reviewed.md files
+->
+Problem-area synthesis.md files
+->
 `product/claims-and-evidence.md`
 ```
 
@@ -61,12 +63,19 @@ Current problem areas:
 - `competitors-and-substitutes/`
 - `market-and-category/`
 
-Each problem folder should contain:
+Each problem folder should use this research-layer model:
 
 ```text
-raw/founder-sources.md
-[problem-area]-synthesis.md
+raw/
+raw-sources-reviewed.md
+synthesis.md
 ```
+
+The `raw/` layer preserves raw/source intake.
+
+The `raw-sources-reviewed.md` layer reviews raw sources source-by-source.
+
+The `synthesis.md` layer interprets patterns for that folder/problem area.
 
 ## Source type as metadata
 
