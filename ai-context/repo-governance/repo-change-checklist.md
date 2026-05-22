@@ -4,9 +4,9 @@ Status: Source of truth
 Authority level: Company / AI context / Repo governance
 Last reviewed: 2026-05-21
 Governing docs:
-- `ai-context/repo-purpose.md`
-- `ai-context/repo-structure.md`
-- `ai-context/repo-editing-rules.md`
+- `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-structure.md`
+- `ai-context/repo-governance/repo-editing-rules.md`
 - `ai-context/doc-creation-rules.md`
 - `ai-context/source-of-truth-rules.md`
 Downstream docs:
@@ -20,7 +20,7 @@ This file is the operational checklist for planning or making changes to the Ori
 
 Use it when creating, editing, moving, deleting, reorganizing, or cleaning up durable repo docs.
 
-This file does not replace `ai-context/repo-editing-rules.md`. It translates the repo rules into a practical checklist.
+This file does not replace `ai-context/repo-governance/repo-editing-rules.md`. It translates the repo rules into a practical checklist.
 
 ## Mandatory repo-edit preflight
 
@@ -118,11 +118,11 @@ Before significant repo changes, read:
 - `ai-context/ai-operating-mode.md`
 - `ai-context/context-map.md`
 - `ai-context/doc-creation-rules.md`
-- `ai-context/repo-editing-rules.md`
-- `ai-context/repo-purpose.md`
-- `ai-context/repo-structure.md`
-- `ai-context/repo-file-map.md`
-- `ai-context/repo-change-checklist.md`
+- `ai-context/repo-governance/repo-editing-rules.md`
+- `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-structure.md`
+- `ai-context/repo-governance/repo-file-map.md`
+- `ai-context/repo-governance/repo-change-checklist.md`
 
 Then read task-specific docs only as needed.
 
@@ -170,7 +170,7 @@ Before changing the repo, answer:
 - Is this change downstream from existing source-of-truth, or does it change source-of-truth?
 - Does this affect product promise, claims, roadmap, fundraising, marketing, software architecture, radar/ML, hardware, or business strategy?
 - Could this make any existing doc stale or contradictory?
-- Does this require updating `ai-context/repo-file-map.md`?
+- Does this require updating `ai-context/repo-governance/repo-file-map.md`?
 - Does this require updating `ai-context/context-map.md`?
 - Does this require updating folder context maps?
 - Does this require a decision-log entry?
@@ -264,7 +264,7 @@ When creating a new doc:
 - Add metadata if the doc is durable.
 - Avoid duplicating content already covered elsewhere.
 - Clearly separate truth, assumptions, evidence, and open questions when relevant.
-- Update `ai-context/repo-file-map.md`.
+- Update `ai-context/repo-governance/repo-file-map.md`.
 - Update `ai-context/context-map.md` only if context-loading rules change.
 
 ## Editing checklist
@@ -286,7 +286,7 @@ When moving or renaming files:
 - Confirm the new location better matches authority and folder responsibility.
 - Preserve content unless rewriting is explicitly part of the task.
 - Update links and references.
-- Update `ai-context/repo-file-map.md`.
+- Update `ai-context/repo-governance/repo-file-map.md`.
 - Update `ai-context/context-map.md` if context-loading paths changed.
 - Update folder context maps if reading paths changed.
 - Consider using local Git or Codex for link-search and diff review.
@@ -299,7 +299,7 @@ When deleting or archiving files:
 - Confirm raw evidence is preserved unless the user explicitly asked otherwise and the governing docs support it.
 - Confirm deletion will not remove important decision history.
 - Prefer archiving over deleting when historical context may matter.
-- Update `ai-context/repo-file-map.md`.
+- Update `ai-context/repo-governance/repo-file-map.md`.
 - Update context maps and links.
 - Use local Git or Codex for broad cleanup.
 
@@ -308,9 +308,9 @@ When deleting or archiving files:
 Before adding structure information to any doc, ask:
 
 - Is this a file tree or inventory?
-- Does it belong in `ai-context/repo-file-map.md` instead?
+- Does it belong in `ai-context/repo-governance/repo-file-map.md` instead?
 - Is this explaining structure logic?
-- Does it belong in `ai-context/repo-structure.md` instead?
+- Does it belong in `ai-context/repo-governance/repo-structure.md` instead?
 - Is this explaining what to read for a task?
 - Does it belong in `ai-context/context-map.md` or a folder context map instead?
 
@@ -334,7 +334,7 @@ After repo edits, summarize:
 - files updated
 - files moved, renamed, deleted, or archived
 - files intentionally not touched
-- whether `repo-file-map.md` was updated
+- whether `ai-context/repo-governance/repo-file-map.md` was updated
 - whether context maps were updated
 - any tool errors or partial failures
 - follow-up review needed
@@ -368,7 +368,7 @@ Files intentionally not touched:
 - `path/to/file.md`
 - None
 
-`repo-file-map.md` updated:
+`ai-context/repo-governance/repo-file-map.md` updated:
 - Yes / No / Not needed
 
 Context maps updated:
@@ -392,7 +392,7 @@ After meaningful changes, check:
 - Do new docs have clear governing docs?
 - Are downstream docs still consistent?
 - Are there duplicated file trees?
-- Did `repo-file-map.md` stay current?
+- Did `ai-context/repo-governance/repo-file-map.md` stay current?
 - Did `context-map.md` stay accurate?
 - Are claims still safe?
 - Did the change create any authority ambiguity?

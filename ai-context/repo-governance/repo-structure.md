@@ -4,14 +4,14 @@ Status: Source of truth
 Authority level: Company / AI context / Repo governance
 Last reviewed: 2026-05-21
 Governing docs:
-- `ai-context/repo-purpose.md`
+- `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/ai-operating-mode.md`
 - `ai-context/doc-creation-rules.md`
 Downstream docs:
-- `ai-context/repo-file-map.md`
-- `ai-context/repo-change-checklist.md`
+- `ai-context/repo-governance/repo-file-map.md`
+- `ai-context/repo-governance/repo-change-checklist.md`
 - `ai-context/context-map.md`
 - Folder context maps
 - Domain docs
@@ -22,7 +22,7 @@ This file explains the organizing logic of the Orisen master docs repo.
 
 It defines how folders should be used, how upstream and downstream docs relate, and how to prevent file-structure duplication across the repo.
 
-This file explains structure philosophy. It should not be treated as the constantly updated file inventory. For the current file and folder map, use `ai-context/repo-file-map.md`.
+This file explains structure philosophy. It should not be treated as the constantly updated file inventory. For the current file and folder map, use `ai-context/repo-governance/repo-file-map.md`.
 
 ## Core structural principle
 
@@ -112,7 +112,7 @@ Do not duplicate repo or folder file trees across the repo.
 
 The current repo-wide file inventory belongs in:
 
-- `ai-context/repo-file-map.md`
+- `ai-context/repo-governance/repo-file-map.md`
 
 Folder context maps and folder overview docs should not maintain their own complete file trees.
 
@@ -165,7 +165,7 @@ A folder context map should usually include:
 - full reference pack for broad work
 - task-specific reading paths
 - escalation rules to Orisen General
-- note pointing to `ai-context/repo-file-map.md` for current structure
+- note pointing to `ai-context/repo-governance/repo-file-map.md` for current structure
 
 A folder context map should avoid:
 
@@ -228,7 +228,7 @@ Before creating a new doc, ask:
 
 When files are added, moved, renamed, or deleted, update:
 
-- `ai-context/repo-file-map.md` if the file inventory changes
+- `ai-context/repo-governance/repo-file-map.md` if the file inventory changes
 - `ai-context/context-map.md` if context-loading rules change
 - relevant folder context maps if task reading paths change
 - `ai-context/decision-log.md` if the change reflects a durable decision
@@ -245,4 +245,4 @@ This file does not:
 - decide product, marketing, fundraising, software, radar/ML, hardware, or business truth
 - act as a checklist for every repo edit
 
-Use `ai-context/repo-change-checklist.md` for the operational checklist before changing the repo.
+Use `ai-context/repo-governance/repo-change-checklist.md` for the operational checklist before changing the repo.

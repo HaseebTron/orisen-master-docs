@@ -12,12 +12,12 @@ These rules do not replace source-of-truth, doc-creation, claim-control, or repo
 
 Use these docs together when planning or making repo changes:
 
-- `ai-context/repo-purpose.md` defines why the repo exists and what good repo health means.
-- `ai-context/repo-structure.md` defines the structural philosophy, folder responsibilities, and anti-duplication rules.
-- `ai-context/repo-file-map.md` is the central inventory of the repo's current durable files and folders.
-- `ai-context/repo-change-checklist.md` is the operational checklist for planning or making repo changes.
+- `ai-context/repo-governance/repo-purpose.md` defines why the repo exists and what good repo health means.
+- `ai-context/repo-governance/repo-structure.md` defines the structural philosophy, folder responsibilities, and anti-duplication rules.
+- `ai-context/repo-governance/repo-file-map.md` is the central inventory of the repo's current durable files and folders.
+- `ai-context/repo-governance/repo-change-checklist.md` is the operational checklist for planning or making repo changes.
 
-For significant repo changes, read `ai-context/repo-change-checklist.md` before editing.
+For significant repo changes, read `ai-context/repo-governance/repo-change-checklist.md` before editing.
 
 ## Mandatory pre-edit disclosure rule
 
@@ -37,7 +37,7 @@ Before the first write action in a repo-editing task, ChatGPT must state:
 - risk level
 - reason for the change
 
-For significant repo changes, use the exact planned repo-change summary format from `ai-context/repo-change-checklist.md`.
+For significant repo changes, use the exact planned repo-change summary format from `ai-context/repo-governance/repo-change-checklist.md`.
 
 For tiny one-file edits, a shortened version is acceptable, but it must still clearly state the file read and the file being edited before the edit happens.
 
@@ -123,7 +123,7 @@ Before direct GitHub edits, ChatGPT should briefly state:
 - whether the change is small enough for direct GitHub editing
 - whether a local/Codex/branch workflow would be safer
 
-For significant repo changes, use the required planned repo-change summary format from `ai-context/repo-change-checklist.md`.
+For significant repo changes, use the required planned repo-change summary format from `ai-context/repo-governance/repo-change-checklist.md`.
 
 For tiny one-file edits, this can be shortened, but the assistant should still make clear what file is being edited.
 
@@ -171,7 +171,7 @@ Do not duplicate repo-wide or folder-level file trees across multiple docs.
 
 The central file inventory belongs in:
 
-- `ai-context/repo-file-map.md`
+- `ai-context/repo-governance/repo-file-map.md`
 
 Folder context maps and domain docs should explain task-based reading paths, governing docs, and folder purpose. They should not maintain their own complete file inventories unless there is a specific, justified exception.
 
@@ -193,12 +193,12 @@ After direct GitHub edits, summarize:
 - files updated
 - files moved, renamed, deleted, or archived
 - files intentionally not touched
-- whether `repo-file-map.md` was updated
+- whether `ai-context/repo-governance/repo-file-map.md` was updated
 - whether context maps were updated
 - any tool errors or partial failures
 - any follow-up review needed
 
-For significant repo edits, use the required repo-change result format from `ai-context/repo-change-checklist.md`.
+For significant repo edits, use the required repo-change result format from `ai-context/repo-governance/repo-change-checklist.md`.
 
 Do not imply that the user has reviewed a diff unless they actually have.
 
@@ -222,10 +222,10 @@ When creating or editing docs, still follow:
 
 - `ai-context/doc-creation-rules.md`
 - `ai-context/source-of-truth-rules.md`
-- `ai-context/repo-purpose.md` for repo intent
-- `ai-context/repo-structure.md` for repo structure logic
-- `ai-context/repo-file-map.md` for the current file inventory
-- `ai-context/repo-change-checklist.md` for the operational repo-change checklist
+- `ai-context/repo-governance/repo-purpose.md` for repo intent
+- `ai-context/repo-governance/repo-structure.md` for repo structure logic
+- `ai-context/repo-governance/repo-file-map.md` for the current file inventory
+- `ai-context/repo-governance/repo-change-checklist.md` for the operational repo-change checklist
 - `ai-context/claim-control/claim-control-system.md`, when claims, evidence, validation, marketing, fundraising, or scientific support are involved
 
 These repo editing rules control editing mechanics. They do not decide company truth or claim safety by themselves.

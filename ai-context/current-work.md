@@ -17,7 +17,7 @@ This file is not a replacement for source-of-truth docs, the decision log, the e
 ## Relationship to other tracking docs
 
 - `ai-context/decision-log.md` records major decisions and why they were made.
-- `ai-context/repo-backlog.md` records future docs, cleanup items, and recurring checks.
+- `ai-context/repo-governance/repo-backlog.md` records future docs, cleanup items, and recurring checks.
 - `ai-context/claim-control/claim-control-roadmap.md` tracks evidence categories, missing evidence, and where each evidence type lives.
 - `ai-context/claim-control/claim-control-log.md` records real evidence and what claims it supports.
 - `ai-context/claim-control/claim-control-system.md` defines evidence-strength and classification rules.
@@ -493,7 +493,7 @@ When in doubt:
 
 - `current-work.md` tracks operational status
 - `decision-log.md` tracks durable decisions
-- `repo-backlog.md` tracks future cleanup and missing docs
+- `ai-context/repo-governance/repo-backlog.md` tracks future cleanup and missing docs
 - `claim-control-roadmap.md` tracks evidence categories and missing evidence
 - `claim-control-log.md` tracks real evidence
 - `post-performance-log.md` tracks detailed marketing execution and performance learning
