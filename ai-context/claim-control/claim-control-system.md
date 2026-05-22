@@ -8,6 +8,20 @@ Use this file when adding research, customer discovery, prototype data, expert n
 
 The goal is to keep source material separate from interpretation while preventing Orisen from overclaiming before evidence supports it.
 
+## Role boundary
+
+This file is the claim-classification rules engine.
+
+It defines evidence categories, evidence strength levels, review questions, and repo hygiene rules.
+
+It does not replace:
+
+- `ai-context/claim-control/claim-control-log.md`, which records conservative claim-relevant evidence entries.
+- `ai-context/claim-control/claim-control-roadmap.md`, which tracks evidence gaps and validation priorities.
+- `product/claims-and-evidence.md`, which is the final product/public-claim authority for allowed wording.
+
+When these files appear to overlap, use this file for classification rules, use the log for evidence entries, use the roadmap for missing-evidence planning, and use `product/claims-and-evidence.md` for final public claim boundaries.
+
 ## Core principle
 
 Orisen docs should reason top down:
@@ -26,19 +40,25 @@ The user's latest message is input, not automatic source-of-truth.
 
 ## Evidence flow
 
-Evidence should flow through three layers:
+Evidence should flow through these layers:
 
 ```text
 Raw/source material
 ↓
-Problem-area synthesis
+raw-sources-reviewed.md, optional but preferred when created
+↓
+synthesis.md
+↓
+claim-control-log.md, when evidence materially affects claims
 ↓
 product/claims-and-evidence.md
 ```
 
-Do not create extra abstraction layers unless the folder becomes too large or the claim is high-stakes.
+Do not create extra abstraction layers unless the folder becomes too large, the claim is high-stakes, or the evidence needs source-by-source review before synthesis.
 
 For external research, organize primarily by Orisen problem area. Source type should be metadata inside each source entry, not the main folder structure.
+
+For external research folders, `raw-sources-reviewed.md` is optional but preferred when a folder has multiple sources, weak/uncertain sources, or sources likely to affect product claims. If a synthesis is written directly from raw files because no reviewed layer exists yet, it must say so clearly and keep traceability back to raw/source material.
 
 ## Raw/source material
 
@@ -57,9 +77,25 @@ They can include:
 
 They should not contain final Orisen claims.
 
+## Source-by-source reviewed files
+
+`raw-sources-reviewed.md` files review raw sources source-by-source.
+
+They should answer:
+
+- what the source is
+- what source type it is
+- what the source actually says
+- what Orisen may cautiously learn from it
+- what the source does not prove
+- what claim risks or limitations exist
+- whether the source is strong enough to influence synthesis or claim-control
+
+They should not become final product claims or public wording.
+
 ## Synthesis files
 
-Synthesis files interpret a set of raw/source files inside that evidence category.
+Synthesis files interpret a set of raw/source files or reviewed source notes inside that evidence category.
 
 They should answer:
 
@@ -70,7 +106,7 @@ They should answer:
 - how strong the evidence is
 - what should be researched or tested next
 
-Every meaningful interpretation should point back to the relevant raw/source file using readable Markdown links.
+Every meaningful interpretation should point back to the relevant raw/source file or `raw-sources-reviewed.md` file using readable Markdown links.
 
 ## Final claim-control file
 
