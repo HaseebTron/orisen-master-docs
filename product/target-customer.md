@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This file defines Orisen's target customer assumptions, early beachhead hypotheses, excluded users, and evidence needed to narrow the first customer segment.
+This file defines Orisen's target customer assumptions, early beachhead hypotheses, excluded users, evidence basis, and validation work needed to narrow the first customer segment.
 
 This file is a product source-of-truth doc. It should guide downstream marketing, fundraising, product, and validation work, but it should not contain channel-specific execution strategy.
 
@@ -34,7 +34,8 @@ Important boundaries:
 - `ai-context/claim-control/claim-control-log.md` remains the conservative evidence ledger.
 - `ai-context/current-state.md` should be used as an alignment check, not as independent proof of the target customer.
 - Marketing performance can show message resonance, but it should not decide the target customer by itself.
-- This file should separate evidence-backed patterns from hypotheses that still need validation.
+- External research can help identify who likely has the pain. It cannot prove who will buy Orisen.
+- Orisen-specific buying evidence requires interviews, waitlist tagging, prototype pilots, deposits, preorders, pricing tests, retention, or actual sales.
 
 ## Current target customer summary
 
@@ -55,6 +56,19 @@ A strong early customer may:
 
 The first users should not be casual sleep-optimization users who only want sleep graphs, dashboards, or general wellness insights.
 
+## Evidence snapshot
+
+This snapshot is for internal product interpretation. Counts and percentages should not be copied into public marketing unless they are attributed, caveated, and allowed by `product/claims-and-evidence.md`.
+
+| Evidence source | Relevant numbers/details | What it supports | What it does not prove |
+|---|---|---|---|
+| `research/customer-interviews/2024-alarm-clock-interviews.md` | 10 total responses. Age range 19 to 80. 8 of 10 were age 23 or younger. 5 university students, 1 student with part-time work, 2 full-time workers, 2 blank/unknown. Problem intensity split: 2 definite wake-up problems, 2 somewhat, 6 none or none/full survey. 7 of 10 mentioned camera discomfort. | Some people have repeated wake-up or get-out-of-bed problems. The pain is not universal. Getting out of bed can be distinct from hearing an alarm. Non-camera sensing is directionally supported. | Market size, final ICP, subgroup conclusions, willingness to pay, or public prevalence claims. |
+| `product/old-mvp/old-mvp.md` | Old MVP was tested by founder and 3 connected testers: Hamza/Humza, Dennis, and Sabeeh. Dennis's usual baseline: wake 8:30, out of bed 10:00. On successful logged days, his out-of-bed time matched or was close to alarm/wake time. Hamza's usual baseline: alarm 4:00, wake 4:50, out of bed 5:00. Several logged days show waking and getting out of bed within a few minutes of alarm time, with some failures or partial failures. Sabeeh's baseline: alarm 5:30, wake 6:30, out of bed 9:00, with mixed results and bug/failure days. | Presence-based wake completion showed early promise in real morning contexts. The strongest signal is getting out of bed closer to alarm time. | Production reliability, broad customer demand, paid demand, reduced grogginess, improved energy, or product-market fit. |
+| `product/old-mvp/old-mvp-user-feedback.md` | Founder-reported feedback: testers said the old MVP was much better at waking them on time than normal behavior. Dennis said he would buy it “right now,” likely around a roughly $100 discussed price point. Testers still wanted easier or less-groggy wake-up. | Early qualitative support for wake-completion value and one weak willingness-to-pay signal. Supports roadmap interest in easier wake-up. | Validated price point, broad willingness to pay, artificial sleep phase transitioning, or reduced sleep inertia. |
+| `research/external-research/waking-up/synthesis.md` | Reviewed sources include Nature Scientific Reports / SleepCycle app-data study, snooze alarm / sleep inertia study, Talker Research / Avocado Green Mattress survey, MattressInquirer oversleeping survey, SleepJunkie survey inventory, and Trotti sleep inertia review as incomplete guardrail. Talker Research reports a 2,000-person U.S. online survey and 38% saying they are “bad” at mornings. The snooze/sleep-inertia experiment had only 10 participants. | Wake-up can be multi-step. Repeated snoozing, delayed bed exit, oversleeping, and missed obligations appear in processed external sources. Sleep inertia is relevant but claim-sensitive. | Orisen efficacy, Orisen demand, willingness to pay, final ICP, reduced grogginess, or reduced sleep inertia. |
+| `research/expert-commentary/expert-commentary-synthesis.md` | Expert commentary supports investigating severe oversleepers, repeated snoozers, return-to-bed users, teens and young adults, young adults with rigid schedules, and shift workers. | Good source for segment hypotheses and caution around sleep inertia/grogginess claims. | Market demand, final ICP, or product efficacy. |
+| `marketing/post-performance-log.md` | Early founder-led post and waitlist performance showed message resonance around the wake-up problem. | Useful weak signal that the problem framing can get attention. | Buyer segment, willingness to pay, product-market fit, or durable demand. |
+
 ## Primary ICP hypothesis
 
 The current primary ICP hypothesis is:
@@ -63,9 +77,17 @@ The current primary ICP hypothesis is:
 
 This is a behavioral ICP, not a demographic ICP.
 
-The strongest current evidence points to the behavior pattern more than to a final age, occupation, lifestyle, or identity segment.
+Evidence basis:
 
-Demographic and lifestyle segments should be treated as beachhead hypotheses until stronger segment-specific evidence exists.
+- Customer interviews show some respondents explicitly described getting out of bed as the problem, while many respondents did not have meaningful wake-up pain.
+- Old MVP evidence is strongest around reducing the gap between alarm time and out-of-bed time, especially in Dennis's logged data.
+- External waking-up research supports the broader framing that alarm interaction, snoozing, and delayed bed exit are not the same as wake completion.
+
+Interpretation:
+
+- The strongest current evidence points to a behavior pattern more than to a final age, occupation, lifestyle, or identity segment.
+- Demographic and lifestyle segments should be treated as beachhead hypotheses until stronger segment-specific evidence exists.
+- The current evidence supports testing who has the pain. It does not yet prove who will buy.
 
 ## The wake-up failure pattern
 
@@ -82,6 +104,12 @@ Possible indicators:
 - has tried placing the phone far away
 - still wakes late despite basic alarm hacks
 
+Evidence basis:
+
+- In the 2024 interviews, one respondent reported usually taking 7 alarms.
+- One respondent said they started sleeping through placing the phone far away.
+- Old MVP logs include cases where users woke later than alarm time or slept through/failed to complete wake-up on some days.
+
 ### Alarm wakes the user, but wake completion fails
 
 The user may technically wake up, but does not actually get out of bed.
@@ -93,6 +121,12 @@ Possible indicators:
 - loses time after the first alarm
 - gets up briefly and returns to bed
 - needs external friction to complete waking
+
+Evidence basis:
+
+- Customer interview language includes “Getting out of bed once awake,” “stay in bed,” and “Gets you out of bed effectively.”
+- Dennis's old MVP baseline was waking at 8:30 but not getting out of bed until 10:00. On successful logged old MVP days, his out-of-bed time matched or was close to wake/alarm time.
+- External waking-up synthesis supports the conceptual distinction between alarm activation, alarm dismissal/snooze, and actual wake completion.
 
 ### The user bypasses or weakens the alarm system
 
@@ -106,11 +140,26 @@ Possible indicators:
 - finds ways around alarm apps or phone settings
 - treats snooze, dismiss, or schedule edits as escape paths
 
+Evidence basis:
+
+- Old MVP behavior included off-button disablement during the alarm period and battery backup if unplugged.
+- Old MVP bypass/failure notes support the need to track unplugging, pre-alarm shutoff, return-to-bed, loopholes, and technical failure separately.
+- Dennis wrote that he wanted to get back in bed every day but could not, so his only option was to take a shower.
+
 ### The user wakes, but the morning still feels brutal
 
 Some users may complete waking but still feel heavy, foggy, or groggy.
 
-This is relevant target-customer pain, but Orisen has not yet validated reduced grogginess, reduced sleep inertia, or sleep-stage-aware intervention outcomes.
+Evidence basis:
+
+- Old MVP user feedback says testers still wanted an easier or less-groggy wake-up after wake completion.
+- The waking-up synthesis treats sleep inertia as relevant but claim-sensitive.
+- The snooze/sleep-inertia experiment had only 10 participants, so it cannot support broad public claims.
+
+Claim boundary:
+
+- This is relevant target-customer pain.
+- Orisen has not yet validated reduced grogginess, reduced sleep inertia, or sleep-stage-aware intervention outcomes.
 
 ## Strong early customer traits
 
@@ -128,6 +177,12 @@ A strong early customer likely has several of these traits:
 - They want a system that makes wake completion harder to avoid.
 - They would consider paying for reliable wake completion.
 
+Evidence basis:
+
+- Customer interviews support recurring pain for some respondents, including daily or most-day problems among problem-having respondents.
+- Old MVP data supports wake-completion value most strongly for users with a large alarm-to-out-of-bed gap.
+- External research supports wake-up difficulty as a meaningful problem area, but not Orisen-specific purchase intent.
+
 Potential weak-fit traits:
 
 - They wake up easily most days.
@@ -135,6 +190,11 @@ Potential weak-fit traits:
 - They mainly want motivation content.
 - They only want sleep scores or passive sleep data.
 - They are curious about sleep tech but do not have a painful wake-up problem.
+
+Evidence basis:
+
+- In the 2024 interviews, 6 of 10 respondents had no meaningful wake-up problem or did not complete a problem-positive survey path.
+- This supports filtering out low-pain users instead of treating everyone who uses an alarm as the target customer.
 
 ## Beachhead segment hypotheses
 
@@ -155,9 +215,15 @@ Why this segment may matter:
 - They may have already tried multiple alarms, phone placement tricks, alarm apps, or willpower-based systems.
 - They may experience immediate consequences from missed mornings.
 
+Evidence basis:
+
+- Customer interviews include multiple-alarm and phone-far-away failure examples.
+- Old MVP data and user feedback most directly support the value of forcing or strongly encouraging bed exit.
+- External waking-up synthesis supports repeated snoozing, delayed bed exit, oversleeping, and missed obligations as relevant problem themes.
+
 Evidence status:
 
-- Supported by customer discovery themes, old MVP behavior, old MVP user feedback, and waking-up research synthesis.
+- Strongest current behavioral segment hypothesis.
 - Not yet validated as a paid, scalable segment.
 
 ### Students and young adults with real consequences
@@ -166,15 +232,16 @@ Students and young adults are a plausible segment to investigate, especially whe
 
 Why this segment may matter:
 
-- Early customer interviews and prototype testing included younger users.
-- Expert commentary suggests young people may be a high-pain group worth investigating.
-- Irregular sleep schedules, screen time, and delayed sleep patterns may contribute to the problem.
+- The 2024 interview sample was heavily skewed young: 8 of 10 respondents were age 23 or younger.
+- The old MVP testers were mostly university students or founder-connected young users, with one full-time worker.
+- Expert commentary supports investigating teens and young adults.
+- Young adults may have irregular sleep schedules, screen-time-related issues, and rigid obligations.
 
 Evidence status:
 
 - Plausible and supported enough to investigate.
 - Not proven as the final ICP.
-- Do not claim that students or young adults are definitively the first market without stronger evidence.
+- The existing young-user evidence is sample-skewed and founder-connected, so it cannot prove that young adults are the best buyers.
 
 ### Early-career professionals with rigid schedules
 
@@ -186,9 +253,15 @@ Why this segment may matter:
 - The pain may be easier to monetize if the user connects wake-up reliability to work outcomes.
 - The customer may have enough disposable income for a hardware solution.
 
+Evidence basis:
+
+- Customer interviews include 2 full-time workers, but the sample is too small to compare workers against students.
+- Sabeeh was a full-time worker in the old MVP testing context, but his data was mixed and included bug/failure ambiguity.
+- This segment is mostly logic-driven and needs more direct evidence.
+
 Evidence status:
 
-- Plausible hypothesis based on pain/consequence logic.
+- Plausible hypothesis.
 - Needs direct interviews, waitlist tagging, prototype tests, and willingness-to-pay evidence.
 
 ### Shift workers and inconsistent-schedule users
@@ -201,10 +274,16 @@ Why this segment may matter:
 - Consequences of being late can be high.
 - Standard alarm routines may be less reliable when sleep timing changes often.
 
+Evidence basis:
+
+- Expert commentary supports investigating shift workers.
+- External waking-up research supports the broader problem of morning difficulty and wake-up failure.
+- Current Orisen-specific evidence does not yet strongly include shift workers.
+
 Evidence status:
 
-- Supported mainly as an expert-informed and logical segment hypothesis.
-- Current direct Orisen evidence is not yet strong enough to make shift workers the first ICP by default.
+- Expert-informed hypothesis.
+- Not strong enough to make shift workers the first ICP by default.
 
 ### Performance-focused users with actual wake-up pain
 
@@ -215,6 +294,11 @@ Why this segment may matter:
 - They may be open to new sleep technology.
 - They may understand closed-loop intervention faster than casual consumers.
 - They may give detailed feedback.
+
+Evidence basis:
+
+- This segment is more of a reachability and early-adopter hypothesis than a direct evidence-backed target.
+- There is not enough current evidence to prioritize performance-focused users above severe wake-up-pain users.
 
 Evidence status:
 
@@ -234,6 +318,12 @@ Orisen should not be designed first for:
 - users who are unwilling to pay for wake-up reliability
 - users who primarily need clinical diagnosis or treatment
 - medical users requiring regulated, clinical, diagnostic, or treatment claims
+
+Evidence basis:
+
+- In the 2024 interview sample, the wake-up problem was not universal.
+- Product evidence is strongest for wake completion, not passive tracking, dashboards, diagnosis, or clinical treatment.
+- `claims-and-evidence.md` does not support medical, diagnostic, clinical, sleep-stage, or sleep-inertia claims.
 
 ## Pain-level qualification criteria
 
@@ -269,6 +359,7 @@ Safe or careful customer claims:
 - Orisen's first target customer is pain-driven, not casual wellness-driven.
 - Some early evidence suggests wake-completion failure is a meaningful problem for certain users.
 - Students, young adults, shift workers, early-career professionals, and severe oversleepers are segments worth investigating.
+- External waking-up research supports the broader problem framing around repeated snoozing, delayed bed exit, oversleeping, and missed obligations.
 
 ## Claims and assumptions to avoid
 
@@ -286,6 +377,8 @@ Do not claim yet:
 - Orisen fixes sleep disorders.
 - Orisen wakes users in the perfect sleep stage.
 - Orisen guarantees users will never oversleep.
+- External sleep research proves Orisen works.
+- Survey percentages prove buyer demand.
 
 Avoid turning early evidence into hard market conclusions.
 
@@ -293,61 +386,119 @@ Avoid turning early evidence into hard market conclusions.
 
 ### Customer interviews
 
-The 2024 alarm-clock customer interviews support several early patterns:
+Source:
 
-- Some people have repeated wake-up problems.
-- For some people, getting out of bed is a distinct problem from hearing an alarm.
-- Some users rely on multiple alarms or other basic hacks.
-- Phone interaction can be part of the morning failure mode.
-- Some respondents were uncomfortable with cameras in a bedroom device.
+- `research/customer-interviews/2024-alarm-clock-interviews.md`
+
+Relevant numbers:
+
+- 10 total responses.
+- Age range: 19 to 80.
+- 8 of 10 respondents were age 23 or younger.
+- Working status: 5 university students, 1 university student with part-time work, 2 full-time workers, 2 blank/unknown.
+- Problem intensity: 2 definitely had wake-up problems, 2 somewhat had wake-up problems, 6 had none or did not complete a problem-positive path.
+- Frequency among responses included 2 at 7/7 days, 2 at 5/7 days, 1 at 1/7 days, 1 weekdays/off, 3 never, 1 blank/unclear.
+- 7 of 10 respondents mentioned camera discomfort.
+
+Supported interpretations:
+
+- Some people experience repeated wake-up and get-out-of-bed problems.
+- The wake-up problem is not universal.
+- Getting out of bed can be distinct from hearing the alarm.
+- Multiple alarms and phone-placement hacks appeared as existing workarounds.
+- Morning phone interaction may be an adjacent failure mode.
+- Camera discomfort appeared multiple times, supporting the non-camera direction.
 
 Limitations:
 
 - Small convenience sample.
+- Mostly younger respondents.
 - Not statistically representative.
 - Not enough data to make subgroup claims by age, student status, gender, occupation, ethnicity, religion, or living situation.
 - Does not prove willingness to pay or product-market fit.
 
 ### Old MVP prototype and pilot evidence
 
-The old MVP supports the wake-completion wedge as the strongest early product direction.
+Sources:
 
-It demonstrated a physical presence-based wake-completion loop:
+- `product/old-mvp/old-mvp.md`
+- `product/old-mvp/old-mvp-test-row-labels.md`
+- `product/old-mvp/old-mvp-bypass-and-failure-notes.md`
+- `product/old-mvp/old-mvp-user-feedback.md`
 
-- alarm rings at the scheduled time
-- radar detects whether the user is still in bed
-- alarm continues or re-triggers if the user remains in bed or returns to bed
-- alarm stops after the user leaves bed
-- unplugging did not immediately bypass the device because of battery backup
+Relevant numbers and details:
 
-The old MVP pilot and feedback suggest that some users valued being forced or strongly pushed to complete waking.
+- Old MVP was tested by founder and 3 founder-connected testers.
+- Dennis's baseline: wake at 8:30, out of bed at 10:00.
+- On Dennis's successful logged days, out-of-bed time matched or was close to alarm/wake time.
+- Hamza's baseline: alarm 4:00, wake 4:50, out of bed 5:00.
+- Several Hamza days showed waking and getting out of bed within a few minutes of alarm time, but there were also failures or partial failures.
+- Sabeeh's baseline: alarm 5:30, wake 6:30, out of bed 9:00.
+- Sabeeh data was mixed and included bug/failure ambiguity.
+- One tester, Dennis, said he would buy the device “right now,” likely around a roughly $100 discussed price point.
+
+Supported interpretations:
+
+- The old MVP supports the wake-completion wedge as the strongest early product direction.
+- The strongest pilot signal is getting the user out of bed closer to alarm time.
+- The product direction is not purely conceptual. A physical presence-based prototype existed and was used in real morning contexts.
+- User feedback supports that wake completion is valuable but does not solve the entire morning experience.
 
 Limitations:
 
 - Small sample.
 - Founder/friend-connected testers.
 - Historical prototype, not production hardware.
-- Bugs and bypass cases existed.
-- Does not prove broad demand, production reliability, or paid conversion.
+- Self-reported data.
+- Some rows incomplete.
+- Some days had failures, bugs, or sleeping again.
+- Does not prove broad demand, production reliability, retention, product-market fit, or paid conversion.
 
-### Old MVP bypass and failure evidence
+### External waking-up research
 
-Bypass and failure notes are especially useful for target-customer understanding because they show that some users may actively exploit loopholes when tired or half-awake.
+Source:
 
-Relevant patterns:
+- `research/external-research/waking-up/synthesis.md`
 
-- trying to unplug the device
-- trying to return to bed
-- turning off or changing an alarm shortly before the alarm time
-- needing pre-alarm lockout behavior
-- needing escalation rather than a fixed-volume alarm
-- needing logs to distinguish true success, partial success, bypass, and technical failure
+Reviewed source categories:
 
-This supports the view that Orisen's early customer may not simply need a louder alarm. They may need a system that protects their prior awake decision from their half-awake morning behavior.
+- Nature Scientific Reports / SleepCycle app-data study on snooze alarm use.
+- Snooze alarm / sleep inertia study with corrected DOI.
+- Talker Research / Avocado Green Mattress morning struggles survey.
+- MattressInquirer oversleeping survey article.
+- SleepJunkie waking-up survey article, currently weak/inaccessible.
+- Trotti sleep inertia / sleep drunkenness review, currently an incomplete guardrail source.
+
+Relevant numbers and details:
+
+- Talker Research reports a 2,000-person U.S. online survey and says 38% of respondents agreed they are “bad” at mornings.
+- The snooze/sleep-inertia experimental portion had only 10 participants.
+- MattressInquirer is more directly related to oversleeping and missed obligations but is weaker evidence because it uses an MTurk convenience sample, includes respondents as young as 15, lacks field dates, is self-reported, and is exploratory.
+- Nature Scientific Reports / SleepCycle app-data study is the strongest processed external source for repeated snooze behavior, but its app-user dataset is self-selected and should not be treated as general-population prevalence.
+
+Supported interpretations:
+
+- Waking up can be framed as a multi-step process, not only an alarm-sound event.
+- Repeated snoozing is a real behavior pattern in at least some measured or surveyed groups.
+- Some people report delayed bed exit, oversleeping, repeated snoozing, and missed obligations.
+- External research supports the need to distinguish alarm dismissal from actual wake completion.
+- Sleep inertia and grogginess are relevant concepts, but require careful handling.
+
+Limitations:
+
+- External research does not prove Orisen works.
+- External research does not prove willingness to pay.
+- External research does not prove the final ICP.
+- External research does not prove Orisen reduces grogginess or sleep inertia.
+- Exact survey percentages should not be used prominently unless attributed, caveated, and approved through `product/claims-and-evidence.md`.
 
 ### Expert commentary
 
-Expert commentary supports investigating:
+Source:
+
+- `research/expert-commentary/expert-commentary-synthesis.md`
+
+Supported investigation areas:
 
 - severe oversleepers
 - repeated snoozers
@@ -356,7 +507,10 @@ Expert commentary supports investigating:
 - young adults with rigid schedules
 - shift workers
 
-Expert commentary also cautions that grogginess and sleep inertia are multi-cause and should not be treated as solved by wake completion, light, or sleep-stage shifting alone.
+Supported interpretations:
+
+- These are plausible segments to investigate.
+- Expert commentary supports caution around grogginess and sleep inertia because they are multi-cause.
 
 Limitations:
 
@@ -364,33 +518,32 @@ Limitations:
 - It does not prove a final ICP.
 - It does not validate reduced grogginess, reduced sleep inertia, or artificial sleep phase transitioning.
 
-### External waking-up research
-
-External waking-up research supports the broader problem frame that wake-up can involve repeated snoozing, delayed bed exit, oversleeping, missed obligations, and sleep inertia.
-
-This research is useful for understanding the problem space.
-
-Limitations:
-
-- It does not prove Orisen works.
-- It does not prove willingness to pay.
-- It does not prove Orisen reduces grogginess or sleep inertia.
-- It should not be used as a substitute for Orisen-specific validation.
-
 ### Competitor and substitute research
 
-Competitor and substitute research may eventually help identify what users already try and what existing products fail to solve.
+Source:
+
+- `research/external-research/competitors-and-substitutes/synthesis.md`
 
 Current status:
 
 - The competitor/substitute synthesis is not yet developed enough to strongly influence target-customer conclusions.
 - It should be revisited after structured review evidence is added.
 
+Potential future use:
+
+- Identify what people already try.
+- Identify what existing products fail to solve.
+- Identify language used in reviews by chronic snoozers, oversleepers, and alarm dismissers.
+
 ### Marketing performance signal
 
-Early founder-led marketing performance and waitlist signups suggest early message resonance around the wake-up problem.
+Source:
 
-This is useful context, but weaker than direct customer and prototype evidence for defining the target customer.
+- `marketing/post-performance-log.md`
+
+Supported interpretation:
+
+- Early founder-led marketing performance and waitlist signups suggest message resonance around the wake-up problem.
 
 Limitations:
 
@@ -402,17 +555,17 @@ Limitations:
 
 To narrow the first target customer segment, collect evidence on:
 
-- Which segment has the strongest repeated wake-up pain
-- Which segment most clearly understands wake completion
-- Which segment has the highest willingness to pay
-- Which segment is easiest to reach without paid ads
-- Which segment is most likely to test a prototype
-- Which segment gives the clearest product feedback
-- Which segment has the strongest referral potential
-- Which segment tolerates anti-bypass friction without feeling punished
-- Which segment values wake completion versus less-groggy waking versus both
-- Which segment has the highest consequence from wake-up failure
-- Which segment keeps using the product after novelty fades
+- Which segment has the strongest repeated wake-up pain.
+- Which segment most clearly understands wake completion.
+- Which segment has the highest willingness to pay.
+- Which segment is easiest to reach without paid ads.
+- Which segment is most likely to test a prototype.
+- Which segment gives the clearest product feedback.
+- Which segment has the strongest referral potential.
+- Which segment tolerates anti-bypass friction without feeling punished.
+- Which segment values wake completion versus less-groggy waking versus both.
+- Which segment has the highest consequence from wake-up failure.
+- Which segment keeps using the product after novelty fades.
 
 Useful validation methods:
 
@@ -427,6 +580,7 @@ Useful validation methods:
 - comparison of baseline wake time, alarm time, and out-of-bed time
 - return-to-bed and bypass-attempt tracking
 - subjective morning difficulty and grogginess tracking
+- competitor review mining for repeated alarm failure language
 
 ## Open questions
 
