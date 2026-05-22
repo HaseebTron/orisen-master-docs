@@ -204,8 +204,8 @@ Reason:
 
 Impacted docs:
 - `ai-context/current-state.md`
-- `validation/evidence-standard.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-log.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
 - `radar-ml/radar-ml-context-map.md`
@@ -215,7 +215,7 @@ Impacted docs:
 Implications:
 - Safer phrasing should be used until stronger evidence exists, such as "aims to reduce grogginess" or "working toward sensor-informed wake intervention."
 - Radar/ML research can guide the technical path but does not automatically validate Orisen's customer-facing claims.
-- Evidence must be logged before public claims are strengthened.
+- Evidence must be logged in claim-control docs before public claims are strengthened.
 
 Open questions:
 - What real-world test would support a stronger claim about reduced grogginess?
@@ -251,15 +251,15 @@ Open questions:
 ## 2026-05-16 — Evidence standard added
 
 Decision:
-- Orisen should classify evidence and claims using a shared evidence standard.
+- Orisen should classify evidence and claims using a shared evidence standard, now enforced through claim-control and product evidence docs.
 
 Reason:
 - Orisen's product direction includes validated features, early signals, planned features, technical hypotheses, and long-term vision.
 - Without a common evidence standard, marketing, fundraising, and product docs could overstate grogginess reduction, sleep-stage accuracy, or artificial sleep phase transitioning.
 
 Impacted docs:
-- `validation/evidence-standard.md`
-- `validation/evidence-log.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `ai-context/claim-control/claim-control-log.md`
 - `product/claims-and-evidence.md`
 - marketing docs
 - fundraising docs
@@ -270,4 +270,4 @@ Implications:
 - Public-facing claims should become stronger only when evidence becomes stronger.
 
 Open questions:
-- Whether current evidence-log entries should be reformatted to match the new evidence standard.
+- Whether current claim-control log entries should be reformatted to match the current claim-control system.
