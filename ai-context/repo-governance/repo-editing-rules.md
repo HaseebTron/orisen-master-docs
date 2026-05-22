@@ -16,8 +16,11 @@ Use these docs together when planning or making repo changes:
 - `ai-context/repo-governance/repo-structure.md` defines the structural philosophy, folder responsibilities, and anti-duplication rules.
 - `ai-context/repo-governance/repo-file-map.md` is the central inventory of the repo's current durable files and folders.
 - `ai-context/repo-governance/repo-change-checklist.md` is the operational checklist for planning or making repo changes.
+- `ai-context/repo-governance/local-repo-codex-workflow.md` defines when and how to use local VS Code, Git, and Codex for broader repo changes.
 
 For significant repo changes, read `ai-context/repo-governance/repo-change-checklist.md` before editing.
+
+For broad, risky, or reference-heavy local work, read `ai-context/repo-governance/local-repo-codex-workflow.md` before telling the user how to use Codex or VS Code.
 
 ## Mandatory pre-edit disclosure rule
 
@@ -86,6 +89,8 @@ Prefer small, bounded, reviewable repo edits.
 
 Do not make large multi-file changes directly on GitHub without first stating the intended scope and confirming that direct editing is appropriate for the risk level.
 
+If the change is broad, risky, or reference-heavy, ChatGPT should tell the user that local repo + Codex is safer and should use `ai-context/repo-governance/local-repo-codex-workflow.md` for the workflow.
+
 ## Direct GitHub editing is appropriate for
 
 Direct GitHub edits are acceptable for:
@@ -108,6 +113,8 @@ Prefer a local Git, Codex, or branch/PR workflow for:
 - changes involving many deletes, renames, or moves
 - work where rollback safety matters
 - changes where unrelated files might be affected
+
+When recommending local Git/Codex, tell the user whether to continue the same Codex session or start a new one, what Codex intelligence level to use, whether Codex should edit or only inspect/report, and whether Codex should stop before commit/push.
 
 ## Pre-edit scope statement
 
@@ -214,6 +221,8 @@ Local Git and Codex are better for applying larger repo changes safely because t
 - repo-wide search and consistency checks
 - branch/PR review before merge
 
+Use `ai-context/repo-governance/local-repo-codex-workflow.md` when giving the user local repo + Codex instructions.
+
 Use the lightest workflow that is safe for the task.
 
 ## Relationship to doc creation, repo governance, and claim control
@@ -226,6 +235,7 @@ When creating or editing docs, still follow:
 - `ai-context/repo-governance/repo-structure.md` for repo structure logic
 - `ai-context/repo-governance/repo-file-map.md` for the current file inventory
 - `ai-context/repo-governance/repo-change-checklist.md` for the operational repo-change checklist
+- `ai-context/repo-governance/local-repo-codex-workflow.md` for local repo + Codex workflow
 - `ai-context/claim-control/claim-control-system.md`, when claims, evidence, validation, marketing, fundraising, or scientific support are involved
 
 These repo editing rules control editing mechanics. They do not decide company truth or claim safety by themselves.
