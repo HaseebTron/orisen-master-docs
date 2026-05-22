@@ -60,17 +60,25 @@ Conventions:
 - Use a colon and one-line plain-English summary after each folder or file.
 - Use indentation to show what is inside what.
 - Keep descriptions short.
+- List every durable `.md` file in the repo, including raw and archive files.
+- Raw files can have very short descriptions.
+- Do not deeply summarize raw content here. The file map only identifies what exists and why it is stored.
 - Link files only when it improves human navigation.
 - Do not turn this file into a detailed task-routing map. That belongs in `ai-context/context-map.md` and folder context maps.
 
 ## Repo inventory
 
+- `README.md`: Top-level repository overview.
+
 - **`ai-context/`**: Controls source-of-truth behavior, AI operating mode, project routing, repo governance, context loading, claim control, decisions, and repo workflow.
+  - `README.md`: AI context folder overview.
   - `start-here.md`: First file to read when starting or refreshing an Orisen ChatGPT chat.
+  - `chatgpt-project-instructions.md`: ChatGPT project instruction reference.
   - `project-routing.md`: Explains which Orisen ChatGPT project should handle different kinds of work.
   - `handoff-rules.md`: Defines when to continue, refresh, move projects, or start a new chat.
   - `context-map.md`: Top-level document-routing map for choosing minimal and full context packs.
   - `current-state.md`: Highest-level current company and product truth.
+  - `current-work.md`: Current work and active workstream notes.
   - `source-of-truth-rules.md`: Defines authority hierarchy and how to handle doc conflicts.
   - `ai-operating-mode.md`: Defines how GPT should reason when using Orisen docs.
   - `doc-creation-rules.md`: Defines how source-of-truth docs should be created, edited, and promoted.
@@ -92,6 +100,11 @@ Conventions:
   - `claims-and-evidence.md`: Product claims and evidence boundaries.
   - `target-customer.md`: First target customer and customer focus.
   - `roadmap.md`: Roadmap and product sequencing.
+  - `product-questions-and-objections.md`: Product questions, objections, and response framing.
+  - **`old-mvp/`**: Old MVP evidence, behavior notes, and failure/bypass learnings.
+    - `README.md`: Old MVP folder overview.
+    - `old-mvp.md`: Old MVP summary and learnings.
+    - `old-mvp-bypass-and-failure-notes.md`: Old MVP bypass, failure, and user-behavior notes.
 
 - **`research/`**: Stores customer interviews, expert commentary, external research, raw source material, processed notes, and research synthesis.
   - `research-context-map.md`: Research-specific context-loading map.
@@ -99,32 +112,46 @@ Conventions:
     - `2024-alarm-clock-interviews.md`: Customer interviews from using the old MVP.
     - **`raw/`**: Raw customer interview and source material.
   - **`expert-commentary/`**: Expert commentary, expert synthesis, and raw meeting notes.
+    - `README.md`: Expert commentary folder overview.
     - `expert-commentary.md`: Central expert commentary summary if maintained.
     - `benji-ozynski-synthesis.md`: Synthesis of Dr Benji Ozynski expert commentary.
     - **`raw/`**: Raw expert meeting notes and source material.
+      - `benji-ozynski-meeting-notes.md`: Raw notes from Dr Benji Ozynski expert conversation.
+      - `leila-jalali-meeting-notes.md`: Raw notes from Leila Jalali expert conversation.
   - **`external-research/`**: External research sources, processed notes, and synthesis docs.
     - `README.md`: External research folder overview and usage notes.
+    - **`raw/`**: Founder-provided source lists and source-categorization material.
+      - `founder-full-source-list.md`: Full founder-provided external source list.
+      - `founder-pitch-deck-source-shortlist.md`: Founder-provided pitch-deck source shortlist.
+      - `founder-source-categorization-map.md`: Founder-provided map for categorizing external sources.
     - **`waking-up/`**: Waking-up, sleep inertia, grogginess, oversleeping, and alarm-failure research.
-      - `waking-up-synthesis.md`: Synthesis of waking-up research if maintained.
-      - `processed-source-notes.md`: Processed notes from waking-up sources if maintained.
+      - `waking-up-synthesis.md`: Synthesis of waking-up research.
+      - `processed-source-notes.md`: Processed notes from waking-up sources.
       - **`raw/`**: Raw waking-up source material.
+        - `founder-sources.md`: Founder-provided raw waking-up source list.
     - **`going-to-sleep/`**: Bedtime, circadian, falling-asleep, sound, and lighting research.
-      - `going-to-sleep-synthesis.md`: Synthesis of going-to-sleep research if maintained.
+      - `going-to-sleep-synthesis.md`: Synthesis of going-to-sleep research.
       - **`raw/`**: Raw going-to-sleep source material.
+        - `founder-sources.md`: Founder-provided raw going-to-sleep source list.
     - **`during-sleep/`**: During-sleep sensing, intervention, and sleep-state research.
-      - `during-sleep-synthesis.md`: Synthesis of during-sleep research if maintained.
+      - `during-sleep-synthesis.md`: Synthesis of during-sleep research.
       - **`raw/`**: Raw during-sleep source material.
+        - `founder-sources.md`: Founder-provided raw during-sleep source list.
     - **`sleep-tracking-and-validation/`**: Sleep tracking accuracy and validation-standard research.
-      - `sleep-tracking-and-validation-synthesis.md`: Synthesis of sleep tracking and validation research if maintained.
+      - `sleep-tracking-and-validation-synthesis.md`: Synthesis of sleep tracking and validation research.
       - **`raw/`**: Raw sleep-tracking and validation source material.
+        - `founder-sources.md`: Founder-provided raw sleep-tracking and validation source list.
     - **`competitors-and-substitutes/`**: Competitor, substitute, and alternative-solution research.
-      - `competitors-and-substitutes-synthesis.md`: Synthesis of competitor and substitute research if maintained.
+      - `competitors-and-substitutes-synthesis.md`: Synthesis of competitor and substitute research.
       - **`raw/`**: Raw competitor and substitute source material.
+        - `founder-sources.md`: Founder-provided raw competitor and substitute source list.
     - **`market-and-category/`**: Market, category, and industry-framing research.
-      - `market-and-category-synthesis.md`: Synthesis of market and category research if maintained.
+      - `market-and-category-synthesis.md`: Synthesis of market and category research.
       - **`raw/`**: Raw market and category source material.
+        - `founder-sources.md`: Founder-provided raw market and category source list.
 
 - **`marketing/`**: Defines messaging, positioning, customer language, content strategy, channel playbooks, GTM experiments, launch execution, and marketing performance learnings.
+  - `README.md`: Marketing folder overview.
   - `marketing-context-map.md`: Marketing-specific context-loading map.
   - `positioning-and-messaging.md`: Core marketing positioning and messaging.
   - `post-performance-log.md`: Founder-led marketing post and campaign performance log.
@@ -141,13 +168,18 @@ Conventions:
 - **`fundraising/`**: Defines investor narrative, fundraising strategy, pitch framing, outreach, traction framing, and investor-specific communication.
   - `fundraising-context-map.md`: Fundraising-specific context-loading map.
   - `investor-narrative.md`: Core investor narrative.
+  - `investor-crm.md`: Investor CRM and investor relationship tracking.
+  - `outreach-email-accounts.md`: Fundraising outreach email account setup and notes.
   - Potential future files:
     - `pitch-deck-notes.md`: Pitch deck structure, slide notes, and investor-facing narrative details.
     - `traction.md`: Fundraising-focused traction framing.
     - `outreach-strategy.md`: Investor outreach and intro strategy.
 
 - **`software/`**: Defines software context at the master-docs level and routes to active implementation docs in the software repo.
+  - `README.md`: Software folder overview.
   - `software-context-map.md`: Software-specific context-loading map and links to active software implementation docs.
+  - `p1-overview.md`: Software project overview snapshot.
+  - `p2-mvp-scope.md`: Software MVP scope snapshot.
   - Note: Detailed implementation docs may live in the active Orisen Software repo, not necessarily this master docs repo.
 
 - **`radar-ml/`**: Defines radar module decisions, vital-sign extraction, sleep-stage modeling, intervention-loop research, datasets, technical validation, and research interpretation.
@@ -191,3 +223,5 @@ Conventions:
 This file should stay useful but not overly detailed.
 
 Do not turn it into a full duplicate of every folder's context map. Its job is to show what exists and where to find it, not to define every task-specific reading path.
+
+When a folder has many raw files, list them individually only if they are durable `.md` files. Keep raw-file descriptions short so this remains an inventory, not a synthesis.
