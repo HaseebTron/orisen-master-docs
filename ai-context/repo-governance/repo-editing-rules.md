@@ -1,5 +1,21 @@
 # Repo Editing Rules
 
+Status: Source of truth
+Authority level: Company / AI context / Repo governance
+Last reviewed: 2026-05-22
+Governing docs:
+- `ai-context/repo-governance/repo-purpose.md`
+- `ai-context/repo-governance/repo-operating-model.md`
+- `ai-context/repo-governance/repo-structure.md`
+- `ai-context/repo-governance/repo-change-checklist.md`
+- `ai-context/doc-creation-rules.md`
+- `ai-context/source-of-truth-rules.md`
+Downstream docs:
+- Repo edit sessions
+- Repo cleanup sessions
+- Direct GitHub editing workflows
+- Local repo + Codex workflow decisions
+
 ## Purpose
 
 This file defines how ChatGPT should perform direct GitHub edits to the Orisen master docs repo.
