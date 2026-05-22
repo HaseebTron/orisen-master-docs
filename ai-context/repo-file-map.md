@@ -40,267 +40,151 @@ Update this file when:
 
 Do not update this file for tiny temporary scratch files unless they become durable docs.
 
-## Current top-level structure
+## Format rule
 
-```text
-ai-context/
-product/
-research/
-marketing/
-fundraising/
-software/
-radar-ml/
-hardware/
-business/
+Use a nested bullet tree for the repo inventory.
+
+Format:
+
+```markdown
+- **`folder/`**: Folder purpose.
+  - `file.md`: File purpose.
+  - **`subfolder/`**: Subfolder purpose.
+    - `nested-file.md`: File purpose.
 ```
 
-Some folders may be partially built or planned. If a listed folder does not yet contain stable docs, treat it as a planned or emerging domain until populated.
-
-## `ai-context/`
-
-Purpose:
-- Controls source-of-truth behavior, AI operating mode, project routing, repo governance, context loading, claim control, decisions, and repo workflow.
-
-Key files:
-
-- `ai-context/start-here.md`
-  - First file to read when starting or refreshing an Orisen ChatGPT chat.
-
-- `ai-context/project-routing.md`
-  - Explains which Orisen ChatGPT project should handle different kinds of work.
-
-- `ai-context/handoff-rules.md`
-  - Defines when to continue, refresh, move projects, or start a new chat.
-
-- `ai-context/context-map.md`
-  - Top-level document-routing map for choosing minimal and full context packs.
-
-- `ai-context/current-state.md`
-  - Highest-level current company and product truth.
-
-- `ai-context/source-of-truth-rules.md`
-  - Defines authority hierarchy and how to handle doc conflicts.
-
-- `ai-context/ai-operating-mode.md`
-  - Defines how GPT should reason when using Orisen docs.
-
-- `ai-context/doc-creation-rules.md`
-  - Defines how source-of-truth docs should be created, edited, and promoted.
-
-- `ai-context/repo-editing-rules.md`
-  - Defines safe direct GitHub editing behavior.
-
-- `ai-context/repo-purpose.md`
-  - Defines why the repo exists and what good repo health means.
-
-- `ai-context/repo-structure.md`
-  - Defines structural philosophy, folder responsibilities, and anti-duplication rules.
-
-- `ai-context/repo-file-map.md`
-  - Central current inventory of repo folders and durable files.
-
-- `ai-context/repo-change-checklist.md`
-  - Operational checklist for planning or making repo changes.
-
-- `ai-context/repo-backlog.md`
-  - Backlog of repo buildout and cleanup work.
-
-- `ai-context/decision-log.md`
-  - Durable decisions and rationale.
-
-## `ai-context/claim-control/`
-
-Purpose:
-- Controls claims, evidence, validation language, and claim-safety discipline across product, marketing, fundraising, radar/ML, and public-facing work.
-
-Known key files:
-
-- `ai-context/claim-control/claim-control-system.md`
-  - Rules for judging and controlling claims.
-
-- `ai-context/claim-control/claim-control-log.md`
-  - Log of claim decisions and evidence status.
-
-- `ai-context/claim-control/claim-control-roadmap.md`
-  - Roadmap for improving claim-control system.
-
-## `product/`
-
-Purpose:
-- Defines product truth, product scope, customer promise, roadmap, target customer, and claims/evidence from a product perspective.
-
-Known key files:
-
-- `product/product-context-map.md`
-  - Product-specific context-loading map.
-
-- `product/product-overview.md`
-  - Product direction and product-level truth.
-
-- `product/claims-and-evidence.md`
-  - Product claims and evidence boundaries.
-
-- `product/target-customer.md`
-  - First target customer and customer focus.
-
-- `product/roadmap.md`
-  - Roadmap and product sequencing.
-
-## `research/`
-
-Purpose:
-- Stores customer interviews, expert commentary, external research, raw source material, processed notes, and research synthesis used to inform product, claims, marketing, fundraising, business, hardware, software, and radar/ML work.
-
-Known key files:
-
-- `research/research-context-map.md`
-  - Research-specific context-loading map.
-
-Known subfolders:
-
-- `research/customer-interviews/`
-  - Customer interview synthesis and raw customer research.
-
-- `research/expert-commentary/`
-  - Expert commentary, expert synthesis, and raw meeting notes.
-
-- `research/external-research/`
-  - External research sources, processed notes, and synthesis docs across waking up, going to sleep, during sleep, sleep tracking and validation, competitors, and market/category research.
-
-## `marketing/`
-
-Purpose:
-- Defines messaging, positioning, customer language, content strategy, channel playbooks, GTM experiments, and launch execution.
-
-Known key files:
-
-- `marketing/marketing-context-map.md`
-  - Marketing-specific context-loading map.
-
-- `marketing/positioning-and-messaging.md`
-  - Core marketing positioning and messaging.
-
-Potential future files:
-
-- `marketing/customer-language.md`
-- `marketing/content-pillars.md`
-- `marketing/gtm.md`
-- `marketing/linkedin-playbook.md`
-- `marketing/x-playbook.md`
-- `marketing/tiktok-playbook.md`
-- `marketing/instagram-playbook.md`
-- `marketing/reddit-research.md`
-
-## `fundraising/`
-
-Purpose:
-- Defines investor narrative, fundraising strategy, pitch framing, outreach, traction framing, and investor-specific communication.
-
-Known key files:
-
-- `fundraising/fundraising-context-map.md`
-  - Fundraising-specific context-loading map.
-
-- `fundraising/investor-narrative.md`
-  - Core investor narrative.
-
-Potential future files:
-
-- `fundraising/pitch-deck-notes.md`
-- `fundraising/traction.md`
-- `fundraising/outreach-strategy.md`
-
-## `software/`
-
-Purpose:
-- Defines software context at the master-docs level and routes to active implementation docs in the software repo.
-
-Known key files:
-
-- `software/software-context-map.md`
-  - Software-specific context-loading map and links to active software implementation docs.
-
-Potential or external implementation docs may live in the active Orisen Software repo, not necessarily this master docs repo.
-
-## `radar-ml/`
-
-Purpose:
-- Defines radar module decisions, vital-sign extraction, sleep-stage modeling, intervention-loop research, datasets, technical validation, and research interpretation.
-
-Known key files:
-
-- `radar-ml/radar-ml-context-map.md`
-  - Radar/ML-specific context-loading map.
-
-Potential future files:
-
-- `radar-ml/radar-module-decision.md`
-- `radar-ml/vital-signs-pipeline.md`
-- `radar-ml/sleep-stage-model.md`
-- `radar-ml/intervention-loop.md`
-- `radar-ml/research-notes.md`
-- `radar-ml/technical-validation.md`
-
-## `hardware/`
-
-Purpose:
-- Defines physical product architecture, sensing placement, enclosure, power, audio/light, manufacturing, reliability, and hardware tradeoffs.
-
-Potential future files:
-
-- `hardware/hardware-context-map.md`
-- `hardware/hardware-overview.md`
-- `hardware/sensor-decisions.md`
-- `hardware/manufacturing-notes.md`
-
-Hardware docs should be created when hardware work becomes frequent enough to justify stable context.
-
-## `business/`
-
-Purpose:
-- Defines business model, pricing, competitors, market assumptions, partnerships, operations, and revenue strategy.
-
-Potential future files:
-
-- `business/business-context-map.md`
-- `business/business-model.md`
-- `business/pricing.md`
-- `business/competitors.md`
-- `business/market-notes.md`
-
-Business docs may contain assumptions and should clearly separate assumptions from validated facts.
+Conventions:
+
+- Bold folder paths.
+- Do not bold file paths.
+- Use a colon and one-line plain-English summary after each folder or file.
+- Use indentation to show what is inside what.
+- Keep descriptions short.
+- Link files only when it improves human navigation.
+- Do not turn this file into a detailed task-routing map. That belongs in `ai-context/context-map.md` and folder context maps.
+
+## Repo inventory
+
+- **`ai-context/`**: Controls source-of-truth behavior, AI operating mode, project routing, repo governance, context loading, claim control, decisions, and repo workflow.
+  - `start-here.md`: First file to read when starting or refreshing an Orisen ChatGPT chat.
+  - `project-routing.md`: Explains which Orisen ChatGPT project should handle different kinds of work.
+  - `handoff-rules.md`: Defines when to continue, refresh, move projects, or start a new chat.
+  - `context-map.md`: Top-level document-routing map for choosing minimal and full context packs.
+  - `current-state.md`: Highest-level current company and product truth.
+  - `source-of-truth-rules.md`: Defines authority hierarchy and how to handle doc conflicts.
+  - `ai-operating-mode.md`: Defines how GPT should reason when using Orisen docs.
+  - `doc-creation-rules.md`: Defines how source-of-truth docs should be created, edited, and promoted.
+  - `repo-editing-rules.md`: Defines safe direct GitHub editing behavior.
+  - `repo-purpose.md`: Defines why the repo exists and what good repo health means.
+  - `repo-structure.md`: Defines structural philosophy, folder responsibilities, and anti-duplication rules.
+  - `repo-file-map.md`: Central current inventory of repo folders and durable files.
+  - `repo-change-checklist.md`: Operational checklist for planning or making repo changes.
+  - `repo-backlog.md`: Backlog of repo buildout and cleanup work.
+  - `decision-log.md`: Durable decisions and rationale.
+  - **`claim-control/`**: Controls claims, evidence, validation language, and claim-safety discipline.
+    - `claim-control-system.md`: Rules for judging and controlling claims.
+    - `claim-control-log.md`: Log of claim decisions and evidence status.
+    - `claim-control-roadmap.md`: Roadmap for improving the claim-control system.
+
+- **`product/`**: Defines product truth, product scope, customer promise, roadmap, target customer, and claims/evidence from a product perspective.
+  - `product-context-map.md`: Product-specific context-loading map.
+  - `product-overview.md`: Product direction and product-level truth.
+  - `claims-and-evidence.md`: Product claims and evidence boundaries.
+  - `target-customer.md`: First target customer and customer focus.
+  - `roadmap.md`: Roadmap and product sequencing.
+
+- **`research/`**: Stores customer interviews, expert commentary, external research, raw source material, processed notes, and research synthesis.
+  - `research-context-map.md`: Research-specific context-loading map.
+  - **`customer-interviews/`**: Customer interview synthesis and raw customer research.
+    - `2024-alarm-clock-interviews.md`: Customer interviews from using the old MVP.
+    - **`raw/`**: Raw customer interview and source material.
+  - **`expert-commentary/`**: Expert commentary, expert synthesis, and raw meeting notes.
+    - `expert-commentary.md`: Central expert commentary summary if maintained.
+    - `benji-ozynski-synthesis.md`: Synthesis of Dr Benji Ozynski expert commentary.
+    - **`raw/`**: Raw expert meeting notes and source material.
+  - **`external-research/`**: External research sources, processed notes, and synthesis docs.
+    - `README.md`: External research folder overview and usage notes.
+    - **`waking-up/`**: Waking-up, sleep inertia, grogginess, oversleeping, and alarm-failure research.
+      - `waking-up-synthesis.md`: Synthesis of waking-up research if maintained.
+      - `processed-source-notes.md`: Processed notes from waking-up sources if maintained.
+      - **`raw/`**: Raw waking-up source material.
+    - **`going-to-sleep/`**: Bedtime, circadian, falling-asleep, sound, and lighting research.
+      - `going-to-sleep-synthesis.md`: Synthesis of going-to-sleep research if maintained.
+      - **`raw/`**: Raw going-to-sleep source material.
+    - **`during-sleep/`**: During-sleep sensing, intervention, and sleep-state research.
+      - `during-sleep-synthesis.md`: Synthesis of during-sleep research if maintained.
+      - **`raw/`**: Raw during-sleep source material.
+    - **`sleep-tracking-and-validation/`**: Sleep tracking accuracy and validation-standard research.
+      - `sleep-tracking-and-validation-synthesis.md`: Synthesis of sleep tracking and validation research if maintained.
+      - **`raw/`**: Raw sleep-tracking and validation source material.
+    - **`competitors-and-substitutes/`**: Competitor, substitute, and alternative-solution research.
+      - `competitors-and-substitutes-synthesis.md`: Synthesis of competitor and substitute research if maintained.
+      - **`raw/`**: Raw competitor and substitute source material.
+    - **`market-and-category/`**: Market, category, and industry-framing research.
+      - `market-and-category-synthesis.md`: Synthesis of market and category research if maintained.
+      - **`raw/`**: Raw market and category source material.
+
+- **`marketing/`**: Defines messaging, positioning, customer language, content strategy, channel playbooks, GTM experiments, launch execution, and marketing performance learnings.
+  - `marketing-context-map.md`: Marketing-specific context-loading map.
+  - `positioning-and-messaging.md`: Core marketing positioning and messaging.
+  - `post-performance-log.md`: Founder-led marketing post and campaign performance log.
+  - Potential future files:
+    - `customer-language.md`: Customer words, phrases, pain points, and message mining.
+    - `content-pillars.md`: Core founder-led content themes.
+    - `gtm.md`: Go-to-market strategy.
+    - `linkedin-playbook.md`: LinkedIn-specific content and outreach playbook.
+    - `x-playbook.md`: X/Twitter-specific content playbook.
+    - `tiktok-playbook.md`: TikTok-specific content playbook.
+    - `instagram-playbook.md`: Instagram-specific content playbook.
+    - `reddit-research.md`: Reddit research and community notes.
+
+- **`fundraising/`**: Defines investor narrative, fundraising strategy, pitch framing, outreach, traction framing, and investor-specific communication.
+  - `fundraising-context-map.md`: Fundraising-specific context-loading map.
+  - `investor-narrative.md`: Core investor narrative.
+  - Potential future files:
+    - `pitch-deck-notes.md`: Pitch deck structure, slide notes, and investor-facing narrative details.
+    - `traction.md`: Fundraising-focused traction framing.
+    - `outreach-strategy.md`: Investor outreach and intro strategy.
+
+- **`software/`**: Defines software context at the master-docs level and routes to active implementation docs in the software repo.
+  - `software-context-map.md`: Software-specific context-loading map and links to active software implementation docs.
+  - Note: Detailed implementation docs may live in the active Orisen Software repo, not necessarily this master docs repo.
+
+- **`radar-ml/`**: Defines radar module decisions, vital-sign extraction, sleep-stage modeling, intervention-loop research, datasets, technical validation, and research interpretation.
+  - `radar-ml-context-map.md`: Radar/ML-specific context-loading map.
+  - Potential future files:
+    - `radar-module-decision.md`: Radar module selection and tradeoff decisions.
+    - `vital-signs-pipeline.md`: Vital-sign, RRV, HRV, and movement extraction strategy.
+    - `sleep-stage-model.md`: Sleep-stage modeling approach.
+    - `intervention-loop.md`: Sensor-informed wake intervention loop.
+    - `research-notes.md`: Radar/ML research notes.
+    - `technical-validation.md`: Technical validation plan and evidence requirements.
+
+- **`hardware/`**: Defines physical product architecture, sensing placement, enclosure, power, audio/light, manufacturing, reliability, and hardware tradeoffs.
+  - Potential future files:
+    - `hardware-context-map.md`: Hardware-specific context-loading map.
+    - `hardware-overview.md`: Hardware architecture overview.
+    - `sensor-decisions.md`: Sensor selection and placement decisions.
+    - `manufacturing-notes.md`: Manufacturing, sourcing, and DFM notes.
+  - Note: Hardware docs should be created when hardware work becomes frequent enough to justify stable context.
+
+- **`business/`**: Defines business model, pricing, competitors, market assumptions, partnerships, operations, and revenue strategy.
+  - Potential future files:
+    - `business-context-map.md`: Business-specific context-loading map.
+    - `business-model.md`: Business model and revenue logic.
+    - `pricing.md`: Pricing assumptions and strategy.
+    - `competitors.md`: Competitor analysis.
+    - `market-notes.md`: Market assumptions and notes.
+  - Note: Business docs may contain assumptions and should clearly separate assumptions from validated facts.
 
 ## Entry-point docs
 
-Default entry point:
-
-- `ai-context/start-here.md`
-
-Top-level routing map:
-
-- `ai-context/context-map.md`
-
-Repo governance entry points:
-
-- `ai-context/repo-purpose.md`
-- `ai-context/repo-structure.md`
-- `ai-context/repo-file-map.md`
-- `ai-context/repo-change-checklist.md`
-
-Source-of-truth authority entry points:
-
-- `ai-context/current-state.md`
-- `ai-context/source-of-truth-rules.md`
-- `ai-context/ai-operating-mode.md`
-
-Doc and repo-edit workflow entry points:
-
-- `ai-context/doc-creation-rules.md`
-- `ai-context/repo-editing-rules.md`
-
-Claim-control entry point:
-
-- `ai-context/claim-control/claim-control-system.md`
+- **Default entry point**: `ai-context/start-here.md`
+- **Top-level routing map**: `ai-context/context-map.md`
+- **Repo governance entry points**: `ai-context/repo-purpose.md`, `ai-context/repo-structure.md`, `ai-context/repo-file-map.md`, `ai-context/repo-change-checklist.md`
+- **Source-of-truth authority entry points**: `ai-context/current-state.md`, `ai-context/source-of-truth-rules.md`, `ai-context/ai-operating-mode.md`
+- **Doc and repo-edit workflow entry points**: `ai-context/doc-creation-rules.md`, `ai-context/repo-editing-rules.md`
+- **Claim-control entry point**: `ai-context/claim-control/claim-control-system.md`
 
 ## Notes for future updates
 
