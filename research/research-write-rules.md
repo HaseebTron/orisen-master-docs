@@ -2,9 +2,10 @@
 
 Status: Source of truth
 Authority level: Research / Writing rules
-Last reviewed: 2026-05-22
+Last reviewed: 2026-05-23
 Governing docs:
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/repo-governance/repo-editing-rules.md`
 - `ai-context/claim-control/claim-control-system.md`
 - `research/research-read-rules.md`
 Downstream docs:
@@ -19,6 +20,18 @@ This file defines how to write or update research docs, especially synthesis fil
 Use it after `research/research-read-rules.md` has identified which research inputs matter for the task.
 
 This file does not make research into product truth. It defines how research should be preserved, interpreted, summarized, and routed into claim-control or product docs when appropriate.
+
+## Mandatory repo-edit trigger
+
+Before any ChatGPT-assisted research repo write action, including creating, editing, moving, renaming, deleting, or archiving a file, read:
+
+- `ai-context/repo-governance/repo-editing-rules.md`
+
+This applies even for small one-file edits.
+
+After reading it, state the pre-edit scope before making the write action.
+
+This rule applies before writing or updating research docs in GitHub, even when `research/research-write-rules.md` has already been read.
 
 ## Raw vs raw-sources-reviewed vs synthesis docs
 
