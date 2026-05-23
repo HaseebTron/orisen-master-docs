@@ -85,6 +85,17 @@ Finished post drafts should live in `marketing/x-post-bank.md`. The operating ru
     - when to DM
     - when not to reply
 
+## Post formats
+
+To be written later.
+
+Placeholder intent:
+
+- This section should define reusable X post structures.
+- It should explain how to turn a post type into a practical draft structure.
+- It should include short posts, threads if needed, customer-discovery prompts, build-in-public updates, and claim-safe vision posts.
+- It should not store finished drafts; finished drafts should live in `marketing/x-post-bank.md`.
+
 ## Cadence and weekly operating rhythm
 
 To be written later.
