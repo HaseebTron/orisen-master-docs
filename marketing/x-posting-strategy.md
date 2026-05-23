@@ -29,11 +29,10 @@ Finished post drafts should live in `marketing/x-post-bank.md`. The operating ru
 
 - **Product and build-in-public posts**:
   - Regular progress updates
-  - Building-related posts
-    - Difficult thing I run into while building
-    - Epiphanys I had while building
-    - Build lessons and shortcuts
-    - What I learned from the old MVP
+  - Difficult thing I run into while building
+  - Epiphanys I had while building
+  - Build lessons and shortcuts
+  - What I learned from the old MVP
   - Founder reflections
   - Product demo/prototype posts
   - Tradeoffs in design posts
