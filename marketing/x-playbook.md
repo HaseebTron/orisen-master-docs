@@ -14,9 +14,33 @@ Governing docs:
 - `marketing/positioning-and-messaging.md`
 - `marketing/post-performance-log.md`
 Downstream docs:
+- `marketing/x-posting-strategy.md`
 - `marketing/x-post-bank.md`
 - `marketing/x-posting-calendar.md`
 - Future X post drafts, replies, and campaign tests
+
+## File structure
+
+- **Purpose**: defines what this playbook is for and what it is not for.
+- **Source-of-truth hierarchy**: defines which upstream files control X messaging, claims, audience, and narrative.
+- **Channel goal**: defines what X is supposed to accomplish for Orisen.
+- **Audience**: defines who Orisen should write for first on X.
+  - **Primary audience**: high-pain users with repeated wake-up failure.
+  - **Secondary audience**: founders, operators, investors, and builders who can amplify, advise, or connect Orisen to users.
+  - **Tertiary audience**: sleep experts, clinicians, researchers, and technical reviewers who can sharpen claims and validation.
+- **Positioning spine for X**: summarizes the repeatable X-specific version of Orisen's positioning and category narrative.
+- **Claim-safety rules for X**: defines safe, careful, future-only, and avoided public claims for X posts.
+- **Founder voice**: defines how Orisen should sound when posting founder-led content.
+- **Content pillars**: summarizes the recurring themes Orisen should be known for on X.
+- **Post formats**: summarizes the reusable post structures, with deeper guidance living in `marketing/x-posting-strategy.md`.
+- **Hook bank**: summarizes repeatable X hooks, with finished drafts living in `marketing/x-post-bank.md`.
+- **Reply strategy**: defines how to use replies for discovery, trust, and distribution without sounding spammy.
+- **Cadence and weekly operating rhythm**: defines the realistic posting and replying rhythm for a solo founder.
+- **CTAs and conversion paths**: defines when to ask for replies, DMs, waitlist signups, expert feedback, or interviews.
+- **Lightweight performance tracking**: defines what signals to track before deeper analysis goes into `marketing/post-performance-log.md`.
+- **What to avoid**: lists content patterns, claims, and behaviors that do not fit Orisen's X strategy.
+- **First-week posting plan**: gives a concrete starter plan for launching X activity.
+- **Maintenance rules**: defines when this file should be updated and what belongs in other downstream files.
 
 ## Purpose
 
