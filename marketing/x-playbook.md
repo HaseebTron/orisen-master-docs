@@ -31,14 +31,11 @@ Downstream docs:
 - **Account identity**: defines how the founder's personal X account should balance Orisen, founder-led building, product thinking, and audience trust.
 - **Main content themes**: summarizes the main recurring themes the personal founder account should return to.
 - **Claim-safety rules for X**: defines safe, careful, future-only, and avoided public claims for X posts.
-- **Founder voice**: defines how Orisen should sound when posting founder-led content.
-- **Hook bank**: summarizes repeatable X hooks, with finished drafts living in `marketing/x-post-bank.md`.
+- **Founder voice and account tone**: defines how the founder's personal X account should sound.
 - **Reply strategy**: defines how to use replies for discovery, trust, and distribution without sounding spammy.
-- **Cadence and weekly operating rhythm**: defines the realistic posting and replying rhythm for a solo founder.
 - **CTAs and conversion paths**: defines when to ask for replies, DMs, waitlist signups, expert feedback, or interviews.
 - **Lightweight performance tracking**: defines what signals to track before deeper analysis goes into `marketing/post-performance-log.md`.
 - **What to avoid**: lists content patterns, claims, and behaviors that do not fit Orisen's X strategy.
-- **First-week posting plan**: gives a concrete starter plan for launching X activity.
 - **Maintenance rules**: defines when this file should be updated and what belongs in other downstream files.
 
 ## Purpose
@@ -47,14 +44,16 @@ This file is Orisen's practical operating guide for founder-led organic posting 
 
 Use this file to decide:
 
-- what to post on X
+- what X is supposed to accomplish for Orisen
+- who the founder's personal X account is written for
+- what the account should repeatedly talk about
 - how Orisen should sound on X
 - how to stay claim-safe while still being sharp
 - how to reply to people without sounding spammy
 - what CTAs to use
 - how X should support customer discovery, waitlist growth, and early market learning
 
-This file should help the founder start posting immediately without needing a large content system.
+This file should help the founder start posting without needing a large content system.
 
 This file is not:
 
@@ -62,6 +61,7 @@ This file is not:
 - the public claim authority
 - the full positioning authority
 - a large finished post bank
+- a detailed posting strategy
 - a detailed posting calendar
 - a performance log
 - a replacement for customer research
@@ -93,8 +93,11 @@ Use this hierarchy when writing or reviewing X posts:
    - Do not treat post performance as proof of product-market fit, willingness to pay, or product efficacy.
 
 6. `marketing/x-playbook.md`
-   - Converts the above into X-specific execution.
+   - Converts the above into X-specific operating rules.
    - This file does not create new product claims or change Orisen positioning.
+
+7. `marketing/x-posting-strategy.md`
+   - Turns this playbook into strategic content motions, post types, formats, hooks, cadence, and first-week execution.
 
 Core rule:
 
@@ -330,7 +333,7 @@ Do not use these as public X claims:
 | Our waitlist proves demand. | Early organic posting showed message resonance around the wake-up problem. |
 | Science proves Orisen works. | External research supports the problem framing, but Orisen still needs direct validation. |
 
-## Founder voice
+## Founder voice and account tone
 
 The X account should sound like a founder building Orisen in public, not like a generic sleep brand.
 
@@ -465,16 +468,6 @@ Good:
 
 Avoid making every post about the founder. The customer pain should still be the center.
 
-## Hook bank
-
-To be written later.
-
-Placeholder intent:
-
-- This section should collect short X-ready hooks pulled from approved messaging.
-- It should stay concise.
-- Finished posts should go in `marketing/x-post-bank.md`, not here.
-
 ## Reply strategy
 
 Replies are a major part of organic X growth.
@@ -586,16 +579,6 @@ Avoid:
 > Join the waitlist here: [link]
 
 as a default reply.
-
-## Cadence and weekly operating rhythm
-
-To be written later.
-
-Placeholder intent:
-
-- This section should define the weekly X workflow.
-- It should include posting, replying, customer-discovery activity, CTA frequency, and performance review.
-- It should stay lightweight enough to actually follow.
 
 ## CTAs and conversion paths
 
@@ -713,16 +696,6 @@ Avoid:
 - turning every reply into a pitch
 - copying engagement-bait formats that do not fit Orisen's trust-sensitive product
 
-## First-week posting plan
-
-To be written later.
-
-Placeholder intent:
-
-- This section should give a simple 7-day starter plan.
-- It should be concrete enough to execute immediately.
-- It should connect to `marketing/x-post-bank.md` and `marketing/x-posting-calendar.md` once those files exist.
-
 ## Maintenance rules
 
 Keep this file lean and usable.
@@ -745,11 +718,15 @@ Do not use this file to store:
 - raw customer conversations
 - detailed research summaries
 - new product claims
+- detailed post formats
+- detailed hook guidance
+- first-week execution plans
 
 Suggested doc split:
 
 - Keep strategy and operating rules here.
-- Put finished X posts in `marketing/x-post-bank.md`.
+- Put strategic content motions, post formats, hook guidance, cadence, and first-week execution in `marketing/x-posting-strategy.md`.
+- Put finished X posts and finished hook drafts in `marketing/x-post-bank.md`.
 - Put schedules in `marketing/x-posting-calendar.md`.
 - Put performance analysis in `marketing/post-performance-log.md`.
 - Put claim decisions in `product/claims-and-evidence.md`.
