@@ -25,53 +25,25 @@ Finished post drafts should live in `marketing/x-post-bank.md`. The operating ru
 - **Customer pain and problem insight posts**:
   - Customer pain mirror posts
   - Problem/insight posts
-    - Wake-up failure breakdowns
-    - Half-awake decision-making posts
   - Reframe posts
-    - Alarm worked, morning failed
-    - Waking up vs getting out of bed
-    - Alarm dismissal vs wake completion
-  - Relatable humor posts
-    - Straight-faced jokes about half-awake behavior
-    - Sarcasm toward broken alarms, not users
 
 - **Product and build-in-public posts**:
   - Regular progress updates
   - Building-related posts
-    - Difficult thing I ran into while building
-    - Epiphany I had while building
+    - Difficult thing I run into while building
+    - Epiphanys I had while building
     - Build lessons and shortcuts
     - What I learned from the old MVP
-  - Build story posts
-    - Reason I am building this
-    - What I learned from customer conversations
-    - What changed my mind
-    - What I used to believe vs what I believe now
-    - Why I am starting narrow
-    - Why I am avoiding overclaims
-    - Founder reflections without cringe
-  - Product explanation posts
-    - Product demo/prototype posts
-    - Hardware/firmware tradeoff posts
-    - Anti-bypass design posts
-    - Reliability posts
-    - Local alarm execution posts
+  - Founder reflections
+  - Product demo/prototype posts
+  - Tradeoffs in design posts
+  - cool features posts
   - Evidence/traction posts
 
 - **Sleep/wake-up insight posts**:
   - Sleep/wake-up facts
-    - Facts about waking up, snoozing, grogginess, and alarm behavior
-    - Sleep inertia discussion, carefully worded
-    - Wake-up research explained simply
-    - Myths or weak assumptions about alarms and sleep routines
-  - Unique wake-up insights
-    - Why waking up is a transition, not just a timer event
-    - Why the real failure starts after the alarm rings
-    - Why wake completion is the first wedge
-  - Sleep problem reframes
-    - Why sleep trackers are incomplete if they do not change outcomes
-    - Tracking vs intervention
-    - Sleep tech should change outcomes, not just measure them
+  - Unique insights
+  - Reframing and changing perspective
 
 - **Narrative/category posts**:
   - Tracking vs intervention posts
