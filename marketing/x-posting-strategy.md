@@ -84,3 +84,25 @@ Finished post drafts should live in `marketing/x-post-bank.md`. The operating ru
     - when to mention Orisen
     - when to DM
     - when not to reply
+
+## Cadence and weekly operating rhythm
+
+To be written later.
+
+Placeholder intent:
+
+- This section should define the realistic weekly X operating rhythm for a solo founder.
+- It should include posting cadence, reply cadence, customer-discovery activity, CTA rhythm, batching, and review rhythm.
+- It should translate the channel goals from `marketing/x-playbook.md` into a practical weekly workflow.
+- It should stay lightweight enough to actually follow.
+
+## First-week posting plan
+
+To be written later.
+
+Placeholder intent:
+
+- This section should give a simple starter plan for the first week of consistent X posting.
+- It should specify which post types to use, what to reply to, and where to use CTAs.
+- It should connect to `marketing/x-post-bank.md` once drafts exist.
+- It should help start posting quickly without overbuilding the system.
