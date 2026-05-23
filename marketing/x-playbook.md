@@ -1,7 +1,7 @@
 # X Playbook
 
 Status: Working strategy
-Authority level: Channel-specific marketing execution
+Authority level: Channel-specific marketing working strategy / operating guide
 Last reviewed: 2026-05-23
 Governing docs:
 - `ai-context/current-state.md`
@@ -12,6 +12,7 @@ Governing docs:
 - `product/target-customer.md`
 - `marketing/framing-and-narrative.md`
 - `marketing/positioning-and-messaging.md`
+- `marketing/marketing-write-rules.md`
 - `marketing/post-performance-log.md`
 Downstream docs:
 - `marketing/x-posting-strategy.md`
@@ -243,6 +244,13 @@ These are the main things the account talks about:
 - **Reframing sleep tech from tracking to intervention**: Shift the conversation from measuring sleep to helping change real sleep/wake outcomes, while staying claim-safe.
 - **Learning from users and experts**: Use X to ask better questions, learn from high-pain users, and get thoughtful feedback from operators, builders, and sleep experts.
 
+A post does not need to mention Orisen directly every time, but it should pass at least one of these filters:
+
+- It shows Orisen being built.
+- It makes the wake-up problem more specific.
+- It reframes alarms, sleep tech, or wake completion.
+- It helps learn from users, experts, operators, or builders.
+
 These themes sit above individual post types.
 
 `marketing/x-posting-strategy.md` should turn these themes into strategic content motions, post types, formats, hooks, and cadence.
@@ -268,7 +276,6 @@ These are generally safe to use:
 - Orisen is designed around wake completion, not just alarm playback.
 - Normal alarms can stop before wake completion.
 - A normal alarm can work and the morning can still fail.
-- Orisen is being built toward less brutal mornings.
 
 ### Careful claims
 
@@ -277,6 +284,7 @@ These can be used when clearly framed as design goals, direction, or exploration
 - Orisen aims to make waking up more reliable.
 - Orisen is designed to make going back to bed harder.
 - Orisen is designed so the easiest path is getting out of bed.
+- Orisen is being built toward less brutal mornings, but has not yet validated reduced grogginess or reduced sleep inertia.
 - Orisen aims to make mornings feel less brutal through gradual audio, light, and future sensor-informed intervention.
 - Orisen is working toward sensor-informed wake intervention.
 - Orisen is being built toward sleep-phase-aware wake behavior.
@@ -517,7 +525,7 @@ Useful search phrases:
 - "waking up is hard"
 - "overslept again"
 
-Use these searches for customer discovery, not spam.
+Use these searches to find real conversations and learn customer language, not to drop Orisen links or farm replies.
 
 ### Reply style
 
