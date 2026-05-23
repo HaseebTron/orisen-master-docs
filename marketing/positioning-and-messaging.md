@@ -18,10 +18,11 @@ Use this file when writing or reviewing:
 - short product explanations
 - taglines and hooks
 
-This file translates product truth and claim boundaries into punchy public language.
+This file translates product truth, claim boundaries, and the larger Orisen narrative into punchy public language.
 
 This file should stay consistent with:
 
+- `marketing/framing-and-narrative.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/product-overview.md`
@@ -31,7 +32,7 @@ This file should stay consistent with:
 
 ## Role of this file
 
-This file sits between product truth and channel-specific marketing execution.
+This file sits between product truth, strategic narrative, and channel-specific marketing execution.
 
 The upstream docs answer:
 
@@ -40,12 +41,14 @@ The upstream docs answer:
 - What is still early signal?
 - What is hypothesis or vision?
 - What can we safely claim publicly?
+- What belief shift is Orisen trying to create?
 
 This file answers:
 
 - How do we say it so customers care?
 - What language should Orisen repeat?
 - What phrases are punchy but still defensible?
+- How do we turn the bigger narrative into usable website, social, and pitch language?
 - How do we sound ambitious without pretending unvalidated outcomes are already proven?
 
 This file is not:
@@ -56,6 +59,41 @@ This file is not:
 - a posting calendar
 - a legal or regulatory review
 - a replacement for `product/claims-and-evidence.md`
+- a replacement for `marketing/framing-and-narrative.md`
+
+## Relationship to framing and narrative
+
+`marketing/framing-and-narrative.md` defines the belief shift.
+
+This file turns that belief shift into customer-facing language.
+
+The narrative doc asks:
+
+> What belief are we trying to install?
+
+This messaging doc asks:
+
+> What exact words should we use repeatedly so that belief feels obvious?
+
+Use the framing doc for:
+
+- fundraising narrative
+- pitch-deck sequence
+- strategic belief shift
+- old frame vs new frame
+- category-level reframe
+- investor inevitability
+
+Use this file for:
+
+- public wording
+- hooks
+- taglines
+- website language
+- founder explanations
+- social-ready lines
+- claim-safe phrasing
+- customer-facing category language
 
 ## Messaging philosophy
 
@@ -71,6 +109,7 @@ The language should be:
 - simple enough for normal people
 - ambitious without sounding fake
 - clear that Orisen is an intervention system, not a passive tracker
+- grounded in a larger narrative: sleep tech should move from observation to intervention
 
 Marketing can be bold about:
 
@@ -80,6 +119,7 @@ Marketing can be bold about:
 - the product direction
 - the founder's belief
 - what Orisen is being built toward
+- the category shift from tracking to intervention
 
 Marketing should be careful with:
 
@@ -96,11 +136,67 @@ Core rule:
 
 > Stretch the emotion. Do not stretch the factual state.
 
+## Strategic belief shift
+
+The bigger narrative is not just “better alarm clock.”
+
+The larger belief shift is:
+
+> Sleep tech should move from passive tracking to active intervention.
+
+For the first wedge, the sharper version is:
+
+> Waking is treated like a timer problem, but it is actually a body-state transition problem.
+
+That belief shift should sit underneath most Orisen messaging.
+
+| Old belief | New belief |
+|---|---|
+| Alarms work fine. | Alarms are primitive because they stop before the wake-up is complete. |
+| Oversleeping is just a discipline problem. | Many wake-up failures happen because the system relies on half-awake decision-making. |
+| Waking up is a timer problem. | Waking up is a body-state transition problem. |
+| Sleep tech means tracking, apps, and wearables. | The next sleep-tech category is active intervention. |
+| Sleep is something that happens to you. | Sleep and waking should become more guided over time. |
+| A good alarm makes noise at the right time. | A good wake-up system responds to whether the user actually completes waking. |
+| The job is to measure sleep better. | The job is to change the outcome. |
+
+## Reframe lever
+
+Main reframe lever:
+
+> Waking is not a timer problem. It is a body-state transition problem.
+
+Supporting reframes:
+
+- Your alarm can work and your morning can still fail.
+- Alarm dismissal is not wake completion.
+- The real failure is not always hearing the alarm. It is what happens after.
+- Sleep trackers tell you what happened. Orisen is being built to change what happens next.
+- Normal alarms are brute force. Orisen is a feedback system.
+- Wake completion is the first wedge into active sleep intervention.
+
+## Narrative sequence for copy
+
+Use this sequence when writing longer website copy, pitch language, or founder posts:
+
+1. Familiar: Everyone uses alarms. Everyone knows mornings can feel brutal.
+2. Friction: But alarms stop when you tap a button, even if you are still in bed and half awake.
+3. Insight: Waking up is not the same as getting up. Waking is a body-state transition, not just a timer event.
+4. Expansion: This makes current tools feel outdated. Alarms are brute force. Trackers are passive. Apps rely on willpower.
+5. Replacement: Sleep tech should actively guide outcomes, starting with wake completion.
+6. Product fit: Orisen uses non-contact sensing to check whether you actually got out of bed and keep the wake-up flow going.
+7. Vision: Over time, Orisen is being built toward a room-based sleep intervention system that guides the sleep-to-wake transition.
+8. Proof: Early prototype, tester feedback, customer discovery, and early waitlist interest show the direction is worth pursuing.
+
 ## Core positioning
 
 Primary positioning:
 
 > Orisen is a non-contact wake-up system for people who cannot trust themselves to get out of bed after their alarm goes off.
+
+Narrative positioning:
+
+> Orisen is building the shift from sleep tracking to sleep intervention, starting with the most painful failure point: waking up.
 
 Alternative positioning:
 
@@ -113,6 +209,35 @@ Short positioning:
 Category position:
 
 > Not a sleep tracker. Not another alarm app. A wake-completion system.
+
+## Anchor bank
+
+Use these as repeatable ideas across website, social, deck, and founder-led content.
+
+Primary anchors:
+
+- Waking is not a timer problem.
+- Waking is a body-state transition.
+- Sleep should be guided, not just tracked.
+- From sleep tracking to sleep intervention.
+- Your alarm is brute force. Orisen is feedback.
+- Wake completion is the first wedge.
+- The future of sleep tech is intervention, not observation.
+
+Customer-facing anchors:
+
+- Stop trusting your half-awake self.
+- Waking up is not done until you are out of bed.
+- Normal alarms stop too early.
+- Your alarm can work and your morning can still fail.
+- The real problem starts after the alarm rings.
+
+Fundraising-facing anchors:
+
+- Current sleep tech observes the problem. Orisen is built to change the outcome.
+- The category shift is from measurement to intervention.
+- Waking is the beachhead for active sleep control.
+- First reliable wake completion. Then guided sleep-to-wake transition.
 
 ## Simple explanations
 
@@ -130,6 +255,14 @@ Orisen does not.
 
 It uses non-contact sensing to detect whether you are still in bed, then keeps the wake-up flow going until you actually complete the wake-up.
 
+### Narrative explanation
+
+For decades, sleep tech has mostly measured what happened.
+
+Orisen is built around a different belief: sleep should be guided, not just tracked.
+
+The first wedge is wake completion. Orisen does not just care whether an alarm rang. It cares whether you actually left bed.
+
 ### Longer explanation
 
 Orisen is built for people who set alarms, wake up, turn them off, and somehow lose another hour.
@@ -144,6 +277,10 @@ Lead with this idea:
 
 > The problem is not setting an alarm. The problem is completing the wake-up.
 
+Narrative version:
+
+> Waking up is treated like a timer problem, but it is actually a body-state transition problem.
+
 Supporting ideas:
 
 - Waking up is not the same as getting out of bed.
@@ -152,6 +289,9 @@ Supporting ideas:
 - Normal alarms stop at the exact moment the real battle starts.
 - The dangerous version of you is not awake-you. It is half-awake-you.
 - Orisen is built for the gap between hearing the alarm and actually being up.
+- Alarms are brute force.
+- Trackers are passive.
+- Orisen starts with intervention.
 
 ## Target customer language
 
@@ -194,6 +334,9 @@ Use these product phrases often:
 - gradual audio and light
 - future sensor-informed wake intervention
 - being built toward less brutal mornings
+- active sleep intervention
+- guided sleep-to-wake transition
+- room-based sleep intervention
 
 Use these phrases less often or with care:
 
@@ -203,6 +346,7 @@ Use these phrases less often or with care:
 - grogginess reduction
 - radar and AI-guided intervention
 - closed-loop sleep intervention
+- sleep control
 
 Avoid leading with technical language before the pain is clear.
 
@@ -213,6 +357,10 @@ Bad first sentence:
 Better first sentence:
 
 > Orisen is for people who turn off alarms and go back to sleep.
+
+Better narrative first sentence:
+
+> Sleep tech has spent years tracking the problem. Orisen is being built to change the outcome.
 
 ## Claim-level framework
 
@@ -229,6 +377,7 @@ Examples:
 - Orisen uses presence detection to help determine whether you actually got out of bed.
 - Orisen is not primarily a sleep tracker.
 - Orisen is not a wearable.
+- Orisen starts with presence-based wake completion.
 
 ### Level 2: Designed-to claims
 
@@ -241,6 +390,7 @@ Examples:
 - Designed so the easiest path is getting out of bed.
 - Designed to help protect your morning from your half-awake self.
 - Designed to make wake-up reliability depend on bed exit, not just button taps.
+- Designed to turn wake-up from a button press into a completed behavior.
 
 ### Level 3: Goal and ambition language
 
@@ -253,6 +403,7 @@ Examples:
 - We are going after the sleep-to-wake transition, not just the alarm sound.
 - The first goal is reliable wake completion. The bigger goal is making wake-ups feel less brutal.
 - We want waking up to feel engineered, not endured.
+- We want sleep tech to guide outcomes, not just report data.
 
 ### Level 4: Long-term vision language
 
@@ -265,6 +416,7 @@ Examples:
 - We want Orisen to eventually prepare your body for waking before the alarm has to fight you.
 - The future version of Orisen should not just ring. It should guide you out of sleep.
 - Over time, Orisen is being built toward sensor-informed intervention that makes wake-ups smoother, not just louder.
+- The broader vision is sleep that becomes more controllable, not just measurable.
 
 Do not present Level 4 language as a current proven product outcome.
 
@@ -284,6 +436,9 @@ Use lines like these:
 - Your future self set the alarm. Your half-awake self betrayed it. Orisen is built for that gap.
 - The goal is simple: make waking up reliable first, then make it feel less brutal.
 - We are building the device for people who need more than another phone alarm.
+- Alarms are brute force. Trackers are passive. Orisen starts with intervention.
+- Current sleep tech tells you what happened. Orisen is being built to change what happens next.
+- The first wedge is wake completion. The bigger shift is active sleep intervention.
 
 ## Vision language
 
@@ -296,6 +451,8 @@ Good vision lines:
 - We want to turn the sleep-to-wake transition into something designed, adaptive, and guided.
 - Orisen starts with wake completion. Over time, it should become a closed-loop sleep intervention system.
 - The vision is not better tracking. The vision is changing the outcome.
+- Sleep should be guided, not just tracked.
+- The next category of sleep tech will not just observe. It will intervene.
 
 Use these with clear future framing:
 
@@ -322,6 +479,7 @@ Avoid wording that sounds like the future outcome is already guaranteed.
 | Sleep stages | Being built toward sleep-phase-aware wake intervention. | Controls your sleep stages. |
 | Radar and AI | Working toward radar and AI-guided wake intervention. | Accurately detects your sleep stages. |
 | Future vision | We want Orisen to eventually guide your body out of sleep before the alarm has to fight you. | Orisen will manipulate your sleep stages using radar and AI to guarantee perfect wake-ups. |
+| Category narrative | Sleep tech should move from tracking to intervention. | Orisen has proven sleep control. |
 | External research | External research supports the problem framing around snoozing and delayed bed exit. | Science proves Orisen works. |
 | Early traction | Early organic posts showed message resonance. | We have proven product-market fit. |
 
@@ -357,9 +515,33 @@ Subheadline:
 
 > Orisen is built for the gap between your alarm ringing and you actually being out of bed.
 
+### Hero direction 4
+
+Headline:
+
+> Waking is not a timer problem.
+
+Subheadline:
+
+> Orisen starts with wake completion: a non-contact system that checks whether you actually left bed.
+
+### Hero direction 5
+
+Headline:
+
+> Sleep should be guided, not just tracked.
+
+Subheadline:
+
+> Orisen starts with the most painful failure point: getting you out of bed when normal alarms fail.
+
 ### Vision section language
 
 > Wake completion is only the first layer. Over time, Orisen is being built toward sensor-informed wake intervention, using audio, light, and non-contact sensing to make mornings feel less brutal.
+
+### Category section language
+
+> Most sleep products tell you what happened. Orisen is built around a different idea: sleep tech should change outcomes, starting with the moment people fail most often: waking up.
 
 ## Social-ready language
 
@@ -370,12 +552,20 @@ Use sharper, more founder-led versions on X and LinkedIn:
 - We are building Orisen because waking up should not depend on willpower at 6:00 AM.
 - The first version gets you out of bed. The long-term version should help your body transition out of sleep before the alarm has to fight you.
 - Most sleep products tell you what happened. We are building one that changes what happens next.
+- Waking is not a timer problem. It is a body-state transition problem.
+- Alarms are brute force. Trackers are passive. That leaves a gap for actual intervention.
+- The future of sleep tech is not another graph. It is a system that changes the outcome.
+- Wake completion is the beachhead. Guided sleep-to-wake transition is the bigger vision.
 
 ## Founder explanation
 
 Use this when explaining Orisen casually:
 
 > I am building Orisen for people who set a bunch of alarms, turn them off, and go back to sleep. The first wedge is simple: the alarm should not fully stop just because you tapped a button. It should care whether you actually got out of bed. Long term, I want Orisen to become a room-based sleep intervention system that helps make waking up feel less brutal, not just louder.
+
+Use this when explaining the bigger narrative:
+
+> I think sleep tech has mostly been stuck in tracking. It tells you what happened, but it does not change much in the moment. Orisen starts with wake completion because that is where the failure is obvious: your alarm rings, you dismiss it, and you still do not get up. The bigger vision is active sleep intervention, starting with waking up.
 
 ## Category positioning
 
@@ -388,17 +578,20 @@ Use this when explaining Orisen casually:
 | System that responds to bed exit | Motivation app |
 | First wedge: reliable wake completion | First wedge: sleep graphs |
 | Bigger vision: guided sleep-to-wake transition | Current claim: proven sleep-stage control |
+| Category shift from tracking to intervention | A proven sleep-control platform today |
 
 ## Messaging hierarchy
 
 Lead in this order:
 
 1. Pain: normal alarms fail because they stop before wake completion.
-2. Wedge: Orisen checks whether the user actually left bed.
-3. Difference: non-contact, no wearable, not a passive tracker.
-4. Behavior: alarm can continue or re-trigger if the user returns to bed.
-5. Direction: gradual audio/light and future sensor-informed wake intervention.
-6. Vision: guide the sleep-to-wake transition and make mornings feel less brutal.
+2. Reframe: waking is not a timer problem. It is a body-state transition problem.
+3. Wedge: Orisen checks whether the user actually left bed.
+4. Difference: non-contact, no wearable, not a passive tracker.
+5. Behavior: alarm can continue or re-trigger if the user returns to bed.
+6. Category shift: sleep tech should move from tracking to intervention.
+7. Direction: gradual audio/light and future sensor-informed wake intervention.
+8. Vision: guide the sleep-to-wake transition and make mornings feel less brutal.
 
 Do not lead with:
 
@@ -427,6 +620,8 @@ Avoid these as public claims unless future evidence and review support them:
 - Orisen is medical-grade.
 - Orisen guarantees perfect wake-ups.
 - Orisen guarantees you will never oversleep.
+- Orisen has proven sleep control.
+- Orisen has proven active sleep intervention.
 - External research proves Orisen works.
 - Early waitlist signups prove product-market fit.
 
@@ -441,6 +636,9 @@ These are stronger but acceptable if context makes the claim level clear:
 - We are building toward radar and AI-guided wake intervention.
 - The long-term vision is to guide your body out of sleep before the alarm has to fight you.
 - Orisen starts by making wake-up harder to avoid. Then it gets smarter.
+- Sleep should be guided, not just tracked.
+- The next era of sleep tech should be active, not passive.
+- We are building toward sleep that becomes more controllable, not just measurable.
 
 Do not use these as proof claims:
 
@@ -448,6 +646,7 @@ Do not use these as proof claims:
 - We eliminate grogginess.
 - We control your sleep stages.
 - We guarantee perfect wake-ups.
+- We have proven sleep intervention.
 
 ## Evidence-aware language rules
 
@@ -486,12 +685,32 @@ Safe use:
 
 - External waking-up research supports the problem framing around snoozing, delayed bed exit, oversleeping, and missed obligations.
 - Research helps explain why waking up is not always a clean one-step event.
+- External research can support the category narrative that wake-up is more complex than a timer event.
 
 Avoid:
 
 - Research proves Orisen works.
 - Survey stats prove buyer demand.
 - Snoozing is always harmful.
+
+### Framing and narrative language
+
+Safe use:
+
+- Use `marketing/framing-and-narrative.md` to strengthen the belief shift.
+- Use its old belief vs new belief structure to make copy feel inevitable.
+- Use its anchors to make Orisen memorable.
+
+Careful use:
+
+- Strong narrative phrases like “sleep control” should usually be framed as future direction, not current proof.
+- The narrative can be ambitious, but public language should still separate current product claims from vision claims.
+
+Avoid:
+
+- Treating a narrative frame as evidence.
+- Treating inevitability language as proof.
+- Turning “sleep should be controlled” into “Orisen controls sleep today.”
 
 ### Traction language
 
@@ -509,6 +728,7 @@ Avoid:
 ## Notes
 
 - This file is the marketing language authority, not the claim authority.
+- `marketing/framing-and-narrative.md` is the strategic narrative layer.
 - `product/claims-and-evidence.md` remains the final claim boundary.
 - Use this file to write punchy copy, but check claim level before publishing strong outcome language.
 - Update this file as customer language, website tests, social performance, customer interviews, prototype pilots, and paid-intent data improve.
