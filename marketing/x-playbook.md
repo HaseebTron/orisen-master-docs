@@ -29,9 +29,9 @@ Downstream docs:
   - **Secondary audience**: founders, operators, investors, and builders who can amplify, advise, or connect Orisen to users.
   - **Tertiary audience**: sleep experts, clinicians, researchers, and technical reviewers who can sharpen claims and validation.
 - **Account identity**: defines how the founder's personal X account should balance Orisen, founder-led building, product thinking, and audience trust.
+- **Main content themes**: summarizes the main recurring themes the personal founder account should return to.
 - **Claim-safety rules for X**: defines safe, careful, future-only, and avoided public claims for X posts.
 - **Founder voice**: defines how Orisen should sound when posting founder-led content.
-- **Content pillars**: summarizes the recurring themes Orisen should be known for on X.
 - **Hook bank**: summarizes repeatable X hooks, with finished drafts living in `marketing/x-post-bank.md`.
 - **Reply strategy**: defines how to use replies for discovery, trust, and distribution without sounding spammy.
 - **Cadence and weekly operating rhythm**: defines the realistic posting and replying rhythm for a solo founder.
@@ -228,6 +228,21 @@ Instead, posts should serve the channel goals, speak to the right audience, fit 
 Use this rule:
 
 > The account is founder-led, but Orisen is the main gravitational center.
+
+## Main content themes
+
+The account should repeatedly return to a small number of themes instead of posting random startup, sleep, or productivity content.
+
+These are the main things the account talks about:
+
+- **Building Orisen in public**: Show the product, startup, lessons, tradeoffs, and progress as Orisen is built.
+- **The wake-up problem**: Talk about painful wake-up failure, alarm failure, snoozing, going back to bed, brutal mornings, and the gap between alarm time and actually being out of bed.
+- **Reframing sleep tech from tracking to intervention**: Shift the conversation from measuring sleep to helping change real sleep/wake outcomes, while staying claim-safe.
+- **Learning from users and experts**: Use X to ask better questions, learn from high-pain users, and get thoughtful feedback from operators, builders, and sleep experts.
+
+These themes sit above individual post types.
+
+`marketing/x-posting-strategy.md` should turn these themes into strategic content motions, post types, formats, hooks, and cadence.
 
 ## Claim-safety rules for X
 
@@ -449,16 +464,6 @@ Good:
 - The more I build this, the more I think...
 
 Avoid making every post about the founder. The customer pain should still be the center.
-
-## Content pillars
-
-To be written later.
-
-Placeholder intent:
-
-- This section should define a lightweight set of recurring X themes.
-- It should replace the need for a separate `marketing/content-pillars.md` for now.
-- It should be practical enough to help write posts immediately.
 
 ## Hook bank
 
