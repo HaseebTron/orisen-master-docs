@@ -16,6 +16,21 @@ Downstream docs:
 - Marketing execution docs
 - Post banks, calendars, and performance logs
 
+## File structure
+
+- **Purpose**: defines what this file controls and how it should be used.
+- **Mandatory repo-edit trigger**: requires `ai-context/repo-governance/repo-editing-rules.md` before any marketing repo write.
+- **File structure section**: defines how substantial marketing docs should show their internal structure near the top.
+- **Marketing stays downstream from product truth**: defines how marketing must depend on product, customer, evidence, and claim-control docs.
+- **Claim-sensitive marketing language**: defines how to write sharp marketing without overstating evidence.
+- **Strategy docs vs execution docs**: defines how to keep decisions, assets, calendars, and logs in their proper roles.
+- **Customer language**: defines how to use customer pain language without overgeneralizing or pretending it is universal proof.
+- **External marketing research**: defines how to use external growth, channel, and positioning advice without making it Orisen truth.
+- **Placeholders and working sections**: defines how to mark unfinished sections clearly.
+- **Avoiding marketing-folder overbuild**: defines how to keep the marketing folder useful without creating unnecessary files.
+- **Escalation to Orisen General**: defines when marketing work must be routed upward before writing or publishing.
+- **What not to do in marketing docs**: lists common writing and governance mistakes to avoid.
+
 ## Purpose
 
 This file defines how to write or update marketing docs in the `marketing/` folder.
@@ -67,3 +82,269 @@ Example structure:
 The file structure section should not become a full summary of the file.
 
 Keep each definition short, practical, and scannable.
+
+## Marketing stays downstream from product truth
+
+Marketing docs do not create product truth.
+
+Marketing must stay downstream from:
+
+- `product/product-overview.md`
+- `product/target-customer.md`
+- `product/claims-and-evidence.md`
+- product roadmap and validation docs, when relevant
+- customer research and evidence docs, when relevant
+- claim-control docs, when claim strength matters
+
+Marketing may translate product truth into sharper, more memorable language.
+
+Marketing may not:
+
+- create new product capabilities
+- imply roadmap items are already built
+- upgrade hypotheses into validated claims
+- broaden the target customer beyond approved assumptions
+- turn positioning language into evidence
+- use traction or post engagement as proof of product efficacy
+
+If marketing wants to say something stronger than the governing product or claim docs allow, do not write it as approved marketing language. Route the issue upward for review.
+
+## Claim-sensitive marketing language
+
+Marketing can be emotionally sharp, but factual claims must remain conservative.
+
+Use this rule:
+
+> Stretch the emotion. Do not stretch the factual state.
+
+Good marketing can say the pain clearly.
+
+Good marketing cannot make unsupported claims about:
+
+- guaranteed outcomes
+- clinical or medical efficacy
+- sleep-stage accuracy
+- sleep-stage control
+- sleep inertia reduction
+- treatment of sleep disorders
+- product-market fit
+- willingness to pay
+- broad demand
+
+Use careful wording for unvalidated or roadmap items:
+
+- being built toward
+- designed to
+- aiming to
+- exploring
+- working toward
+- future versions may
+- the long-term vision is
+
+Avoid wording that turns intent into proof:
+
+- proven
+- guaranteed
+- clinically validated
+- solves
+- fixes
+- eliminates
+- always
+- never
+
+When in doubt, check `product/claims-and-evidence.md` before writing or approving the line.
+
+## Strategy docs vs execution docs
+
+Marketing docs should keep their roles clear.
+
+Use this general split:
+
+- Strategy docs define decisions, positioning, audience, narrative, goals, and guardrails.
+- Execution docs help produce output from the strategy.
+- Asset banks store reusable drafts, examples, hooks, replies, or creative assets.
+- Calendars schedule already-chosen assets or campaigns.
+- Logs record what happened after execution.
+
+Do not mix these roles unless intentionally keeping the repo lightweight.
+
+Examples:
+
+- A playbook may summarize the rules and link to deeper execution docs.
+- A strategy doc may explain what content should exist and why.
+- A post bank should store posts, not become a positioning document.
+- A calendar should schedule posts, not redefine the content strategy.
+- A performance log should record results, not rewrite the campaign plan.
+
+If a doc starts becoming too long because it is performing multiple roles, split it only when the split makes the workflow easier.
+
+Do not create extra docs just because a category could exist.
+
+## Customer language
+
+Customer language is valuable, but it must be used carefully.
+
+Use customer language to:
+
+- make marketing sound real
+- identify repeated pain patterns
+- improve hooks and examples
+- test whether Orisen is describing the problem accurately
+- generate customer-discovery questions
+
+Do not use customer language to:
+
+- claim all users feel the same way
+- imply broad market proof from a small number of comments
+- turn anecdotes into statistical evidence
+- overstate severity or frequency
+- shame the user
+- imply a clinical diagnosis
+
+When using customer language, preserve the difference between:
+
+- one person's quote or comment
+- a repeated pattern across users
+- an assumption Orisen is testing
+- validated customer evidence
+
+Marketing should make high-pain users feel seen, not make unsupported claims about everyone with sleep or wake-up problems.
+
+## External marketing research
+
+External marketing research can inform tactics, formats, cadence, and channel behavior.
+
+It does not define Orisen truth.
+
+Use external marketing research for:
+
+- platform-specific best practices
+- content formats
+- cadence ideas
+- reply strategy
+- founder-led marketing examples
+- organic growth patterns
+- channel-specific risks
+
+Do not use external marketing research to override:
+
+- product truth
+- target customer definitions
+- claim boundaries
+- validation status
+- current roadmap
+- approved positioning
+
+When using external marketing research, separate:
+
+- what the external source says
+- what Orisen is adopting from it
+- what does not apply to Orisen
+- what must remain constrained by claim-control
+
+Do not blindly copy generic growth advice if it conflicts with Orisen's product stage, trust requirements, claim boundaries, or target customer.
+
+## Placeholders and working sections
+
+Use placeholders when a section is intentionally deferred.
+
+A good placeholder should say:
+
+- that the section is intentionally unfinished
+- what the section will eventually contain
+- what upstream docs should govern it
+- whether it should be filled later or moved to another file
+
+Example:
+
+```md
+## Hook bank
+
+To be written later.
+
+Placeholder intent:
+
+- This section should collect short channel-ready hooks pulled from approved messaging.
+- It should stay concise.
+- Finished posts should go in the relevant post bank, not here.
+```
+
+Do not leave vague placeholders such as:
+
+- TBD
+- add later
+- fix this
+- more here
+
+If a placeholder could affect claims, positioning, roadmap, pricing, audience, or fundraising, state which governing file must be checked before filling it.
+
+## Avoiding marketing-folder overbuild
+
+Do not create a new marketing doc unless it has a clear job.
+
+Before creating a marketing doc, ask:
+
+- What decision or workflow will this file improve?
+- Is this a strategy file, execution file, asset bank, calendar, or log?
+- Does an existing file already cover this?
+- Will this reduce confusion or add maintenance burden?
+- Will someone actually use this file soon?
+
+Prefer fewer, more useful docs over a complex folder structure.
+
+Split a doc when:
+
+- one file is doing too many jobs
+- the doc is too long to use quickly
+- reusable assets are cluttering strategy
+- calendars or logs are cluttering guidance
+- different update rhythms make one file hard to maintain
+
+Do not split a doc only because a theoretical category exists.
+
+## Escalation to Orisen General
+
+Escalate to Orisen General before writing or approving marketing that changes or strengthens:
+
+- product positioning
+- public claims
+- claim strength
+- validation status
+- target customer strategy
+- roadmap implications
+- pricing or business model
+- fundraising story
+- market category framing
+- clinical, scientific, or technical evidence interpretation
+- competitor positioning that could create legal or credibility risk
+
+Also escalate when marketing language starts to imply that:
+
+- a hypothesis is validated
+- a roadmap item is built
+- a prototype result proves product efficacy
+- waitlist interest proves paid demand
+- external research proves Orisen works
+
+Marketing can draft options for review, but should not silently promote them into approved source-of-truth language.
+
+## What not to do in marketing docs
+
+Do not:
+
+- invent product capabilities
+- overclaim beyond `product/claims-and-evidence.md`
+- turn founder belief into validated evidence
+- make clinical or medical claims unless explicitly approved by governing docs
+- imply sleep-stage accuracy or control without evidence
+- treat external research as Orisen validation
+- treat waitlist signups, impressions, likes, or comments as product-market fit
+- blur target customers into everyone with sleep problems
+- write generic wellness content that ignores Orisen's actual wedge
+- bury claim warnings inside polished copy
+- duplicate the same strategy across multiple docs
+- create doc sprawl for one-off workflows
+- overwrite raw customer or research evidence with marketing interpretation
+- make marketing sound stronger than the product can support
+
+Marketing should make Orisen clearer, sharper, and easier to execute without making the company less truthful.
