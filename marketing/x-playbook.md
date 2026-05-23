@@ -28,7 +28,7 @@ Downstream docs:
   - **Primary audience**: high-pain users with repeated wake-up failure.
   - **Secondary audience**: founders, operators, investors, and builders who can amplify, advise, or connect Orisen to users.
   - **Tertiary audience**: sleep experts, clinicians, researchers, and technical reviewers who can sharpen claims and validation.
-- **Positioning spine for X**: summarizes the repeatable X-specific version of Orisen's positioning and category narrative.
+- **Account identity**: defines how the founder's personal X account should balance Orisen, founder-led building, product thinking, and audience trust.
 - **Claim-safety rules for X**: defines safe, careful, future-only, and avoided public claims for X posts.
 - **Founder voice**: defines how Orisen should sound when posting founder-led content.
 - **Content pillars**: summarizes the recurring themes Orisen should be known for on X.
@@ -201,98 +201,33 @@ Posts for this audience should be especially careful with wording around:
 - artificial sleep phase transitioning
 - clinical or medical implications
 
-## Positioning spine for X
+## Account identity
 
-This section defines the short X-specific messaging backbone for Orisen.
+This is the founder's personal X account, not a narrow Orisen brand account.
 
-It should be used to keep posts, replies, hooks, and CTAs pointed at the same core idea without turning every post into the same pitch.
+The account should build trust in the founder, the problem, the product, and the way Orisen is being built.
 
-The positioning spine for X is downstream from the `Channel goal` and `Audience` sections above. It must also stay downstream from `marketing/positioning-and-messaging.md`, `marketing/framing-and-narrative.md`, `product/target-customer.md`, and `product/claims-and-evidence.md`.
+Orisen should remain a recurring center of gravity, but not every post needs to be a product pitch.
 
-### Repeatable spine
+The account can cover:
 
-> Your alarm can ring and your morning can still fail. Orisen is being built around the part normal alarms miss: whether you actually got out of bed.
+- Orisen product progress
+- wake-up pain and sleep-tech observations
+- consumer hardware lessons
+- founder journey and startup reflections
+- product thinking and category thinking
+- technical tradeoffs explained simply
+- customer discovery questions
+- careful investor-adjacent thoughts
+- humor and straight-faced observations about mornings, alarms, and building
 
-### Who X is written for
+The account should not force every post through one positioning spine.
 
-Write first for people whose alarms go off but whose mornings still fail.
+Instead, posts should serve the channel goals, speak to the right audience, fit one of the main content themes, and stay inside Orisen's claim boundaries.
 
-The best-fit reader is not casually interested in better sleep. They have repeated, painful wake-up failure and recognize the gap between hearing an alarm and actually being out of bed.
+Use this rule:
 
-### Problem frame
-
-The problem is not only waking up.
-
-The problem is completing the wake-up.
-
-Normal alarms usually treat sound as success. Orisen should repeatedly frame the real failure point as what happens after the alarm rings:
-
-- the user dismisses it while half-awake
-- the user stays in bed
-- the user goes back to sleep
-- the user loses time between alarm and getting out of bed
-
-### Enemy
-
-The enemy is the broken morning system, not the person struggling to wake up.
-
-On X, Orisen can push against:
-
-- alarms that stop before wake completion
-- apps that rely on willpower from a half-awake user
-- trackers that report what happened without changing the outcome
-- generic sleep advice that ignores the exact moment mornings fail
-
-Do not frame the user as lazy, weak, irresponsible, or broken.
-
-### Orisen wedge
-
-The first wedge is presence-based wake completion.
-
-Orisen starts by focusing on whether the user actually got out of bed, not just whether an alarm played.
-
-This is the simplest X explanation of the product:
-
-> Orisen is building a wake-up system that cares whether you actually left bed.
-
-### Category narrative
-
-The bigger narrative is that sleep tech should move from passive tracking to active intervention.
-
-On X, this should be framed carefully:
-
-- sleep tracking tells you what happened
-- intervention should help change the outcome
-- Orisen starts with wake completion because it is a painful, concrete, testable wedge
-- future sensor-informed wake intervention should be described as direction or ambition, not as validated product truth
-
-### Claim-safe ambition
-
-Orisen should sound ambitious without pretending future outcomes are already proven.
-
-Claim-safe ambition:
-
-- Orisen starts with wake completion.
-- Orisen is being built toward less brutal, more reliable mornings.
-- Orisen is exploring sensor-informed wake intervention as a future direction.
-- Orisen is working toward a future where sleep tech helps change outcomes, not just measure them.
-
-Avoid implying that Orisen has already proven it can eliminate grogginess, fix sleep inertia, control sleep stages, or guarantee perfect wake-ups.
-
-### Founder-led posture
-
-The founder should show up as a serious builder learning in public.
-
-The stance should be:
-
-- clear about the pain
-- honest about what is built now
-- ambitious about where the product can go
-- careful about evidence
-- curious toward users and experts
-- willing to explain product tradeoffs
-
-The founder should not sound like a generic wellness influencer, an overconfident clinical expert, or an investor-bait account.
+> The account is founder-led, but Orisen is the main gravitational center.
 
 ## Claim-safety rules for X
 
@@ -360,13 +295,10 @@ Do not use these as public X claims:
 - Orisen guarantees perfect wake-ups.
 - Orisen eliminates grogginess.
 - Orisen fixes sleep inertia.
-- Orisen treats sleep disorders.
 - Orisen wakes you in the perfect sleep stage.
 - Orisen controls your sleep stages.
-- Orisen manipulates your biology in real time.
 - Orisen accurately detects sleep stages.
 - Orisen is clinically proven.
-- Orisen is medical-grade.
 - Orisen has proven product-market fit.
 - Early waitlist signups prove demand.
 - External research proves Orisen works.
@@ -622,7 +554,7 @@ Do not mention Orisen when:
 
 - the post is unrelated
 - the reply would feel like a drive-by pitch
-- the user is discussing a medical sleep condition and needs clinical care
+- the user is discussing a clinical sleep condition and needs professional care
 - the thread is sensitive or not appropriate for product promotion
 
 ### DM and link behavior
