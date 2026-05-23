@@ -5,6 +5,7 @@ Authority level: Marketing / Writing rules
 Last reviewed: 2026-05-23
 Governing docs:
 - `ai-context/source-of-truth-rules.md`
+- `ai-context/repo-governance/repo-editing-rules.md`
 - `ai-context/claim-control/claim-control-system.md`
 - `product/claims-and-evidence.md`
 - `marketing/marketing-read-rules.md`
@@ -22,6 +23,18 @@ This file defines how to write or update marketing docs in the `marketing/` fold
 Use it after `marketing/marketing-read-rules.md` has identified which upstream and marketing docs matter for the task.
 
 Marketing docs should translate Orisen product truth, target-customer assumptions, claim boundaries, and narrative into clear external-facing strategy and execution without inventing unsupported claims.
+
+## Mandatory repo-edit trigger
+
+Before any ChatGPT-assisted marketing repo write action, including creating, editing, moving, renaming, deleting, or archiving a file, read:
+
+- `ai-context/repo-governance/repo-editing-rules.md`
+
+This applies even for small one-file edits.
+
+After reading it, state the pre-edit scope before making the write action.
+
+This rule applies before writing or updating marketing docs in GitHub, even when `marketing/marketing-write-rules.md` has already been read.
 
 ## File structure section
 
