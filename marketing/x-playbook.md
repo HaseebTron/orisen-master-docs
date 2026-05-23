@@ -103,17 +103,25 @@ Core rule:
 
 ## Channel goal
 
-The goal of X is not simply to get impressions.
+X should help Orisen build an audience, learn from high-pain users, drive qualified waitlist growth, and make the category narrative familiar while staying claim-safe.
 
-The goal is to use founder-led organic posting to:
+The goal is not simply to get impressions.
 
-- attract people with severe wake-up pain
-- find users who repeatedly fail between alarm time and actually being out of bed
-- start customer-discovery conversations
-- drive qualified waitlist signups
-- build founder credibility around the wake-up problem, consumer hardware, and sleep intervention
-- make Orisen's category narrative familiar through repetition
-- learn which hooks, pains, and product explanations resonate
+Use founder-led organic posting to:
+
+- **Attract high-pain users**: Reach people who repeatedly struggle to wake up, get out of bed, or avoid going back to sleep.
+- **Drive qualified website traffic**: Send the right people to the Orisen website so they can understand the product and join the waitlist.
+- **Grow qualified waitlist signups**: Convert high-intent people into waitlist members, not just collect random curiosity signups.
+- **Create customer-discovery conversations**: Get replies, DMs, and interviews from people with real wake-up pain.
+- **Build founder trust**: Make people trust that the founder is serious, thoughtful, honest, and actually building.
+- **Build a founder-led audience**: Grow a following around sleep, wake-up pain, consumer hardware, product building, and the shift from tracking to intervention.
+- **Create a small community around the problem**: Attract people who relate to the wake-up struggle, want to follow the build, give feedback, or become early users.
+- **Build credibility with builders and operators**: Show technical and product judgment to other founders, hardware people, health/wellness operators, and consumer tech people.
+- **Attract investors and investor-adjacent attention**: Help relevant angels, VCs, scouts, and operators understand the wedge, the category thesis, and why Orisen could become bigger than an alarm.
+- **Shape the category narrative**: Make people associate Orisen with the idea that sleep tech should move from passive tracking to active intervention.
+- **Test messaging in public**: Learn which hooks, pains, analogies, demos, and explanations resonate before locking them into the website, deck, or launch copy.
+- **Recruit useful people**: Attract potential advisors, sleep experts, hardware/software contributors, creators, early testers, or partners.
+- **Create social proof carefully**: Show real momentum, feedback, and learning without pretending that X engagement proves product-market fit.
 
 X should be treated as a learning and distribution channel, not as proof by itself.
 
