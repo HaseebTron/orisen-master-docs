@@ -32,7 +32,6 @@ Downstream docs:
 - **Claim-safety rules for X**: defines safe, careful, future-only, and avoided public claims for X posts.
 - **Founder voice**: defines how Orisen should sound when posting founder-led content.
 - **Content pillars**: summarizes the recurring themes Orisen should be known for on X.
-- **Post formats**: summarizes the reusable post structures, with deeper guidance living in `marketing/x-posting-strategy.md`.
 - **Hook bank**: summarizes repeatable X hooks, with finished drafts living in `marketing/x-post-bank.md`.
 - **Reply strategy**: defines how to use replies for discovery, trust, and distribution without sounding spammy.
 - **Cadence and weekly operating rhythm**: defines the realistic posting and replying rhythm for a solo founder.
@@ -445,16 +444,6 @@ Placeholder intent:
 - This section should define a lightweight set of recurring X themes.
 - It should replace the need for a separate `marketing/content-pillars.md` for now.
 - It should be practical enough to help write posts immediately.
-
-## Post formats
-
-To be written later.
-
-Placeholder intent:
-
-- This section should define reusable X post templates.
-- It should include short posts, threads if needed, customer-discovery prompts, build-in-public updates, and claim-safe vision posts.
-- It should not become the full post bank.
 
 ## Hook bank
 
