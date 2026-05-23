@@ -21,42 +21,11 @@ This section defines the few repeated posting motions the founder should run on 
 Use these motions before choosing individual post types. The goal is to avoid random posting and make sure each post supports a clear account goal.
 
 - **Build the product/startup in public**: Show that Orisen is real, progressing, and being built thoughtfully.
-  - Includes:
-    - regular progress updates
-    - things I am learning
-    - features, prototypes, pictures, videos, and demos
-    - technical/product tradeoffs
-    - difficult things I ran into
-    - what changed my mind while building
-
 - **Talk about the problem I am tackling**: Make high-pain users feel seen and make the wake-up problem specific.
-  - Includes:
-    - sleep/wake-up pain
-    - alarm failure
-    - snoozing
-    - going back to bed
-    - brutal mornings
-    - sleep inertia, carefully worded
-    - common failed solutions
-
 - **Reframe how people see the problem/space**: Shift people from “I need a louder alarm” or “I need more discipline” to “waking up is a completion problem.”
-  - Includes:
-    - root cause posts
-    - alarm ringing vs wake completion
-    - tracking vs intervention
-    - why sleep tech should change outcomes, not just report data
-    - why Orisen starts with a narrow wedge
-
 - **Learn more about the problem space**: Use X for customer discovery, not just broadcasting.
-  - Includes:
-    - inquisitive posts
-    - polls/questions
-    - “what usually fails?” posts
-    - “what have you tried?” posts
-    - “would this feel helpful or annoying?” posts
-    - expert/operator feedback asks
 
-## Post type map
+## Categories of post type
 
 This section is the working map of Orisen's main X post categories.
 
