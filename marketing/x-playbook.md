@@ -203,13 +203,96 @@ Posts for this audience should be especially careful with wording around:
 
 ## Positioning spine for X
 
-To be written later.
+This section defines the short X-specific messaging backbone for Orisen.
 
-Placeholder intent:
+It should be used to keep posts, replies, hooks, and CTAs pointed at the same core idea without turning every post into the same pitch.
 
-- This section should convert Orisen's approved positioning and narrative into a short X-specific spine.
-- It should not create new positioning.
-- It should stay downstream from `marketing/positioning-and-messaging.md` and `marketing/framing-and-narrative.md`.
+The positioning spine for X is downstream from the `Channel goal` and `Audience` sections above. It must also stay downstream from `marketing/positioning-and-messaging.md`, `marketing/framing-and-narrative.md`, `product/target-customer.md`, and `product/claims-and-evidence.md`.
+
+### Repeatable spine
+
+> Your alarm can ring and your morning can still fail. Orisen is being built around the part normal alarms miss: whether you actually got out of bed.
+
+### Who X is written for
+
+Write first for people whose alarms go off but whose mornings still fail.
+
+The best-fit reader is not casually interested in better sleep. They have repeated, painful wake-up failure and recognize the gap between hearing an alarm and actually being out of bed.
+
+### Problem frame
+
+The problem is not only waking up.
+
+The problem is completing the wake-up.
+
+Normal alarms usually treat sound as success. Orisen should repeatedly frame the real failure point as what happens after the alarm rings:
+
+- the user dismisses it while half-awake
+- the user stays in bed
+- the user goes back to sleep
+- the user loses time between alarm and getting out of bed
+
+### Enemy
+
+The enemy is the broken morning system, not the person struggling to wake up.
+
+On X, Orisen can push against:
+
+- alarms that stop before wake completion
+- apps that rely on willpower from a half-awake user
+- trackers that report what happened without changing the outcome
+- generic sleep advice that ignores the exact moment mornings fail
+
+Do not frame the user as lazy, weak, irresponsible, or broken.
+
+### Orisen wedge
+
+The first wedge is presence-based wake completion.
+
+Orisen starts by focusing on whether the user actually got out of bed, not just whether an alarm played.
+
+This is the simplest X explanation of the product:
+
+> Orisen is building a wake-up system that cares whether you actually left bed.
+
+### Category narrative
+
+The bigger narrative is that sleep tech should move from passive tracking to active intervention.
+
+On X, this should be framed carefully:
+
+- sleep tracking tells you what happened
+- intervention should help change the outcome
+- Orisen starts with wake completion because it is a painful, concrete, testable wedge
+- future sensor-informed wake intervention should be described as direction or ambition, not as validated product truth
+
+### Claim-safe ambition
+
+Orisen should sound ambitious without pretending future outcomes are already proven.
+
+Claim-safe ambition:
+
+- Orisen starts with wake completion.
+- Orisen is being built toward less brutal, more reliable mornings.
+- Orisen is exploring sensor-informed wake intervention as a future direction.
+- Orisen is working toward a future where sleep tech helps change outcomes, not just measure them.
+
+Avoid implying that Orisen has already proven it can eliminate grogginess, fix sleep inertia, control sleep stages, or guarantee perfect wake-ups.
+
+### Founder-led posture
+
+The founder should show up as a serious builder learning in public.
+
+The stance should be:
+
+- clear about the pain
+- honest about what is built now
+- ambitious about where the product can go
+- careful about evidence
+- curious toward users and experts
+- willing to explain product tradeoffs
+
+The founder should not sound like a generic wellness influencer, an overconfident clinical expert, or an investor-bait account.
 
 ## Claim-safety rules for X
 
