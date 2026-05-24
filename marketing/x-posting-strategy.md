@@ -19,9 +19,9 @@ Downstream docs:
 ## File structure
 
 - **Purpose**: defines what this file is for and what belongs in downstream X docs.
-- **Week 1 focus**: defines the immediate posting focus before deeper post formats, hooks, and calendar planning are finalized.
 - **Strategic content motions**: defines the repeated strategic motions the founder should use to avoid random posting.
 - **Categories of post type**: lists the broader set of post categories Orisen may explore over time.
+- **Week 1 focus**: defines the immediate posting focus after reviewing the broader post category map.
 - **Post formats**: placeholder for reusable post structures after the first-week strategy is chosen.
 - **Cadence and weekly operating rhythm**: placeholder for the realistic weekly workflow after the first-week strategy is chosen.
 - **First-week posting plan**: placeholder for the first practical posting plan once the founder's current X account state is reviewed.
@@ -52,35 +52,6 @@ This file is not:
 Finished post drafts, hooks, reply drafts, and CTA variants should live in `marketing/x-post-bank.md`.
 
 Scheduled posts should live in `marketing/x-posting-calendar.md` once a real cadence is chosen.
-
-## Week 1 focus
-
-The immediate focus is to start posting consistently enough to learn, without pretending the strategy is already final.
-
-Week 1 should prioritize:
-
-- learning what wake-up pain language gets replies, DMs, or waitlist interest
-- making the wake-up failure pattern more specific
-- showing that Orisen is being built by a real founder
-- testing the wake-completion reframe in simple language
-- using replies to find real conversations and customer language
-
-Week 1 should not prioritize:
-
-- a large posting system
-- polished threads for every idea
-- heavy investor-facing content
-- detailed technical explanations before the pain is clear
-- filling the full post bank before the first few posts are tested
-
-The account should revolve around the four core motions from `marketing/x-playbook.md`:
-
-- build in public
-- wake-up pain
-- wake-completion reframe
-- customer discovery
-
-Before filling post formats, hooks, cadence, or a calendar, review the founder's current X page and choose the first rough posting direction from there.
 
 ## Strategic content motions
 
@@ -165,6 +136,35 @@ Finished post drafts should live in `marketing/x-post-bank.md`. The operating ru
     - when to mention Orisen
     - when to DM
     - when not to reply
+
+## Week 1 focus
+
+The immediate focus is to start posting consistently enough to learn, without pretending the strategy is already final.
+
+Week 1 should prioritize:
+
+- learning what wake-up pain language gets replies, DMs, or waitlist interest
+- making the wake-up failure pattern more specific
+- showing that Orisen is being built by a real founder
+- testing the wake-completion reframe in simple language
+- using replies to find real conversations and customer language
+
+Week 1 should not prioritize:
+
+- a large posting system
+- polished threads for every idea
+- heavy investor-facing content
+- detailed technical explanations before the pain is clear
+- filling the full post bank before the first few posts are tested
+
+The account should revolve around the four core motions from `marketing/x-playbook.md`:
+
+- build in public
+- wake-up pain
+- wake-completion reframe
+- customer discovery
+
+Before filling post formats, hooks, cadence, or a calendar, review the founder's current X page and choose the first rough posting direction from there.
 
 ## Post formats
 
