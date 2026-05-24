@@ -45,6 +45,49 @@ When a task is large enough for local repo + Codex, ChatGPT should explicitly te
 - whether Codex should commit, push, or stop before committing
 - what output the user should paste back into ChatGPT
 
+## Mandatory prompt requirements
+
+Whenever ChatGPT gives the user a Codex prompt for local repo work, the prompt must include:
+
+- check current branch
+- run `git status`
+- stop if there are uncommitted changes
+- switch to `main`
+- pull latest `main` from origin
+- create a task branch for meaningful repo edits
+- confirm the working tree is clean before editing
+- state whether Codex may edit or only inspect
+- state `Do not commit. Do not push.` unless the user explicitly asked for commit/push
+
+ChatGPT should not assume the user's local repo is current.
+
+## Reusable Codex prompt preamble
+
+Use this preamble when giving the user a Codex prompt for local repo work:
+
+```text
+Before editing anything:
+1. Check the current git branch:
+   `git branch --show-current`
+2. Check the working tree:
+   `git status`
+3. If there are uncommitted changes, stop and report them. Do not stash, overwrite, or discard anything automatically.
+4. Switch to main:
+   `git checkout main`
+5. Pull the latest main:
+   `git pull origin main`
+6. Create a task branch:
+   `git checkout -b type/short-task-name`
+7. Confirm the working tree is clean.
+8. Only then begin the requested edits.
+
+Do not commit.
+Do not push.
+Stop after editing and show the full diff.
+```
+
+For very small local edits where a branch is intentionally not needed, ChatGPT must say that explicitly and explain why.
+
 ## Codex session guidance
 
 Use the same Codex session when the work continues the same branch and task, Codex already has useful context, or the next step is review/inspection.
