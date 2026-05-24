@@ -22,7 +22,7 @@ This file translates product truth, claim boundaries, and the larger Orisen narr
 
 This file should stay consistent with:
 
-- `marketing/framing-and-narrative.md`
+- `product/framing-and-narrative.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/product-overview.md`
@@ -59,11 +59,11 @@ This file is not:
 - a posting calendar
 - a legal or regulatory review
 - a replacement for `product/claims-and-evidence.md`
-- a replacement for `marketing/framing-and-narrative.md`
+- a replacement for `product/framing-and-narrative.md`
 
 ## Relationship to framing and narrative
 
-`marketing/framing-and-narrative.md` defines the belief shift.
+`product/framing-and-narrative.md` defines the product-level belief shift and strategic narrative.
 
 This file turns that belief shift into customer-facing language.
 
@@ -697,7 +697,7 @@ Avoid:
 
 Safe use:
 
-- Use `marketing/framing-and-narrative.md` to strengthen the belief shift.
+- Use `product/framing-and-narrative.md` to strengthen the belief shift.
 - Use its old belief vs new belief structure to make copy feel inevitable.
 - Use its anchors to make Orisen memorable.
 
@@ -728,7 +728,7 @@ Avoid:
 ## Notes
 
 - This file is the marketing language authority, not the claim authority.
-- `marketing/framing-and-narrative.md` is the strategic narrative layer.
+- `product/framing-and-narrative.md` is the strategic narrative layer.
 - `product/claims-and-evidence.md` remains the final claim boundary.
 - Use this file to write punchy copy, but check claim level before publishing strong outcome language.
 - Update this file as customer language, website tests, social performance, customer interviews, prototype pilots, and paid-intent data improve.

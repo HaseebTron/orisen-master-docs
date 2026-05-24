@@ -8,7 +8,7 @@ Governing docs:
 - `marketing/x-posting-strategy.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
-- `marketing/framing-and-narrative.md`
+- `product/framing-and-narrative.md`
 - `marketing/positioning-and-messaging.md`
 Downstream docs:
 - `marketing/x-posting-calendar.md`

@@ -10,7 +10,7 @@ Governing docs:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
-- `marketing/framing-and-narrative.md`
+- `product/framing-and-narrative.md`
 - `marketing/positioning-and-messaging.md`
 - `marketing/marketing-write-rules.md`
 - `marketing/post-performance-log.md`
@@ -85,8 +85,8 @@ Use this hierarchy when writing or reviewing X posts:
    - Main customer-facing language authority.
    - Use its approved language, anchors, examples, and claim-level framework.
 
-4. `marketing/framing-and-narrative.md`
-   - Defines the larger belief shift and category narrative.
+4. `product/framing-and-narrative.md`
+   - Defines the product-level strategic narrative, larger belief shift, and category narrative.
    - Use it for founder POV and narrative posts, but do not treat narrative as evidence.
 
 5. `marketing/post-performance-log.md`

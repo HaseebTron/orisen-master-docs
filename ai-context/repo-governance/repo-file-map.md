@@ -100,6 +100,7 @@ Conventions:
 - **`product/`**: Defines product truth, product scope, customer promise, roadmap, target customer, and claims/evidence from a product perspective.
   - `product-read-rules.md`: Product-specific reading/routing rules.
   - `product-overview.md`: Product direction and product-level truth.
+  - `framing-and-narrative.md`: Product-level strategic narrative, category frame, and belief shift.
   - `claims-and-evidence.md`: Product claims and evidence boundaries.
   - `target-customer.md`: First target customer and customer focus.
   - `roadmap.md`: Roadmap and product sequencing.

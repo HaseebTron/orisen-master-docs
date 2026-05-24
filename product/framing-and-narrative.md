@@ -1,5 +1,30 @@
 # Framing and Narrative
 
+## Purpose
+
+This file defines Orisen's product-level strategic narrative, category frame, and belief shift.
+
+## Role of this file
+
+Use this as the upstream narrative source for turning Orisen's product truth into marketing, fundraising, pitch, and founder-led communication.
+
+## Upstream docs
+
+- `ai-context/current-state.md`
+- `product/product-overview.md`
+- `product/claims-and-evidence.md`
+- `product/target-customer.md`
+
+## Downstream docs
+
+- `marketing/positioning-and-messaging.md`
+- Marketing channel playbooks and post drafts
+- Fundraising narrative, pitch framing, and investor-facing applications
+
+## Claim-safety note
+
+This file does not define public claim permission. Public marketing, fundraising, and product claims must follow `product/claims-and-evidence.md`.
+
 ## Pitch deck narrative
 
 - A pitch deck is a sequence of beliefs you install in the investor’s mind.
