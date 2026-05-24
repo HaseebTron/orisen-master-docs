@@ -12,6 +12,7 @@ Governing docs:
 - `marketing/marketing-write-rules.md`
 - `marketing/post-performance-log.md`
 Downstream docs:
+- `marketing/x-reply-strategy.md`
 - `marketing/x-post-bank.md`
 - `marketing/x-posting-calendar.md`
 - Future X post drafts, replies, and campaign tests
@@ -48,8 +49,11 @@ This file is not:
 - a finished post bank
 - a detailed posting calendar
 - a performance log
+- the detailed reply strategy
 
 Finished post drafts, hooks, reply drafts, and CTA variants should live in `marketing/x-post-bank.md`.
+
+Reply strategy should live in `marketing/x-reply-strategy.md`.
 
 Scheduled posts should live in `marketing/x-posting-calendar.md` once a real cadence is chosen.
 
@@ -72,7 +76,7 @@ Use this to decide what kind of post is being written after choosing the strateg
 
 This section is intentionally broader than the first-week posting plan. It is a brainstorming map of post types Orisen may explore over time, not a requirement to use every category immediately.
 
-Finished post drafts should live in `marketing/x-post-bank.md`. The operating rules and channel guardrails should live in `marketing/x-playbook.md`.
+Finished post drafts should live in `marketing/x-post-bank.md`. The operating rules and channel guardrails should live in `marketing/x-playbook.md`. Reply strategy should live in `marketing/x-reply-strategy.md`.
 
 - **Customer pain and problem insight posts**:
   - Customer pain mirror posts
@@ -125,17 +129,6 @@ Finished post drafts should live in `marketing/x-post-bank.md`. The operating ru
   - Reliability/trust posts
   - Founder taste posts
   - Long-term vision posts
-
-- **Reply/engagement strategy**:
-  - Replies are not normal posts, but they are part of X growth.
-  - Keep detailed reply guidance in this file later, below the post-type sections.
-  - Reply strategy should cover:
-    - who to reply to
-    - what posts to reply under
-    - how to reply without sounding spammy
-    - when to mention Orisen
-    - when to DM
-    - when not to reply
 
 ## Week 1 focus
 
