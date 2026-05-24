@@ -25,6 +25,7 @@ For important product work, start with:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
 - `product/product-overview.md`
+- `product/framing-and-narrative.md`
 
 These define the current company state, interpretation rules, and core product definition.
 
@@ -39,6 +40,7 @@ The `product/` folder defines:
 - The difference between engineering MVP, first customer-ready product, and long-term vision
 - Target customer and beachhead segments
 - Product claims and evidence boundaries
+- Product-level category narrative, strategic narrative, and belief shift
 - Feature priorities and roadmap logic
 - Product principles and tradeoffs
 
@@ -58,7 +60,24 @@ Use for questions like:
 Read:
 
 - `product/product-overview.md`
+- `product/framing-and-narrative.md`
 - `ai-context/current-state.md`
+
+### Product-level framing and strategic narrative
+
+Use for questions like:
+
+- What belief shift is Orisen trying to create?
+- What category narrative should downstream marketing and fundraising inherit?
+- How should Orisen frame the move from passive sleep tracking to active intervention?
+- What product-level narrative should guide pitch framing and founder POV?
+
+Read:
+
+- `product/framing-and-narrative.md`
+- `product/product-overview.md`
+- `product/claims-and-evidence.md`
+- `product/target-customer.md`
 
 ### MVP vs first customer product
 
@@ -158,6 +177,7 @@ If a referenced doc does not exist yet, use the available upstream docs and reco
 
 - Product docs are downstream from `ai-context/current-state.md`.
 - Product docs are upstream of marketing, fundraising, and business docs.
+- `product/framing-and-narrative.md` defines product-level strategic narrative and belief shift for downstream marketing and fundraising use.
 - Product docs should not overclaim what has been validated.
 - MVP scope should not shrink the first customer-ready product vision.
 - Long-term vision should not be confused with what exists today.

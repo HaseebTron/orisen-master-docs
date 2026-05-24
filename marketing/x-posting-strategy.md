@@ -7,7 +7,7 @@ Governing docs:
 - `marketing/x-playbook.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
-- `marketing/framing-and-narrative.md`
+- `product/framing-and-narrative.md`
 - `marketing/positioning-and-messaging.md`
 - `marketing/marketing-write-rules.md`
 - `marketing/post-performance-log.md`

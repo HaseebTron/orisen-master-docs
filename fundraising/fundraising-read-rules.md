@@ -27,6 +27,7 @@ For important fundraising work, start with:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
+- `product/framing-and-narrative.md`
 - `product/roadmap.md`
 - `ai-context/claim-control/claim-control-system.md`
 - `ai-context/claim-control/claim-control-log.md`
@@ -41,6 +42,7 @@ The `fundraising/` folder defines:
 - Investor narrative
 - Pitch deck structure and messaging
 - Traction framing
+- Category narrative and belief-shift framing for investors
 - Fundraising outreach
 - Warm intro messages
 - Investor-specific positioning
@@ -75,6 +77,7 @@ Use for questions like:
 Read:
 
 - `fundraising/investor-narrative.md`
+- `product/framing-and-narrative.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
@@ -93,6 +96,7 @@ Read:
 
 - `fundraising/pitch-deck-notes.md` if it exists
 - `fundraising/investor-narrative.md`
+- `product/framing-and-narrative.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
@@ -172,6 +176,7 @@ Read:
 
 - `business/business-read-rules.md` if it exists
 - `fundraising/investor-narrative.md`
+- `product/framing-and-narrative.md`
 - `product/product-overview.md`
 - `product/target-customer.md`
 
@@ -180,6 +185,7 @@ If a referenced doc does not exist yet, use the available upstream docs and reco
 ## Fundraising interpretation rules
 
 - Fundraising is downstream from product truth and claims evidence.
+- Fundraising is downstream from product-level strategic narrative, including `product/framing-and-narrative.md`.
 - Do not imply that roadmap items are already built.
 - Do not imply that unvalidated claims are proven.
 - Do not overstate clinical, medical, or sleep-stage claims.

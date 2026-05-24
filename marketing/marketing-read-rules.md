@@ -27,9 +27,10 @@ For important marketing work, start with:
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
+- `product/framing-and-narrative.md`
 - `marketing/positioning-and-messaging.md`
 
-Marketing must stay downstream from current company truth, product direction, target customer assumptions, and claims/evidence boundaries.
+Marketing must stay downstream from current company truth, product direction, claim boundaries, target customer assumptions, and product-level framing/narrative.
 
 ## Marketing folder role
 
@@ -76,6 +77,7 @@ Read:
 - `product/product-overview.md`
 - `product/target-customer.md`
 - `product/claims-and-evidence.md`
+- `product/framing-and-narrative.md`
 - `ai-context/current-state.md`
 
 ### Positioning and messaging
@@ -91,6 +93,7 @@ Use for questions like:
 Read:
 
 - `marketing/positioning-and-messaging.md`
+- `product/framing-and-narrative.md`
 - `product/product-overview.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
@@ -173,6 +176,7 @@ Read:
 - `marketing/founder-led-content.md` if it exists
 - `marketing/marketing-strategy.md` if it exists
 - `marketing/positioning-and-messaging.md`
+- `product/framing-and-narrative.md`
 - `product/product-overview.md`
 - `product/target-customer.md`
 
@@ -209,6 +213,7 @@ Read:
 - `marketing/x-playbook.md` if it exists
 - `marketing/content-pillars.md` if it exists
 - `marketing/positioning-and-messaging.md`
+- `product/framing-and-narrative.md`
 
 ### TikTok and Instagram strategy
 
@@ -267,6 +272,7 @@ If a referenced doc does not exist yet, use the available upstream docs and reco
 ## Marketing interpretation rules
 
 - Marketing is downstream from product truth and claims evidence.
+- Marketing is downstream from product-level framing and narrative, including `product/framing-and-narrative.md`.
 - Do not position Orisen as generic sleep wellness.
 - Do not reduce Orisen to just a smart alarm clock.
 - Do not overclaim sleep-stage accuracy, grogginess elimination, or clinical sleep improvement.
