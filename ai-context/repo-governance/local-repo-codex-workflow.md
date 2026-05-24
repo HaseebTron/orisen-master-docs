@@ -182,6 +182,28 @@ For file moves, staging helps Git recognize renames instead of showing large del
 
 Before commit, review staged files, rename detection, diff stat, whitespace/conflict-marker checks, reference-search results, and Codex's summary of whether meaning changed accidentally.
 
+## ChatGPT review loop
+
+For meaningful local repo edits, especially file moves, renames, reference updates, source-of-truth edits, governance edits, or claim-sensitive edits, Codex should stop after editing and show the diff summary.
+
+Before commit, push, or merge, the user should paste the diff summary or relevant diff into ChatGPT for review.
+
+ChatGPT should review for:
+
+- missed old references
+- accidental content deletion
+- accidental meaning changes
+- wrong source-of-truth hierarchy
+- claim-safety issues
+- files that should not have changed
+- files that should have changed but were missed
+- whether the edit stayed within the approved scope
+- whether the change stayed minimal when minimal edits were requested
+
+Codex should not commit, push, or merge until this review is complete unless the user explicitly chooses to skip ChatGPT review.
+
+If the user skips ChatGPT review, ChatGPT should not later imply that it reviewed or approved the diff.
+
 ## Commit, push, merge, and cleanup
 
 Commit only after the staged review is clean:
