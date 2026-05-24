@@ -2,7 +2,7 @@
 
 Status: Source of truth
 Authority level: Company / AI context / Repo governance
-Last reviewed: 2026-05-22
+Last reviewed: 2026-05-24
 Governing docs:
 - `ai-context/repo-governance/repo-operating-model.md`
 - `ai-context/repo-governance/repo-editing-rules.md`
@@ -44,6 +44,34 @@ When a task is large enough for local repo + Codex, ChatGPT should explicitly te
 - whether Codex should edit files or only inspect/report
 - whether Codex should commit, push, or stop before committing
 - what output the user should paste back into ChatGPT
+
+## Codex session routing instruction
+
+Whenever ChatGPT gives the user a prompt to paste into Codex, ChatGPT must state above the prompt whether the user should paste it into:
+
+- the existing Codex session
+- a new Codex session
+
+ChatGPT must briefly explain why.
+
+Recommend the existing Codex session when:
+
+- the task depends on current uncommitted diffs
+- the task continues the same branch or local repo state
+- the task needs Codex to preserve context from the immediately previous task
+- the prompt refers to "current diff," "existing branch," "uncommitted changes," or "continue from the previous edit"
+
+Recommend a new Codex session when:
+
+- starting a new major task
+- switching branches or workstreams
+- the current Codex session may be stale, confused, or contaminated
+- the task needs a clean review
+- the task no longer depends on the current local state except what can be rediscovered through `git status` and file reads
+
+If either option is acceptable, ChatGPT should still recommend one default and explain the tradeoff.
+
+The session-routing note must appear before the Codex prompt, not after it.
 
 ## Mandatory prompt requirements
 

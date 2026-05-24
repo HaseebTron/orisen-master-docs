@@ -2,7 +2,7 @@
 
 Status: Source of truth
 Authority level: Company / AI context / Repo governance
-Last reviewed: 2026-05-22
+Last reviewed: 2026-05-24
 Governing docs:
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/repo-governance/repo-structure.md`
@@ -157,14 +157,19 @@ Conventions:
 - **`marketing/`**: Defines messaging, positioning, customer language, content strategy, channel playbooks, GTM experiments, launch execution, and marketing performance learnings.
   - `README.md`: Marketing folder overview.
   - `marketing-read-rules.md`: Marketing-specific reading/routing rules.
+  - `marketing-write-rules.md`: Marketing writing rules for drafting and editing marketing docs.
   - `positioning-and-messaging.md`: Core marketing positioning and messaging.
   - `post-performance-log.md`: Founder-led marketing post and campaign performance log.
+  - `x-playbook.md`: X/Twitter-specific content playbook.
+  - `x-post-bank.md`: Draft and reusable X/Twitter post bank.
+  - `x-posting-strategy.md`: X/Twitter posting strategy and execution guidance.
+  - `x-profile-current-state.md`: Current X/Twitter profile state and profile notes.
+  - `x-reply-strategy.md`: X/Twitter reply strategy and engagement guidance.
   - Potential future files:
     - `customer-language.md`: Customer words, phrases, pain points, and message mining.
     - `content-pillars.md`: Core founder-led content themes.
     - `gtm.md`: Go-to-market strategy.
     - `linkedin-playbook.md`: LinkedIn-specific content and outreach playbook.
-    - `x-playbook.md`: X/Twitter-specific content playbook.
     - `tiktok-playbook.md`: TikTok-specific content playbook.
     - `instagram-playbook.md`: Instagram-specific content playbook.
     - `reddit-research.md`: Reddit research and community notes.

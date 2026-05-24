@@ -2,7 +2,7 @@
 
 Status: Source of truth
 Authority level: Company / AI context / Repo governance
-Last reviewed: 2026-05-22
+Last reviewed: 2026-05-24
 Governing docs:
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/repo-governance/repo-operating-model.md`
@@ -51,6 +51,7 @@ The preflight must include, at minimum:
 - files to move or rename
 - files to delete or archive
 - files intentionally not touched, when relevant
+- repo-file-map impact
 - editing method
 - risk level
 - reason for the change
@@ -58,6 +59,41 @@ The preflight must include, at minimum:
 For significant repo changes, use the full planned repo-change summary format below.
 
 For tiny one-file edits, a shortened preflight is acceptable, but it must still state the file read and the file being edited before the edit happens.
+
+## Mandatory repo-file-map hard gate
+
+Repo-file-map impact is a visible checkpoint, not an internal note.
+
+Before creating, moving, renaming, deleting, or archiving any durable repo file, the assistant must state the impact on `ai-context/repo-governance/repo-file-map.md`.
+
+Do not proceed with durable file creation, moving, renaming, deletion, or archival until the pre-edit scope says:
+
+- whether `ai-context/repo-governance/repo-file-map.md` needs an update
+- which durable file inventory entry will be added, moved, renamed, removed, or reclassified
+- whether the file-map update will happen in the same task
+
+If the change creates, moves, renames, deletes, or archives a durable repo file, update `ai-context/repo-governance/repo-file-map.md` in the same task unless the user explicitly approves deferring it.
+
+If the file-map update is deferred, state the explicit user-approved deferral, why it is deferred, and what remains pending.
+
+## Mandatory current-file discovery gate
+
+Before giving repo-structure advice or planning moves, renames, deletions, archival, folder reorganization, or cleanup involving existing files, the assistant must check current file reality.
+
+Do not rely only on memory, prior chat context, or `ai-context/repo-governance/repo-file-map.md` when exact current file existence, file paths, folder organization, or structural advice matters.
+
+The assistant must first check `ai-context/repo-governance/repo-file-map.md`, then run a targeted live repo search for the affected folder path, filename prefix, old path, or related naming pattern.
+
+If live repo search and `ai-context/repo-governance/repo-file-map.md` disagree, treat `repo-file-map.md` as stale for that specific inventory question and include a file-map update in the change plan.
+
+The pre-edit or planning summary must state:
+
+- live discovery searches performed
+- files found that affect the decision
+- whether live repo search and `ai-context/repo-governance/repo-file-map.md` agree or disagree
+- whether `ai-context/repo-governance/repo-file-map.md` needs an update
+
+This gate is narrow. It applies when existing file existence, file paths, folder organization, or structural advice matters. It does not apply to tiny wording edits that do not depend on current file inventory.
 
 ## Mandatory reference search rule
 
@@ -196,7 +232,8 @@ Before changing the repo, answer:
 - Is this change downstream from existing source-of-truth, or does it change source-of-truth?
 - Does this affect product promise, claims, roadmap, fundraising, marketing, software architecture, radar/ML, hardware, or business strategy?
 - Could this make any existing doc stale or contradictory?
-- Does this require updating `ai-context/repo-governance/repo-file-map.md`?
+- What is the repo-file-map impact?
+- If durable file creation, moving, renaming, deletion, or archival is involved, will `ai-context/repo-governance/repo-file-map.md` be updated in the same task, or has the user explicitly approved deferring it?
 - Does this require updating `ai-context/context-map.md`?
 - Does this require updating folder read-rules files?
 - Does this require a decision-log entry?
@@ -212,6 +249,7 @@ Before direct GitHub edits, state:
 - files to update
 - files to move, rename, delete, or archive
 - files intentionally not touched
+- repo-file-map impact, including whether `ai-context/repo-governance/repo-file-map.md` will be updated in the same task or explicitly deferred by the user
 - whether direct GitHub editing is safe
 - whether local Git, Codex, or branch/PR workflow would be safer
 
@@ -246,6 +284,10 @@ Files to delete/archive:
 Files intentionally not touched:
 - `path/to/file.md`
 - None
+
+Repo-file-map impact:
+- Required update / No durable file inventory change / Explicitly deferred by user
+- Brief explanation
 
 Editing method:
 - Direct GitHub edit / Local Git / Codex / Branch/PR
@@ -289,12 +331,14 @@ When creating a new doc:
 
 - Confirm the doc has a distinct job.
 - Confirm the file path and name follow repo structure rules.
+- State repo-file-map impact before creating the durable doc.
+- Do not create the durable doc until the file-map update path has been stated.
 - Identify governing docs.
 - Identify downstream docs.
 - Add metadata if the doc is durable.
 - Avoid duplicating content already covered elsewhere.
 - Clearly separate truth, assumptions, evidence, and open questions when relevant.
-- Update `ai-context/repo-governance/repo-file-map.md`.
+- Update `ai-context/repo-governance/repo-file-map.md` in the same task unless the user explicitly approves deferring it.
 - Update `ai-context/context-map.md` only if context-loading rules change.
 
 ## Editing checklist
@@ -315,8 +359,10 @@ When moving or renaming files:
 
 - Confirm the new location better matches authority and folder responsibility.
 - Preserve content unless rewriting is explicitly part of the task.
+- State repo-file-map impact before moving or renaming the durable file.
+- Do not move or rename the durable file until the file-map update path has been stated.
 - Update links and references.
-- Update `ai-context/repo-governance/repo-file-map.md`.
+- Update `ai-context/repo-governance/repo-file-map.md` in the same task unless the user explicitly approves deferring it.
 - Update `ai-context/context-map.md` if context-loading paths changed.
 - Update folder read-rules files if reading paths changed.
 - Consider using local Git or Codex for link-search and diff review.
@@ -329,7 +375,9 @@ When deleting or archiving files:
 - Confirm raw evidence is preserved unless the user explicitly asked otherwise and the governing docs support it.
 - Confirm deletion will not remove important decision history.
 - Prefer archiving over deleting when historical context may matter.
-- Update `ai-context/repo-governance/repo-file-map.md`.
+- State repo-file-map impact before deleting or archiving the durable file.
+- Do not delete or archive the durable file until the file-map update path has been stated.
+- Update `ai-context/repo-governance/repo-file-map.md` in the same task unless the user explicitly approves deferring it.
 - Update read-rules files and links.
 - Use local Git or Codex for broad cleanup.
 
@@ -365,6 +413,7 @@ After repo edits, summarize:
 - files moved, renamed, deleted, or archived
 - files intentionally not touched
 - whether `ai-context/repo-governance/repo-file-map.md` was updated
+- if the file-map update was deferred, the explicit user-approved deferral and remaining pending update
 - whether routing/read-rules files were updated
 - any tool errors or partial failures
 - follow-up review needed
@@ -399,7 +448,7 @@ Files intentionally not touched:
 - None
 
 `ai-context/repo-governance/repo-file-map.md` updated:
-- Yes / No / Not needed
+- Yes / Not needed / Deferred with explicit user approval
 
 Routing/read-rules files updated:
 - Yes / No / Not needed
@@ -422,7 +471,7 @@ After meaningful changes, check:
 - Do new docs have clear governing docs?
 - Are downstream docs still consistent?
 - Are there duplicated file trees?
-- Did `ai-context/repo-governance/repo-file-map.md` stay current?
+- Did `ai-context/repo-governance/repo-file-map.md` stay current, or was any remaining update explicitly deferred by the user?
 - Did `context-map.md` stay accurate?
 - Are claims still safe?
 - Did the change create any authority ambiguity?

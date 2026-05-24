@@ -2,7 +2,7 @@
 
 Status: Source of truth
 Authority level: Company / AI context / Repo governance
-Last reviewed: 2026-05-22
+Last reviewed: 2026-05-24
 Governing docs:
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/repo-governance/repo-operating-model.md`
@@ -41,6 +41,8 @@ For broad repo audits, repo logic reviews, AI/context system reviews, or governa
 
 For broad, risky, or reference-heavy local work, read `ai-context/repo-governance/local-repo-codex-workflow.md` before telling the user how to use Codex or VS Code.
 
+For file moves, renames, deletions, archival, folder reorganization, or cleanup involving existing files, follow the current-file discovery gate in `ai-context/repo-governance/repo-change-checklist.md` before finalizing the edit plan.
+
 ## Mandatory pre-edit disclosure rule
 
 Before creating, editing, moving, renaming, deleting, or archiving any repo file, ChatGPT must tell the user what it read and what it is about to change.
@@ -55,6 +57,7 @@ Before the first write action in a repo-editing task, ChatGPT must state:
 - files to move or rename
 - files to delete or archive
 - files intentionally not touched, when relevant
+- repo-file-map impact
 - editing method
 - risk level
 - reason for the change
@@ -64,6 +67,22 @@ For significant repo changes, use the exact planned repo-change summary format f
 For tiny one-file edits, a shortened version is acceptable, but it must still clearly state the file read and the file being edited before the edit happens.
 
 Do not perform the write first and explain afterward.
+
+## Mandatory repo-file-map hard gate
+
+Before creating, moving, renaming, deleting, or archiving any durable repo file, ChatGPT must explicitly state the repo-file-map impact in the pre-edit scope statement.
+
+Do not proceed with durable file creation, moving, renaming, deletion, or archival until the pre-edit scope says:
+
+- whether `ai-context/repo-governance/repo-file-map.md` needs an update
+- which durable file inventory entry will be added, moved, renamed, removed, or reclassified
+- whether the file-map update will happen in the same task
+
+When a durable repo file is created, moved, renamed, deleted, or archived, update `ai-context/repo-governance/repo-file-map.md` in the same task unless the user explicitly approves deferring it.
+
+If the file-map update is deferred, say why it is deferred and what remains pending.
+
+The post-edit summary must say whether `ai-context/repo-governance/repo-file-map.md` was updated, not needed, or explicitly deferred.
 
 ## Mandatory reference search rule
 
@@ -122,6 +141,8 @@ This applies even if `ai-context/repo-governance/repo-editing-rules.md` has alre
 
 The Codex/local prompt must include the required local sync and branch setup steps from that file, including checking git status, pulling latest `main`, creating a task branch when appropriate, and stopping before commit/push unless the user explicitly asks.
 
+When preparing a Codex prompt for local repo work, follow the Codex session routing instruction in `ai-context/repo-governance/local-repo-codex-workflow.md`.
+
 ## Direct GitHub edit sync reminder
 
 After ChatGPT makes direct GitHub edits, the user's local repo may be behind `origin/main`.
@@ -162,6 +183,7 @@ Before direct GitHub edits, ChatGPT should briefly state:
 - files it plans to update
 - files it plans to move, rename, delete, or archive
 - files it will intentionally not touch, when relevant
+- repo-file-map impact, including whether `ai-context/repo-governance/repo-file-map.md` will be updated in the same task
 - editing method
 - risk level
 - whether the change is small enough for direct GitHub editing
@@ -238,6 +260,7 @@ After direct GitHub edits, summarize:
 - files moved, renamed, deleted, or archived
 - files intentionally not touched
 - whether `ai-context/repo-governance/repo-file-map.md` was updated
+- if the file-map update was deferred, the explicit user-approved deferral and remaining pending update
 - whether routing/read-rules files were updated
 - any tool errors or partial failures
 - any follow-up review needed
