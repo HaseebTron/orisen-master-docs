@@ -143,6 +143,8 @@ The Codex/local prompt must include the required local sync and branch setup ste
 
 When preparing a Codex prompt for local repo work, follow the Codex session routing instruction in `ai-context/repo-governance/local-repo-codex-workflow.md`.
 
+When the next step would otherwise be manual terminal, Git, or repo-inspection commands, follow the Codex-first command workflow in `ai-context/repo-governance/local-repo-codex-workflow.md`.
+
 ## Direct GitHub edit sync reminder
 
 After ChatGPT makes direct GitHub edits, the user's local repo may be behind `origin/main`.
