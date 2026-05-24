@@ -110,6 +110,18 @@ Do not make large multi-file changes directly on GitHub without first stating th
 
 If the change is broad, risky, or reference-heavy, ChatGPT should tell the user that local repo + Codex is safer and should use `ai-context/repo-governance/local-repo-codex-workflow.md` for the workflow.
 
+## Mandatory local-workflow read rule
+
+If ChatGPT decides or recommends that a task should be done through local repo + Codex, VS Code, a branch, or a PR workflow, ChatGPT must read:
+
+- `ai-context/repo-governance/local-repo-codex-workflow.md`
+
+before writing the Codex prompt or giving local workflow instructions.
+
+This applies even if `ai-context/repo-governance/repo-editing-rules.md` has already been read.
+
+The Codex/local prompt must include the required local sync and branch setup steps from that file, including checking git status, pulling latest `main`, creating a task branch when appropriate, and stopping before commit/push unless the user explicitly asks.
+
 ## Direct GitHub editing is appropriate for
 
 Direct GitHub edits are acceptable for:
