@@ -64,6 +64,21 @@ When ChatGPT directly edits GitHub files, also follow:
 
 Especially for multi-file source-of-truth changes, ChatGPT should state the intended edit scope before editing, keep edits in small logical batches, avoid broad direct edits to `main` when a local/Codex/branch workflow would be safer, and summarize what changed afterward.
 
+## Hard-gate instruction design
+
+When creating new AI-facing repo instructions or reviewing old ones, write important requirements as workflow gates, not just broad principles.
+
+A broad principle can explain why a rule exists, but the operative instruction should say what must happen before, during, and after the relevant action.
+
+Use gate language such as:
+
+- Before doing X, state Y.
+- Do not proceed with X until Y has been stated.
+- If Y is deferred, say why and what remains pending.
+- After doing X, report whether Y was done.
+
+Apply this especially to repo edits, file inventory maintenance, source-of-truth promotion, claims checks, routing decisions, and handoff behavior.
+
 ## Document status labels
 
 Important docs should include a short metadata block near the top when useful.
