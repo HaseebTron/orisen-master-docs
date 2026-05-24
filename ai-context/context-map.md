@@ -407,7 +407,7 @@ Important marketing docs may include:
 - `marketing/content-pillars.md`
 - `marketing/gtm.md`
 - `marketing/linkedin-playbook.md`
-- `marketing/x-playbook.md`
+- `marketing/x/playbook.md`
 - `marketing/tiktok-playbook.md`
 - `marketing/instagram-playbook.md`
 - `marketing/reddit-research.md`

@@ -95,7 +95,7 @@ This table is a doc-building workflow, not source-of-truth product strategy. The
 | 11 | `marketing/positioning-and-messaging.md` | Update after customer language | Improve messaging using real customer language. |
 | 12 | `marketing/content-pillars.md` | Content system | Recurring topics for founder-led content: broken mornings, building Orisen, sleep tech opinions, customer pain, founder lessons, product progress, traction, and vision. |
 | 13 | `marketing/founder-led-content.md` | Founder voice | Tone, beliefs, founder story, recurring opinions, technical depth, vulnerability level, and what to avoid. |
-| 14 | `marketing/x-playbook.md` | X strategy | Target audience on X, cadence, formats, hooks, reply strategy, CTA rules, build-in-public rules, and examples. |
+| 14 | `marketing/x/playbook.md` | X strategy | Target audience on X, cadence, formats, hooks, reply strategy, CTA rules, build-in-public rules, and examples. |
 | 15 | `marketing/tweet-bank.md` | Execution doc | Drafted tweets, hooks, threads, replies, build updates, customer-pain posts, founder takes, and CTAs. |
 | 16 | `marketing/weekly-content-calendar.md` | Execution doc | Weekly posting plan and content mix. |
 | 17 | `marketing/post-performance-log.md` | Existing execution doc | Track post performance, lessons, signups, replies, and reusable ideas. |
@@ -114,7 +114,7 @@ Do not create these unless the workstream becomes active enough to justify them.
 - [ ] `marketing/founder-led-content.md`
 - [ ] `marketing/gtm.md`
 - [ ] `marketing/linkedin-playbook.md`
-- [ ] `marketing/x-playbook.md`
+- [ ] `marketing/x/playbook.md`
 - [ ] `marketing/tweet-bank.md`
 - [ ] `marketing/weekly-content-calendar.md`
 - [ ] `fundraising/traction.md`
