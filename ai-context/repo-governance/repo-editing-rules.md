@@ -122,6 +122,12 @@ This applies even if `ai-context/repo-governance/repo-editing-rules.md` has alre
 
 The Codex/local prompt must include the required local sync and branch setup steps from that file, including checking git status, pulling latest `main`, creating a task branch when appropriate, and stopping before commit/push unless the user explicitly asks.
 
+## Direct GitHub edit sync reminder
+
+After ChatGPT makes direct GitHub edits, the user's local repo may be behind `origin/main`.
+
+If the next task uses local repo + Codex, VS Code, terminal Git, a branch, staged diffs, commits, pushes, or merges, ChatGPT must remind the user to pull latest `main` before creating a task branch or editing files.
+
 ## Direct GitHub editing is appropriate for
 
 Direct GitHub edits are acceptable for:
