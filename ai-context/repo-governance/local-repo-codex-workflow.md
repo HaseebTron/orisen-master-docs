@@ -84,6 +84,12 @@ Before editing anything:
 Do not commit.
 Do not push.
 Stop after editing and show the full diff.
+
+For diff review:
+- First try to show the full staged diff with `git diff --cached`.
+- If the diff is too long for chat, write it to `$env:USERPROFILE\Downloads\task-review-diff.md`.
+- Do not create temporary review files inside the repo.
+- Do not stage temporary review files.
 ```
 
 For very small local edits where a branch is intentionally not needed, ChatGPT must say that explicitly and explain why.
@@ -182,6 +188,32 @@ For file moves, staging helps Git recognize renames instead of showing large del
 
 Before commit, review staged files, rename detection, diff stat, whitespace/conflict-marker checks, reference-search results, and Codex's summary of whether meaning changed accidentally.
 
+## Diff sharing rule
+
+For staged diff review, avoid asking for many tiny one-file diffs unless the user specifically wants that.
+
+Preferred order:
+
+1. Ask Codex to show the full staged diff:
+
+   ```powershell
+   git diff --cached
+   ```
+
+2. If the diff is too long for chat, ask Codex to write the staged diff to a temporary file outside the repo, preferably the user's Downloads folder:
+
+   ```powershell
+   git diff --cached > "$env:USERPROFILE\Downloads\task-review-diff.md"
+   ```
+
+3. The user should upload or paste that review file into ChatGPT.
+
+4. Do not create temporary review files inside the repo unless there is a specific reason.
+
+5. If a temporary review file is accidentally created inside the repo, it must not be staged and should be deleted before commit.
+
+For targeted review, Codex may still output a single-file diff when ChatGPT asks for one specific file, but the default for multi-file review should be full diff or review-file export.
+
 ## ChatGPT review loop
 
 For meaningful local repo edits, especially file moves, renames, reference updates, source-of-truth edits, governance edits, or claim-sensitive edits, Codex should stop after editing and show the diff summary.
@@ -229,12 +261,15 @@ git push origin main
 git status
 ```
 
-After merge, delete branches if appropriate:
+After a task branch has been merged into `main` and pushed, delete the completed branch locally and remotely unless the user wants to keep it.
 
 ```powershell
 git branch -d branch-name
 git push origin --delete branch-name
+git status
 ```
+
+Do not delete the branch before confirming that `main` is pushed and clean.
 
 ## Guardrails
 
