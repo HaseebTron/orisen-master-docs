@@ -82,6 +82,8 @@ Also use `ai-context/repo-governance/repo-operating-model.md` for broad repo aud
 
 Use `ai-context/repo-governance/local-repo-codex-workflow.md` when repo work is broad, risky, reference-heavy, or should be reviewed through local Git diffs instead of direct ChatGPT GitHub editing.
 
+If a task involves local repo + Codex, VS Code, branching, commits, pushes, merges, or staged diffs, read `ai-context/repo-governance/local-repo-codex-workflow.md` before giving workflow instructions.
+
 Use `ai-context/repo-governance/repo-purpose.md` for why the repo exists.
 
 Use `ai-context/repo-governance/repo-structure.md` for structure philosophy and folder responsibility.
