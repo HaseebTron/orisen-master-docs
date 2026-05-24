@@ -45,6 +45,22 @@ When a task is large enough for local repo + Codex, ChatGPT should explicitly te
 - whether Codex should commit, push, or stop before committing
 - what output the user should paste back into ChatGPT
 
+## Codex-first command workflow
+
+When the user's next action would normally be to manually run terminal, bash, PowerShell, Git, or repo-inspection commands, ChatGPT should usually give the user one copy-pasteable Codex prompt instead of asking the user to run the commands manually.
+
+The Codex prompt should ask Codex to:
+
+- run the needed commands in the local repo
+- inspect the command output instead of merely relaying raw output
+- report the exact results ChatGPT needs for the next decision
+- edit files only if the prompt explicitly authorizes editing
+- stop before commit or push unless the user explicitly asks for commit or push
+
+Manual terminal commands should be reserved for tiny, safe, obvious one-liners, or for cases where Codex is unavailable or inappropriate.
+
+The default workflow should reduce founder manual terminal burden while preserving review discipline: Codex performs the mechanical local work, ChatGPT reviews the reported results and diff, and the user remains in control of approvals, commits, pushes, and merges.
+
 ## Codex session routing instruction
 
 Whenever ChatGPT gives the user a prompt to paste into Codex, ChatGPT must state above the prompt whether the user should paste it into:
