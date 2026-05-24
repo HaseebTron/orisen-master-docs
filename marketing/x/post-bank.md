@@ -4,14 +4,14 @@ Status: Working asset bank
 Authority level: Channel-specific marketing execution
 Last reviewed: 2026-05-23
 Governing docs:
-- `marketing/x-playbook.md`
-- `marketing/x-posting-strategy.md`
+- `marketing/x/playbook.md`
+- `marketing/x/posting-strategy.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/framing-and-narrative.md`
 - `marketing/positioning-and-messaging.md`
 Downstream docs:
-- `marketing/x-posting-calendar.md`
+- `marketing/x/posting-calendar.md`
 - Published X posts
 - X reply drafts
 - X campaign tests
@@ -39,7 +39,7 @@ Use this file for:
 - reusable reply examples
 - CTA variants
 - draft labels and notes
-- posts that can later be scheduled in `marketing/x-posting-calendar.md`
+- posts that can later be scheduled in `marketing/x/posting-calendar.md`
 
 This file is not:
 
@@ -57,7 +57,7 @@ To be written later.
 Placeholder intent:
 
 - This section should explain how to use, edit, reuse, and retire post drafts.
-- It should explain how drafts move from this file into `marketing/x-posting-calendar.md`.
+- It should explain how drafts move from this file into `marketing/x/posting-calendar.md`.
 - It should keep this file useful as an asset bank, not a strategy doc.
 
 ## Claim-safety reminder
@@ -77,7 +77,7 @@ To be written later.
 Placeholder intent:
 
 - This section should store reusable X hooks and recurring opening lines.
-- Hook-making guidance should live in `marketing/x-posting-strategy.md`.
+- Hook-making guidance should live in `marketing/x/posting-strategy.md`.
 - Finished or reusable hooks can live here.
 
 ## Post drafts
@@ -97,7 +97,7 @@ To be written later.
 Placeholder intent:
 
 - This section should store reusable X reply examples.
-- Reply strategy should live in `marketing/x-playbook.md` or `marketing/x-posting-strategy.md`.
+- Reply strategy should live in `marketing/x/playbook.md` or `marketing/x/posting-strategy.md`.
 - Finished reply examples can live here.
 
 ## CTA variants

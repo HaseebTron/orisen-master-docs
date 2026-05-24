@@ -15,9 +15,9 @@ Governing docs:
 - `marketing/marketing-write-rules.md`
 - `marketing/post-performance-log.md`
 Downstream docs:
-- `marketing/x-posting-strategy.md`
-- `marketing/x-post-bank.md`
-- `marketing/x-posting-calendar.md`
+- `marketing/x/posting-strategy.md`
+- `marketing/x/post-bank.md`
+- `marketing/x/posting-calendar.md`
 - Future X post drafts, replies, and campaign tests
 
 ## File structure
@@ -93,11 +93,11 @@ Use this hierarchy when writing or reviewing X posts:
    - Use for lessons from prior founder-led posts.
    - Do not treat post performance as proof of product-market fit, willingness to pay, or product efficacy.
 
-6. `marketing/x-playbook.md`
+6. `marketing/x/playbook.md`
    - Converts the above into X-specific operating rules.
    - This file does not create new product claims or change Orisen positioning.
 
-7. `marketing/x-posting-strategy.md`
+7. `marketing/x/posting-strategy.md`
    - Turns this playbook into strategic content motions, post types, formats, hooks, cadence, and first-week execution.
 
 Core rule:
@@ -253,7 +253,7 @@ A post does not need to mention Orisen directly every time, but it should pass a
 
 These themes sit above individual post types.
 
-`marketing/x-posting-strategy.md` should turn these themes into strategic content motions, post types, formats, hooks, and cadence.
+`marketing/x/posting-strategy.md` should turn these themes into strategic content motions, post types, formats, hooks, and cadence.
 
 ## Claim-safety rules for X
 
@@ -733,8 +733,8 @@ Do not use this file to store:
 Suggested doc split:
 
 - Keep strategy and operating rules here.
-- Put strategic content motions, post formats, hook guidance, cadence, and first-week execution in `marketing/x-posting-strategy.md`.
-- Put finished X posts and finished hook drafts in `marketing/x-post-bank.md`.
-- Put schedules in `marketing/x-posting-calendar.md`.
+- Put strategic content motions, post formats, hook guidance, cadence, and first-week execution in `marketing/x/posting-strategy.md`.
+- Put finished X posts and finished hook drafts in `marketing/x/post-bank.md`.
+- Put schedules in `marketing/x/posting-calendar.md`.
 - Put performance analysis in `marketing/post-performance-log.md`.
 - Put claim decisions in `product/claims-and-evidence.md`.

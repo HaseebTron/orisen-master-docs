@@ -4,15 +4,15 @@ Status: Placeholder
 Authority level: Channel-specific marketing execution
 Last reviewed: 2026-05-23
 Governing docs:
-- `marketing/x-playbook.md`
-- `marketing/x-posting-strategy.md`
+- `marketing/x/playbook.md`
+- `marketing/x/posting-strategy.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `marketing/positioning-and-messaging.md`
 - `marketing/marketing-write-rules.md`
 Downstream docs:
-- `marketing/x-post-bank.md`
-- `marketing/x-posting-calendar.md`
+- `marketing/x/post-bank.md`
+- `marketing/x/posting-calendar.md`
 - `marketing/post-performance-log.md`
 
 ## Purpose
@@ -34,7 +34,7 @@ This file should eventually define:
 
 ## Current placeholder rule
 
-Until this file is expanded, follow the reply guidance in `marketing/x-playbook.md`.
+Until this file is expanded, follow the reply guidance in `marketing/x/playbook.md`.
 
 Keep replies useful first and promotional second.
 

@@ -210,7 +210,7 @@ Use for questions like:
 
 Read:
 
-- `marketing/x-playbook.md` if it exists
+- `marketing/x/playbook.md` if it exists
 - `marketing/content-pillars.md` if it exists
 - `marketing/positioning-and-messaging.md`
 - `product/framing-and-narrative.md`

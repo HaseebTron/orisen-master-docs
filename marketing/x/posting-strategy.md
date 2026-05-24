@@ -4,7 +4,7 @@ Status: Working strategy
 Authority level: Channel-specific marketing execution
 Last reviewed: 2026-05-23
 Governing docs:
-- `marketing/x-playbook.md`
+- `marketing/x/playbook.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `product/framing-and-narrative.md`
@@ -12,9 +12,9 @@ Governing docs:
 - `marketing/marketing-write-rules.md`
 - `marketing/post-performance-log.md`
 Downstream docs:
-- `marketing/x-reply-strategy.md`
-- `marketing/x-post-bank.md`
-- `marketing/x-posting-calendar.md`
+- `marketing/x/reply-strategy.md`
+- `marketing/x/post-bank.md`
+- `marketing/x/posting-calendar.md`
 - Future X post drafts, replies, and campaign tests
 
 ## File structure
@@ -30,7 +30,7 @@ Downstream docs:
 
 ## Purpose
 
-This file turns `marketing/x-playbook.md` into practical posting strategy for the founder's personal X account.
+This file turns `marketing/x/playbook.md` into practical posting strategy for the founder's personal X account.
 
 Use this file to decide:
 
@@ -51,11 +51,11 @@ This file is not:
 - a performance log
 - the detailed reply strategy
 
-Finished post drafts, hooks, reply drafts, and CTA variants should live in `marketing/x-post-bank.md`.
+Finished post drafts, hooks, reply drafts, and CTA variants should live in `marketing/x/post-bank.md`.
 
-Reply strategy should live in `marketing/x-reply-strategy.md`.
+Reply strategy should live in `marketing/x/reply-strategy.md`.
 
-Scheduled posts should live in `marketing/x-posting-calendar.md` once a real cadence is chosen.
+Scheduled posts should live in `marketing/x/posting-calendar.md` once a real cadence is chosen.
 
 ## Strategic content motions
 
@@ -76,7 +76,7 @@ Use this to decide what kind of post is being written after choosing the strateg
 
 This section is intentionally broader than the first-week posting plan. It is a brainstorming map of post types Orisen may explore over time, not a requirement to use every category immediately.
 
-Finished post drafts should live in `marketing/x-post-bank.md`. The operating rules and channel guardrails should live in `marketing/x-playbook.md`. Reply strategy should live in `marketing/x-reply-strategy.md`.
+Finished post drafts should live in `marketing/x/post-bank.md`. The operating rules and channel guardrails should live in `marketing/x/playbook.md`. Reply strategy should live in `marketing/x/reply-strategy.md`.
 
 - **Customer pain and problem insight posts**:
   - Customer pain mirror posts
@@ -150,7 +150,7 @@ Week 1 should not prioritize:
 - detailed technical explanations before the pain is clear
 - filling the full post bank before the first few posts are tested
 
-The account should revolve around the four core motions from `marketing/x-playbook.md`:
+The account should revolve around the four core motions from `marketing/x/playbook.md`:
 
 - build in public
 - wake-up pain
@@ -169,7 +169,7 @@ Placeholder intent:
 - This section should define reusable X post structures.
 - It should explain how to turn a post type into a practical draft structure.
 - It should include short posts, threads if needed, customer-discovery prompts, build-in-public updates, and claim-safe vision posts.
-- It should not store finished drafts; finished drafts should live in `marketing/x-post-bank.md`.
+- It should not store finished drafts; finished drafts should live in `marketing/x/post-bank.md`.
 
 ## Cadence and weekly operating rhythm
 
@@ -180,7 +180,7 @@ Placeholder intent:
 - This section should be filled after the founder's current X account state and first-week strategy are reviewed.
 - This section should define the realistic weekly X operating rhythm for a solo founder.
 - It should include posting cadence, reply cadence, customer-discovery activity, CTA rhythm, batching, and review rhythm.
-- It should translate the channel goals from `marketing/x-playbook.md` into a practical weekly workflow.
+- It should translate the channel goals from `marketing/x/playbook.md` into a practical weekly workflow.
 - It should stay lightweight enough to actually follow.
 
 ## First-week posting plan
@@ -192,7 +192,7 @@ Placeholder intent:
 - This section should be filled after the founder shares what the X page currently looks like.
 - This section should give a simple starter plan for the first week of consistent X posting.
 - It should specify which post types to use, what to reply to, and where to use CTAs.
-- It should connect to `marketing/x-post-bank.md` once drafts exist.
+- It should connect to `marketing/x/post-bank.md` once drafts exist.
 - It should help start posting quickly without overbuilding the system.
 
 ## What not to post yet

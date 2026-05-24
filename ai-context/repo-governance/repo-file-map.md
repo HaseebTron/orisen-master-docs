@@ -160,11 +160,12 @@ Conventions:
   - `marketing-write-rules.md`: Marketing writing rules for drafting and editing marketing docs.
   - `positioning-and-messaging.md`: Core marketing positioning and messaging.
   - `post-performance-log.md`: Founder-led marketing post and campaign performance log.
-  - `x-playbook.md`: X/Twitter-specific content playbook.
-  - `x-post-bank.md`: Draft and reusable X/Twitter post bank.
-  - `x-posting-strategy.md`: X/Twitter posting strategy and execution guidance.
-  - `x-profile-current-state.md`: Current X/Twitter profile state and profile notes.
-  - `x-reply-strategy.md`: X/Twitter reply strategy and engagement guidance.
+  - **`x/`**: X/Twitter-specific content strategy, post drafts, profile notes, and reply guidance.
+    - `playbook.md`: X/Twitter-specific content playbook.
+    - `post-bank.md`: Draft and reusable X/Twitter post bank.
+    - `posting-strategy.md`: X/Twitter posting strategy and execution guidance.
+    - `profile-current-state.md`: Current X/Twitter profile state and profile notes.
+    - `reply-strategy.md`: X/Twitter reply strategy and engagement guidance.
   - Potential future files:
     - `customer-language.md`: Customer words, phrases, pain points, and message mining.
     - `content-pillars.md`: Core founder-led content themes.

@@ -4,17 +4,17 @@ Status: Snapshot
 Authority level: Channel-specific marketing input
 Last reviewed: 2026-05-23
 Governing docs:
-- `marketing/x-playbook.md`
-- `marketing/x-posting-strategy.md`
+- `marketing/x/playbook.md`
+- `marketing/x/posting-strategy.md`
 - `product/claims-and-evidence.md`
 - `product/target-customer.md`
 - `marketing/positioning-and-messaging.md`
 - `marketing/marketing-write-rules.md`
 Downstream docs:
-- `marketing/x-posting-strategy.md`
-- `marketing/x-reply-strategy.md`
-- `marketing/x-post-bank.md`
-- `marketing/x-posting-calendar.md`
+- `marketing/x/posting-strategy.md`
+- `marketing/x/reply-strategy.md`
+- `marketing/x/post-bank.md`
+- `marketing/x/posting-calendar.md`
 
 ## Purpose
 
@@ -126,7 +126,7 @@ Current reply context:
 - Replies were made under random posts.
 - Reply activity was from around January to February 2026.
 - The account then became inactive again.
-- Reply strategy is now separated into `marketing/x-reply-strategy.md`.
+- Reply strategy is now separated into `marketing/x/reply-strategy.md`.
 
 ## Claim-safety notes
 
@@ -148,7 +148,7 @@ Safe strategic interpretation:
 - Avoid making Orisen sound like a glorified alarm clock.
 - Avoid leading with “alarm” language so heavily that Orisen gets anchored to a low-price alarm-clock category.
 
-Safer directions should use language from `marketing/positioning-and-messaging.md` and `marketing/x-playbook.md`, such as:
+Safer directions should use language from `marketing/positioning-and-messaging.md` and `marketing/x/playbook.md`, such as:
 
 - building a non-contact wake-up system
 - starting with wake completion
