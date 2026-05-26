@@ -189,45 +189,6 @@ Worse:
 
 > The point at which user intent and behavioral execution diverge.
 
-### Use short sentences when the idea is sharp
-
-A strong idea should not be buried in a long sentence.
-
-Better:
-
-> Your alarm rang.
->
-> You turned it off.
->
-> You still did not get up.
->
-> That is the gap I care about.
-
-Worse:
-
-> The issue is that although the alarm may technically activate and be dismissed by the user, the desired behavioral outcome of leaving the bed may still not occur.
-
-### Keep one main idea per paragraph
-
-Most founder-led writing should move cleanly.
-
-Do not stack too many ideas at once.
-
-Bad paragraph pattern:
-
-- product claim
-- category narrative
-- customer pain
-- technical explanation
-- CTA
-- founder reflection
-
-Better paragraph pattern:
-
-- one pain
-- one insight
-- one implication
-
 ### Sound slightly imperfect in the right places
 
 Founder-led writing should not be so polished that it sounds fake.
