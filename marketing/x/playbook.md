@@ -2,7 +2,7 @@
 
 Status: Working strategy
 Authority level: Channel-specific marketing working strategy / operating guide
-Last reviewed: 2026-05-23
+Last reviewed: 2026-05-26
 Governing docs:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -13,9 +13,12 @@ Governing docs:
 - `product/framing-and-narrative.md`
 - `marketing/positioning-and-messaging.md`
 - `marketing/marketing-write-rules.md`
+- `marketing/founder-voice.md`
+- `marketing/x/voice.md`
 - `marketing/post-performance-log.md`
 Downstream docs:
 - `marketing/x/posting-strategy.md`
+- `marketing/x/reply-strategy.md`
 - `marketing/x/post-bank.md`
 - `marketing/x/posting-calendar.md`
 - Future X post drafts, replies, and campaign tests
@@ -23,7 +26,7 @@ Downstream docs:
 ## File structure
 
 - **Purpose**: defines what this playbook is for and what it is not for.
-- **Source-of-truth hierarchy**: defines which upstream files control X messaging, claims, audience, and narrative.
+- **Source-of-truth hierarchy**: defines which upstream files control X messaging, claims, audience, voice, and narrative.
 - **Channel goal**: defines what X is supposed to accomplish for Orisen.
 - **Audience**: defines who Orisen should write for first on X.
   - **Primary audience**: high-pain users with repeated wake-up failure.
@@ -32,8 +35,8 @@ Downstream docs:
 - **Account identity**: defines how the founder's personal X account should balance Orisen, founder-led building, product thinking, and audience trust.
 - **Main content themes**: summarizes the main recurring themes the personal founder account should return to.
 - **Claim-safety rules for X**: defines safe, careful, future-only, and avoided public claims for X posts.
-- **Founder voice and account tone**: defines how the founder's personal X account should sound.
-- **Reply strategy**: defines how to use replies for discovery, trust, and distribution without sounding spammy.
+- **Founder voice and account tone**: summarizes X account-level tone and points to the detailed voice docs.
+- **Reply strategy summary**: defines the high-level role of replies and points detailed reply workflow to `marketing/x/reply-strategy.md`.
 - **CTAs and conversion paths**: defines when to ask for replies, DMs, waitlist signups, expert feedback, or interviews.
 - **Lightweight performance tracking**: defines what signals to track before deeper analysis goes into `marketing/post-performance-log.md`.
 - **What to avoid**: lists content patterns, claims, and behaviors that do not fit Orisen's X strategy.
@@ -48,9 +51,9 @@ Use this file to decide:
 - what X is supposed to accomplish for Orisen
 - who the founder's personal X account is written for
 - what the account should repeatedly talk about
-- how Orisen should sound on X
+- how account tone should support trust, discovery, and waitlist growth
 - how to stay claim-safe while still being sharp
-- how to reply to people without sounding spammy
+- how replies should support discovery, trust, and distribution at a high level
 - what CTAs to use
 - how X should support customer discovery, waitlist growth, and early market learning
 
@@ -61,6 +64,9 @@ This file is not:
 - the product source of truth
 - the public claim authority
 - the full positioning authority
+- the full founder voice guide
+- the detailed X voice/style guide
+- the detailed reply workflow
 - a large finished post bank
 - a detailed posting strategy
 - a detailed posting calendar
@@ -69,7 +75,7 @@ This file is not:
 
 ## Source-of-truth hierarchy
 
-X content must stay downstream from Orisen product truth, evidence, and approved messaging.
+X content must stay downstream from Orisen product truth, evidence, approved messaging, and founder voice.
 
 Use this hierarchy when writing or reviewing X posts:
 
@@ -89,15 +95,23 @@ Use this hierarchy when writing or reviewing X posts:
    - Defines the product-level strategic narrative, larger belief shift, and category narrative.
    - Use it for founder POV and narrative posts, but do not treat narrative as evidence.
 
-5. `marketing/post-performance-log.md`
+5. `marketing/founder-voice.md`
+   - Defines Haseeb's cross-channel founder voice.
+   - Use it to keep X posts sounding like Haseeb, not like a generic founder, brand, or AI ghostwriter.
+
+6. `marketing/x/voice.md`
+   - Defines how Haseeb's founder voice adapts to X.
+   - Use it for X-native rhythm, compression, casualness, formatting, reply tone, and quote-post/thread style.
+
+7. `marketing/post-performance-log.md`
    - Use for lessons from prior founder-led posts.
    - Do not treat post performance as proof of product-market fit, willingness to pay, or product efficacy.
 
-6. `marketing/x/playbook.md`
+8. `marketing/x/playbook.md`
    - Converts the above into X-specific operating rules.
    - This file does not create new product claims or change Orisen positioning.
 
-7. `marketing/x/posting-strategy.md`
+9. `marketing/x/posting-strategy.md`
    - Turns this playbook into strategic content motions, post types, formats, hooks, cadence, and first-week execution.
 
 Core rule:
@@ -343,250 +357,81 @@ Do not use these as public X claims:
 
 ## Founder voice and account tone
 
-The X account should sound like a founder building Orisen in public, not like a generic sleep brand.
+This section defines account-level tone only.
 
-The voice should be:
+Use `marketing/founder-voice.md` for Haseeb's cross-channel founder voice.
 
-- direct
-- honest
-- builder-led
-- emotionally specific
-- slightly provocative
-- clear
-- practical
-- human
-- curious
-- humorous
-- sarcastic when appropriate
-- comfortable with straight-faced jokes
+Use `marketing/x/voice.md` for X-specific writing mechanics, including compression, rhythm, formatting, reply tone, quote-post style, and thread style.
 
-The voice should not be:
+On X, Haseeb's voice should feel:
 
-- generic wellness
-- clinical
-- guru-like
-- over-polished
-- corporate
-- fake-inspirational
-- vague
-- hype-first
-- fearmongering
-- mean-spirited
+- founder-led, not brand-led
+- direct, not corporate
+- sharp, not hype-first
+- casual, not sloppy
+- honest about what is still being built
+- emotionally specific about the wake-up pain
+- funny when the joke targets the broken system, not the user
+- practical enough that people trust the product thinking
 
-### Founder voice principles
+The account should not sound like:
 
-#### Say the thing plainly
+- a generic wellness account
+- a generic startup advice account
+- a clinical sleep account
+- a motivational productivity account
+- a polished brand manager
+- an AI ghostwriter
 
-Use simple language that a normal person immediately understands.
+Account-level tone rule:
 
-Better:
+> Sound like Haseeb building Orisen in public, but use X-native compression from `marketing/x/voice.md`.
 
-> Normal alarms stop too early.
+Do not use this playbook to store detailed voice examples, finished post drafts, or reusable reply copy.
 
-Worse:
+## Reply strategy summary
 
-> Conventional alarm systems fail to optimize the wake-state transition.
+Replies are a major part of organic X growth, especially while the account is small.
 
-#### Be funny without becoming unserious
+This playbook defines the high-level role of replies.
 
-Humor can make the account more memorable, especially because the target pain is frustrating and relatable.
-
-Good humor:
-
-- dry observations
-- straight-faced jokes
-- light sarcasm
-- self-aware founder comments
-- jokes about half-awake behavior
-- jokes about alarm loopholes
-
-Avoid humor that:
-
-- mocks people for struggling to wake up
-- makes the product sound like a punishment device
-- implies users are lazy or broken
-- weakens trust in a serious wake-up product
-- turns sleep problems into a medical joke
-
-Example tone:
-
-> Your 6:00 AM self had a plan. Your 6:01 AM self committed fraud.
-
-Example tone:
-
-> If your alarm can be defeated by a half-conscious thumb, it might not be a wake-up system.
-
-Example tone:
-
-> I respect the confidence of anyone who says “I’ll just wake up with one alarm tomorrow.” That is not a plan. That is fiction.
-
-#### Be sarcastic toward broken systems, not users
-
-The villain is not the person who struggles to wake up.
-
-The villain is the old system:
-
-- alarms that trust half-awake users
-- trackers that only report what happened
-- apps that rely on willpower
-- generic sleep advice that ignores the actual morning failure point
-
-Good:
-
-> The modern alarm clock is basically a negotiation with your worst decision-maker.
-
-Bad:
-
-> People who snooze are lazy.
-
-#### Be honest about what is still being built
-
-It is fine to be ambitious, but the founder should not pretend Orisen has already proven future outcomes.
-
-Good:
-
-> The first wedge is wake completion. The harder part is making the wake-up feel less brutal, and that is what we are building toward next.
-
-Bad:
-
-> We solved groggy mornings.
-
-#### Make uncertainty credible
-
-When talking about unvalidated work, explain what is known, what is not known yet, and what is being tested.
-
-Good:
-
-> I do not know yet how much sensor-informed wake intervention can reduce grogginess. I do know normal alarms are blind to whether the user actually got out of bed, and that is the first failure point we are solving.
-
-Bad:
-
-> AI will fix sleep.
-
-#### Keep the founder present
-
-Use first person when it adds credibility or context.
-
-Good:
-
-- I am building this because...
-- I keep hearing the same thing from people who struggle with mornings...
-- One thing I underestimated about alarm design...
-- The more I build this, the more I think...
-
-Avoid making every post about the founder. The customer pain should still be the center.
-
-## Reply strategy
-
-Replies are a major part of organic X growth.
-
-The founder should not only post. The founder should reply where the target customer, relevant builders, and relevant experts are already talking.
-
-### Reply goals
+The detailed reply workflow belongs in `marketing/x/reply-strategy.md`.
 
 Use replies to:
 
-- add a useful point to the conversation
-- show founder insight
+- add something useful to existing conversations
+- find people with real wake-up pain
 - learn customer language
-- find people with severe wake-up pain
-- invite the right people into DMs
-- build relationships with builders, operators, experts, and investors
+- build trust with builders, operators, experts, and investors
 - make Orisen's worldview familiar without pitching constantly
+- invite qualified users into DMs when natural
 
-### Who to reply to
+Reply under conversations about:
 
-Prioritize replies to:
+- oversleeping
+- setting many alarms
+- turning off alarms and going back to sleep
+- wake-up failure
+- morning grogginess, handled carefully
+- alarm apps, sunrise alarms, sleep trackers, and sleep tech
+- consumer hardware, health tech, behavior change, and product reliability
 
-- people complaining about oversleeping
-- people joking about setting many alarms
-- people saying they turn off alarms and go back to sleep
-- founders talking about sleep, productivity, or morning routines
-- hardware founders sharing product-building lessons
-- consumer health founders
-- sleep experts and sleep researchers
-- people discussing sleep trackers, alarm apps, smart alarms, sunrise alarms, Oura, WHOOP, Eight Sleep, or related products
-- investors or operators discussing consumer hardware, health tech, frontier consumer products, or behavior-change products
+High-level reply rules:
 
-### What to search for
+- Be useful first.
+- Do not link-drop by default.
+- Do not force Orisen into unrelated threads.
+- Do not reply to clinical or sensitive sleep-health conversations with product promotion.
+- Mention Orisen when the conversation directly fits the problem or someone asks what is being built.
+- Use DMs for high-signal customer discovery when someone clearly matches the target customer.
 
-Useful search phrases:
+Until `marketing/x/reply-strategy.md` is expanded, keep replies simple:
 
-- "slept through my alarm"
-- "set 10 alarms"
-- "turned off my alarm"
-- "went back to sleep"
-- "can't wake up"
-- "morning grogginess"
-- "sleep inertia"
-- "alarm app"
-- "sunrise alarm"
-- "sleep tracker"
-- "waking up is hard"
-- "overslept again"
+1. Reflect the actual pain or insight.
+2. Add one specific thought.
+3. Ask one useful question only if it feels natural.
 
-Use these searches to find real conversations and learn customer language, not to drop Orisen links or farm replies.
-
-### Reply style
-
-Good replies should usually follow this pattern:
-
-1. Reflect the real pain or insight.
-2. Add a specific thought.
-3. Ask a useful question or offer a relevant next step only if natural.
-
-Example:
-
-> This is exactly the gap I think normal alarms miss. The alarm ringing is not the same as wake completion. Do you usually sleep through it, or wake up and then lose time after turning it off?
-
-Example:
-
-> The weird part is that the alarm technically worked. It made noise. The failure happened after that, when your half-awake self got decision rights.
-
-Example:
-
-> This is why I think “louder alarm” is the wrong frame for some people. The real problem is whether the system can tell if you actually left bed.
-
-### When to mention Orisen
-
-Mention Orisen when:
-
-- the conversation is directly about alarm failure, oversleeping, wake completion, or sleep tech intervention
-- someone asks what you are building
-- someone describes the exact problem Orisen targets
-- the reply would be useful even without the product mention
-
-Do not mention Orisen when:
-
-- the post is unrelated
-- the reply would feel like a drive-by pitch
-- the user is discussing a clinical sleep condition and needs professional care
-- the thread is sensitive or not appropriate for product promotion
-
-### DM and link behavior
-
-Do not drop the website link in every reply.
-
-Prefer:
-
-- reply with insight first
-- ask a useful question
-- invite DMs when someone matches the target customer
-- share the link when requested or clearly relevant
-
-Good CTA:
-
-> I am interviewing people who deal with this exact wake-up failure. Happy to DM if you are open to sharing what your mornings look like.
-
-Good CTA:
-
-> This is exactly the type of morning failure I am building Orisen around. I can send the waitlist if you want to follow along.
-
-Avoid:
-
-> Join the waitlist here: [link]
-
-as a default reply.
+Do not store reusable reply templates here. Put finished or near-finished reply drafts in `marketing/x/post-bank.md` later.
 
 ## CTAs and conversion paths
 
@@ -710,12 +555,11 @@ Keep this file lean and usable.
 
 Update this file when:
 
-- X posts reveal repeatable lessons
-- certain hooks consistently attract target customers
+- X channel goals change
+- the target customer is narrowed in `product/target-customer.md`
 - claim boundaries change in `product/claims-and-evidence.md`
 - positioning changes in `marketing/positioning-and-messaging.md`
-- the target customer is narrowed in `product/target-customer.md`
-- a recurring reply pattern proves useful
+- X posts reveal high-level operating lessons
 - Orisen moves from waitlist/customer discovery into beta, preorder, or launch
 
 Do not use this file to store:
@@ -726,15 +570,20 @@ Do not use this file to store:
 - raw customer conversations
 - detailed research summaries
 - new product claims
+- detailed X voice mechanics
+- detailed reply workflows
 - detailed post formats
 - detailed hook guidance
 - first-week execution plans
 
 Suggested doc split:
 
-- Keep strategy and operating rules here.
+- Put cross-channel Haseeb voice in `marketing/founder-voice.md`.
+- Put X-specific voice mechanics, formatting, rhythm, quote-post style, and thread style in `marketing/x/voice.md`.
+- Keep strategy and high-level operating rules here.
 - Put strategic content motions, post formats, hook guidance, cadence, and first-week execution in `marketing/x/posting-strategy.md`.
-- Put finished X posts and finished hook drafts in `marketing/x/post-bank.md`.
+- Put detailed reply workflow, search terms, conversation targets, DM rules, and reply patterns in `marketing/x/reply-strategy.md`.
+- Put finished X posts, finished reply drafts, finished hook drafts, and CTA variants in `marketing/x/post-bank.md`.
 - Put schedules in `marketing/x/posting-calendar.md`.
 - Put performance analysis in `marketing/post-performance-log.md`.
 - Put claim decisions in `product/claims-and-evidence.md`.
