@@ -159,6 +159,7 @@ Conventions:
   - `marketing-read-rules.md`: Marketing-specific reading/routing rules.
   - `marketing-write-rules.md`: Marketing writing rules for drafting and editing marketing docs.
   - `positioning-and-messaging.md`: Core marketing positioning and messaging.
+  - `founder-voice.md`: Founder voice and cross-channel external communication style.
   - `post-performance-log.md`: Founder-led marketing post and campaign performance log.
   - **`x/`**: X/Twitter-specific content strategy, post drafts, profile notes, and reply guidance.
     - `playbook.md`: X/Twitter-specific content playbook.
@@ -166,6 +167,7 @@ Conventions:
     - `posting-strategy.md`: X/Twitter posting strategy and execution guidance.
     - `profile-current-state.md`: Current X/Twitter profile state and profile notes.
     - `reply-strategy.md`: X/Twitter reply strategy and engagement guidance.
+    - `style-guide.md`: X/Twitter-specific style guide.
   - Potential future files:
     - `customer-language.md`: Customer words, phrases, pain points, and message mining.
     - `content-pillars.md`: Core founder-led content themes.
