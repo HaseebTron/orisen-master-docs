@@ -13,7 +13,7 @@ Governing docs:
 - `marketing/marketing-write-rules.md`
 
 Downstream docs:
-- `marketing/x/style-guide.md`
+- `marketing/x/voice.md`
 - `marketing/x/playbook.md`
 - `marketing/x/post-bank.md`
 - Future LinkedIn, investor outreach, founder update, email, and DM docs
@@ -45,7 +45,7 @@ Channel-specific docs should inherit this file and only add platform-specific ad
 
 For X-specific writing style, use:
 
-- `marketing/x/style-guide.md`
+- `marketing/x/voice.md`
 
 ## File structure
 
@@ -742,7 +742,7 @@ They should not redefine:
 
 ### X inheritance
 
-`marketing/x/style-guide.md` should define how this voice adapts to X.
+`marketing/x/voice.md` should define how this voice adapts to X.
 
 It may cover:
 
