@@ -54,12 +54,15 @@ For X-specific writing style, use:
 - **What this file controls**: defines the writing and voice layer this file owns.
 - **What this file does not control**: prevents this file from becoming a claims, positioning, or channel strategy doc.
 - **Human writing rules**: defines how to avoid AI-sounding writing.
+- **Voice calibration rule**: explains how to use Haseeb's own writing samples when available.
+- **Anti-AI writing checklist**: lists common AI tells to remove before publishing.
 - **Haseeb voice principles**: defines the core traits of Haseeb's founder voice.
 - **What Haseeb sounds like**: gives a compact voice profile.
 - **What Haseeb does not sound like**: defines voice patterns to avoid.
 - **Voice patterns**: gives reusable cross-channel writing patterns.
 - **Humor and sarcasm rules**: explains how to use humor without weakening trust.
 - **Good vs bad voice examples**: shows how to improve voice without creating claim rules.
+- **Final voice pass**: defines the last review before important writing is published or sent.
 - **Channel inheritance rules**: explains how channel docs should use this file.
 - **Maintenance rules**: defines when this file should be updated.
 
@@ -250,29 +253,95 @@ Examples:
 
 Avoid overusing:
 
-- “In today's world”
-- “game-changer”
-- “revolutionize”
-- “unlock”
-- “empower”
-- “seamless”
-- “holistic”
-- “cutting-edge”
-- “transform your mornings”
-- “take your sleep to the next level”
-- “at the intersection of”
-- “designed to help users optimize”
-- “the future of wellness”
-- “our innovative solution”
+- "In today's world"
+- "game-changer"
+- "revolutionize"
+- "unlock"
+- "empower"
+- "seamless"
+- "holistic"
+- "cutting-edge"
+- "transform your mornings"
+- "take your sleep to the next level"
+- "at the intersection of"
+- "designed to help users optimize"
+- "the future of wellness"
+- "our innovative solution"
 
 Also avoid fake structure when the idea does not need it:
 
-- “Here are 5 reasons why...”
-- “The problem, the insight, the solution...”
-- “This is not just X. It is Y.”
-- “Most people think X. But actually Y.”
+- "Here are 5 reasons why..."
+- "The problem, the insight, the solution..."
+- "This is not just X. It is Y."
+- "Most people think X. But actually Y."
 
 These structures can be useful sometimes, but they should not become the default.
+
+## Voice calibration rule
+
+When writing in Haseeb's voice, use real samples of Haseeb's writing whenever available.
+
+Do not turn Haseeb's writing into generic clean founder copy.
+
+Look for:
+
+- sentence length
+- casual phrases
+- directness
+- how much context comes before the point
+- how paragraphs start
+- how transitions happen
+- how jokes or sarcasm show up
+- how polished or unpolished the writing feels
+- recurring phrases or wording habits
+- when the writing uses first person
+- when the writing sounds more like a thought than a polished line
+
+Match the sample when it helps the writing feel more like Haseeb.
+
+Do not overcorrect the writing into something too smooth.
+
+A better final draft should sound like:
+
+> Haseeb, but clearer.
+
+Not:
+
+> A generic founder with perfect marketing copy.
+
+## Anti-AI writing checklist
+
+Before finalizing important founder-led writing, check for common AI tells.
+
+Remove or rewrite:
+
+- inflated importance: "pivotal," "transformative," "vital role," "broader landscape," "marking a shift"
+- generic startup language: "revolutionize," "unlock," "empower," "seamless," "groundbreaking"
+- generic wellness language: "optimize your mornings," "elevate wellbeing," "transform your routine"
+- vague authority: "experts say," "industry observers believe," "research shows" without a specific source when a source is needed
+- vague abstraction: "morning challenges," "user outcomes," "behavioral friction," "sleep optimization"
+- over-neat framing: forced rule of three, forced contrast, or a framework that feels assembled
+- overused contrast: "not just X, but Y" when a direct sentence would be stronger
+- synonym cycling: changing words just to avoid repetition when the first word is clearest
+- signposting: "Let's dive in," "Here's what you need to know," "Now let's explore"
+- chatbot residue: "Great question," "I hope this helps," "Let me know if you want me to expand"
+- over-polish: every sentence has the same rhythm, every paragraph is balanced, nothing feels like a person thinking
+- generic conclusions: "the future looks bright," "exciting times ahead," "this is only the beginning"
+- decorative formatting: unnecessary emojis, unnecessary bolding, or list formatting that makes the writing feel templated
+
+Fix by making the writing:
+
+- simpler
+- more specific
+- more direct
+- more opinionated
+- more emotionally concrete
+- more like Haseeb
+- less polished when polish makes it sound fake
+
+The goal is not to make the writing casual for no reason.
+
+The goal is to remove the parts that sound assembled.
 
 ## Haseeb voice principles
 
@@ -565,7 +634,7 @@ Pattern:
 
 Example:
 
-> I do not think “louder alarm” is the right frame. The better frame is wake completion.
+> I do not think "louder alarm" is the right frame. The better frame is wake completion.
 
 ### Honest uncertainty
 
@@ -674,6 +743,26 @@ For claim permission, use `product/claims-and-evidence.md`.
 | Sounding ambitious | We are revolutionizing sleep. | I think sleep tech should stop only reporting the problem and start changing the outcome. |
 | Sounding technical | We use sensor-driven environmental feedback loops. | The device needs to know whether you are still in bed. That changes the whole alarm flow. |
 
+## Final voice pass
+
+Before publishing or sending important founder-led writing, do one final voice pass.
+
+Ask:
+
+1. What still sounds AI-generated?
+2. What sounds too polished, generic, or assistant-written?
+3. What sounds unlike Haseeb?
+4. What can be made simpler, sharper, or more specific?
+5. What sentence would Haseeb actually say out loud?
+6. Is there enough opinion, edge, curiosity, or lived founder perspective?
+7. Did the writing keep the meaning while removing the parts that sound assembled?
+
+Then revise once more.
+
+Do not make the final pass longer by default.
+
+A better final pass usually cuts words.
+
 ## Channel inheritance rules
 
 Channel-specific style guides should inherit this file.
@@ -757,8 +846,10 @@ Keep this file lean and practical.
 Update this file when:
 
 - Haseeb develops clearer repeatable public writing patterns
+- real samples of Haseeb's writing reveal better voice calibration rules
 - certain language consistently sounds more natural
 - certain phrases repeatedly perform well across channels
+- recurring AI tells show up in drafts and need to be added to the checklist
 - channel docs need a clearer cross-channel voice source
 - `marketing/positioning-and-messaging.md` changes in a way that affects repeated founder language
 - the target customer narrows in `product/target-customer.md`
