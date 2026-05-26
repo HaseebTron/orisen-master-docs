@@ -7,10 +7,11 @@ Last reviewed: 2026-05-26
 Governing docs:
 - `marketing/founder-voice.md`
 - `marketing/x/playbook.md`
-- `marketing/x/posting-strategy.md`
 - `marketing/marketing-write-rules.md`
 
 Downstream docs:
+- `marketing/x/posting-strategy.md`
+- `marketing/x/reply-strategy.md`
 - `marketing/x/post-bank.md`
 - `marketing/x/posting-calendar.md`
 - Future X drafts, replies, and campaign tests
@@ -19,7 +20,7 @@ Downstream docs:
 
 This file defines how Haseeb's founder voice should sound on X.
 
-Use this file when writing or editing:
+Use this file when writing or editing the voice of:
 
 - X posts
 - X replies
@@ -34,29 +35,30 @@ It takes the cross-channel founder voice from `marketing/founder-voice.md` and a
 
 It should make writing sound native to X, not like LinkedIn, email, blog copy, investor copy, website copy, or generic AI content.
 
-## What this file controls
+## File ownership
 
-This file controls:
+This file owns X-specific voice mechanics.
 
-- X voice
-- X sentence rhythm
-- X compression
-- how direct the writing should feel
+It should answer:
+
+- how compressed the writing should feel
 - how casual the writing can be
 - how much polish to remove
+- how close to the point the first line should start
 - how much explanation to leave out
-- how Haseeb should sound when thinking in public
+- how Haseeb should sound when thinking in public on X
+- how replies, quote posts, and threads should sound at the voice level
 
-## What this file does not control
-
-This file does not control:
+This file does not own:
 
 - Orisen's product truth
 - claim boundaries
 - target customer definition
 - positioning
-- X strategy
+- X channel strategy
 - posting cadence
+- detailed post formats
+- detailed reply workflow
 - finished post drafts
 - hook banks
 - post templates
@@ -66,9 +68,10 @@ This file does not control:
 Use:
 
 - `marketing/founder-voice.md` for Haseeb's cross-channel founder voice
-- `marketing/x/playbook.md` for X goals, audience, account identity, replies, CTAs, and channel strategy
+- `marketing/x/playbook.md` for X goals, audience, account identity, high-level reply role, CTAs, and channel strategy
 - `marketing/x/posting-strategy.md` for content motions, post categories, formats, cadence, and execution plans
-- `marketing/x/post-bank.md` for finished drafts, hooks, examples, and reusable post structures
+- `marketing/x/reply-strategy.md` for detailed reply workflow, search terms, conversation targets, DM rules, and reply patterns
+- `marketing/x/post-bank.md` for finished drafts, hooks, CTA variants, and reusable post/reply assets
 - `product/claims-and-evidence.md` for claim boundaries
 
 ## Core X voice rule
@@ -81,7 +84,7 @@ Not Orisen publishing brand copy.
 
 Not an AI assistant compressing a blog post.
 
-## What is X voice?
+## What X voice is
 
 X voice is compressed, conversational, sharp, and reactive.
 
@@ -125,7 +128,7 @@ Prefer writing that feels like:
 
 > I noticed something weird while building this.
 
-## What makes X voice distinguishable?
+## What makes X voice distinguishable
 
 ### 1. It starts closer to the point
 
@@ -184,8 +187,6 @@ It feels closer to a live observation.
 Good X voice has some "I just noticed this" energy.
 
 ### 4. It leaves space
-
-This is important.
 
 LinkedIn tends to complete the thought.
 
@@ -374,7 +375,7 @@ Bad X translation:
 
 ## X writing rules
 
-Use these rules when turning an idea into an X post:
+Use these rules when turning an idea into an X draft:
 
 - Start with the thought, not the setup.
 - Keep one clear idea per post.
@@ -399,13 +400,17 @@ Not:
 
 > intro + explanation + framework + takeaway + CTA
 
-## X reply voice
+## Reply voice
+
+This section only defines reply voice.
+
+Detailed reply workflow, search terms, conversation targeting, DM rules, and reply patterns belong in `marketing/x/reply-strategy.md`.
 
 Replies should usually be even more casual than posts.
 
 A reply should feel like Haseeb joining a conversation, not Orisen entering a thread.
 
-Good X reply voice:
+Good reply voice:
 
 - short
 - specific
@@ -423,19 +428,25 @@ Avoid reply voice that sounds like:
 - a brand account
 - a copy-pasted engagement tactic
 
-Good reply pattern:
+Good reply rhythm:
 
 > reflect the point + add one specific thought + ask one useful question if natural
 
-Example:
+Teaching example:
 
 > Yeah, that is the weird part. The alarm technically worked, but the wake-up did not.
 
-Example:
+Teaching example:
 
 > Do you usually sleep through it, or wake up and lose time after turning it off?
 
-## X thread voice
+These are style examples, not reusable reply-bank assets.
+
+## Thread voice
+
+This section only defines thread voice.
+
+Detailed thread formats, content motions, cadence, and execution plans belong in `marketing/x/posting-strategy.md`.
 
 Threads should still sound like X.
 
@@ -464,6 +475,28 @@ Better thread voice:
 > A normal alarm has one job: make noise at a time.
 >
 > That sounds fine until you realize waking up is not one event.
+
+These are style examples, not finished thread drafts.
+
+## Teaching examples rule
+
+Examples in this file exist to show voice, rhythm, compression, and tone.
+
+They are not:
+
+- finished posts
+- approved claims
+- post-bank assets
+- reply-bank assets
+- CTAs to reuse by default
+- proof that a wording is always safe to publish
+
+Before publishing or saving a draft, still check:
+
+- `product/claims-and-evidence.md` for claim boundaries
+- `marketing/x/playbook.md` for channel goals and account fit
+- `marketing/x/posting-strategy.md` for post type, format, cadence, and execution context
+- `marketing/x/post-bank.md` for reusable draft assets, once populated
 
 ## X anti-patterns
 
@@ -519,8 +552,10 @@ Update this file when:
 Do not use this file to store:
 
 - finished posts
+- finished reply drafts
 - hook banks
 - detailed post templates
+- detailed reply workflows
 - posting calendars
 - content strategy
 - claim rules
@@ -530,5 +565,7 @@ Do not use this file to store:
 If a future section becomes a finished draft, move it to `marketing/x/post-bank.md`.
 
 If a future section becomes posting strategy, move it to `marketing/x/posting-strategy.md`.
+
+If a future section becomes detailed reply workflow, move it to `marketing/x/reply-strategy.md`.
 
 If a future section becomes a channel operating rule, move it to `marketing/x/playbook.md`.
