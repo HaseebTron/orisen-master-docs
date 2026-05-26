@@ -101,6 +101,30 @@ It is not sloppy.
 
 But it should not feel prepared in the same way LinkedIn, email, or website copy does.
 
+## What X voice is not
+
+X voice is not:
+
+- a mini LinkedIn essay
+- a blog intro cut into short lines
+- a brand announcement
+- a polished investor update
+- a generic founder lesson
+- a productivity guru post
+- a forced viral hook
+- an AI-generated thought leadership post
+- a post that explains every implication
+- a post that turns every observation into a lesson
+- a post that makes Orisen sound like a corporate brand account
+
+Avoid writing that feels like:
+
+> Here is a polished takeaway I prepared for my audience.
+
+Prefer writing that feels like:
+
+> I noticed something weird while building this.
+
 ## What makes X voice distinguishable?
 
 ### 1. It starts closer to the point
@@ -309,6 +333,160 @@ Less:
 - our solution
 - our platform
 - our innovative approach
+
+## How Haseeb's voice adapts to X
+
+On X, Haseeb's founder voice should become:
+
+- more compressed
+- more conversational
+- more reactive
+- more willing to use fragments
+- more willing to leave the thought slightly open
+- more direct in the first line
+- drier and funnier when natural
+- less polished than LinkedIn or email
+- less explanatory than a blog
+- more personal than Orisen brand copy
+
+The cross-channel voice still applies:
+
+- direct
+- builder-led
+- honest
+- specific
+- slightly provocative
+- practical
+- curious
+- human
+
+But on X, the voice should feel faster and less packaged.
+
+Good X translation:
+
+> The annoying part is the alarm technically worked.
+>
+> You still lost the morning.
+
+Bad X translation:
+
+> One insight I've developed while building Orisen is that alarm success and wake completion are not always the same thing.
+
+## X writing rules
+
+Use these rules when turning an idea into an X post:
+
+- Start with the thought, not the setup.
+- Keep one clear idea per post.
+- Cut context until the post has tension.
+- Prefer concrete pain over abstract framing.
+- Prefer a sharp sentence over a complete explanation.
+- Let the reader connect some of the dots.
+- Use line breaks for rhythm, not fake drama.
+- Use first person when it adds founder presence.
+- Use dry humor when it feels natural.
+- Do not explain the joke.
+- Do not make every post a lesson.
+- Do not make every post a pitch.
+- Do not make every post a thread.
+- Do not turn a thought into a full essay unless the idea needs it.
+
+A good X post should usually feel like:
+
+> one sharp thought + enough context to make it land
+
+Not:
+
+> intro + explanation + framework + takeaway + CTA
+
+## X reply voice
+
+Replies should usually be even more casual than posts.
+
+A reply should feel like Haseeb joining a conversation, not Orisen entering a thread.
+
+Good X reply voice:
+
+- short
+- specific
+- conversational
+- useful
+- lightly opinionated
+- matched to the energy of the original post
+- curious when there is a chance to learn
+
+Avoid reply voice that sounds like:
+
+- a pitch
+- a lecture
+- a customer-support script
+- a brand account
+- a copy-pasted engagement tactic
+
+Good reply pattern:
+
+> reflect the point + add one specific thought + ask one useful question if natural
+
+Example:
+
+> Yeah, that is the weird part. The alarm technically worked, but the wake-up did not.
+
+Example:
+
+> Do you usually sleep through it, or wake up and lose time after turning it off?
+
+## X thread voice
+
+Threads should still sound like X.
+
+Do not turn a thread into a blog post with numbered tweets.
+
+Use a thread when the idea needs sequence.
+
+Do not use a thread just because the post feels important.
+
+Good thread voice:
+
+- first post stands alone
+- each reply adds one real point
+- no bloated setup
+- no forced numbered lesson format
+- no generic final takeaway
+- no padded CTA
+- enough white space to scan quickly
+
+Bad thread voice:
+
+> I've spent the last few months thinking deeply about the future of sleep technology, behavioral design, and consumer hardware. Here are the lessons that changed how I think about mornings.
+
+Better thread voice:
+
+> A normal alarm has one job: make noise at a time.
+>
+> That sounds fine until you realize waking up is not one event.
+
+## X anti-patterns
+
+Avoid:
+
+- LinkedIn voice
+- blog-intro voice
+- brand-announcement voice
+- fake vulnerability
+- fake hot takes
+- forced contrarianism
+- generic founder lessons
+- engagement bait
+- hashtags by default
+- emoji decoration
+- over-explaining the point
+- over-formatting
+- turning every post into a thread
+- turning every post into a waitlist CTA
+- ending every post with a neat lesson
+- writing like the audience needs a full explanation before the point
+- sounding like Orisen is speaking instead of Haseeb
+- sounding like an AI assistant made the thought cleaner but less human
 
 ## Final X voice pass
 
