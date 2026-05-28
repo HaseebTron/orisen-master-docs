@@ -2,7 +2,7 @@
 
 Status: Source of truth
 Authority level: Company / AI context / Repo governance
-Last reviewed: 2026-05-24
+Last reviewed: 2026-05-28
 Governing docs:
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/repo-governance/repo-operating-model.md`
@@ -18,7 +18,7 @@ Downstream docs:
 
 ## Purpose
 
-This file defines how ChatGPT should perform direct GitHub edits to the Orisen master docs repo.
+This file defines how ChatGPT should choose and perform safe edit workflows for the Orisen master docs repo, including direct GitHub edits and local Git/Codex workflows.
 
 The goal is to reduce mechanical repo-editing mistakes, especially during multi-file source-of-truth changes.
 
@@ -129,6 +129,32 @@ Do not make large multi-file changes directly on GitHub without first stating th
 
 If the change is broad, risky, or reference-heavy, ChatGPT should tell the user that local repo + Codex is safer and should use `ai-context/repo-governance/local-repo-codex-workflow.md` for the workflow.
 
+## Default bounded docs workflow for `orisen-master-docs`
+
+For normal bounded docs edits in `HaseebTron/orisen-master-docs`, default to:
+
+```text
+local branch -> ChatGPT diff review -> local merge into main -> push main
+```
+
+The standard sequence is:
+
+1. Start from local `main`.
+2. Run `git pull origin main`.
+3. Create a local task branch.
+4. Make changes on that branch.
+5. Use `git diff main...HEAD` for ChatGPT review after the local branch commit or commits exist.
+6. If ChatGPT approves, switch to `main`.
+7. Run `git pull origin main` again.
+8. Merge the task branch into local `main`.
+9. Push `main` to GitHub.
+
+A GitHub pull request is optional for normal bounded docs edits in this repo.
+
+Use a GitHub PR workflow when the change is broad, risky, likely to need a GitHub-hosted review record, or when the user explicitly wants a PR.
+
+This rule applies only to `HaseebTron/orisen-master-docs`. Do not apply it to `HaseebTron/Orisen`; that repo follows its own implementation and code workflow.
+
 ## Mandatory local-workflow read rule
 
 If ChatGPT decides or recommends that a task should be done through local repo + Codex, VS Code, a branch, or a PR workflow, ChatGPT must read:
@@ -167,6 +193,8 @@ Direct GitHub edits are acceptable for:
 - updating a narrow set of related docs
 - making low-risk structural additions
 - applying a clearly agreed plan
+
+For normal bounded docs edits in `HaseebTron/orisen-master-docs`, direct GitHub editing remains available when explicitly chosen, but it is not the default workflow.
 
 ## Direct GitHub editing is not ideal for
 
@@ -219,6 +247,8 @@ Do not edit more than about 3 to 5 files in one direct GitHub pass unless the ed
 ## Main branch caution
 
 If editing directly on `main`, keep changes narrow and reversible.
+
+For normal bounded docs edits in `HaseebTron/orisen-master-docs`, prefer a local task branch, ChatGPT review of `git diff main...HEAD`, local merge into `main`, and pushing `main`.
 
 For broad or high-risk work, prefer:
 

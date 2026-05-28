@@ -2,7 +2,7 @@
 
 Status: Source of truth
 Authority level: Company / AI context / Repo governance
-Last reviewed: 2026-05-24
+Last reviewed: 2026-05-28
 Governing docs:
 - `ai-context/repo-governance/repo-operating-model.md`
 - `ai-context/repo-governance/repo-editing-rules.md`
@@ -32,6 +32,49 @@ Use local repo + Codex instead of direct ChatGPT GitHub editing when the task in
 - changes that the ChatGPT GitHub connector may partially block
 
 Direct ChatGPT GitHub editing is still acceptable for small markdown edits, one-file wording fixes, simple stub docs, and narrow low-risk reference updates.
+
+## Default solo-founder docs workflow for `orisen-master-docs`
+
+For normal bounded docs edits in `HaseebTron/orisen-master-docs`, the default workflow is:
+
+```text
+local branch -> ChatGPT diff review -> local merge into main -> push main
+```
+
+This is a local docs workflow, not a GitHub pull-request requirement.
+
+Use this sequence:
+
+1. Start from local `main`.
+2. Run `git pull origin main`.
+3. Create a local task branch.
+4. Make changes on the task branch.
+5. Create the local branch commit or commits intended for review.
+6. Run `git status --short` to confirm no uncommitted work is being left out of review.
+7. Use `git diff main...HEAD` for ChatGPT review.
+8. If ChatGPT approves, switch to `main`.
+9. Run `git pull origin main` again.
+10. Merge the task branch into local `main`.
+11. Push `main` to GitHub.
+
+Codex prompts still default to:
+
+```text
+Do not commit.
+Do not push.
+```
+
+The founder must explicitly authorize any commit, merge, or push step.
+
+## Optional GitHub PR workflow
+
+A GitHub pull request is optional for normal bounded docs edits in `HaseebTron/orisen-master-docs`.
+
+Use a GitHub PR when the change is broad, risky, likely to need a GitHub-hosted review record, or when the user explicitly wants a PR.
+
+When a PR is used, push the task branch and use the GitHub PR review path before merge.
+
+This rule applies only to `HaseebTron/orisen-master-docs`. Do not apply it to `HaseebTron/Orisen`; that repo follows its own implementation and code workflow.
 
 ## Assistant responsibility
 
@@ -147,8 +190,9 @@ Do not push.
 Stop after editing and show the full diff.
 
 For diff review:
-- First try to show the full staged diff with `git diff --cached`.
-- If the diff is too long for chat, write it to `$env:USERPROFILE\Downloads\task-review-diff.md`.
+- If Codex is stopping before an authorized commit, first show the working-tree diff with `git diff`.
+- After the user authorizes the local branch commit or commits, use `git diff main...HEAD` for ChatGPT branch review before merge.
+- If the review diff is too long for chat, write it to `$env:USERPROFILE\Downloads\task-review-diff.md`.
 - Do not create temporary review files inside the repo.
 - Do not stage temporary review files.
 ```
@@ -249,22 +293,24 @@ For file moves, staging helps Git recognize renames instead of showing large del
 
 Before commit, review staged files, rename detection, diff stat, whitespace/conflict-marker checks, reference-search results, and Codex's summary of whether meaning changed accidentally.
 
+For the branch-level ChatGPT review before a local merge in `HaseebTron/orisen-master-docs`, use `git diff main...HEAD` after the local branch commit or commits exist.
+
 ## Diff sharing rule
 
-For staged diff review, avoid asking for many tiny one-file diffs unless the user specifically wants that.
+For branch diff review before local merge, avoid asking for many tiny one-file diffs unless the user specifically wants that.
 
 Preferred order:
 
-1. Ask Codex to show the full staged diff:
+1. Ask Codex to show the full branch diff:
 
    ```powershell
-   git diff --cached
+   git diff main...HEAD
    ```
 
-2. If the diff is too long for chat, ask Codex to write the staged diff to a temporary file outside the repo, preferably the user's Downloads folder:
+2. If the diff is too long for chat, ask Codex to write the branch diff to a temporary file outside the repo, preferably the user's Downloads folder:
 
    ```powershell
-   git diff --cached > "$env:USERPROFILE\Downloads\task-review-diff.md"
+   git diff main...HEAD > "$env:USERPROFILE\Downloads\task-review-diff.md"
    ```
 
 3. The user should upload or paste that review file into ChatGPT.
@@ -279,7 +325,11 @@ For targeted review, Codex may still output a single-file diff when ChatGPT asks
 
 For meaningful local repo edits, especially file moves, renames, reference updates, source-of-truth edits, governance edits, or claim-sensitive edits, Codex should stop after editing and show the diff summary.
 
-Before commit, push, or merge, the user should paste the diff summary or relevant diff into ChatGPT for review.
+For normal bounded docs edits in `HaseebTron/orisen-master-docs`, the user should paste the `git diff main...HEAD` branch diff or relevant diff summary into ChatGPT before local merge and `main` push.
+
+Before commit, push, or merge, the user should paste the diff summary or relevant diff into ChatGPT for review unless the user explicitly chooses to skip ChatGPT review.
+
+For pre-commit review, use the working-tree or staged diff. For the required branch review before local merge in `HaseebTron/orisen-master-docs`, use `git diff main...HEAD`.
 
 ChatGPT should review for:
 
@@ -297,7 +347,9 @@ Codex should not commit, push, or merge until this review is complete unless the
 
 If the user skips ChatGPT review, ChatGPT should not later imply that it reviewed or approved the diff.
 
-## Commit, push, merge, and cleanup
+## Commit, merge, push, and cleanup
+
+Codex must not commit, merge, or push unless the user explicitly asks.
 
 Commit only after the staged review is clean:
 
@@ -306,15 +358,12 @@ git commit -m "Short task description"
 git status
 ```
 
-Push the branch:
+For normal bounded docs edits in `HaseebTron/orisen-master-docs`, the default completion path after ChatGPT approves the branch diff is local merge into `main` and push `main`:
 
 ```powershell
-git push -u origin branch-name
-```
-
-If merging locally after review:
-
-```powershell
+git diff --check main...HEAD
+git diff --stat main...HEAD
+git diff main...HEAD
 git checkout main
 git pull origin main
 git merge --no-ff branch-name -m "Merge task description"
@@ -322,10 +371,24 @@ git push origin main
 git status
 ```
 
-After a task branch has been merged into `main` and pushed, delete the completed branch locally and remotely unless the user wants to keep it.
+Push the task branch only when using the optional GitHub PR workflow or when the user explicitly asks:
+
+```powershell
+git push -u origin branch-name
+```
+
+After a task branch has been merged into `main` and pushed, delete the completed local branch unless the user wants to keep it.
+
+Delete a remote branch only if one was created for a PR or explicit branch push.
 
 ```powershell
 git branch -d branch-name
+git status
+```
+
+If a remote branch exists and should be deleted:
+
+```powershell
 git push origin --delete branch-name
 git status
 ```
