@@ -145,6 +145,12 @@ When preparing a Codex prompt for local repo work, follow the Codex session rout
 
 When the next step would otherwise be manual terminal, Git, or repo-inspection commands, follow the Codex-first command workflow in `ai-context/repo-governance/local-repo-codex-workflow.md`.
 
+## Mandatory Codex prompt context gate
+
+When asking Codex to edit Orisen repo docs, the prompt must include both Git workflow safety steps and source-context loading steps.
+
+A Codex prompt is incomplete if it only tells Codex how to branch, edit, and diff, but does not tell Codex what Orisen source-of-truth docs to read before planning or editing.
+
 ## Direct GitHub edit sync reminder
 
 After ChatGPT makes direct GitHub edits, the user's local repo may be behind `origin/main`.

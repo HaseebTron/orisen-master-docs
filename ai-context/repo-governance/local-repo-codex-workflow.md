@@ -105,6 +105,23 @@ Whenever ChatGPT gives the user a Codex prompt for local repo work, the prompt m
 
 ChatGPT should not assume the user's local repo is current.
 
+## Mandatory source-context loading gate
+
+When preparing a Codex prompt for Orisen repo-governance, source-of-truth docs, project routing, context loading, read-rules, repo boundaries, claims, product direction, roadmap, radar/ML strategy, marketing, or fundraising docs, the prompt must explicitly tell Codex which source-of-truth files to read before planning or editing.
+
+Do not assume Codex will infer the right context from the repo, branch name, file names, or requested edit.
+
+For source-of-truth or repo-governance edits, the Codex prompt must include a `Before planning or editing, read:` section listing the required boot, governance, and task-specific docs.
+
+The prompt must require Codex to:
+
+- summarize what it read
+- identify the governing docs for the requested change
+- state planned file changes before editing
+- stop if the requested change conflicts with higher-authority docs
+
+Git workflow safety steps are required, but they do not replace source-context loading.
+
 ## Reusable Codex prompt preamble
 
 Use this preamble when giving the user a Codex prompt for local repo work:
