@@ -28,6 +28,12 @@ Use this master-docs repo for company/product/claims/roadmap boundaries.
 
 Use `HaseebTron/Orisen` for implementation details, code, active slice status, firmware/app/backend files, build errors, and software decisions.
 
+## Cross-repo boundary rule
+
+Before routing software-related content between `orisen-master-docs` and `HaseebTron/Orisen`, read `ai-context/repo-governance/cross-repo-boundaries.md`.
+
+Use that doc to decide whether the task is source-of-truth, implementation, or both.
+
 ## Copied software snapshot docs in this repo
 
 Some files in this `software/` folder are copied or synced from the separate software implementation repo.

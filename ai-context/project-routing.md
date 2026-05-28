@@ -117,6 +117,8 @@ Ask in Orisen Software when the question sounds like:
 
 Do not use Orisen Software to decide the company promise, marketing claims, or first customer-ready product vision.
 
+Cross-repo software/source-of-truth boundary questions must follow `ai-context/repo-governance/cross-repo-boundaries.md` before deciding whether to use `orisen-master-docs`, `HaseebTron/Orisen`, or both.
+
 Escalate to Orisen General if a software decision changes product scope, reliability promise, user promise, roadmap priority, or public claims.
 
 ## Orisen Radar + ML
@@ -152,6 +154,8 @@ Ask in Orisen Radar + ML when the question sounds like:
 - How accurate does the model need to be?
 
 Do not use Orisen Radar + ML to decide marketing claims, company positioning, fundraising claims, or customer-facing promises by itself.
+
+Radar/ML/control work that mixes research, decisions, implementation, code, or test results must follow `ai-context/repo-governance/cross-repo-boundaries.md`.
 
 Escalate to Orisen General if the answer affects what Orisen can claim publicly or what belongs in the first customer-ready product.
 

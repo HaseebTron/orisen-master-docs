@@ -65,6 +65,7 @@ Follow:
 - `ai-context/doc-creation-rules.md` when creating or editing docs
 - `ai-context/repo-governance/repo-editing-rules.md` when directly editing GitHub files or planning repo edits
 - `ai-context/repo-governance/local-repo-codex-workflow.md` when repo work is broad, risky, reference-heavy, or should be reviewed through local Git diffs
+- `ai-context/repo-governance/cross-repo-boundaries.md` when deciding whether work belongs in `orisen-master-docs`, `HaseebTron/Orisen`, or both
 - `ai-context/repo-governance/repo-purpose.md`, `ai-context/repo-governance/repo-structure.md`, `ai-context/repo-governance/repo-file-map.md`, and `ai-context/repo-governance/repo-change-checklist.md` when planning repo structure, cleanup, file organization, file inventory, or repo-governance changes
 - `ai-context/repo-governance/repo-operating-model.md` when auditing repo logic, explaining how the repo works, evaluating the AI/context system, or checking whether a new doc/folder fits the overall system
 - `ai-context/claim-control/claim-control-system.md` when judging claims, evidence, validation, marketing, fundraising, radar/ML, or product truth
@@ -93,6 +94,12 @@ Use `ai-context/repo-governance/repo-file-map.md` for the current durable file i
 Use `ai-context/repo-governance/repo-change-checklist.md` before significant repo changes.
 
 Do not duplicate full repo or folder file trees inside folder read-rules files or domain docs. The central durable file inventory belongs in `ai-context/repo-governance/repo-file-map.md`.
+
+## Cross-repo boundary rule
+
+If the question or write command touches software, firmware, app, cloud, radar/ML/control, Codex, GitHub edits, repo placement, or source-of-truth-vs-implementation decisions, read `ai-context/repo-governance/cross-repo-boundaries.md` before deciding what repo to read or write.
+
+Use that file to decide whether the task belongs in `HaseebTron/orisen-master-docs`, `HaseebTron/Orisen`, or both before editing.
 
 ## Mandatory repo-edit preflight rule
 
@@ -211,11 +218,12 @@ When this file is read for a meaningful Orisen task, follow this order before an
 11. If the task directly edits GitHub files or plans repo edits, read `ai-context/repo-governance/repo-editing-rules.md`.
 12. If the task is broad, risky, reference-heavy, or should be reviewed through local Git diffs, read `ai-context/repo-governance/local-repo-codex-workflow.md`.
 13. If the task involves repo structure, cleanup, file moves, file inventory, folder organization, read-rules changes, or repo governance, read `ai-context/repo-governance/repo-purpose.md`, `ai-context/repo-governance/repo-structure.md`, `ai-context/repo-governance/repo-file-map.md`, and `ai-context/repo-governance/repo-change-checklist.md`.
-14. If the task is a broad repo audit, repo logic review, AI/context system review, or asks how the repo works as a system, read `ai-context/repo-governance/repo-operating-model.md`.
-15. If the task judges validation, claims, marketing, fundraising, scientific/technical support, or evidence strength, read `ai-context/claim-control/claim-control-system.md`.
-16. Follow `context-map.md` to the correct minimal or full baseline pack and any task-specific docs.
-17. Provide the context loaded summary.
-18. Answer the user's main question using the relevant docs.
+14. If the task touches software, firmware, app, cloud, radar/ML/control, Codex, GitHub edits, repo placement, or source-of-truth-vs-implementation decisions, read `ai-context/repo-governance/cross-repo-boundaries.md` before deciding what repo to read or write.
+15. If the task is a broad repo audit, repo logic review, AI/context system review, or asks how the repo works as a system, read `ai-context/repo-governance/repo-operating-model.md`.
+16. If the task judges validation, claims, marketing, fundraising, scientific/technical support, or evidence strength, read `ai-context/claim-control/claim-control-system.md`.
+17. Follow `context-map.md` to the correct minimal or full baseline pack and any task-specific docs.
+18. Provide the context loaded summary.
+19. Answer the user's main question using the relevant docs.
 
 ## Small-task exception after boot
 
