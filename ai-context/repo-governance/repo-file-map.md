@@ -91,6 +91,7 @@ Conventions:
     - `repo-change-checklist.md`: Operational checklist for planning or making repo changes.
     - `repo-editing-rules.md`: Defines safe direct GitHub editing behavior.
     - `local-repo-codex-workflow.md`: Defines the local VS Code, Git, and Codex workflow for broader repo changes.
+    - `cross-repo-boundaries.md`: Defines source-of-truth versus implementation repo boundaries.
     - `repo-backlog.md`: Backlog of repo buildout and cleanup work.
   - **`claim-control/`**: Controls claims, evidence, validation language, and claim-safety discipline.
     - `claim-control-system.md`: Rules for judging and controlling claims.

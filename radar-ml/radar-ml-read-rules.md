@@ -18,6 +18,12 @@ For the current repo-wide file map, see:
 
 This read-rules file should define task-based reading paths, not duplicate folder structure or current/planned file inventories.
 
+## Cross-repo boundary rule
+
+Before routing radar/ML/control work between source-of-truth docs and implementation code, read `ai-context/repo-governance/cross-repo-boundaries.md`.
+
+Use that doc to decide whether the task belongs in `orisen-master-docs`, `HaseebTron/Orisen`, or both.
+
 ## Always read first for important radar/ML work
 
 For radar/ML work that may affect product claims, roadmap, or fundraising, start with:
