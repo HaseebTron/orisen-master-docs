@@ -67,6 +67,16 @@ Use this section for raw post ideas before they become finished drafts.
 
 These ideas should stay downstream from `marketing/x/posting-strategy.md`, `marketing/x/voice.md`, and the current product/claim boundaries.
 
+Structure standard:
+
+- First-level bullets under `Good topics` are bold topic labels from `marketing/x/posting-strategy.md`.
+- Any nested bullet can be either a grouping subtopic or a post idea.
+- The lowest-level bullet in any branch should be the actual post idea.
+- A grouping subtopic should only be used when it has at least 2 post ideas under it.
+- If a grouping subtopic would only have 1 post idea, remove the grouping subtopic and make that bullet the post idea directly.
+- Add deeper nesting only when it makes the ideas easier to scan.
+- Do not force a fixed number of nesting levels.
+
 ### 1. Build Orisen in public
 
 Purpose:
@@ -87,7 +97,7 @@ Good topics:
     - post about testing the logic where the alarm does not fully stop until the user is out of bed
     - post about re-triggering the alarm when the user returns to bed
     - post about why the hard part is not making a louder alarm, but deciding when the device should trust that waking is complete
-  - OTA / reliability foundation
+  - OTA and reliability foundation
     - post about adding the foundation for firmware updates because sleep hardware has to improve after shipping
     - post about why a wake-up device cannot be treated like a toy app where bugs are only annoying
   - Current build stage
