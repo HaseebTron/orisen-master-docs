@@ -25,6 +25,22 @@ Use this as the upstream narrative source for turning Orisen's product truth int
 
 This file does not define public claim permission. Public marketing, fundraising, and product claims must follow `product/claims-and-evidence.md`.
 
+## Narrative ambition vs claim-safe wording
+
+This file may explore bold narrative frames, but public and fundraising language must still follow `product/claims-and-evidence.md`.
+
+"Sleep control" is internal narrative shorthand, not a current public claim. It should point to the ambition that sleep tech becomes more active and guided; it should not imply Orisen currently controls sleep stages or fixes sleep.
+
+Preferred safer category framing:
+
+- "Sleep should become more guided, not just tracked."
+- "Sleep tech should move from passive tracking to active intervention."
+- "Orisen is building toward ambient sleep intelligence, starting with wake completion."
+
+Wake completion is the first software-defined sleep intervention. Future intervention layers remain roadmap or hypothesis until validated.
+
+Do not imply Orisen currently controls sleep stages, fixes sleep, solves all sleep problems, eliminates grogginess or sleep inertia, or turns every sleep problem into a software-only problem.
+
 ## Pitch deck narrative
 
 - A pitch deck is a sequence of beliefs you install in the investor’s mind.
@@ -153,7 +169,7 @@ Let them conclude: “Yeah… those don’t actually solve it”
 
 - write a single sentence: “after this pitch, the investor should believe: ____”
 - examples for Orisen:
-  - sleep will become controllable, not just trackable
+  - sleep tech should become more guided, not just tracked
   - waking up is not solved, current tools are primitive
   - this is a new category, not just a product
   - it is a real and abundant problem
@@ -181,7 +197,7 @@ Let them conclude: “Yeah… those don’t actually solve it”
 - Apple's villain was conformity.
 - Uber's villain was the taxi monopoly.
 - Tesla's villain was the assumption that sustainable had to mean compromise.
-- Your villain is the assumption that sleep is something that happens to you rather than something you can control.
+- Your villain is the assumption that sleep is something that happens to you rather than something technology can help guide.
 - The entire sleep industry has been built around that assumption.
   - Trackers, wearables, apps all accept the premise that sleep is beyond intervention.
 - Your frame says that premise is wrong.
@@ -196,10 +212,10 @@ Let them conclude: “Yeah… those don’t actually solve it”
 - Fossil fuels are the performance standard.
   - Electricity is faster.
 - For Orisen, the inversion is:
-  - Sleep has always controlled humans.
-  - Orisen gives humans control over sleep.
-- That's it.
-  - That's your frame in one sentence.
+  - Sleep has always felt like something humans endure.
+  - Orisen gives users an active intervention layer, starting with waking.
+- That's the internal ambition.
+  - Public wording should stay closer to guided sleep and wake outcomes.
 
 #### Step 4 — Pressure test it against the cynical version
 
@@ -212,7 +228,7 @@ Let them conclude: “Yeah… those don’t actually solve it”
 - "Fixes your sleep"
   - Cynical version is "that's a big claim."
   - Needs proof.
-- "Gives you control over your sleep"
+- "Gives you a way to guide your wake-up process"
   - Cynical version is curiosity.
   - Good frame.
 
@@ -265,9 +281,9 @@ Let them conclude: “Yeah… those don’t actually solve it”
 
 - symptom: people oversleep
 - root cause:
-  - no system exists to control waking
-  - we can’t control our sleep phases
-- “The real problem isn’t oversleeping. It’s that we don’t control the waking process at all.”
+  - no reliable system exists to guide waking
+  - we can’t reliably guide the sleep-to-wake transition
+- “The real problem isn’t oversleeping. It’s that waking is treated like a timer event instead of a guided transition.”
 - always go one layer deeper
 
 ## Problem Layer
@@ -289,7 +305,7 @@ Let them conclude: “Yeah… those don’t actually solve it”
 | **Tool failure layer** | Alarms are blind brute-force tools | Sleep apps only advise, don’t intervene | Calendar/alarms don’t enforce consistency | Trackers report data but don’t fix the system |
 | **Control failure layer** | User has no control over the wake transition | User has no reliable control loop for sleep onset | User has no reliable control loop for sleep timing | User has no active system managing sleep quality |
 | **Root reframe** | Waking is treated like a timer problem, but it is a body-state transition problem | Falling asleep is treated like willpower, but it is a  problem | Sleep schedule is treated like discipline, but it is a rhythm-control problem | Sleep is treated like something to track, but it needs active intervention |
-| **Category-level insight** | Wakeup should be guided, not forced | Sleep onset should be conditioned, not hoped for | Sleep timing should be stabilized, not manually guessed | Sleep should be controlled, not just measured |
+| **Category-level insight** | Wakeup should be guided, not forced | Sleep onset should be conditioned, not hoped for | Sleep timing should be stabilized, not manually guessed | Sleep should be guided, not just measured |
 
 ## What looks like a successful narrative
 
@@ -328,7 +344,7 @@ Let them conclude: “Yeah… those don’t actually solve it”
 ### v1
 
 - Sleep is governed by your circadian rhythm and sleep stages.
-- But existing technology only tracks sleep, they don’t intervene. Or they do surface level fixes (brute force wake-up)They are band aid solutions.
+- But existing technology only tracks sleep, they don’t intervene. Or they use surface-level tactics like brute-force wake-up. They are band aid solutions.
 - As a result sleep is broken
   - 50% have difficulty waking up in the morning
   - 30% have difficulty going to sleep
