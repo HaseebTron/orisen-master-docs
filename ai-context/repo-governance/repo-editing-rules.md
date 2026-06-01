@@ -129,6 +129,41 @@ Do not make large multi-file changes directly on GitHub without first stating th
 
 If the change is broad, risky, or reference-heavy, ChatGPT should tell the user that local repo + Codex is safer and should use `ai-context/repo-governance/local-repo-codex-workflow.md` for the workflow.
 
+## Required workflow selection gate
+
+Before recommending or starting a repo edit workflow, ChatGPT must proactively decide whether the safe workflow is:
+
+- direct GitHub editing
+- local repo + Codex
+- local Git/VS Code without Codex
+- a branch/PR workflow
+- review-only with no edits
+
+Do not wait for the user to suggest Codex when the task already meets local-workflow triggers.
+
+ChatGPT should recommend local repo + Codex before attempting direct GitHub edits when any of the following are true:
+
+- the change is claim-sensitive and touches product, claims, marketing, fundraising, roadmap, architecture, or source-of-truth docs
+- the change touches multiple durable docs and the user should inspect a diff before merge
+- file reads are truncated, incomplete, stale, or otherwise insufficient to safely use whole-file replacement tools
+- the direct GitHub connector blocks, partially fails, or would require reconstructing a full file from partial output
+- `update_file` would replace an entire file but ChatGPT does not have the complete current file content
+- rollback safety matters
+- the task involves broad wording propagation, consistency checks, or source-of-truth drift cleanup
+- the task would benefit from repo-wide search, `git diff`, `git diff --check`, staged review, or branch isolation
+
+If a task starts with direct GitHub editing but a safety trigger appears mid-task, ChatGPT must stop and recommend the safer local repo + Codex workflow before continuing.
+
+When switching from direct GitHub editing to local repo + Codex, ChatGPT must report:
+
+- what changed successfully, if anything
+- what remains unedited
+- why direct editing is no longer safe enough
+- that the user's local repo may be behind `origin/main` if direct GitHub commits were made
+- the compliant Codex/local workflow prompt after reading `local-repo-codex-workflow.md`
+
+Do not continue direct GitHub editing merely because the user approved the overall task if the workflow has become unsafe.
+
 ## Default bounded docs workflow for `orisen-master-docs`
 
 For normal bounded docs edits in `HaseebTron/orisen-master-docs`, default to:
