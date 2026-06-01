@@ -55,6 +55,34 @@ Before creating or materially editing a source-of-truth doc, determine:
 
 If the request conflicts with source-of-truth docs, flag the conflict before drafting.
 
+## Required source-of-truth update order gate
+
+When planning edits across multiple docs, distinguish between:
+
+- **source-of-truth propagation order**: the order in which repo docs should actually be edited so authority flows from upstream to downstream
+- **business-impact priority**: the docs where the practical gap, user-facing impact, or investor-facing impact is most visible
+
+For actual repo edits, default to source-of-truth propagation order unless the user explicitly asks for a different workflow.
+
+Before recommending or performing a multi-doc edit sequence, state the edit order from highest-authority upstream docs to lower-authority downstream docs.
+
+Do not recommend editing a downstream marketing, fundraising, software, implementation, or draft doc first merely because it has the biggest visible gap, unless the upstream source-of-truth docs already fully support the change and no upstream clarification is needed.
+
+If a downstream doc has the biggest practical narrative or execution gap, say that separately from the repo-safe edit order.
+
+Use this distinction explicitly when helpful:
+
+```markdown
+Repo-safe edit order:
+- Highest-upstream docs first
+- Downstream docs after the source-of-truth is clear
+
+Largest practical gap:
+- The downstream doc where the change will be most visible
+```
+
+After recommending an edit order, check whether any upstream doc needs only a no-op confirmation, a small clarification, or a real source-of-truth update before downstream propagation.
+
 ## Repo editing rule
 
 When ChatGPT directly edits GitHub files, also follow:
