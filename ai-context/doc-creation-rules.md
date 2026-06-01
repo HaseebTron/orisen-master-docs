@@ -92,6 +92,33 @@ When ChatGPT directly edits GitHub files, also follow:
 
 Especially for multi-file source-of-truth changes, ChatGPT should state the intended edit scope before editing, keep edits in small logical batches, avoid broad direct edits to `main` when a local/Codex/branch workflow would be safer, and summarize what changed afterward.
 
+## Codex prompt gate for doc edits
+
+When a doc-creation or doc-editing task moves from direct ChatGPT drafting/editing to local repo + Codex, VS Code, Git branches, commits, pushes, merges, staged diffs, or review diffs, ChatGPT must read and apply:
+
+- `ai-context/repo-governance/local-repo-codex-workflow.md`
+
+before writing any Codex prompt or local workflow instructions.
+
+This applies even if `ai-context/doc-creation-rules.md`, `ai-context/repo-governance/repo-editing-rules.md`, or other repo-governance docs were already read.
+
+Before giving the user a Codex prompt for doc work, ChatGPT must explicitly state:
+
+- whether to use the existing Codex session or a new Codex session
+- what Codex intelligence level to use
+- whether Codex may edit files or only inspect/report
+- that the prompt includes current-branch, git-status, pull-latest-main, task-branch, and clean-tree gates
+- that the prompt says `Do not commit. Do not push.` unless the user explicitly authorized commit or push
+- which source-of-truth docs Codex must read before planning or editing
+- what output the user should paste back into ChatGPT for review
+
+A Codex prompt for Orisen doc work is incomplete if it omits either:
+
+- local Git workflow safety gates from `local-repo-codex-workflow.md`
+- source-context loading gates for the docs being edited
+
+Do not provide the Codex prompt until these checks have been stated.
+
 ## Hard-gate instruction design
 
 When creating new AI-facing repo instructions or reviewing old ones, write important requirements as workflow gates, not just broad principles.
