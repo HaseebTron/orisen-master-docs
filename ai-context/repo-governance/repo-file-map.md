@@ -2,7 +2,7 @@
 
 Status: Source of truth
 Authority level: Company / AI context / Repo governance
-Last reviewed: 2026-05-24
+Last reviewed: 2026-06-01
 Governing docs:
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/repo-governance/repo-structure.md`
@@ -183,6 +183,7 @@ Conventions:
   - `investor-narrative.md`: Core investor narrative.
   - `investor-crm.md`: Investor CRM and investor relationship tracking.
   - `outreach-email-accounts.md`: Fundraising outreach email account setup and notes.
+  - `founders-inc-application-guide.md`: General Founders, Inc application rubric and question-by-question guide.
   - Potential future files:
     - `pitch-deck-notes.md`: Pitch deck structure, slide notes, and investor-facing narrative details.
     - `traction.md`: Fundraising-focused traction framing.
