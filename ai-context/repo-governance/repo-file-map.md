@@ -105,6 +105,7 @@ Conventions:
   - `claims-and-evidence.md`: Product claims and evidence boundaries.
   - `target-customer.md`: First target customer and customer focus.
   - `roadmap.md`: Roadmap and product sequencing.
+  - `ai-powered-sleep-intervention-direction.md`: Brief supporting strategy note for the long-term AI-powered sleep intervention direction.
   - `product-questions-and-objections.md`: Product questions, objections, and response framing.
   - **`old-mvp/`**: Old MVP evidence, behavior notes, and failure/bypass learnings.
     - `README.md`: Old MVP folder overview.

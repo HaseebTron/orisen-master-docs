@@ -10,8 +10,9 @@ This file should stay consistent with:
 
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
-- Future validation and evidence docs
-- Future product strategy docs
+- `product/claims-and-evidence.md`
+- `product/roadmap.md`
+- [`product/ai-powered-sleep-intervention-direction.md`](ai-powered-sleep-intervention-direction.md)
 
 ## What Orisen is
 
@@ -21,10 +22,12 @@ This file should stay consistent with:
 
 - **Platform-capable architecture**:
   - Orisen is being built as a platform-capable ambient sleep device.
+  - Long-term, Orisen may be understood as a non-wearable bedroom hardware foundation for software-defined sleep interventions, including possible future AI-assisted layers.
   - The hardware foundation should combine:
     - non-contact sensing
     - audio
     - light
+    - future voice interaction capability
     - compute
     - connectivity
     - local device control
@@ -32,11 +35,13 @@ This file should stay consistent with:
   - The software defines the intervention layer.
   - Wake completion is the first software-defined intervention.
   - Future intervention layers may build on the same hardware/software foundation.
+  - Future sleep software or AI sleep agents may eventually use Orisen to sense bedroom context and act through the device, but that is a future-facing platform direction.
 
 - **Core product direction**:
   - Orisen is not passive sleep tracking.
   - Orisen is active sleep intervention, starting with the morning wake-up problem.
   - Over time, Orisen should move toward ambient sleep intelligence: a system that senses context, adapts over time, and guides the night from wind-down to wake-up.
+  - Intelligent voice interaction may become one future intervention or output channel, but voice is not the product identity.
 
 - **Closed-loop wake intervention**:
   - At the product level, the first loop is wake completion:
@@ -62,6 +67,15 @@ This file should stay consistent with:
 
 - **Not a medical device in the current company direction**:
   - Orisen should not make clinical claims unless future evidence, regulatory strategy, and product scope support that.
+
+- **Not a validated AI sleep-agent product today**:
+  - Orisen does not currently have validated AI sleep agents, autonomous sleep optimization, or validated conversational sleep coaching.
+  - AI sleep agents and intelligent voice interaction should be treated as future-facing platform directions unless direct product evidence supports stronger claims.
+
+- **Not a validated vital-sign or sleep-stage tracker today**:
+  - Vital-sign-related sensing and sleep-stage-related sensing are future technical directions.
+  - They should not be described as validated current capabilities unless direct technical validation supports that.
+  - Orisen should not claim to replace wearables, clinical monitoring, or PSG.
 
 - **Not a solved all-in-one sleep fixer today**:
   - Platform-capable does not mean Orisen already has all hardware required to solve every sleep problem.
@@ -144,6 +158,7 @@ This file should stay consistent with:
 - **Boundary**:
   - The engineering MVP should prove that the system can function as a connected product.
   - It does not need to include every future sleep intervention feature.
+  - It does not require AI agents, conversational AI, validated vital-sign sensing, validated sleep-stage sensing, or autonomous intervention.
   - It should not shrink the company vision or redefine Orisen as only an app-connected alarm.
 
 ## First customer-ready product
@@ -181,22 +196,27 @@ This file should stay consistent with:
   - Early sleep-phase-aware behavior if the sensing pipeline supports it
 
 - **Claim boundary**:
-  - The first customer product should not overclaim that it eliminates grogginess or accurately controls sleep stages until real-world testing supports those claims.
+  - The first customer product should not overclaim that it eliminates grogginess, reduces sleep inertia, accurately tracks vital signs, accurately detects sleep stages, performs autonomous sleep optimization, or controls sleep stages.
 
 ## Product architecture: hardware foundation and software-defined interventions
 
 - **Internal architecture model**:
   - Orisen is being built as a platform-capable ambient sleep device.
   - The hardware is the foundation.
-  - The software defines the intervention.
-  - Wake completion is the first application.
+  - Software-defined interventions run on top of that foundation.
+  - Wake completion is the first application and first software-defined intervention layer.
+  - Future intervention layers should be added only when they improve the sleep or wake outcome and can be tested safely.
 
 - **Hardware foundation**:
   - The planned device foundation includes:
     - non-contact sensing
     - radar-based presence and movement context where technically feasible
+    - future sleep-context sensing
+    - possible vital-sign-related signals where technically feasible and validated
+    - possible sleep-stage-related signals where technically feasible and validated
     - audio output
     - light output
+    - future voice interaction as an output or intervention channel
     - local compute
     - local storage
     - connectivity
@@ -218,6 +238,7 @@ This file should stay consistent with:
   - Bedtime routines
   - White noise and sleep-supportive audio
   - Sleep-supportive lighting
+  - Intelligent voice interaction where useful and user-trusted
   - Phone/app friction near bedtime or during protected sleep windows
   - Wearable and health-platform integrations for daytime context
   - Nighttime sleep-context sensing from non-contact radar
@@ -226,22 +247,27 @@ This file should stay consistent with:
   - Sleep-phase-aware wake intervention
   - Artificial sleep phase transitioning if validated
   - Sleep onset support
+  - AI-assisted or autonomous intervention inside explicit user-approved boundaries
   - More advanced sleep history and insights when they improve intervention
 
 - **Important boundary**:
   - The platform framing is a product architecture direction, not proof that Orisen can solve every sleep problem.
   - Some future interventions may require new hardware, different sensors, different placement, stronger algorithms, external integrations, or new validation.
+  - AI-agent, voice, vital-sign, sleep-stage, and autonomous-intervention claims must follow [`product/claims-and-evidence.md`](claims-and-evidence.md).
 
 ## Long-term product direction
 
 - **Long-term direction**:
   - The long-term product direction is ambient sleep intelligence.
+  - Another safe internal framing is a non-wearable bedroom hardware foundation for software-defined sleep interventions.
   - Orisen should move from reliable wake completion toward personalized sleep intervention across more parts of the night.
 
 - **Long-term product direction may include**:
   - More accurate non-contact sleep-state estimation
-  - Radar-based vital sign and movement sensing
+  - Radar-based vital-sign-related and movement sensing where technically feasible and validated
   - Body movement and orientation signals where technically feasible
+  - Intelligent voice interaction as one possible output channel
+  - Sleep software or future AI sleep agents using Orisen as a permissioned bedroom interface
   - Personalized wake intervention timing
   - Adaptive audio and light stimulation
   - Artificial sleep phase transitioning if validated
@@ -260,6 +286,7 @@ This file should stay consistent with:
   - The long-term direction is to move beyond measurement into intervention.
   - Orisen should help users change the outcome of their sleep and wake-up experience, not just observe it afterward.
   - Long-term items remain roadmap, hypothesis, or future direction until tested.
+  - Autonomous intervention must remain permissioned, tested, transparent, and overrideable.
 
 ## Core product principles
 
@@ -273,7 +300,7 @@ This file should stay consistent with:
 
 - **Rule**:
   - The device must wake the user up reliably.
-  - AI, cloud intelligence, sleep-stage estimation, and personalization are valuable only if the core wake-up system works.
+  - AI, cloud intelligence, voice, vital-sign sensing, sleep-stage estimation, autonomous intervention, and personalization are valuable only if the core wake-up system works.
   - The final alarm moment should remain locally reliable.
 
 ### Local control matters
@@ -323,6 +350,10 @@ This file should stay consistent with:
 ## What should not be overclaimed
 
 - **Orisen should not overclaim**:
+  - Validated AI sleep agents
+  - Validated conversational sleep coaching
+  - Autonomous sleep optimization
+  - Vital-sign accuracy
   - Grogginess elimination
   - Sleep inertia elimination
   - Sleep-stage accuracy
@@ -336,6 +367,10 @@ This file should stay consistent with:
   - All future sleep issues being software-only
 
 - **Avoid saying**:
+  - "Orisen has validated AI sleep agents"
+  - "Orisen is a proven AI sleep coach"
+  - "Orisen autonomously optimizes your sleep"
+  - "Orisen accurately tracks vital signs"
   - "Eliminates grogginess"
   - "Eliminates sleep inertia"
   - "Wakes you in the perfect sleep stage"
@@ -354,6 +389,8 @@ This file should stay consistent with:
   - "Working toward less brutal mornings through gradual, sensor-informed wake intervention"
   - "Being built as a platform-capable ambient sleep device"
   - "Wake completion is the first software-defined intervention"
+  - "Future AI-assisted intervention layers may use Orisen as a permissioned bedroom interface"
+  - "Future versions may explore voice, vital-sign-related signals, and sleep-stage-related signals after validation"
   - "Future intervention layers may expand into other parts of sleep"
   - "Early versions will be tested and improved with real users"
 
@@ -424,5 +461,6 @@ This file should stay consistent with:
   - The first customer-ready product should also begin introducing gradual, sensor-informed, or sleep-phase-aware wake intervention aimed at making mornings feel less brutal.
 
 - **Long-term direction**:
-  - The long-term direction is ambient sleep intelligence: a personalized sleep intervention platform that moves beyond passive tracking toward active sleep-state guidance.
+  - The long-term direction is ambient sleep intelligence: a non-wearable bedroom hardware foundation for software-defined sleep interventions, including possible future AI-assisted intervention.
   - Orisen should be positioned around fixing painful mornings first, not around generic sleep tracking.
+  - Voice, AI sleep agents, vital-sign sensing, sleep-stage sensing, and autonomous intervention remain future-facing unless validated.

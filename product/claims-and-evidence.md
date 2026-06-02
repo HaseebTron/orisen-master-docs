@@ -36,6 +36,7 @@ It does not replace:
 - [`ai-context/claim-control/claim-control-system.md`](../ai-context/claim-control/claim-control-system.md), which defines evidence categories, evidence-strength levels, and claim-review rules.
 - [`ai-context/claim-control/claim-control-log.md`](../ai-context/claim-control/claim-control-log.md), which records conservative claim-relevant evidence entries.
 - [`ai-context/claim-control/claim-control-roadmap.md`](../ai-context/claim-control/claim-control-roadmap.md), which tracks missing evidence and validation priorities.
+- [`product/ai-powered-sleep-intervention-direction.md`](ai-powered-sleep-intervention-direction.md), which captures the focused long-term platform direction.
 - Raw/source files and synthesis files, which preserve and interpret upstream evidence.
 
 When these files overlap:
@@ -44,6 +45,7 @@ When these files overlap:
 - Use the claim-control log for conservative evidence entries.
 - Use the claim-control roadmap for missing evidence and validation planning.
 - Use this file for final allowed product and public wording.
+- Use the AI-powered sleep intervention direction note as supporting strategy context, not as authority to make stronger public claims than this file allows.
 
 ## Core rule
 
@@ -120,11 +122,16 @@ The following are not yet validated enough for strong public claims:
 - improved cognitive performance after waking
 - improved sleep quality
 - accurate radar-based sleep-stage estimation
+- accurate vital-sign sensing
 - sleep-phase-aware wake timing
 - waking users in a lighter sleep stage
 - moving users from deep sleep toward lighter sleep
 - artificial sleep phase transitioning
 - personalized wake intervention based on sleep state
+- validated voice intervention
+- validated conversational sleep coaching
+- AI sleep-agent capability
+- autonomous sleep intervention or optimization
 - production reliability
 - broad willingness to pay
 - product-market fit
@@ -159,6 +166,16 @@ This file applies the claim-control system to Orisen's actual product and public
 | Product identity | Orisen is not primarily a sleep tracker. | Safe current claim | "Orisen is not primarily a sleep tracker. It is built around wake-up intervention." | "Tracking is only valuable when it improves intervention." | "Orisen gives medical-grade sleep analytics." "Orisen replaces PSG or clinical sleep tracking." | Product overview repeatedly separates Orisen from passive sleep dashboards and sleep scores. | Does not prove Orisen can intervene effectively or detect sleep stages accurately. | Future tracking claims need technical validation and user value validation. | [`product/product-overview.md`](product-overview.md) |
 | Product identity | Orisen is not a wearable. | Safe current claim | "Orisen gives the core wake-up benefit without requiring a wearable." | N/A | "More accurate than wearables." "Replaces your Oura, WHOOP, Apple Watch, or Fitbit." | Product direction is wall-mounted or room-based non-contact sensing. | Does not prove better accuracy, better adherence, or better outcomes than wearables. | Comparative claims need direct testing against alternatives. | [`product/product-overview.md`](product-overview.md) |
 | Product identity | Orisen is currently a consumer product direction, not a medical device. | Safe but legally sensitive claim | "Orisen is being built as a consumer wake-up product, not as a medical device." | "Avoid clinical intended-use claims unless regulatory strategy changes." | "Treats sleep disorders." "Medical-grade." "Clinically improves sleep inertia." | Product docs and expert commentary warn against medical claims. | Does not guarantee regulatory classification. Actual classification depends on claims, features, jurisdictions, and intended use. | Legal/regulatory review before any medical, clinical, diagnostic, or treatment language. | [`product/product-overview.md`](product-overview.md), [`research/expert-commentary/expert-commentary-synthesis.md`](../research/expert-commentary/expert-commentary-synthesis.md) |
+
+### AI-powered sleep intervention platform boundaries
+
+| Claim family | Specific claim | Current status | Allowed public wording | Internal-only wording | Avoid wording | Evidence basis | What the evidence does not prove | Validation needed to upgrade | Upstream docs |
+|---|---|---|---|---|---|---|---|---|---|
+| AI sleep agents | Future AI sleep-agent support through Orisen. | Long-term vision / future architecture direction | "Future versions may let sleep software or AI agents use Orisen to sense context and act in the bedroom." | "AI sleep agent" means software that can use context, choose an intervention, act through Orisen's audio/light/voice/wake behavior, and adapt based on feedback. | "Orisen has autonomous AI sleep agents." "Orisen's AI fixes your sleep." "AI agents optimize your sleep automatically." | Current-state, product overview, roadmap, and AI direction docs define this as future platform direction. | Does not prove agent capability, decision quality, better sleep outcomes, safety, trust, retention, willingness to pay, or product-market fit. | Working agent prototype, user-permission and override rules, decision/outcome logs, user trust testing, and evidence that agent-driven interventions outperform static routines. | [`ai-context/current-state.md`](../ai-context/current-state.md), [`product/product-overview.md`](product-overview.md), [`product/roadmap.md`](roadmap.md), [`product/ai-powered-sleep-intervention-direction.md`](ai-powered-sleep-intervention-direction.md) |
+| Voice intervention | Future voice intervention or conversational support. | Planned / future intervention channel, not validated | "Future versions may use intelligent voice interaction as one intervention channel." | "Voice should support wake completion, bedtime guidance, contextual prompts, explanation, or deliberate override only where useful and trusted." | "Orisen has a proven AI sleep coach." "Orisen talks you into perfect sleep." "Orisen replaces a sleep coach or clinician." | Roadmap and AI direction docs identify voice as a possible output/intervention channel. | Does not prove voice improves wake completion, bedtime behavior, user trust, tolerance, or sleep outcomes. | Prototype voice flows, opt-in/opt-out testing, annoyance/trust/comprehension measures, behavior-change evidence, and comparison against non-voice flows. | [`product/roadmap.md`](roadmap.md), [`product/ai-powered-sleep-intervention-direction.md`](ai-powered-sleep-intervention-direction.md) |
+| Vital-sign sensing | Future vital-sign-related sensing. | Future technical direction / not validated for public accuracy claims | "Orisen is exploring non-contact sensing for future vital-sign-related signals." | "Distinguish raw technical capability from validated consumer or clinical accuracy." | "Orisen accurately tracks your vital signs." "Medical-grade heart-rate or breathing data." "Better than wearables for vital signs." "Replaces clinical monitoring." | Product and roadmap docs identify vital-sign-related sensing as possible future technical direction. | Does not prove accuracy, reliability across bedrooms/users/positions/bedding/pets/motion, clinical-grade performance, comparative accuracy, or improved outcomes. | Bench testing against reference sensors, real-bedroom validation across users and nights, error bounds, confidence reporting, and tests across placement, bedding, motion, and distance conditions. | [`product/product-overview.md`](product-overview.md), [`product/roadmap.md`](roadmap.md) |
+| Sleep-stage sensing | Future sleep-state or sleep-stage estimation. | Future technical direction / not validated | "Orisen is researching non-contact sensing for future sleep-state estimation." | "Sleep-stage sensing may support personalized wake intervention, but it must not be assumed." | "Accurately detects sleep stages." "Wakes you in the perfect sleep stage." "Always wakes you from light sleep." "Controls sleep stages." "Replaces PSG." | Product, roadmap, expert, and sleep-tracking validation docs support this only as a direction to validate. | Does not prove accurate classification, real-bedroom reliability, correct wake timing, improved wake outcomes, or clinical sleep staging capability. | Labeled sleep-stage data, PSG or appropriate reference validation, real-bedroom testing, accuracy/error metrics with limitations, and outcome testing versus fixed timing. | [`product/roadmap.md`](roadmap.md), [`research/external-research/sleep-tracking-and-validation/synthesis.md`](../research/external-research/sleep-tracking-and-validation/synthesis.md) |
+| Autonomous intervention | Future autonomous intervention within user-approved boundaries. | Future direction / hypothesis | "Future versions may autonomously adjust interventions within user-approved boundaries." | "Autonomy should mean controlled adaptation inside safe user-defined boundaries." | "Orisen autonomously optimizes your sleep." "Orisen fixes sleep automatically." "Set it and forget it, Orisen handles your sleep." "Orisen knows better than the user." | Product overview, roadmap, and AI direction docs include autonomy only as future direction. | Does not prove autonomous decisions work, improve sleep/wake outcomes, are safe, are trusted, are non-annoying, or improve retention and willingness to pay. | Defined autonomy boundaries, user permission model, override and failure-mode testing, decision/outcome logs, trust and annoyance testing, and outcome comparison against static/manual routines. | [`product/product-overview.md`](product-overview.md), [`product/roadmap.md`](roadmap.md) |
 
 ### Target customer
 
@@ -361,6 +378,78 @@ Avoid:
 
 > Orisen manipulates biology in real time.
 
+### AI-powered platform wording
+
+Use carefully:
+
+> Orisen is being built as a hardware foundation for software-defined sleep interventions, starting with wake completion.
+
+Use carefully for future-facing strategy:
+
+> Future versions may let sleep software or AI agents use Orisen to sense context and act in the bedroom.
+
+Avoid:
+
+> Orisen has autonomous AI sleep agents.
+
+> Orisen's AI fixes your sleep.
+
+> AI agents optimize your sleep automatically.
+
+### Voice intervention wording
+
+Use:
+
+> Future versions may use intelligent voice interaction as one intervention channel.
+
+Use:
+
+> Voice may support wake-up dialogue, bedtime guidance, contextual prompts, or deliberate override flows if users trust and value it.
+
+Avoid:
+
+> Orisen has a proven AI sleep coach.
+
+> Orisen's voice assistant fixes your sleep.
+
+> Orisen replaces a sleep coach or clinician.
+
+### Vital-sign and sleep-stage sensing wording
+
+Use:
+
+> Orisen is exploring non-contact sensing for future vital-sign-related and sleep-state-related signals.
+
+Use:
+
+> These sensing directions require validation before accuracy claims are allowed.
+
+Avoid:
+
+> Orisen accurately tracks your vital signs.
+
+> Orisen provides medical-grade heart-rate or breathing data.
+
+> Orisen replaces wearables or PSG.
+
+### Autonomous intervention wording
+
+Use:
+
+> Future versions may autonomously adjust interventions within user-approved boundaries.
+
+Use:
+
+> Autonomous behavior must remain permissioned, transparent, tested, and overrideable.
+
+Avoid:
+
+> Orisen autonomously optimizes your sleep.
+
+> Set it and forget it, Orisen handles your sleep.
+
+> Orisen knows better than the user.
+
 ### Investor-safe wording
 
 Use:
@@ -389,6 +478,12 @@ Avoid these claims unless future evidence, regulatory review, and claim-control 
 - "Clinically proven."
 - "Medical-grade."
 - "Treats sleep disorders."
+- "Orisen has autonomous AI sleep agents."
+- "Orisen's AI fixes your sleep."
+- "Orisen has a proven AI sleep coach."
+- "Orisen autonomously optimizes your sleep."
+- "Orisen accurately tracks vital signs."
+- "Medical-grade heart-rate or breathing data."
 - "Wakes you in the perfect sleep stage."
 - "Accurately detects sleep stages."
 - "Controls your sleep stages."
@@ -401,6 +496,7 @@ Avoid these claims unless future evidence, regulatory review, and claim-control 
 - "Validated demand."
 - "Proven willingness to pay."
 - "Better than wearables."
+- "Replaces wearables."
 - "Replaces PSG."
 
 ## Validation upgrade map
@@ -412,9 +508,13 @@ Avoid these claims unless future evidence, regulatory review, and claim-control 
 | Orisen reduces return-to-bed behavior. | Early signal and product logic | Logs showing return-to-bed detection and re-trigger behavior. | Pilot showing reduced return-to-bed versus baseline. | Larger cohort with repeated use and persistent behavior change after novelty. |
 | Orisen reduces grogginess. | Hypothesis | User-reported grogginess before/after pilot. | Repeated validated scales plus objective morning-function tasks. | Controlled study with meaningful subjective and objective improvements. |
 | Orisen reduces sleep inertia. | Unsupported for public use | Internal exploratory testing with careful measures. | Controlled study using accepted sleep-inertia measures. | Clinical-quality validation if clinical language is desired. |
+| Orisen accurately detects vital-sign-related signals. | Future technical direction / not validated | Bench testing against reference sensors. | Real-bedroom validation across users, nights, positions, bedding, motion, and placement conditions with error bounds. | Robust consumer or clinical validation with clear limits and appropriate regulatory review for medical wording. |
 | Orisen detects sleep stages accurately. | Not validated | Algorithm tested against labeled sleep-stage data. | PSG-comparison validation with clear metrics and limitations. | Robust real-bedroom validation across users and nights with benchmarked accuracy. |
 | Orisen performs sleep-phase-aware wake intervention. | Planned/hypothesis | Demonstrate sensor-informed intervention timing in pilot. | Show improved user outcomes versus fixed alarm timing. | Controlled study showing reliable improvement in wake outcomes. |
 | Orisen performs artificial sleep phase transitioning. | Long-term hypothesis | Feasibility test with sensing and intervention logs. | PSG-synchronized study showing measurable stage movement or arousal-state effect. | Repeated controlled validation showing outcome improvement and user tolerance. |
+| Orisen provides useful voice intervention. | Planned / not validated | Prototype voice flows and opt-in user testing. | Repeated tests showing voice improves wake completion, bedtime behavior, trust, or comprehension versus non-voice flows. | Real-world usage data showing durable behavior improvement, low annoyance, and clear user value. |
+| Orisen provides AI sleep-agent capability. | Long-term vision / future architecture direction | Working agent prototype connected to device/app context with logs. | User tests showing safe, trusted, and useful agent decisions inside permissioned boundaries. | Repeated real-world evidence that agent-driven interventions outperform static or manual routines. |
+| Orisen performs autonomous intervention. | Future direction / hypothesis | Defined autonomy boundaries, permission model, override rules, and failure-mode tests. | Pilot logs showing autonomous decisions, outcomes, overrides, and user trust. | Controlled or large real-world evidence showing outcome improvement without unacceptable safety, privacy, or annoyance costs. |
 | Orisen has willingness to pay. | Early signal only | Structured interviews and price testing. | Deposits, preorders, or paid beta. | Paid retention, repeat purchase, referrals, and low refund rates. |
 | Orisen has product-market fit. | Not validated | Strong pilot engagement and repeated usage. | Paid beta retention and referrals. | Sustained growth, retention, paid demand, and repeatable acquisition. |
 
@@ -453,6 +553,7 @@ Good website themes:
 - not a passive sleep tracker
 - designed to make waking more reliable
 - working toward less brutal mornings
+- future software-defined intervention layers, when clearly framed as roadmap
 
 Avoid website claims around:
 
@@ -460,6 +561,10 @@ Avoid website claims around:
 - guaranteed wake-up
 - perfect sleep-stage timing
 - accurate sleep-stage detection
+- accurate vital-sign detection
+- validated AI sleep agents
+- validated conversational sleep coaching
+- autonomous sleep optimization
 - artificial sleep phase transitioning as a current capability
 
 ### Fundraising language
@@ -470,14 +575,19 @@ Safe fundraising structure:
 
 1. Current validated wedge: presence-based wake completion.
 2. Early evidence: old MVP, pilot/test users, customer interviews, waitlist response.
-3. Larger vision: sensor-informed sleep intervention.
-4. Validation gap: grogginess, sleep-stage detection, and artificial sleep phase transitioning still need testing.
+3. Product architecture direction: platform-capable non-wearable sleep intervention hardware.
+4. Larger vision: software-defined sleep interventions, including possible future AI-assisted layers.
+5. Validation gap: grogginess, sleep-stage detection, vital-sign sensing, voice intervention, AI-agent capability, autonomous intervention, and artificial sleep phase transitioning still need testing.
 
 Avoid fundraising language that implies:
 
 - clinical validation
 - proven sleep-stage control
 - proven sleep-inertia reduction
+- validated vital-sign sensing
+- validated AI sleep agents
+- validated conversational coaching
+- autonomous sleep optimization
 - product-market fit
 - paid demand at scale
 
@@ -496,6 +606,8 @@ Avoid hooks like:
 - "We solved sleep inertia."
 - "Never oversleep again."
 - "We can control your sleep stages."
+- "Our AI fixes sleep."
+- "We built an autonomous sleep agent."
 
 ## Update rules
 
@@ -524,4 +636,6 @@ Orisen's strongest current evidence is presence-based wake completion: using pre
 
 Orisen can carefully say it is designed to make waking up more reliable and is being built toward less brutal mornings through gradual audio, light, and future sensor-informed intervention.
 
-Orisen should not yet strongly claim that it eliminates grogginess, reduces sleep inertia, accurately detects sleep stages, wakes users in the perfect sleep stage, performs validated artificial sleep phase transitioning, improves sleep quality, or has clinical proof.
+Orisen may describe a long-term platform direction around software-defined sleep interventions and possible future AI-assisted layers, but wake completion remains the first concrete intervention layer.
+
+Orisen should not yet strongly claim that it eliminates grogginess, reduces sleep inertia, accurately detects vital signs or sleep stages, wakes users in the perfect sleep stage, has validated voice coaching, has validated AI sleep agents, autonomously optimizes sleep, performs validated artificial sleep phase transitioning, improves sleep quality, replaces wearables or PSG, or has clinical proof.
