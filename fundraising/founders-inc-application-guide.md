@@ -276,25 +276,33 @@ Answer-review checklist:
     - Describing unclear or casual collaborators as core team members.
 
 - **Drop a 30-60 second intro video**
+  - Prompt details:
+    - "Don't overthink it."
+    - Tell them who you are, what you are building, and why you applied.
+    - Help them put a face to the name.
   - What this tests:
     - Founder energy.
     - Clarity.
     - Communication ability.
-    - Obsession.
     - Authenticity.
+    - Whether the founder feels like a real builder, not just a polished applicant.
   - Best answer type:
-    - Cover who the founder is.
-    - Explain what they are building.
-    - Explain why the problem matters.
-    - Mention what they have already built or learned.
-    - Explain why they are applying now.
-    - Say what they will ship during the program.
-  - Tone:
-    - Direct.
-    - Energetic.
-    - Natural.
-    - Not over-rehearsed.
-    - Not corporate.
+    - Speak directly to camera.
+    - Start with who you are.
+    - Say what you are building in plain language.
+    - Say why you applied to Founders, Inc specifically.
+    - Briefly show founder-market fit or builder intensity if it fits naturally.
+    - Keep it human and clear rather than scripted.
+  - Suggested structure:
+    - 5-10 seconds: who you are.
+    - 10-20 seconds: what you are building.
+    - 10-20 seconds: why the problem matters or why you are the right founder.
+    - 10-15 seconds: why Founders, Inc is the right environment now.
+  - Avoid:
+    - Trying to fit the entire pitch into the video.
+    - Reading a script word-for-word.
+    - Sounding like a corporate pitch deck.
+    - Overexplaining roadmap, market size, or technical details.
 
 - **Which category best fits what you’re building?**
   - What this tests:
@@ -306,18 +314,31 @@ Answer-review checklist:
     - Do not force trendy categories if they are not central to the product.
 
 - **What are you building right now?**
+  - Prompt details:
+    - One line.
+    - Be concrete.
+    - 80 characters.
   - What this tests:
     - Whether the founder is actively building.
     - Product clarity.
     - Current stage.
+    - Whether the founder can compress the product into a simple, concrete line.
   - Best answer type:
-    - One or two clear sentences.
+    - One short line under 80 characters.
     - Present tense.
-    - Include what exists now, not only the future vision.
-    - Mention the core product loop or user outcome.
+    - Concrete product, user, and outcome if possible.
+    - Emphasize what is being built now, not only the long-term vision.
+  - Strong answer pattern:
+    - "A [product] for [specific user] that [specific outcome]."
+  - Orisen-style examples:
+    - "A wall-mounted device that makes oversleepers actually get out of bed."
+    - "A non-contact alarm device for people who sleep through normal alarms."
+    - "A bedroom device that keeps ringing until oversleepers leave bed."
   - Avoid:
     - A giant vision statement.
     - Market-size framing.
+    - Buzzwords like "AI sleep platform" without a concrete behavior.
+    - Claims that imply unvalidated sleep-stage accuracy or proven grogginess reduction.
     - Saying only what the company will eventually become.
 
 - **Company name**
@@ -352,19 +373,35 @@ Answer-review checklist:
     - The link should make the project look alive and coherent.
 
 - **Product demo**
+  - Prompt details:
+    - Drop a Loom or YouTube link.
+    - A phone video is fine.
+    - It does not have to be polished.
+    - They want to see what progress has been made.
   - What this tests:
     - Whether there is something real.
     - Builder proof.
     - Ability to communicate product progress visually.
+    - Whether the founder can show working behavior instead of only describing the idea.
   - Best answer type:
     - Show the core product behavior.
     - Prefer real demo over polished mockup.
     - Show what works today.
-    - If unfinished, clearly label what is prototype versus planned.
+    - Use a simple Loom, YouTube, or phone-recorded demo.
+    - If unfinished, clearly label what is prototype, simulated, stubbed, or planned.
+  - For Orisen, the strongest demo should show:
+    - Alarm set or triggered.
+    - Device alarm behavior.
+    - Presence or wake-completion logic.
+    - Out-of-bed detection.
+    - Re-trigger behavior if the user returns to bed, if currently demo-able.
+    - App/cloud/device sync only if it works cleanly.
   - Avoid:
     - Only a pitch deck.
     - Only rendered product visuals.
     - A demo that hides the actual product loop.
+    - Overproducing the demo instead of showing real progress.
+    - Implying sleep-stage detection, grogginess reduction, or artificial sleep phase transitioning is already proven unless the demo actually supports it.
 
 - **What is the coolest technical thing you’ve built?**
   - What this tests:
