@@ -330,15 +330,11 @@ Answer-review checklist:
     - Emphasize what is being built now, not only the long-term vision.
   - Strong answer pattern:
     - "A [product] for [specific user] that [specific outcome]."
-  - Orisen-style examples:
-    - "A wall-mounted device that makes oversleepers actually get out of bed."
-    - "A non-contact alarm device for people who sleep through normal alarms."
-    - "A bedroom device that keeps ringing until oversleepers leave bed."
   - Avoid:
     - A giant vision statement.
     - Market-size framing.
-    - Buzzwords like "AI sleep platform" without a concrete behavior.
-    - Claims that imply unvalidated sleep-stage accuracy or proven grogginess reduction.
+    - Buzzwords without a concrete behavior.
+    - Claims that imply unvalidated capabilities are already proven.
     - Saying only what the company will eventually become.
 
 - **Company name**
@@ -389,19 +385,12 @@ Answer-review checklist:
     - Show what works today.
     - Use a simple Loom, YouTube, or phone-recorded demo.
     - If unfinished, clearly label what is prototype, simulated, stubbed, or planned.
-  - For Orisen, the strongest demo should show:
-    - Alarm set or triggered.
-    - Device alarm behavior.
-    - Presence or wake-completion logic.
-    - Out-of-bed detection.
-    - Re-trigger behavior if the user returns to bed, if currently demo-able.
-    - App/cloud/device sync only if it works cleanly.
   - Avoid:
     - Only a pitch deck.
     - Only rendered product visuals.
     - A demo that hides the actual product loop.
     - Overproducing the demo instead of showing real progress.
-    - Implying sleep-stage detection, grogginess reduction, or artificial sleep phase transitioning is already proven unless the demo actually supports it.
+    - Implying unvalidated capabilities are already proven unless the demo actually supports them.
 
 - **What is the coolest technical thing you’ve built?**
   - What this tests:
