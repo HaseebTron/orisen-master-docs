@@ -255,6 +255,12 @@ This file should stay consistent with:
   - Some future interventions may require new hardware, different sensors, different placement, stronger algorithms, external integrations, or new validation.
   - AI-agent, voice, vital-sign, sleep-stage, and autonomous-intervention claims must follow [`product/claims-and-evidence.md`](claims-and-evidence.md).
 
+- **Architecture language boundary**:
+  - Long-term phrases such as "physical layer," "bedroom interface," "hardware foundation," "software-defined sleep interventions," and "future AI-assisted sleep agents" are acceptable as architecture or investor-vision framing.
+  - These phrases should mean that Orisen is being built toward a permissioned bedroom device that can support multiple intervention layers over time, starting with wake completion.
+  - They do not mean Orisen currently has validated AI sleep agents, validated vital-sign sensing, validated sleep-stage sensing, autonomous sleep optimization, or all hardware needed to solve every sleep problem.
+  - They also do not mean every sleep problem becomes software-only.
+
 ## Long-term product direction
 
 - **Long-term direction**:

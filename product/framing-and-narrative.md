@@ -41,6 +41,39 @@ Wake completion is the first software-defined sleep intervention. Future interve
 
 Do not imply Orisen currently controls sleep stages, fixes sleep, solves all sleep problems, eliminates grogginess or sleep inertia, or turns every sleep problem into a software-only problem.
 
+## Long-term narrative primitives and investor vision language
+
+Use this section as strategic narrative input for fundraising and category framing. It preserves the long-term vision language without turning it into current validated capability language.
+
+Core category shift:
+
+- Sleep tech should move from passive tracking to active intervention.
+- Sleep should be guided, not just tracked.
+- The bedroom becomes the interface.
+- Sleep software needs a physical interface.
+- Apps can recommend, but hardware can intervene.
+- The hardware foundation creates the permissioned bedroom interface; software defines intervention behavior.
+- One hardware foundation can support multiple software-defined sleep interventions over time.
+
+Investor-facing architecture primitives:
+
+- Orisen is building toward a platform-capable bedroom device, not just a smarter alarm.
+- Orisen can be framed as a hardware foundation, physical layer, or bedroom interface for future sleep software when clearly described as long-term architecture.
+- Wake completion is the first software-defined intervention layer.
+- Future layers may include sensor-informed wake intervention, sleep onset support, bedtime routines, voice interaction, and AI-assisted sleep interventions after validation.
+
+Investor-facing AI primitives:
+
+- Future AI-assisted sleep agents may need a body, voice, and physical interface in the bedroom.
+- Orisen may eventually let sleep software or AI agents sense context and act through light, sound, timing, voice, and wake-completion behavior.
+- Phrases like "hardware layer for AI sleep agents," "body and voice for AI sleep agents," "physical AI system," "sleep OS," or "bedroom OS" are vision metaphors unless validated product evidence exists.
+
+Claim boundary:
+
+- These primitives should not weaken the current wake-completion wedge.
+- They should not imply validated AI sleep agents, validated vital-sign sensing, validated sleep-stage sensing, autonomous sleep optimization, clinical proof, or broad sleep improvement.
+- Use them to lead with the end vision, then land on the narrow painful wedge: wake completion.
+
 ## Pitch deck narrative
 
 - A pitch deck is a sequence of beliefs you install in the investor’s mind.
