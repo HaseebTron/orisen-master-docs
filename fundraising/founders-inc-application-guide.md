@@ -2,7 +2,7 @@
 
 Status: Working strategy
 Authority level: Fundraising / Application strategy
-Last reviewed: 2026-06-01
+Last reviewed: 2026-06-03
 Governing docs:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -49,6 +49,15 @@ The main application question is:
 > Is this person an unusually intense builder with a real point of view, enough technical ability to ship, founder-market fit, and the ability to create visible momentum during the program?
 
 The application should feel like a high-signal founder profile, not a corporate pitch.
+
+## Adjacent sleep/neurotech context
+
+- Neurex is a relevant adjacent sleep/neurotech company to remember when drafting Orisen's Founders, Inc application.
+- Based on public-facing materials reviewed in June 2026, Neurex appears to be building a wearable headband for sleep enhancement.
+- Their public messaging emphasizes EEG-based sleep tracking, closed-loop auditory stimulation, and increasing deep sleep.
+- Their public site describes a pre-order product with a listed $399 price and Q3 2026 estimated shipping.
+- Treat this as external context only. It should not be used in this guide to define Orisen's positioning, strategy, claims, or application answers.
+- For future application drafting, this context mainly matters because Founders, Inc may already be familiar with sleep/neurotech or may compare Orisen against adjacent sleep-intervention efforts.
 
 ## Summary of what they are looking for
 
