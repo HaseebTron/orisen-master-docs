@@ -222,7 +222,7 @@ When this file is read for a meaningful Orisen task, follow this order before an
 15. If the task is a broad repo audit, repo logic review, AI/context system review, or asks how the repo works as a system, read `ai-context/repo-governance/repo-operating-model.md`.
 16. If the task judges validation, claims, marketing, fundraising, scientific/technical support, or evidence strength, read `ai-context/claim-control/claim-control-system.md`.
 17. Follow `context-map.md` to the correct minimal or full baseline pack and any task-specific docs.
-18. Provide the context loaded summary.
+18. Provide the context loaded summary exactly as required by the `## Context loaded summary` section.
 19. Answer the user's main question using the relevant docs.
 
 ## Small-task exception after boot
@@ -282,20 +282,46 @@ Do not use handoff rules to avoid simple follow-up questions.
 
 After completing boot and before answering the user's main request, briefly state which files were actually read from GitHub in this chat.
 
+This is mandatory whenever this file is read for a meaningful Orisen task.
+
+Use a visible `## Context loaded` block.
+
+The summary must list:
+
+- `ai-context/start-here.md`
+- every GitHub Markdown file actually read before answering
+- baseline files separately from task-specific files
+- files attempted but not found, if any
+
+Use `None` where a category does not apply.
+
+Do not replace the file list with vague language such as "I loaded the relevant docs" or "the boot file confirms." The assistant must list the actual file paths it read.
+
+Replace the example lines with actual paths; include `- None` only when that category has no applicable files.
+
 Use this format:
 
 ```markdown
 ## Context loaded
 
 Baseline files read:
-- `path/to/file.md`
+- `ai-context/start-here.md`
+- `path/to/baseline-file.md`
 
 Task-specific files read:
-- `path/to/file.md`
-- None
+- `path/to/task-specific-file.md`
 
 Files not found:
 - `path/to/missing-file.md`
+```
+
+When a category has no applicable files, use `- None` instead of path bullets:
+
+```markdown
+Task-specific files read:
+- None
+
+Files not found:
 - None
 ```
 
