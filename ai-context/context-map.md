@@ -67,7 +67,13 @@ For any important Orisen decision, always include:
 - `ai-context/source-of-truth-rules.md`
 - `ai-context/ai-operating-mode.md`
 
-These define current company truth, how to handle conflicts, and how ChatGPT should reason from the docs.
+These define the current operating snapshot, how to handle conflicts, and how ChatGPT should reason from the docs.
+
+For product-direction, product-scope, product-architecture, customer-promise, first customer-ready product, or long-term product-truth decisions, also include:
+
+- `product/product-overview.md`
+
+Do not rely on `ai-context/current-state.md` alone for durable product truth.
 
 For source-of-truth doc creation or revision, also include:
 
@@ -109,6 +115,7 @@ Minimal baseline:
 - `ai-context/ai-operating-mode.md`
 - `ai-context/project-routing.md`
 - `ai-context/context-map.md`
+- `product/product-overview.md`
 
 Full reference pack:
 
@@ -352,6 +359,9 @@ Use for questions about what Orisen is, what it should build, what the customer 
 Start with:
 
 - `product/product-read-rules.md` if it exists
+- `product/product-overview.md`
+
+For durable product direction, product architecture, customer promise, first customer-ready product definition, or long-term product truth, `product/product-overview.md` is the primary product authority. Use `ai-context/current-state.md` as the current operating snapshot and status overlay, not as a replacement for the product overview.
 
 Important product docs may include:
 
@@ -528,15 +538,16 @@ When using this repo as context after project/chat/refresh/handoff routing:
 4. Read only the additional task-specific docs needed.
 5. Use the full reference pack only when the task requires broad context.
 6. Read `ai-context/current-state.md`, `ai-context/source-of-truth-rules.md`, and `ai-context/ai-operating-mode.md` for any important decision if they were not already included.
-7. Read `ai-context/doc-creation-rules.md` for source-of-truth doc creation, editing, review, or promotion.
-8. Read `ai-context/repo-governance/repo-editing-rules.md` for direct GitHub file edits or repo-edit planning.
-9. Read `ai-context/repo-governance/local-repo-codex-workflow.md` for broad, risky, reference-heavy, or diff-review-needed repo work.
-10. Read `ai-context/repo-governance/repo-operating-model.md` for broad repo audits, repo logic reviews, AI/context system reviews, or explaining how the repo works.
-11. Read the repo-governance docs for repo structure, cleanup, file organization, or read-rules work.
-12. Read `ai-context/claim-control/claim-control-system.md` for validation, claims, evidence strength, marketing, fundraising, or technical support questions.
-13. If docs conflict, apply `ai-context/source-of-truth-rules.md`.
-14. If a needed doc does not exist, say so and recommend creating it only if needed.
-15. Do not assume old notes or brainstorms are current truth unless promoted into source-of-truth docs.
+7. Read `product/product-overview.md` for product-direction, product-scope, product-architecture, customer-promise, first customer-ready product, or long-term product-truth decisions if it was not already included.
+8. Read `ai-context/doc-creation-rules.md` for source-of-truth doc creation, editing, review, or promotion.
+9. Read `ai-context/repo-governance/repo-editing-rules.md` for direct GitHub file edits or repo-edit planning.
+10. Read `ai-context/repo-governance/local-repo-codex-workflow.md` for broad, risky, reference-heavy, or diff-review-needed repo work.
+11. Read `ai-context/repo-governance/repo-operating-model.md` for broad repo audits, repo logic reviews, AI/context system reviews, or explaining how the repo works.
+12. Read the repo-governance docs for repo structure, cleanup, file organization, or read-rules work.
+13. Read `ai-context/claim-control/claim-control-system.md` for validation, claims, evidence strength, marketing, fundraising, or technical support questions.
+14. If docs conflict, apply `ai-context/source-of-truth-rules.md`.
+15. If a needed doc does not exist, say so and recommend creating it only if needed.
+16. Do not assume old notes or brainstorms are current truth unless promoted into source-of-truth docs.
 
 ## Current repo buildout status
 

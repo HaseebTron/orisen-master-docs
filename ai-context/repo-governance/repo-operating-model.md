@@ -76,8 +76,8 @@ The repo prevents confusion by treating some docs as higher-authority than other
 
 Default authority flow:
 
-1. company and AI-context docs
-2. product and validation docs
+1. company and AI-context operating/governance docs for source-of-truth mechanics, AI behavior, context routing, repo governance, and current operating status
+2. product and validation docs for durable product truth, product promise, roadmap, target customer, claims, and evidence
 3. domain strategy docs
 4. implementation docs
 5. marketing, fundraising, draft, and execution assets
@@ -112,7 +112,8 @@ The user's request is an input, not the sole authority.
 
 Good derivation flows downward:
 
-- company truth informs product truth
+- company/source-of-truth rules govern product truth
+- current operating status informs snapshot alignment and product decisions, but does not redefine durable product truth by itself
 - product truth informs marketing and fundraising language
 - validation evidence informs claims
 - implementation docs inform build reality but do not shrink the whole company vision unless deliberately promoted upward

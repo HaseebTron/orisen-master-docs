@@ -77,7 +77,7 @@ Conventions:
   - `project-routing.md`: Explains which Orisen ChatGPT project should handle different kinds of work.
   - `handoff-rules.md`: Defines when to continue, refresh, move projects, or start a new chat.
   - `context-map.md`: Top-level document-routing map for choosing minimal and full context packs.
-  - `current-state.md`: Highest-level current company and product truth.
+  - `current-state.md`: Current operating snapshot, build/evidence status, active priorities, and constraints.
   - `current-work.md`: Current work and active workstream notes.
   - `source-of-truth-rules.md`: Defines authority hierarchy and how to handle doc conflicts.
   - `ai-operating-mode.md`: Defines how GPT should reason when using Orisen docs.
@@ -100,7 +100,7 @@ Conventions:
 
 - **`product/`**: Defines product truth, product scope, customer promise, roadmap, target customer, and claims/evidence from a product perspective.
   - `product-read-rules.md`: Product-specific reading/routing rules.
-  - `product-overview.md`: Product direction and product-level truth.
+  - `product-overview.md`: Highest product-specific authority for durable product direction and product-level truth.
   - `framing-and-narrative.md`: Product-level strategic narrative, category frame, and belief shift.
   - `claims-and-evidence.md`: Product claims and evidence boundaries.
   - `target-customer.md`: First target customer and customer focus.

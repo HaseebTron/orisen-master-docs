@@ -29,7 +29,7 @@ This file explains structure philosophy. It should not be treated as the constan
 
 The repo should be organized by authority, task, and domain.
 
-The highest-level docs should define company truth and AI operating rules. Domain folders should translate that truth into product, marketing, fundraising, software, radar/ML, hardware, or business-specific context.
+The highest-level `ai-context/` docs should define source-of-truth mechanics, AI operating rules, context routing, repo governance, and current operating status. Domain folders should define durable domain-specific truth within those rules.
 
 Downstream docs should not redefine upstream truth. They should inherit from it.
 
@@ -95,9 +95,9 @@ When a topic affects multiple domains or company direction, handle the decision 
 
 Use this default authority flow:
 
-1. `ai-context/current-state.md`
-2. Other `ai-context/` operating and governance docs
-3. Product and validation docs
+1. `ai-context/` operating and governance docs for source-of-truth mechanics, AI behavior, context routing, repo governance, and claim-control rules
+2. `ai-context/current-state.md` for current operating status, current build/evidence snapshot, active priorities, and constraints
+3. Product and validation docs for durable product truth, roadmap, target customer, claims, and evidence
 4. Domain strategy docs
 5. Implementation docs
 6. Marketing, fundraising, draft, and execution docs

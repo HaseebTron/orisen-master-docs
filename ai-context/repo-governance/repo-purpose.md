@@ -111,7 +111,7 @@ The repo should have a stable top layer and flexible downstream layers.
 
 Stable top-layer docs define:
 
-- what Orisen is
+- where current operating status and durable product truth live
 - how source-of-truth works
 - how GPT should reason
 - how repo changes should happen
@@ -130,8 +130,8 @@ Lower-level docs should inherit from higher-level docs. They should not redefine
 
 Default authority flow:
 
-1. Company and AI-context docs
-2. Product and validation docs
+1. Company and AI-context operating/governance docs for source-of-truth mechanics, AI behavior, context routing, repo governance, and current operating status
+2. Product and validation docs for durable product truth, product promise, roadmap, target customer, claims, and evidence
 3. Domain strategy docs
 4. Implementation docs
 5. Marketing, fundraising, draft, or execution assets

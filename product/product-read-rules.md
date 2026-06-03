@@ -22,12 +22,16 @@ This read-rules file should define task-based reading paths, not duplicate folde
 
 For important product work, start with:
 
-- `ai-context/current-state.md`
-- `ai-context/source-of-truth-rules.md`
 - `product/product-overview.md`
+- `ai-context/source-of-truth-rules.md`
+- `ai-context/current-state.md`
 - `product/framing-and-narrative.md`
 
-These define the current company state, interpretation rules, and core product definition.
+These define durable product truth, interpretation rules, the current operating snapshot, and product-level narrative.
+
+For durable product identity, product direction, product architecture, customer promise, first customer-ready product definition, product principles, or long-term product truth, treat `product/product-overview.md` as the primary product authority.
+
+Use `ai-context/current-state.md` for current build status, evidence snapshot, active priorities, and constraints.
 
 ## Product folder role
 
@@ -91,12 +95,15 @@ Use for questions like:
 Read:
 
 - `product/product-overview.md`
+- `product/roadmap.md`
 - `product/mvp-scope.md` if it exists
 - `software/` implementation docs if the question depends on build status
 
 Important rule:
 
 The engineering MVP does not define the whole product vision. The first customer-ready product should go beyond the MVP where needed to deliver a credible customer promise.
+
+Use `ai-context/current-state.md` to check current operating status, not to shrink the first customer-ready product definition.
 
 ### Target customer and beachhead
 
@@ -110,8 +117,8 @@ Use for questions like:
 Read:
 
 - `product/target-customer.md`
-- `ai-context/current-state.md`
 - `product/product-overview.md`
+- `ai-context/current-state.md`
 - `marketing/customer-language.md` if it exists
 
 ### Claims, evidence, and validation
@@ -151,6 +158,7 @@ Read:
 
 - `product/roadmap.md`
 - `product/product-overview.md`
+- `ai-context/current-state.md`
 - `product/mvp-scope.md` if it exists
 - `software/software-read-rules.md` if implementation reality matters
 - `hardware/hardware-read-rules.md` if it exists and hardware constraints matter
@@ -175,7 +183,9 @@ If a referenced doc does not exist yet, use the available upstream docs and reco
 
 ## Product interpretation rules
 
-- Product docs are downstream from `ai-context/current-state.md`.
+- `product/product-overview.md` is the highest product-specific authority for durable product truth.
+- `ai-context/current-state.md` is the current operating snapshot and status overlay, not the highest product doctrine file.
+- Product docs remain governed by source-of-truth and AI operating rules.
 - Product docs are upstream of marketing, fundraising, and business docs.
 - `product/framing-and-narrative.md` defines product-level strategic narrative and belief shift for downstream marketing and fundraising use.
 - Product docs should not overclaim what has been validated.
@@ -183,6 +193,7 @@ If a referenced doc does not exist yet, use the available upstream docs and reco
 - Long-term vision should not be confused with what exists today.
 - If product docs conflict with software docs, software docs usually define implementation reality, while product docs define desired product direction.
 - If product docs conflict with claims/evidence docs, evidence wins for public claims.
+- If `ai-context/current-state.md` appears to conflict with `product/product-overview.md` on durable product identity, product direction, product architecture, or long-term product truth, treat `product/product-overview.md` as the product authority and update the operating snapshot as needed.
 
 ## Default product framing
 

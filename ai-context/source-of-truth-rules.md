@@ -16,22 +16,31 @@ Instead, identify which document is most authoritative for the specific question
 
 ## Authority hierarchy
 
-When there is a conflict, use this hierarchy by default:
+Authority is scoped to the question being asked.
 
-1. `ai-context/current-state.md`
+When there is a conflict, first identify the topic: source-of-truth mechanics, current operating status, durable product truth, roadmap sequencing, claims, target customer, implementation reality, or external messaging.
 
-   - Highest-level current truth for company, product, customer, positioning, validation, and priorities.
-   - Use this as the primary reference for what Orisen is currently building and how it should be described.
+Then use this hierarchy by default:
 
-2. Other files inside `ai-context/`
+1. `ai-context/source-of-truth-rules.md` and other `ai-context/` operating and governance docs
 
-   - Use these as high-level operating rules and strategic context.
-   - These files should define how the company thinks, makes decisions, and interprets other docs.
+   - Use these for source-of-truth mechanics, AI operating behavior, context routing, repo governance, claim-control rules, and how to interpret conflicts.
+   - These docs define how the repo reasons. They do not automatically override domain docs on every domain-specific content question.
 
-3. Product strategy docs
+2. `ai-context/current-state.md`
 
-   - Use these for product direction, customer promise, roadmap boundaries, and prioritization.
-   - These must stay consistent with `ai-context/current-state.md`.
+   - Current operating snapshot and status layer.
+   - Use this for current build status, current evidence snapshot, active priorities, operating constraints, and current source-of-truth alignment checks.
+   - Do not use this file as the highest durable product-direction authority.
+   - Do not use current implementation status in this file to shrink product direction, first customer-ready product scope, customer promise, or long-term product truth.
+
+3. Product source-of-truth docs
+
+   - Use these for durable product identity, product direction, customer promise, product architecture, roadmap boundaries, target customer, and product-level claims.
+   - `product/product-overview.md` is the highest product-specific authority for durable product truth.
+   - `product/roadmap.md` governs sequencing and scope.
+   - `product/target-customer.md` governs first-customer and beachhead decisions.
+   - `product/claims-and-evidence.md` governs validation status and product/public claim boundaries.
 
 4. Validation and evidence docs
 
@@ -46,7 +55,7 @@ When there is a conflict, use this hierarchy by default:
 6. Marketing, fundraising, and pitch docs
 
    - Use these for communication, narrative, and external framing.
-   - These must not claim more than the current-state and validation docs support.
+   - These must not claim more than product truth, current evidence, and claim-control docs support.
 
 7. Old notes, brainstorms, chat exports, and rough drafts
 
@@ -59,14 +68,37 @@ The global hierarchy above is the default rule. Use the following tiebreakers wh
 
 ### Product scope
 
-For product scope questions, use this authority order:
+For product scope questions, authority is subtopic-based, not one simple linear ranking.
 
-1. `ai-context/current-state.md`
-2. `product/product-overview.md`
-3. `product/roadmap.md`
-4. `product/target-customer.md`, when the question is specifically about the first customer or beachhead segment
-5. `product/claims-and-evidence.md`, when the question is specifically about claim strength, validation, or what can be said publicly
-6. Software or MVP implementation docs, only for what is currently built or being built
+- `product/product-overview.md`
+
+   - Governs durable product identity, product direction, product architecture, first customer-ready product definition, customer promise, product principles, and long-term product truth.
+   - This is the highest product-specific authority for durable product truth.
+
+- `ai-context/current-state.md`
+
+   - Governs current operating status, current build status, current evidence snapshot, active priorities, and constraints.
+   - Use this file to understand what is true right now operationally.
+   - Do not use it to replace or narrow durable product direction unless `product/product-overview.md` is deliberately updated too.
+
+- `product/roadmap.md`
+
+   - Governs sequencing, scope, phase boundaries, what belongs in engineering MVP, first customer-ready product, pilot, launch, later roadmap, and long-term direction.
+
+- `product/claims-and-evidence.md`
+
+   - Governs validation status, product claim boundaries, public wording, and what stronger claims still need evidence to support.
+   - It controls what can be claimed about customers, but it does not replace `product/target-customer.md` for customer or beachhead decisions.
+
+- `product/target-customer.md`
+
+   - Governs customer, first-customer, ICP, beachhead, customer-focus, and segment-priority decisions.
+   - It remains the product authority for customer and beachhead questions, while claims about customer evidence still follow `product/claims-and-evidence.md`.
+
+- Software or MVP implementation docs
+
+   - Use only for what is currently built, being built, technically constrained, or observed in implementation.
+   - Implementation reality can create constraints or evidence. It does not define durable product direction by itself.
 
 `software/p1-overview.md` and `software/p2-mvp-scope.md` are synced implementation docs. They describe what was being built at a point in time.
 
@@ -82,7 +114,11 @@ This product-scope tiebreaker is the pattern to follow for other domains as the 
 
 Current truth means a decision that should guide company, product, and messaging work today.
 
-Current truth should be written in clear source-of-truth files, especially inside `ai-context/`.
+Current truth should be written in clear source-of-truth files.
+
+For operating status, that belongs especially in `ai-context/current-state.md`.
+
+For durable product truth, that belongs especially in `product/product-overview.md` and the relevant product source-of-truth docs.
 
 A claim should only be treated as current truth if it is clearly stated in an authoritative doc and does not conflict with a newer or higher-level source.
 
@@ -183,7 +219,8 @@ Product docs should define the customer problem, product promise, user experienc
 
 They should stay consistent with:
 
-- `ai-context/current-state.md`
+- source-of-truth and AI operating rules
+- the current operating snapshot in `ai-context/current-state.md`
 - validation evidence
 - engineering feasibility
 - current company priorities
