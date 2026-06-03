@@ -2,7 +2,7 @@
 
 Status: Source of truth
 Authority level: Company / AI context / Boot routing
-Last reviewed: 2026-05-22
+Last reviewed: 2026-06-02
 Governing docs:
 - `ai-context/current-state.md`
 - `ai-context/source-of-truth-rules.md`
@@ -26,6 +26,22 @@ Use `HaseebTron/orisen-master-docs` on GitHub as the source of truth.
 Do not assume ChatGPT Project source files are present or current.
 
 At the start of a meaningful new Orisen chat, read the relevant docs from GitHub before answering.
+
+## Mandatory context-loaded hard gate
+
+After reading GitHub Markdown files for any meaningful Orisen task, and before answering the user's main request, the assistant must output a visible `## Context loaded` block.
+
+Do not answer the user's main request until this block has been printed.
+
+This block must list:
+
+- baseline files actually read
+- task-specific files actually read
+- files attempted but not found
+
+Use exact repo paths. Do not replace this with vague wording like "I loaded the relevant docs."
+
+If the assistant says "Boot complete" but does not include `## Context loaded`, the boot is incomplete.
 
 ## GitHub failure fallback
 
@@ -222,7 +238,7 @@ When this file is read for a meaningful Orisen task, follow this order before an
 15. If the task is a broad repo audit, repo logic review, AI/context system review, or asks how the repo works as a system, read `ai-context/repo-governance/repo-operating-model.md`.
 16. If the task judges validation, claims, marketing, fundraising, scientific/technical support, or evidence strength, read `ai-context/claim-control/claim-control-system.md`.
 17. Follow `context-map.md` to the correct minimal or full baseline pack and any task-specific docs.
-18. Provide the context loaded summary exactly as required by the `## Context loaded summary` section.
+18. Output the visible `## Context loaded` block before answering the user's main request. This is a hard gate. Do not continue to the answer until the exact files read are listed.
 19. Answer the user's main question using the relevant docs.
 
 ## Small-task exception after boot
@@ -280,9 +296,15 @@ Do not use handoff rules to avoid simple follow-up questions.
 
 ## Context loaded summary
 
-After completing boot and before answering the user's main request, briefly state which files were actually read from GitHub in this chat.
+Hard gate: after completing boot and before answering the user's main request, the assistant must output the `## Context loaded` block below.
 
 This is mandatory whenever this file is read for a meaningful Orisen task.
+
+The assistant must not answer the user's main request until this block has been printed.
+
+Saying only "Boot complete" is not enough.
+
+If the assistant read files but forgot this block, it must acknowledge the omission and provide the block before continuing.
 
 Use a visible `## Context loaded` block.
 
