@@ -50,13 +50,11 @@ When copied software snapshot docs conflict with the live software repo, the liv
 
 ## Default software repo entry docs
 
-For most Orisen Software implementation work, read these files from `HaseebTron/Orisen` when available:
+For current Orisen Software implementation work, read this file from `HaseebTron/Orisen` first when available:
 
-- `docs/slices.md`
-- `docs/decisions.md`
-- `docs/ai-coding-rules.md`
-- active slice spec doc
-- relevant architecture/spec docs
+- `docs/start-here.md`
+
+Then follow `docs/start-here.md` and read the required governing docs for the task.
 
 For code or debugging work, also read the specific code files, logs, or config files involved in the task.
 
@@ -72,7 +70,7 @@ For software work that may affect product behavior, reliability, claims, or road
 - `product/claims-and-evidence.md`
 - `product/roadmap.md`
 
-For implementation-only work, use the relevant Orisen Software repo docs and active slice docs.
+For implementation-only work, use `HaseebTron/Orisen/docs/start-here.md` and the relevant implementation repo docs and active slice docs it routes to.
 
 ## Software folder role
 
@@ -116,11 +114,8 @@ Use for:
 
 Read from `HaseebTron/Orisen` when available:
 
-- `docs/slices.md`
-- `docs/decisions.md`
-- `docs/ai-coding-rules.md`
-- active slice spec doc
-- relevant architecture/spec docs
+- `docs/start-here.md`
+- active slice spec doc and relevant architecture/spec docs routed by `docs/start-here.md`
 
 Also read from this repo if product scope or roadmap matters:
 
@@ -143,12 +138,10 @@ Use for:
 
 Read from `HaseebTron/Orisen` when available:
 
+- `docs/start-here.md`
 - `orisen-firmware/src/main.cpp`
 - `orisen-firmware/platformio.ini`
-- `docs/slices.md`
-- active slice spec doc
-- `docs/decisions.md`
-- `docs/ai-coding-rules.md`
+- active slice spec doc and relevant firmware docs routed by `docs/start-here.md`
 
 ### App
 
@@ -165,12 +158,11 @@ Use for:
 
 Read from `HaseebTron/Orisen` when available:
 
+- `docs/start-here.md`
 - `orisen-app/App.tsx`
 - app Supabase client/config files
 - app `.env.example`
-- active slice spec doc
-- `docs/slices.md`
-- `docs/decisions.md`
+- active slice spec doc and relevant app docs routed by `docs/start-here.md`
 
 ### Backend and cloud
 
@@ -187,11 +179,10 @@ Use for:
 
 Read from `HaseebTron/Orisen` when available:
 
+- `docs/start-here.md`
 - Supabase schema docs or migrations if they exist
 - Edge Function code if it exists
-- active slice spec doc
-- `docs/decisions.md`
-- `docs/slices.md`
+- active slice spec doc and relevant backend/cloud docs routed by `docs/start-here.md`
 
 ### BLE onboarding
 
@@ -206,11 +197,10 @@ Use for:
 
 Read from `HaseebTron/Orisen` when available:
 
+- `docs/start-here.md`
 - `docs/slice-6-ble-setup-and-onboarding-spec.md`
 - active BLE-related firmware/app files
-- `docs/slices.md`
-- `docs/decisions.md`
-- `docs/ai-coding-rules.md`
+- other BLE docs routed by `docs/start-here.md`
 
 ### OTA
 
@@ -225,10 +215,11 @@ Use for:
 
 Read from `HaseebTron/Orisen` when available:
 
+- `docs/start-here.md`
 - `docs/slice-4-ota-updates-spec.md`
 - `docs/post-mvp-production-hardening.md`
 - OTA-related firmware code
-- `docs/decisions.md`
+- other OTA docs routed by `docs/start-here.md`
 
 ### Debugging and log review
 
@@ -241,7 +232,10 @@ Use for:
 - Testing steps
 - Deciding whether to commit/push
 
-Read only the docs/files needed for the bug or check.
+Read from `HaseebTron/Orisen` when available:
+
+- `docs/start-here.md`
+- only the docs/files needed for the bug or check after following its routing
 
 Do not rerun broad product context unless the bug affects product behavior, reliability promise, or architecture.
 
