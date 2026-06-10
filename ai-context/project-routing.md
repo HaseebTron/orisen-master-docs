@@ -117,7 +117,11 @@ Ask in Orisen Software when the question sounds like:
 
 Do not use Orisen Software to decide the company promise, marketing claims, or first customer-ready product vision.
 
-Cross-repo software/source-of-truth boundary questions must follow `ai-context/repo-governance/cross-repo-boundaries.md` before deciding whether to use `orisen-master-docs`, `HaseebTron/Orisen`, or both.
+Cross-repo software/source-of-truth boundary questions must follow the applicable repo-boundary rules.
+
+In the dedicated Orisen Software project, start with `HaseebTron/Orisen/docs/repo-boundaries.md`.
+
+Escalate to `ai-context/repo-governance/cross-repo-boundaries.md` only when the local boundary file says the task may belong in or require `orisen-master-docs`.
 
 Escalate to Orisen General if a software decision changes product scope, reliability promise, user promise, roadmap priority, or public claims.
 

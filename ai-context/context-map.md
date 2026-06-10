@@ -147,24 +147,17 @@ Full reference pack:
 
 Use for firmware, app, cloud, Supabase, OTA, BLE onboarding, implementation slices, software architecture, and software debugging.
 
-Minimal baseline from this repo:
+Dedicated Orisen Software GPT boot file:
 
-- `ai-context/current-state.md`
-- `ai-context/source-of-truth-rules.md`
-- `ai-context/ai-operating-mode.md`
-- `software/software-read-rules.md`
+- `HaseebTron/Orisen/docs/start-here.md`
 
-Full reference pack from this repo:
+For normal implementation work in the dedicated Orisen Software project, follow the implementation repo routing from `HaseebTron/Orisen/docs/start-here.md`.
 
-- `ai-context/current-state.md`
-- `ai-context/source-of-truth-rules.md`
-- `ai-context/ai-operating-mode.md`
-- `product/product-overview.md`
-- `product/claims-and-evidence.md`
-- `product/roadmap.md`
-- `software/software-read-rules.md`
+Do not load the master-docs Software minimal baseline by default in the dedicated Orisen Software project.
 
-Then read relevant docs from the active software repo if needed, especially active slice docs, architecture docs, decisions, and coding rules.
+Use master-docs context only when the implementation task affects company/product source of truth, product claims, roadmap, validation interpretation, research interpretation, public reliability promises, or cross-repo governance.
+
+When master-docs context is needed, choose the narrowest relevant docs from this context map.
 
 Software docs describe implementation reality. They should not shrink the full product or company vision.
 
