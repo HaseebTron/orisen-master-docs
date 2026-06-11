@@ -2,7 +2,7 @@
 
 Status: Source of truth
 Authority level: Company / AI context / Repo governance
-Last reviewed: 2026-06-01
+Last reviewed: 2026-06-10
 Governing docs:
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/repo-governance/repo-structure.md`
@@ -199,6 +199,10 @@ Conventions:
 
 - **`radar-ml/`**: Defines radar module decisions, vital-sign extraction, sleep-stage modeling, intervention-loop research, datasets, technical validation, and research interpretation.
   - `radar-ml-read-rules.md`: Radar/ML-specific reading/routing rules.
+  - **`v-ld3/`**: RFbeam V-LD3 technical research context.
+    - `README.md`: Tiny index for V-LD3 radar context docs.
+    - `vital-signs-demo-on-v-ld3.md`: V-LD3 compatibility notes for TI IWRL6432 Vital Signs testing.
+    - `ti-vital-signs-output-and-waveform-access.md`: Stock TI output limits and waveform export path for HRV/RRV work.
   - Potential future files:
     - `radar-module-decision.md`: Radar module selection and tradeoff decisions.
     - `vital-signs-pipeline.md`: Vital-sign, RRV, HRV, and movement extraction strategy.
