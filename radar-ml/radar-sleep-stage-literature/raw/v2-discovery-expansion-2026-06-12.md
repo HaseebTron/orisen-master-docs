@@ -1,3 +1,23 @@
+# Radar Sleep-Stage Literature — v2 Discovery Expansion
+
+Status: Raw working research artifact
+Authority level: Radar/ML raw research archive
+Date captured: 2026-06-12
+Source tools:
+- Elicit
+
+Governing docs:
+- `ai-context/source-of-truth-rules.md`
+- `ai-context/ai-operating-mode.md`
+- `ai-context/claim-control/claim-control-system.md`
+- `radar-ml/radar-ml-read-rules.md`
+- `radar-ml/radar-sleep-stage-literature/literature-review-workflow.md`
+
+## Raw artifact note
+
+This file preserves external-tool discovery outputs for radar-based sleep-stage, sleep-state, and sleep/wake classification literature.
+
+It is not a synthesis file and not an Orisen product-claim file. Tool outputs are inputs, not authorities. Candidate details must be verified against primary or near-primary sources before extraction or synthesis.
 
 ## Elicit prompt used
 
