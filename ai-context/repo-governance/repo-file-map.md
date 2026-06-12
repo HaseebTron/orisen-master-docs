@@ -204,6 +204,7 @@ Conventions:
     - `vital-signs-demo-on-v-ld3.md`: V-LD3 compatibility notes for TI IWRL6432 Vital Signs testing.
     - `ti-vital-signs-output-and-waveform-access.md`: Stock TI output limits and waveform export path for HRV/RRV work.
   - **`radar-sleep-stage-literature/`**: Raw and reviewed literature artifacts for radar-based sleep-stage, sleep-state, and sleep/wake classification research.
+    - `literature-review-workflow.md`: Workflow, scope, current state, next steps, and handoff instructions for the radar sleep-stage literature review.
     - **`raw/`**: Raw radar sleep-stage literature discovery and screening artifacts.
       - `discovery-pass-2026-06-12.md`: Raw high-recall radar sleep-stage literature discovery output.
       - `screening-pass-1-2026-06-12.md`: Raw working screening, deduplication, categorization, and priority pass.
