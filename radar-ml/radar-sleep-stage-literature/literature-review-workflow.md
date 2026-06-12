@@ -206,8 +206,9 @@ Current completed work:
 Current handoff state:
 
 - The next chat should not start a broad synthesis.
-- The next chat should first read the archived raw files.
+- The next chat should read this workflow file first, then load only the raw artifacts needed for the immediate task.
 - The next chat should classify papers as ready vs pending before starting Extraction Pass 2.
+- The next chat should stop after readiness classification unless the user explicitly asks it to proceed into Extraction Pass 2.
 - The next chat should preserve the raw files and write any new pass as a new file unless the user explicitly requests patching an existing raw artifact.
 
 ## Classification scheme
@@ -243,6 +244,15 @@ Do not run deeper extraction on a paper whose identity, primary source, radar in
 
 The likely immediate next step is `Extraction Pass 2`, but only after reading the archived files and classifying papers as ready vs pending.
 
+The immediate next-chat task should be:
+
+1. Read this workflow file.
+2. Read `extraction-pass-1-2026-06-12.md` and `primary-source-chase-pass-1-2026-06-12.md`.
+3. Read `screening-pass-1-2026-06-12.md` only if needed to confirm the original P0 list.
+4. Read `discovery-pass-2026-06-12.md` only as needed for traceability or citation backtracking.
+5. Classify the 12 P0 papers as ready vs pending for Extraction Pass 2.
+6. Stop and wait for user approval before running Extraction Pass 2.
+
 Extraction Pass 2 should extract:
 
 - radar inputs/features used
@@ -277,10 +287,17 @@ Before continuing this review, read:
 - `ai-context/ai-operating-mode.md`
 - `ai-context/claim-control/claim-control-system.md`
 - `radar-ml/radar-ml-read-rules.md`
-- `radar-ml/radar-sleep-stage-literature/raw/discovery-pass-2026-06-12.md`
-- `radar-ml/radar-sleep-stage-literature/raw/screening-pass-1-2026-06-12.md`
+- `radar-ml/radar-sleep-stage-literature/literature-review-workflow.md`
+
+For the next readiness-classification task, also read:
+
 - `radar-ml/radar-sleep-stage-literature/raw/extraction-pass-1-2026-06-12.md`
 - `radar-ml/radar-sleep-stage-literature/raw/primary-source-chase-pass-1-2026-06-12.md`
+
+Read these only as needed:
+
+- `radar-ml/radar-sleep-stage-literature/raw/screening-pass-1-2026-06-12.md`: use to confirm the original P0 list, categories, and source priority.
+- `radar-ml/radar-sleep-stage-literature/raw/discovery-pass-2026-06-12.md`: use for traceability, citation backtracking, or source-discovery context.
 
 Rules:
 
@@ -293,6 +310,7 @@ Rules:
 - Keep radar-only, radar-plus-other-sensor, and non-radar sources separate.
 - Do not silently merge preprint and journal versions without noting the version relationship.
 - Do not rewrite or overwrite raw artifacts unless the user explicitly asks.
+- Do not write to the repo unless the user explicitly asks.
 
 ## Claim boundary
 
@@ -307,38 +325,23 @@ Any future Orisen claim about sleep-stage sensing, vital-sign sensing, groggines
 ```text
 Read `ai-context/start-here.md` from `HaseebTron/orisen-master-docs` using GitHub.
 
-This is a continuation of the radar sleep-stage literature review workflow.
+This is a continuation of the Orisen Radar + ML radar sleep-stage literature workflow.
 
-Before answering, read:
-- `ai-context/source-of-truth-rules.md`
-- `ai-context/ai-operating-mode.md`
-- `ai-context/claim-control/claim-control-system.md`
-- `radar-ml/radar-ml-read-rules.md`
-- `radar-ml/radar-sleep-stage-literature/literature-review-workflow.md`
-- `radar-ml/radar-sleep-stage-literature/raw/discovery-pass-2026-06-12.md`
-- `radar-ml/radar-sleep-stage-literature/raw/screening-pass-1-2026-06-12.md`
-- `radar-ml/radar-sleep-stage-literature/raw/extraction-pass-1-2026-06-12.md`
-- `radar-ml/radar-sleep-stage-literature/raw/primary-source-chase-pass-1-2026-06-12.md`
+Read and follow:
 
-Current status:
-- Discovery Pass 1 is complete.
-- Screening Pass 1 is complete.
-- Extraction Pass 1 is complete.
-- Primary-Source Chase Pass 1 is partially complete.
-- GitHub repo search, dataset search, patent/company background search, synthesis, and Orisen decision output are not started.
+`radar-ml/radar-sleep-stage-literature/literature-review-workflow.md`
 
-Current task:
-- Continue the radar sleep-stage literature review.
-- First classify papers as ready for Extraction Pass 2 vs pending.
-- Then run Extraction Pass 2 on ready papers only.
+Do not rely on memory from prior chats.
+Do not write to the repo unless I explicitly ask.
+Do not make Orisen product claims.
 
-Rules:
-- Focus on radar-based sleep-stage, sleep-phase, sleep-state, and sleep/wake classification.
-- Exclude vital-sign-only radar papers unless the signals feed sleep-stage or sleep-state classification.
-- Do not guess missing details.
-- Write "not stated" when a paper does not state a detail.
-- Separate paper statements from inference.
-- Prefer primary sources over Deep Research summaries.
-- Keep citations traceable.
-- Do not turn paper results into Orisen product claims.
+For this turn, do only the handoff/readiness step:
+
+1. Confirm what files you read.
+2. Summarize the current workflow state.
+3. Classify the 12 P0 sources into:
+   - Ready for Extraction Pass 2
+   - Pending full-text/PDF/primary-source access
+4. Explain what you recommend doing next.
+5. Stop. Do not run Extraction Pass 2 yet.
 ```
