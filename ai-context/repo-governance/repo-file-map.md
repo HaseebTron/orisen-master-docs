@@ -2,7 +2,7 @@
 
 Status: Source of truth
 Authority level: Company / AI context / Repo governance
-Last reviewed: 2026-06-10
+Last reviewed: 2026-06-12
 Governing docs:
 - `ai-context/repo-governance/repo-purpose.md`
 - `ai-context/repo-governance/repo-structure.md`
@@ -203,6 +203,10 @@ Conventions:
     - `README.md`: Tiny index for V-LD3 radar context docs.
     - `vital-signs-demo-on-v-ld3.md`: V-LD3 compatibility notes for TI IWRL6432 Vital Signs testing.
     - `ti-vital-signs-output-and-waveform-access.md`: Stock TI output limits and waveform export path for HRV/RRV work.
+  - **`radar-sleep-stage-literature/`**: Raw and reviewed literature artifacts for radar-based sleep-stage, sleep-state, and sleep/wake classification research.
+    - **`raw/`**: Raw radar sleep-stage literature discovery and screening artifacts.
+      - `discovery-pass-2026-06-12.md`: Raw high-recall radar sleep-stage literature discovery output.
+      - `screening-pass-1-2026-06-12.md`: Raw working screening, deduplication, categorization, and priority pass.
   - Potential future files:
     - `radar-module-decision.md`: Radar module selection and tradeoff decisions.
     - `vital-signs-pipeline.md`: Vital-sign, RRV, HRV, and movement extraction strategy.
@@ -242,5 +246,3 @@ Conventions:
 This file should stay useful but not overly detailed.
 
 Do not turn it into a full duplicate of every folder's read-rules file. Its job is to show what exists and where to find it, not to define every task-specific reading path.
-
-When a folder has many raw files, list them individually only if they are durable `.md` files. Keep raw-file descriptions short so this remains an inventory, not a synthesis.
