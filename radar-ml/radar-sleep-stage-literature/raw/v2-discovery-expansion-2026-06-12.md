@@ -116,3 +116,72 @@ Do not summarize the state of the field. Do not conclude that the literature is 
 | Unobtrusive Sleep Health Assessment Using Impulse Radar: A Pilot Study in Older People | 2025 | Impulse UWB | Not stated | Older adults + dementia | 47 subjects | Wake/REM/Light/Deep | κ=0.63; 74.4% | Seed #5 | Radar-only |
 
 **Key gaps:** Pediatric/neonatal papers (seeds #10–12, #20) not in provided sources. Multimodal papers (seed #10 mentions pulse oximeter) not fully represented. Full-text access limited for most.
+
+## Elicit recent-first pass
+
+### Elicit recent-first prompt used
+
+Find recent papers from 2020–2026, especially 2024–2026, about radar-based sleep-stage classification, sleep-state estimation, REM/NREM classification, active/quiet sleep classification, or sleep/wake classification.
+
+Prioritize newer papers and preprints. Include older papers only if needed to connect a citation trail, but do not make older foundational papers the main output.
+
+Include:
+
+- UWB radar sleep staging
+- IR-UWB radar sleep staging
+- impulse radar sleep staging
+- FMCW radar sleep staging
+- 60 GHz / 61 GHz / 77 GHz mmWave radar sleep staging
+- CW Doppler radar sleep staging only if it leads to newer follow-up work
+- PSG-labeled radar sleep monitoring
+- radar sleep/wake classification
+- radar sleep-state classification
+- radar respiratory, movement, HR, HRV, RRV, phase, IQ, or raw/semi-raw radar features used for sleep labels
+- consumer or product-style radar sleep-monitoring papers if they include sleep labels
+
+Exclude:
+
+- WiFi CSI
+- generic RF/radio unless clearly radar
+- camera-only
+- microphone-only
+- wearable-only
+- ECG-only
+- PPG-only
+- bed-pressure-only
+- mattress-sensor-only
+- radar vital-sign-only papers unless the vital signs feed sleep-stage, sleep-state, REM/NREM, active/quiet sleep, or sleep/wake classification
+
+Known older/foundational papers may be used as citation seeds, but the returned list should emphasize newer work.
+
+For each candidate, return:
+
+- canonical title
+- year
+- authors
+- venue/source type
+- DOI or source link
+- radar type
+- radar frequency
+- radar device/chip/module if stated
+- population
+- subject count/nights if stated
+- PSG or other reference label source
+- sleep labels predicted
+- radar-only vs multimodal
+- whether this appears new, already known, duplicate/version-linked, or uncertain
+- why it may matter
+- caveats
+
+Do not summarize the whole field. Do not conclude the literature is complete. Return candidates broadly, including uncertain but plausible radar sources, and mark uncertainty clearly.
+
+### Elicit recent-first raw output
+
+**The provided sources contain 10 radar-based sleep classification papers spanning 2015–2026, with 6 papers from 2023–2026 meeting your recency criteria.** The strongest recent evidence comes from three 2024–2026 studies: [Jonghyun Park et al., 2024] (509 nights, UWB, 76% accuracy, 4-stage); [J. Cho et al., 2025] (537 adults, FMCW, 77% accuracy for 3-state); and [Maowen Yin et al., 2026] (47 older adults + dementia cohort, UWB, 79.5% accuracy, transfer learning). Three 2023 papers provide additional evidence: [Young-Keun Yoo et al., 2023] (61 GHz FMCW, 68% unsupervised); [Ji Hyun Lee et al., 2023] (78 OSA patients, 60 GHz FMCW, 85.2% accuracy, dual-radar); [E. Arasteh et al., 2023] (10 preterm infants, UWB, 81% balanced accuracy for active/quiet sleep). Older papers ([Hong Hong et al., 2018]; [A. Tataraidze et al., 2016]; [M. Kagawa et al., 2015]) provide foundational CW Doppler and 24 GHz radar methods. All use PSG reference labels; most are radar-only or radar+PSG multimodal.
+
+**Caveats:** Limited sample sizes in some studies; performance varies by sleep stage and OSA severity; domain adaptation needed for generalization.
+
+### Visible Elicit result rows
+
+- Unsupervised Detection of Multiple Sleep Stages Using a Single FMCW Radar — Young-Keun Yoo, Chaewon Jung, Hyun-Chool Shin — Applied Sciences, 2023.
+- Ultra-Wideband Radar-Based Sleep Stage Classification in Smartphone Using an End-to-End Deep Learning — Jonghyun Park, Seungman Yang, G. Chung, Ivo Junior Leal Zanghettin, Jonghee Han — IEEE Access, 2024.
