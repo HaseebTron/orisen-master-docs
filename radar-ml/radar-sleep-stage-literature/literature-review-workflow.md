@@ -117,6 +117,97 @@ Use worker chats for:
 - dataset search
 - synthesis drafts after extraction is complete
 
+## Quick operator workflow map
+
+This map is the human-readable operating view of the full workflow. It does not replace the detailed phase gates below.
+
+- **0. Load context**
+  - **Tools:** ChatGPT + GitHub
+  - Read required Orisen docs.
+  - Read this workflow file.
+  - Read v1 raw artifacts only as seed context.
+  - Do not rely on old chat memory.
+  - Do not write to repo unless explicitly asked.
+
+- **1. v2 discovery expansion**
+  - **Tools:** Elicit + Semantic Scholar + ResearchRabbit/Litmaps
+  - Use one broad Elicit prompt for discovery.
+  - Use v1 P0/P1 titles as seed papers.
+  - Use Semantic Scholar for cited-by, references, and related papers.
+  - Use ResearchRabbit or Litmaps for citation clusters.
+  - Output broad candidate list only.
+  - Stop before extraction.
+
+- **2. Save raw v2 discovery artifact**
+  - **Tools:** User + GitHub repo
+  - Paste external-tool outputs into `radar-ml/radar-sleep-stage-literature/raw/v2-discovery-expansion-YYYY-MM-DD.md`.
+  - Keep it raw and source-preserving.
+  - Do not overwrite v1 files.
+  - Do not add conclusions or Orisen implications.
+
+- **3. Candidate register cleanup**
+  - **Tools:** ChatGPT + GitHub
+  - Read the v2 discovery artifact.
+  - Dedupe papers.
+  - Group preprint/journal versions.
+  - Mark each paper as new, already in v1, duplicate/version-linked, or uncertain.
+  - Create or prepare the master candidate register.
+
+- **4. Classification and priority assignment**
+  - **Tools:** ChatGPT
+  - Classify each source as A/B/C/D/E/F/G.
+  - Assign priority as P0/P1/P2/Hold/Exclude.
+  - Mark source-access status.
+  - Mark extraction readiness.
+
+- **5. Source-access chase**
+  - **Tools:** ChatGPT web/source search + PubMed/arXiv/IEEE/publisher pages if needed
+  - Find legal source links.
+  - Check DOI, PDF, abstract, and full text.
+  - Mark access status.
+  - Do not use pirated PDFs.
+
+- **6. Extraction readiness gate**
+  - **Tools:** ChatGPT
+  - Decide which papers are ready for extraction.
+  - Hold papers with unclear identity, unclear radar involvement, unclear labels, or missing source access.
+  - Do not extract uncertain papers yet.
+
+- **7. Extraction Pass 1, objective top-level facts**
+  - **Tools:** ChatGPT + paper PDFs/pages
+  - Extract bibliographic, radar, population, label, and ground-truth facts.
+  - Write `not stated` when details are missing.
+  - Do not synthesize.
+
+- **8. Extraction Pass 2, deeper technical details**
+  - **Tools:** ChatGPT + paper PDFs/pages
+  - Extract radar inputs, features, vital-sign variables, movement, phase/IQ/raw access, model, epoch length, performance, real-time status, code/data availability, limitations, and reproducibility.
+  - Keep extraction objective.
+
+- **9. Verification pass**
+  - **Tools:** ChatGPT + primary sources
+  - Re-check important P0 and strong P1 papers.
+  - Verify exact radar, features, labels, performance, source type, and code/data availability.
+  - Add confidence labels: High, Medium, Low, or Not stated.
+
+- **10. Code, repo, and dataset search**
+  - **Tools:** GitHub + Google/Semantic Scholar if needed
+  - Search only after the paper list is stable.
+  - Look for paper-title repos, author repos, model names, dataset names, radar sleep-stage code, and PSG plus radar datasets.
+  - Separate true radar sleep-stage repos from generic sleep-stage or vital-sign repos.
+
+- **11. Synthesis**
+  - **Tools:** ChatGPT
+  - Run only after register, extraction, and verification are complete enough.
+  - Summarize radar types, repeated features, raw data needs, performance ranges, reproducibility, applicability, and required radar data access.
+  - Do not turn synthesis into Orisen claims.
+
+- **12. Orisen technical decision output**
+  - **Tools:** ChatGPT + Orisen docs
+  - Convert the literature into practical technical recommendations.
+  - Identify radar candidates, minimum required outputs, black-box sensor red flags, validation experiments, sleep-stage model feature requirements, and claims Orisen still cannot make.
+  - Escalate to Orisen General before changing product claims, roadmap, fundraising narrative, or public wording.
+
 ## Tool role map
 
 ### External literature and AI tools
