@@ -97,6 +97,21 @@ Tool outputs are inputs, not authorities.
 
 Do not accept an AI literature tool's extracted detail as final unless it can be traced to the paper, PDF, abstract, DOI page, publisher page, PubMed page, arXiv page, author copy, dataset page, or another legal primary or near-primary source.
 
+### Phase 1 discovery mode gate
+
+For Phase 1, default to **external-tool operator mode** unless the user explicitly asks ChatGPT to run GPT/web discovery itself.
+
+In external-tool operator mode, ChatGPT should:
+
+- prepare exact prompts and search instructions for Elicit, Semantic Scholar, and ResearchRabbit/Litmaps;
+- tell the user what fields to export or copy back;
+- tell the user where to paste external-tool outputs in the repo;
+- wait for pasted results or a raw v2 discovery artifact before classification;
+- not perform the main paper search with ChatGPT/web search;
+- not conclude source coverage, paper count, novelty, or literature gaps until external-tool results are returned.
+
+Only run GPT/web discovery directly if the user explicitly asks for GPT-assisted discovery or asks ChatGPT to search the web itself.
+
 Use the mother/planning chat for:
 
 - workflow design
@@ -131,6 +146,8 @@ This map is the human-readable operating view of the full workflow. It does not 
 
 - **1. v2 discovery expansion**
   - **Tools:** Elicit + Semantic Scholar + ResearchRabbit/Litmaps
+  - Default to external-tool operator mode.
+  - ChatGPT prepares prompts/search instructions instead of running the main discovery itself.
   - Use one broad Elicit prompt for discovery.
   - Use v1 P0/P1 titles as seed papers.
   - Use Semantic Scholar for cited-by, references, and related papers.
@@ -289,6 +306,10 @@ Do not write to the repo unless explicitly asked.
 ### Phase 1: v2 discovery expansion
 
 Goal: find a more complete and higher-quality source universe than v1.
+
+Default mode: **external-tool operator mode**. In this mode, do not run the main discovery using ChatGPT/web search. Instead, prepare exact prompts/search instructions for the user to run in Elicit, Semantic Scholar, and ResearchRabbit/Litmaps, then wait for pasted results or a raw v2 discovery artifact.
+
+Only run GPT/web discovery directly if the user explicitly asks ChatGPT to run discovery or search the web itself.
 
 Search using:
 
@@ -586,9 +607,12 @@ The next worker chat should:
 
 1. Read this workflow file.
 2. Read v1 screening and discovery artifacts only as seed context.
-3. Use external literature tools and citation-graph expansion to find missed radar sleep-stage, sleep-state, and sleep/wake sources.
-4. Produce a new v2 discovery expansion artifact or draft output.
-5. Stop before extraction.
+3. Default to external-tool operator mode.
+4. Prepare prompts/search instructions for Elicit, Semantic Scholar, and ResearchRabbit/Litmaps to find missed radar sleep-stage, sleep-state, and sleep/wake sources.
+5. Tell the user where to paste external-tool results or how to save the raw v2 discovery artifact.
+6. Stop before extraction.
+
+Do not run GPT/web discovery unless the user explicitly asks for it.
 
 Do not delete or replace v1 raw files during this step.
 
@@ -608,20 +632,20 @@ Do not write to the repo unless I explicitly ask.
 Do not make Orisen product claims.
 
 Task:
-Run v2 Discovery Expansion for radar-based sleep-stage, sleep-state, and sleep/wake classification papers.
+Prepare the external-tool operator runbook for v2 Discovery Expansion for radar-based sleep-stage, sleep-state, and sleep/wake classification papers.
+
+Default to external-tool operator mode:
+- Do not run ChatGPT/web discovery unless I explicitly ask.
+- Give exact prompts/searches for Elicit, Semantic Scholar, and ResearchRabbit/Litmaps.
+- Tell me what fields to export or copy back.
+- Tell me where to paste the results in the raw v2 discovery artifact.
+- Stop after the runbook/instructions.
 
 Use the existing v1 raw artifacts only as seed context, not final truth:
 - `radar-ml/radar-sleep-stage-literature/raw/discovery-pass-2026-06-12.md`
 - `radar-ml/radar-sleep-stage-literature/raw/screening-pass-1-2026-06-12.md`
 
-Use external tools where helpful:
-- Elicit for broad paper discovery and first-pass paper tables
-- Semantic Scholar for citations, references, DOI metadata, and related papers
-- OpenAlex for bibliographic cleanup and metadata cross-checking
-- ResearchRabbit / Litmaps for citation graph expansion
-- Google Scholar, PubMed, arXiv, IEEE, ACM, MDPI, Frontiers, publisher pages, and institutional pages for source verification
-
-Search for:
+The external-tool search should cover:
 - radar sleep-stage classification
 - radar sleep-state classification
 - radar sleep/wake classification
@@ -632,13 +656,15 @@ Search for:
 - radar respiratory or movement features used for sleep labels
 - radar HR/HRV/RRV features used for sleep labels
 
-Output:
-- A candidate list of newly found or confirmed sources.
-- Mark whether each source is new, already in v1, duplicate/version-linked, or uncertain.
-- Include title, year, DOI/source link if available, radar type, label type, ground truth/reference source if known, and why it may matter.
-- Do not deeply extract methods yet.
-- Do not synthesize Orisen implications yet.
-- Stop after discovery expansion.
+The eventual user-provided output should support:
+- a candidate list of newly found or confirmed sources
+- marking whether each source is new, already in v1, duplicate/version-linked, or uncertain
+- title, year, DOI/source link if available, radar type, label type, ground truth/reference source if known, and why it may matter
+
+Do not deeply extract methods yet.
+Do not synthesize Orisen implications yet.
+Do not conclude source coverage or literature gaps yet.
+Stop after external-tool instructions unless I explicitly ask you to search directly.
 ```
 
 ## Handoff prompt: candidate register cleanup worker chat
