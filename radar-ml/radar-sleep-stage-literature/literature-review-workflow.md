@@ -97,6 +97,18 @@ Tool outputs are inputs, not authorities.
 
 Do not accept an AI literature tool's extracted detail as final unless it can be traced to the paper, PDF, abstract, DOI page, publisher page, PubMed page, arXiv page, author copy, dataset page, or another legal primary or near-primary source.
 
+### Discovery list terminology
+
+The seed list is not the final paper list. Seeds are known relevant papers used to expand discovery through citation graphs. The v2 discovery artifact should collect a broad candidate universe, including new papers, already-known papers, duplicate or version-linked papers, uncertain papers, and useful false positives. The priority/extraction list is created later during candidate-register cleanup and screening.
+
+### Latest-first discovery bias
+
+Discovery should be latest-first. Prefer 2020–2026 papers, especially 2024–2026. Use older papers primarily as citation-trail seeds, historical anchors, or foundational context, not as the main target list unless they remain methodologically important.
+
+Do not treat a single Elicit result table as the complete source universe. Elicit may return a small or seed-heavy result set. Save it as one raw input, then continue with Semantic Scholar and ResearchRabbit/Litmaps before drawing coverage conclusions.
+
+If the first Elicit pass returns mostly older or foundational papers, run a second recent-first Elicit pass focused on 2020–2026, especially 2024–2026, before moving to citation-graph expansion.
+
 ### Phase 1 discovery mode gate
 
 For Phase 1, default to **external-tool operator mode** unless the user explicitly asks ChatGPT to run GPT/web discovery itself.
@@ -149,8 +161,9 @@ This map is the human-readable operating view of the full workflow. It does not 
   - Default to external-tool operator mode.
   - ChatGPT prepares prompts/search instructions instead of running the main discovery itself.
   - Use one broad Elicit prompt for discovery.
-  - Use v1 P0/P1 titles as seed papers.
-  - Use Semantic Scholar for cited-by, references, and related papers.
+  - If the first Elicit pass is mostly older or seed-heavy, run a second recent-first Elicit pass focused on 2020–2026, especially 2024–2026.
+  - Use v1 P0/P1 titles as seed papers, but treat older seeds primarily as citation-trail anchors.
+  - Use Semantic Scholar for cited-by, references, and related papers, with special attention to newer citing papers.
   - Use ResearchRabbit or Litmaps for citation clusters.
   - Output broad candidate list only.
   - Stop before extraction.
@@ -236,6 +249,7 @@ Use these tools as search and extraction helpers, not final truth sources.
   - Initial literature tables.
   - First-pass extraction suggestions.
   - Similar-paper discovery from seed titles.
+  - May return a small or seed-heavy result set, so treat each Elicit table as one raw input rather than the complete source universe.
 
 - **Semantic Scholar**:
   - Citation graph expansion.
@@ -311,6 +325,8 @@ Default mode: **external-tool operator mode**. In this mode, do not run the main
 
 Only run GPT/web discovery directly if the user explicitly asks ChatGPT to run discovery or search the web itself.
 
+Discovery should be latest-first: prefer 2020–2026 papers, especially 2024–2026. Older papers should still be included when they are foundational, heavily cited, methodologically important, or useful as citation-trail seeds, but they should not dominate the main modern candidate list.
+
 Search using:
 
 - seed papers from the v1 P0/P1/P2/Hold list
@@ -334,6 +350,14 @@ Search targets:
 - radar respiratory/movement features used for sleep labels
 - radar HR/HRV/RRV features used for sleep labels
 - consumer or clinical radar sleep-monitoring systems with papers
+
+Use external tools in layers:
+
+1. Run a broad Elicit pass to capture obvious candidates and tool-suggested related papers.
+2. If the broad Elicit pass is small, older, or seed-heavy, run a second recent-first Elicit pass focused on 2020–2026, especially 2024–2026.
+3. Use Semantic Scholar forward citations from older seeds to find newer papers that cite them.
+4. Use Semantic Scholar references and related papers to catch older foundations and adjacent terms.
+5. Use ResearchRabbit or Litmaps to identify clusters, related author lines, and missed citation trails.
 
 Output should be a raw v2 discovery artifact, not a synthesis.
 
@@ -608,9 +632,10 @@ The next worker chat should:
 1. Read this workflow file.
 2. Read v1 screening and discovery artifacts only as seed context.
 3. Default to external-tool operator mode.
-4. Prepare prompts/search instructions for Elicit, Semantic Scholar, and ResearchRabbit/Litmaps to find missed radar sleep-stage, sleep-state, and sleep/wake sources.
-5. Tell the user where to paste external-tool results or how to save the raw v2 discovery artifact.
-6. Stop before extraction.
+4. Prepare latest-first prompts/search instructions for Elicit, Semantic Scholar, and ResearchRabbit/Litmaps to find missed radar sleep-stage, sleep-state, and sleep/wake sources.
+5. Treat older v1 seeds primarily as citation-trail anchors unless they remain methodologically important.
+6. Tell the user where to paste external-tool results or how to save the raw v2 discovery artifact.
+7. Stop before extraction.
 
 Do not run GPT/web discovery unless the user explicitly asks for it.
 
@@ -637,6 +662,9 @@ Prepare the external-tool operator runbook for v2 Discovery Expansion for radar-
 Default to external-tool operator mode:
 - Do not run ChatGPT/web discovery unless I explicitly ask.
 - Give exact prompts/searches for Elicit, Semantic Scholar, and ResearchRabbit/Litmaps.
+- Make the discovery latest-first: prioritize 2020–2026 papers, especially 2024–2026.
+- Use older v1 papers primarily as citation-trail seeds, historical anchors, or foundational context, not as the main target list unless they remain methodologically important.
+- Explain the difference between seed papers, the broad candidate universe, and the later priority/extraction list.
 - Tell me what fields to export or copy back.
 - Tell me where to paste the results in the raw v2 discovery artifact.
 - Stop after the runbook/instructions.
