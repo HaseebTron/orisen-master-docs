@@ -210,6 +210,8 @@ Conventions:
       - `screening-pass-1-2026-06-12.md`: Raw working screening, deduplication, categorization, and priority pass.
       - `extraction-pass-1-2026-06-12.md`: Raw Extraction Pass 1 table and unresolved-details notes for screened P0 radar sleep-stage literature sources.
       - `primary-source-chase-pass-1-2026-06-12.md`: Raw Primary-Source Chase Pass 1 results for weak P0 radar sleep-stage literature rows.
+      - `v2-discovery-expansion-2026-06-12.md`: Raw v2 discovery-expansion output for additional radar sleep-stage literature candidates.
+      - `v2-candidate-register-2026-06-13.md`: Raw v2 candidate-register cleanup artifact for radar sleep-stage literature screening.
   - Potential future files:
     - `radar-module-decision.md`: Radar module selection and tradeoff decisions.
     - `vital-signs-pipeline.md`: Vital-sign, RRV, HRV, and movement extraction strategy.
